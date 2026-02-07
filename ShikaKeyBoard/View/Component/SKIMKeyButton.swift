@@ -1,5 +1,5 @@
 //
-//  SKKeyButton.swift
+//  SKIMKeyButton.swift
 //  ShiKaKeyBoard
 //
 //  Created by ShiKa on 2026/1/30.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class SKKeyButton: UIButton {
+class SKIMKeyButton: UIButton {
     
-    private var popUpView: SKKeyPopUpView?
+    private var popUpView: SKIMKeyPopUpView?
     private var keyColor: UIColor
     private var keyFont: UIFont
     private var keyTitle: String
@@ -76,7 +76,7 @@ class SKKeyButton: UIButton {
             
             let frame = CGRect(x: 0, y: 0, width: popUpWidth, height: totalHeight)
             
-            let view = SKKeyPopUpView(frame: frame)
+            let view = SKIMKeyPopUpView(frame: frame)
             view.backgroundColor = .clear
             view.keyWidth = keyWidth
             view.bubbleColor = self.backgroundColor ?? .white
@@ -117,7 +117,7 @@ class SKKeyButton: UIButton {
     }
 }
 
-class SKKeyPopUpView: UIView {
+class SKIMKeyPopUpView: UIView {
     
     var keyWidth: CGFloat = 0
     var bubbleHeight: CGFloat = 0
