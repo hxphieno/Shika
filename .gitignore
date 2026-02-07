@@ -1,0 +1,27 @@
+# Xcode
+#
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.xcuserstate
+
+# 个人设置 (极其重要，否则换台电脑就报错)
+xcuserdata/
+
+# Apple 索引与缓存
+.LSOverride
+.AppleDouble
+.LSOverride
+
+# CocoaPods (如果你用 Pods，通常不建议把 Pods 文件夹传上去)
+# 如果你希望团队成员直接运行，可以不忽略 Pods/，但主流做法是忽略并让成员自行 pod install
+Pods/
+*.xcworkspace
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS 系统文件
+.DS_Store
