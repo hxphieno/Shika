@@ -7,15 +7,11 @@
 
 import UIKit
 
-protocol SKNumberInputViewDelegate: AnyObject {
-    func didTapNumberKey(_ title: String)
-    func didTapSwitchToAlpha()
-    func didTapNextKeyboard()
-}
+// SKNumberInputViewDelegate removed in favor of SKKeyboardEventHandler
 
 class SKNumberInputView: UIView {
     
-    weak var delegate: SKNumberInputViewDelegate?
+    weak var eventHandler: SKKeyboardEventHandler?
     private var mainStackView: UIStackView!
     
     override init(frame: CGRect) {
@@ -160,19 +156,19 @@ class SKNumberInputView: UIView {
     
     @objc private func numberKeyPressed(_ sender: UIButton) {
         guard let title = sender.title(for: .normal) else { return }
-        delegate?.didTapNumberKey(title)
+        eventHandler?.didTapKey(title)
     }
     
     @objc private func punctuationKeyPressed(_ sender: UIButton) {
         guard let title = sender.title(for: .normal) else { return }
-         delegate?.didTapNumberKey(title) // Reuse number key delegate for punctuation
+         eventHandler?.didTapKey(title) 
     }
     
     @objc private func returnToAlphaPressed() {
-        delegate?.didTapSwitchToAlpha()
+        eventHandler?.didTapSwitchLayout(to: .alphabet)
     }
     
     @objc private func deleteKeyPressed() {
-         delegate?.didTapNumberKey("⌫")
+         eventHandler?.didTapDelete()
     }
 }

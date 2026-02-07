@@ -7,15 +7,11 @@
 
 import UIKit
 
-protocol SKInputViewDelegate: AnyObject {
-    func didTapKey(_ title: String)
-    func didTapNumberButton()
-    func didTapNextKeyboard()
-}
+// SKInputViewDelegate removed in favor of SKKeyboardDelegate
 
 class SKInputView: UIView {
     
-    weak var delegate: SKInputViewDelegate?
+    weak var eventHandler: SKKeyboardEventHandler?
     
     // Internal state for Shift key
     private enum CapsLockState {
@@ -151,7 +147,7 @@ class SKInputView: UIView {
     
     @objc private func keyPressed(_ sender: UIButton) {
         guard let title = sender.title(for: .normal) else { return }
-        delegate?.didTapKey(title)
+        eventHandler?.didTapKey(title)
         
         if capsLockState == .upper {
             capsLockState = .lower
@@ -170,18 +166,18 @@ class SKInputView: UIView {
     }
     
     @objc private func deleteKeyPressed(_ sender: UIButton) {
-        delegate?.didTapKey("⌫") 
+        eventHandler?.didTapDelete()
     }
     
     @objc private func numberKeyPressed() {
-        delegate?.didTapNumberButton()
+        eventHandler?.didTapSwitchLayout(to: .number)
     }
     
     @objc private func spaceKeyPressed() {
-        delegate?.didTapKey(" ")
+        eventHandler?.didTapKey(" ")
     }
     
     @objc private func enterKeyPressed() {
-        delegate?.didTapKey("\n")
+        eventHandler?.didTapKey("\n")
     }
 }

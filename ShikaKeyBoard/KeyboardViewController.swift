@@ -7,9 +7,9 @@
 
 import UIKit
 
-class KeyboardViewController: UIInputViewController, SKInputViewDelegate, SKNumberInputViewDelegate {
+class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
 
-    private var candidateBarView: UIView!
+    private var candidateBarView: CandidateBarView!
     private var skInputView: SKInputView!
     private var skNumberInputView: SKNumberInputView!
     
@@ -22,18 +22,19 @@ class KeyboardViewController: UIInputViewController, SKInputViewDelegate, SKNumb
         super.viewDidLoad()
         
         // Setup CandidateBarView
-        candidateBarView = UIView()
+        candidateBarView = CandidateBarView()
+        candidateBarView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(candidateBarView)
         
         // Setup SKInputView
         skInputView = SKInputView()
-        skInputView.delegate = self
+        skInputView.eventHandler = self
         skInputView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(skInputView)
         
         // Setup SKNumberInputView
         skNumberInputView = SKNumberInputView()
-        skNumberInputView.delegate = self
+        skNumberInputView.eventHandler = self
         skNumberInputView.translatesAutoresizingMaskIntoConstraints = false
         skNumberInputView.isHidden = true // Hidden by default
         self.view.addSubview(skNumberInputView)
@@ -68,30 +69,29 @@ class KeyboardViewController: UIInputViewController, SKInputViewDelegate, SKNumb
         // The app has just changed the document's contents, the document context has been updated.
     }
     
-    // MARK: - SKInputViewDelegate
+    // MARK: - SKKeyboardEventHandler
     
-    func didTapKey(_ title: String) {
-        self.textDocumentProxy.insertText(title)
+    func didTapKey(_ key: String) {
+        self.textDocumentProxy.insertText(key)
     }
     
-    func didTapNumberButton() {
-        skInputView.isHidden = true
-        skNumberInputView.isHidden = false
+    func didTapDelete() {
+        self.textDocumentProxy.deleteBackward()
     }
     
     func didTapNextKeyboard() {
         self.advanceToNextInputMode()
     }
     
-    // MARK: - SKNumberInputViewDelegate
-    
-    func didTapNumberKey(_ title: String) {
-        self.textDocumentProxy.insertText(title)
-    }
-    
-    func didTapSwitchToAlpha() {
-        skNumberInputView.isHidden = true
-        skInputView.isHidden = false
+    func didTapSwitchLayout(to layout: SKKeyboardLayoutType) {
+        switch layout {
+        case .alphabet:
+            skInputView.isHidden = false
+            skNumberInputView.isHidden = true
+        case .number:
+            skInputView.isHidden = true
+            skNumberInputView.isHidden = false
+        }
     }
 
 }
