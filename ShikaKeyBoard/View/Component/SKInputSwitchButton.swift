@@ -37,7 +37,7 @@ class SKInputSwitchButton: UIButton {
     private let topLeftLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
+        label.font = UIFont.systemFont(ofSize: 13, weight: .medium)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -45,7 +45,7 @@ class SKInputSwitchButton: UIButton {
     private let bottomRightLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
-        label.font = UIFont.systemFont(ofSize: 12, weight: .medium)
+        label.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -163,8 +163,7 @@ class SKInputSwitchButton: UIButton {
         // Start from top edge (around center or slightly right), go right, round corner, go down
         // 调整坐标，应用 margin
         let topStart = CGPoint(x: w * 0.5, y: margin) // Start after "中"
-        let topRightCorner = CGPoint(x: w - margin, y: margin) // Corner inset
-        let rightEnd = CGPoint(x: w - margin, y: h * 0.5) // End before "あ"
+        let rightEnd = CGPoint(x: w - margin, y: h * 0.48) // End before "あ"
         
         path.move(to: topStart)
         path.addLine(to: CGPoint(x: w - margin - cornerRadius, y: margin))
@@ -179,8 +178,7 @@ class SKInputSwitchButton: UIButton {
         // Start from bottom edge (around center or slightly left), go left, round corner, go up
         // 调整坐标，应用 margin
         let bottomStart = CGPoint(x: w * 0.5, y: h - margin) // Start before "あ"
-        let bottomLeftCorner = CGPoint(x: margin, y: h - margin) // Corner inset
-        let leftEnd = CGPoint(x: margin, y: h * 0.5) // End after "中"
+        let leftEnd = CGPoint(x: margin, y: h * 0.48) // End after "中"
         
         path.move(to: bottomStart)
         path.addLine(to: CGPoint(x: margin + cornerRadius, y: h - margin))
