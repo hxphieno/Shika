@@ -29,6 +29,10 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         // We only need to constrain width, height is handled by stack view (or matches bar)
         inputSwitchButton.widthAnchor.constraint(equalToConstant: 43).isActive = true
         
+        inputSwitchButton.stateChangeHandler = { [weak self] state in
+            self?.skInputView.currentLanguageState = state
+        }
+        
         // Setup CandidateBarView
         candidateBarView = CandidateBarView()
         candidateBarView.translatesAutoresizingMaskIntoConstraints = false

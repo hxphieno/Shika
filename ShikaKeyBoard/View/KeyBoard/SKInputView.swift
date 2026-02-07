@@ -56,6 +56,14 @@ class SKInputView: UIView {
         ])
     }
     
+    var currentLanguageState: SKInputSwitchState = .mixed {
+        didSet {
+            updateMainKeyboardStackView()
+        }
+    }
+    
+    // ...
+    
     private func updateMainKeyboardStackView() {
         mainStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
         
@@ -69,7 +77,16 @@ class SKInputView: UIView {
             rowStackView.alignment = .fill
             rowStackView.translatesAutoresizingMaskIntoConstraints = false
             
-            for key in row {
+            // Handle Japanese/Chinese layout difference for the second row
+            var keys = row
+            // Only hide "—" (dash) when in Chinese mode. Show in Mixed and Japanese.
+            if index == 1 && currentLanguageState == .chinese {
+                keys = row.filter { $0 != "—" }
+                rowStackView.layoutMargins = UIEdgeInsets(top: 0, left: 19.5, bottom: 0, right: 19.5)
+                rowStackView.isLayoutMarginsRelativeArrangement = true
+            }
+            
+            for key in keys {
                 let keyButton = SKIMKeyButton(title: key)
                 if KeyboardLayout.lowCaseLetter.contains(key) {
                    keyButton.titleEdgeInsets = UIEdgeInsets(top: -2, left: 0, bottom: 2, right: 0)

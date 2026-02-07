@@ -23,7 +23,9 @@ enum SKInputSwitchState {
 
 class SKInputSwitchButton: UIButton {
     
-    private var currentState: SKInputSwitchState = .chinese
+    var stateChangeHandler: ((SKInputSwitchState) -> Void)?
+    
+    private(set) var currentState: SKInputSwitchState = .mixed
     
     // UI Components
     private let singleLabel: UILabel = {
@@ -110,6 +112,7 @@ class SKInputSwitchButton: UIButton {
     
     @objc private func didTapButton() {
         currentState = currentState.next
+        stateChangeHandler?(currentState)
         updateDisplay()
         setNeedsLayout()
     }
