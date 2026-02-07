@@ -20,7 +20,6 @@ class CandidateBarView: UIView {
     }
     
     private func setupView() {
-        self.heightAnchor.constraint(equalToConstant: 43).isActive = true
         // Placeholder for future implementation
     }
 }

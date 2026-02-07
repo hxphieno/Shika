@@ -12,6 +12,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private var candidateBarView: CandidateBarView!
     private var skInputView: SKInputView!
     private var skNumberInputView: SKNumberInputView!
+    private var inputSwitchButton: SKInputSwitchButton!
+    private var topBarStackView: UIStackView!
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -21,10 +23,24 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Setup SKInputSwitchButton
+        inputSwitchButton = SKInputSwitchButton()
+        inputSwitchButton.translatesAutoresizingMaskIntoConstraints = false
+        // We only need to constrain width, height is handled by stack view (or matches bar)
+        inputSwitchButton.widthAnchor.constraint(equalToConstant: 43).isActive = true
+        
         // Setup CandidateBarView
         candidateBarView = CandidateBarView()
         candidateBarView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(candidateBarView)
+        
+        // Setup StackView
+        topBarStackView = UIStackView(arrangedSubviews: [inputSwitchButton, candidateBarView])
+        topBarStackView.axis = .horizontal
+        topBarStackView.alignment = .fill
+        topBarStackView.distribution = .fill
+        topBarStackView.spacing = 0
+        topBarStackView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(topBarStackView)
         
         // Setup SKInputView
         skInputView = SKInputView()
@@ -41,20 +57,20 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         
         // Constraints
         NSLayoutConstraint.activate([
-            // Candidate Bar: Top, Left, Right, Height 40
-            candidateBarView.topAnchor.constraint(equalTo: self.view.topAnchor),
-            candidateBarView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            candidateBarView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            candidateBarView.heightAnchor.constraint(equalToConstant: 40),
+            // Top Bar StackView: Top, Left, Right, Height 40
+            topBarStackView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            topBarStackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            topBarStackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            topBarStackView.heightAnchor.constraint(equalToConstant: 43),
             
-            // Input View: Below Candidate Bar, Left, Right, Bottom
-            skInputView.topAnchor.constraint(equalTo: candidateBarView.bottomAnchor),
+            // Input View: Below Top Bar, Left, Right, Bottom
+            skInputView.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
             skInputView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             skInputView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             skInputView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             
             // Number Input View: Same constraints as Input View
-            skNumberInputView.topAnchor.constraint(equalTo: candidateBarView.bottomAnchor),
+            skNumberInputView.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
             skNumberInputView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             skNumberInputView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             skNumberInputView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
