@@ -14,11 +14,11 @@ class SKIMKeyButtonWithoutPopUpView: UIButton {
     var keyTitle: String
 
     init(title: String,
-         width: CGFloat = 33,
-         height: CGFloat = 43,
+         width: CGFloat = SKConfig.defaultKeyWidth,
+         height: CGFloat = SKConfig.defaultKeyHeight,
          font: UIFont = UIFont.systemFont(ofSize: 26, weight: .regular),
-         color: UIColor = .black,
-         backgroundColor: UIColor = UIColor(white: 1, alpha: 1.0)) {
+         color: UIColor = SKConfig.keyTitleColor,
+         backgroundColor: UIColor = SKConfig.keyBackgroundColor) {
         
         self.keyTitle = title
         self.keyColor = color
@@ -37,8 +37,8 @@ class SKIMKeyButtonWithoutPopUpView: UIButton {
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
         
         // Appearance
-        self.layer.cornerRadius = 5
-        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.cornerRadius = SKConfig.defaultCornerRadius
+        self.layer.shadowColor = SKConfig.keyShadowColor.cgColor
         self.layer.shadowOpacity = 0.2
         self.layer.shadowOffset = CGSize(width: 0, height: 1)
         self.layer.shadowRadius = 0

@@ -52,7 +52,7 @@ class SKNumberInputView: UIView {
         // Left Side: Numbers 3x3 + Bottom Row
         let leftView = UIStackView()
         leftView.axis = .vertical
-        leftView.spacing = 12
+        leftView.spacing = SKConfig.keyboardVerticalSpacing
         leftView.alignment = .fill
         leftView.distribution = .fill
         
@@ -60,7 +60,7 @@ class SKNumberInputView: UIView {
         for i in 0..<3 {
             let numberLineRow = UIStackView()
             numberLineRow.axis = .horizontal
-            numberLineRow.spacing = 6
+            numberLineRow.spacing = SKConfig.keyboardHorizontalSpacing
             numberLineRow.alignment = .fill
             numberLineRow.distribution = .fill
             
@@ -127,7 +127,7 @@ class SKNumberInputView: UIView {
     private func waterfallView(items: [String]) -> UIStackView {
         let wtfView = UIStackView()
         wtfView.axis = .vertical
-        wtfView.spacing = 12
+        wtfView.spacing = SKConfig.keyboardVerticalSpacing
         wtfView.distribution = .fillEqually // rows have equal height
         
         var rowViews = [UIStackView]()
@@ -135,7 +135,7 @@ class SKNumberInputView: UIView {
         for _ in 0..<4 {
             let rowView = UIStackView()
             rowView.axis = .horizontal
-            rowView.spacing = 6
+            rowView.spacing = SKConfig.keyboardHorizontalSpacing
             rowView.distribution = .fill // Buttons have fixed width
             rowView.alignment = .fill
             wtfView.addArrangedSubview(rowView)

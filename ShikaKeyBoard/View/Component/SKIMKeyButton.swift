@@ -13,11 +13,11 @@ class SKIMKeyButton: SKIMKeyButtonWithoutPopUpView {
     private var popUpView: SKIMKeyPopUpView?
 
     override init(title: String,
-         width: CGFloat = 33,
-         height: CGFloat = 43,
+         width: CGFloat = SKConfig.defaultKeyWidth,
+         height: CGFloat = SKConfig.defaultKeyHeight,
          font: UIFont = UIFont.systemFont(ofSize: 26, weight: .regular),
-         color: UIColor = .black,
-         backgroundColor: UIColor = UIColor(white: 1, alpha: 1.0)) {
+         color: UIColor = SKConfig.keyTitleColor,
+         backgroundColor: UIColor = SKConfig.keyBackgroundColor) {
         
         super.init(title: title, width: width, height: height, font: font, color: color, backgroundColor: backgroundColor)
         
@@ -60,9 +60,6 @@ class SKIMKeyButton: SKIMKeyButtonWithoutPopUpView {
             view.keyBodyHeight = keyHeight
             view.cornerRadius = 10
             
-            // Critical for popup not being clipped by its own view bounds if we were to act weirdly
-            view.clipsToBounds = false
-            
             view.layer.shadowColor = UIColor.black.cgColor
             view.layer.shadowOpacity = 0.2
             view.layer.shadowOffset = CGSize(width: 0, height: 2)
@@ -79,7 +76,6 @@ class SKIMKeyButton: SKIMKeyButtonWithoutPopUpView {
             self.popUpView = view
         }
         
-        // Add to the top-most window to avoid clipping by intermediate views
         if let window = self.window, let view = popUpView {
             let rect = self.convert(self.bounds, to: window)
             let popUpX = rect.midX - (view.frame.width / 2)

@@ -20,6 +20,12 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         // Add custom view sizing constraints here
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        // Use the centralized utility to fix popup clipping
+        SKUtils.disableClipping(for: self.view)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,7 +71,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
             topBarStackView.topAnchor.constraint(equalTo: self.view.topAnchor),
             topBarStackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             topBarStackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            topBarStackView.heightAnchor.constraint(equalToConstant: 43),
+            topBarStackView.heightAnchor.constraint(equalToConstant: SKConfig.topBarHeight),
             
             // Input View: Below Top Bar, Left, Right, Bottom
             skInputView.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),

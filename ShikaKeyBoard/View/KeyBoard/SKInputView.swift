@@ -40,7 +40,7 @@ class SKInputView: UIView {
         
         mainStackView = UIStackView()
         mainStackView.distribution = .fillEqually
-        mainStackView.spacing = 12
+        mainStackView.spacing = SKConfig.keyboardVerticalSpacing
         mainStackView.axis = .vertical
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         mainStackView.layoutMargins = UIEdgeInsets(top: 3, left: 3, bottom: 0, right: 3)
@@ -62,8 +62,6 @@ class SKInputView: UIView {
         }
     }
     
-    // ...
-    
     private func updateMainKeyboardStackView() {
         mainStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
         
@@ -72,7 +70,7 @@ class SKInputView: UIView {
         for (index, row) in layout.enumerated() {
             let rowStackView = UIStackView()
             rowStackView.axis = .horizontal
-            rowStackView.spacing = 6
+            rowStackView.spacing = SKConfig.keyboardHorizontalSpacing
             rowStackView.distribution = .fillEqually
             rowStackView.alignment = .fill
             rowStackView.translatesAutoresizingMaskIntoConstraints = false
