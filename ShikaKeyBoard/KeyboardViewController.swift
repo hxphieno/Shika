@@ -14,6 +14,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private var skNumberInputView: SKNumberInputView!
     private var inputSwitchButton: SKInputSwitchButton!
     private var topBarStackView: UIStackView!
+    private var separatorLine: SKSeparatorLine!
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -32,8 +33,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         // Setup SKInputSwitchButton
         inputSwitchButton = SKInputSwitchButton()
         inputSwitchButton.translatesAutoresizingMaskIntoConstraints = false
-        // We only need to constrain width, height is handled by stack view (or matches bar)
-        inputSwitchButton.widthAnchor.constraint(equalToConstant: 43).isActive = true
+        inputSwitchButton.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
+        inputSwitchButton.heightAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
         
         inputSwitchButton.stateChangeHandler = { [weak self] state in
             self?.skInputView.currentLanguageState = state
@@ -42,15 +43,20 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         // Setup CandidateBarView
         candidateBarView = CandidateBarView()
         candidateBarView.translatesAutoresizingMaskIntoConstraints = false
+        candidateBarView.heightAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
         
         // Setup StackView
         topBarStackView = UIStackView(arrangedSubviews: [inputSwitchButton, candidateBarView])
         topBarStackView.axis = .horizontal
-        topBarStackView.alignment = .fill
+        topBarStackView.alignment = .center
         topBarStackView.distribution = .fill
         topBarStackView.spacing = 0
         topBarStackView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(topBarStackView)
+        
+        // Setup Separator Line
+        separatorLine = SKSeparatorLine()
+        self.view.addSubview(separatorLine)
         
         // Setup SKInputView
         skInputView = SKInputView()
@@ -73,14 +79,19 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
             topBarStackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             topBarStackView.heightAnchor.constraint(equalToConstant: SKConfig.topBarHeight),
             
-            // Input View: Below Top Bar, Left, Right, Bottom
-            skInputView.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
+            // Separator Line: Below Top Bar, Left, Right
+            separatorLine.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
+            separatorLine.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: SKConfig.keyboardHorizontalSpacing),
+            separatorLine.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -SKConfig.keyboardHorizontalSpacing),
+            
+            // Input View: Below Separator, Left, Right, Bottom
+            skInputView.topAnchor.constraint(equalTo: separatorLine.bottomAnchor),
             skInputView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             skInputView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             skInputView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             
             // Number Input View: Same constraints as Input View
-            skNumberInputView.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
+            skNumberInputView.topAnchor.constraint(equalTo: separatorLine.bottomAnchor),
             skNumberInputView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             skNumberInputView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             skNumberInputView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
