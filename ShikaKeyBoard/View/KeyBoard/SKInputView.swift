@@ -106,7 +106,7 @@ class SKInputView: UIView {
                 
                 // Shift Key
                 let shiftIcon = (capsLockState == .lower) ? "⇧" : "⇪"
-                let shiftButton = SKIMKeyButton(title: shiftIcon, width: 42)
+                let shiftButton = SKIMKeyButtonWithoutPopUpView(title: shiftIcon, width: 42)
                 shiftButton.addTarget(self, action: #selector(shiftKeyPressed(_:)), for: .touchUpInside)
                 
                 // Double tap / Long press for Caps Lock
@@ -139,21 +139,21 @@ class SKInputView: UIView {
         rowStackViewLine3.spacing = 6
         
         // 123 Key
-        let numberButton = SKIMKeyButton(title: "123", width: 42, font: UIFont.systemFont(ofSize: 16, weight: .regular))
+        let numberButton = SKIMKeyButtonWithoutPopUpView(title: "123", width: 42, font: UIFont.systemFont(ofSize: 16, weight: .regular))
         numberButton.addTarget(self, action: #selector(numberKeyPressed), for: .touchUpInside)
         rowStackViewLine3.addArrangedSubview(numberButton)
         
         // Emoji Key
-        let emojiButton = SKIMKeyButton(title: "🦌", width: 42, font: UIFont.systemFont(ofSize: 24, weight: .regular))
+        let emojiButton = SKIMKeyButtonWithoutPopUpView(title: "🦌", width: 42, font: UIFont.systemFont(ofSize: 24, weight: .regular))
         rowStackViewLine3.addArrangedSubview(emojiButton)
         
         // Space Key
-        let spaceButton = SKIMKeyButton(title: "空格", width: 185, font: UIFont.systemFont(ofSize: 16, weight: .regular))
+        let spaceButton = SKIMKeyButtonWithoutPopUpView(title: "空格", width: 185, font: UIFont.systemFont(ofSize: 16, weight: .regular))
         spaceButton.addTarget(self, action: #selector(spaceKeyPressed), for: .touchUpInside)
         rowStackViewLine3.addArrangedSubview(spaceButton)
         
         // Return Key
-        let enterButton = SKIMKeyButton(title: "换行", width: 90, font: UIFont.systemFont(ofSize: 16, weight: .regular))
+        let enterButton = SKIMKeyButtonWithoutPopUpView(title: "换行", width: 90, font: UIFont.systemFont(ofSize: 16, weight: .regular))
         enterButton.addTarget(self, action: #selector(enterKeyPressed), for: .touchUpInside)
         rowStackViewLine3.addArrangedSubview(enterButton)
         

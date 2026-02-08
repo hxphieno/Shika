@@ -7,44 +7,19 @@
 
 import UIKit
 
-class SKIMKeyButton: UIButton {
+
+class SKIMKeyButton: SKIMKeyButtonWithoutPopUpView {
     
     private var popUpView: SKIMKeyPopUpView?
-    private var keyColor: UIColor
-    private var keyFont: UIFont
-    private var keyTitle: String
-    private var originalTitleColor: UIColor?
 
-    init(title: String,
+    override init(title: String,
          width: CGFloat = 33,
          height: CGFloat = 43,
          font: UIFont = UIFont.systemFont(ofSize: 26, weight: .regular),
          color: UIColor = .black,
          backgroundColor: UIColor = UIColor(white: 1, alpha: 1.0)) {
         
-        self.keyTitle = title
-        self.keyColor = color
-        self.keyFont = font
-        
-        super.init(frame: .zero)
-        
-        self.setTitle(title, for: .normal)
-        self.titleLabel?.font = font
-        self.setTitleColor(color, for: .normal)
-        self.backgroundColor = backgroundColor
-        
-        // Layout Constraints
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.widthAnchor.constraint(equalToConstant: width).isActive = true
-        self.heightAnchor.constraint(equalToConstant: height).isActive = true
-        
-        // Appearance
-        self.layer.cornerRadius = 5
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 0.2
-        self.layer.shadowOffset = CGSize(width: 0, height: 1)
-        self.layer.shadowRadius = 0
-        self.layer.masksToBounds = false
+        super.init(title: title, width: width, height: height, font: font, color: color, backgroundColor: backgroundColor)
         
         // Touch Events
         self.addTarget(self, action: #selector(touchDown), for: .touchDown)
@@ -85,6 +60,9 @@ class SKIMKeyButton: UIButton {
             view.keyBodyHeight = keyHeight
             view.cornerRadius = 10
             
+            // Critical for popup not being clipped by its own view bounds if we were to act weirdly
+            view.clipsToBounds = false
+            
             view.layer.shadowColor = UIColor.black.cgColor
             view.layer.shadowOpacity = 0.2
             view.layer.shadowOffset = CGSize(width: 0, height: 2)
@@ -101,6 +79,7 @@ class SKIMKeyButton: UIButton {
             self.popUpView = view
         }
         
+        // Add to the top-most window to avoid clipping by intermediate views
         if let window = self.window, let view = popUpView {
             let rect = self.convert(self.bounds, to: window)
             let popUpX = rect.midX - (view.frame.width / 2)
@@ -141,7 +120,7 @@ class SKIMKeyPopUpView: UIView {
         // Key Body Constraints
         let keyLeftX = (width - keyWidth) / 2
         let keyRightX = (width + keyWidth) / 2
-        let keyCornerRadius: CGFloat = 5.0 
+        let keyCornerRadius: CGFloat = 5.0
         
         // --- Start Drawing from Bottom-Left of the entire shape ---
         
