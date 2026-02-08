@@ -120,7 +120,7 @@ class SKInputView: UIView {
                 rowStackViewLine2.addArrangedSubview(rowStackView)
                 
                 // Backspace Key
-                let deleteButton = SKIMKeyButton(title: "⌫", width: 42)
+                let deleteButton = SKIMKeyButtonWithoutPopUpView(title: "⌫", width: 42)
                 deleteButton.addTarget(self, action: #selector(deleteKeyPressed(_:)), for: .touchUpInside)
                 
                 rowStackViewLine2.addArrangedSubview(deleteButton)

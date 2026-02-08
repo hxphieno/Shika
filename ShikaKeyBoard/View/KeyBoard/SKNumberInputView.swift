@@ -33,7 +33,7 @@ class SKNumberInputView: UIView {
         mainStackView.axis = .horizontal
         mainStackView.distribution = .fill
         mainStackView.alignment = .fill
-        mainStackView.spacing = 0 // Spacing handled internally
+        mainStackView.spacing = SKConfig.numberInputViewSpacing
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
         self.addSubview(mainStackView)
@@ -80,13 +80,13 @@ class SKNumberInputView: UIView {
         numberLine3Row.alignment = .fill
         numberLine3Row.distribution = .fill
         
-        let returnButton = SKIMKeyButton(title: "返回", width: 55, font: UIFont.systemFont(ofSize: 16, weight: .regular), backgroundColor: UIColor(white: 0.9, alpha: 1))
+        let returnButton = SKIMKeyButtonWithoutPopUpView(title: "返回", width: 55, font: UIFont.systemFont(ofSize: 16, weight: .regular), backgroundColor: UIColor(white: 0.9, alpha: 1))
         returnButton.addTarget(self, action: #selector(returnToAlphaPressed), for: .touchUpInside)
         
         let zeroButton = SKIMKeyButton(title: "0", width: 55, font: UIFont.systemFont(ofSize: 20, weight: .regular))
         zeroButton.addTarget(self, action: #selector(numberKeyPressed(_:)), for: .touchUpInside)
         
-        let deleteButton = SKIMKeyButton(title: "⌫", width: 55, font: UIFont.systemFont(ofSize: 20, weight: .regular))
+        let deleteButton = SKIMKeyButtonWithoutPopUpView(title: "⌫", width: 55, font: UIFont.systemFont(ofSize: 20, weight: .regular))
         deleteButton.addTarget(self, action: #selector(deleteKeyPressed), for: .touchUpInside)
         // TODO: Long press delete
         

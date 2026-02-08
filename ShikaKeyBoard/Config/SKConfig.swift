@@ -15,8 +15,8 @@ struct SKConfig {
     static let defaultCornerRadius: CGFloat = 5
     
     // MARK: - PopUp Dimensions
-    static let popUpScale: CGFloat = 1.6
-    static let popUpBubbleHeightScale: CGFloat = 1.1
+    static let popUpScale: CGFloat = 1.5
+    static let popUpBubbleHeightScale: CGFloat = 1.05
     static let popUpNeckHeightScale: CGFloat = 0.5
     static let popUpCornerRadius: CGFloat = 10
     
@@ -31,6 +31,7 @@ struct SKConfig {
     static let topBarHeight: CGFloat = 60
     static let keyboardVerticalSpacing: CGFloat = 12
     static let keyboardHorizontalSpacing: CGFloat = 6
+    static let numberInputViewSpacing: CGFloat = 10
 }
 
 struct SKUtils {

@@ -14,7 +14,6 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private var skNumberInputView: SKNumberInputView!
     private var inputSwitchButton: SKInputSwitchButton!
     private var topBarStackView: UIStackView!
-    private var separatorLine: SKSeparatorLine!
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -54,10 +53,6 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         topBarStackView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(topBarStackView)
         
-        // Setup Separator Line
-        separatorLine = SKSeparatorLine()
-        self.view.addSubview(separatorLine)
-        
         // Setup SKInputView
         skInputView = SKInputView()
         skInputView.eventHandler = self
@@ -79,19 +74,14 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
             topBarStackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             topBarStackView.heightAnchor.constraint(equalToConstant: SKConfig.topBarHeight),
             
-            // Separator Line: Below Top Bar, Left, Right
-            separatorLine.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
-            separatorLine.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: SKConfig.keyboardHorizontalSpacing),
-            separatorLine.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -SKConfig.keyboardHorizontalSpacing),
-            
             // Input View: Below Separator, Left, Right, Bottom
-            skInputView.topAnchor.constraint(equalTo: separatorLine.bottomAnchor),
+            skInputView.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
             skInputView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             skInputView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             skInputView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             
             // Number Input View: Same constraints as Input View
-            skNumberInputView.topAnchor.constraint(equalTo: separatorLine.bottomAnchor),
+            skNumberInputView.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
             skNumberInputView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             skNumberInputView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             skNumberInputView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)

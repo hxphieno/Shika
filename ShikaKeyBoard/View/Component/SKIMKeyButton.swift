@@ -40,13 +40,13 @@ class SKIMKeyButton: SKIMKeyButtonWithoutPopUpView {
     
     private func showPopUp() {
         if popUpView == nil {
-            let scale: CGFloat = 1.6
+            let scale: CGFloat = SKConfig.popUpScale
             let keyWidth = self.bounds.width
             let keyHeight = self.bounds.height
             
             let popUpWidth = keyWidth * scale
-            let bubbleHeight = keyHeight * 1.1
-            let neckHeight = keyHeight * 0.5
+            let bubbleHeight = keyHeight * SKConfig.popUpBubbleHeightScale
+            let neckHeight = keyHeight * SKConfig.popUpNeckHeightScale
             let totalHeight = bubbleHeight + neckHeight + keyHeight
             
             let frame = CGRect(x: 0, y: 0, width: popUpWidth, height: totalHeight)
@@ -58,7 +58,7 @@ class SKIMKeyButton: SKIMKeyButtonWithoutPopUpView {
             view.bubbleHeight = bubbleHeight
             view.neckHeight = neckHeight
             view.keyBodyHeight = keyHeight
-            view.cornerRadius = 10
+            view.cornerRadius = SKConfig.popUpCornerRadius
             
             view.layer.shadowColor = UIColor.black.cgColor
             view.layer.shadowOpacity = 0.2
