@@ -25,3 +25,10 @@ Pods/
 
 # macOS 系统文件
 .DS_Store
+
+# Pinned binary restored by scripts/prepare-rime.sh
+Vendor/Rime/librime-static.xcframework/
+
+# These are shipped offline dictionaries, not Xcode build output.
+!ShikaKeyBoard/Resources/RimeData.bundle/build/
+!ShikaKeyBoard/Resources/RimeData.bundle/build/**

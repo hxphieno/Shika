@@ -1,0 +1,36 @@
+__build_info:
+  rime_version: 1.17.0
+  timestamps:
+    default: 1790267102
+    default.custom: 0
+    shika_pinyin.custom: 0
+    shika_pinyin.schema: 1790267102
+engine:
+  processors:
+    - speller
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - abc_segmentor
+    - fallback_segmentor
+  translators:
+    - script_translator
+menu:
+  page_size: 8
+schema:
+  name: "中文全拼"
+  schema_id: shika_pinyin
+  version: 1.0
+speller:
+  algebra:
+    - "derive/^([nl])ue$/$1ve/"
+    - "abbrev/^([a-z]).+$/$1/"
+  alphabet: abcdefghijklmnopqrstuvwxyz
+  delimiter: " '"
+translator:
+  dictionary: pinyin_simp
+  enable_completion: true
+  enable_sentence: true
+  enable_user_dict: true
+  prism: shika_pinyin

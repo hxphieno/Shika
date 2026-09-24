@@ -1,0 +1,4 @@
+config_version: "1.0"
+schema_list:
+  - schema: shika_pinyin
+  - schema: shika_flypy
