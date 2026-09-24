@@ -1,124 +1,88 @@
-//
-//  KeyboardViewController.swift
-//  ShikaKeyBoard
-//
-//  Created by 分诺 on 2026/1/30.
-//
-
 import UIKit
 
+/// Owns scheme selection and the iOS text connection; views only emit key events.
 class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
+    private let chineseJapaneseView = SKChineseJapaneseKeyboardView()
+    private let shuangpinView = SKShuangpinKeyboardView()
+    private let numberView = SKNumberInputView()
+    private let languageButton = SKInputSwitchButton()
+    private let shuangpinLabel = UILabel()
+    private var currentScheme = SKInputScheme(rawValue:
+        UserDefaults.standard.string(forKey: SKInputScheme.preferenceKey) ?? "") ?? .chineseJapanese
+    private var currentLayout: SKKeyboardLayoutType = .alphabet
 
-    private var candidateBarView: CandidateBarView!
-    private var skInputView: SKInputView!
-    private var skNumberInputView: SKNumberInputView!
-    private var inputSwitchButton: SKInputSwitchButton!
-    private var topBarStackView: UIStackView!
-    
-    override func updateViewConstraints() {
-        super.updateViewConstraints()
-        // Add custom view sizing constraints here
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        // Use the centralized utility to fix popup clipping
-        SKUtils.disableClipping(for: self.view)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Setup SKInputSwitchButton
-        inputSwitchButton = SKInputSwitchButton()
-        inputSwitchButton.translatesAutoresizingMaskIntoConstraints = false
-        inputSwitchButton.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
-        inputSwitchButton.heightAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
-        
-        inputSwitchButton.stateChangeHandler = { [weak self] state in
-            self?.skInputView.currentLanguageState = state
-        }
-        
-        // Setup CandidateBarView
-        candidateBarView = CandidateBarView()
-        candidateBarView.translatesAutoresizingMaskIntoConstraints = false
-        candidateBarView.heightAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
-        
-        // Setup StackView
-        topBarStackView = UIStackView(arrangedSubviews: [inputSwitchButton, candidateBarView])
-        topBarStackView.axis = .horizontal
-        topBarStackView.alignment = .center
-        topBarStackView.distribution = .fill
-        topBarStackView.spacing = 0
-        topBarStackView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(topBarStackView)
-        
-        // Setup SKInputView
-        skInputView = SKInputView()
-        skInputView.eventHandler = self
-        skInputView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(skInputView)
-        
-        // Setup SKNumberInputView
-        skNumberInputView = SKNumberInputView()
-        skNumberInputView.eventHandler = self
-        skNumberInputView.translatesAutoresizingMaskIntoConstraints = false
-        skNumberInputView.isHidden = true // Hidden by default
-        self.view.addSubview(skNumberInputView)
-        
-        // Constraints
+        languageButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            // Top Bar StackView: Top, Left, Right, Height 40
-            topBarStackView.topAnchor.constraint(equalTo: self.view.topAnchor),
-            topBarStackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            topBarStackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            topBarStackView.heightAnchor.constraint(equalToConstant: SKConfig.topBarHeight),
-            
-            // Input View: Below Separator, Left, Right, Bottom
-            skInputView.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
-            skInputView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            skInputView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            skInputView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            
-            // Number Input View: Same constraints as Input View
-            skNumberInputView.topAnchor.constraint(equalTo: topBarStackView.bottomAnchor),
-            skNumberInputView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            skNumberInputView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            skNumberInputView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+            languageButton.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight),
+            languageButton.heightAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight)
         ])
-    }
-    
-    override func textWillChange(_ textInput: UITextInput?) {
-        // The app is about to change the document's contents. Perform any preparation here.
-    }
-    
-    override func textDidChange(_ textInput: UITextInput?) {
-        // The app has just changed the document's contents, the document context has been updated.
-    }
-    
-    // MARK: - SKKeyboardEventHandler
-    
-    func didTapKey(_ key: String) {
-        self.textDocumentProxy.insertText(key)
-    }
-    
-    func didTapDelete() {
-        self.textDocumentProxy.deleteBackward()
-    }
-    
-    func didTapNextKeyboard() {
-        self.advanceToNextInputMode()
-    }
-    
-    func didTapSwitchLayout(to layout: SKKeyboardLayoutType) {
-        switch layout {
-        case .alphabet:
-            skInputView.isHidden = false
-            skNumberInputView.isHidden = true
-        case .number:
-            skInputView.isHidden = true
-            skNumberInputView.isHidden = false
+        languageButton.stateChangeHandler = { [weak self] state in
+            self?.chineseJapaneseView.currentLanguageState = state
         }
+        shuangpinLabel.text = "双拼"
+        shuangpinLabel.font = .systemFont(ofSize: 16, weight: .medium)
+        shuangpinLabel.textColor = SKConfig.keyTitleColor
+        shuangpinLabel.textAlignment = .center
+        shuangpinLabel.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
+        shuangpinLabel.accessibilityLabel = "中文，小鹤双拼"
+
+        let topBar = UIStackView(arrangedSubviews: [languageButton, shuangpinLabel, CandidateBarView()])
+        topBar.axis = .horizontal
+        topBar.alignment = .center
+        topBar.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(topBar)
+        NSLayoutConstraint.activate([
+            topBar.topAnchor.constraint(equalTo: view.topAnchor),
+            topBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            topBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            topBar.heightAnchor.constraint(equalToConstant: SKConfig.topBarHeight)
+        ])
+        chineseJapaneseView.eventHandler = self
+        shuangpinView.eventHandler = self
+        numberView.eventHandler = self
+        for keyboard in [chineseJapaneseView, shuangpinView, numberView] as [UIView] {
+            keyboard.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(keyboard)
+            NSLayoutConstraint.activate([
+                keyboard.topAnchor.constraint(equalTo: topBar.bottomAnchor),
+                keyboard.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                keyboard.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                keyboard.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            ])
+        }
+        updateVisibleKeyboard()
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        SKUtils.disableClipping(for: view)
+    }
+
+    func didTapKey(_ key: String) { textDocumentProxy.insertText(key) }
+    func didTapDelete() { textDocumentProxy.deleteBackward() }
+    func didTapNextKeyboard() { advanceToNextInputMode() }
+
+    func didTapSwitchScheme() {
+        currentScheme = currentScheme.next
+        currentLayout = .alphabet
+        UserDefaults.standard.set(currentScheme.rawValue, forKey: SKInputScheme.preferenceKey)
+        updateVisibleKeyboard()
+        UIAccessibility.post(notification: .announcement,
+                             argument: currentScheme == .shuangpin ? "小鹤双拼" : "中日混合")
+    }
+
+    func didTapSwitchLayout(to layout: SKKeyboardLayoutType) {
+        currentLayout = layout
+        updateVisibleKeyboard()
+    }
+
+    private func updateVisibleKeyboard() {
+        chineseJapaneseView.isHidden = currentLayout != .alphabet || currentScheme != .chineseJapanese
+        shuangpinView.isHidden = currentLayout != .alphabet || currentScheme != .shuangpin
+        numberView.isHidden = currentLayout != .number
+        languageButton.isHidden = currentScheme != .chineseJapanese
+        shuangpinLabel.isHidden = currentScheme != .shuangpin
+    }
 }

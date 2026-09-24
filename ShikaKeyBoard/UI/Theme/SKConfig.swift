@@ -24,6 +24,8 @@ struct SKConfig {
     static let keyBackgroundColor: UIColor = UIColor(white: 1, alpha: 1.0)
     static let keyShadowColor: UIColor = .black
     static let keyTitleColor: UIColor = .black
+    static let keyHintColor: UIColor = UIColor(white: 0.35, alpha: 1)
+    static let keyInitialColor: UIColor = .systemBlue
     
     static let popUpShadowColor: UIColor = .black
     

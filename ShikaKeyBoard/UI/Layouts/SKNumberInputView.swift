@@ -102,7 +102,7 @@ class SKNumberInputView: UIView {
         // Make sure scroll view clips bounds so content doesn't overflow
         scrollView.clipsToBounds = true
         
-        let contentStackView = waterfallView(items: KeyboardLayout.punctuation)
+        let contentStackView = waterfallView(items: SKSymbolLayout.punctuation)
         scrollView.addSubview(contentStackView)
         contentStackView.translatesAutoresizingMaskIntoConstraints = false
         

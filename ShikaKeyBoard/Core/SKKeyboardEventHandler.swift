@@ -13,6 +13,7 @@ enum SKKeyboardLayoutType {
 }
 
 protocol SKKeyboardEventHandler: AnyObject {
+    func didTapSwitchScheme()
     func didTapKey(_ key: String)
     func didTapDelete()
     func didTapNextKeyboard()

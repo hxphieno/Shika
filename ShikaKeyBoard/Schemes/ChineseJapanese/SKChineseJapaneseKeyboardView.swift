@@ -1,5 +1,5 @@
 //
-//  SKInputView.swift
+//  SKChineseJapaneseKeyboardView.swift
 //  ShikaKeyBoard
 //
 //  Created by ShiKa on 2026/1/30.
@@ -7,11 +7,12 @@
 
 import UIKit
 
-// SKInputViewDelegate removed in favor of SKKeyboardDelegate
-
-class SKInputView: UIView {
+class SKChineseJapaneseKeyboardView: UIView {
     
-    weak var eventHandler: SKKeyboardEventHandler?
+    weak var eventHandler: SKKeyboardEventHandler? {
+        didSet { footerView?.eventHandler = eventHandler }
+    }
+    private var footerView: SKKeyboardFooterView?
     
     // Internal state for Shift key
     private enum CapsLockState {
@@ -65,7 +66,7 @@ class SKInputView: UIView {
     private func updateMainKeyboardStackView() {
         mainStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
         
-        let layout = (capsLockState == .lower) ? KeyboardLayout.lowercase : KeyboardLayout.uppercase
+        let layout = (capsLockState == .lower) ? SKChineseJapaneseLayout.lowercase : SKChineseJapaneseLayout.uppercase
         
         for (index, row) in layout.enumerated() {
             let rowStackView = UIStackView()
@@ -86,7 +87,8 @@ class SKInputView: UIView {
             
             for key in keys {
                 let keyButton = SKIMKeyButton(title: key)
-                if KeyboardLayout.lowCaseLetter.contains(key) {
+                keyButton.constraints.first { $0.firstAttribute == .width }?.isActive = false
+                if SKChineseJapaneseLayout.lowCaseLetter.contains(key) {
                    keyButton.titleEdgeInsets = UIEdgeInsets(top: -2, left: 0, bottom: 2, right: 0)
                 }
                 keyButton.addTarget(self, action: #selector(keyPressed(_:)), for: .touchUpInside)
@@ -99,7 +101,7 @@ class SKInputView: UIView {
                 // Third Row (Z line) with Shift and Backspace
                 let rowStackViewLine2 = UIStackView()
                 rowStackViewLine2.axis = .horizontal
-                rowStackViewLine2.distribution = .equalSpacing
+                rowStackViewLine2.distribution = .fill
                 rowStackViewLine2.spacing = 6
                 
                 // Shift Key
@@ -129,33 +131,10 @@ class SKInputView: UIView {
             }
         }
         
-        // Fourth Row (Numbers, Emoji, Space, Return)
-        let rowStackViewLine3 = UIStackView()
-        rowStackViewLine3.axis = .horizontal
-        rowStackViewLine3.distribution = .equalSpacing
-        rowStackViewLine3.alignment = .fill
-        rowStackViewLine3.spacing = 6
-        
-        // 123 Key
-        let numberButton = SKIMKeyButtonWithoutPopUpView(title: "123", width: 42, font: UIFont.systemFont(ofSize: 16, weight: .regular))
-        numberButton.addTarget(self, action: #selector(numberKeyPressed), for: .touchUpInside)
-        rowStackViewLine3.addArrangedSubview(numberButton)
-        
-        // Emoji Key
-        let emojiButton = SKIMKeyButtonWithoutPopUpView(title: "🦌", width: 42, font: UIFont.systemFont(ofSize: 24, weight: .regular))
-        rowStackViewLine3.addArrangedSubview(emojiButton)
-        
-        // Space Key
-        let spaceButton = SKIMKeyButtonWithoutPopUpView(title: "空格", width: 185, font: UIFont.systemFont(ofSize: 16, weight: .regular))
-        spaceButton.addTarget(self, action: #selector(spaceKeyPressed), for: .touchUpInside)
-        rowStackViewLine3.addArrangedSubview(spaceButton)
-        
-        // Return Key
-        let enterButton = SKIMKeyButtonWithoutPopUpView(title: "换行", width: 90, font: UIFont.systemFont(ofSize: 16, weight: .regular))
-        enterButton.addTarget(self, action: #selector(enterKeyPressed), for: .touchUpInside)
-        rowStackViewLine3.addArrangedSubview(enterButton)
-        
-        mainStackView.addArrangedSubview(rowStackViewLine3)
+        let footer = SKKeyboardFooterView(schemeTitle: "中日混合")
+        footer.eventHandler = eventHandler
+        footerView = footer
+        mainStackView.addArrangedSubview(footer)
     }
 
     // MARK: - Actions
@@ -184,15 +163,4 @@ class SKInputView: UIView {
         eventHandler?.didTapDelete()
     }
     
-    @objc private func numberKeyPressed() {
-        eventHandler?.didTapSwitchLayout(to: .number)
-    }
-    
-    @objc private func spaceKeyPressed() {
-        eventHandler?.didTapKey(" ")
-    }
-    
-    @objc private func enterKeyPressed() {
-        eventHandler?.didTapKey("\n")
-    }
 }

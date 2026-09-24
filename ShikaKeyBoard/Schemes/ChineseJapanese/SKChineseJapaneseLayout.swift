@@ -1,5 +1,5 @@
 //
-//  KeyboardLayout.swift
+//  SKChineseJapaneseLayout.swift
 //  ShikaKeyBoard
 //
 //  Created by ShiKa on 2026/1/30.
@@ -12,7 +12,7 @@ enum KeyboardMode {
     case uppercase
 }
 
-struct KeyboardLayout {
+struct SKChineseJapaneseLayout {
     
     // keysLayout
     static let lowercase: [[String]] = [
@@ -33,8 +33,4 @@ struct KeyboardLayout {
         "k","l","m","n","o","p","q","r",
         "s","t","u","v","w","x","y","z"]
 
-    static let punctuation: [String] = [
-        "，", "。", "：", "？", "「」", "【】", "《》", "！", "@", "#", "¥", "“”", "……",
-        "&", "*", "（）", "——", "｜", "、", "；", "：", "‘’"
-    ]
 }
