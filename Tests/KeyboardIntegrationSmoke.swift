@@ -20,7 +20,8 @@ final class TestKeyboardController: KeyboardViewController {
 }
 func descendants(_ view: UIView) -> [UIView] { [view] + view.subviews.flatMap(descendants) }
 func tap(_ title: String, in view: UIView) {
-    let key = descendants(view).compactMap { $0 as? UIButton }.first { $0.title(for: .normal) == title }!
+    let key = descendants(view).compactMap { $0 as? UIButton }.first { ($0 as? SKMainKeyButton)?.keyTitle == title || $0.title(for: .normal) == title }!
+    key.sendActions(for: .touchDown)
     key.sendActions(for: .touchUpInside)
 }
 final class SmokeApp: UIResponder, UIApplicationDelegate {
@@ -43,7 +44,7 @@ final class SmokeApp: UIResponder, UIApplicationDelegate {
         host.addChild(controller)
         host.view.addSubview(controller.view)
         controller.didMove(toParent: host)
-        controller.view.frame = CGRect(x: 0, y: 250, width: 390, height: 281)
+        controller.view.frame = CGRect(x: 0, y: 250, width: 390, height: 276)
         controller.view.backgroundColor = UIColor(white: 0.85, alpha: 1)
         controller.view.layoutIfNeeded()
         let coldLoad = Date().timeIntervalSince(start)

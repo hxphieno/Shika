@@ -1,0 +1,2 @@
+PASS actual UIKit keys -> Rime -> proxy; dual schemas, all language states, selection/space/newline/delete/numeric/scheme flush. Cold load: 0.3443230390548706s. Output: 你好中你好
+你好1中国你好你好你好

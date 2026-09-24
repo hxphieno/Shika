@@ -1,37 +1,38 @@
 import UIKit
 
-/// Shared controls, independent of language and encoding scheme.
-final class SKKeyboardFooterView: UIStackView {
+/// Main-keyboard controls. The custom number/symbol page uses its own controls.
+final class SKKeyboardFooterView: UIView {
     weak var eventHandler: SKKeyboardEventHandler?
+    var keyFrames: [CGRect] = []
+    private var keys: [SKMainKeyButton] = []
 
     init(schemeTitle: String) {
         super.init(frame: .zero)
-        axis = .horizontal
-        alignment = .fill
-        distribution = .fill
-        spacing = SKConfig.keyboardHorizontalSpacing
-
-        let number = key("123", width: 42, action: #selector(showNumbers))
-        let scheme = key("🦌", width: 42, action: #selector(switchScheme), fontSize: 24)
+        let number = SKMainKeyButton(title: "123", role: .function)
+        number.addTarget(self, action: #selector(showNumbers), for: .touchUpInside)
+        let scheme = SKMainKeyButton(title: "🦌", role: .function)
+        scheme.titleLabel?.font = .systemFont(ofSize: 24)
         scheme.accessibilityLabel = "切换输入方案"
         scheme.accessibilityHint = schemeTitle == "中日混合" ? "切换到双拼" : "切换到中日混合"
-        let space = key(schemeTitle, width: 185, action: #selector(insertSpace))
+        scheme.addTarget(self, action: #selector(switchScheme), for: .touchUpInside)
+        let space = SKMainKeyButton(title: schemeTitle, role: .space)
         space.accessibilityLabel = "空格，当前方案：\(schemeTitle)"
-        space.constraints.first { $0.firstAttribute == .width }?.isActive = false
-        space.widthAnchor.constraint(greaterThanOrEqualToConstant: 70).isActive = true
-        let enter = key("换行", width: 90, action: #selector(insertNewline))
-        [number, scheme, space, enter].forEach { addArrangedSubview($0) }
+        space.addTarget(self, action: #selector(insertSpace), for: .touchUpInside)
+        let enter = SKMainKeyButton(title: "换行", role: .function)
+        enter.useSymbol("return", label: "换行")
+        // Keep the logical title for existing keyboard-action tests and VoiceOver.
+        enter.addTarget(self, action: #selector(insertNewline), for: .touchUpInside)
+        keys = [number, scheme, space, enter]
+        keys.forEach(addSubview)
     }
-
-    required init(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
-
-    private func key(_ title: String, width: CGFloat, action: Selector, fontSize: CGFloat = 16) -> UIButton {
-        let button = SKIMKeyButtonWithoutPopUpView(title: title, width: width,
-                                                  font: .systemFont(ofSize: fontSize))
-        button.addTarget(self, action: action, for: .touchUpInside)
-        return button
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        for (key, frame) in zip(keys, keyFrames) { key.frame = frame }
     }
-
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        keys.contains { $0.point(inside: convert(point, to: $0), with: event) }
+    }
     @objc private func showNumbers() { eventHandler?.didTapSwitchLayout(to: .number) }
     @objc private func switchScheme() { eventHandler?.didTapSwitchScheme() }
     @objc private func insertSpace() { eventHandler?.didTapKey(" ") }

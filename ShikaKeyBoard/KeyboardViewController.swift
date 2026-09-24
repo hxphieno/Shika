@@ -13,6 +13,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private var currentScheme = SKInputScheme(rawValue:
         UserDefaults.standard.string(forKey: SKInputScheme.preferenceKey) ?? "") ?? .chineseJapanese
     private var currentLayout: SKKeyboardLayoutType = .alphabet
+    private var keyboardBottomConstraints: [NSLayoutConstraint] = []
+    private var mainHeightConstraint: NSLayoutConstraint?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,16 +58,20 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
             NSLayoutConstraint.activate([
                 keyboard.topAnchor.constraint(equalTo: topBar.bottomAnchor),
                 keyboard.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-                keyboard.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-                keyboard.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                keyboard.trailingAnchor.constraint(equalTo: view.trailingAnchor)
             ])
+            keyboardBottomConstraints.append(keyboard.bottomAnchor.constraint(equalTo: view.bottomAnchor))
         }
+        mainHeightConstraint = chineseJapaneseView.heightAnchor.constraint(equalToConstant: SKMainKeyboardMetrics.portraitHeight)
+        mainHeightConstraint?.priority = .init(999)
         updateVisibleKeyboard()
         loadEngine()
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        let mainHeight: CGFloat = traitCollection.verticalSizeClass == .compact ? 162 : SKMainKeyboardMetrics.portraitHeight
+        if mainHeightConstraint?.constant != mainHeight { mainHeightConstraint?.constant = mainHeight }
         SKUtils.disableClipping(for: view)
     }
 
@@ -141,5 +147,10 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         numberView.isHidden = currentLayout != .number
         languageButton.isHidden = currentScheme != .chineseJapanese
         shuangpinLabel.isHidden = currentScheme != .shuangpin
+        // Hidden legacy number-page constraints must not stretch the measured alphabet rows.
+        for (index, constraint) in keyboardBottomConstraints.enumerated() {
+            constraint.isActive = index == 2 ? currentLayout == .number : currentLayout == .alphabet
+        }
+        mainHeightConstraint?.isActive = currentLayout == .alphabet
     }
 }

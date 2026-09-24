@@ -1,0 +1,7652 @@
+[
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 37.799999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 69.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 100.40000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 131.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 163,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 194.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 225.59999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 256.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 288.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 22.149999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 147.34999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 209.95000000000002,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 272.55000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 147.35000000000002,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 209.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 277.59125964010281,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 37.799999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 69.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 100.40000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 131.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 163,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 194.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 225.59999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 256.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 288.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 37.799999999999997,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 69.099999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 100.40000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 131.69999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 163,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 194.30000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 225.59999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 256.89999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 288.19999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 147.35000000000002,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 209.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 277.59125964010281,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 37.799999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 69.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 100.40000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 131.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 163,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 194.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 225.59999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 256.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 288.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 22.149999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 147.34999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 209.95000000000002,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 272.55000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 147.35000000000002,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 209.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 277.59125964010281,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 43.299999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 80.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 116.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 153.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 190.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 227.29999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 264.09999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 300.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 337.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 24.899999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 208.90000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 282.49999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 319.29999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 208.89999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 282.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 326.1580976863753,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 43.299999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 80.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 116.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 153.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 190.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 227.29999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 264.09999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 300.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 337.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 43.299999999999997,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 80.099999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 116.89999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 153.69999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 190.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 227.29999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 264.09999999999997,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 300.89999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 337.69999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 208.89999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 282.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 326.1580976863753,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 43.299999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 80.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 116.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 153.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 190.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 227.29999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 264.09999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 300.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 337.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 24.899999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 208.90000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 282.49999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 319.29999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 208.89999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 282.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 326.1580976863753,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 46,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 85.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 125,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 164.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 204,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 243.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 283,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 322.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 362,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 26.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 342.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 350,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 46,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 85.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 125,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 164.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 204,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 243.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 283,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 322.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 362,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 6.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 46,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 85.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 125,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 164.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 204,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 243.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 283,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 322.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 362,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 350,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 46,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 85.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 125,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 164.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 204,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 243.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 283,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 322.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 362,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 26.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 342.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 350,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 49.79999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 93.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 136.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 179.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 223,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 266.29999999999995,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 309.59999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 352.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 396.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 28.149999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 114.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 244.65000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999993,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 374.54999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 114.74999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 244.64999999999995,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 383.55526992287923,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 49.79999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 93.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 136.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 179.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 223,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 266.29999999999995,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 309.59999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 352.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 396.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 6.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 49.79999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 93.099999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 136.39999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 179.69999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 223,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 266.29999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 309.59999999999997,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 352.89999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 396.19999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 114.74999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 244.64999999999995,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 383.55526992287923,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 49.79999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 93.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 136.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 179.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 223,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 266.29999999999995,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 309.59999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 352.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 396.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 28.149999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 114.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 244.65000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999993,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 374.54999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 114.74999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 244.64999999999995,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-light",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 383.55526992287923,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "q",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "w",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 93.200000000000017,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "e",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 179.90000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "r",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 266.60000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "t",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 353.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "y",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 440,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "u",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 526.70000000000005,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "i",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 613.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "o",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 700.10000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "p",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 786.80000000000007,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "a",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 49.850000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "s",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "d",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "f",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "g",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "h",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "j",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 570.05000000000007,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "k",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "l",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 743.45000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 6.5,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "z",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "x",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "c",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "v",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "b",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "n",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 570.04999999999995,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "m",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-light",
+    "height" : 29.5,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 766.79177377892029,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "q",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "w",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 93.200000000000017,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "e",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 179.90000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "r",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 266.60000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "t",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 353.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "y",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 440,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "u",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 526.70000000000005,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "i",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 613.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "o",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 700.10000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "p",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 786.80000000000007,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "a",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 6.5,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "s",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 93.200000000000017,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "d",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 179.90000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "f",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 266.60000000000002,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "g",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 353.30000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "h",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 440,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "j",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 526.70000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "k",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 613.39999999999998,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "l",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 700.10000000000002,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 786.80000000000007,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 6.5,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "z",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "x",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "c",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "v",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "b",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "n",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 570.04999999999995,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "m",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-light",
+    "height" : 29.5,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 766.79177377892029,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "q",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "w",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 93.200000000000017,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "e",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 179.90000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "r",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 266.60000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "t",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 353.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "y",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 440,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "u",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 526.70000000000005,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "i",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 613.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "o",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 700.10000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "p",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 786.80000000000007,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "a",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 49.850000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "s",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "d",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "f",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "g",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "h",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "j",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 570.05000000000007,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "k",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "l",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 743.45000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 6.5,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "z",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "x",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "c",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "v",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "b",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "n",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 570.04999999999995,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "m",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-light",
+    "height" : 29.5,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 766.79177377892029,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 37.799999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 69.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 100.40000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 131.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 163,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 194.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 225.59999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 256.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 288.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 22.149999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 147.34999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 209.95000000000002,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 272.55000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 147.35000000000002,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 209.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-320-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 277.59125964010281,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 37.799999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 69.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 100.40000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 131.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 163,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 194.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 225.59999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 256.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 288.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 37.799999999999997,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 69.099999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 100.40000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 131.69999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 163,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 194.30000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 225.59999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 256.89999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 288.19999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 147.35000000000002,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 209.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-320-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 277.59125964010281,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 37.799999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 69.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 100.40000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 131.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 163,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 194.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 225.59999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 256.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 25.300000000000001,
+    "x" : 288.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 22.149999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 147.34999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 209.95000000000002,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 25.300000000000001,
+    "x" : 272.55000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 53.45000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 84.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 116.05000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 147.35000000000002,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 178.65000000000001,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 209.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 25.300000000000001,
+    "x" : 241.25,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-320-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 35.908740359897173,
+    "x" : 277.59125964010281,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 43.299999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 80.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 116.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 153.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 190.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 227.29999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 264.09999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 300.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 337.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 24.899999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 208.90000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 282.49999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 319.29999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 208.89999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 282.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-375-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 326.1580976863753,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 43.299999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 80.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 116.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 153.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 190.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 227.29999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 264.09999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 300.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 337.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 43.299999999999997,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 80.099999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 116.89999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 153.69999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 190.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 227.29999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 264.09999999999997,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 300.89999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 337.69999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 208.89999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 282.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-375-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 326.1580976863753,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 6.4999999999999982,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 43.299999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 80.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 116.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 153.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 190.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 227.29999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 264.09999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 300.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 30.800000000000001,
+    "x" : 337.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 24.899999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 208.90000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 282.49999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 30.800000000000001,
+    "x" : 319.29999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 61.699999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 98.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 135.29999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 172.09999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 208.89999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 245.69999999999996,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 30.800000000000001,
+    "x" : 282.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-375-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 42.341902313624679,
+    "x" : 326.1580976863753,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 46,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 85.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 125,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 164.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 204,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 243.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 283,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 322.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 362,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 26.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 342.25,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-402-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 350,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 46,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 85.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 125,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 164.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 204,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 243.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 283,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 322.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 362,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 6.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 46,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 85.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 125,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 164.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 204,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 243.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 283,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 322.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 362,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-402-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 350,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 46,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 85.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 125,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 164.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 204,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 243.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 283,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 322.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 33.5,
+    "x" : 362,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 26.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 33.5,
+    "x" : 342.25,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 65.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 105.25,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 144.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 184.25,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 223.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 263.25,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 33.5,
+    "x" : 302.75,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-402-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 45.5,
+    "x" : 350,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 49.79999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 93.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 136.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 179.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 223,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 266.29999999999995,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 309.59999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 352.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 396.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 28.149999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 114.75,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 244.65000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999993,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 374.54999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 114.74999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 244.64999999999995,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-440-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 383.55526992287923,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 49.79999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 93.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 136.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 179.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 223,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 266.29999999999995,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 309.59999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 352.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 396.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 6.5,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 49.79999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 93.099999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 136.39999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 179.69999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 223,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 266.29999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 309.59999999999997,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 352.89999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 396.19999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 114.74999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 244.64999999999995,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 114
+  },
+  {
+    "case" : "japanese-440-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 383.55526992287923,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "q",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "w",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 49.79999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "e",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 93.099999999999994,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "r",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 136.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "t",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 179.69999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "y",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 223,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "u",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 266.29999999999995,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "i",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 309.59999999999997,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "o",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 352.89999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "p",
+    "row" : 0,
+    "width" : 37.299999999999997,
+    "x" : 396.19999999999999,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "a",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 28.149999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "s",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "d",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 114.75,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "f",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "g",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999999,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "h",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 244.65000000000001,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "j",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999993,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "k",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "l",
+    "row" : 1,
+    "width" : 37.299999999999997,
+    "x" : 374.54999999999995,
+    "y" : 60
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 6.5,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "z",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 71.449999999999989,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "x",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 114.74999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "c",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 158.04999999999998,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "v",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 201.34999999999997,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "b",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 244.64999999999995,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "n",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 287.94999999999999,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "m",
+    "row" : 2,
+    "width" : 37.299999999999997,
+    "x" : 331.24999999999994,
+    "y" : 114
+  },
+  {
+    "case" : "shuangpin-440-dark",
+    "height" : 43,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 49.944730077120823,
+    "x" : 383.55526992287923,
+    "y" : 114
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "q",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "w",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 93.200000000000017,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "e",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 179.90000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "r",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 266.60000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "t",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 353.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "y",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 440,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "u",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 526.70000000000005,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "i",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 613.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "o",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 700.10000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "p",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 786.80000000000007,
+    "y" : 6
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "a",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 49.850000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "s",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "d",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "f",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "g",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "h",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "j",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 570.05000000000007,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "k",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "l",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 743.45000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 6.5,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "z",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "x",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "c",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "v",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "b",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "n",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 570.04999999999995,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "m",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 87
+  },
+  {
+    "case" : "chinese-874-dark",
+    "height" : 29.5,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 766.79177377892029,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "q",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "w",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 93.200000000000017,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "e",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 179.90000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "r",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 266.60000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "t",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 353.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "y",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 440,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "u",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 526.70000000000005,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "i",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 613.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "o",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 700.10000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "p",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 786.80000000000007,
+    "y" : 6
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "a",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 6.5,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "s",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 93.200000000000017,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "d",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 179.90000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "f",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 266.60000000000002,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "g",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 353.30000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "h",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 440,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "j",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 526.70000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "k",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 613.39999999999998,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "l",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 700.10000000000002,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "ー",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 786.80000000000007,
+    "y" : 46.5
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 6.5,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "z",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "x",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "c",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "v",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "b",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "n",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 570.04999999999995,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "m",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 87
+  },
+  {
+    "case" : "japanese-874-dark",
+    "height" : 29.5,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 766.79177377892029,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "q",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 6.5,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "w",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 93.200000000000017,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "e",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 179.90000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "r",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 266.60000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "t",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 353.30000000000001,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "y",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 440,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "u",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 526.70000000000005,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "i",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 613.39999999999998,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "o",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 700.10000000000002,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "p",
+    "row" : 0,
+    "width" : 80.700000000000003,
+    "x" : 786.80000000000007,
+    "y" : 6
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "a",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 49.850000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "s",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "d",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "f",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "g",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "h",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "j",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 570.05000000000007,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "k",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "l",
+    "row" : 1,
+    "width" : 80.700000000000003,
+    "x" : 743.45000000000005,
+    "y" : 46.5
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "⇧",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 6.5,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "z",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 136.55000000000001,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "x",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 223.25000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "c",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 309.95000000000005,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "v",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 396.65000000000003,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "b",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 483.35000000000002,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "n",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 570.04999999999995,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "m",
+    "row" : 2,
+    "width" : 80.700000000000003,
+    "x" : 656.75,
+    "y" : 87
+  },
+  {
+    "case" : "shuangpin-874-dark",
+    "height" : 29.5,
+    "key" : "⌫",
+    "row" : 2,
+    "width" : 100.7082262210797,
+    "x" : 766.79177377892029,
+    "y" : 87
+  }
+]

@@ -1,104 +1,61 @@
 import UIKit
 
-/// Chinese-only keyboard. Its layout and state do not depend on the Japanese modes.
-final class SKShuangpinKeyboardView: UIView {
-    weak var eventHandler: SKKeyboardEventHandler? {
-        didSet { footer.eventHandler = eventHandler }
-    }
-
+/// Chinese-only scheme; shares main-key geometry, not Chinese/Japanese language state.
+final class SKShuangpinKeyboardView: SKMainKeyboardSurface {
+    weak var eventHandler: SKKeyboardEventHandler? { didSet { footer?.eventHandler = eventHandler } }
     private enum ShiftState { case lower, upper, locked }
     private var shiftState: ShiftState = .lower
+    private var lastShiftTapTime: CFTimeInterval?
     private var letterButtons: [SKAnnotatedKeyButton] = []
-    private let shift = SKIMKeyButtonWithoutPopUpView(title: "⇧", width: 42)
-    private let footer = SKKeyboardFooterView(schemeTitle: "双拼")
+    private let shift = SKMainKeyButton(title: "⇧", role: .function)
+    private let delete = SKMainKeyButton(title: "⌫", role: .function)
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let stack = UIStackView()
-        stack.axis = .vertical
-        stack.spacing = SKConfig.keyboardVerticalSpacing
-        stack.distribution = .fillEqually
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(stack)
-        NSLayoutConstraint.activate([
-            stack.topAnchor.constraint(equalTo: topAnchor, constant: 8),
-            stack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 3),
-            stack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -3),
-            stack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5)
-        ])
-
-        for (index, letters) in SKShuangpinLayout.rows.enumerated() {
-            let row = UIStackView()
-            row.axis = .horizontal
-            row.spacing = SKConfig.keyboardHorizontalSpacing
-            row.distribution = .fillEqually
-            for letter in letters {
-                let key = SKAnnotatedKeyButton(letter: String(letter),
-                    initial: SKShuangpinLayout.initials[letter],
-                    final: SKShuangpinLayout.finals[letter] ?? "")
-                key.constraints.first { $0.firstAttribute == .width }?.isActive = false
+        let rows = SKShuangpinLayout.rows.map { row in
+            row.map { letter -> SKMainKeyButton in
+                let key = SKAnnotatedKeyButton(letter: String(letter), initial: SKShuangpinLayout.initials[letter], final: SKShuangpinLayout.finals[letter] ?? "")
                 key.accessibilityIdentifier = "shuangpin.\(letter)"
                 key.addTarget(self, action: #selector(typeLetter(_:)), for: .touchUpInside)
                 letterButtons.append(key)
-                row.addArrangedSubview(key)
-            }
-            if index == 2 {
-                let outer = UIStackView()
-                outer.spacing = SKConfig.keyboardHorizontalSpacing
-                outer.axis = .horizontal
-                outer.addArrangedSubview(shift)
-                outer.addArrangedSubview(row)
-                let delete = SKIMKeyButtonWithoutPopUpView(title: "⌫", width: 42)
-                delete.accessibilityLabel = "删除"
-                delete.addTarget(self, action: #selector(deleteBackward), for: .touchUpInside)
-                outer.addArrangedSubview(delete)
-                stack.addArrangedSubview(outer)
-            } else {
-                if index == 1 {
-                    row.isLayoutMarginsRelativeArrangement = true
-                    row.layoutMargins = UIEdgeInsets(top: 0, left: 19.5, bottom: 0, right: 19.5)
-                }
-                stack.addArrangedSubview(row)
+                return key
             }
         }
-        stack.addArrangedSubview(footer)
-
-        // Keep one stable Shift button so recognizing the second tap survives state updates.
-        let single = UITapGestureRecognizer(target: self, action: #selector(toggleShift))
-        let double = UITapGestureRecognizer(target: self, action: #selector(lockShift))
-        double.numberOfTapsRequired = 2
-        single.require(toFail: double)
+        footer = SKKeyboardFooterView(schemeTitle: "双拼")
+        delete.useSymbol("delete.left", label: "删除")
+        delete.onPress = { [weak self] in self?.eventHandler?.didTapDelete() }
+        delete.onRepeat = { [weak self] in self?.eventHandler?.didTapDelete() }
+        keyRows = [rows[0], rows[1], [shift] + rows[2] + [delete]]
+        shift.addTarget(self, action: #selector(toggleShift), for: .touchUpInside)
         let hold = UILongPressGestureRecognizer(target: self, action: #selector(holdShift(_:)))
-        shift.addGestureRecognizer(single)
-        shift.addGestureRecognizer(double)
         shift.addGestureRecognizer(hold)
-        shift.accessibilityLabel = "切换大小写"
+        updateShift()
     }
-
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
-
     @objc private func typeLetter(_ sender: SKAnnotatedKeyButton) {
-        // Hints are labels only; until an engine is connected, emit the actual key.
+        lastShiftTapTime = nil
         eventHandler?.didTapKey(sender.keyTitle)
         if shiftState == .upper { shiftState = .lower; updateShift() }
     }
-
-    @objc private func deleteBackward() { eventHandler?.didTapDelete() }
     @objc private func toggleShift() {
-        shiftState = shiftState == .lower ? .upper : .lower
+        let now = CACurrentMediaTime()
+        if shiftState == .locked {
+            shiftState = .lower
+            lastShiftTapTime = nil
+        } else if let previous = lastShiftTapTime, now - previous <= 0.3 {
+            shiftState = .locked
+            lastShiftTapTime = nil
+        } else {
+            shiftState = shiftState == .lower ? .upper : .lower
+            lastShiftTapTime = now
+        }
         updateShift()
     }
-    @objc private func lockShift() { shiftState = .locked; updateShift() }
-    @objc private func holdShift(_ gesture: UILongPressGestureRecognizer) {
-        if gesture.state == .began { lockShift() }
-    }
-
+    @objc private func lockShift() { lastShiftTapTime = nil; shiftState = .locked; updateShift() }
+    @objc private func holdShift(_ gesture: UILongPressGestureRecognizer) { if gesture.state == .began { lockShift() } }
     private func updateShift() {
-        shift.setTitle(shiftState == .lower ? "⇧" : "⇪", for: .normal)
+        shift.useSymbol(shiftState == .locked ? "capslock.fill" : (shiftState == .upper ? "shift.fill" : "shift"), label: "切换大小写")
         shift.accessibilityValue = shiftState == .locked ? "大写锁定" : (shiftState == .upper ? "大写" : "小写")
-        for button in letterButtons {
-            button.keyTitle = shiftState == .lower ? button.keyTitle.lowercased() : button.keyTitle.uppercased()
-            button.setTitle(button.keyTitle, for: .normal)
-        }
+        for key in letterButtons { key.keyTitle = shiftState == .lower ? key.keyTitle.lowercased() : key.keyTitle.uppercased() }
     }
 }

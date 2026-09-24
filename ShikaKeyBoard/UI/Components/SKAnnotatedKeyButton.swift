@@ -1,17 +1,18 @@
 import UIKit
 
 /// Reuses the normal key's appearance and popup, with optional phonetic hints.
-final class SKAnnotatedKeyButton: SKIMKeyButton {
+final class SKAnnotatedKeyButton: SKMainKeyButton {
     private let initialInset: CGFloat
 
     init(letter: String, initial: String?, final: String) {
         initialInset = initial == nil ? 0 : 12
-        super.init(title: letter, font: .systemFont(ofSize: 22))
+        super.init(title: letter)
+        titleLabel?.font = .systemFont(ofSize: 22)
         titleLabel?.textAlignment = .center
         let hint = UILabel()
         hint.text = final
         hint.font = .systemFont(ofSize: 10, weight: .medium)
-        hint.textColor = SKConfig.keyHintColor
+        hint.textColor = UIColor.secondaryLabel
         hint.textAlignment = .center
         hint.numberOfLines = 2
         hint.adjustsFontSizeToFitWidth = true

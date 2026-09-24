@@ -9,7 +9,7 @@ sdk=subprocess.check_output(['xcrun','--sdk','iphonesimulator','--show-sdk-path'
 slice=root/'Vendor/Rime/librime-static.xcframework/ios-arm64_x86_64-simulator'
 subprocess.run(['xcrun','clang','-fobjc-arc','-target','arm64-apple-ios26.2-simulator','-isysroot',sdk,'-I',str(slice/'Headers'),'-c','ShikaKeyBoard/Engine/SKRimeSession.m','-o',str(work/'bridge.o')],check=True)
 files=[str(p) for p in pathlib.Path('ShikaKeyBoard').rglob('*.swift')]
-subprocess.run(['xcrun','swiftc','-sdk',sdk,'-target','arm64-apple-ios26.2-simulator','-module-name','ShikaSmoke','-import-objc-header','ShikaKeyBoard/Engine/ShikaKeyBoard-Bridging-Header.h']+files+['Tests/KeyboardIntegrationSmoke.swift',str(work/'bridge.o'),str(slice/'librime.a'),'-lc++','-liconv','-o',str(app/'ShikaSmoke')],check=True)
+subprocess.run(['xcrun','--sdk','iphonesimulator','swiftc','-sdk',sdk,'-target','arm64-apple-ios26.2-simulator','-module-name','ShikaSmoke','-import-objc-header','ShikaKeyBoard/Engine/ShikaKeyBoard-Bridging-Header.h']+files+[os.environ.get('SHIKA_SMOKE_SOURCE','Tests/KeyboardIntegrationSmoke.swift'),str(work/'bridge.o'),str(slice/'librime.a'),'-lc++','-liconv','-o',str(app/'ShikaSmoke')],check=True)
 (app/'Info.plist').write_bytes(plistlib.dumps({'CFBundleIdentifier':'local.shika.integration','CFBundleExecutable':'ShikaSmoke','CFBundleName':'ShikaSmoke','CFBundlePackageType':'APPL','CFBundleVersion':'1','CFBundleShortVersionString':'1.0','MinimumOSVersion':'26.2','UIDeviceFamily':[1],'UILaunchScreen':{}}))
 shutil.copytree('ShikaKeyBoard/Resources/RimeData.bundle',app/'RimeData.bundle')
 device=sys.argv[1] if len(sys.argv)>1 else 'booted'
@@ -20,7 +20,7 @@ result=container/'Documents/result.txt'
 result.unlink(missing_ok=True)
 subprocess.run(['xcrun','simctl','launch',device,'local.shika.integration'],check=True)
 print('Build:',app)
-deadline=time.monotonic()+20
+deadline=time.monotonic()+float(os.environ.get('SHIKA_SMOKE_TIMEOUT','20'))
 while not result.exists() and time.monotonic()<deadline:
     time.sleep(0.25)
 if not result.exists():
