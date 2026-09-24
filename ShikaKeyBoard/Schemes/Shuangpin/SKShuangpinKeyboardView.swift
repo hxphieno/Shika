@@ -10,7 +10,7 @@ final class SKShuangpinKeyboardView: UIView {
     private var shiftState: ShiftState = .lower
     private var letterButtons: [SKAnnotatedKeyButton] = []
     private let shift = SKIMKeyButtonWithoutPopUpView(title: "⇧", width: 42)
-    private let footer = SKKeyboardFooterView(schemeTitle: "小鹤双拼")
+    private let footer = SKKeyboardFooterView(schemeTitle: "双拼")
 
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -5,7 +5,6 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private let candidateBar = CandidateBarView()
     private var applyingEngineEdit = false
     private var inputSession: SKInputSession?
-    private let globe = UIButton(type: .system)
     private let chineseJapaneseView = SKChineseJapaneseKeyboardView()
     private let shuangpinView = SKShuangpinKeyboardView()
     private let numberView = SKNumberInputView()
@@ -30,18 +29,14 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         shuangpinLabel.textColor = SKConfig.keyTitleColor
         shuangpinLabel.textAlignment = .center
         shuangpinLabel.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
-        shuangpinLabel.accessibilityLabel = "中文，小鹤双拼"
+        shuangpinLabel.accessibilityLabel = "中文，双拼"
 
-        globe.setImage(UIImage(systemName: "globe"), for: .normal)
-        globe.accessibilityLabel = "切换到下一个系统键盘"
-        globe.addTarget(self, action: #selector(nextSystemKeyboard), for: .touchUpInside)
-        globe.widthAnchor.constraint(equalToConstant: 32).isActive = true
         candidateBar.heightAnchor.constraint(equalToConstant: SKConfig.topBarHeight).isActive = true
         candidateBar.onSelect = { [weak self] in self?.inputSession?.select($0) }
         candidateBar.onPage = { [weak self] in self?.inputSession?.changePage(backward: $0) }
         candidateBar.onCommitRaw = { [weak self] in self?.inputSession?.commitRaw() }
         candidateBar.onRetry = { [weak self] in self?.loadEngine() }
-        let topBar = UIStackView(arrangedSubviews: [languageButton, shuangpinLabel, candidateBar, globe])
+        let topBar = UIStackView(arrangedSubviews: [languageButton, shuangpinLabel, candidateBar])
         topBar.axis = .horizontal
         topBar.alignment = .center
         topBar.translatesAutoresizingMaskIntoConstraints = false
@@ -95,7 +90,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func renderCandidates(_ state: SKEngineState) {
-        candidateBar.update(state, idleTitle: currentScheme == .shuangpin ? "小鹤双拼" : "中文全拼")
+        candidateBar.update(state)
     }
 
     func didTapKey(_ key: String) {
@@ -110,7 +105,6 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         inputSession?.commitPending()
         advanceToNextInputMode()
     }
-    @objc private func nextSystemKeyboard() { didTapNextKeyboard() }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -132,7 +126,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         updateVisibleKeyboard()
         if let inputSession { renderCandidates(inputSession.state) }
         UIAccessibility.post(notification: .announcement,
-                             argument: currentScheme == .shuangpin ? "小鹤双拼" : "中日混合")
+                             argument: currentScheme == .shuangpin ? "双拼" : "中日混合")
     }
 
     func didTapSwitchLayout(to layout: SKKeyboardLayoutType) {

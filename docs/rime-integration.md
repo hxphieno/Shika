@@ -1,6 +1,6 @@
 # Rime 接入
 
-两套键盘共用 Rime 1.17.0。小鹤双拼使用 `shika_flypy`；中日键盘的中、日、混合状态目前全部使用中文全拼 `shika_pinyin`。日文转换、跨语言词库与排序尚未实现。
+两套键盘共用 Rime 1.17.0。界面中的「双拼」使用小鹤编码规则及 `shika_flypy`；中日键盘的中、日、混合状态目前全部使用中文全拼 `shika_pinyin`。日文转换、跨语言词库与排序尚未实现。
 
 ## 层次与输入行为
 
@@ -53,7 +53,7 @@ python3 scripts/collect-rime-notices.py
 
 按 [Apple 自定义键盘文档](https://developer.apple.com/documentation/uikit/creating-a-custom-keyboard) 使用 `UIInputViewController` 和 `textDocumentProxy`。扩展开启 `APPLICATION_EXTENSION_API_ONLY`；库静态链接到扩展，运行时仅链接系统框架，没有额外动态 Rime 框架。仅初始化 Rime default 模块，不提供运行时下载代码或用户脚本入口。
 
-按照 [App Review Guidelines 4.4.1](https://developer.apple.com/app-store/review/guidelines/#extensions)，键盘保留系统键盘切换地球按钮；`RequestsOpenAccess=false`，本地转换与学习不要求完全访问。主应用提供启用说明、试打区、隐私说明和可阅读的许可文本。
+顶部工具栏不再自行绘制地球按钮，系统提供的底部键盘切换入口不受此改动影响。`RequestsOpenAccess=false`，本地转换与学习不要求完全访问。主应用提供启用说明、试打区、隐私说明和可阅读的许可文本。发布前仍需按 [App Review Guidelines 4.4.1](https://developer.apple.com/app-store/review/guidelines/#extensions) 核验支持机型的系统键盘切换行为。
 
 `PrivacyInfo.xcprivacy` 声明 UserDefaults 的 `CA92.1` 与扩展容器文件时间戳的 `C617.1`，不跟踪、不收集上传数据。Release arm64 的符号检查确认使用 `NSUserDefaults`、`stat/fstat`、文件时间接口，未发现磁盘空间、系统启动时间或活动键盘查询符号；声明依据见 [Apple required reason API 文档](https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitypereasons)。后续更新依赖仍需重新核对实际调用。
 

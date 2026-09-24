@@ -57,7 +57,7 @@ final class SmokeApp: UIResponder, UIApplicationDelegate {
         tap("你好", in: bar)
         assert(controller.proxy.text == "你好")
         for key in "vsgo" { tap(String(key), in: double) }
-        tap("小鹤双拼", in: double)
+        tap("双拼", in: double)
         assert(controller.proxy.text == "你好中国")
         tap("⌫", in: double)
         assert(controller.proxy.text == "你好中")

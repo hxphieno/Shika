@@ -70,9 +70,9 @@ final class CandidateBarView: UIView {
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
-    func update(_ state: SKEngineState, idleTitle: String) {
+    func update(_ state: SKEngineState) {
         retry.isHidden = true
-        composition.text = state.preedit.isEmpty ? idleTitle : state.preedit
+        composition.text = state.preedit
         visibleCandidates = state.candidates
         candidates.arrangedSubviews.forEach { $0.removeFromSuperview() }
         for candidate in state.candidates {
@@ -93,7 +93,8 @@ final class CandidateBarView: UIView {
     }
 
     func showError() {
-        update(SKEngineState(), idleTitle: "词库加载失败")
+        update(SKEngineState())
+        composition.text = "词库加载失败"
         retry.isHidden = false
     }
     @objc private func selectCandidate(_ sender: UIButton) {

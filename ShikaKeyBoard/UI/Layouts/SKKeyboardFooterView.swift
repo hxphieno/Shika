@@ -14,7 +14,7 @@ final class SKKeyboardFooterView: UIStackView {
         let number = key("123", width: 42, action: #selector(showNumbers))
         let scheme = key("🦌", width: 42, action: #selector(switchScheme), fontSize: 24)
         scheme.accessibilityLabel = "切换输入方案"
-        scheme.accessibilityHint = schemeTitle == "中日混合" ? "切换到小鹤双拼" : "切换到中日混合"
+        scheme.accessibilityHint = schemeTitle == "中日混合" ? "切换到双拼" : "切换到中日混合"
         let space = key(schemeTitle, width: 185, action: #selector(insertSpace))
         space.accessibilityLabel = "空格，当前方案：\(schemeTitle)"
         space.constraints.first { $0.firstAttribute == .width }?.isActive = false
