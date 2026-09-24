@@ -1,0 +1,1234 @@
+{
+  "datasetSHA256": "f0c721776f147caf615fb329e2c829a4c36672e6e21d0ff3062b28581951f8ea",
+  "cases": 400,
+  "metrics": [
+    {
+      "schema": "shika_pinyin",
+      "kind": "clean",
+      "count": 40,
+      "baselineTop1": 35,
+      "correctedTop1": 35,
+      "baselineTop3": 36,
+      "correctedTop3": 36,
+      "baselineTop8": 36,
+      "correctedTop8": 36
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "substitution",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 18,
+      "baselineTop3": 5,
+      "correctedTop3": 33,
+      "baselineTop8": 5,
+      "correctedTop8": 34
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "omission",
+      "count": 40,
+      "baselineTop1": 3,
+      "correctedTop1": 10,
+      "baselineTop3": 4,
+      "correctedTop3": 29,
+      "baselineTop8": 4,
+      "correctedTop8": 32
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "insertion",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 21,
+      "baselineTop3": 4,
+      "correctedTop3": 34,
+      "baselineTop8": 4,
+      "correctedTop8": 34
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "transposition",
+      "count": 40,
+      "baselineTop1": 1,
+      "correctedTop1": 25,
+      "baselineTop3": 3,
+      "correctedTop3": 35,
+      "baselineTop8": 3,
+      "correctedTop8": 35
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "clean",
+      "count": 40,
+      "baselineTop1": 35,
+      "correctedTop1": 35,
+      "baselineTop3": 36,
+      "correctedTop3": 36,
+      "baselineTop8": 36,
+      "correctedTop8": 36
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "substitution",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 6,
+      "baselineTop3": 0,
+      "correctedTop3": 28,
+      "baselineTop8": 0,
+      "correctedTop8": 30
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "omission",
+      "count": 40,
+      "baselineTop1": 1,
+      "correctedTop1": 19,
+      "baselineTop3": 1,
+      "correctedTop3": 26,
+      "baselineTop8": 1,
+      "correctedTop8": 27
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "insertion",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 31,
+      "baselineTop3": 0,
+      "correctedTop3": 35,
+      "baselineTop8": 0,
+      "correctedTop8": 35
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "transposition",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 13,
+      "baselineTop3": 0,
+      "correctedTop3": 32,
+      "baselineTop8": 0,
+      "correctedTop8": 33
+    }
+  ],
+  "cleanFirstCandidateChanges": [],
+  "cleanTargetRegressions": [],
+  "unexpectedCommitsWhileTyping": [],
+  "selectedCandidateCommitFailures": [
+    {
+      "candidates": [
+        {
+          "comment": "纠错 · huo de",
+          "index": -1,
+          "text": "获得"
+        },
+        {
+          "comment": "hu die ou er",
+          "index": 0,
+          "text": "蝴蝶偶尔"
+        },
+        {
+          "comment": "hu die",
+          "index": 1,
+          "text": "蝴蝶"
+        },
+        {
+          "comment": "hu dong",
+          "index": 2,
+          "text": "互动"
+        },
+        {
+          "comment": "hu du",
+          "index": 3,
+          "text": "弧度"
+        },
+        {
+          "comment": "hu da",
+          "index": 4,
+          "text": "湖大"
+        },
+        {
+          "comment": "hu",
+          "index": 5,
+          "text": "胡"
+        },
+        {
+          "comment": "hu",
+          "index": 6,
+          "text": "户"
+        },
+        {
+          "comment": "hu",
+          "index": 7,
+          "text": "湖"
+        }
+      ],
+      "correct": "hudie",
+      "input": "hudoe",
+      "inputRemaining": "hudoe",
+      "keyDurationsMS": [
+        0.24199485778808594,
+        0.10907649993896484,
+        3.103971481323242,
+        1.0870695114135742,
+        0.9649991989135742
+      ],
+      "kind": "substitution",
+      "preedit": "hu d o e",
+      "remainingAfterSelection": "hudoe",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "获得",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "获得",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "蝴蝶",
+      "targetRank": 3,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "hu die o",
+          "index": 0,
+          "text": "蝴蝶哦"
+        },
+        {
+          "comment": "hu die",
+          "index": 1,
+          "text": "蝴蝶"
+        },
+        {
+          "comment": "hu de",
+          "index": 2,
+          "text": "胡的"
+        },
+        {
+          "comment": "hu dong",
+          "index": 3,
+          "text": "互动"
+        },
+        {
+          "comment": "hu du",
+          "index": 4,
+          "text": "弧度"
+        },
+        {
+          "comment": "hu da",
+          "index": 5,
+          "text": "湖大"
+        },
+        {
+          "comment": "hu",
+          "index": 6,
+          "text": "胡"
+        },
+        {
+          "comment": "hu",
+          "index": 7,
+          "text": "户"
+        }
+      ],
+      "correct": "hudie",
+      "input": "hudoie",
+      "inputRemaining": "hudoie",
+      "keyDurationsMS": [
+        0.2319812774658203,
+        0.1100301742553711,
+        2.686023712158203,
+        0.7359981536865234,
+        0.4210472106933594,
+        1.50299072265625
+      ],
+      "kind": "insertion",
+      "preedit": "hu d oie",
+      "remainingAfterSelection": "hudoie",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "蝴蝶哦",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "",
+      "spacePartialSelection": true,
+      "spacePreeditAfterSelection": "蝴蝶哦ie",
+      "spaceRemaining": "hudoie",
+      "target": "蝴蝶",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "xing kong o mei gui",
+          "index": 0,
+          "text": "星空哦玫瑰"
+        },
+        {
+          "comment": "xing kong",
+          "index": 1,
+          "text": "星空"
+        },
+        {
+          "comment": "xing kui",
+          "index": 2,
+          "text": "幸亏"
+        },
+        {
+          "comment": "xing",
+          "index": 3,
+          "text": "行"
+        },
+        {
+          "comment": "xing",
+          "index": 4,
+          "text": "性"
+        },
+        {
+          "comment": "xing",
+          "index": 5,
+          "text": "型"
+        },
+        {
+          "comment": "xing",
+          "index": 6,
+          "text": "星"
+        },
+        {
+          "comment": "xing",
+          "index": 7,
+          "text": "姓"
+        }
+      ],
+      "correct": "xingkong",
+      "input": "xingkomg",
+      "inputRemaining": "xingkomg",
+      "keyDurationsMS": [
+        0.24402141571044922,
+        0.10704994201660156,
+        0.61798095703125,
+        1.0440349578857422,
+        0.8450746536254883,
+        0.9319782257080078,
+        0.7529258728027344,
+        46.01097106933594
+      ],
+      "kind": "substitution",
+      "preedit": "xing k o m g",
+      "remainingAfterSelection": "xingkomg",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "星空哦玫瑰",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "星空哦玫瑰",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "星空",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "xing kong ou guan",
+          "index": 0,
+          "text": "星空欧冠"
+        },
+        {
+          "comment": "xing kong",
+          "index": 1,
+          "text": "星空"
+        },
+        {
+          "comment": "xing kui",
+          "index": 2,
+          "text": "幸亏"
+        },
+        {
+          "comment": "xing",
+          "index": 3,
+          "text": "行"
+        },
+        {
+          "comment": "xing",
+          "index": 4,
+          "text": "性"
+        },
+        {
+          "comment": "xing",
+          "index": 5,
+          "text": "型"
+        },
+        {
+          "comment": "xing",
+          "index": 6,
+          "text": "星"
+        },
+        {
+          "comment": "xing",
+          "index": 7,
+          "text": "姓"
+        }
+      ],
+      "correct": "xingkong",
+      "input": "xingkog",
+      "inputRemaining": "xingkog",
+      "keyDurationsMS": [
+        0.6760358810424805,
+        0.1519918441772461,
+        1.1550188064575195,
+        2.4319887161254883,
+        1.546025276184082,
+        1.0690689086914062,
+        1.092076301574707
+      ],
+      "kind": "omission",
+      "preedit": "xing k o g",
+      "remainingAfterSelection": "xingkog",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "星空欧冠",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "星空欧冠",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "星空",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "xing kong ou meng ng",
+          "index": 0,
+          "text": "星空欧盟嗯"
+        },
+        {
+          "comment": "xing kong",
+          "index": 1,
+          "text": "星空"
+        },
+        {
+          "comment": "xing kui",
+          "index": 2,
+          "text": "幸亏"
+        },
+        {
+          "comment": "xing",
+          "index": 3,
+          "text": "行"
+        },
+        {
+          "comment": "xing",
+          "index": 4,
+          "text": "性"
+        },
+        {
+          "comment": "xing",
+          "index": 5,
+          "text": "型"
+        },
+        {
+          "comment": "xing",
+          "index": 6,
+          "text": "星"
+        },
+        {
+          "comment": "xing",
+          "index": 7,
+          "text": "姓"
+        }
+      ],
+      "correct": "xingkong",
+      "input": "xingkomng",
+      "inputRemaining": "xingkomng",
+      "keyDurationsMS": [
+        0.4360675811767578,
+        0.13399124145507812,
+        0.8360147476196289,
+        0.8389949798583984,
+        6.057977676391602,
+        1.186966896057129,
+        0.8120536804199219,
+        14.305949211120605,
+        29.364943504333496
+      ],
+      "kind": "insertion",
+      "preedit": "xing k o m ng",
+      "remainingAfterSelection": "xingkomng",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "星空欧盟嗯",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "星空欧盟嗯",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "星空",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "xing kong ou guan ng",
+          "index": 0,
+          "text": "星空欧冠嗯"
+        },
+        {
+          "comment": "xing kong ou guan",
+          "index": 1,
+          "text": "星空欧冠"
+        },
+        {
+          "comment": "xing kong",
+          "index": 2,
+          "text": "星空"
+        },
+        {
+          "comment": "xing kui",
+          "index": 3,
+          "text": "幸亏"
+        },
+        {
+          "comment": "xing",
+          "index": 4,
+          "text": "行"
+        },
+        {
+          "comment": "xing",
+          "index": 5,
+          "text": "性"
+        },
+        {
+          "comment": "xing",
+          "index": 6,
+          "text": "型"
+        },
+        {
+          "comment": "xing",
+          "index": 7,
+          "text": "星"
+        }
+      ],
+      "correct": "xingkong",
+      "input": "xingkogn",
+      "inputRemaining": "xingkogn",
+      "keyDurationsMS": [
+        0.26702880859375,
+        0.11289119720458984,
+        3.121018409729004,
+        1.0470151901245117,
+        1.2769699096679688,
+        4.216909408569336,
+        0.9379386901855469,
+        1.128077507019043
+      ],
+      "kind": "transposition",
+      "preedit": "xing k o g n",
+      "remainingAfterSelection": "xingkogn",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "星空欧冠嗯",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "星空欧冠嗯",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "星空",
+      "targetRank": 3,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "dian feng shan jiao an",
+          "index": 0,
+          "text": "电风扇教案"
+        },
+        {
+          "comment": "dian feng shan",
+          "index": 1,
+          "text": "电风扇"
+        },
+        {
+          "comment": "dian feng",
+          "index": 2,
+          "text": "巅峰"
+        },
+        {
+          "comment": "dian feng",
+          "index": 3,
+          "text": "颠峰"
+        },
+        {
+          "comment": "dian fen",
+          "index": 4,
+          "text": "淀粉"
+        },
+        {
+          "comment": "dian fu",
+          "index": 5,
+          "text": "颠覆"
+        },
+        {
+          "comment": "dian fan",
+          "index": 6,
+          "text": "典范"
+        },
+        {
+          "comment": "dian fei",
+          "index": 7,
+          "text": "电费"
+        }
+      ],
+      "correct": "dianfengshan",
+      "input": "dianfengsjan",
+      "inputRemaining": "dianfengsjan",
+      "keyDurationsMS": [
+        11.288046836853027,
+        9.415030479431152,
+        2.0639896392822266,
+        0.6939172744750977,
+        0.9390115737915039,
+        17.338991165161133,
+        9.791970252990723,
+        2.225041389465332,
+        1.3010501861572266,
+        12.235045433044434,
+        8.357048034667969,
+        3.876924514770508
+      ],
+      "kind": "substitution",
+      "preedit": "dian feng s j an",
+      "remainingAfterSelection": "dianfengsjan",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "电风扇教案",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "电风扇教案",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "电风扇",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "dian feng shan jiao han",
+          "index": 0,
+          "text": "电风扇叫喊"
+        },
+        {
+          "comment": "dian feng shan",
+          "index": 1,
+          "text": "电风扇"
+        },
+        {
+          "comment": "dian feng san",
+          "index": 2,
+          "text": "巅峰三"
+        },
+        {
+          "comment": "dian feng",
+          "index": 3,
+          "text": "巅峰"
+        },
+        {
+          "comment": "dian feng",
+          "index": 4,
+          "text": "颠峰"
+        },
+        {
+          "comment": "dian fen",
+          "index": 5,
+          "text": "淀粉"
+        },
+        {
+          "comment": "dian fu",
+          "index": 6,
+          "text": "颠覆"
+        },
+        {
+          "comment": "dian fan",
+          "index": 7,
+          "text": "典范"
+        }
+      ],
+      "correct": "dianfengshan",
+      "input": "dianfengsjhan",
+      "inputRemaining": "dianfengsjhan",
+      "keyDurationsMS": [
+        0.2580881118774414,
+        0.11897087097167969,
+        3.8150548934936523,
+        9.600043296813965,
+        1.2350082397460938,
+        15.550971031188965,
+        1.3349056243896484,
+        1.735091209411621,
+        1.1669397354125977,
+        31.759977340698242,
+        33.85305404663086,
+        6.030082702636719,
+        2.169013023376465
+      ],
+      "kind": "insertion",
+      "preedit": "dian feng s j han",
+      "remainingAfterSelection": "dianfengsjhan",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "电风扇叫喊",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "电风扇叫喊",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "电风扇",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "dian feng shan a hen nan",
+          "index": 0,
+          "text": "电风扇啊很难"
+        },
+        {
+          "comment": "dian feng shan",
+          "index": 1,
+          "text": "电风扇"
+        },
+        {
+          "comment": "dian feng san",
+          "index": 2,
+          "text": "巅峰三"
+        },
+        {
+          "comment": "dian feng",
+          "index": 3,
+          "text": "巅峰"
+        },
+        {
+          "comment": "dian feng",
+          "index": 4,
+          "text": "颠峰"
+        },
+        {
+          "comment": "dian fen",
+          "index": 5,
+          "text": "淀粉"
+        },
+        {
+          "comment": "dian fu",
+          "index": 6,
+          "text": "颠覆"
+        },
+        {
+          "comment": "dian fan",
+          "index": 7,
+          "text": "典范"
+        }
+      ],
+      "correct": "dianfengshan",
+      "input": "dianfengsahn",
+      "inputRemaining": "dianfengsahn",
+      "keyDurationsMS": [
+        0.31495094299316406,
+        0.13196468353271484,
+        0.5921125411987305,
+        1.8169879913330078,
+        0.5640983581542969,
+        1.132965087890625,
+        9.811997413635254,
+        52.47795581817627,
+        30.839085578918457,
+        8.559107780456543,
+        9.945988655090332,
+        11.654973030090332
+      ],
+      "kind": "transposition",
+      "preedit": "dian feng s a h n",
+      "remainingAfterSelection": "dianfengsahn",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "电风扇啊很难",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "电风扇啊很难",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "电风扇",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "ka fei ri",
+          "index": 0,
+          "text": "咖啡日"
+        },
+        {
+          "comment": "ka fei",
+          "index": 1,
+          "text": "咖啡"
+        },
+        {
+          "comment": "ka",
+          "index": 2,
+          "text": "卡"
+        },
+        {
+          "comment": "ke ai",
+          "index": 3,
+          "text": "可爱"
+        },
+        {
+          "comment": "ka",
+          "index": 4,
+          "text": "喀"
+        },
+        {
+          "comment": "kou an",
+          "index": 5,
+          "text": "口岸"
+        },
+        {
+          "comment": "kan a",
+          "index": 6,
+          "text": "看啊"
+        },
+        {
+          "comment": "ka",
+          "index": 7,
+          "text": "咖"
+        }
+      ],
+      "correct": "kafei",
+      "input": "kafri",
+      "inputRemaining": "kafri",
+      "keyDurationsMS": [
+        0.21791458129882812,
+        0.16701221466064453,
+        0.5409717559814453,
+        0.7829666137695312,
+        0.6049871444702148
+      ],
+      "kind": "substitution",
+      "preedit": "ka f ri",
+      "remainingAfterSelection": "kafri",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "咖啡日",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "咖啡日",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "咖啡",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "纠错 · ka li",
+          "index": -1,
+          "text": "卡里"
+        },
+        {
+          "comment": "纠错 · ka si",
+          "index": -2,
+          "text": "卡死"
+        },
+        {
+          "comment": "纠错 · ka ni",
+          "index": -3,
+          "text": "卡尼"
+        },
+        {
+          "comment": "ka fei",
+          "index": 0,
+          "text": "咖啡"
+        },
+        {
+          "comment": "ka",
+          "index": 1,
+          "text": "卡"
+        },
+        {
+          "comment": "ke ai",
+          "index": 2,
+          "text": "可爱"
+        },
+        {
+          "comment": "ka",
+          "index": 3,
+          "text": "喀"
+        },
+        {
+          "comment": "kou an",
+          "index": 4,
+          "text": "口岸"
+        },
+        {
+          "comment": "kan a",
+          "index": 5,
+          "text": "看啊"
+        },
+        {
+          "comment": "ka",
+          "index": 6,
+          "text": "咖"
+        },
+        {
+          "comment": "ka",
+          "index": 7,
+          "text": "咔"
+        }
+      ],
+      "correct": "kafei",
+      "input": "kafi",
+      "inputRemaining": "kafi",
+      "keyDurationsMS": [
+        0.22304058074951172,
+        0.102996826171875,
+        0.2269744873046875,
+        6.952047348022461
+      ],
+      "kind": "omission",
+      "preedit": "ka fi",
+      "remainingAfterSelection": "kafi",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "卡里",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "卡里",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "咖啡",
+      "targetRank": 4,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "ka fei ri ei",
+          "index": 0,
+          "text": "咖啡日诶"
+        },
+        {
+          "comment": "ka fei ri",
+          "index": 1,
+          "text": "咖啡日"
+        },
+        {
+          "comment": "ka fei",
+          "index": 2,
+          "text": "咖啡"
+        },
+        {
+          "comment": "ka",
+          "index": 3,
+          "text": "卡"
+        },
+        {
+          "comment": "ke ai",
+          "index": 4,
+          "text": "可爱"
+        },
+        {
+          "comment": "ka",
+          "index": 5,
+          "text": "喀"
+        },
+        {
+          "comment": "kou an",
+          "index": 6,
+          "text": "口岸"
+        },
+        {
+          "comment": "kan a",
+          "index": 7,
+          "text": "看啊"
+        }
+      ],
+      "correct": "kafei",
+      "input": "kafrei",
+      "inputRemaining": "kafrei",
+      "keyDurationsMS": [
+        1.7379522323608398,
+        0.6320476531982422,
+        0.8820295333862305,
+        0.6710290908813477,
+        0.7330179214477539,
+        0.6990432739257812
+      ],
+      "kind": "insertion",
+      "preedit": "ka f r ei",
+      "remainingAfterSelection": "kafrei",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "咖啡日诶",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "咖啡日诶",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "咖啡",
+      "targetRank": 3,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "ka fei",
+          "index": 0,
+          "text": "咖啡"
+        },
+        {
+          "comment": "ka",
+          "index": 1,
+          "text": "卡"
+        },
+        {
+          "comment": "ke ai",
+          "index": 2,
+          "text": "可爱"
+        },
+        {
+          "comment": "ka",
+          "index": 3,
+          "text": "喀"
+        },
+        {
+          "comment": "kou an",
+          "index": 4,
+          "text": "口岸"
+        },
+        {
+          "comment": "kan a",
+          "index": 5,
+          "text": "看啊"
+        },
+        {
+          "comment": "ka",
+          "index": 6,
+          "text": "咖"
+        },
+        {
+          "comment": "ka",
+          "index": 7,
+          "text": "咔"
+        }
+      ],
+      "correct": "kafei",
+      "input": "kafie",
+      "inputRemaining": "kafie",
+      "keyDurationsMS": [
+        0.29098987579345703,
+        0.1169443130493164,
+        5.424022674560547,
+        4.145979881286621,
+        0.5069971084594727
+      ],
+      "kind": "transposition",
+      "preedit": "ka fie",
+      "remainingAfterSelection": "kafie",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "咖啡",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "",
+      "spacePartialSelection": true,
+      "spacePreeditAfterSelection": "咖啡ie",
+      "spaceRemaining": "kafie",
+      "target": "咖啡",
+      "targetRank": 1,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "xia men rang ni",
+          "index": 0,
+          "text": "厦门让你"
+        },
+        {
+          "comment": "xia men",
+          "index": 1,
+          "text": "厦门"
+        },
+        {
+          "comment": "xia mian",
+          "index": 2,
+          "text": "下面"
+        },
+        {
+          "comment": "xia mi",
+          "index": 3,
+          "text": "虾米"
+        },
+        {
+          "comment": "xia mang",
+          "index": 4,
+          "text": "瞎忙"
+        },
+        {
+          "comment": "xia ma",
+          "index": 5,
+          "text": "下马"
+        },
+        {
+          "comment": "xia",
+          "index": 6,
+          "text": "下"
+        },
+        {
+          "comment": "xia",
+          "index": 7,
+          "text": "夏"
+        }
+      ],
+      "correct": "xiamen",
+      "input": "xiamrn",
+      "inputRemaining": "xiamrn",
+      "keyDurationsMS": [
+        1.1589527130126953,
+        6.136059761047363,
+        11.532068252563477,
+        18.411993980407715,
+        1.7099380493164062,
+        5.489110946655273
+      ],
+      "kind": "substitution",
+      "preedit": "xia m r n",
+      "remainingAfterSelection": "xiamrn",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "厦门让你",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "厦门让你",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "厦门",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "dou fu",
+          "index": 0,
+          "text": "豆腐"
+        },
+        {
+          "comment": "du fu",
+          "index": 1,
+          "text": "杜甫"
+        },
+        {
+          "comment": "diu fu",
+          "index": 2,
+          "text": "丢副"
+        },
+        {
+          "comment": "di fu",
+          "index": 3,
+          "text": "地府"
+        },
+        {
+          "comment": "duo fu",
+          "index": 4,
+          "text": "多副"
+        },
+        {
+          "comment": "da fu",
+          "index": 5,
+          "text": "大幅"
+        },
+        {
+          "comment": "da fu",
+          "index": 6,
+          "text": "答复"
+        },
+        {
+          "comment": "dui fu",
+          "index": 7,
+          "text": "对付"
+        }
+      ],
+      "correct": "dufu",
+      "input": "dfuu",
+      "inputRemaining": "dfuu",
+      "keyDurationsMS": [
+        0.40900707244873047,
+        0.27692317962646484,
+        3.898024559020996,
+        2.007007598876953
+      ],
+      "kind": "transposition",
+      "preedit": "d fuu",
+      "remainingAfterSelection": "dfuu",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "豆腐",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "",
+      "spacePartialSelection": true,
+      "spacePreeditAfterSelection": "豆腐u",
+      "spaceRemaining": "dfuu",
+      "target": "杜甫",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    }
+  ],
+  "spaceCommitFailures": [],
+  "selectionUnavailable": 59,
+  "keyLatencyMS": {
+    "p50": 0.8341073989868164,
+    "p95": 30.14695644378662,
+    "p99": 64.81301784515381,
+    "max": 160.50302982330322
+  }
+}

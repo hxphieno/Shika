@@ -1,0 +1,3202 @@
+[
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "meigui",
+    "target": "玫瑰",
+    "correct": "meigui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "mrigui",
+    "target": "玫瑰",
+    "correct": "meigui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "migui",
+    "target": "玫瑰",
+    "correct": "meigui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "mreigui",
+    "target": "玫瑰",
+    "correct": "meigui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "miegui",
+    "target": "玫瑰",
+    "correct": "meigui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "chengzi",
+    "target": "橙子",
+    "correct": "chengzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "chemgzi",
+    "target": "橙子",
+    "correct": "chengzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "chegzi",
+    "target": "橙子",
+    "correct": "chengzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "chemngzi",
+    "target": "橙子",
+    "correct": "chengzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "chegnzi",
+    "target": "橙子",
+    "correct": "chengzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "hudie",
+    "target": "蝴蝶",
+    "correct": "hudie",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "hudoe",
+    "target": "蝴蝶",
+    "correct": "hudie",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "hude",
+    "target": "蝴蝶",
+    "correct": "hudie",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "hudoie",
+    "target": "蝴蝶",
+    "correct": "hudie",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "hudei",
+    "target": "蝴蝶",
+    "correct": "hudie",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xiongmao",
+    "target": "熊猫",
+    "correct": "xiongmao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "xionhmao",
+    "target": "熊猫",
+    "correct": "xiongmao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "xionmao",
+    "target": "熊猫",
+    "correct": "xiongmao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "xionhgmao",
+    "target": "熊猫",
+    "correct": "xiongmao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "xionmgao",
+    "target": "熊猫",
+    "correct": "xiongmao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "songshu",
+    "target": "松鼠",
+    "correct": "songshu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "songdhu",
+    "target": "松鼠",
+    "correct": "songshu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "songhu",
+    "target": "松鼠",
+    "correct": "songshu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "songdshu",
+    "target": "松鼠",
+    "correct": "songshu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "songhsu",
+    "target": "松鼠",
+    "correct": "songshu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xingkong",
+    "target": "星空",
+    "correct": "xingkong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "xingkomg",
+    "target": "星空",
+    "correct": "xingkong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "xingkog",
+    "target": "星空",
+    "correct": "xingkong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "xingkomng",
+    "target": "星空",
+    "correct": "xingkong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "xingkogn",
+    "target": "星空",
+    "correct": "xingkong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "caihong",
+    "target": "彩虹",
+    "correct": "caihong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "caijong",
+    "target": "彩虹",
+    "correct": "caihong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "caiong",
+    "target": "彩虹",
+    "correct": "caihong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "caijhong",
+    "target": "彩虹",
+    "correct": "caihong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "caiohng",
+    "target": "彩虹",
+    "correct": "caihong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xuehua",
+    "target": "雪花",
+    "correct": "xuehua",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "xurhua",
+    "target": "雪花",
+    "correct": "xuehua",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "xuhua",
+    "target": "雪花",
+    "correct": "xuehua",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "xurehua",
+    "target": "雪花",
+    "correct": "xuehua",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "xuheua",
+    "target": "雪花",
+    "correct": "xuehua",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "senlin",
+    "target": "森林",
+    "correct": "senlin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "srnlin",
+    "target": "森林",
+    "correct": "senlin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "snlin",
+    "target": "森林",
+    "correct": "senlin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "srenlin",
+    "target": "森林",
+    "correct": "senlin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "snelin",
+    "target": "森林",
+    "correct": "senlin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "hupo",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "huoo",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "huo",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "huopo",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "huop",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "chuanglian",
+    "target": "窗帘",
+    "correct": "chuanglian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "chuangloan",
+    "target": "窗帘",
+    "correct": "chuanglian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "chuanglan",
+    "target": "窗帘",
+    "correct": "chuanglian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "chuangloian",
+    "target": "窗帘",
+    "correct": "chuanglian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "chuanglain",
+    "target": "窗帘",
+    "correct": "chuanglian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "maojin",
+    "target": "毛巾",
+    "correct": "maojin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "mapjin",
+    "target": "毛巾",
+    "correct": "maojin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "majin",
+    "target": "毛巾",
+    "correct": "maojin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "mapojin",
+    "target": "毛巾",
+    "correct": "maojin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "majoin",
+    "target": "毛巾",
+    "correct": "maojin",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "jingzi",
+    "target": "镜子",
+    "correct": "jingzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "jongzi",
+    "target": "镜子",
+    "correct": "jingzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "jngzi",
+    "target": "镜子",
+    "correct": "jingzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "joingzi",
+    "target": "镜子",
+    "correct": "jingzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "jnigzi",
+    "target": "镜子",
+    "correct": "jingzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xiyiji",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "xiyiki",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "xiyii",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "xiyikji",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "xiyiij",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "dianfengshan",
+    "target": "电风扇",
+    "correct": "dianfengshan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "dianfengsjan",
+    "target": "电风扇",
+    "correct": "dianfengshan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "dianfengsan",
+    "target": "电风扇",
+    "correct": "dianfengshan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "dianfengsjhan",
+    "target": "电风扇",
+    "correct": "dianfengshan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "dianfengsahn",
+    "target": "电风扇",
+    "correct": "dianfengshan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "jiaozi",
+    "target": "饺子",
+    "correct": "jiaozi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "jisozi",
+    "target": "饺子",
+    "correct": "jiaozi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "jiozi",
+    "target": "饺子",
+    "correct": "jiaozi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "jisaozi",
+    "target": "饺子",
+    "correct": "jiaozi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "jioazi",
+    "target": "饺子",
+    "correct": "jiaozi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "mianbao",
+    "target": "面包",
+    "correct": "mianbao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "miambao",
+    "target": "面包",
+    "correct": "mianbao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "miabao",
+    "target": "面包",
+    "correct": "mianbao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "miamnbao",
+    "target": "面包",
+    "correct": "mianbao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "miabnao",
+    "target": "面包",
+    "correct": "mianbao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "kafei",
+    "target": "咖啡",
+    "correct": "kafei",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "kafri",
+    "target": "咖啡",
+    "correct": "kafei",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "kafi",
+    "target": "咖啡",
+    "correct": "kafei",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "kafrei",
+    "target": "咖啡",
+    "correct": "kafei",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "kafie",
+    "target": "咖啡",
+    "correct": "kafei",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "doufu",
+    "target": "豆腐",
+    "correct": "doufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "dpufu",
+    "target": "豆腐",
+    "correct": "doufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "dufu",
+    "target": "豆腐",
+    "correct": "doufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "dpoufu",
+    "target": "豆腐",
+    "correct": "doufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "duofu",
+    "target": "豆腐",
+    "correct": "doufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "lianou",
+    "target": "莲藕",
+    "correct": "lianou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "lisnou",
+    "target": "莲藕",
+    "correct": "lianou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "linou",
+    "target": "莲藕",
+    "correct": "lianou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "lisanou",
+    "target": "莲藕",
+    "correct": "lianou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "linaou",
+    "target": "莲藕",
+    "correct": "lianou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "qingdao",
+    "target": "青岛",
+    "correct": "qingdao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "qongdao",
+    "target": "青岛",
+    "correct": "qingdao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "qngdao",
+    "target": "青岛",
+    "correct": "qingdao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "qoingdao",
+    "target": "青岛",
+    "correct": "qingdao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "qnigdao",
+    "target": "青岛",
+    "correct": "qingdao",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xiamen",
+    "target": "厦门",
+    "correct": "xiamen",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "xiamrn",
+    "target": "厦门",
+    "correct": "xiamen",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "xiamn",
+    "target": "厦门",
+    "correct": "xiamen",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "xiamren",
+    "target": "厦门",
+    "correct": "xiamen",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "xiamne",
+    "target": "厦门",
+    "correct": "xiamen",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "kunming",
+    "target": "昆明",
+    "correct": "kunming",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "kunmimg",
+    "target": "昆明",
+    "correct": "kunming",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "kunmig",
+    "target": "昆明",
+    "correct": "kunming",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "kunmimng",
+    "target": "昆明",
+    "correct": "kunming",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "kunmign",
+    "target": "昆明",
+    "correct": "kunming",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "chengdu",
+    "target": "成都",
+    "correct": "chengdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "chrngdu",
+    "target": "成都",
+    "correct": "chengdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "chngdu",
+    "target": "成都",
+    "correct": "chengdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "chrengdu",
+    "target": "成都",
+    "correct": "chengdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "chnegdu",
+    "target": "成都",
+    "correct": "chengdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "zhangheng",
+    "target": "张衡",
+    "correct": "zhangheng",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "zjangheng",
+    "target": "张衡",
+    "correct": "zhangheng",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "zangheng",
+    "target": "张衡",
+    "correct": "zhangheng",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "zjhangheng",
+    "target": "张衡",
+    "correct": "zhangheng",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "zahngheng",
+    "target": "张衡",
+    "correct": "zhangheng",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "wanganshi",
+    "target": "王安石",
+    "correct": "wanganshi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "wsnganshi",
+    "target": "王安石",
+    "correct": "wanganshi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "wnganshi",
+    "target": "王安石",
+    "correct": "wanganshi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "wsanganshi",
+    "target": "王安石",
+    "correct": "wanganshi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "wnaganshi",
+    "target": "王安石",
+    "correct": "wanganshi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "dufu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "difu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "dfu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "diufu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "dfuu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "zhugeliang",
+    "target": "诸葛亮",
+    "correct": "zhugeliang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "zhugeloang",
+    "target": "诸葛亮",
+    "correct": "zhugeliang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "zhugelang",
+    "target": "诸葛亮",
+    "correct": "zhugeliang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "zhugeloiang",
+    "target": "诸葛亮",
+    "correct": "zhugeliang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "zhugelaing",
+    "target": "诸葛亮",
+    "correct": "zhugeliang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "tushuguan",
+    "target": "图书馆",
+    "correct": "tushuguan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "tishuguan",
+    "target": "图书馆",
+    "correct": "tushuguan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "tshuguan",
+    "target": "图书馆",
+    "correct": "tushuguan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "tiushuguan",
+    "target": "图书馆",
+    "correct": "tushuguan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "tsuhuguan",
+    "target": "图书馆",
+    "correct": "tushuguan",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "youyongchi",
+    "target": "游泳池",
+    "correct": "youyongchi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "youypngchi",
+    "target": "游泳池",
+    "correct": "youyongchi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "youyngchi",
+    "target": "游泳池",
+    "correct": "youyongchi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "youypongchi",
+    "target": "游泳池",
+    "correct": "youyongchi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "youynogchi",
+    "target": "游泳池",
+    "correct": "youyongchi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "yumaoqiu",
+    "target": "羽毛球",
+    "correct": "yumaoqiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "yimaoqiu",
+    "target": "羽毛球",
+    "correct": "yumaoqiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "ymaoqiu",
+    "target": "羽毛球",
+    "correct": "yumaoqiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "yiumaoqiu",
+    "target": "羽毛球",
+    "correct": "yumaoqiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "ymuaoqiu",
+    "target": "羽毛球",
+    "correct": "yumaoqiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "wangyuanjing",
+    "target": "望远镜",
+    "correct": "wangyuanjing",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "wangyuanking",
+    "target": "望远镜",
+    "correct": "wangyuanjing",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "wangyuaning",
+    "target": "望远镜",
+    "correct": "wangyuanjing",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "wangyuankjing",
+    "target": "望远镜",
+    "correct": "wangyuanjing",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "wangyuanijng",
+    "target": "望远镜",
+    "correct": "wangyuanjing",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "dayinji",
+    "target": "打印机",
+    "correct": "dayinji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "dayinki",
+    "target": "打印机",
+    "correct": "dayinji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "dayini",
+    "target": "打印机",
+    "correct": "dayinji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "dayinkji",
+    "target": "打印机",
+    "correct": "dayinji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "dayinij",
+    "target": "打印机",
+    "correct": "dayinji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "bianyiqi",
+    "target": "编译器",
+    "correct": "bianyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "bianuiqi",
+    "target": "编译器",
+    "correct": "bianyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "bianiqi",
+    "target": "编译器",
+    "correct": "bianyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "bianuyiqi",
+    "target": "编译器",
+    "correct": "bianyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "bianiyqi",
+    "target": "编译器",
+    "correct": "bianyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "qukuailian",
+    "target": "区块链",
+    "correct": "qukuailian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "qukuailoan",
+    "target": "区块链",
+    "correct": "qukuailian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "qukuailan",
+    "target": "区块链",
+    "correct": "qukuailian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "qukuailoian",
+    "target": "区块链",
+    "correct": "qukuailian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "qukuailain",
+    "target": "区块链",
+    "correct": "qukuailian",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "huanjingbaohu",
+    "target": "环境保护",
+    "correct": "huanjingbaohu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "huankingbaohu",
+    "target": "环境保护",
+    "correct": "huanjingbaohu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "huaningbaohu",
+    "target": "环境保护",
+    "correct": "huanjingbaohu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "huankjingbaohu",
+    "target": "环境保护",
+    "correct": "huanjingbaohu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "huanijngbaohu",
+    "target": "环境保护",
+    "correct": "huanjingbaohu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "gonggongjiaotong",
+    "target": "公共交通",
+    "correct": "gonggongjiaotong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "gpnggongjiaotong",
+    "target": "公共交通",
+    "correct": "gonggongjiaotong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "gnggongjiaotong",
+    "target": "公共交通",
+    "correct": "gonggongjiaotong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "gponggongjiaotong",
+    "target": "公共交通",
+    "correct": "gonggongjiaotong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "gnoggongjiaotong",
+    "target": "公共交通",
+    "correct": "gonggongjiaotong",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "shanqingshuixiu",
+    "target": "山清水秀",
+    "correct": "shanqingshuixiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "shanqingshuixou",
+    "target": "山清水秀",
+    "correct": "shanqingshuixiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "shanqingshuixu",
+    "target": "山清水秀",
+    "correct": "shanqingshuixiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "shanqingshuixoiu",
+    "target": "山清水秀",
+    "correct": "shanqingshuixiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "shanqingshuixui",
+    "target": "山清水秀",
+    "correct": "shanqingshuixiu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "wanshiruyi",
+    "target": "万事如意",
+    "correct": "wanshiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "wandhiruyi",
+    "target": "万事如意",
+    "correct": "wanshiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "wanhiruyi",
+    "target": "万事如意",
+    "correct": "wanshiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "wandshiruyi",
+    "target": "万事如意",
+    "correct": "wanshiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "wanhsiruyi",
+    "target": "万事如意",
+    "correct": "wanshiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "baihuaqifang",
+    "target": "百花齐放",
+    "correct": "baihuaqifang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "baihiaqifang",
+    "target": "百花齐放",
+    "correct": "baihuaqifang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "baihaqifang",
+    "target": "百花齐放",
+    "correct": "baihuaqifang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "baihiuaqifang",
+    "target": "百花齐放",
+    "correct": "baihuaqifang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "baihauqifang",
+    "target": "百花齐放",
+    "correct": "baihuaqifang",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "mwgv",
+    "target": "玫瑰",
+    "correct": "mwgv",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "megv",
+    "target": "玫瑰",
+    "correct": "mwgv",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "mgv",
+    "target": "玫瑰",
+    "correct": "mwgv",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "mewgv",
+    "target": "玫瑰",
+    "correct": "mwgv",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "mgwv",
+    "target": "玫瑰",
+    "correct": "mwgv",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "igzi",
+    "target": "橙子",
+    "correct": "igzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "igxi",
+    "target": "橙子",
+    "correct": "igzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "igi",
+    "target": "橙子",
+    "correct": "igzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "igxzi",
+    "target": "橙子",
+    "correct": "igzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "igiz",
+    "target": "橙子",
+    "correct": "igzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "hudp",
+    "target": "蝴蝶",
+    "correct": "hudp",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "hidp",
+    "target": "蝴蝶",
+    "correct": "hudp",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "hdp",
+    "target": "蝴蝶",
+    "correct": "hudp",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "hiudp",
+    "target": "蝴蝶",
+    "correct": "hudp",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "hdup",
+    "target": "蝴蝶",
+    "correct": "hudp",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xsmc",
+    "target": "熊猫",
+    "correct": "xsmc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "xsnc",
+    "target": "熊猫",
+    "correct": "xsmc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "xsc",
+    "target": "熊猫",
+    "correct": "xsmc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "xsnmc",
+    "target": "熊猫",
+    "correct": "xsmc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "xscm",
+    "target": "熊猫",
+    "correct": "xsmc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "ssuu",
+    "target": "松鼠",
+    "correct": "ssuu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "sduu",
+    "target": "松鼠",
+    "correct": "ssuu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "suu",
+    "target": "松鼠",
+    "correct": "ssuu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "sdsuu",
+    "target": "松鼠",
+    "correct": "ssuu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "susu",
+    "target": "松鼠",
+    "correct": "ssuu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xkks",
+    "target": "星空",
+    "correct": "xkks",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "xkls",
+    "target": "星空",
+    "correct": "xkks",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "xks",
+    "target": "星空",
+    "correct": "xkks",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "xklks",
+    "target": "星空",
+    "correct": "xkks",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "xksk",
+    "target": "星空",
+    "correct": "xkks",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "cdhs",
+    "target": "彩虹",
+    "correct": "cdhs",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "cfhs",
+    "target": "彩虹",
+    "correct": "cdhs",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "chs",
+    "target": "彩虹",
+    "correct": "cdhs",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "cfdhs",
+    "target": "彩虹",
+    "correct": "cdhs",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "chds",
+    "target": "彩虹",
+    "correct": "cdhs",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xthx",
+    "target": "雪花",
+    "correct": "xthx",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "xtjx",
+    "target": "雪花",
+    "correct": "xthx",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "xtx",
+    "target": "雪花",
+    "correct": "xthx",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "xtjhx",
+    "target": "雪花",
+    "correct": "xthx",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "xtxh",
+    "target": "雪花",
+    "correct": "xthx",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "sflb",
+    "target": "森林",
+    "correct": "sflb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "sglb",
+    "target": "森林",
+    "correct": "sflb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "slb",
+    "target": "森林",
+    "correct": "sflb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "sgflb",
+    "target": "森林",
+    "correct": "sflb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "slfb",
+    "target": "森林",
+    "correct": "sflb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "hupo",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "huoo",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "huo",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "huopo",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "huop",
+    "target": "湖泊",
+    "correct": "hupo",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "illm",
+    "target": "窗帘",
+    "correct": "illm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "iklm",
+    "target": "窗帘",
+    "correct": "illm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "ilm",
+    "target": "窗帘",
+    "correct": "illm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "ikllm",
+    "target": "窗帘",
+    "correct": "illm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "ilml",
+    "target": "窗帘",
+    "correct": "illm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "mcjb",
+    "target": "毛巾",
+    "correct": "mcjb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "mckb",
+    "target": "毛巾",
+    "correct": "mcjb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "mcb",
+    "target": "毛巾",
+    "correct": "mcjb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "mckjb",
+    "target": "毛巾",
+    "correct": "mcjb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "mcbj",
+    "target": "毛巾",
+    "correct": "mcjb",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "jkzi",
+    "target": "镜子",
+    "correct": "jkzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "jlzi",
+    "target": "镜子",
+    "correct": "jkzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "jzi",
+    "target": "镜子",
+    "correct": "jkzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "jlkzi",
+    "target": "镜子",
+    "correct": "jkzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "jzki",
+    "target": "镜子",
+    "correct": "jkzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xiyiji",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "xiyiki",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "xiyii",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "xiyikji",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "xiyiij",
+    "target": "洗衣机",
+    "correct": "xiyiji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "dmfguj",
+    "target": "电风扇",
+    "correct": "dmfguj",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "dmfhuj",
+    "target": "电风扇",
+    "correct": "dmfguj",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "dmfuj",
+    "target": "电风扇",
+    "correct": "dmfguj",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "dmfhguj",
+    "target": "电风扇",
+    "correct": "dmfguj",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "dmfugj",
+    "target": "电风扇",
+    "correct": "dmfguj",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "jnzi",
+    "target": "饺子",
+    "correct": "jnzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "jnxi",
+    "target": "饺子",
+    "correct": "jnzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "jni",
+    "target": "饺子",
+    "correct": "jnzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "jnxzi",
+    "target": "饺子",
+    "correct": "jnzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "jniz",
+    "target": "饺子",
+    "correct": "jnzi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "mmbc",
+    "target": "面包",
+    "correct": "mmbc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "mnbc",
+    "target": "面包",
+    "correct": "mmbc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "mbc",
+    "target": "面包",
+    "correct": "mmbc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "mnmbc",
+    "target": "面包",
+    "correct": "mmbc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "mbmc",
+    "target": "面包",
+    "correct": "mmbc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "kafw",
+    "target": "咖啡",
+    "correct": "kafw",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "kagw",
+    "target": "咖啡",
+    "correct": "kafw",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "kaw",
+    "target": "咖啡",
+    "correct": "kafw",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "kagfw",
+    "target": "咖啡",
+    "correct": "kafw",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "kawf",
+    "target": "咖啡",
+    "correct": "kafw",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "dzfu",
+    "target": "豆腐",
+    "correct": "dzfu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "dxfu",
+    "target": "豆腐",
+    "correct": "dzfu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "dfu",
+    "target": "豆腐",
+    "correct": "dzfu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "dxzfu",
+    "target": "豆腐",
+    "correct": "dzfu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "dfzu",
+    "target": "豆腐",
+    "correct": "dzfu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "lmou",
+    "target": "莲藕",
+    "correct": "lmou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "lmpu",
+    "target": "莲藕",
+    "correct": "lmou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "lmu",
+    "target": "莲藕",
+    "correct": "lmou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "lmpou",
+    "target": "莲藕",
+    "correct": "lmou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "lmuo",
+    "target": "莲藕",
+    "correct": "lmou",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "qkdc",
+    "target": "青岛",
+    "correct": "qkdc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "qldc",
+    "target": "青岛",
+    "correct": "qkdc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "qdc",
+    "target": "青岛",
+    "correct": "qkdc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "qlkdc",
+    "target": "青岛",
+    "correct": "qkdc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "qdkc",
+    "target": "青岛",
+    "correct": "qkdc",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xxmf",
+    "target": "厦门",
+    "correct": "xxmf",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "xxnf",
+    "target": "厦门",
+    "correct": "xxmf",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "xxf",
+    "target": "厦门",
+    "correct": "xxmf",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "xxnmf",
+    "target": "厦门",
+    "correct": "xxmf",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "xxfm",
+    "target": "厦门",
+    "correct": "xxmf",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "kymk",
+    "target": "昆明",
+    "correct": "kymk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "kumk",
+    "target": "昆明",
+    "correct": "kymk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "kmk",
+    "target": "昆明",
+    "correct": "kymk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "kuymk",
+    "target": "昆明",
+    "correct": "kymk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "kmyk",
+    "target": "昆明",
+    "correct": "kymk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "igdu",
+    "target": "成都",
+    "correct": "igdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "igfu",
+    "target": "成都",
+    "correct": "igdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "igu",
+    "target": "成都",
+    "correct": "igdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "igfdu",
+    "target": "成都",
+    "correct": "igdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "igud",
+    "target": "成都",
+    "correct": "igdu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "vhhg",
+    "target": "张衡",
+    "correct": "vhhg",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "vjhg",
+    "target": "张衡",
+    "correct": "vhhg",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "vhg",
+    "target": "张衡",
+    "correct": "vhhg",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "vjhhg",
+    "target": "张衡",
+    "correct": "vhhg",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "vhgh",
+    "target": "张衡",
+    "correct": "vhhg",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "whanui",
+    "target": "王安石",
+    "correct": "whanui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "whanii",
+    "target": "王安石",
+    "correct": "whanui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "whani",
+    "target": "王安石",
+    "correct": "whanui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "whaniui",
+    "target": "王安石",
+    "correct": "whanui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "whaniu",
+    "target": "王安石",
+    "correct": "whanui",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "dufu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "difu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "dfu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "diufu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "dfuu",
+    "target": "杜甫",
+    "correct": "dufu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "vugell",
+    "target": "诸葛亮",
+    "correct": "vugell",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "vuhell",
+    "target": "诸葛亮",
+    "correct": "vugell",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "vuell",
+    "target": "诸葛亮",
+    "correct": "vugell",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "vuhgell",
+    "target": "诸葛亮",
+    "correct": "vugell",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "vuegll",
+    "target": "诸葛亮",
+    "correct": "vugell",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "tuuugr",
+    "target": "图书馆",
+    "correct": "tuuugr",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "tiuugr",
+    "target": "图书馆",
+    "correct": "tuuugr",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "tuugr",
+    "target": "图书馆",
+    "correct": "tuuugr",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "tiuuugr",
+    "target": "图书馆",
+    "correct": "tuuugr",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "tuugur",
+    "target": "图书馆",
+    "correct": "tuuugr",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "yzysii",
+    "target": "游泳池",
+    "correct": "yzysii",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "yzysoi",
+    "target": "游泳池",
+    "correct": "yzysii",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "yzysi",
+    "target": "游泳池",
+    "correct": "yzysii",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "yzysoii",
+    "target": "游泳池",
+    "correct": "yzysii",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "zyysii",
+    "target": "游泳池",
+    "correct": "yzysii",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "yumcqq",
+    "target": "羽毛球",
+    "correct": "yumcqq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "yumvqq",
+    "target": "羽毛球",
+    "correct": "yumcqq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "yumqq",
+    "target": "羽毛球",
+    "correct": "yumcqq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "yumvcqq",
+    "target": "羽毛球",
+    "correct": "yumcqq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "yumqcq",
+    "target": "羽毛球",
+    "correct": "yumcqq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "whyrjk",
+    "target": "望远镜",
+    "correct": "whyrjk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "whurjk",
+    "target": "望远镜",
+    "correct": "whyrjk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "whrjk",
+    "target": "望远镜",
+    "correct": "whyrjk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "whuyrjk",
+    "target": "望远镜",
+    "correct": "whyrjk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "whryjk",
+    "target": "望远镜",
+    "correct": "whyrjk",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "daybji",
+    "target": "打印机",
+    "correct": "daybji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "dsybji",
+    "target": "打印机",
+    "correct": "daybji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "dybji",
+    "target": "打印机",
+    "correct": "daybji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "dsaybji",
+    "target": "打印机",
+    "correct": "daybji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "dyabji",
+    "target": "打印机",
+    "correct": "daybji",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "bmyiqi",
+    "target": "编译器",
+    "correct": "bmyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "bmyiwi",
+    "target": "编译器",
+    "correct": "bmyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "bmyii",
+    "target": "编译器",
+    "correct": "bmyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "bmyiwqi",
+    "target": "编译器",
+    "correct": "bmyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "bmyiiq",
+    "target": "编译器",
+    "correct": "bmyiqi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "qukklm",
+    "target": "区块链",
+    "correct": "qukklm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "qukllm",
+    "target": "区块链",
+    "correct": "qukklm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "quklm",
+    "target": "区块链",
+    "correct": "qukklm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "quklklm",
+    "target": "区块链",
+    "correct": "qukklm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "quklkm",
+    "target": "区块链",
+    "correct": "qukklm",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "hrjkbchu",
+    "target": "环境保护",
+    "correct": "hrjkbchu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "hrjkbcju",
+    "target": "环境保护",
+    "correct": "hrjkbchu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "hrjkbcu",
+    "target": "环境保护",
+    "correct": "hrjkbchu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "hrjkbcjhu",
+    "target": "环境保护",
+    "correct": "hrjkbchu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "hrjkbcuh",
+    "target": "环境保护",
+    "correct": "hrjkbchu",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "gsgsjnts",
+    "target": "公共交通",
+    "correct": "gsgsjnts",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "gdgsjnts",
+    "target": "公共交通",
+    "correct": "gsgsjnts",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "ggsjnts",
+    "target": "公共交通",
+    "correct": "gsgsjnts",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "gdsgsjnts",
+    "target": "公共交通",
+    "correct": "gsgsjnts",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "ggssjnts",
+    "target": "公共交通",
+    "correct": "gsgsjnts",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "ujqkuvxq",
+    "target": "山清水秀",
+    "correct": "ujqkuvxq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "ujwkuvxq",
+    "target": "山清水秀",
+    "correct": "ujqkuvxq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "ujkuvxq",
+    "target": "山清水秀",
+    "correct": "ujqkuvxq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "ujwqkuvxq",
+    "target": "山清水秀",
+    "correct": "ujqkuvxq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "ujkquvxq",
+    "target": "山清水秀",
+    "correct": "ujqkuvxq",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "wjuiruyi",
+    "target": "万事如意",
+    "correct": "wjuiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "wjuoruyi",
+    "target": "万事如意",
+    "correct": "wjuiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "wjuruyi",
+    "target": "万事如意",
+    "correct": "wjuiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "wjuoiruyi",
+    "target": "万事如意",
+    "correct": "wjuiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "wjuriuyi",
+    "target": "万事如意",
+    "correct": "wjuiruyi",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "bdhxqifh",
+    "target": "百花齐放",
+    "correct": "bdhxqifh",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "bdhxwifh",
+    "target": "百花齐放",
+    "correct": "bdhxqifh",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "bdhxifh",
+    "target": "百花齐放",
+    "correct": "bdhxqifh",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "bdhxwqifh",
+    "target": "百花齐放",
+    "correct": "bdhxqifh",
+    "split": "independent-heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "bdhxiqfh",
+    "target": "百花齐放",
+    "correct": "bdhxqifh",
+    "split": "independent-heldout"
+  }
+]

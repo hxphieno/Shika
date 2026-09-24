@@ -1,0 +1,81 @@
+{
+  "environment" : "iOS Simulator UIKit host, production Rime and Swift; not a keyboard extension process or physical device",
+  "failures" : [
+    "late-window footprint did not stabilize: growth=14614648, spread=14614648"
+  ],
+  "initializationMilliseconds" : 110.86297035217285,
+  "keyCount" : 675,
+  "keyMaxMilliseconds" : 14.103055000305176,
+  "keyP50Milliseconds" : 3.6969184875488281,
+  "keyP95Milliseconds" : 9.7620487213134766,
+  "keyP99Milliseconds" : 11.537909507751465,
+  "lateWindowGrowthBytes" : 14614648,
+  "lateWindowSpreadBytes" : 14614648,
+  "memorySamples" : [
+    {
+      "phase" : "before-engine",
+      "physFootprintBytes" : 20924480,
+      "switches" : 0
+    },
+    {
+      "phase" : "after-initialization",
+      "physFootprintBytes" : 23005248,
+      "switches" : 0
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 21874752,
+      "switches" : 1
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 18712592,
+      "switches" : 10
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 22005824,
+      "switches" : 20
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 28477624,
+      "switches" : 40
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 35850424,
+      "switches" : 60
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36571320,
+      "switches" : 80
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36620472,
+      "switches" : 100
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36620472,
+      "switches" : 120
+    },
+    {
+      "phase" : "after-session-release",
+      "physFootprintBytes" : 36620472,
+      "switches" : 120
+    },
+    {
+      "phase" : "after-keyboard-screenshots",
+      "physFootprintBytes" : 99649936,
+      "switches" : 120
+    }
+  ],
+  "memoryStable" : false,
+  "notes" : "Footprint includes this UIKit host and Rime process-global caches. Samples 20–120 assess sustained growth after warm-up. Input timings include production decoding and correction; this script builds without -O. The repeated small word set is for stress\/retention, not correction accuracy.",
+  "osVersion" : "26.5",
+  "switchCount" : 120,
+  "switchP95Milliseconds" : 9.7889900207519531
+}

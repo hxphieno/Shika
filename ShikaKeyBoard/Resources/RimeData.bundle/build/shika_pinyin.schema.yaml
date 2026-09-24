@@ -1,10 +1,10 @@
 __build_info:
   rime_version: 1.17.0
   timestamps:
-    default: 1790267102
+    default: 1790269468
     default.custom: 0
     shika_pinyin.custom: 0
-    shika_pinyin.schema: 1790267102
+    shika_pinyin.schema: 1790269468
 engine:
   processors:
     - speller
@@ -29,8 +29,10 @@ speller:
   alphabet: abcdefghijklmnopqrstuvwxyz
   delimiter: " '"
 translator:
+  always_show_comments: true
   dictionary: pinyin_simp
   enable_completion: true
   enable_sentence: true
   enable_user_dict: true
   prism: shika_pinyin
+  spelling_hints: 64

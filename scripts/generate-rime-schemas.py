@@ -23,6 +23,8 @@ translator:
   enable_user_dict: true
   enable_sentence: true
   enable_completion: true
+  spelling_hints: 64
+  always_show_comments: true
 '''
 (root/'shika_pinyin.schema.yaml').write_text(common.format(schema='shika_pinyin',name='中文全拼',algebra='    - derive/^([nl])ue$/$1ve/\n    - abbrev/^([a-z]).+$/$1/'))
 finals = {'iu':'q','ei':'w','uan':'r','ue':'t','ve':'t','un':'y','uo':'o','ie':'p','ong':'s','iong':'s','ing':'k','uai':'k','ai':'d','en':'f','eng':'g','iang':'l','uang':'l','ang':'h','ian':'m','an':'j','ou':'z','ia':'x','ua':'x','iao':'n','ao':'c','ui':'v','in':'b'}

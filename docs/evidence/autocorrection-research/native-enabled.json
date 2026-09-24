@@ -1,0 +1,332 @@
+[
+  {
+    "preedit" : "ni hao",
+    "candidates" : [
+      "你好",
+      "不好",
+      "你还",
+      "拨号",
+      "你该",
+      "你",
+      "拟",
+      "尼"
+    ],
+    "milliseconds" : 0.59497356414794922,
+    "input" : "nihao",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "mi hao",
+    "candidates" : [
+      "米好",
+      "你好",
+      "米高",
+      "你还",
+      "你该",
+      "米",
+      "迷",
+      "密"
+    ],
+    "milliseconds" : 0.50008296966552734,
+    "input" : "mihao",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "no hao",
+    "candidates" : [
+      "你好",
+      "拨号",
+      "你还",
+      "渤海",
+      "嗯",
+      "唔"
+    ],
+    "milliseconds" : 1.6340017318725586,
+    "input" : "nohao",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "ni hao o",
+    "candidates" : [
+      "你好哦",
+      "你好",
+      "不好",
+      "你还",
+      "拨号",
+      "你该",
+      "你",
+      "拟"
+    ],
+    "milliseconds" : 0.70500373840332031,
+    "input" : "nihaoo",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "ni hoa",
+    "candidates" : [
+      "你家",
+      "不佳",
+      "不加",
+      "比价",
+      "你好",
+      "你会",
+      "你还",
+      "你和"
+    ],
+    "milliseconds" : 0.73504447937011719,
+    "input" : "nihoa",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "n hiao",
+    "candidates" : [
+      "你叫",
+      "难怪",
+      "那叫",
+      "凝胶",
+      "弄坏",
+      "你好",
+      "女孩",
+      "您好"
+    ],
+    "milliseconds" : 1.2480020523071289,
+    "input" : "nhiao",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "ni ha",
+    "candidates" : [
+      "你哈",
+      "你",
+      "不",
+      "拟",
+      "尼",
+      "呢",
+      "泥",
+      "妳"
+    ],
+    "milliseconds" : 0.48995018005371094,
+    "input" : "niha",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "zhong guo",
+    "candidates" : [
+      "中国",
+      "终归",
+      "终会",
+      "中古",
+      "中",
+      "种",
+      "重",
+      "钟"
+    ],
+    "milliseconds" : 1.0639429092407227,
+    "input" : "zhongguo",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "zhong huo",
+    "candidates" : [
+      "中或",
+      "中国",
+      "终归",
+      "终会",
+      "终极",
+      "中",
+      "种",
+      "重"
+    ],
+    "milliseconds" : 1.0770559310913086,
+    "input" : "zhonghuo",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "zhong guo o",
+    "candidates" : [
+      "中国哦",
+      "中国",
+      "终归",
+      "终会",
+      "中古",
+      "中",
+      "种",
+      "重"
+    ],
+    "milliseconds" : 1.2480020523071289,
+    "input" : "zhongguoo",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "z h no g guo",
+    "candidates" : [
+      "在乎你各国",
+      "在乎你",
+      "张惠妹",
+      "周慧敏",
+      "最后",
+      "之后",
+      "最好",
+      "做好"
+    ],
+    "milliseconds" : 2.0210742950439453,
+    "input" : "zhnogguo",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "zhong uo",
+    "candidates" : [
+      "中一",
+      "中医",
+      "中意",
+      "钟意",
+      "忠义",
+      "中",
+      "种",
+      "重"
+    ],
+    "milliseconds" : 1.6989707946777344,
+    "input" : "zhonguo",
+    "schema" : "shika_pinyin"
+  },
+  {
+    "preedit" : "ni hc",
+    "candidates" : [
+      "你好",
+      "不好",
+      "你会",
+      "你家",
+      "拨号",
+      "你",
+      "拟",
+      "尼"
+    ],
+    "milliseconds" : 0.19204616546630859,
+    "input" : "nihc",
+    "schema" : "shika_flypy"
+  },
+  {
+    "preedit" : "ni hd",
+    "candidates" : [
+      "你还",
+      "你很",
+      "渤海",
+      "你该",
+      "碧海",
+      "你",
+      "拟",
+      "尼"
+    ],
+    "milliseconds" : 0.18203258514404297,
+    "input" : "nihd",
+    "schema" : "shika_flypy"
+  },
+  {
+    "preedit" : "ni jc",
+    "candidates" : [
+      "你好",
+      "你会",
+      "你家",
+      "不会",
+      "你",
+      "拟",
+      "尼",
+      "呢"
+    ],
+    "milliseconds" : 0.23603439331054688,
+    "input" : "nijc",
+    "schema" : "shika_flypy"
+  },
+  {
+    "preedit" : "ni ch",
+    "candidates" : [
+      "你藏",
+      "补仓",
+      "部长",
+      "不曾",
+      "不涨",
+      "你",
+      "拟",
+      "尼"
+    ],
+    "milliseconds" : 0.23496150970458984,
+    "input" : "nich",
+    "schema" : "shika_flypy"
+  },
+  {
+    "preedit" : "n ii hc",
+    "candidates" : [
+      "嗯吃好",
+      "嗯",
+      "唔",
+      "呒",
+      "嘸",
+      "呣"
+    ],
+    "milliseconds" : 0.24497509002685547,
+    "input" : "niihc",
+    "schema" : "shika_flypy"
+  },
+  {
+    "preedit" : "n hc",
+    "candidates" : [
+      "嗯好",
+      "嗯",
+      "唔",
+      "呒",
+      "嘸",
+      "呣"
+    ],
+    "milliseconds" : 0.15199184417724609,
+    "input" : "nhc",
+    "schema" : "shika_flypy"
+  },
+  {
+    "preedit" : "vs go",
+    "candidates" : [
+      "中国",
+      "百果",
+      "百货",
+      "拜佛",
+      "中",
+      "种",
+      "重",
+      "钟"
+    ],
+    "milliseconds" : 0.2269744873046875,
+    "input" : "vsgo",
+    "schema" : "shika_flypy"
+  },
+  {
+    "preedit" : "vs ho",
+    "candidates" : [
+      "中或",
+      "中国",
+      "中介",
+      "终极",
+      "中级",
+      "中",
+      "种",
+      "重"
+    ],
+    "milliseconds" : 0.22208690643310547,
+    "input" : "vsho",
+    "schema" : "shika_flypy"
+  },
+  {
+    "preedit" : "sv go",
+    "candidates" : [
+      "岁过",
+      "到过",
+      "岛国",
+      "扫过",
+      "到货",
+      "岁",
+      "随",
+      "虽"
+    ],
+    "milliseconds" : 0.24104118347167969,
+    "input" : "svgo",
+    "schema" : "shika_flypy"
+  }
+]

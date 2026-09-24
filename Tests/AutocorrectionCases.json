@@ -1,0 +1,2562 @@
+[
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "nihao",
+    "target": "你好",
+    "correct": "nihao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "nohao",
+    "target": "你好",
+    "correct": "nihao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "nhao",
+    "target": "你好",
+    "correct": "nihao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "niihao",
+    "target": "你好",
+    "correct": "nihao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "nhiao",
+    "target": "你好",
+    "correct": "nihao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "zhongguo",
+    "target": "中国",
+    "correct": "zhongguo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "zhomgguo",
+    "target": "中国",
+    "correct": "zhongguo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "zhogguo",
+    "target": "中国",
+    "correct": "zhongguo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "zhonngguo",
+    "target": "中国",
+    "correct": "zhongguo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "zhognguo",
+    "target": "中国",
+    "correct": "zhongguo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "shijie",
+    "target": "世界",
+    "correct": "shijie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "shojie",
+    "target": "世界",
+    "correct": "shijie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "shjie",
+    "target": "世界",
+    "correct": "shijie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "shiijie",
+    "target": "世界",
+    "correct": "shijie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "shjiie",
+    "target": "世界",
+    "correct": "shijie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "diannao",
+    "target": "电脑",
+    "correct": "diannao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "disnnao",
+    "target": "电脑",
+    "correct": "diannao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "dinnao",
+    "target": "电脑",
+    "correct": "diannao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "diaannao",
+    "target": "电脑",
+    "correct": "diannao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "dinanao",
+    "target": "电脑",
+    "correct": "diannao",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "shouji",
+    "target": "手机",
+    "correct": "shouji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "shpuji",
+    "target": "手机",
+    "correct": "shouji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "shuji",
+    "target": "手机",
+    "correct": "shouji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "shoouji",
+    "target": "手机",
+    "correct": "shouji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "shuoji",
+    "target": "手机",
+    "correct": "shouji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "pengyou",
+    "target": "朋友",
+    "correct": "pengyou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "pemgyou",
+    "target": "朋友",
+    "correct": "pengyou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "pegyou",
+    "target": "朋友",
+    "correct": "pengyou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "penngyou",
+    "target": "朋友",
+    "correct": "pengyou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "pegnyou",
+    "target": "朋友",
+    "correct": "pengyou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xuexi",
+    "target": "学习",
+    "correct": "xuexi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "xiexi",
+    "target": "学习",
+    "correct": "xuexi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "xexi",
+    "target": "学习",
+    "correct": "xuexi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "xuuexi",
+    "target": "学习",
+    "correct": "xuexi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "xeuxi",
+    "target": "学习",
+    "correct": "xuexi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "gongzuo",
+    "target": "工作",
+    "correct": "gongzuo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "gomgzuo",
+    "target": "工作",
+    "correct": "gongzuo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "gogzuo",
+    "target": "工作",
+    "correct": "gongzuo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "gonngzuo",
+    "target": "工作",
+    "correct": "gongzuo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "gognzuo",
+    "target": "工作",
+    "correct": "gongzuo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "beijing",
+    "target": "北京",
+    "correct": "beijing",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "beojing",
+    "target": "北京",
+    "correct": "beijing",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "bejing",
+    "target": "北京",
+    "correct": "beijing",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "beiijing",
+    "target": "北京",
+    "correct": "beijing",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "bejiing",
+    "target": "北京",
+    "correct": "beijing",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "shanghai",
+    "target": "上海",
+    "correct": "shanghai",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "shamghai",
+    "target": "上海",
+    "correct": "shanghai",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "shaghai",
+    "target": "上海",
+    "correct": "shanghai",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "shannghai",
+    "target": "上海",
+    "correct": "shanghai",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "shagnhai",
+    "target": "上海",
+    "correct": "shanghai",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "guangzhou",
+    "target": "广州",
+    "correct": "guangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "guamgzhou",
+    "target": "广州",
+    "correct": "guangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "guagzhou",
+    "target": "广州",
+    "correct": "guangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "guanngzhou",
+    "target": "广州",
+    "correct": "guangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "guagnzhou",
+    "target": "广州",
+    "correct": "guangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "shenzhen",
+    "target": "深圳",
+    "correct": "shenzhen",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "shemzhen",
+    "target": "深圳",
+    "correct": "shenzhen",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "shezhen",
+    "target": "深圳",
+    "correct": "shenzhen",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "shennzhen",
+    "target": "深圳",
+    "correct": "shenzhen",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "sheznhen",
+    "target": "深圳",
+    "correct": "shenzhen",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "nanjing",
+    "target": "南京",
+    "correct": "nanjing",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "namjing",
+    "target": "南京",
+    "correct": "nanjing",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "najing",
+    "target": "南京",
+    "correct": "nanjing",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "nannjing",
+    "target": "南京",
+    "correct": "nanjing",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "najning",
+    "target": "南京",
+    "correct": "nanjing",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "hangzhou",
+    "target": "杭州",
+    "correct": "hangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "hanhzhou",
+    "target": "杭州",
+    "correct": "hangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "hanzhou",
+    "target": "杭州",
+    "correct": "hangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "hanggzhou",
+    "target": "杭州",
+    "correct": "hangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "hanzghou",
+    "target": "杭州",
+    "correct": "hangzhou",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "yinyue",
+    "target": "音乐",
+    "correct": "yinyue",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "yimyue",
+    "target": "音乐",
+    "correct": "yinyue",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "yiyue",
+    "target": "音乐",
+    "correct": "yinyue",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "yinnyue",
+    "target": "音乐",
+    "correct": "yinyue",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "yiynue",
+    "target": "音乐",
+    "correct": "yinyue",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "dianying",
+    "target": "电影",
+    "correct": "dianying",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "diamying",
+    "target": "电影",
+    "correct": "dianying",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "diaying",
+    "target": "电影",
+    "correct": "dianying",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "diannying",
+    "target": "电影",
+    "correct": "dianying",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "diayning",
+    "target": "电影",
+    "correct": "dianying",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "tianqi",
+    "target": "天气",
+    "correct": "tianqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "tisnqi",
+    "target": "天气",
+    "correct": "tianqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "tinqi",
+    "target": "天气",
+    "correct": "tianqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "tiaanqi",
+    "target": "天气",
+    "correct": "tianqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "tinaqi",
+    "target": "天气",
+    "correct": "tianqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "jintian",
+    "target": "今天",
+    "correct": "jintian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "jimtian",
+    "target": "今天",
+    "correct": "jintian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "jitian",
+    "target": "今天",
+    "correct": "jintian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "jinntian",
+    "target": "今天",
+    "correct": "jintian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "jitnian",
+    "target": "今天",
+    "correct": "jintian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "mingtian",
+    "target": "明天",
+    "correct": "mingtian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "minhtian",
+    "target": "明天",
+    "correct": "mingtian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "mintian",
+    "target": "明天",
+    "correct": "mingtian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "minggtian",
+    "target": "明天",
+    "correct": "mingtian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "mintgian",
+    "target": "明天",
+    "correct": "mingtian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "shijian",
+    "target": "时间",
+    "correct": "shijian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "shojian",
+    "target": "时间",
+    "correct": "shijian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "shjian",
+    "target": "时间",
+    "correct": "shijian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "shiijian",
+    "target": "时间",
+    "correct": "shijian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "shjiian",
+    "target": "时间",
+    "correct": "shijian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xiexie",
+    "target": "谢谢",
+    "correct": "xiexie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "xirxie",
+    "target": "谢谢",
+    "correct": "xiexie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "xixie",
+    "target": "谢谢",
+    "correct": "xiexie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "xieexie",
+    "target": "谢谢",
+    "correct": "xiexie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "xixeie",
+    "target": "谢谢",
+    "correct": "xiexie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "zaijian",
+    "target": "再见",
+    "correct": "zaijian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "zaojian",
+    "target": "再见",
+    "correct": "zaijian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "zajian",
+    "target": "再见",
+    "correct": "zaijian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "zaiijian",
+    "target": "再见",
+    "correct": "zaijian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "zajiian",
+    "target": "再见",
+    "correct": "zaijian",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xihuan",
+    "target": "喜欢",
+    "correct": "xihuan",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "xijuan",
+    "target": "喜欢",
+    "correct": "xihuan",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "xiuan",
+    "target": "喜欢",
+    "correct": "xihuan",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "xihhuan",
+    "target": "喜欢",
+    "correct": "xihuan",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "xiuhan",
+    "target": "喜欢",
+    "correct": "xihuan",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "shurufa",
+    "target": "输入法",
+    "correct": "shurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "shirufa",
+    "target": "输入法",
+    "correct": "shurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "shrufa",
+    "target": "输入法",
+    "correct": "shurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "shuurufa",
+    "target": "输入法",
+    "correct": "shurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "shruufa",
+    "target": "输入法",
+    "correct": "shurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "jisuanji",
+    "target": "计算机",
+    "correct": "jisuanji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "substitution",
+    "input": "jisianji",
+    "target": "计算机",
+    "correct": "jisuanji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "omission",
+    "input": "jisanji",
+    "target": "计算机",
+    "correct": "jisuanji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "insertion",
+    "input": "jisuuanji",
+    "target": "计算机",
+    "correct": "jisuanji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "transposition",
+    "input": "jisaunji",
+    "target": "计算机",
+    "correct": "jisuanji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xuexiao",
+    "target": "学校",
+    "correct": "xuexiao",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "laoshi",
+    "target": "老师",
+    "correct": "laoshi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "xuesheng",
+    "target": "学生",
+    "correct": "xuesheng",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "haizi",
+    "target": "孩子",
+    "correct": "haizi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "kuaile",
+    "target": "快乐",
+    "correct": "kuaile",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "jiankang",
+    "target": "健康",
+    "correct": "jiankang",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "anquan",
+    "target": "安全",
+    "correct": "anquan",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "lvse",
+    "target": "绿色",
+    "correct": "lvse",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "nvhai",
+    "target": "女孩",
+    "correct": "nvhai",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "mingzi",
+    "target": "名字",
+    "correct": "mingzi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "wangming",
+    "target": "王明",
+    "correct": "wangming",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "libai",
+    "target": "李白",
+    "correct": "libai",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "yuyan",
+    "target": "语言",
+    "correct": "yuyan",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "zhongwen",
+    "target": "中文",
+    "correct": "zhongwen",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "clean",
+    "input": "pinyin",
+    "target": "拼音",
+    "correct": "pinyin",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "woshizhongguoren",
+    "target": "我是中国人",
+    "correct": "woshizhongguoren",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "nihaoshijie",
+    "target": "你好世界",
+    "correct": "nihaoshijie",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "jintiantianqihenhao",
+    "target": "今天天气很好",
+    "correct": "jintiantianqihenhao",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "zhonghuarenmingongheguo",
+    "target": "中华人民共和国",
+    "correct": "zhonghuarenmingongheguo",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "xiexieni",
+    "target": "谢谢你",
+    "correct": "xiexieni",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "womenyiqixuexi",
+    "target": "我们一起学习",
+    "correct": "womenyiqixuexi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "beijingdaxue",
+    "target": "北京大学",
+    "correct": "beijingdaxue",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "shanghaijiaotongdaxue",
+    "target": "上海交通大学",
+    "correct": "shanghaijiaotongdaxue",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "xian",
+    "target": "西安",
+    "correct": "xian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "anquan",
+    "target": "安全",
+    "correct": "anquan",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "nver",
+    "target": "女儿",
+    "correct": "nver",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "lve",
+    "target": "略",
+    "correct": "lve",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "a",
+    "target": "啊",
+    "correct": "a",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "o",
+    "target": "哦",
+    "correct": "o",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "e",
+    "target": "饿",
+    "correct": "e",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "en",
+    "target": "嗯",
+    "correct": "en",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "ouer",
+    "target": "偶尔",
+    "correct": "ouer",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "aihao",
+    "target": "爱好",
+    "correct": "aihao",
+    "split": "development"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "zhangsan",
+    "target": "张三",
+    "correct": "zhangsan",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_pinyin",
+    "kind": "boundary",
+    "input": "lisi",
+    "target": "李四",
+    "correct": "lisi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "nihc",
+    "target": "你好",
+    "correct": "nihc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "nohc",
+    "target": "你好",
+    "correct": "nihc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "nhc",
+    "target": "你好",
+    "correct": "nihc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "niihc",
+    "target": "你好",
+    "correct": "nihc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "nhic",
+    "target": "你好",
+    "correct": "nihc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "vsgo",
+    "target": "中国",
+    "correct": "vsgo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "vdgo",
+    "target": "中国",
+    "correct": "vsgo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "vgo",
+    "target": "中国",
+    "correct": "vsgo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "vssgo",
+    "target": "中国",
+    "correct": "vsgo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "vgso",
+    "target": "中国",
+    "correct": "vsgo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "uijp",
+    "target": "世界",
+    "correct": "uijp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "uojp",
+    "target": "世界",
+    "correct": "uijp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "ujp",
+    "target": "世界",
+    "correct": "uijp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "uiijp",
+    "target": "世界",
+    "correct": "uijp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "ujip",
+    "target": "世界",
+    "correct": "uijp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "dmnc",
+    "target": "电脑",
+    "correct": "dmnc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "dnnc",
+    "target": "电脑",
+    "correct": "dmnc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "dnc",
+    "target": "电脑",
+    "correct": "dmnc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "dmmnc",
+    "target": "电脑",
+    "correct": "dmnc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "dnmc",
+    "target": "电脑",
+    "correct": "dmnc",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "uzji",
+    "target": "手机",
+    "correct": "uzji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "uxji",
+    "target": "手机",
+    "correct": "uzji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "uji",
+    "target": "手机",
+    "correct": "uzji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "uzzji",
+    "target": "手机",
+    "correct": "uzji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "ujzi",
+    "target": "手机",
+    "correct": "uzji",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "pgyz",
+    "target": "朋友",
+    "correct": "pgyz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "phyz",
+    "target": "朋友",
+    "correct": "pgyz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "pyz",
+    "target": "朋友",
+    "correct": "pgyz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "pggyz",
+    "target": "朋友",
+    "correct": "pgyz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "pygz",
+    "target": "朋友",
+    "correct": "pgyz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xtxi",
+    "target": "学习",
+    "correct": "xtxi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "xyxi",
+    "target": "学习",
+    "correct": "xtxi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "xxi",
+    "target": "学习",
+    "correct": "xtxi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "xttxi",
+    "target": "学习",
+    "correct": "xtxi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "xxti",
+    "target": "学习",
+    "correct": "xtxi",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "gszo",
+    "target": "工作",
+    "correct": "gszo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "gdzo",
+    "target": "工作",
+    "correct": "gszo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "gzo",
+    "target": "工作",
+    "correct": "gszo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "gsszo",
+    "target": "工作",
+    "correct": "gszo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "gzso",
+    "target": "工作",
+    "correct": "gszo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "bwjk",
+    "target": "北京",
+    "correct": "bwjk",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "bejk",
+    "target": "北京",
+    "correct": "bwjk",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "bjk",
+    "target": "北京",
+    "correct": "bwjk",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "bwwjk",
+    "target": "北京",
+    "correct": "bwjk",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "bjwk",
+    "target": "北京",
+    "correct": "bwjk",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "uhhd",
+    "target": "上海",
+    "correct": "uhhd",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "ujhd",
+    "target": "上海",
+    "correct": "uhhd",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "uhd",
+    "target": "上海",
+    "correct": "uhhd",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "uhhhd",
+    "target": "上海",
+    "correct": "uhhd",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "huhd",
+    "target": "上海",
+    "correct": "uhhd",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "glvz",
+    "target": "广州",
+    "correct": "glvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "gmvz",
+    "target": "广州",
+    "correct": "glvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "gvz",
+    "target": "广州",
+    "correct": "glvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "gllvz",
+    "target": "广州",
+    "correct": "glvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "gvlz",
+    "target": "广州",
+    "correct": "glvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "ufvf",
+    "target": "深圳",
+    "correct": "ufvf",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "ugvf",
+    "target": "深圳",
+    "correct": "ufvf",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "uvf",
+    "target": "深圳",
+    "correct": "ufvf",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "uffvf",
+    "target": "深圳",
+    "correct": "ufvf",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "uvff",
+    "target": "深圳",
+    "correct": "ufvf",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "njjk",
+    "target": "南京",
+    "correct": "njjk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "nkjk",
+    "target": "南京",
+    "correct": "njjk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "njk",
+    "target": "南京",
+    "correct": "njjk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "njjjk",
+    "target": "南京",
+    "correct": "njjk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "jnjk",
+    "target": "南京",
+    "correct": "njjk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "hhvz",
+    "target": "杭州",
+    "correct": "hhvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "hjvz",
+    "target": "杭州",
+    "correct": "hhvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "hvz",
+    "target": "杭州",
+    "correct": "hhvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "hhhvz",
+    "target": "杭州",
+    "correct": "hhvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "hvhz",
+    "target": "杭州",
+    "correct": "hhvz",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "ybyt",
+    "target": "音乐",
+    "correct": "ybyt",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "ynyt",
+    "target": "音乐",
+    "correct": "ybyt",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "yyt",
+    "target": "音乐",
+    "correct": "ybyt",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "ybbyt",
+    "target": "音乐",
+    "correct": "ybyt",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "yybt",
+    "target": "音乐",
+    "correct": "ybyt",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "dmyk",
+    "target": "电影",
+    "correct": "dmyk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "dnyk",
+    "target": "电影",
+    "correct": "dmyk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "dyk",
+    "target": "电影",
+    "correct": "dmyk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "dmmyk",
+    "target": "电影",
+    "correct": "dmyk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "dymk",
+    "target": "电影",
+    "correct": "dmyk",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "tmqi",
+    "target": "天气",
+    "correct": "tmqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "tnqi",
+    "target": "天气",
+    "correct": "tmqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "tqi",
+    "target": "天气",
+    "correct": "tmqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "tmmqi",
+    "target": "天气",
+    "correct": "tmqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "tqmi",
+    "target": "天气",
+    "correct": "tmqi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "jbtm",
+    "target": "今天",
+    "correct": "jbtm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "jntm",
+    "target": "今天",
+    "correct": "jbtm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "jtm",
+    "target": "今天",
+    "correct": "jbtm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "jbbtm",
+    "target": "今天",
+    "correct": "jbtm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "jtbm",
+    "target": "今天",
+    "correct": "jbtm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "mktm",
+    "target": "明天",
+    "correct": "mktm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "mltm",
+    "target": "明天",
+    "correct": "mktm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "mtm",
+    "target": "明天",
+    "correct": "mktm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "mkktm",
+    "target": "明天",
+    "correct": "mktm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "mtkm",
+    "target": "明天",
+    "correct": "mktm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "uijm",
+    "target": "时间",
+    "correct": "uijm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "uojm",
+    "target": "时间",
+    "correct": "uijm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "ujm",
+    "target": "时间",
+    "correct": "uijm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "uiijm",
+    "target": "时间",
+    "correct": "uijm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "ujim",
+    "target": "时间",
+    "correct": "uijm",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xpxp",
+    "target": "谢谢",
+    "correct": "xpxp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "xqxp",
+    "target": "谢谢",
+    "correct": "xpxp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "xxp",
+    "target": "谢谢",
+    "correct": "xpxp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "xppxp",
+    "target": "谢谢",
+    "correct": "xpxp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "xxpp",
+    "target": "谢谢",
+    "correct": "xpxp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "zdjm",
+    "target": "再见",
+    "correct": "zdjm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "zfjm",
+    "target": "再见",
+    "correct": "zdjm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "zjm",
+    "target": "再见",
+    "correct": "zdjm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "zddjm",
+    "target": "再见",
+    "correct": "zdjm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "zjdm",
+    "target": "再见",
+    "correct": "zdjm",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xihr",
+    "target": "喜欢",
+    "correct": "xihr",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "xohr",
+    "target": "喜欢",
+    "correct": "xihr",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "xhr",
+    "target": "喜欢",
+    "correct": "xihr",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "xiihr",
+    "target": "喜欢",
+    "correct": "xihr",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "xhir",
+    "target": "喜欢",
+    "correct": "xihr",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "uurufa",
+    "target": "输入法",
+    "correct": "uurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "uutufa",
+    "target": "输入法",
+    "correct": "uurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "uuufa",
+    "target": "输入法",
+    "correct": "uurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "uurrufa",
+    "target": "输入法",
+    "correct": "uurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "uuurfa",
+    "target": "输入法",
+    "correct": "uurufa",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "jisrji",
+    "target": "计算机",
+    "correct": "jisrji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "substitution",
+    "input": "jidrji",
+    "target": "计算机",
+    "correct": "jisrji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "omission",
+    "input": "jirji",
+    "target": "计算机",
+    "correct": "jisrji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "insertion",
+    "input": "jissrji",
+    "target": "计算机",
+    "correct": "jisrji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "transposition",
+    "input": "jirsji",
+    "target": "计算机",
+    "correct": "jisrji",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xtxn",
+    "target": "学校",
+    "correct": "xtxn",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "lcui",
+    "target": "老师",
+    "correct": "lcui",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "xtug",
+    "target": "学生",
+    "correct": "xtug",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "hdzi",
+    "target": "孩子",
+    "correct": "hdzi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "kkle",
+    "target": "快乐",
+    "correct": "kkle",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "jmkh",
+    "target": "健康",
+    "correct": "jmkh",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "anqr",
+    "target": "安全",
+    "correct": "anqr",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "lvse",
+    "target": "绿色",
+    "correct": "lvse",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "nvhd",
+    "target": "女孩",
+    "correct": "nvhd",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "mkzi",
+    "target": "名字",
+    "correct": "mkzi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "whmk",
+    "target": "王明",
+    "correct": "whmk",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "libd",
+    "target": "李白",
+    "correct": "libd",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "yuyj",
+    "target": "语言",
+    "correct": "yuyj",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "vswf",
+    "target": "中文",
+    "correct": "vswf",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "clean",
+    "input": "pbyb",
+    "target": "拼音",
+    "correct": "pbyb",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "wouivsgorf",
+    "target": "我是中国人",
+    "correct": "wouivsgorf",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "nihcuijp",
+    "target": "你好世界",
+    "correct": "nihcuijp",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "jbtmtmqihfhc",
+    "target": "今天天气很好",
+    "correct": "jbtmtmqihfhc",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "vshxrfmbgshego",
+    "target": "中华人民共和国",
+    "correct": "vshxrfmbgshego",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "xpxpni",
+    "target": "谢谢你",
+    "correct": "xpxpni",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "womfyiqixtxi",
+    "target": "我们一起学习",
+    "correct": "womfyiqixtxi",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "bwjkdaxt",
+    "target": "北京大学",
+    "correct": "bwjkdaxt",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "uhhdjntsdaxt",
+    "target": "上海交通大学",
+    "correct": "uhhdjntsdaxt",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "xian",
+    "target": "西安",
+    "correct": "xian",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "anqr",
+    "target": "安全",
+    "correct": "anqr",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "nver",
+    "target": "女儿",
+    "correct": "nver",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "lt",
+    "target": "略",
+    "correct": "lt",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "aa",
+    "target": "啊",
+    "correct": "aa",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "oo",
+    "target": "哦",
+    "correct": "oo",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "ee",
+    "target": "饿",
+    "correct": "ee",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "en",
+    "target": "嗯",
+    "correct": "en",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "ouer",
+    "target": "偶尔",
+    "correct": "ouer",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "aihc",
+    "target": "爱好",
+    "correct": "aihc",
+    "split": "development"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "vhsj",
+    "target": "张三",
+    "correct": "vhsj",
+    "split": "heldout"
+  },
+  {
+    "schema": "shika_flypy",
+    "kind": "boundary",
+    "input": "lisi",
+    "target": "李四",
+    "correct": "lisi",
+    "split": "development"
+  }
+]

@@ -1,0 +1,6 @@
+abaf510c88c6117a038b1ec3fb2c8434bc35c86b8cf7277549f100daa0f45fa2  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-correction-independent.Vb7T8f/sources/AutocorrectionIndependentChecks.swift
+41c5180a15d7bc7c824ce62191a1f291a293505598c9311eec27b3c1a94afab4  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-correction-independent.Vb7T8f/sources/SKInputEngine.swift
+079017ef38642310139c9eabb213c15389d56cf01cb403b0c28fdc9db33a5e6e  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-correction-independent.Vb7T8f/sources/SKInputSession.swift
+40c84927bd2c3fb54a5191b792a58ecdfda86ccde2058e1682090156ffcf41bc  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-correction-independent.Vb7T8f/sources/SKRimeSession.h
+fc8fc4bc65f6cacce62a93470fa8afea910266dc030a43caf4abff97662beffa  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-correction-independent.Vb7T8f/sources/SKRimeSession.m
+e3b00d547b066764d6b1e7000f40cb074c269e4c5e8011ceaf22d2ca2018e984  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-correction-independent.Vb7T8f/sources/SKSpellingCorrector.swift

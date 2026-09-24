@@ -11,3 +11,5 @@ mkdir "$work/user"
 mkdir -p ShikaKeyBoard/Resources/RimeData.bundle/build
 cp "$work/user/build/"* ShikaKeyBoard/Resources/RimeData.bundle/build/
 cp Vendor/RimeData/default.yaml ShikaKeyBoard/Resources/RimeData.bundle/
+
+python3 scripts/generate-correction-index.py

@@ -11,6 +11,7 @@ xcrun clang -fobjc-arc -c "$repo_dir/ShikaKeyBoard/Engine/SKRimeSession.m" \
 xcrun swiftc -module-cache-path "$test_dir/module-cache" -parse-as-library \
     "$repo_dir/Tests/RimeSessionChecks.swift" \
     "$repo_dir/ShikaKeyBoard/Engine/SKInputEngine.swift" \
+    "$repo_dir/ShikaKeyBoard/Engine/SKSpellingCorrector.swift" \
     "$repo_dir/ShikaKeyBoard/Core/SKInputSession.swift" \
     "$test_dir/bridge.o" "$slice/librime.a" \
     -import-objc-header "$repo_dir/ShikaKeyBoard/Engine/SKRimeSession.h" \

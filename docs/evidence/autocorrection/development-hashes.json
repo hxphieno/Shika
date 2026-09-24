@@ -1,0 +1,8 @@
+{
+  "Tests/AutocorrectionCases.json": "5b9ffcee5fe0e05d8a0095ac99b9385c4dbb93b499496a4b4ac074b6e1665f85",
+  "ShikaKeyBoard/Engine/SKInputEngine.swift": "41c5180a15d7bc7c824ce62191a1f291a293505598c9311eec27b3c1a94afab4",
+  "ShikaKeyBoard/Engine/SKSpellingCorrector.swift": "e3b00d547b066764d6b1e7000f40cb074c269e4c5e8011ceaf22d2ca2018e984",
+  "ShikaKeyBoard/Engine/SKRimeSession.m": "fc8fc4bc65f6cacce62a93470fa8afea910266dc030a43caf4abff97662beffa",
+  "ShikaKeyBoard/Resources/RimeData.bundle/shika_pinyin.correction.bin": "cc45951b54f279192d346e11190167df6a5b19eb98c7e00a3ce283bfaaad5cc0",
+  "ShikaKeyBoard/Resources/RimeData.bundle/shika_flypy.correction.bin": "55a73a2c31a222a0ab292295494b156c65ffaa24b3ce6e803d6cc26ac331d5ef"
+}

@@ -1,0 +1,2 @@
+55a73a2c31a222a0ab292295494b156c65ffaa24b3ce6e803d6cc26ac331d5ef  /tmp/shika-final-correction-resources.jFeK8I/RimeData.bundle/shika_flypy.correction.bin
+cc45951b54f279192d346e11190167df6a5b19eb98c7e00a3ce283bfaaad5cc0  /tmp/shika-final-correction-resources.jFeK8I/RimeData.bundle/shika_pinyin.correction.bin

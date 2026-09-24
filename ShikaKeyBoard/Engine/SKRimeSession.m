@@ -79,6 +79,29 @@ static NSString *Text(const char *text) { return text ? [NSString stringWithUTF8
     [RimeLock() unlock];
     return result;
 }
+- (NSDictionary *)replaceInput:(NSString *)input {
+    [RimeLock() lock];
+    _api->clear_composition(_session);
+    _api->set_input(_session, input.UTF8String);
+    NSDictionary *result = [self snapshot];
+    [RimeLock() unlock]; return result;
+}
+- (NSDictionary *)selectText:(NSString *)text {
+    [RimeLock() lock];
+    RimeCandidateListIterator iterator = {0};
+    NSInteger found = -1;
+    if (_api->candidate_list_begin(_session, &iterator)) {
+        while (_api->candidate_list_next(&iterator)) {
+            if ([Text(iterator.candidate.text) isEqualToString:text]) { found = iterator.index; break; }
+            if (iterator.index >= 127) break;
+        }
+        _api->candidate_list_end(&iterator);
+    }
+    if (found >= 0) _api->select_candidate(_session, (size_t)found);
+    NSMutableDictionary *result = [[self snapshot] mutableCopy];
+    result[@"matched"] = @(found >= 0);
+    [RimeLock() unlock]; return result;
+}
 - (NSDictionary *)processKey:(int)key {
     [RimeLock() lock];
     BOOL handled = _api->process_key(_session, key, 0);

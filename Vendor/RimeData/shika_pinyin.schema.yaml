@@ -20,3 +20,5 @@ translator:
   enable_user_dict: true
   enable_sentence: true
   enable_completion: true
+  spelling_hints: 64
+  always_show_comments: true

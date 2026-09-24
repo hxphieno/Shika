@@ -1,0 +1,128 @@
+{
+  "datasetSHA256": "f0c721776f147caf615fb329e2c829a4c36672e6e21d0ff3062b28581951f8ea",
+  "cases": 400,
+  "metrics": [
+    {
+      "schema": "shika_pinyin",
+      "kind": "clean",
+      "count": 40,
+      "baselineTop1": 35,
+      "correctedTop1": 35,
+      "baselineTop3": 36,
+      "correctedTop3": 36,
+      "baselineTop8": 36,
+      "correctedTop8": 36
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "substitution",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 22,
+      "baselineTop3": 5,
+      "correctedTop3": 34,
+      "baselineTop8": 5,
+      "correctedTop8": 34
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "omission",
+      "count": 40,
+      "baselineTop1": 3,
+      "correctedTop1": 11,
+      "baselineTop3": 4,
+      "correctedTop3": 30,
+      "baselineTop8": 4,
+      "correctedTop8": 32
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "insertion",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 25,
+      "baselineTop3": 4,
+      "correctedTop3": 34,
+      "baselineTop8": 4,
+      "correctedTop8": 34
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "transposition",
+      "count": 40,
+      "baselineTop1": 1,
+      "correctedTop1": 26,
+      "baselineTop3": 3,
+      "correctedTop3": 35,
+      "baselineTop8": 3,
+      "correctedTop8": 35
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "clean",
+      "count": 40,
+      "baselineTop1": 35,
+      "correctedTop1": 35,
+      "baselineTop3": 36,
+      "correctedTop3": 36,
+      "baselineTop8": 36,
+      "correctedTop8": 36
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "substitution",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 6,
+      "baselineTop3": 0,
+      "correctedTop3": 28,
+      "baselineTop8": 0,
+      "correctedTop8": 30
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "omission",
+      "count": 40,
+      "baselineTop1": 1,
+      "correctedTop1": 15,
+      "baselineTop3": 1,
+      "correctedTop3": 24,
+      "baselineTop8": 1,
+      "correctedTop8": 25
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "insertion",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 31,
+      "baselineTop3": 0,
+      "correctedTop3": 35,
+      "baselineTop8": 0,
+      "correctedTop8": 35
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "transposition",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 13,
+      "baselineTop3": 0,
+      "correctedTop3": 32,
+      "baselineTop8": 0,
+      "correctedTop8": 33
+    }
+  ],
+  "cleanFirstCandidateChanges": [],
+  "cleanTargetRegressions": [],
+  "unexpectedCommitsWhileTyping": [],
+  "selectedCandidateCommitFailures": [],
+  "spaceCommitFailures": [],
+  "selectionUnavailable": 61,
+  "keyLatencyMS": {
+    "p50": 1.1249780654907227,
+    "p95": 13.55588436126709,
+    "p99": 38.39707374572754,
+    "max": 94.64395046234131
+  }
+}

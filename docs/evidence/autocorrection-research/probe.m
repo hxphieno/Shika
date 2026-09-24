@@ -1,0 +1,7 @@
+#import <Foundation/Foundation.h>
+#import "SKRimeSession.h"
+int main(int argc,char**argv){@autoreleasepool{
+ SKRimeSession*s=[[SKRimeSession alloc]initWithSharedPath:@(argv[1]) userPath:@(argv[2]) schema:@"shika_pinyin" error:nil];
+ NSArray* cases=@[@[@"shika_pinyin",@"nihao"],@[@"shika_pinyin",@"mihao"],@[@"shika_pinyin",@"nohao"],@[@"shika_pinyin",@"nihaoo"],@[@"shika_pinyin",@"nihoa"],@[@"shika_pinyin",@"nhiao"],@[@"shika_pinyin",@"niha"],@[@"shika_pinyin",@"zhongguo"],@[@"shika_pinyin",@"zhonghuo"],@[@"shika_pinyin",@"zhongguoo"],@[@"shika_pinyin",@"zhnogguo"],@[@"shika_pinyin",@"zhonguo"],@[@"shika_flypy",@"nihc"],@[@"shika_flypy",@"nihd"],@[@"shika_flypy",@"nijc"],@[@"shika_flypy",@"nich"],@[@"shika_flypy",@"niihc"],@[@"shika_flypy",@"nhc"],@[@"shika_flypy",@"vsgo"],@[@"shika_flypy",@"vsho"],@[@"shika_flypy",@"svgo"]];
+ NSMutableArray*out=[NSMutableArray new];for(NSArray*c in cases){[s selectSchema:c[0]];CFAbsoluteTime start=CFAbsoluteTimeGetCurrent();for(NSUInteger i=0;i<[c[1]length];i++){[s processKey:[c[1]characterAtIndex:i]];}NSDictionary*st=[s snapshot];[out addObject:@{@"schema":c[0],@"input":c[1],@"preedit":st[@"preedit"],@"candidates":[st[@"candidates"]valueForKey:@"text"],@"milliseconds":@((CFAbsoluteTimeGetCurrent()-start)*1000)}];}NSData*d=[NSJSONSerialization dataWithJSONObject:out options:NSJSONWritingPrettyPrinted error:nil];fwrite(d.bytes,1,d.length,stdout);
+}return 0;}

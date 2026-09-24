@@ -14,5 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDictionary *)clearComposition;
 - (NSDictionary *)selectSchema:(NSString *)schema;
 - (NSDictionary *)snapshot;
+- (NSDictionary *)replaceInput:(NSString *)input;
+- (NSDictionary *)selectText:(NSString *)text;
 @end
 NS_ASSUME_NONNULL_END
