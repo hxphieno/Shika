@@ -16,6 +16,12 @@ final class SKJapaneseLexicon {
     private let pool: Int
     private let dimension: Int
     private let roman: [String: [String]]
+    // This layer has no user history. The engine reapplies learned ranking to
+    // these immutable conversion results on every input, including cache hits.
+    // Match the lexicon's UTF-8 lookup semantics. Swift String keys would merge
+    // canonically equivalent but byte-distinct readings (ば and は + U+3099).
+    private var conversionCache: [Data: [String]] = [:]
+    private var conversionCacheOrder: [Data] = []
 
     init(resources: URL) throws {
         data = try Data(contentsOf: resources.appendingPathComponent("japanese-lexicon.bin"), options: .alwaysMapped)
@@ -100,6 +106,8 @@ final class SKJapaneseLexicon {
     /// Bounded N-best Viterbi search over all matching word boundaries. This is
     /// our decoder using Mozc data, not a port of Mozc's complete converter.
     func convert(_ kana: String) -> [String] {
+        let cacheKey = Data(kana.utf8)
+        if let cached = conversionCache[cacheKey] { return cached }
         struct Path { let text: String; let right: Int; let cost: Int }
         let characters = Array(kana)
         guard !characters.isEmpty, characters.count <= 80 else { return kana.isEmpty ? [] : [kana] }
@@ -145,6 +153,10 @@ final class SKJapaneseLexicon {
             (0x3041...0x3096).contains($0.value) ? UnicodeScalar($0.value + 0x60)! : $0
         }))
         for literal in [kana, katakana] where seen.insert(literal).inserted { result.append(literal) }
+        if conversionCacheOrder.count == 16 {
+            conversionCache.removeValue(forKey: conversionCacheOrder.removeFirst())
+        }
+        conversionCacheOrder.append(cacheKey); conversionCache[cacheKey] = result
         return result
     }
 }
