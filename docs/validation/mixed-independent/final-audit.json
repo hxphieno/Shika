@@ -1,0 +1,31 @@
+{
+  "independent": {
+    "checked": 22,
+    "mismatches": []
+  },
+  "quality": {
+    "checked": 11,
+    "mismatches": [],
+    "total": 250,
+    "heldoutMixed": 144,
+    "heldoutMixedTop5": 128,
+    "heldoutMixedTop10": 132,
+    "unexpectedCommitRows": 0
+  },
+  "resources": {
+    "checked": 18,
+    "mismatches": []
+  },
+  "behavior": {
+    "checks": 47,
+    "failures": 0
+  },
+  "learn": {
+    "checks": 4,
+    "failures": 0
+  },
+  "probe": {
+    "checks": 3,
+    "failures": 0
+  }
+}

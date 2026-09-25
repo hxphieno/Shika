@@ -1,0 +1,22 @@
+{
+  "checks" : [
+    {
+      "detail" : "",
+      "name" : "new process loads nonempty persisted learning",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "new process preserves learned first ranking",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "typing\/browsing\/cancel do not write learning",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "mode" : "probe",
+  "platform" : "macOS production engines, no UIKit"
+}

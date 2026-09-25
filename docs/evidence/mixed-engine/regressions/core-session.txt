@@ -1,0 +1,62 @@
+PASS: wouivsgorf stays preedit
+PASS: wouivsgorf includes 我是中国人
+PASS: wouivsgorf commits 我是中国人 once
+PASS: nihcuijp stays preedit
+PASS: nihcuijp includes 你好世界
+PASS: nihcuijp commits 你好世界 once
+PASS: nvhd stays preedit
+PASS: nvhd includes 女孩
+PASS: nvhd commits 女孩 once
+PASS: lvse stays preedit
+PASS: lvse includes 绿色
+PASS: lvse commits 绿色 once
+PASS: anqr stays preedit
+PASS: anqr includes 安全
+PASS: anqr commits 安全 once
+PASS: woshizhongguoren stays preedit
+PASS: woshizhongguoren includes 我是中国人
+PASS: woshizhongguoren commits 我是中国人 once
+PASS: nihaoshijie stays preedit
+PASS: nihaoshijie includes 你好世界
+PASS: nihaoshijie commits 你好世界 once
+PASS: xi'an stays preedit
+PASS: xi'an includes 西安
+PASS: xi'an commits 西安 once
+PASS: nvhai stays preedit
+PASS: nvhai includes 女孩
+PASS: nvhai commits 女孩 once
+PASS: lve stays preedit
+PASS: lve includes 略
+PASS: lve commits 略 once
+PASS: space commits top once
+PASS: idle space inserts space
+PASS: punctuation commits Hanzi then punctuation
+PASS: return confirms raw input without newline
+PASS: idle return reaches host
+PASS: uppercase commits Hanzi then literal
+PASS: switch schema commits pending
+PASS: new schema converts after switch
+PASS: delete edits preedit only
+PASS: preedit can delete to empty
+PASS: idle delete reaches document
+PASS: paging changes candidates
+PASS: page1 nonfirst index selects correct text
+PASS: cancel clears without leak
+PASS: 100 consecutive compositions
+PARTIAL selection: output= input=nihaoshijie preedit=你好shi jie
+PASS: partial candidate then space completes sentence
+PASS: previous on first page preserves composition
+INVALID input fallback=仄仄仄仄仄仄, remaining=
+PASS: raw commit inserts letters and clears composition
+PASS: raw commit is one-shot
+PASS: nonmutating enumeration starts at requested absolute index
+PASS: expanded candidates preserve composition
+PASS: expanded native candidate selects by absolute index
+PASS: expanding preserves correction selection route
+PASS: expanded scrolling reaches last candidate
+PASS: expanded candidate identifiers stay unique
+COMPLETE: 55 assertions
+2026-09-26 00:08:57.174 learning-checks[68305:7563161] PASS: repeated selection promotes 腻 to first candidate
+2026-09-26 00:08:57.211 learning-checks[68316:7563213] PASS: learned 腻 ranks first in a new process
+2026-09-26 00:08:58.062 runtime-checks[68323:7563242] PASS shared runtime, normalized paths, conflicting directory rejection and surviving session input
+Test artifacts: /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-session-checks.8oadWB

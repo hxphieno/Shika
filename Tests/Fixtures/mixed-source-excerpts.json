@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "purpose": "Source verification only; not the 200-case benchmark and not a production lexicon.",
+  "entries": [
+    {
+      "id": "wiki-oshi",
+      "title": "推 (日本)",
+      "url": "https://zh.wikipedia.org/w/index.php?title=推_(日本)&oldid=94184542",
+      "excerpt": "推（日語：推し）是一個日語俚語",
+      "author": "Wikipedia contributors",
+      "published_at": null,
+      "updated_at": "2026-09-04",
+      "retrieved_at": "2026-09-26",
+      "kind": "verbatim_excerpt",
+      "is_complete_sentence": false,
+      "genre": "expository_not_chat",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "japanese_spans": [
+        "推し"
+      ],
+      "modification": "Short excerpt; wording unchanged; article markup removed.",
+      "production_training_allowed_by_this_record": false
+    },
+    {
+      "id": "wiki-kawaii",
+      "title": "卡哇伊",
+      "url": "https://zh.wikipedia.org/w/index.php?title=卡哇伊&oldid=94317212",
+      "excerpt": "「可愛い」已經成為日本文化的重要要素",
+      "author": "Wikipedia contributors",
+      "published_at": null,
+      "updated_at": null,
+      "retrieved_at": "2026-09-26",
+      "kind": "verbatim_excerpt",
+      "is_complete_sentence": false,
+      "genre": "expository_not_chat",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "japanese_spans": [
+        "可愛い"
+      ],
+      "modification": "Short excerpt; wording unchanged; article markup removed.",
+      "production_training_allowed_by_this_record": false
+    },
+    {
+      "id": "wiki-otaku",
+      "title": "御宅族",
+      "url": "https://zh.wikipedia.org/w/index.php?title=御宅族&oldid=94479472",
+      "excerpt": "在日语原文“おたく”中",
+      "author": "Wikipedia contributors",
+      "published_at": null,
+      "updated_at": null,
+      "retrieved_at": "2026-09-26",
+      "kind": "verbatim_excerpt",
+      "is_complete_sentence": false,
+      "genre": "expository_not_chat",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "japanese_spans": [
+        "おたく"
+      ],
+      "modification": "Short excerpt; wording unchanged; article markup removed.",
+      "production_training_allowed_by_this_record": false
+    },
+    {
+      "id": "fun-oshi",
+      "title": "FUN! JAPAN 推活用语",
+      "url": "https://www.fun-japan.jp/hk/articles/14014",
+      "excerpt": "「我推（推し）」是指自己最支持的對象",
+      "author": "Cody Ng; translation Hana",
+      "published_at": "2025-03-17",
+      "updated_at": "2025-04-02",
+      "retrieved_at": "2026-09-26",
+      "kind": "verbatim_excerpt",
+      "is_complete_sentence": false,
+      "genre": "expository_not_chat",
+      "license": "no_open_license_verified",
+      "license_url": null,
+      "japanese_spans": [
+        "推し"
+      ],
+      "modification": "Short excerpt; wording unchanged; article markup removed.",
+      "production_training_allowed_by_this_record": false
+    },
+    {
+      "id": "hikky-sns",
+      "title": "SNS 社交媒體的各種日語",
+      "url": "https://japanese.hikky.com.tw/japanese-sns-japanese-slang-current-events/",
+      "excerpt": "或是令人煩惱的「已讀不回（既読スルー）」",
+      "author": "小狸老師",
+      "published_at": "2022-11-05",
+      "updated_at": null,
+      "retrieved_at": "2026-09-26",
+      "kind": "verbatim_excerpt",
+      "is_complete_sentence": false,
+      "genre": "expository_not_chat",
+      "license": "all_rights_reserved",
+      "license_url": null,
+      "japanese_spans": [
+        "既読スルー"
+      ],
+      "modification": "Short excerpt; wording unchanged; article markup removed.",
+      "production_training_allowed_by_this_record": false
+    },
+    {
+      "id": "culture-otsukare",
+      "title": "星顆日本：辛苦了日文用途",
+      "url": "https://www.j-culturearc.com/japanese-otsukaresama/",
+      "excerpt": "也可以直接打「お疲れ様です」，超實用。",
+      "author": "星顆日本",
+      "published_at": "2025-03-29",
+      "updated_at": "2026-01-30",
+      "retrieved_at": "2026-09-26",
+      "kind": "verbatim_excerpt",
+      "is_complete_sentence": false,
+      "genre": "expository_not_chat",
+      "license": "no_open_license_verified",
+      "license_url": null,
+      "japanese_spans": [
+        "お疲れ様です"
+      ],
+      "modification": "Short excerpt; wording unchanged; article markup removed.",
+      "production_training_allowed_by_this_record": false
+    },
+    {
+      "id": "matcha-nostalgia",
+      "title": "无法翻译这个日语",
+      "url": "https://matcha-jp.com/cn/3709",
+      "excerpt": "就会充分感受到浓浓的“懐かしい”氛围。",
+      "author": "Shinji Takaramura / MATCHA",
+      "published_at": null,
+      "updated_at": null,
+      "retrieved_at": "2026-09-26",
+      "kind": "verbatim_excerpt",
+      "is_complete_sentence": false,
+      "genre": "expository_not_chat",
+      "license": "copyright_matcha_no_open_license_verified",
+      "license_url": null,
+      "japanese_spans": [
+        "懐かしい"
+      ],
+      "modification": "Short excerpt; wording unchanged; article markup removed.",
+      "production_training_allowed_by_this_record": false
+    },
+    {
+      "id": "shoshin-greeting",
+      "title": "初声日语：当日本人跟我说お疲れ様です",
+      "url": "https://www.sohu.com/a/575847879_798834",
+      "excerpt": "不要每次都是こんにちは。",
+      "author": "初声日语 / Seki",
+      "published_at": "2022-08-11",
+      "updated_at": null,
+      "retrieved_at": "2026-09-26",
+      "kind": "verbatim_excerpt",
+      "is_complete_sentence": false,
+      "genre": "expository_not_chat",
+      "license": "no_open_license_verified",
+      "license_url": null,
+      "japanese_spans": [
+        "こんにちは"
+      ],
+      "modification": "Short excerpt; wording unchanged; article markup removed.",
+      "production_training_allowed_by_this_record": false
+    }
+  ]
+}

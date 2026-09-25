@@ -1,0 +1,77 @@
+{
+  "assertions" : 6144,
+  "failures" : [
+
+  ],
+  "keyP50MS" : 4.9141250000000003,
+  "keyP95MS" : 15.425166000000001,
+  "keyP99MS" : 22.027709000000002,
+  "keys" : 6137,
+  "memorySamples" : [
+    {
+      "phase" : "before-engine",
+      "physicalFootprintBytes" : 20465728
+    },
+    {
+      "phase" : "corpus-0",
+      "physicalFootprintBytes" : 20924672
+    },
+    {
+      "phase" : "corpus-20",
+      "physicalFootprintBytes" : 32196840
+    },
+    {
+      "phase" : "corpus-40",
+      "physicalFootprintBytes" : 35080592
+    },
+    {
+      "phase" : "corpus-60",
+      "physicalFootprintBytes" : 35555728
+    },
+    {
+      "phase" : "corpus-80",
+      "physicalFootprintBytes" : 35785104
+    },
+    {
+      "phase" : "corpus-100",
+      "physicalFootprintBytes" : 35768720
+    },
+    {
+      "phase" : "corpus-120",
+      "physicalFootprintBytes" : 36047248
+    },
+    {
+      "phase" : "corpus-140",
+      "physicalFootprintBytes" : 36030864
+    },
+    {
+      "phase" : "corpus-160",
+      "physicalFootprintBytes" : 36407696
+    },
+    {
+      "phase" : "corpus-180",
+      "physicalFootprintBytes" : 36178320
+    },
+    {
+      "phase" : "corpus-200",
+      "physicalFootprintBytes" : 36161936
+    },
+    {
+      "phase" : "corpus-220",
+      "physicalFootprintBytes" : 36161936
+    },
+    {
+      "phase" : "corpus-240",
+      "physicalFootprintBytes" : 36161936
+    },
+    {
+      "phase" : "after-engine",
+      "physicalFootprintBytes" : 35932392
+    },
+    {
+      "phase" : "after-ui",
+      "physicalFootprintBytes" : 58116568
+    }
+  ],
+  "platform" : "iOS Simulator production controller\/UITextView host; not physical-device extension"
+}

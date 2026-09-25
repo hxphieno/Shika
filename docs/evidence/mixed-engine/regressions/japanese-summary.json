@@ -1,0 +1,12 @@
+{
+  "cases": 40,
+  "top1": 0.925,
+  "top5": 1.0,
+  "top10": 1.0,
+  "MRR10": 0.9520833333333334,
+  "keyP50MS": 0.057667,
+  "keyP95MS": 5.238916,
+  "peakRSSMiB": 31.703125,
+  "failedChecks": 0,
+  "functionalMixedPeakRSSMiB": 44.078125
+}

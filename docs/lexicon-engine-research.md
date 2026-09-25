@@ -56,3 +56,9 @@ SHIKA_SMOKE_SOURCE=Tests/LexiconRuntimeChecks.swift SHIKA_SMOKE_OPTIMIZED=1 \
  SHIKA_SMOKE_FIXTURE=Tests/LexiconQualityCases.json SHIKA_SMOKE_TIMEOUT=120 \
  python3 scripts/test-keyboard-simulator.py SIMULATOR_UUID
 ```
+
+## 后续修订：2026-09-26 中日联合解码
+
+本文上方“两种整段备选、不支持句内联合解码”的描述属于旧版历史。
+当前混输已独立使用联合词图/分词与连续选词状态机，纯模式不变。
+实现边界、现代词源、250项新旧对照和运行证据见 [中日混合解码](mixed-engine.md)。

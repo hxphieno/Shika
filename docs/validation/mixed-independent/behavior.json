@@ -1,0 +1,242 @@
+{
+  "checks" : [
+    {
+      "detail" : "",
+      "name" : "raw composition contains all input and no eager commit",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "candidate IDs unique across uneven pages",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "candidate IDs contiguous across pages",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "zero-size page does not advance",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "out-of-range page is safely empty",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "invalid candidate -1 preserves composition",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "invalid candidate 9223372036854775807 preserves composition",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "page navigation preserves raw input",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "expanded and paged IDs agree",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "browsing does not reorder candidate IDs",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial keeps original raw offsets",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "Return preserves selected prefix plus raw tail",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "Return has no duplicate commit",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "tail deletion leaves selected prefix",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "boundary deletion restores raw spelling without dropping it",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "deletion eventually clears locked and raw segments",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "same text with distinct coverage has distinct candidate IDs",
+      "passed" : true
+    },
+    {
+      "detail" : "full=你, partial=你'",
+      "name" : "equal output candidates retain different consumption",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "explicit Chinese syllable boundary retains 西安",
+      "passed" : true
+    },
+    {
+      "detail" : "西安|西岸|锡安|醯胺|系按|系安|系案|系暗",
+      "name" : "explicit Chinese syllable boundary excludes single-syllable xian",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "two partial selections retain both language prefixes",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "deleting tail preserves two locked prefixes",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "deleting Japanese lock restores raw without consuming it",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "deleting restored Japanese spelling keeps Chinese lock",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "second boundary restores Chinese spelling too",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "session Return emits original letters without newline",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle Return inserts newline",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle delete reaches document",
+      "passed" : true
+    },
+    {
+      "detail" : "今天也ありがとうq，",
+      "name" : "literal flush preserves undecoded tail: ，",
+      "passed" : true
+    },
+    {
+      "detail" : "今天也ありがとうq1",
+      "name" : "literal flush preserves undecoded tail: 1",
+      "passed" : true
+    },
+    {
+      "detail" : "今天也ありがとうq🙂",
+      "name" : "literal flush preserves undecoded tail: 🙂",
+      "passed" : true
+    },
+    {
+      "detail" : "今天也ありがとうq",
+      "name" : "mode change flush retains selected prefix and raw tail: shika_pinyin",
+      "passed" : true
+    },
+    {
+      "detail" : "今天也ありがとうq",
+      "name" : "mode change flush retains selected prefix and raw tail: mozc_japanese",
+      "passed" : true
+    },
+    {
+      "detail" : "今天也ありがとうq",
+      "name" : "mode change flush retains selected prefix and raw tail: shika_flypy",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "pure mode retains expected candidates: shika_pinyin",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "pure Chinese has no mixed Japanese labels",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "pure mode retains expected candidates: mozc_japanese",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "pure mode retains expected candidates: shika_flypy",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "pure Chinese has no mixed Japanese labels",
+      "passed" : true
+    },
+    {
+      "detail" : "output=, input=ko-hi-",
+      "name" : "mixed long-vowel UI key stays in composition",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "mixed long-vowel Japanese word is selectable",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle mixed long vowels remain literal punctuation",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "candidate expansion preserves equal-text different-coverage choices",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "raw commit clears once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "bounded decoding keeps all 113 raw letters",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "long supported-input flush preserves opaque tail",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "clear removes both selected and previous context",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "mode" : "behavior",
+  "platform" : "macOS production engines, no UIKit"
+}

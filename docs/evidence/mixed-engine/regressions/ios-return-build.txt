@@ -1,0 +1,44 @@
+Tests/ReturnInteractionChecks.swift:71:22: warning: 'init(frame:)' was deprecated in iOS 26.0: Use init(windowScene:) instead. [#DeprecatedDeclaration]
+ 69 |     }
+ 70 |     func application(_ application: UIApplication, didFinishLaunchingWithOptions options: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+ 71 |         let window = UIWindow(frame: UIScreen.main.bounds), host = UIViewController()
+    |                      `- warning: 'init(frame:)' was deprecated in iOS 26.0: Use init(windowScene:) instead. [#DeprecatedDeclaration]
+ 72 |         window.rootViewController = host; window.makeKeyAndVisible(); self.window = window
+ 73 |         Task { @MainActor in await run(host) }
+
+Tests/ReturnInteractionChecks.swift:71:47: warning: 'main' was deprecated in iOS 26.0: Use a UIScreen instance found through context instead (i.e, view.window.windowScene.screen), or for properties like UIScreen.scale with trait equivalents, use a traitCollection found through context. [#DeprecatedDeclaration]
+ 69 |     }
+ 70 |     func application(_ application: UIApplication, didFinishLaunchingWithOptions options: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+ 71 |         let window = UIWindow(frame: UIScreen.main.bounds), host = UIViewController()
+    |                                               `- warning: 'main' was deprecated in iOS 26.0: Use a UIScreen instance found through context instead (i.e, view.window.windowScene.screen), or for properties like UIScreen.scale with trait equivalents, use a traitCollection found through context. [#DeprecatedDeclaration]
+ 72 |         window.rootViewController = host; window.makeKeyAndVisible(); self.window = window
+ 73 |         Task { @MainActor in await run(host) }
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+ShikaKeyBoard/UI/Components/SKDeleteKeyInteraction.swift:73:91: warning: call to main actor-isolated instance method 'repeatDeletion()' in a synchronous nonisolated context [#ActorIsolatedCall]
+71 |     private func schedule(_ interval: TimeInterval) {
+72 |         timer?.invalidate()
+73 |         let next = Timer(timeInterval: interval, repeats: false) { [weak self] _ in self?.repeatDeletion() }
+   |                                                                                           `- warning: call to main actor-isolated instance method 'repeatDeletion()' in a synchronous nonisolated context [#ActorIsolatedCall]
+74 |         timer = next; RunLoop.main.add(next, forMode: .common)
+75 |     }
+76 |     private func repeatDeletion() {
+   |                  `- note: calls to instance method 'repeatDeletion()' from outside of its actor context are implicitly asynchronous
+77 |         guard pressed, !paused, isAvailable else { cancel(); return }
+78 |         timer = nil
+
+[#ActorIsolatedCall]: <https://docs.swift.org/compiler/documentation/diagnostics/actor-isolated-call>
+ShikaKeyBoard/UI/Components/SKMainKeyButton.swift:41:26: warning: 'titleRect(forContentRect:)' was deprecated in iOS 15.0: Override layoutSubviews, call super, and position views as you desire. [#DeprecatedDeclaration]
+ 39 | 
+ 40 |     override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
+ 41 |         let rect = super.titleRect(forContentRect: contentRect)
+    |                          `- warning: 'titleRect(forContentRect:)' was deprecated in iOS 15.0: Override layoutSubviews, call super, and position views as you desire. [#DeprecatedDeclaration]
+ 42 |         guard keyRole == .letter else { return rect }
+ 43 |         return rect.offsetBy(dx: Self.opticalOffset(for: keyTitle, font: letterFont), dy: -8.0 / 3)
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+local.shika.integration: 68537
+Build: /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T/shika-integration-dheqdeb5/ShikaSmoke.app
+PASS 50 focused return-key checks
+
+Evidence: /Users/funno/Library/Developer/CoreSimulator/Devices/36E38A3E-C462-4407-AF14-33D8644AB207/data/Containers/Data/Application/8558245C-F020-47AA-A966-CDCA06D84776/Documents

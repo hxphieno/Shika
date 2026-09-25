@@ -1,0 +1,1014 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Shika.xcodeproj -scheme Shika -configuration Debug -sdk iphoneos -destination generic/platform=iOS -derivedDataPath /tmp/shika-mixed-final-build CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphoneos26.5
+
+2026-09-26 00:22:52.867 xcodebuild[71414:7591318] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'Shika' in project 'Shika'
+        ➜ Explicit dependency on target 'ShikaKeyBoard' in project 'Shika'
+    Target 'ShikaKeyBoard' in project 'Shika' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/funno/Documents/GitWorks/Shika/Shika/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: fc0c86cae5c13417b124ce2036b3f0e5
+Build description path: /tmp/shika-mixed-final-build/Build/Intermediates.noindex/XCBuildData/fc0c86cae5c13417b124ce2036b3f0e5.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache
+    cd /Users/funno/Documents/GitWorks/Shika/Shika.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -o /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache
+
+CreateBuildDirectory /tmp/shika-mixed-final-build/Build/Intermediates.noindex
+    cd /Users/funno/Documents/GitWorks/Shika/Shika.xcodeproj
+    builtin-create-build-directory /tmp/shika-mixed-final-build/Build/Intermediates.noindex
+
+CreateBuildDirectory /tmp/shika-mixed-final-build/Build/Products
+    cd /Users/funno/Documents/GitWorks/Shika/Shika.xcodeproj
+    builtin-create-build-directory /tmp/shika-mixed-final-build/Build/Products
+
+CreateBuildDirectory /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos
+    cd /Users/funno/Documents/GitWorks/Shika/Shika.xcodeproj
+    builtin-create-build-directory /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos
+
+CreateBuildDirectory /tmp/shika-mixed-final-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/funno/Documents/GitWorks/Shika/Shika.xcodeproj
+    builtin-create-build-directory /tmp/shika-mixed-final-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/funno/Documents/GitWorks/Shika/Shika.xcodeproj
+    builtin-create-build-directory /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/shika-mixed-final-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos
+    cd /Users/funno/Documents/GitWorks/Shika/Shika.xcodeproj
+    builtin-create-build-directory /tmp/shika-mixed-final-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika-901f9cec717c1abea624379dda300c13-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/funno/Documents/GitWorks/Shika/Shika.xcodeproj
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika-901f9cec717c1abea624379dda300c13-VFS-iphoneos/all-product-headers.yaml
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika.DependencyStaticMetadataFileList (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika.DependencyStaticMetadataFileList
+
+ProcessXCFramework /Users/funno/Documents/GitWorks/Shika/Vendor/Rime/librime-static.xcframework /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/librime.a ios
+    cd /Users/funno/Documents/GitWorks/Shika/Shika.xcodeproj
+    builtin-process-xcframework --xcframework /Users/funno/Documents/GitWorks/Shika/Vendor/Rime/librime-static.xcframework --platform ios --target-path /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika.hmap (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/empty-Shika.plist (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/empty-Shika.plist
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-own-target-headers.hmap (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika.DependencyMetadataFileList (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-project-headers.hmap (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-generated-files.hmap (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-all-target-headers.hmap (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-all-non-framework-target-headers.hmap (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-DebugDylibPath-normal-arm64.txt (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-DebugDylibInstallName-normal-arm64.txt (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-DebugDylibInstallName-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika_const_extract_protocols.json (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.SwiftFileList (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.SwiftFileList
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.SwiftConstValuesFileList (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.LinkFileList (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.LinkFileList
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-OutputFileMap.json (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-OutputFileMap.json
+
+MkDir /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/PlugIns (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /bin/mkdir -p /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/PlugIns
+
+MkDir /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /bin/mkdir -p /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app
+
+MkDir /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /bin/mkdir -p /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-all-non-framework-target-headers.hmap (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-project-headers.hmap (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard.DependencyStaticMetadataFileList (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-all-target-headers.hmap (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard.hmap (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+'-std=gnu17' -fobjc-arc -fobjc-weak -fmodules -gmodules '-fmodules-cache-path=/tmp/shika-mixed-final-build/ModuleCache.noindex' -fapplication-extension -fpascal-strings -O0 -fno-common '-DDEBUG=1' '-DOBJC_OLD_DISPATCH_PROTOTYPES=0' -g -iquote /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-generated-files.hmap -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-own-target-headers.hmap -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-all-target-headers.hmap -iquote /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-project-headers.hmap -I/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/include -I/Users/funno/Documents/GitWorks/Shika/Vendor/Rime/librime-static.xcframework/ios-arm64/Headers -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources-normal/arm64 -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources/arm64 -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources -F/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard.DependencyMetadataFileList (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-own-target-headers.hmap (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-generated-files.hmap (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-DebugEntryPoint-normal-arm64.txt (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-DebugEntryPoint-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-DebugDylibPath-normal-arm64.txt (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-DebugDylibInstallName-normal-arm64.txt (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-DebugDylibInstallName-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard_const_extract_protocols.json (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.SwiftFileList (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.SwiftFileList
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.SwiftConstValuesFileList (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.LinkFileList (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.LinkFileList
+
+WriteAuxiliaryFile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-OutputFileMap.json (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    write-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-OutputFileMap.json
+
+ProcessInfoPlistFile /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/Info.plist /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Info.plist (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-infoPlistUtility /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Info.plist -producttype com.apple.product-type.app-extension -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/Info.plist
+
+Ld /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/__preview.dylib normal (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.2 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -O0 -L/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -install_name @rpath/ShikaKeyBoard.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard_dependency_info.dat -o /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/__preview.dylib
+
+CpResource /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/ThirdPartyNotices.txt /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Resources/ThirdPartyNotices.txt (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Resources/ThirdPartyNotices.txt /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex
+
+CpResource /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/RimeData.bundle /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Resources/RimeData.bundle (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Resources/RimeData.bundle /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex
+
+CpResource /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/PrivacyInfo.xcprivacy /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Resources/PrivacyInfo.xcprivacy (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Resources/PrivacyInfo.xcprivacy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex
+
+SwiftDriver ShikaKeyBoard normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ShikaKeyBoard -Onone @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios26.2 -g -module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -application-extension -enable-testing -index-store-path /tmp/shika-mixed-final-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -emit-localized-strings -emit-localized-strings-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache -output-file-map /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -sdk-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/shika-mixed-final-build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-generated-files.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-own-target-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-project-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/include -Xcc -I/Users/funno/Documents/GitWorks/Shika/Vendor/Rime/librime-static.xcframework/ios-arm64/Headers -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources-normal/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-Swift.h -import-objc-header /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/ShikaKeyBoard-Bridging-Header.h -working-directory /Users/funno/Documents/GitWorks/Shika -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/DeveloperToolsSupport-58K8KW3BK0T1AJT06MDH9XE6V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/ptrauth-AC4ONIHD2FUF5M0K7VQSNNAWW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/SwiftShims-3CVDK5W9SCH8FW3RWZR3L26GN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_AvailabilityInternal-E3S27SWZ8Z59R1NH4BIAH6TP3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_float-CLL39QQSVEQK1OBMGL3XO35SW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stdbool-5STSJS742SC0REOX0TUAFI017.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_SwiftConcurrencyShims-7B49USCRBRIVQ7IP0762F5TTC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/ptrcheck-5QHSXY0FKTRD8T0GKDK932OKY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stddef-6TTCRQLU2BJXBC64BXYEXU0S0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stdarg-CZW7JU9FB5Y5LZ38RXRPDWEHD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_DarwinFoundation1-9IZ7RN6149SAN2KSVUV0DCZW2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_limits-BFTZOQ7K55KVGA5XKIX8WSE7R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_DarwinFoundation2-DYK2YBPBPQDVRZVKUAT1S83V3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stdint-BC67YFJ3J0G45QNSU3XCLTPAP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_tgmath-2CR6IG07W4BKP09CGHKMG2F6B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/sys_types-DZS5DZ506DPDFTPLEUB2P43W2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_intrinsics-4KJQ6Z7KX2HD9RX7UTLQCG69Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stdatomic-DND3NGLPYS91P2BMG6THMD6TN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_DarwinFoundation3-ABS6LCY8WLSD5HXD6ZTLH15BH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_inttypes-CH1MO4XRPR2N8AQY0QUGS4S0L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Darwin-7O8MXI0QM3KJQY5VDUPZENFOM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/simd-64ELYXSXHZ9WURQSLGZECIHKG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/MachO-CGB7IVZ3SPE2HPCRUBYWQTGX5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/ObjectiveC-F52G93TR5OWHI59Z6O80MWD01.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/os_object-BLA5G0QJBFOBPQQUUF33C3ADY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Spatial-57IJ42D4HGLUDUPI0M039I4ND.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/os_workgroup-AH18JPFN0GYB4DNLSL069HNX9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Dispatch-CF6Y2A8ISFTALJJ3SE8XNZ1U6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/XPC-CQYIUPROMJAGK1K8O1POV11H9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreFoundation-D3Q1SUETOM85R9FMJ9R1J2HSG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/os-2X6LGDUI7EILD1M2TMQPWZKVJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreGraphics-EMC8EXPUBSD2Y1826OAAEE9O8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Security-CIVNEDLF6CI7CHC6JSFQU9FN0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CFNetwork-6AJK0ZS1H5WLCD916N9ZRIY9R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Foundation-26ILZ8UOWAWTSURJ7QLC5X4RG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreText-CEFY4EJ5AFDIV5FADVB13C4AG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/ImageIO-V4T8RBAI4TEDPVVWV2CBRCFC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/UniformTypeIdentifiers-E04XFQ22O4ZBXAAYQG4TKD3L1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Symbols-3AFGX62P4QY6FB28TD2AC5DXR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/FileProvider-7E690SO1LPZB9MN0S8JMKYF9E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/DataDetection-DIJCID1HVZPXLT7STPEXGG051.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/UserNotifications-5K96UL3850ENIGDZW2CG08HVM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/IOSurface-2VS8GU3W4S570GLNZEKGPPV43.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/OSLog-83B2JK5KTX57H584BLNQUV11H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreTransferable-A1W0VJEW7A7NUZ3ZOYXPUPDG0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/UIUtilities-22ARQGHH6Z2OSJT33JLQ07XEK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Accessibility-7J9O2P4E9W5AL2IAJ6YTQLLGZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Metal-EFLMAI3UNJ2T9CXYSBY1WZNVN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/OpenGLES-EIFAK1ROYQXC4BEXG22NIXD9S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreVideo-WVV8D32EYMNB3FDCXA7TMRD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreImage-9AO8QTSRI11MBV5XO4K0K5PK8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/QuartzCore-F5BQF0MAR70R9IOLJHH5D7EZA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/SwiftUICore-5CHSX6733UCGMJQ9A7HNY8JCG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/UIKit-15GYEU6R6EKZSQTRKTYSCUMCY.pcm
+
+SwiftGeneratePch normal arm64 Compiling\ bridging\ header (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftDriverJobDiscovery normal arm64 Compiling bridging header (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftCompile normal arm64 Compiling\ SKExpandedCandidatesView.swift,\ SKIMKeyButton.swift,\ SKIMKeyButtonWithoutPopUpView.swift,\ SKKeyboardScrollView.swift,\ SKMainKeyButton.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKExpandedCandidatesView.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKIMKeyButton.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKIMKeyButtonWithoutPopUpView.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKKeyboardScrollView.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKMainKeyButton.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKExpandedCandidatesView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKIMKeyButton.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKIMKeyButtonWithoutPopUpView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKKeyboardScrollView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKMainKeyButton.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+/Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKMainKeyButton.swift:41:26: warning: 'titleRect(forContentRect:)' was deprecated in iOS 15.0: Override layoutSubviews, call super, and position views as you desire.
+        let rect = super.titleRect(forContentRect: contentRect)
+                         ^
+
+SwiftCompile normal arm64 Compiling\ SKNumberInputView.swift,\ SKSymbolLayout.swift,\ SKConfig.swift,\ SKMainKeyboardMetrics.swift,\ KeyboardViewController.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Layouts/SKNumberInputView.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Layouts/SKSymbolLayout.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Theme/SKConfig.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Theme/SKMainKeyboardMetrics.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/KeyboardViewController.swift (in target 'ShikaKeyBoard' from project 'Shika')
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Layouts/SKNumberInputView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Layouts/SKSymbolLayout.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Theme/SKConfig.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Theme/SKMainKeyboardMetrics.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/KeyboardViewController.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ ShikaKeyBoard (in target 'ShikaKeyBoard' from project 'Shika')
+
+EmitSwiftModule normal arm64 (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 Compiling\ SKShuangpinLayout.swift,\ SKShuangpinScheme.swift,\ CandidateBarView.swift,\ SKAnnotatedKeyButton.swift,\ SKDeleteKeyInteraction.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/Shuangpin/SKShuangpinLayout.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/Shuangpin/SKShuangpinScheme.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/CandidateBarView.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKAnnotatedKeyButton.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKDeleteKeyInteraction.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/Shuangpin/SKShuangpinLayout.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/Shuangpin/SKShuangpinScheme.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/CandidateBarView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKAnnotatedKeyButton.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKDeleteKeyInteraction.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+/Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKDeleteKeyInteraction.swift:73:91: warning: call to main actor-isolated instance method 'repeatDeletion()' in a synchronous nonisolated context
+        let next = Timer(timeInterval: interval, repeats: false) { [weak self] _ in self?.repeatDeletion() }
+                                                                                          ^
+/Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKDeleteKeyInteraction.swift:76:18: note: calls to instance method 'repeatDeletion()' from outside of its actor context are implicitly asynchronous
+    private func repeatDeletion() {
+                 ^
+
+SwiftCompile normal arm64 Compiling\ SKChineseJapaneseKeyboardView.swift,\ SKChineseJapaneseLayout.swift,\ SKChineseJapaneseScheme.swift,\ SKInputSwitchButton.swift,\ SKShuangpinKeyboardView.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/ChineseJapanese/SKChineseJapaneseKeyboardView.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/ChineseJapanese/SKChineseJapaneseLayout.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/ChineseJapanese/SKChineseJapaneseScheme.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/ChineseJapanese/SKInputSwitchButton.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/Shuangpin/SKShuangpinKeyboardView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/ChineseJapanese/SKChineseJapaneseKeyboardView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/ChineseJapanese/SKChineseJapaneseLayout.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/ChineseJapanese/SKChineseJapaneseScheme.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/ChineseJapanese/SKInputSwitchButton.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Schemes/Shuangpin/SKShuangpinKeyboardView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 Compiling\ SKSeparatorLine.swift,\ SKShiftState.swift,\ SKMarkedTextConnection.swift,\ SKKeyboardFooterView.swift,\ SKMainKeyboardSurface.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKSeparatorLine.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKShiftState.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Integration/SKMarkedTextConnection.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Layouts/SKKeyboardFooterView.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Layouts/SKMainKeyboardSurface.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKSeparatorLine.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Components/SKShiftState.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Integration/SKMarkedTextConnection.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Layouts/SKKeyboardFooterView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/UI/Layouts/SKMainKeyboardSurface.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 Compiling\ SKMixedDecoder.swift,\ SKMixedEngine.swift,\ SKPinyinSegmentationCandidates.swift,\ SKRimeEngine.swift,\ SKSpellingCorrector.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKMixedDecoder.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKMixedEngine.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKPinyinSegmentationCandidates.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKRimeEngine.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKSpellingCorrector.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKMixedDecoder.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKMixedEngine.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKPinyinSegmentationCandidates.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKRimeEngine.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKSpellingCorrector.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 Compiling\ SKBackwardDeletion.swift,\ SKInputConfiguration.swift,\ SKInputEngine.swift,\ SKInputScheme.swift,\ SKInputSession.swift,\ SKKeyboardEventHandler.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKBackwardDeletion.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKInputConfiguration.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKInputEngine.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKInputScheme.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKInputSession.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKKeyboardEventHandler.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKBackwardDeletion.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKInputConfiguration.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKInputEngine.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKInputScheme.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKInputSession.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKKeyboardEventHandler.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 Compiling\ SKKeyboardState.swift,\ SKConversionEngine.swift,\ SKCorrectionCandidates.swift,\ SKJapaneseEngine.swift,\ SKJapaneseLexicon.swift,\ SKMixedChineseLexicon.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKKeyboardState.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKConversionEngine.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKCorrectionCandidates.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKJapaneseEngine.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKJapaneseLexicon.swift /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKMixedChineseLexicon.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Core/SKKeyboardState.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKConversionEngine.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKCorrectionCandidates.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKJapaneseEngine.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKJapaneseLexicon.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKMixedChineseLexicon.swift (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for ShikaKeyBoard (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftDriver\ Compilation\ Requirements ShikaKeyBoard normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ShikaKeyBoard -Onone @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios26.2 -g -module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -application-extension -enable-testing -index-store-path /tmp/shika-mixed-final-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -emit-localized-strings -emit-localized-strings-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache -output-file-map /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -sdk-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/shika-mixed-final-build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-generated-files.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-own-target-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-project-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/include -Xcc -I/Users/funno/Documents/GitWorks/Shika/Vendor/Rime/librime-static.xcframework/ios-arm64/Headers -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources-normal/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-Swift.h -import-objc-header /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/ShikaKeyBoard-Bridging-Header.h -working-directory /Users/funno/Documents/GitWorks/Shika -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling SKBackwardDeletion.swift, SKInputConfiguration.swift, SKInputEngine.swift, SKInputScheme.swift, SKInputSession.swift, SKKeyboardEventHandler.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SKMixedDecoder.swift, SKMixedEngine.swift, SKPinyinSegmentationCandidates.swift, SKRimeEngine.swift, SKSpellingCorrector.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftMergeGeneratedHeaders /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources/ShikaKeyBoard-Swift.h /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-Swift.h (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-swiftHeaderTool -arch arm64 /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-Swift.h -o /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources/ShikaKeyBoard-Swift.h
+
+Copy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.swiftmodule/arm64-apple-ios.swiftmodule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftmodule (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftmodule /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.swiftmodule/arm64-apple-ios.swiftmodule
+
+Copy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.swiftmodule/arm64-apple-ios.swiftdoc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftdoc (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftdoc /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.swiftmodule/arm64-apple-ios.swiftdoc
+
+Copy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.swiftmodule/arm64-apple-ios.abi.json /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.abi.json (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.abi.json /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.swiftmodule/arm64-apple-ios.abi.json
+
+Copy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftsourceinfo (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftsourceinfo /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+ScanDependencies /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.o /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKRimeSession.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+    Using response file: /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    builtin-ScanDependencies -o /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.o.scan -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache -target arm64-apple-ios26.2 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/tmp/shika-mixed-final-build/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Werror\=return-type -Wdocumentation -Wunreachable-code -Wquoted-include-in-framework-header -Wno-implicit-atomic-properties -Werror\=deprecated-objc-isa-usage -Wno-objc-interface-ivars -Werror\=objc-root-class -Wno-arc-repeated-use-of-weak -Wimplicit-retain-self -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wdeprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wstrict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability -index-store-path /tmp/shika-mixed-final-build/Index.noindex/DataStore @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.d --serialize-diagnostics /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.dia -c /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKRimeSession.m -o /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.o -index-unit-output-path /Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.o
+
+MkDir /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_output/unthinned (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /bin/mkdir -p /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_output/unthinned
+
+MkDir /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_output/thinned (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /bin/mkdir -p /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_output/thinned
+
+GenerateAssetSymbols /Users/funno/Documents/GitWorks/Shika/Shika/Assets.xcassets (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/funno/Documents/GitWorks/Shika/Shika/Assets.xcassets --compile /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_dependencies --output-partial-info-plist /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 26.2 --platform iphoneos --bundle-identifier funno.Shika --generate-swift-asset-symbols /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/GeneratedAssetSymbols.h
+/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CompileAssetCatalogVariant thinned /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app /Users/funno/Documents/GitWorks/Shika/Shika/Assets.xcassets (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/funno/Documents/GitWorks/Shika/Shika/Assets.xcassets --compile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_dependencies_thinned --output-partial-info-plist /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 26.2 --platform iphoneos
+/* com.apple.actool.compilation-results */
+/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_generated_info.plist_thinned
+
+
+LinkAssetCatalog /Users/funno/Documents/GitWorks/Shika/Shika/Assets.xcassets (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-linkAssetCatalog --thinned /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_output/thinned --thinned-dependencies /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_generated_info.plist_thinned --unthinned /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_output/unthinned --unthinned-dependencies /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_generated_info.plist_unthinned --output /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app --plist-output /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_generated_info.plist
+
+SwiftDriver Shika normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Shika -Onone @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios26.2 -g -module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/shika-mixed-final-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -emit-localized-strings -emit-localized-strings-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache -output-file-map /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -sdk-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/shika-mixed-final-build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-generated-files.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-own-target-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-project-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/include -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources-normal/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-Swift.h -working-directory /Users/funno/Documents/GitWorks/Shika -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling SKKeyboardState.swift, SKConversionEngine.swift, SKCorrectionCandidates.swift, SKJapaneseEngine.swift, SKJapaneseLexicon.swift, SKMixedChineseLexicon.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stdarg-7RKZSS53CDWG17JC24XDAPEX8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stddef-5K3XHSOXHQ5XTY5268IUONN1Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/SwiftShims-A2FF8Q3QN4QIUOF7P97RCUXPB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/DeveloperToolsSupport-96NP327Z61DF46YN5NYJ5GHPP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_SwiftConcurrencyShims-D4NFFBMMH9JUQHU820501NESF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/ptrcheck-9NYXDAAT5HNXFRO2FJ5KW1T6E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_float-6WWU6OV98NVFAS8NKXKHM1U6M.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_AvailabilityInternal-6K8KK6NV28DH0R9CD2DSWR9WV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/ptrauth-98HP9EO7FETLITRQ3C8PYEF2U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stdbool-3EP6WZWO4JR7C8C3KRTBG9N5W.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_float-8E2E8AVMX3RXGABRILTNOK3ML.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_float-8E2E8AVMX3RXGABRILTNOK3ML.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_DarwinFoundation1-6HHPIB37LRG5CE548P24B6TI1.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdbool-DK5NM1KOIDL5GDUEJPPMY4LBR.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdbool-DK5NM1KOIDL5GDUEJPPMY4LBR.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_AvailabilityInternal-43YRKBHE7DZK60KXUY6JO1URU.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_AvailabilityInternal-43YRKBHE7DZK60KXUY6JO1URU.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/ptrauth-6S0J81HYLKKK7MWO9PWJ9HLKZ.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/ptrauth-6S0J81HYLKKK7MWO9PWJ9HLKZ.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/ptrcheck-1U12L7J0C5B47YIDD3JF3AWYA.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/ptrcheck-1U12L7J0C5B47YIDD3JF3AWYA.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdarg-Q3GHFTY1X18RJI839LHI53CQ.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdarg-Q3GHFTY1X18RJI839LHI53CQ.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stddef-9VHIZYQ6X66BXO39Z3H7O3H5V.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stddef-9VHIZYQ6X66BXO39Z3H7O3H5V.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_limits-9ZC6NISTRY779LQ8V39CI4SBI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_DarwinFoundation2-JJVEU0G3OPJZKJERZJFYSCWJ.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation1-AZK6Q82CEV7KGUTRBDWZMS2R2.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation1-AZK6Q82CEV7KGUTRBDWZMS2R2.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_limits-2U2TVY9DEV6FKRB5LXQERY5L4.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_limits-2U2TVY9DEV6FKRB5LXQERY5L4.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation2-E9YIV784L00T57CH5UQGQ0W4G.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation2-E9YIV784L00T57CH5UQGQ0W4G.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/sys_types-E0X16VZECIPBLES7A8Q3NCX3B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stdint-94GAYRSVGTK9VDZO8B5GYA9N6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_tgmath-9JZMMR6SOQ9RYWSZS83BAXPGG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_DarwinFoundation3-BIQ41QDSMWPYI4U3GHJ7FUI5I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_stdatomic-6SAGPHMRS0NHPR45FE239AZ8F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_intrinsics-6HVDBBLKBZEFEDAB0YAEFHS3O.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdint-1AY7KFESEHSSQX6PJHR3W22AM.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_stdint-1AY7KFESEHSSQX6PJHR3W22AM.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation3-EFSTWM9QDT1OOJCS3UYLSX9MF.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_DarwinFoundation3-EFSTWM9QDT1OOJCS3UYLSX9MF.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/_Builtin_inttypes-C19TFXO5Z68E8MNLX1M07ZYAF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Darwin-6S9K6H607NHUJY5VV6LRAOMXZ.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_inttypes-62NGWYV3PPRCZNZZECS896BF9.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/_Builtin_inttypes-62NGWYV3PPRCZNZZECS896BF9.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/Darwin-7NMCWVF4356V22ABYZKLYVICN.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/Darwin-7NMCWVF4356V22ABYZKLYVICN.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/simd-5CZB0V2D3TU0UUDHE73E0O2WY.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling SKSeparatorLine.swift, SKShiftState.swift, SKMarkedTextConnection.swift, SKKeyboardFooterView.swift, SKMainKeyboardSurface.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SKExpandedCandidatesView.swift, SKIMKeyButton.swift, SKIMKeyButtonWithoutPopUpView.swift, SKKeyboardScrollView.swift, SKMainKeyButton.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SKChineseJapaneseKeyboardView.swift, SKChineseJapaneseLayout.swift, SKChineseJapaneseScheme.swift, SKInputSwitchButton.swift, SKShuangpinKeyboardView.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SKShuangpinLayout.swift, SKShuangpinScheme.swift, CandidateBarView.swift, SKAnnotatedKeyButton.swift, SKDeleteKeyInteraction.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SKNumberInputView.swift, SKSymbolLayout.swift, SKConfig.swift, SKMainKeyboardMetrics.swift, KeyboardViewController.swift (in target 'ShikaKeyBoard' from project 'Shika')
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/ObjectiveC-1K81P2LGRSGFZ98ZYZ70XJI7Y.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/ObjectiveC-1K81P2LGRSGFZ98ZYZ70XJI7Y.scan
+
+SwiftDriver\ Compilation ShikaKeyBoard normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ShikaKeyBoard -Onone @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios26.2 -g -module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -application-extension -enable-testing -index-store-path /tmp/shika-mixed-final-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -emit-localized-strings -emit-localized-strings-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache -output-file-map /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -sdk-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/shika-mixed-final-build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-generated-files.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-own-target-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-project-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/include -Xcc -I/Users/funno/Documents/GitWorks/Shika/Vendor/Rime/librime-static.xcframework/ios-arm64/Headers -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources-normal/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-Swift.h -import-objc-header /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/ShikaKeyBoard-Bridging-Header.h -working-directory /Users/funno/Documents/GitWorks/Shika -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/MachO-1M9RS2GVP8K539RJ9T1XIB21W.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/ObjectiveC-CS5029OKH6N9HFSDBM8PGCAV2.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/os_object-BZNFYI3NCGM6KFX5BOR172EZJ.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/os_object-BZNFYI3NCGM6KFX5BOR172EZJ.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/os_workgroup-D0P6N77BIGVLZAURL2W0YP3BJ.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/os_workgroup-D0P6N77BIGVLZAURL2W0YP3BJ.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/os_object-9J10UIBUEGXBAWXQ1JOFHQDT.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/Dispatch-3RBMEK1ENQ134G6WUQ2NXX5ML.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/Dispatch-3RBMEK1ENQ134G6WUQ2NXX5ML.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/os_workgroup-3T4X578HY2NYU7IW3G0ZYXHEB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Spatial-C238H9MFTRFRS5E8Y10A54DFP.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/CoreFoundation-4QP2Q0FA5EICKEXEZEXRL6H7F.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/CoreFoundation-4QP2Q0FA5EICKEXEZEXRL6H7F.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/XPC-11TC0A8Q60J2G8VF6A06BCOMP.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/XPC-11TC0A8Q60J2G8VF6A06BCOMP.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Dispatch-7KKOGARUXOUE57NUX3AGMGGNQ.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/CFNetwork-9JPNB21XGF3A1YKB0L15R01A7.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/CFNetwork-9JPNB21XGF3A1YKB0L15R01A7.scan
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/Security-2886697EACU4WJ0BO886ISEV3.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/Security-2886697EACU4WJ0BO886ISEV3.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreFoundation-AQDMDZRSHS3DCX8DKHUSF0T7Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/XPC-EZ1QRWODE0P5D7HUE4BIH66DK.pcm
+
+PrecompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/Foundation-16M1HXKPFC9EVBFED778EENOL.scan
+    cd /
+    builtin-precompileModule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/ExplicitPrecompiledModules/Foundation-16M1HXKPFC9EVBFED778EENOL.scan
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/os-8L8O31IEX7BEDJSX2HFXOQ043.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Security-EOXA1OXC85GW4F07JKNH8MWDO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CFNetwork-9AJV0NTJSP3RC013VTQC0TC1D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreGraphics-Q7LOZZJ3C15CK0PB7AIJQDLT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Foundation-4HF9WC8LOJGNM8Q31WXELDZ6H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/ImageIO-5DPQ2KF5VMSF0E477XN5OC4NB.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreText-D8C6TWUMCLR9MDDQCMOJYX4CB.pcm
+
+CompileC /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.o /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKRimeSession.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+    Using response file: /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp
+    
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -ivfsstatcache /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache -target arm64-apple-ios26.2 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -fmodules-prune-interval\=86400 -fmodules-prune-after\=345600 -fbuild-session-file\=/tmp/shika-mixed-final-build/ModuleCache.noindex/Session.modulevalidation -fmodules-validate-once-per-build-session -Wnon-modular-include-in-framework-module -Werror\=non-modular-include-in-framework-module -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Werror\=return-type -Wdocumentation -Wunreachable-code -Wquoted-include-in-framework-header -Wno-implicit-atomic-properties -Werror\=deprecated-objc-isa-usage -Wno-objc-interface-ivars -Werror\=objc-root-class -Wno-arc-repeated-use-of-weak -Wimplicit-retain-self -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-float-conversion -Wnon-literal-null-conversion -Wobjc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wdeprecated-implementations -Wno-implicit-fallthrough -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion -Winfinite-recursion -Wcomma -Wblock-capture-autoreleasing -Wstrict-prototypes -Wno-semicolon-before-method-body -Wunguarded-availability -index-store-path /tmp/shika-mixed-final-build/Index.noindex/DataStore @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/e6072d4f65d7061329687fe24e3d63a7-common-args.resp -MMD -MT dependencies -MF /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.d --serialize-diagnostics /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.dia -c /Users/funno/Documents/GitWorks/Shika/ShikaKeyBoard/Engine/SKRimeSession.m -o /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.o -index-unit-output-path /Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/SKRimeSession.o
+
+Ld /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/ShikaKeyBoard.debug.dylib normal (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.2 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -O0 -L/tmp/shika-mixed-final-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos -L/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F/tmp/shika-mixed-final-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos -F/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -filelist /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.LinkFileList -install_name @rpath/ShikaKeyBoard.debug.dylib -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/../../Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard_dependency_info.dat -fobjc-arc -fobjc-link-runtime -fapplication-extension -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.swiftmodule @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard-linker-args.resp -lc++ -liconv -Xlinker -alias -Xlinker _NSExtensionMain -Xlinker ___debug_main_executable_dylib_entry_point -lrime -o /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/ShikaKeyBoard.debug.dylib
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/IOSurface-5U88AN49VQFOC9A2NCOCZA9H5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/FileProvider-E65TJVX1I2HM2BHHJ8UBX0HVJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/UIUtilities-4DI3J7ZTN19PIEXHM53C25D11.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/UserNotifications-E12ICZOBB697X62SVQH5TEHXH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/UniformTypeIdentifiers-6UFC6CIPGMEI0J0HH287GM4XD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreData-99OL4U2DQLYVAA1W1D0HIPXY8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Symbols-BDLG200W0LRQIELVWKYZJ3P6G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/OSLog-1UWA7QHG916ZFNYBSXA4U4L45.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Accessibility-7EXO2BMJMCWWZVJGKNNSX5AA2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/OpenGLES-9HKDPNG4MFBWPFEVXADUOP6L3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/Metal-12G5GG6VSRK3LPYLE2GX36OWJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreTransferable-CM4OK81BC6PT88TAF4SDHDM01.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/DataDetection-8UG45F91LDLEQ6BVGQ9YFJ0AX.pcm
+
+ConstructStubExecutorLinkFileList /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-ExecutorLinkFileList-normal-arm64.txt (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    construct-stub-executor-link-file-list /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/ShikaKeyBoard.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library without Swift entry point. (in target 'ShikaKeyBoard' from project 'Shika')
+
+Ld /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/ShikaKeyBoard normal (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -O0 -L/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/../../Frameworks -rdynamic -Xlinker -no_deduplicate -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_entry -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-DebugEntryPoint-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard-ExecutorLinkFileList-normal-arm64.txt /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/ShikaKeyBoard.debug.dylib -o /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/ShikaKeyBoard
+
+ExtractAppIntentsMetadata (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name ShikaKeyBoard --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 26.2 --bundle-identifier funno.Shika.ShikaKeyBoard --output /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex --target-triple arm64-apple-ios26.2 --binary-file /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/ShikaKeyBoard --dependency-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard_dependency_info.dat --stringsdata-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.SwiftFileList --metadata-file-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard.DependencyMetadataFileList --static-metadata-file-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/Objects-normal/arm64/ShikaKeyBoard.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-09-26 00:23:05.578 appintentsmetadataprocessor[71661:7592379] Starting appintentsmetadataprocessor export
+2026-09-26 00:23:05.584 appintentsmetadataprocessor[71661:7592379] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreVideo-B8AZP4VLJSM8OTS3IAGS1GPH.pcm
+
+AppIntentsSSUTraining (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/Info.plist --temp-dir-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ssu --bundle-id funno.Shika.ShikaKeyBoard --product-path /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex --extracted-metadata-path /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/Metadata.appintents --metadata-file-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/ShikaKeyBoard.build/ShikaKeyBoard.DependencyMetadataFileList --source-file /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex/Info.plist --archive-ssu-assets
+2026-09-26 00:23:05.613 appintentsnltrainingprocessor[71672:7592399] Parsing options for appintentsnltrainingprocessor
+2026-09-26 00:23:05.614 appintentsnltrainingprocessor[71672:7592399] Starting AppIntents SSU YAML Generation
+2026-09-26 00:23:05.616 appintentsnltrainingprocessor[71672:7592399] No AppShortcuts found - Skipping.
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/QuartzCore-7NOFTKZ29FZDNWZ9BAGMULCY7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/CoreImage-D2ZGXHRQXANWIV93YQQL0G6RT.pcm
+
+RegisterExecutionPolicyException /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-RegisterExecutionPolicyException /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex
+
+Touch /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex (in target 'ShikaKeyBoard' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /usr/bin/touch -c /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex
+
+Ld /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/__preview.dylib normal (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.2 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -O0 -L/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -install_name @rpath/Shika.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika_dependency_info.dat -o /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/__preview.dylib
+
+CpResource /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/ThirdPartyNotices.txt /Users/funno/Documents/GitWorks/Shika/Shika/ThirdPartyNotices.txt (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/funno/Documents/GitWorks/Shika/Shika/ThirdPartyNotices.txt /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/SwiftUICore-CTQRHGKYW6O5ON1GV5XOBGYEK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/UIKit-43AW8QLXF4N3GJ02ZU8YRLG2X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/shika-mixed-final-build/ModuleCache.noindex/SwiftUI-4HQVY2F5PCNADC0473CI53Z9Y.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ Shika (in target 'Shika' from project 'Shika')
+
+EmitSwiftModule normal arm64 (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 Compiling\ ContentView.swift /Users/funno/Documents/GitWorks/Shika/Shika/ContentView.swift (in target 'Shika' from project 'Shika')
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/Shika/ContentView.swift (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Shika' from project 'Shika')
+
+SwiftCompile normal arm64 /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftCompile normal arm64 Compiling\ ShikaApp.swift /Users/funno/Documents/GitWorks/Shika/Shika/ShikaApp.swift (in target 'Shika' from project 'Shika')
+
+SwiftCompile normal arm64 /Users/funno/Documents/GitWorks/Shika/Shika/ShikaApp.swift (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for Shika (in target 'Shika' from project 'Shika')
+
+SwiftDriver\ Compilation\ Requirements Shika normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Shika -Onone @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios26.2 -g -module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/shika-mixed-final-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -emit-localized-strings -emit-localized-strings-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache -output-file-map /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -sdk-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/shika-mixed-final-build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-generated-files.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-own-target-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-project-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/include -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources-normal/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-Swift.h -working-directory /Users/funno/Documents/GitWorks/Shika -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/Shika-Swift.h /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-Swift.h (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-swiftHeaderTool -arch arm64 /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-Swift.h -o /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/Shika-Swift.h
+
+Copy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.swiftmodule/arm64-apple-ios.swiftdoc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftdoc (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftdoc /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.swiftmodule/arm64-apple-ios.swiftdoc
+
+Copy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.swiftmodule/arm64-apple-ios.abi.json /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.abi.json (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.abi.json /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.swiftmodule/arm64-apple-ios.abi.json
+
+Copy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftsourceinfo (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftsourceinfo /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+Copy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.swiftmodule/arm64-apple-ios.swiftmodule /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftmodule (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftmodule /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.swiftmodule/arm64-apple-ios.swiftmodule
+
+SwiftDriverJobDiscovery normal arm64 Compiling ShikaApp.swift (in target 'Shika' from project 'Shika')
+
+SwiftDriverJobDiscovery normal arm64 Compiling GeneratedAssetSymbols.swift (in target 'Shika' from project 'Shika')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ContentView.swift (in target 'Shika' from project 'Shika')
+
+SwiftDriver\ Compilation Shika normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Shika -Onone @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios26.2 -g -module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/shika-mixed-final-build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -emit-localized-strings -emit-localized-strings-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/shika-mixed-final-build/SDKStatCaches.noindex/iphoneos26.5-23F81a-32daed1954a7d5dd0789fcaf2a9bb78b.sdkstatcache -output-file-map /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -sdk-module-cache-path /tmp/shika-mixed-final-build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/shika-mixed-final-build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-generated-files.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-own-target-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-project-headers.hmap -Xcc -I/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/include -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources-normal/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources/arm64 -Xcc -I/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-Swift.h -working-directory /Users/funno/Documents/GitWorks/Shika -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Shika.debug.dylib normal (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.2 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -O0 -L/tmp/shika-mixed-final-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos -L/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F/tmp/shika-mixed-final-build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphoneos -F/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -filelist /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.LinkFileList -install_name @rpath/Shika.debug.dylib -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.swiftmodule @/tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika-linker-args.resp -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Shika.debug.dylib
+
+ConstructStubExecutorLinkFileList /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-ExecutorLinkFileList-normal-arm64.txt (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    construct-stub-executor-link-file-list /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Shika.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'Shika' from project 'Shika')
+
+Ld /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Shika normal (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -O0 -L/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -F/tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika-ExecutorLinkFileList-normal-arm64.txt /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Shika.debug.dylib -o /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Shika
+
+Copy /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/PlugIns/ShikaKeyBoard.appex /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks -remove-static-executable /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/ShikaKeyBoard.appex /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/PlugIns
+
+ProcessInfoPlistFile /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Info.plist /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/empty-Shika.plist (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-infoPlistUtility /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/empty-Shika.plist -producttype com.apple.product-type.application -genpkginfo /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/assetcatalog_generated_info.plist -scanforprivacyfile /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/PlugIns/ShikaKeyBoard.appex -requiredArchitecture arm64 -o /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Info.plist
+
+CopySwiftLibs /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Shika.debug.dylib --scan-folder /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Frameworks --scan-folder /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/PlugIns --scan-folder /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/SystemExtensions --scan-folder /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Extensions --platform iphoneos --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name Shika --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 26.2 --bundle-identifier funno.Shika --output /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app --target-triple arm64-apple-ios26.2 --binary-file /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Shika --dependency-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika_dependency_info.dat --stringsdata-file /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.SwiftFileList --metadata-file-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika.DependencyMetadataFileList --static-metadata-file-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Objects-normal/arm64/Shika.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-09-26 00:23:08.421 appintentsmetadataprocessor[71705:7592542] Starting appintentsmetadataprocessor export
+2026-09-26 00:23:08.422 appintentsmetadataprocessor[71705:7592542] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+ValidateEmbeddedBinary /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/PlugIns/ShikaKeyBoard.appex (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/usr/bin/embeddedBinaryValidationUtility /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/PlugIns/ShikaKeyBoard.appex -info-plist-path /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Info.plist
+
+AppIntentsSSUTraining (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Info.plist --temp-dir-path /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/ssu --bundle-id funno.Shika --product-path /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app --extracted-metadata-path /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Metadata.appintents --metadata-file-list /tmp/shika-mixed-final-build/Build/Intermediates.noindex/Shika.build/Debug-iphoneos/Shika.build/Shika.DependencyMetadataFileList --source-file /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app/Info.plist --archive-ssu-assets
+2026-09-26 00:23:08.444 appintentsnltrainingprocessor[71707:7592545] Parsing options for appintentsnltrainingprocessor
+2026-09-26 00:23:08.445 appintentsnltrainingprocessor[71707:7592545] Starting AppIntents SSU YAML Generation
+2026-09-26 00:23:08.445 appintentsnltrainingprocessor[71707:7592545] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-RegisterExecutionPolicyException /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app
+
+Validate /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    builtin-validationUtility /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app (in target 'Shika' from project 'Shika')
+    cd /Users/funno/Documents/GitWorks/Shika
+    /usr/bin/touch -c /tmp/shika-mixed-final-build/Build/Products/Debug-iphoneos/Shika.app
+
+** BUILD SUCCEEDED **
+
