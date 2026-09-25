@@ -45,8 +45,8 @@ final class SKInputSession {
     func loadMoreCandidates() {
         guard !state.input.isEmpty, !state.isLastPage else { return }
         let page = engine.candidatePage(startingAt: nextCandidateIndex, limit: 40)
-        var seen = Set(state.candidates.map(\.text))
-        state.candidates += page.candidates.filter { seen.insert($0.text).inserted }
+        var seen = Set(state.candidates.map(\.contentIdentity))
+        state.candidates += page.candidates.filter { seen.insert($0.contentIdentity).inserted }
         state.isLastPage = !page.hasMore || page.nextIndex <= nextCandidateIndex
         nextCandidateIndex = page.nextIndex
         // Browsing never changes the marked text or the engine's selected page.

@@ -4,6 +4,18 @@ struct SKCandidate: Equatable {
     let index: Int
     let text: String
     let comment: String
+    /// Optional engine metadata; existing UI constructors remain compatible.
+    let consumedInputCount: Int?
+
+    init(index: Int, text: String, comment: String, consumedInputCount: Int? = nil) {
+        self.index = index; self.text = text; self.comment = comment
+        self.consumedInputCount = consumedInputCount
+    }
+    struct ContentIdentity: Hashable {
+        let text: String
+        let consumedInputCount: Int?
+    }
+    var contentIdentity: ContentIdentity { ContentIdentity(text: text, consumedInputCount: consumedInputCount) }
 }
 
 struct SKEngineState {

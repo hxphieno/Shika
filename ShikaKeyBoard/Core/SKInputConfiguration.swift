@@ -26,7 +26,7 @@ enum SKInputPolicy {
         case .chineseRomanization, .japaneseRomanization, .mixedRomanization:
             if text == "\n" && isComposing { return .engineKey(0xff0d, insertIfUnhandled: false) }
             if text == " " && isComposing { return .engineKey(0x20, insertIfUnhandled: false) }
-            if self == .japaneseRomanization && (text == "ー" || text == "-") {
+            if (self == .japaneseRomanization || (self == .mixedRomanization && isComposing)) && (text == "ー" || text == "-") {
                 return .engineKey(45, insertIfUnhandled: false)
             }
             guard text.unicodeScalars.count == 1, let scalar = text.unicodeScalars.first,

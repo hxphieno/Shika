@@ -1,16 +1,12 @@
 import Foundation
 
-/// The common input-session boundary. Language-specific decoding stays below UI.
+/// Mode routing only. Each engine owns composition and candidate IDs; mixed
+/// policy never leaks into pure Chinese/Japanese or the keyboard UI.
 @MainActor
 final class SKConversionEngine: SKInputEngine {
     private let resources: URL
     private let userDirectory: URL
-    private var configuration: SKInputConfiguration
-    private var chinese: SKRimeEngine?
-    private var japanese: SKJapaneseEngine?
-    private var native = SKEngineState()
-    private var displayed = SKEngineState()
-    private static let japaneseRoute = -1000
+    private var engine: any SKInputEngine
 
     init(configuration: SKInputConfiguration, resourceURL: URL? = nil, userURL: URL? = nil) throws {
         guard let resources = resourceURL ?? Bundle.main.url(forResource: "RimeData", withExtension: "bundle") else {
@@ -19,83 +15,25 @@ final class SKConversionEngine: SKInputEngine {
         self.resources = resources
         userDirectory = try userURL ?? FileManager.default.url(for: .applicationSupportDirectory,
             in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("RimeUser", isDirectory: true)
-        self.configuration = configuration
-        try configure(configuration)
+        engine = try Self.make(configuration, resources: resources, userDirectory: userDirectory)
     }
-
-    private func configure(_ next: SKInputConfiguration) throws {
-        // Construct the destination before dropping the active decoder, so a
-        // missing resource cannot leave the keyboard without its previous mode.
-        var nextChinese = chinese, nextJapanese = japanese
-        if next.language != .chinese && nextJapanese == nil {
-            nextJapanese = try SKJapaneseEngine(resources: resources, userDirectory: userDirectory)
+    private static func make(_ configuration: SKInputConfiguration, resources: URL, userDirectory: URL) throws -> any SKInputEngine {
+        switch configuration.language {
+        case .chinese: return try SKRimeEngine(configuration: configuration, resourceURL: resources, userURL: userDirectory)
+        case .japanese: return try SKJapaneseEngine(resources: resources, userDirectory: userDirectory)
+        case .mixed: return try SKMixedEngine(resources: resources, userDirectory: userDirectory)
         }
-        if next.language != .japanese {
-            if let engine = nextChinese { _ = try engine.selectConfiguration(next) }
-            else { nextChinese = try SKRimeEngine(configuration: next, resourceURL: resources, userURL: userDirectory) }
-        }
-        chinese = next.language == .japanese ? nil : nextChinese
-        japanese = next.language == .chinese ? nil : nextJapanese
-        configuration = next
-        _ = clear()
     }
-
-    func process(key: Int32) -> SKEngineState {
-        if configuration.language == .japanese { return japanese!.process(key: key) }
-        if key == 0x20, let first = displayed.candidates.first, first.index <= Self.japaneseRoute {
-            return selectCandidate(at: first.index)
-        }
-        native = chinese!.process(key: key)
-        return present(native)
-    }
-    func selectCandidate(at index: Int) -> SKEngineState {
-        if configuration.language == .japanese { return japanese!.selectCandidate(at: index) }
-        if configuration.language == .mixed, index <= Self.japaneseRoute,
-           displayed.candidates.contains(where: { $0.index == index }) {
-            let result = japanese!.selectCandidate(at: Self.japaneseRoute - index)
-            _ = chinese?.clear(); native = SKEngineState(); displayed = result
-            return result
-        }
-        native = chinese!.selectCandidate(at: index)
-        return present(native)
-    }
-    func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage {
-        configuration.language == .japanese
-            ? japanese!.candidatePage(startingAt: index, limit: limit)
-            : chinese!.candidatePage(startingAt: index, limit: limit)
-    }
-    func changePage(backward: Bool) -> SKEngineState {
-        if configuration.language == .japanese { return japanese!.changePage(backward: backward) }
-        native = chinese!.changePage(backward: backward); return present(native)
-    }
-    func commit() -> SKEngineState {
-        if configuration.language == .japanese { return japanese!.commit() }
-        if let first = displayed.candidates.first, first.index <= Self.japaneseRoute {
-            return selectCandidate(at: first.index)
-        }
-        native = chinese!.commit(); return present(native)
-    }
-    func clear() -> SKEngineState {
-        _ = chinese?.clear(); _ = japanese?.clear()
-        native = SKEngineState(); displayed = native; return native
-    }
-    func selectConfiguration(_ next: SKInputConfiguration) throws -> SKEngineState {
-        try configure(next); return displayed
-    }
-    private func present(_ state: SKEngineState) -> SKEngineState {
-        var state = state
-        if configuration.language == .mixed, state.page == 0, state.committedText.isEmpty,
-           state.input.count >= 3, !state.preedit.unicodeScalars.contains(where: { $0.value > 127 }) {
-            _ = japanese!.replaceInput(state.input)
-            let foreign = japanese!.candidatePage(startingAt: 0, limit: 64)
-            var seen = Set(state.candidates.map(\.text))
-            let additions = foreign.candidates.filter { seen.insert($0.text).inserted }.map {
-                SKCandidate(index: Self.japaneseRoute - $0.index, text: $0.text, comment: $0.comment)
-            }
-            state.candidates.insert(contentsOf: additions.prefix(3), at: min(5, state.candidates.count))
-            state.candidates.append(contentsOf: additions.dropFirst(3))
-        } else { _ = japanese?.clear() }
-        displayed = state
-        return state
+    func process(key: Int32) -> SKEngineState { engine.process(key: key) }
+    func selectCandidate(at index: Int) -> SKEngineState { engine.selectCandidate(at: index) }
+    func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage { engine.candidatePage(startingAt: index, limit: limit) }
+    func changePage(backward: Bool) -> SKEngineState { engine.changePage(backward: backward) }
+    func commit() -> SKEngineState { engine.commit() }
+    func clear() -> SKEngineState { engine.clear() }
+    func selectConfiguration(_ configuration: SKInputConfiguration) throws -> SKEngineState {
+        // Construct before replacing, so missing resources leave a usable engine.
+        let next = try Self.make(configuration, resources: resources, userDirectory: userDirectory)
+        engine = next
+        return engine.clear()
     }
 }
