@@ -1,0 +1,42 @@
+{
+  "mixed-dev": {
+    "mixed-dev-after-1": {
+      "count": 52,
+      "keyP95MS": 12.313167,
+      "totalMS": 6762.980556000004,
+      "failed": 0
+    },
+    "mixed-dev-before-2": {
+      "count": 52,
+      "keyP95MS": 13.630917,
+      "totalMS": 7398.112182999999,
+      "failed": 0
+    },
+    "mixed-dev-before-1": {
+      "count": 52,
+      "keyP95MS": 14.106292,
+      "totalMS": 7580.873872000013,
+      "failed": 0
+    },
+    "mixed-dev-after-2": {
+      "count": 52,
+      "keyP95MS": 10.980292,
+      "totalMS": 5808.359132,
+      "failed": 0
+    }
+  },
+  "mixed-quality": {
+    "mixed-quality-after": {
+      "count": 250,
+      "keyP95MS": 9.345875,
+      "totalMS": 21589.93937499999,
+      "failed": 0
+    },
+    "mixed-quality-before": {
+      "count": 250,
+      "keyP95MS": 12.131666,
+      "totalMS": 28457.98532700002,
+      "failed": 0
+    }
+  }
+}

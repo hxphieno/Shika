@@ -1,0 +1,11 @@
+{
+  "target": "generic/platform=iOS",
+  "sdk": "iphoneos26.5",
+  "codeSigningAllowed": false,
+  "buildSucceeded": true,
+  "workspace": "/tmp/shika-engine-continuous/build-workspace",
+  "sourceHashManifest": "build-source-hashes.json",
+  "resourceValidation": "PASS: exact offline resources, full access disabled, privacy and notices bundled, static Rime",
+  "physicalDeviceRuntimeMeasured": false,
+  "reasonForCopy": "Original project stalled inside NSFileCoordinator; copied current project and sources, verified 47 project/keyboard Swift source hashes."
+}

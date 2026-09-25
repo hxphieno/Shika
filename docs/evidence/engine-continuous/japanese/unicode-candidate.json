@@ -1,0 +1,792 @@
+{
+  "checks" : [
+    {
+      "label" : "ba: first lookup preserves fresh bytes",
+      "passed" : true
+    },
+    {
+      "label" : "ba: NFC then NFD preserves independent bytes",
+      "passed" : false
+    },
+    {
+      "label" : "ba: NFD then NFC preserves independent bytes",
+      "passed" : false
+    },
+    {
+      "label" : "pa: first lookup preserves fresh bytes",
+      "passed" : true
+    },
+    {
+      "label" : "pa: NFC then NFD preserves independent bytes",
+      "passed" : false
+    },
+    {
+      "label" : "pa: NFD then NFC preserves independent bytes",
+      "passed" : false
+    },
+    {
+      "label" : "ga: first lookup preserves fresh bytes",
+      "passed" : true
+    },
+    {
+      "label" : "ga: NFC then NFD preserves independent bytes",
+      "passed" : false
+    },
+    {
+      "label" : "ga: NFD then NFC preserves independent bytes",
+      "passed" : false
+    },
+    {
+      "label" : "za: first lookup preserves fresh bytes",
+      "passed" : true
+    },
+    {
+      "label" : "za: NFC then NFD preserves independent bytes",
+      "passed" : false
+    },
+    {
+      "label" : "za: NFD then NFC preserves independent bytes",
+      "passed" : false
+    },
+    {
+      "label" : "vu: first lookup preserves fresh bytes",
+      "passed" : true
+    },
+    {
+      "label" : "vu: NFC then NFD preserves independent bytes",
+      "passed" : false
+    },
+    {
+      "label" : "vu: NFD then NFC preserves independent bytes",
+      "passed" : false
+    }
+  ],
+  "failed" : 10,
+  "passed" : 5,
+  "results" : [
+    {
+      "composedThenDecomposedUTF8" : [
+        [
+          227,
+          129,
+          176
+        ],
+        [
+          229,
+          160,
+          180
+        ],
+        [
+          233,
+          166,
+          172
+        ],
+        [
+          232,
+          169,
+          177
+        ],
+        [
+          231,
+          190,
+          189
+        ],
+        [
+          232,
+          145,
+          137
+        ],
+        [
+          232,
+          178,
+          188
+        ],
+        [
+          230,
+          179,
+          162
+        ],
+        [
+          230,
+          138,
+          138
+        ],
+        [
+          230,
+          180,
+          190
+        ],
+        [
+          227,
+          131,
+          180,
+          227,
+          130,
+          161
+        ],
+        [
+          229,
+          188,
+          181
+        ],
+        [
+          227,
+          131,
+          144
+        ]
+      ],
+      "composedUTF8" : [
+        227,
+        129,
+        176
+      ],
+      "decomposedThenComposedUTF8" : [
+        [
+          227,
+          129,
+          175,
+          227,
+          130,
+          153
+        ],
+        [
+          227,
+          131,
+          143,
+          227,
+          130,
+          153
+        ]
+      ],
+      "decomposedUTF8" : [
+        227,
+        129,
+        175,
+        227,
+        130,
+        153
+      ],
+      "forwardPreserved" : false,
+      "freshByteResultsDistinct" : true,
+      "freshComposed" : [
+        "ば",
+        "場",
+        "馬",
+        "話",
+        "羽",
+        "葉",
+        "貼",
+        "波",
+        "把",
+        "派",
+        "ヴァ",
+        "張",
+        "バ"
+      ],
+      "freshComposedUTF8" : [
+        [
+          227,
+          129,
+          176
+        ],
+        [
+          229,
+          160,
+          180
+        ],
+        [
+          233,
+          166,
+          172
+        ],
+        [
+          232,
+          169,
+          177
+        ],
+        [
+          231,
+          190,
+          189
+        ],
+        [
+          232,
+          145,
+          137
+        ],
+        [
+          232,
+          178,
+          188
+        ],
+        [
+          230,
+          179,
+          162
+        ],
+        [
+          230,
+          138,
+          138
+        ],
+        [
+          230,
+          180,
+          190
+        ],
+        [
+          227,
+          131,
+          180,
+          227,
+          130,
+          161
+        ],
+        [
+          229,
+          188,
+          181
+        ],
+        [
+          227,
+          131,
+          144
+        ]
+      ],
+      "freshDecomposed" : [
+        "ば",
+        "バ"
+      ],
+      "freshDecomposedUTF8" : [
+        [
+          227,
+          129,
+          175,
+          227,
+          130,
+          153
+        ],
+        [
+          227,
+          131,
+          143,
+          227,
+          130,
+          153
+        ]
+      ],
+      "id" : "ba",
+      "reversePreserved" : false,
+      "swiftStringsEqual" : true
+    },
+    {
+      "composedThenDecomposedUTF8" : [
+        [
+          227,
+          131,
+          145
+        ],
+        [
+          232,
+          169,
+          177
+        ],
+        [
+          231,
+          190,
+          189
+        ],
+        [
+          230,
+          179,
+          162
+        ],
+        [
+          230,
+          138,
+          138
+        ],
+        [
+          230,
+          180,
+          190
+        ],
+        [
+          227,
+          129,
+          177
+        ]
+      ],
+      "composedUTF8" : [
+        227,
+        129,
+        177
+      ],
+      "decomposedThenComposedUTF8" : [
+        [
+          227,
+          129,
+          175,
+          227,
+          130,
+          154
+        ],
+        [
+          227,
+          131,
+          143,
+          227,
+          130,
+          154
+        ]
+      ],
+      "decomposedUTF8" : [
+        227,
+        129,
+        175,
+        227,
+        130,
+        154
+      ],
+      "forwardPreserved" : false,
+      "freshByteResultsDistinct" : true,
+      "freshComposed" : [
+        "パ",
+        "話",
+        "羽",
+        "波",
+        "把",
+        "派",
+        "ぱ"
+      ],
+      "freshComposedUTF8" : [
+        [
+          227,
+          131,
+          145
+        ],
+        [
+          232,
+          169,
+          177
+        ],
+        [
+          231,
+          190,
+          189
+        ],
+        [
+          230,
+          179,
+          162
+        ],
+        [
+          230,
+          138,
+          138
+        ],
+        [
+          230,
+          180,
+          190
+        ],
+        [
+          227,
+          129,
+          177
+        ]
+      ],
+      "freshDecomposed" : [
+        "ぱ",
+        "パ"
+      ],
+      "freshDecomposedUTF8" : [
+        [
+          227,
+          129,
+          175,
+          227,
+          130,
+          154
+        ],
+        [
+          227,
+          131,
+          143,
+          227,
+          130,
+          154
+        ]
+      ],
+      "id" : "pa",
+      "reversePreserved" : false,
+      "swiftStringsEqual" : true
+    },
+    {
+      "composedThenDecomposedUTF8" : [
+        [
+          227,
+          129,
+          140
+        ],
+        [
+          231,
+          148,
+          187
+        ],
+        [
+          230,
+          136,
+          145
+        ],
+        [
+          227,
+          130,
+          172
+        ],
+        [
+          232,
+          155,
+          190
+        ],
+        [
+          232,
+          179,
+          128
+        ],
+        [
+          232,
+          135,
+          165
+        ],
+        [
+          233,
+          167,
+          149
+        ]
+      ],
+      "composedUTF8" : [
+        227,
+        129,
+        140
+      ],
+      "decomposedThenComposedUTF8" : [
+        [
+          227,
+          129,
+          139,
+          227,
+          130,
+          153
+        ],
+        [
+          227,
+          130,
+          171,
+          227,
+          130,
+          153
+        ]
+      ],
+      "decomposedUTF8" : [
+        227,
+        129,
+        139,
+        227,
+        130,
+        153
+      ],
+      "forwardPreserved" : false,
+      "freshByteResultsDistinct" : true,
+      "freshComposed" : [
+        "が",
+        "画",
+        "我",
+        "ガ",
+        "蛾",
+        "賀",
+        "臥",
+        "駕"
+      ],
+      "freshComposedUTF8" : [
+        [
+          227,
+          129,
+          140
+        ],
+        [
+          231,
+          148,
+          187
+        ],
+        [
+          230,
+          136,
+          145
+        ],
+        [
+          227,
+          130,
+          172
+        ],
+        [
+          232,
+          155,
+          190
+        ],
+        [
+          232,
+          179,
+          128
+        ],
+        [
+          232,
+          135,
+          165
+        ],
+        [
+          233,
+          167,
+          149
+        ]
+      ],
+      "freshDecomposed" : [
+        "が",
+        "ガ"
+      ],
+      "freshDecomposedUTF8" : [
+        [
+          227,
+          129,
+          139,
+          227,
+          130,
+          153
+        ],
+        [
+          227,
+          130,
+          171,
+          227,
+          130,
+          153
+        ]
+      ],
+      "id" : "ga",
+      "reversePreserved" : false,
+      "swiftStringsEqual" : true
+    },
+    {
+      "composedThenDecomposedUTF8" : [
+        [
+          229,
+          186,
+          167
+        ],
+        [
+          84,
+          104,
+          101
+        ],
+        [
+          116,
+          104,
+          101
+        ],
+        [
+          227,
+          129,
+          150
+        ],
+        [
+          227,
+          130,
+          182
+        ]
+      ],
+      "composedUTF8" : [
+        227,
+        129,
+        150
+      ],
+      "decomposedThenComposedUTF8" : [
+        [
+          227,
+          129,
+          149,
+          227,
+          130,
+          153
+        ],
+        [
+          227,
+          130,
+          181,
+          227,
+          130,
+          153
+        ]
+      ],
+      "decomposedUTF8" : [
+        227,
+        129,
+        149,
+        227,
+        130,
+        153
+      ],
+      "forwardPreserved" : false,
+      "freshByteResultsDistinct" : true,
+      "freshComposed" : [
+        "座",
+        "The",
+        "the",
+        "ざ",
+        "ザ"
+      ],
+      "freshComposedUTF8" : [
+        [
+          229,
+          186,
+          167
+        ],
+        [
+          84,
+          104,
+          101
+        ],
+        [
+          116,
+          104,
+          101
+        ],
+        [
+          227,
+          129,
+          150
+        ],
+        [
+          227,
+          130,
+          182
+        ]
+      ],
+      "freshDecomposed" : [
+        "ざ",
+        "ザ"
+      ],
+      "freshDecomposedUTF8" : [
+        [
+          227,
+          129,
+          149,
+          227,
+          130,
+          153
+        ],
+        [
+          227,
+          130,
+          181,
+          227,
+          130,
+          153
+        ]
+      ],
+      "id" : "za",
+      "reversePreserved" : false,
+      "swiftStringsEqual" : true
+    },
+    {
+      "composedThenDecomposedUTF8" : [
+        [
+          227,
+          130,
+          148
+        ],
+        [
+          227,
+          131,
+          180
+        ]
+      ],
+      "composedUTF8" : [
+        227,
+        130,
+        148
+      ],
+      "decomposedThenComposedUTF8" : [
+        [
+          227,
+          129,
+          134,
+          227,
+          130,
+          153
+        ],
+        [
+          227,
+          130,
+          166,
+          227,
+          130,
+          153
+        ]
+      ],
+      "decomposedUTF8" : [
+        227,
+        129,
+        134,
+        227,
+        130,
+        153
+      ],
+      "forwardPreserved" : false,
+      "freshByteResultsDistinct" : true,
+      "freshComposed" : [
+        "ゔ",
+        "ヴ"
+      ],
+      "freshComposedUTF8" : [
+        [
+          227,
+          130,
+          148
+        ],
+        [
+          227,
+          131,
+          180
+        ]
+      ],
+      "freshDecomposed" : [
+        "ゔ",
+        "ヴ"
+      ],
+      "freshDecomposedUTF8" : [
+        [
+          227,
+          129,
+          134,
+          227,
+          130,
+          153
+        ],
+        [
+          227,
+          130,
+          166,
+          227,
+          130,
+          153
+        ]
+      ],
+      "id" : "vu",
+      "reversePreserved" : false,
+      "swiftStringsEqual" : true
+    }
+  ],
+  "romajiEntries" : 312,
+  "romajiEntriesWithNonNFCOutput" : 0,
+  "scope" : "Internal convert API byte-preservation boundary; current romaji mapping reachability measured separately"
+}

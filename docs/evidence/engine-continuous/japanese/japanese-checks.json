@@ -1,0 +1,126 @@
+{
+  "cachedReadings" : 16,
+  "checks" : [
+    {
+      "label" : "real dictionary offers multiple readings",
+      "passed" : true
+    },
+    {
+      "label" : "warm immutable conversion equals cold output",
+      "passed" : true
+    },
+    {
+      "label" : "caller mutation cannot modify cached array",
+      "passed" : true
+    },
+    {
+      "label" : "conversion cache bounded to 16 readings",
+      "passed" : true
+    },
+    {
+      "label" : "oldest conversion evicted",
+      "passed" : true
+    },
+    {
+      "label" : "evicted conversion recomputed identically",
+      "passed" : true
+    },
+    {
+      "label" : "empty input returns no conversion",
+      "passed" : true
+    },
+    {
+      "label" : "overlong reading remains literal",
+      "passed" : true
+    },
+    {
+      "label" : "empty and overlong input not cached",
+      "passed" : true
+    },
+    {
+      "label" : "unknown Unicode preserves literal fallback",
+      "passed" : true
+    },
+    {
+      "label" : "80-character boundary converts and is cacheable",
+      "passed" : true
+    },
+    {
+      "label" : "cached result count bounded by N-best plus literals",
+      "passed" : true
+    },
+    {
+      "label" : "lexicon owns no learned-history fields",
+      "passed" : true
+    },
+    {
+      "label" : "raw letters remain preedit",
+      "passed" : true
+    },
+    {
+      "label" : "literal kana remains third",
+      "passed" : true
+    },
+    {
+      "label" : "alternate commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "label" : "learned selection reranks on cache hit",
+      "passed" : true
+    },
+    {
+      "label" : "kana stays third after learned reranking",
+      "passed" : true
+    },
+    {
+      "label" : "promoted index routes correctly",
+      "passed" : true
+    },
+    {
+      "label" : "clear preserves saved learning",
+      "passed" : true
+    },
+    {
+      "label" : "Return preserves raw-letter feature",
+      "passed" : true
+    },
+    {
+      "label" : "Return does not train a cached candidate",
+      "passed" : true
+    },
+    {
+      "label" : "pending consonant has no stale cached candidates",
+      "passed" : true
+    },
+    {
+      "label" : "deleting pending consonant restores fresh learned rank",
+      "passed" : true
+    },
+    {
+      "label" : "stale post-clear index cannot commit cached words",
+      "passed" : true
+    },
+    {
+      "label" : "new engine reloads learned rank",
+      "passed" : true
+    },
+    {
+      "label" : "different user does not share learned promotion",
+      "passed" : true
+    },
+    {
+      "label" : "standalone lexicon still has original order after learning",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "maximumCachedInputCharacters" : 80,
+  "maximumCachedOutputCount" : 21,
+  "observedUTF8KeyAndValuePayloadBytes" : 1326,
+  "originalTop" : "橋",
+  "passed" : 28,
+  "payloadIsRSS" : false,
+  "scope" : "Independent real-resource conversion-cache and live learning regression checks",
+  "selectedAlternate" : "箸"
+}

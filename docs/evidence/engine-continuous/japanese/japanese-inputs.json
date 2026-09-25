@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "status": "Prepared heldout targets; not counted as passed until real Japanese conversion exists. Romaji convention must be declared by the implemented schema.",
+  "cases": [
+    {
+      "id": "ja-001",
+      "target": "日本",
+      "romaji": "nihon"
+    },
+    {
+      "id": "ja-002",
+      "target": "東京",
+      "romaji": "toukyou"
+    },
+    {
+      "id": "ja-003",
+      "target": "大阪",
+      "romaji": "oosaka"
+    },
+    {
+      "id": "ja-004",
+      "target": "京都",
+      "romaji": "kyouto"
+    },
+    {
+      "id": "ja-005",
+      "target": "今日",
+      "romaji": "kyou"
+    },
+    {
+      "id": "ja-006",
+      "target": "明日",
+      "romaji": "ashita"
+    },
+    {
+      "id": "ja-007",
+      "target": "昨日",
+      "romaji": "kinou"
+    },
+    {
+      "id": "ja-008",
+      "target": "天気",
+      "romaji": "tenki"
+    },
+    {
+      "id": "ja-009",
+      "target": "時間",
+      "romaji": "jikan"
+    },
+    {
+      "id": "ja-010",
+      "target": "仕事",
+      "romaji": "shigoto"
+    },
+    {
+      "id": "ja-011",
+      "target": "学校",
+      "romaji": "gakkou"
+    },
+    {
+      "id": "ja-012",
+      "target": "先生",
+      "romaji": "sensei"
+    },
+    {
+      "id": "ja-013",
+      "target": "学生",
+      "romaji": "gakusei"
+    },
+    {
+      "id": "ja-014",
+      "target": "勉強",
+      "romaji": "benkyou"
+    },
+    {
+      "id": "ja-015",
+      "target": "電車",
+      "romaji": "densha"
+    },
+    {
+      "id": "ja-016",
+      "target": "駅",
+      "romaji": "eki"
+    },
+    {
+      "id": "ja-017",
+      "target": "空港",
+      "romaji": "kuukou"
+    },
+    {
+      "id": "ja-018",
+      "target": "旅行",
+      "romaji": "ryokou"
+    },
+    {
+      "id": "ja-019",
+      "target": "電話",
+      "romaji": "denwa"
+    },
+    {
+      "id": "ja-020",
+      "target": "写真",
+      "romaji": "shashin"
+    },
+    {
+      "id": "ja-021",
+      "target": "音楽",
+      "romaji": "ongaku"
+    },
+    {
+      "id": "ja-022",
+      "target": "映画",
+      "romaji": "eiga"
+    },
+    {
+      "id": "ja-023",
+      "target": "友達",
+      "romaji": "tomodachi"
+    },
+    {
+      "id": "ja-024",
+      "target": "家族",
+      "romaji": "kazoku"
+    },
+    {
+      "id": "ja-025",
+      "target": "名前",
+      "romaji": "namae"
+    },
+    {
+      "id": "ja-026",
+      "target": "入力",
+      "romaji": "nyuuryoku"
+    },
+    {
+      "id": "ja-027",
+      "target": "変換",
+      "romaji": "henkan"
+    },
+    {
+      "id": "ja-028",
+      "target": "辞書",
+      "romaji": "jisho"
+    },
+    {
+      "id": "ja-029",
+      "target": "候補",
+      "romaji": "kouho"
+    },
+    {
+      "id": "ja-030",
+      "target": "開発",
+      "romaji": "kaihatsu"
+    },
+    {
+      "id": "ja-031",
+      "target": "人工知能",
+      "romaji": "jinkouchinou"
+    },
+    {
+      "id": "ja-032",
+      "target": "自然言語",
+      "romaji": "shizengengo"
+    },
+    {
+      "id": "ja-033",
+      "target": "機械学習",
+      "romaji": "kikaigakushuu"
+    },
+    {
+      "id": "ja-034",
+      "target": "情報処理",
+      "romaji": "jouhoushori"
+    },
+    {
+      "id": "ja-035",
+      "target": "お疲れ様です",
+      "romaji": "otsukaresamadesu"
+    },
+    {
+      "id": "ja-036",
+      "target": "ありがとうございます",
+      "romaji": "arigatougozaimasu"
+    },
+    {
+      "id": "ja-037",
+      "target": "よろしくお願いします",
+      "romaji": "yoroshikuonegaishimasu"
+    },
+    {
+      "id": "ja-038",
+      "target": "今日はいい天気です",
+      "romaji": "kyouhaiitenkidesu"
+    },
+    {
+      "id": "ja-039",
+      "target": "明日また会いましょう",
+      "romaji": "ashitamataaimashou"
+    },
+    {
+      "id": "ja-040",
+      "target": "日本語を勉強しています",
+      "romaji": "nihongowobenkyoushiteimasu"
+    },
+    {
+      "id": "boundary-6",
+      "romaji": "nihonnihonnihonnihonnihonnihon"
+    },
+    {
+      "id": "boundary-12",
+      "romaji": "nihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihon"
+    },
+    {
+      "id": "boundary-20",
+      "romaji": "nihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihon"
+    },
+    {
+      "id": "boundary-28",
+      "romaji": "nihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihonnihon"
+    }
+  ]
+}

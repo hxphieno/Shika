@@ -1,0 +1,113 @@
+{
+  "afterRankZeroBased" : 0,
+  "afterTexts" : [
+    "今天也有難う",
+    "今天也ありがとう",
+    "今天也有り難う",
+    "今天业ありがとう",
+    "今天夜ありがとう",
+    "今天也アリガトウ",
+    "今天野ありがとう",
+    "今天叶ありがとう",
+    "今天页ありがとう",
+    "今天液ありがとう",
+    "今天爷ありがとう",
+    "今天业有難う",
+    "今天夜有難う",
+    "今天野有難う",
+    "今天叶有難う",
+    "今天页有難う",
+    "今天液有難う",
+    "今天爷有難う",
+    "今天也有りがとう",
+    "津田也ありがとう",
+    "金田也ありがとう",
+    "今天也あり難う",
+    "金天也ありがとう",
+    "今天也ありがと",
+    "今天也アリガト",
+    "今天也有賀",
+    "今天也有我",
+    "今天也あり",
+    "今天也啊日",
+    "今天也啊",
+    "今天也阿",
+    "进天爷啊",
+    "今天也",
+    "今天业",
+    "今天夜",
+    "今天",
+    "津田",
+    "金田",
+    "陣地啊",
+    "浸提啊",
+    "近体啊",
+    "陣地",
+    "人知",
+    "人智",
+    "进",
+    "金",
+    "近",
+    "及",
+    "即",
+    "既"
+  ],
+  "beforeRankZeroBased" : 1,
+  "checks" : [
+    {
+      "name" : "fresh engine starts without learned records",
+      "passed" : true
+    },
+    {
+      "name" : "independent target present below initial first",
+      "passed" : true
+    },
+    {
+      "name" : "typing and browsing do not enable history",
+      "passed" : true
+    },
+    {
+      "name" : "Return keeps original spelling and clears",
+      "passed" : true
+    },
+    {
+      "name" : "Return leaves learning empty",
+      "passed" : true
+    },
+    {
+      "name" : "cancel leaves learning empty",
+      "passed" : true
+    },
+    {
+      "name" : "first explicit selection commits exactly",
+      "passed" : true
+    },
+    {
+      "name" : "first selection immediately disables empty-history fast path",
+      "passed" : true
+    },
+    {
+      "name" : "first selection records one use without hidden training",
+      "passed" : true
+    },
+    {
+      "name" : "first selection includes word and transition learning",
+      "passed" : true
+    },
+    {
+      "name" : "first selection already improves live candidate rank",
+      "passed" : true
+    },
+    {
+      "name" : "browsing remains deterministic with enabled learning",
+      "passed" : true
+    },
+    {
+      "name" : "clear keeps enabled learned state",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "passed" : 13,
+  "scope" : "Real mixed decoder empty-history fast-path transition; no mocks"
+}

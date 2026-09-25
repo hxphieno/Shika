@@ -1,0 +1,73 @@
+{
+  "afterRankZeroBased" : -1,
+  "afterTexts" : [
+    "今天也有難う",
+    "今天也ありがとう",
+    "今天也有り難う",
+    "今天业ありがとう",
+    "今天夜ありがとう",
+    "今天也アリガトウ",
+    "今天野ありがとう",
+    "今天叶ありがとう",
+    "今天页ありがとう",
+    "今天液ありがとう",
+    "今天爷ありがとう",
+    "今天业有難う",
+    "今天夜有難う",
+    "今天野有難う",
+    "今天叶有難う",
+    "今天页有難う",
+    "今天液有難う",
+    "今天爷有難う",
+    "今天也有りがとう",
+    "津田也ありがとう",
+    "金田也ありがとう",
+    "今天也あり難う",
+    "金天也ありがとう",
+    "今天也ありがと",
+    "今天也アリガト",
+    "今天也有賀",
+    "今天也有我",
+    "今天也あり",
+    "今天也啊日",
+    "今天也啊",
+    "今天也阿",
+    "进天爷啊",
+    "今天也",
+    "今天业",
+    "今天夜",
+    "今天",
+    "津田",
+    "金田",
+    "陣地啊",
+    "浸提啊",
+    "近体啊",
+    "陣地",
+    "人知",
+    "人智",
+    "进",
+    "金",
+    "近",
+    "及",
+    "即",
+    "既"
+  ],
+  "beforeRankZeroBased" : -1,
+  "checks" : [
+    {
+      "name" : "new process loads first selection history",
+      "passed" : true
+    },
+    {
+      "name" : "new process preserves exact post-first-selection order",
+      "passed" : true
+    },
+    {
+      "name" : "Return and cancellation do not alter persisted history",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "passed" : 3,
+  "scope" : "Real mixed decoder empty-history fast-path transition; no mocks"
+}
