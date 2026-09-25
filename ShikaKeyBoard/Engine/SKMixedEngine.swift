@@ -32,6 +32,9 @@ final class SKMixedEngine: SKInputEngine {
         "p:\(previous.language.rawValue):\(previous.text):\(next.language.rawValue):\(next.raw):\(next.text)"
     }
     private func bonus(_ previous: SKMixedDecoder.Segment?, _ next: SKMixedDecoder.Segment) -> Double {
+        // Before the first learned selection both terms are necessarily zero.
+        // Avoid constructing word/pair keys for every edge of the search graph.
+        guard !learned.isEmpty else { return 0 }
         let word = learned[wordKey(next)] ?? 0
         let pair = previous.map { learned[pairKey($0, next)] ?? 0 } ?? 0
         return min(3, log1p(Double(word)) * 0.8 + log1p(Double(pair)))
