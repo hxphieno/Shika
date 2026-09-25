@@ -1,0 +1,290 @@
+{
+  "datasetSHA256": "f0c721776f147caf615fb329e2c829a4c36672e6e21d0ff3062b28581951f8ea",
+  "cases": 400,
+  "metrics": [
+    {
+      "schema": "shika_pinyin",
+      "kind": "clean",
+      "count": 40,
+      "baselineTop1": 37,
+      "correctedTop1": 37,
+      "baselineTop3": 40,
+      "correctedTop3": 40,
+      "baselineTop8": 40,
+      "correctedTop8": 40
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "substitution",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 19,
+      "baselineTop3": 3,
+      "correctedTop3": 29,
+      "baselineTop8": 6,
+      "correctedTop8": 35
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "omission",
+      "count": 40,
+      "baselineTop1": 3,
+      "correctedTop1": 10,
+      "baselineTop3": 4,
+      "correctedTop3": 24,
+      "baselineTop8": 5,
+      "correctedTop8": 31
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "insertion",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 24,
+      "baselineTop3": 4,
+      "correctedTop3": 31,
+      "baselineTop8": 5,
+      "correctedTop8": 36
+    },
+    {
+      "schema": "shika_pinyin",
+      "kind": "transposition",
+      "count": 40,
+      "baselineTop1": 1,
+      "correctedTop1": 25,
+      "baselineTop3": 2,
+      "correctedTop3": 32,
+      "baselineTop8": 4,
+      "correctedTop8": 34
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "clean",
+      "count": 40,
+      "baselineTop1": 37,
+      "correctedTop1": 37,
+      "baselineTop3": 40,
+      "correctedTop3": 40,
+      "baselineTop8": 40,
+      "correctedTop8": 40
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "substitution",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 6,
+      "baselineTop3": 0,
+      "correctedTop3": 21,
+      "baselineTop8": 0,
+      "correctedTop8": 29
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "omission",
+      "count": 40,
+      "baselineTop1": 1,
+      "correctedTop1": 15,
+      "baselineTop3": 1,
+      "correctedTop3": 24,
+      "baselineTop8": 1,
+      "correctedTop8": 25
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "insertion",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 32,
+      "baselineTop3": 0,
+      "correctedTop3": 35,
+      "baselineTop8": 0,
+      "correctedTop8": 35
+    },
+    {
+      "schema": "shika_flypy",
+      "kind": "transposition",
+      "count": 40,
+      "baselineTop1": 0,
+      "correctedTop1": 12,
+      "baselineTop3": 0,
+      "correctedTop3": 26,
+      "baselineTop8": 0,
+      "correctedTop8": 31
+    }
+  ],
+  "cleanFirstCandidateChanges": [],
+  "cleanTargetRegressions": [],
+  "unexpectedCommitsWhileTyping": [],
+  "selectedCandidateCommitFailures": [
+    {
+      "candidates": [
+        {
+          "comment": "shan qing shui xiu ou",
+          "index": 0,
+          "text": "山清水秀欧"
+        },
+        {
+          "comment": "shan qing shui xiu",
+          "index": 1,
+          "text": "山清水秀"
+        },
+        {
+          "comment": "shan qing shui xiu",
+          "index": 2,
+          "text": "山青水秀"
+        },
+        {
+          "comment": "shan qing shui",
+          "index": 3,
+          "text": "山青水"
+        },
+        {
+          "comment": "shan qing song",
+          "index": 4,
+          "text": "山青松"
+        },
+        {
+          "comment": "shan qing",
+          "index": 5,
+          "text": "煽情"
+        },
+        {
+          "comment": "shan qing",
+          "index": 6,
+          "text": "山清"
+        },
+        {
+          "comment": "shan qing",
+          "index": 7,
+          "text": "山青"
+        }
+      ],
+      "correct": "shanqingshuixiu",
+      "input": "shanqingshuixou",
+      "inputRemaining": "shanqingshuixou",
+      "keyDurationsMS": [
+        0.3979206085205078,
+        0.42498111724853516,
+        0.4830360412597656,
+        0.5199909210205078,
+        1.7409324645996094,
+        0.9649991989135742,
+        0.8200407028198242,
+        0.9239912033081055,
+        1.255035400390625,
+        5.038976669311523,
+        1.0319948196411133,
+        0.6070137023925781,
+        1.2929439544677734,
+        5.313992500305176,
+        4.023909568786621
+      ],
+      "kind": "substitution",
+      "preedit": "shan qing shui x ou",
+      "remainingAfterSelection": "shanqingshuixou",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "山清水秀欧",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "山清水秀欧",
+      "spacePartialSelection": false,
+      "spacePreeditAfterSelection": "",
+      "spaceRemaining": "",
+      "target": "山清水秀",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "shan qing shui xiu ou",
+          "index": 0,
+          "text": "山清水秀欧"
+        },
+        {
+          "comment": "shan qing shui xiu",
+          "index": 1,
+          "text": "山清水秀"
+        },
+        {
+          "comment": "shan qing shui xu",
+          "index": 2,
+          "text": "山青水需"
+        },
+        {
+          "comment": "shan qing shui xiu",
+          "index": 3,
+          "text": "山青水秀"
+        },
+        {
+          "comment": "shan qing shui",
+          "index": 4,
+          "text": "山青水"
+        },
+        {
+          "comment": "shan qing song",
+          "index": 5,
+          "text": "山青松"
+        },
+        {
+          "comment": "shan qing",
+          "index": 6,
+          "text": "煽情"
+        },
+        {
+          "comment": "shan qing",
+          "index": 7,
+          "text": "山清"
+        }
+      ],
+      "correct": "shanqingshuixiu",
+      "input": "shanqingshuixoiu",
+      "inputRemaining": "shanqingshuixoiu",
+      "keyDurationsMS": [
+        2.563953399658203,
+        0.4439353942871094,
+        0.6099939346313477,
+        0.5649328231811523,
+        1.1780261993408203,
+        0.6150007247924805,
+        1.580953598022461,
+        0.8150339126586914,
+        1.4119148254394531,
+        4.41896915435791,
+        0.8469820022583008,
+        0.5420446395874023,
+        1.2069940567016602,
+        1.241922378540039,
+        1.3170242309570312,
+        1.483917236328125
+      ],
+      "kind": "insertion",
+      "preedit": "shan qing shui x oiu",
+      "remainingAfterSelection": "shanqingshuixoiu",
+      "schema": "shika_pinyin",
+      "selectedExactlyOnce": false,
+      "selectedOutput": "",
+      "selectionCleared": false,
+      "spaceDisplayedTop": "山清水秀欧",
+      "spaceMatchesDisplayedTop": true,
+      "spaceOutput": "",
+      "spacePartialSelection": true,
+      "spacePreeditAfterSelection": "山清水秀欧iu",
+      "spaceRemaining": "shanqingshuixoiu",
+      "target": "山清水秀",
+      "targetRank": 2,
+      "unexpectedOutputBeforeSelection": ""
+    }
+  ],
+  "spaceCommitFailures": [],
+  "selectionUnavailable": 42,
+  "keyLatencyMS": {
+    "p50": 0.6650686264038086,
+    "p95": 5.304932594299316,
+    "p99": 9.878039360046387,
+    "max": 71.37703895568848
+  }
+}

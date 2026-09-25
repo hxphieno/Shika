@@ -1,0 +1,3 @@
+2026-09-25 21:12:32.464 learning[45942:7321550] PASS: repeated selection promotes 腻 to first candidate
+2026-09-25 21:12:32.506 learning[45958:7321627] PASS: learned 腻 ranks first in a new process
+Upgrade test artifacts: /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T/shika-lexicon-upgrade.P6VFDfkQWH

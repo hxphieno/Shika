@@ -1,0 +1,17 @@
+#!/bin/bash
+set -euo pipefail
+repo_dir="$(cd "$(dirname "$0")/.." && pwd)"
+output_dir="${1:?usage: test-lexicon-segmentation.sh output_dir}"
+work="$(mktemp -d "${TMPDIR:-/tmp}/shika-segmentation.XXXXXX")"
+mkdir -p "$output_dir" "$work/sources"
+cp -R "${SHIKA_SEGMENTATION_RESOURCE_DIR:-$repo_dir/ShikaKeyBoard/Resources/RimeData.bundle}" "$work/RimeData.bundle"
+cp "$repo_dir/ShikaKeyBoard/Engine/SKRimeSession.m" "$repo_dir/ShikaKeyBoard/Engine/SKRimeSession.h" "$work/sources/"
+cp "$repo_dir"/ShikaKeyBoard/Core/*.swift "$repo_dir"/ShikaKeyBoard/Engine/*.swift "$repo_dir"/ShikaKeyBoard/Schemes/*/*Scheme.swift "$work/sources/"
+cp "$repo_dir/Tests/LexiconQualitySegmentationChecks.swift" "$work/sources/"
+shasum -a 256 "$work/sources/"* > "$output_dir/segmentation-source-hashes.txt"
+find "$work/RimeData.bundle" -type f -exec shasum -a 256 {} \; > "$output_dir/segmentation-resource-hashes.txt"
+slice="$repo_dir/Vendor/Rime/librime-static.xcframework/macos-arm64_x86_64"
+xcrun clang -fobjc-arc -c "$work/sources/SKRimeSession.m" -I"$work/sources" -I"$slice/Headers" -o "$work/bridge.o"
+xcrun swiftc -O -module-cache-path "$work/module-cache" -parse-as-library "$work"/sources/*.swift "$work/bridge.o" "$slice/librime.a" -import-objc-header "$work/sources/SKRimeSession.h" -framework Foundation -lc++ -liconv -o "$work/runner"
+"$work/runner" "$work/RimeData.bundle" "$work/user" "$output_dir/segmentation.json"
+printf 'Segmentation frozen runner: %s\n' "$work"

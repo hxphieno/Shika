@@ -1,0 +1,16 @@
+401a60e31f0b770cb649064c1da7d80abacca10d1b4ec51eba5cfdaed5c2104d  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/japanese-romaji.json
+832a820b6ce762847b15cc931e2fc9e58f0ddc2babe259eaab3be6f0d847c4bf  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/japanese-lexicon.bin
+fd7b3b9c9dfb69e27086d9cbd3fdd7e8635809ed439582b49b38eb9e61471b94  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/japanese-connections.bin
+42f4c60012a385607f2e73dabb6248ed339dceb2d74ec17fd9c52f8235c50682  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/shika_flypy.correction.bin
+021234f953f5cc8e406c9ceffdf4c2cf68ec614151bf2958b406716882f5d11f  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/shika_pinyin.correction.bin
+7b537870146aca27a69070ead1bf83c1d4b4ebd6b06e9923f3ec67a7f5f2abef  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/build/shika_flypy.prism.bin
+c04b439f307c76fe952952e8ed42e9d7c398fd207cd82001f8a7247fdc3b479f  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/build/shika_pinyin.schema.yaml
+2c5c8c92924b98bd06168f3c4e882c581dca7bbac0eff21f99ac809c71fa758a  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/build/shika_flypy.schema.yaml
+36e59ccfc83329b9dfbde47da65a417170eca70e756ed38e43c7e855624d2c03  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/build/shika_pinyin.prism.bin
+1a616c8749ec16bbb7675c7997191f8e069720e5c8802f86b93b6f5a63f2a884  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/build/shika_chinese.table.bin
+0d05f7143d70169fade3dcb9652ab7218aebd5afd522841740ed29efae61a9bb  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/build/shika_chinese.reverse.bin
+38ac8a4868304978101d0748dafca1911e09bc357bf5ef1372b801c9a3f3b996  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/build/default.yaml
+aaf041e676fd32f4b7a07c84d3d0c9330adc84a97d25733501c0eda47681fd1b  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/correction-syllables.json
+017557b593f04d57f94ad97050d79363bcf6d8d99204e23495d74b832e3053b4  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/lexicon-metadata.json
+96bab15caa59944f19acf7a0d7bccc09776a1ce2d98d9ec9ef93a56a4c25267b  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/Info.plist
+a1bfc310755fa59118703830ba3ebf51e3d7e6add041aab24e77c1aa8cdbbd32  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-japanese-quality.k79VFs/RimeData.bundle/default.yaml

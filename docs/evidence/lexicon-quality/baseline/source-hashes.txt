@@ -1,0 +1,15 @@
+7bde9ac5f6d51db8be84dc337aee59efe743f78876f141e01cbe3cc916436586  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/LexiconQualityChecks.swift
+71e00123ca059239473300ae30b2f8ac7cf5b3ed366dda5cd0ac5a1b56ab8f86  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKChineseJapaneseScheme.swift
+399b0ec9ab998689621e9df36815579c10c5bb9a1d3efc1f8d2d0cb14578e801  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKCorrectionCandidates.swift
+7a155857cbf0759dbeeefc3b13055f13b15466f3b9164c3d7d797744bfe19d3a  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKInputConfiguration.swift
+c5256a55ba9b4f8eb0aa34b4e5644af8ef7b8c3d8c4f124752c22c9a02cc854a  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKInputEngine.swift
+b6cba5e9f3ff2d88e04260877979b53f231e8006b5d88abbad5b0b8aed1f128c  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKInputScheme.swift
+d895f39f50836e7e60ce4e3a154f469e8113f6b2bc23c7390d2e2d2083660578  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKInputSession.swift
+b6b0639a654c6a587b645743240cb68af8828cca756e42163c2743ad21a79cb2  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKKeyboardEventHandler.swift
+b07a8cea95fe7402c57ae7827a93fc79e17937459f0150bd04c9d15d9cb3af09  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKKeyboardState.swift
+dd15798161e871a97936e7f6dbbecefcfa79181df8ce728afe923067c00ed7e5  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKRimeEngine.swift
+13c62120114a5fef03262c9ca514706443fe3bf2157f2e1518707215318c3f48  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKRimeSession.h
+475e44de592d1cd0ac496523885e7ead19ff7139ce2a4c1d9c8ed011ffaaa8ec  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKRimeSession.m
+7caa8116661cbdfffeb7cc6d2aca70badb797491445848e58474f67d902b5ed7  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKShuangpinScheme.swift
+c5428ba1e8e993059d45abe1c1e40be509172d7d29b080f5e7eb9a28cd3b2fdf  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/sources/SKSpellingCorrector.swift
+b026682077d1fb0b6ffb8a5b59f179eb0e2732d7acfaade0706dc434f354ad44  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/cases.json

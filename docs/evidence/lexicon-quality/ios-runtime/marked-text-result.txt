@@ -1,0 +1,3 @@
+Build: /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T/shika-integration-wxsnp2xp/ShikaSmoke.app
+PASS 30 marked-text and expanded-candidate checks
+Evidence: /Users/funno/Library/Developer/CoreSimulator/Devices/36E38A3E-C462-4407-AF14-33D8644AB207/data/Containers/Data/Application/27F6B335-0E9A-4504-A2C8-23F7E79FB160/Documents

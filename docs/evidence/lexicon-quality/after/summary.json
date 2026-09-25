@@ -1,0 +1,443 @@
+{
+  "shika_pinyin": {
+    "count": 172,
+    "startupMS": 49.466,
+    "groups": {
+      "all": {
+        "count": 172,
+        "top1": 0.936,
+        "top5": 0.9884,
+        "top10": 1.0,
+        "MRR10": 0.9601,
+        "keyP50MS": 0.44,
+        "keyP95MS": 1.833,
+        "peakRSSMiB": 84.61
+      },
+      "word": {
+        "count": 100,
+        "top1": 0.98,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 0.99,
+        "keyP50MS": 0.366,
+        "keyP95MS": 0.758,
+        "peakRSSMiB": 68.58
+      },
+      "phrase": {
+        "count": 40,
+        "top1": 1.0,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 1.0,
+        "keyP50MS": 0.448,
+        "keyP95MS": 0.877,
+        "peakRSSMiB": 76.22
+      },
+      "sentence": {
+        "count": 20,
+        "top1": 0.95,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 0.975,
+        "keyP50MS": 0.817,
+        "keyP95MS": 3.361,
+        "peakRSSMiB": 84.19
+      },
+      "ambiguity": {
+        "count": 12,
+        "top1": 0.3333,
+        "top5": 0.8333,
+        "top10": 1.0,
+        "MRR10": 0.5537,
+        "keyP50MS": 0.306,
+        "keyP95MS": 0.612,
+        "peakRSSMiB": 84.61
+      }
+    },
+    "sentenceCoverage": {
+      "count": 20,
+      "topChoiceConsumesAllInput": 20,
+      "topChoiceExactOutput": 19,
+      "note": "Each coverage case uses its own fresh process and userdir; no cross-case selection training."
+    },
+    "ambiguityPairs": [
+      {
+        "targets": [
+          "西安",
+          "先"
+        ],
+        "inputs": [
+          "xian",
+          "xian"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "方案",
+          "反感"
+        ],
+        "inputs": [
+          "fangan",
+          "fangan"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "档案",
+          "胆敢"
+        ],
+        "inputs": [
+          "dangan",
+          "dangan"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "皮袄",
+          "飘"
+        ],
+        "inputs": [
+          "piao",
+          "piao"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "激昂",
+          "将"
+        ],
+        "inputs": [
+          "jiang",
+          "jiang"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "企鹅",
+          "切"
+        ],
+        "inputs": [
+          "qie",
+          "qie"
+        ],
+        "bothInTop10": true
+      }
+    ],
+    "unexpectedRankingCommits": 0,
+    "sihua": {
+      "input": "sihua",
+      "rank": 1,
+      "candidates": [
+        "丝滑",
+        "思华",
+        "四化",
+        "似花",
+        "私话",
+        "似乎啊",
+        "四画",
+        "似乎",
+        "计划",
+        "实话"
+      ]
+    }
+  },
+  "shika_flypy": {
+    "count": 172,
+    "startupMS": 50.319,
+    "groups": {
+      "all": {
+        "count": 172,
+        "top1": 0.9651,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 0.9826,
+        "keyP50MS": 0.337,
+        "keyP95MS": 0.583,
+        "peakRSSMiB": 70.33
+      },
+      "word": {
+        "count": 100,
+        "top1": 0.98,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 0.99,
+        "keyP50MS": 0.277,
+        "keyP95MS": 0.511,
+        "peakRSSMiB": 56.58
+      },
+      "phrase": {
+        "count": 40,
+        "top1": 1.0,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 1.0,
+        "keyP50MS": 0.331,
+        "keyP95MS": 0.444,
+        "peakRSSMiB": 66.03
+      },
+      "sentence": {
+        "count": 20,
+        "top1": 0.95,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 0.975,
+        "keyP50MS": 0.396,
+        "keyP95MS": 0.712,
+        "peakRSSMiB": 69.94
+      },
+      "ambiguity": {
+        "count": 12,
+        "top1": 0.75,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 0.875,
+        "keyP50MS": 0.08,
+        "keyP95MS": 0.496,
+        "peakRSSMiB": 70.33
+      }
+    },
+    "sentenceCoverage": {
+      "count": 20,
+      "topChoiceConsumesAllInput": 20,
+      "topChoiceExactOutput": 19,
+      "note": "Each coverage case uses its own fresh process and userdir; no cross-case selection training."
+    },
+    "ambiguityPairs": [
+      {
+        "targets": [
+          "西安",
+          "先"
+        ],
+        "inputs": [
+          "xian",
+          "xm"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "方案",
+          "反感"
+        ],
+        "inputs": [
+          "fhan",
+          "fjgj"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "档案",
+          "胆敢"
+        ],
+        "inputs": [
+          "dhan",
+          "djgj"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "皮袄",
+          "飘"
+        ],
+        "inputs": [
+          "piao",
+          "pn"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "激昂",
+          "将"
+        ],
+        "inputs": [
+          "jiah",
+          "jl"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "企鹅",
+          "切"
+        ],
+        "inputs": [
+          "qiee",
+          "qp"
+        ],
+        "bothInTop10": true
+      }
+    ],
+    "unexpectedRankingCommits": 0,
+    "sihua": {
+      "input": "sihx",
+      "rank": 1,
+      "candidates": [
+        "丝滑",
+        "思华",
+        "四化",
+        "似花",
+        "私话",
+        "四画",
+        "似乎",
+        "计划",
+        "死后",
+        "四"
+      ]
+    }
+  },
+  "mixed": {
+    "count": 172,
+    "startupMS": 49.116,
+    "groups": {
+      "all": {
+        "count": 172,
+        "top1": 0.936,
+        "top5": 0.9884,
+        "top10": 1.0,
+        "MRR10": 0.9598,
+        "keyP50MS": 0.676,
+        "keyP95MS": 4.928,
+        "peakRSSMiB": 111.91
+      },
+      "word": {
+        "count": 100,
+        "top1": 0.98,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 0.99,
+        "keyP50MS": 0.501,
+        "keyP95MS": 1.705,
+        "peakRSSMiB": 89.81
+      },
+      "phrase": {
+        "count": 40,
+        "top1": 1.0,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 1.0,
+        "keyP50MS": 0.597,
+        "keyP95MS": 2.633,
+        "peakRSSMiB": 99.84
+      },
+      "sentence": {
+        "count": 20,
+        "top1": 0.95,
+        "top5": 1.0,
+        "top10": 1.0,
+        "MRR10": 0.975,
+        "keyP50MS": 1.777,
+        "keyP95MS": 9.062,
+        "peakRSSMiB": 111.31
+      },
+      "ambiguity": {
+        "count": 12,
+        "top1": 0.3333,
+        "top5": 0.8333,
+        "top10": 1.0,
+        "MRR10": 0.5491,
+        "keyP50MS": 0.65,
+        "keyP95MS": 2.396,
+        "peakRSSMiB": 111.91
+      }
+    },
+    "sentenceCoverage": {
+      "count": 20,
+      "topChoiceConsumesAllInput": 20,
+      "topChoiceExactOutput": 19,
+      "note": "Each coverage case uses its own fresh process and userdir; no cross-case selection training."
+    },
+    "ambiguityPairs": [
+      {
+        "targets": [
+          "西安",
+          "先"
+        ],
+        "inputs": [
+          "xian",
+          "xian"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "方案",
+          "反感"
+        ],
+        "inputs": [
+          "fangan",
+          "fangan"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "档案",
+          "胆敢"
+        ],
+        "inputs": [
+          "dangan",
+          "dangan"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "皮袄",
+          "飘"
+        ],
+        "inputs": [
+          "piao",
+          "piao"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "激昂",
+          "将"
+        ],
+        "inputs": [
+          "jiang",
+          "jiang"
+        ],
+        "bothInTop10": true
+      },
+      {
+        "targets": [
+          "企鹅",
+          "切"
+        ],
+        "inputs": [
+          "qie",
+          "qie"
+        ],
+        "bothInTop10": true
+      }
+    ],
+    "unexpectedRankingCommits": 0,
+    "sihua": {
+      "input": "sihua",
+      "rank": 1,
+      "candidates": [
+        "丝滑",
+        "思华",
+        "四化",
+        "似花",
+        "私话",
+        "しフア",
+        "シフあ",
+        "市フア",
+        "似乎啊",
+        "四画"
+      ]
+    }
+  }
+}

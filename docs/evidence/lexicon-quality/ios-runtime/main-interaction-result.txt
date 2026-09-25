@@ -1,0 +1,3 @@
+Build: /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T/shika-integration-g63ry4ad/ShikaSmoke.app
+PASS 119 main keyboard interaction assertions
+Evidence: /Users/funno/Library/Developer/CoreSimulator/Devices/36E38A3E-C462-4407-AF14-33D8644AB207/data/Containers/Data/Application/19739A56-54F8-4C0E-ACBA-24F6442B7DE0/Documents

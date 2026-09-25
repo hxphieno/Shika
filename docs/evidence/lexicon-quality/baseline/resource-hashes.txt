@@ -1,0 +1,12 @@
+55a73a2c31a222a0ab292295494b156c65ffaa24b3ce6e803d6cc26ac331d5ef  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/shika_flypy.correction.bin
+cc45951b54f279192d346e11190167df6a5b19eb98c7e00a3ce283bfaaad5cc0  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/shika_pinyin.correction.bin
+cf96dbe8013c44ea7f0681fab4b6fafceb8674fdd45739bb37bf193b8e1bba9a  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/build/shika_flypy.prism.bin
+fc59777b770c562925397df6235a8db6707ccc9dbdfef1e4e7fae6b1de2c9f85  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/build/shika_pinyin.schema.yaml
+7dc3e9d8e0875c12071fb1e65761097d25f9ec6b7ba4518d975f06d6c1b07aa9  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/build/shika_flypy.schema.yaml
+b65cd67d03e65bcd7eae3af53be3bba5a58397387975ee52c7fa90f2fa3f716c  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/build/shika_pinyin.prism.bin
+92ebf5bdee3a42302e3813183b6dcf07fff172b4f9b0709884227b96b0352b6a  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/build/pinyin_simp.table.bin
+3865501c37f899c478f229081e3b8fbdf93f397026c8ae5bd958f9dfb695fb1c  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/build/pinyin_simp.reverse.bin
+d065a02bf78ab2321e19af33d084e4a3d5d5e0cdc9eb54e4270287bb0bf97efa  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/build/default.yaml
+5b9da754526482147a5ea09d83683304740734ffe136eadb15c539584a072595  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/correction-syllables.json
+96bab15caa59944f19acf7a0d7bccc09776a1ce2d98d9ec9ef93a56a4c25267b  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/Info.plist
+a1bfc310755fa59118703830ba3ebf51e3d7e6add041aab24e77c1aa8cdbbd32  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-quality.lLIgvW/RimeData.bundle/default.yaml

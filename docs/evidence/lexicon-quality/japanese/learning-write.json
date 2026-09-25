@@ -1,0 +1,17 @@
+{
+  "checks" : [
+    {
+      "detail" : "",
+      "label" : "selected alternative commits exactly",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "mode" : "learning-write",
+  "platform" : "macOS real production engines; not iOS UI or memory validation",
+  "processPeakRSSBytes" : 12697600,
+  "rankingTraining" : false,
+  "results" : [
+
+  ]
+}

@@ -1,0 +1,2 @@
+b026682077d1fb0b6ffb8a5b59f179eb0e2732d7acfaade0706dc434f354ad44  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-parameters.50tVEE/cases.json
+60979d47bf1b50367109dbc0c4d6c76ee4dffa759ea705c236e1b8154327cb1a  /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-lexicon-parameters.50tVEE/ambiguity.json

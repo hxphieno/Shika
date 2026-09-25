@@ -1,0 +1,2065 @@
+{
+  "version": 1,
+  "rankingPolicy": "Fresh user directory; clear between cases; never select ranking answers. Exact match; no target is added to production resources.",
+  "cases": [
+    {
+      "id": "word-001",
+      "kind": "word",
+      "target": "丝滑",
+      "syllables": [
+        "si",
+        "hua"
+      ],
+      "pinyin": "sihua",
+      "shuangpin": "sihx"
+    },
+    {
+      "id": "word-002",
+      "kind": "word",
+      "target": "键盘",
+      "syllables": [
+        "jian",
+        "pan"
+      ],
+      "pinyin": "jianpan",
+      "shuangpin": "jmpj"
+    },
+    {
+      "id": "word-003",
+      "kind": "word",
+      "target": "候选",
+      "syllables": [
+        "hou",
+        "xuan"
+      ],
+      "pinyin": "houxuan",
+      "shuangpin": "hzxr"
+    },
+    {
+      "id": "word-004",
+      "kind": "word",
+      "target": "词库",
+      "syllables": [
+        "ci",
+        "ku"
+      ],
+      "pinyin": "ciku",
+      "shuangpin": "ciku"
+    },
+    {
+      "id": "word-005",
+      "kind": "word",
+      "target": "词频",
+      "syllables": [
+        "ci",
+        "pin"
+      ],
+      "pinyin": "cipin",
+      "shuangpin": "cipb"
+    },
+    {
+      "id": "word-006",
+      "kind": "word",
+      "target": "拼音",
+      "syllables": [
+        "pin",
+        "yin"
+      ],
+      "pinyin": "pinyin",
+      "shuangpin": "pbyb"
+    },
+    {
+      "id": "word-007",
+      "kind": "word",
+      "target": "双拼",
+      "syllables": [
+        "shuang",
+        "pin"
+      ],
+      "pinyin": "shuangpin",
+      "shuangpin": "ulpb"
+    },
+    {
+      "id": "word-008",
+      "kind": "word",
+      "target": "纠错",
+      "syllables": [
+        "jiu",
+        "cuo"
+      ],
+      "pinyin": "jiucuo",
+      "shuangpin": "jqco"
+    },
+    {
+      "id": "word-009",
+      "kind": "word",
+      "target": "分词",
+      "syllables": [
+        "fen",
+        "ci"
+      ],
+      "pinyin": "fenci",
+      "shuangpin": "ffci"
+    },
+    {
+      "id": "word-010",
+      "kind": "word",
+      "target": "引擎",
+      "syllables": [
+        "yin",
+        "qing"
+      ],
+      "pinyin": "yinqing",
+      "shuangpin": "ybqk"
+    },
+    {
+      "id": "word-011",
+      "kind": "word",
+      "target": "界面",
+      "syllables": [
+        "jie",
+        "mian"
+      ],
+      "pinyin": "jiemian",
+      "shuangpin": "jpmm"
+    },
+    {
+      "id": "word-012",
+      "kind": "word",
+      "target": "布局",
+      "syllables": [
+        "bu",
+        "ju"
+      ],
+      "pinyin": "buju",
+      "shuangpin": "buju"
+    },
+    {
+      "id": "word-013",
+      "kind": "word",
+      "target": "按钮",
+      "syllables": [
+        "an",
+        "niu"
+      ],
+      "pinyin": "anniu",
+      "shuangpin": "annq"
+    },
+    {
+      "id": "word-014",
+      "kind": "word",
+      "target": "气泡",
+      "syllables": [
+        "qi",
+        "pao"
+      ],
+      "pinyin": "qipao",
+      "shuangpin": "qipc"
+    },
+    {
+      "id": "word-015",
+      "kind": "word",
+      "target": "滑动",
+      "syllables": [
+        "hua",
+        "dong"
+      ],
+      "pinyin": "huadong",
+      "shuangpin": "hxds"
+    },
+    {
+      "id": "word-016",
+      "kind": "word",
+      "target": "点击",
+      "syllables": [
+        "dian",
+        "ji"
+      ],
+      "pinyin": "dianji",
+      "shuangpin": "dmji"
+    },
+    {
+      "id": "word-017",
+      "kind": "word",
+      "target": "延迟",
+      "syllables": [
+        "yan",
+        "chi"
+      ],
+      "pinyin": "yanchi",
+      "shuangpin": "yjii"
+    },
+    {
+      "id": "word-018",
+      "kind": "word",
+      "target": "内存",
+      "syllables": [
+        "nei",
+        "cun"
+      ],
+      "pinyin": "neicun",
+      "shuangpin": "nwcy"
+    },
+    {
+      "id": "word-019",
+      "kind": "word",
+      "target": "缓存",
+      "syllables": [
+        "huan",
+        "cun"
+      ],
+      "pinyin": "huancun",
+      "shuangpin": "hrcy"
+    },
+    {
+      "id": "word-020",
+      "kind": "word",
+      "target": "编译",
+      "syllables": [
+        "bian",
+        "yi"
+      ],
+      "pinyin": "bianyi",
+      "shuangpin": "bmyi"
+    },
+    {
+      "id": "word-021",
+      "kind": "word",
+      "target": "运行",
+      "syllables": [
+        "yun",
+        "xing"
+      ],
+      "pinyin": "yunxing",
+      "shuangpin": "yyxk"
+    },
+    {
+      "id": "word-022",
+      "kind": "word",
+      "target": "提交",
+      "syllables": [
+        "ti",
+        "jiao"
+      ],
+      "pinyin": "tijiao",
+      "shuangpin": "tijn"
+    },
+    {
+      "id": "word-023",
+      "kind": "word",
+      "target": "回退",
+      "syllables": [
+        "hui",
+        "tui"
+      ],
+      "pinyin": "huitui",
+      "shuangpin": "hvtv"
+    },
+    {
+      "id": "word-024",
+      "kind": "word",
+      "target": "配置",
+      "syllables": [
+        "pei",
+        "zhi"
+      ],
+      "pinyin": "peizhi",
+      "shuangpin": "pwvi"
+    },
+    {
+      "id": "word-025",
+      "kind": "word",
+      "target": "同步",
+      "syllables": [
+        "tong",
+        "bu"
+      ],
+      "pinyin": "tongbu",
+      "shuangpin": "tsbu"
+    },
+    {
+      "id": "word-026",
+      "kind": "word",
+      "target": "离线",
+      "syllables": [
+        "li",
+        "xian"
+      ],
+      "pinyin": "lixian",
+      "shuangpin": "lixm"
+    },
+    {
+      "id": "word-027",
+      "kind": "word",
+      "target": "联网",
+      "syllables": [
+        "lian",
+        "wang"
+      ],
+      "pinyin": "lianwang",
+      "shuangpin": "lmwh"
+    },
+    {
+      "id": "word-028",
+      "kind": "word",
+      "target": "权限",
+      "syllables": [
+        "quan",
+        "xian"
+      ],
+      "pinyin": "quanxian",
+      "shuangpin": "qrxm"
+    },
+    {
+      "id": "word-029",
+      "kind": "word",
+      "target": "开源",
+      "syllables": [
+        "kai",
+        "yuan"
+      ],
+      "pinyin": "kaiyuan",
+      "shuangpin": "kdyr"
+    },
+    {
+      "id": "word-030",
+      "kind": "word",
+      "target": "仓库",
+      "syllables": [
+        "cang",
+        "ku"
+      ],
+      "pinyin": "cangku",
+      "shuangpin": "chku"
+    },
+    {
+      "id": "word-031",
+      "kind": "word",
+      "target": "代码",
+      "syllables": [
+        "dai",
+        "ma"
+      ],
+      "pinyin": "daima",
+      "shuangpin": "ddma"
+    },
+    {
+      "id": "word-032",
+      "kind": "word",
+      "target": "测试",
+      "syllables": [
+        "ce",
+        "shi"
+      ],
+      "pinyin": "ceshi",
+      "shuangpin": "ceui"
+    },
+    {
+      "id": "word-033",
+      "kind": "word",
+      "target": "接口",
+      "syllables": [
+        "jie",
+        "kou"
+      ],
+      "pinyin": "jiekou",
+      "shuangpin": "jpkz"
+    },
+    {
+      "id": "word-034",
+      "kind": "word",
+      "target": "架构",
+      "syllables": [
+        "jia",
+        "gou"
+      ],
+      "pinyin": "jiagou",
+      "shuangpin": "jxgz"
+    },
+    {
+      "id": "word-035",
+      "kind": "word",
+      "target": "算法",
+      "syllables": [
+        "suan",
+        "fa"
+      ],
+      "pinyin": "suanfa",
+      "shuangpin": "srfa"
+    },
+    {
+      "id": "word-036",
+      "kind": "word",
+      "target": "参数",
+      "syllables": [
+        "can",
+        "shu"
+      ],
+      "pinyin": "canshu",
+      "shuangpin": "cjuu"
+    },
+    {
+      "id": "word-037",
+      "kind": "word",
+      "target": "模型",
+      "syllables": [
+        "mo",
+        "xing"
+      ],
+      "pinyin": "moxing",
+      "shuangpin": "moxk"
+    },
+    {
+      "id": "word-038",
+      "kind": "word",
+      "target": "版本",
+      "syllables": [
+        "ban",
+        "ben"
+      ],
+      "pinyin": "banben",
+      "shuangpin": "bjbf"
+    },
+    {
+      "id": "word-039",
+      "kind": "word",
+      "target": "升级",
+      "syllables": [
+        "sheng",
+        "ji"
+      ],
+      "pinyin": "shengji",
+      "shuangpin": "ugji"
+    },
+    {
+      "id": "word-040",
+      "kind": "word",
+      "target": "安装",
+      "syllables": [
+        "an",
+        "zhuang"
+      ],
+      "pinyin": "anzhuang",
+      "shuangpin": "anvl"
+    },
+    {
+      "id": "word-041",
+      "kind": "word",
+      "target": "早餐",
+      "syllables": [
+        "zao",
+        "can"
+      ],
+      "pinyin": "zaocan",
+      "shuangpin": "zccj"
+    },
+    {
+      "id": "word-042",
+      "kind": "word",
+      "target": "午饭",
+      "syllables": [
+        "wu",
+        "fan"
+      ],
+      "pinyin": "wufan",
+      "shuangpin": "wufj"
+    },
+    {
+      "id": "word-043",
+      "kind": "word",
+      "target": "晚餐",
+      "syllables": [
+        "wan",
+        "can"
+      ],
+      "pinyin": "wancan",
+      "shuangpin": "wjcj"
+    },
+    {
+      "id": "word-044",
+      "kind": "word",
+      "target": "咖啡",
+      "syllables": [
+        "ka",
+        "fei"
+      ],
+      "pinyin": "kafei",
+      "shuangpin": "kafw"
+    },
+    {
+      "id": "word-045",
+      "kind": "word",
+      "target": "奶茶",
+      "syllables": [
+        "nai",
+        "cha"
+      ],
+      "pinyin": "naicha",
+      "shuangpin": "ndia"
+    },
+    {
+      "id": "word-046",
+      "kind": "word",
+      "target": "外卖",
+      "syllables": [
+        "wai",
+        "mai"
+      ],
+      "pinyin": "waimai",
+      "shuangpin": "wdmd"
+    },
+    {
+      "id": "word-047",
+      "kind": "word",
+      "target": "快递",
+      "syllables": [
+        "kuai",
+        "di"
+      ],
+      "pinyin": "kuaidi",
+      "shuangpin": "kkdi"
+    },
+    {
+      "id": "word-048",
+      "kind": "word",
+      "target": "超市",
+      "syllables": [
+        "chao",
+        "shi"
+      ],
+      "pinyin": "chaoshi",
+      "shuangpin": "icui"
+    },
+    {
+      "id": "word-049",
+      "kind": "word",
+      "target": "水果",
+      "syllables": [
+        "shui",
+        "guo"
+      ],
+      "pinyin": "shuiguo",
+      "shuangpin": "uvgo"
+    },
+    {
+      "id": "word-050",
+      "kind": "word",
+      "target": "蔬菜",
+      "syllables": [
+        "shu",
+        "cai"
+      ],
+      "pinyin": "shucai",
+      "shuangpin": "uucd"
+    },
+    {
+      "id": "word-051",
+      "kind": "word",
+      "target": "牛奶",
+      "syllables": [
+        "niu",
+        "nai"
+      ],
+      "pinyin": "niunai",
+      "shuangpin": "nqnd"
+    },
+    {
+      "id": "word-052",
+      "kind": "word",
+      "target": "鸡蛋",
+      "syllables": [
+        "ji",
+        "dan"
+      ],
+      "pinyin": "jidan",
+      "shuangpin": "jidj"
+    },
+    {
+      "id": "word-053",
+      "kind": "word",
+      "target": "面包",
+      "syllables": [
+        "mian",
+        "bao"
+      ],
+      "pinyin": "mianbao",
+      "shuangpin": "mmbc"
+    },
+    {
+      "id": "word-054",
+      "kind": "word",
+      "target": "米饭",
+      "syllables": [
+        "mi",
+        "fan"
+      ],
+      "pinyin": "mifan",
+      "shuangpin": "mifj"
+    },
+    {
+      "id": "word-055",
+      "kind": "word",
+      "target": "火锅",
+      "syllables": [
+        "huo",
+        "guo"
+      ],
+      "pinyin": "huoguo",
+      "shuangpin": "hogo"
+    },
+    {
+      "id": "word-056",
+      "kind": "word",
+      "target": "烧烤",
+      "syllables": [
+        "shao",
+        "kao"
+      ],
+      "pinyin": "shaokao",
+      "shuangpin": "uckc"
+    },
+    {
+      "id": "word-057",
+      "kind": "word",
+      "target": "餐厅",
+      "syllables": [
+        "can",
+        "ting"
+      ],
+      "pinyin": "canting",
+      "shuangpin": "cjtk"
+    },
+    {
+      "id": "word-058",
+      "kind": "word",
+      "target": "好吃",
+      "syllables": [
+        "hao",
+        "chi"
+      ],
+      "pinyin": "haochi",
+      "shuangpin": "hcii"
+    },
+    {
+      "id": "word-059",
+      "kind": "word",
+      "target": "推荐",
+      "syllables": [
+        "tui",
+        "jian"
+      ],
+      "pinyin": "tuijian",
+      "shuangpin": "tvjm"
+    },
+    {
+      "id": "word-060",
+      "kind": "word",
+      "target": "预约",
+      "syllables": [
+        "yu",
+        "yue"
+      ],
+      "pinyin": "yuyue",
+      "shuangpin": "yuyt"
+    },
+    {
+      "id": "word-061",
+      "kind": "word",
+      "target": "通勤",
+      "syllables": [
+        "tong",
+        "qin"
+      ],
+      "pinyin": "tongqin",
+      "shuangpin": "tsqb"
+    },
+    {
+      "id": "word-062",
+      "kind": "word",
+      "target": "地铁",
+      "syllables": [
+        "di",
+        "tie"
+      ],
+      "pinyin": "ditie",
+      "shuangpin": "ditp"
+    },
+    {
+      "id": "word-063",
+      "kind": "word",
+      "target": "公交",
+      "syllables": [
+        "gong",
+        "jiao"
+      ],
+      "pinyin": "gongjiao",
+      "shuangpin": "gsjn"
+    },
+    {
+      "id": "word-064",
+      "kind": "word",
+      "target": "打车",
+      "syllables": [
+        "da",
+        "che"
+      ],
+      "pinyin": "dache",
+      "shuangpin": "daie"
+    },
+    {
+      "id": "word-065",
+      "kind": "word",
+      "target": "高铁",
+      "syllables": [
+        "gao",
+        "tie"
+      ],
+      "pinyin": "gaotie",
+      "shuangpin": "gctp"
+    },
+    {
+      "id": "word-066",
+      "kind": "word",
+      "target": "机场",
+      "syllables": [
+        "ji",
+        "chang"
+      ],
+      "pinyin": "jichang",
+      "shuangpin": "jiih"
+    },
+    {
+      "id": "word-067",
+      "kind": "word",
+      "target": "酒店",
+      "syllables": [
+        "jiu",
+        "dian"
+      ],
+      "pinyin": "jiudian",
+      "shuangpin": "jqdm"
+    },
+    {
+      "id": "word-068",
+      "kind": "word",
+      "target": "旅行",
+      "syllables": [
+        "lv",
+        "xing"
+      ],
+      "pinyin": "lvxing",
+      "shuangpin": "lvxk"
+    },
+    {
+      "id": "word-069",
+      "kind": "word",
+      "target": "导航",
+      "syllables": [
+        "dao",
+        "hang"
+      ],
+      "pinyin": "daohang",
+      "shuangpin": "dchh"
+    },
+    {
+      "id": "word-070",
+      "kind": "word",
+      "target": "堵车",
+      "syllables": [
+        "du",
+        "che"
+      ],
+      "pinyin": "duche",
+      "shuangpin": "duie"
+    },
+    {
+      "id": "word-071",
+      "kind": "word",
+      "target": "天气",
+      "syllables": [
+        "tian",
+        "qi"
+      ],
+      "pinyin": "tianqi",
+      "shuangpin": "tmqi"
+    },
+    {
+      "id": "word-072",
+      "kind": "word",
+      "target": "下雨",
+      "syllables": [
+        "xia",
+        "yu"
+      ],
+      "pinyin": "xiayu",
+      "shuangpin": "xxyu"
+    },
+    {
+      "id": "word-073",
+      "kind": "word",
+      "target": "晴天",
+      "syllables": [
+        "qing",
+        "tian"
+      ],
+      "pinyin": "qingtian",
+      "shuangpin": "qktm"
+    },
+    {
+      "id": "word-074",
+      "kind": "word",
+      "target": "周末",
+      "syllables": [
+        "zhou",
+        "mo"
+      ],
+      "pinyin": "zhoumo",
+      "shuangpin": "vzmo"
+    },
+    {
+      "id": "word-075",
+      "kind": "word",
+      "target": "加班",
+      "syllables": [
+        "jia",
+        "ban"
+      ],
+      "pinyin": "jiaban",
+      "shuangpin": "jxbj"
+    },
+    {
+      "id": "word-076",
+      "kind": "word",
+      "target": "请假",
+      "syllables": [
+        "qing",
+        "jia"
+      ],
+      "pinyin": "qingjia",
+      "shuangpin": "qkjx"
+    },
+    {
+      "id": "word-077",
+      "kind": "word",
+      "target": "开会",
+      "syllables": [
+        "kai",
+        "hui"
+      ],
+      "pinyin": "kaihui",
+      "shuangpin": "kdhv"
+    },
+    {
+      "id": "word-078",
+      "kind": "word",
+      "target": "文档",
+      "syllables": [
+        "wen",
+        "dang"
+      ],
+      "pinyin": "wendang",
+      "shuangpin": "wfdh"
+    },
+    {
+      "id": "word-079",
+      "kind": "word",
+      "target": "表格",
+      "syllables": [
+        "biao",
+        "ge"
+      ],
+      "pinyin": "biaoge",
+      "shuangpin": "bnge"
+    },
+    {
+      "id": "word-080",
+      "kind": "word",
+      "target": "邮件",
+      "syllables": [
+        "you",
+        "jian"
+      ],
+      "pinyin": "youjian",
+      "shuangpin": "yzjm"
+    },
+    {
+      "id": "word-081",
+      "kind": "word",
+      "target": "消息",
+      "syllables": [
+        "xiao",
+        "xi"
+      ],
+      "pinyin": "xiaoxi",
+      "shuangpin": "xnxi"
+    },
+    {
+      "id": "word-082",
+      "kind": "word",
+      "target": "通知",
+      "syllables": [
+        "tong",
+        "zhi"
+      ],
+      "pinyin": "tongzhi",
+      "shuangpin": "tsvi"
+    },
+    {
+      "id": "word-083",
+      "kind": "word",
+      "target": "朋友",
+      "syllables": [
+        "peng",
+        "you"
+      ],
+      "pinyin": "pengyou",
+      "shuangpin": "pgyz"
+    },
+    {
+      "id": "word-084",
+      "kind": "word",
+      "target": "家人",
+      "syllables": [
+        "jia",
+        "ren"
+      ],
+      "pinyin": "jiaren",
+      "shuangpin": "jxrf"
+    },
+    {
+      "id": "word-085",
+      "kind": "word",
+      "target": "孩子",
+      "syllables": [
+        "hai",
+        "zi"
+      ],
+      "pinyin": "haizi",
+      "shuangpin": "hdzi"
+    },
+    {
+      "id": "word-086",
+      "kind": "word",
+      "target": "学校",
+      "syllables": [
+        "xue",
+        "xiao"
+      ],
+      "pinyin": "xuexiao",
+      "shuangpin": "xtxn"
+    },
+    {
+      "id": "word-087",
+      "kind": "word",
+      "target": "老师",
+      "syllables": [
+        "lao",
+        "shi"
+      ],
+      "pinyin": "laoshi",
+      "shuangpin": "lcui"
+    },
+    {
+      "id": "word-088",
+      "kind": "word",
+      "target": "学习",
+      "syllables": [
+        "xue",
+        "xi"
+      ],
+      "pinyin": "xuexi",
+      "shuangpin": "xtxi"
+    },
+    {
+      "id": "word-089",
+      "kind": "word",
+      "target": "阅读",
+      "syllables": [
+        "yue",
+        "du"
+      ],
+      "pinyin": "yuedu",
+      "shuangpin": "ytdu"
+    },
+    {
+      "id": "word-090",
+      "kind": "word",
+      "target": "音乐",
+      "syllables": [
+        "yin",
+        "yue"
+      ],
+      "pinyin": "yinyue",
+      "shuangpin": "ybyt"
+    },
+    {
+      "id": "word-091",
+      "kind": "word",
+      "target": "电影",
+      "syllables": [
+        "dian",
+        "ying"
+      ],
+      "pinyin": "dianying",
+      "shuangpin": "dmyk"
+    },
+    {
+      "id": "word-092",
+      "kind": "word",
+      "target": "游戏",
+      "syllables": [
+        "you",
+        "xi"
+      ],
+      "pinyin": "youxi",
+      "shuangpin": "yzxi"
+    },
+    {
+      "id": "word-093",
+      "kind": "word",
+      "target": "照片",
+      "syllables": [
+        "zhao",
+        "pian"
+      ],
+      "pinyin": "zhaopian",
+      "shuangpin": "vcpm"
+    },
+    {
+      "id": "word-094",
+      "kind": "word",
+      "target": "视频",
+      "syllables": [
+        "shi",
+        "pin"
+      ],
+      "pinyin": "shipin",
+      "shuangpin": "uipb"
+    },
+    {
+      "id": "word-095",
+      "kind": "word",
+      "target": "手机",
+      "syllables": [
+        "shou",
+        "ji"
+      ],
+      "pinyin": "shouji",
+      "shuangpin": "uzji"
+    },
+    {
+      "id": "word-096",
+      "kind": "word",
+      "target": "电脑",
+      "syllables": [
+        "dian",
+        "nao"
+      ],
+      "pinyin": "diannao",
+      "shuangpin": "dmnc"
+    },
+    {
+      "id": "word-097",
+      "kind": "word",
+      "target": "电量",
+      "syllables": [
+        "dian",
+        "liang"
+      ],
+      "pinyin": "dianliang",
+      "shuangpin": "dmll"
+    },
+    {
+      "id": "word-098",
+      "kind": "word",
+      "target": "充电",
+      "syllables": [
+        "chong",
+        "dian"
+      ],
+      "pinyin": "chongdian",
+      "shuangpin": "isdm"
+    },
+    {
+      "id": "word-099",
+      "kind": "word",
+      "target": "网络",
+      "syllables": [
+        "wang",
+        "luo"
+      ],
+      "pinyin": "wangluo",
+      "shuangpin": "whlo"
+    },
+    {
+      "id": "word-100",
+      "kind": "word",
+      "target": "密码",
+      "syllables": [
+        "mi",
+        "ma"
+      ],
+      "pinyin": "mima",
+      "shuangpin": "mima"
+    },
+    {
+      "id": "phrase-001",
+      "kind": "phrase",
+      "target": "输入法",
+      "syllables": [
+        "shu",
+        "ru",
+        "fa"
+      ],
+      "pinyin": "shurufa",
+      "shuangpin": "uurufa"
+    },
+    {
+      "id": "phrase-002",
+      "kind": "phrase",
+      "target": "人工智能",
+      "syllables": [
+        "ren",
+        "gong",
+        "zhi",
+        "neng"
+      ],
+      "pinyin": "rengongzhineng",
+      "shuangpin": "rfgsving"
+    },
+    {
+      "id": "phrase-003",
+      "kind": "phrase",
+      "target": "机器学习",
+      "syllables": [
+        "ji",
+        "qi",
+        "xue",
+        "xi"
+      ],
+      "pinyin": "jiqixuexi",
+      "shuangpin": "jiqixtxi"
+    },
+    {
+      "id": "phrase-004",
+      "kind": "phrase",
+      "target": "语音识别",
+      "syllables": [
+        "yu",
+        "yin",
+        "shi",
+        "bie"
+      ],
+      "pinyin": "yuyinshibie",
+      "shuangpin": "yuybuibp"
+    },
+    {
+      "id": "phrase-005",
+      "kind": "phrase",
+      "target": "自然语言",
+      "syllables": [
+        "zi",
+        "ran",
+        "yu",
+        "yan"
+      ],
+      "pinyin": "ziranyuyan",
+      "shuangpin": "zirjyuyj"
+    },
+    {
+      "id": "phrase-006",
+      "kind": "phrase",
+      "target": "操作系统",
+      "syllables": [
+        "cao",
+        "zuo",
+        "xi",
+        "tong"
+      ],
+      "pinyin": "caozuoxitong",
+      "shuangpin": "cczoxits"
+    },
+    {
+      "id": "phrase-007",
+      "kind": "phrase",
+      "target": "用户体验",
+      "syllables": [
+        "yong",
+        "hu",
+        "ti",
+        "yan"
+      ],
+      "pinyin": "yonghutiyan",
+      "shuangpin": "yshutiyj"
+    },
+    {
+      "id": "phrase-008",
+      "kind": "phrase",
+      "target": "自动纠错",
+      "syllables": [
+        "zi",
+        "dong",
+        "jiu",
+        "cuo"
+      ],
+      "pinyin": "zidongjiucuo",
+      "shuangpin": "zidsjqco"
+    },
+    {
+      "id": "phrase-009",
+      "kind": "phrase",
+      "target": "数据分析",
+      "syllables": [
+        "shu",
+        "ju",
+        "fen",
+        "xi"
+      ],
+      "pinyin": "shujufenxi",
+      "shuangpin": "uujuffxi"
+    },
+    {
+      "id": "phrase-010",
+      "kind": "phrase",
+      "target": "数据库",
+      "syllables": [
+        "shu",
+        "ju",
+        "ku"
+      ],
+      "pinyin": "shujuku",
+      "shuangpin": "uujuku"
+    },
+    {
+      "id": "phrase-011",
+      "kind": "phrase",
+      "target": "源代码",
+      "syllables": [
+        "yuan",
+        "dai",
+        "ma"
+      ],
+      "pinyin": "yuandaima",
+      "shuangpin": "yrddma"
+    },
+    {
+      "id": "phrase-012",
+      "kind": "phrase",
+      "target": "服务器",
+      "syllables": [
+        "fu",
+        "wu",
+        "qi"
+      ],
+      "pinyin": "fuwuqi",
+      "shuangpin": "fuwuqi"
+    },
+    {
+      "id": "phrase-013",
+      "kind": "phrase",
+      "target": "客户端",
+      "syllables": [
+        "ke",
+        "hu",
+        "duan"
+      ],
+      "pinyin": "kehuduan",
+      "shuangpin": "kehudr"
+    },
+    {
+      "id": "phrase-014",
+      "kind": "phrase",
+      "target": "开发者",
+      "syllables": [
+        "kai",
+        "fa",
+        "zhe"
+      ],
+      "pinyin": "kaifazhe",
+      "shuangpin": "kdfave"
+    },
+    {
+      "id": "phrase-015",
+      "kind": "phrase",
+      "target": "浏览器",
+      "syllables": [
+        "liu",
+        "lan",
+        "qi"
+      ],
+      "pinyin": "liulanqi",
+      "shuangpin": "lqljqi"
+    },
+    {
+      "id": "phrase-016",
+      "kind": "phrase",
+      "target": "应用程序",
+      "syllables": [
+        "ying",
+        "yong",
+        "cheng",
+        "xu"
+      ],
+      "pinyin": "yingyongchengxu",
+      "shuangpin": "ykysigxu"
+    },
+    {
+      "id": "phrase-017",
+      "kind": "phrase",
+      "target": "版本管理",
+      "syllables": [
+        "ban",
+        "ben",
+        "guan",
+        "li"
+      ],
+      "pinyin": "banbenguanli",
+      "shuangpin": "bjbfgrli"
+    },
+    {
+      "id": "phrase-018",
+      "kind": "phrase",
+      "target": "性能优化",
+      "syllables": [
+        "xing",
+        "neng",
+        "you",
+        "hua"
+      ],
+      "pinyin": "xingnengyouhua",
+      "shuangpin": "xkngyzhx"
+    },
+    {
+      "id": "phrase-019",
+      "kind": "phrase",
+      "target": "内存占用",
+      "syllables": [
+        "nei",
+        "cun",
+        "zhan",
+        "yong"
+      ],
+      "pinyin": "neicunzhanyong",
+      "shuangpin": "nwcyvjys"
+    },
+    {
+      "id": "phrase-020",
+      "kind": "phrase",
+      "target": "候选词",
+      "syllables": [
+        "hou",
+        "xuan",
+        "ci"
+      ],
+      "pinyin": "houxuanci",
+      "shuangpin": "hzxrci"
+    },
+    {
+      "id": "phrase-021",
+      "kind": "phrase",
+      "target": "生日快乐",
+      "syllables": [
+        "sheng",
+        "ri",
+        "kuai",
+        "le"
+      ],
+      "pinyin": "shengrikuaile",
+      "shuangpin": "ugrikkle"
+    },
+    {
+      "id": "phrase-022",
+      "kind": "phrase",
+      "target": "新年快乐",
+      "syllables": [
+        "xin",
+        "nian",
+        "kuai",
+        "le"
+      ],
+      "pinyin": "xinniankuaile",
+      "shuangpin": "xbnmkkle"
+    },
+    {
+      "id": "phrase-023",
+      "kind": "phrase",
+      "target": "一路平安",
+      "syllables": [
+        "yi",
+        "lu",
+        "ping",
+        "an"
+      ],
+      "pinyin": "yilupingan",
+      "shuangpin": "yilupkan"
+    },
+    {
+      "id": "phrase-024",
+      "kind": "phrase",
+      "target": "注意安全",
+      "syllables": [
+        "zhu",
+        "yi",
+        "an",
+        "quan"
+      ],
+      "pinyin": "zhuyianquan",
+      "shuangpin": "vuyianqr"
+    },
+    {
+      "id": "phrase-025",
+      "kind": "phrase",
+      "target": "不好意思",
+      "syllables": [
+        "bu",
+        "hao",
+        "yi",
+        "si"
+      ],
+      "pinyin": "buhaoyisi",
+      "shuangpin": "buhcyisi"
+    },
+    {
+      "id": "phrase-026",
+      "kind": "phrase",
+      "target": "没关系",
+      "syllables": [
+        "mei",
+        "guan",
+        "xi"
+      ],
+      "pinyin": "meiguanxi",
+      "shuangpin": "mwgrxi"
+    },
+    {
+      "id": "phrase-027",
+      "kind": "phrase",
+      "target": "没问题",
+      "syllables": [
+        "mei",
+        "wen",
+        "ti"
+      ],
+      "pinyin": "meiwenti",
+      "shuangpin": "mwwfti"
+    },
+    {
+      "id": "phrase-028",
+      "kind": "phrase",
+      "target": "辛苦了",
+      "syllables": [
+        "xin",
+        "ku",
+        "le"
+      ],
+      "pinyin": "xinkule",
+      "shuangpin": "xbkule"
+    },
+    {
+      "id": "phrase-029",
+      "kind": "phrase",
+      "target": "谢谢大家",
+      "syllables": [
+        "xie",
+        "xie",
+        "da",
+        "jia"
+      ],
+      "pinyin": "xiexiedajia",
+      "shuangpin": "xpxpdajx"
+    },
+    {
+      "id": "phrase-030",
+      "kind": "phrase",
+      "target": "下次再见",
+      "syllables": [
+        "xia",
+        "ci",
+        "zai",
+        "jian"
+      ],
+      "pinyin": "xiacizaijian",
+      "shuangpin": "xxcizdjm"
+    },
+    {
+      "id": "phrase-031",
+      "kind": "phrase",
+      "target": "好久不见",
+      "syllables": [
+        "hao",
+        "jiu",
+        "bu",
+        "jian"
+      ],
+      "pinyin": "haojiubujian",
+      "shuangpin": "hcjqbujm"
+    },
+    {
+      "id": "phrase-032",
+      "kind": "phrase",
+      "target": "天气预报",
+      "syllables": [
+        "tian",
+        "qi",
+        "yu",
+        "bao"
+      ],
+      "pinyin": "tianqiyubao",
+      "shuangpin": "tmqiyubc"
+    },
+    {
+      "id": "phrase-033",
+      "kind": "phrase",
+      "target": "交通拥堵",
+      "syllables": [
+        "jiao",
+        "tong",
+        "yong",
+        "du"
+      ],
+      "pinyin": "jiaotongyongdu",
+      "shuangpin": "jntsysdu"
+    },
+    {
+      "id": "phrase-034",
+      "kind": "phrase",
+      "target": "地铁站",
+      "syllables": [
+        "di",
+        "tie",
+        "zhan"
+      ],
+      "pinyin": "ditiezhan",
+      "shuangpin": "ditpvj"
+    },
+    {
+      "id": "phrase-035",
+      "kind": "phrase",
+      "target": "充电宝",
+      "syllables": [
+        "chong",
+        "dian",
+        "bao"
+      ],
+      "pinyin": "chongdianbao",
+      "shuangpin": "isdmbc"
+    },
+    {
+      "id": "phrase-036",
+      "kind": "phrase",
+      "target": "蓝牙耳机",
+      "syllables": [
+        "lan",
+        "ya",
+        "er",
+        "ji"
+      ],
+      "pinyin": "lanyaerji",
+      "shuangpin": "ljyaerji"
+    },
+    {
+      "id": "phrase-037",
+      "kind": "phrase",
+      "target": "无线网络",
+      "syllables": [
+        "wu",
+        "xian",
+        "wang",
+        "luo"
+      ],
+      "pinyin": "wuxianwangluo",
+      "shuangpin": "wuxmwhlo"
+    },
+    {
+      "id": "phrase-038",
+      "kind": "phrase",
+      "target": "工作安排",
+      "syllables": [
+        "gong",
+        "zuo",
+        "an",
+        "pai"
+      ],
+      "pinyin": "gongzuoanpai",
+      "shuangpin": "gszoanpd"
+    },
+    {
+      "id": "phrase-039",
+      "kind": "phrase",
+      "target": "会议记录",
+      "syllables": [
+        "hui",
+        "yi",
+        "ji",
+        "lu"
+      ],
+      "pinyin": "huiyijilu",
+      "shuangpin": "hvyijilu"
+    },
+    {
+      "id": "phrase-040",
+      "kind": "phrase",
+      "target": "周末愉快",
+      "syllables": [
+        "zhou",
+        "mo",
+        "yu",
+        "kuai"
+      ],
+      "pinyin": "zhoumoyukuai",
+      "shuangpin": "vzmoyukk"
+    },
+    {
+      "id": "sentence-001",
+      "kind": "sentence",
+      "target": "今天晚上吃什么",
+      "syllables": [
+        "jin",
+        "tian",
+        "wan",
+        "shang",
+        "chi",
+        "shen",
+        "me"
+      ],
+      "pinyin": "jintianwanshangchishenme",
+      "shuangpin": "jbtmwjuhiiufme"
+    },
+    {
+      "id": "sentence-002",
+      "kind": "sentence",
+      "target": "明天早上去上班",
+      "syllables": [
+        "ming",
+        "tian",
+        "zao",
+        "shang",
+        "qu",
+        "shang",
+        "ban"
+      ],
+      "pinyin": "mingtianzaoshangqushangban",
+      "shuangpin": "mktmzcuhquuhbj"
+    },
+    {
+      "id": "sentence-003",
+      "kind": "sentence",
+      "target": "我想喝一杯咖啡",
+      "syllables": [
+        "wo",
+        "xiang",
+        "he",
+        "yi",
+        "bei",
+        "ka",
+        "fei"
+      ],
+      "pinyin": "woxiangheyibeikafei",
+      "shuangpin": "woxlheyibwkafw"
+    },
+    {
+      "id": "sentence-004",
+      "kind": "sentence",
+      "target": "这个键盘很好用",
+      "syllables": [
+        "zhe",
+        "ge",
+        "jian",
+        "pan",
+        "hen",
+        "hao",
+        "yong"
+      ],
+      "pinyin": "zhegejianpanhenhaoyong",
+      "shuangpin": "vegejmpjhfhcys"
+    },
+    {
+      "id": "sentence-005",
+      "kind": "sentence",
+      "target": "请帮我检查一下",
+      "syllables": [
+        "qing",
+        "bang",
+        "wo",
+        "jian",
+        "cha",
+        "yi",
+        "xia"
+      ],
+      "pinyin": "qingbangwojianchayixia",
+      "shuangpin": "qkbhwojmiayixx"
+    },
+    {
+      "id": "sentence-006",
+      "kind": "sentence",
+      "target": "我们周末一起吃饭",
+      "syllables": [
+        "wo",
+        "men",
+        "zhou",
+        "mo",
+        "yi",
+        "qi",
+        "chi",
+        "fan"
+      ],
+      "pinyin": "womenzhoumoyiqichifan",
+      "shuangpin": "womfvzmoyiqiiifj"
+    },
+    {
+      "id": "sentence-007",
+      "kind": "sentence",
+      "target": "我已经到家了",
+      "syllables": [
+        "wo",
+        "yi",
+        "jing",
+        "dao",
+        "jia",
+        "le"
+      ],
+      "pinyin": "woyijingdaojiale",
+      "shuangpin": "woyijkdcjxle"
+    },
+    {
+      "id": "sentence-008",
+      "kind": "sentence",
+      "target": "路上注意安全",
+      "syllables": [
+        "lu",
+        "shang",
+        "zhu",
+        "yi",
+        "an",
+        "quan"
+      ],
+      "pinyin": "lushangzhuyianquan",
+      "shuangpin": "luuhvuyianqr"
+    },
+    {
+      "id": "sentence-009",
+      "kind": "sentence",
+      "target": "今天的天气不错",
+      "syllables": [
+        "jin",
+        "tian",
+        "de",
+        "tian",
+        "qi",
+        "bu",
+        "cuo"
+      ],
+      "pinyin": "jintiandetianqibucuo",
+      "shuangpin": "jbtmdetmqibuco"
+    },
+    {
+      "id": "sentence-010",
+      "kind": "sentence",
+      "target": "稍等一下马上就好",
+      "syllables": [
+        "shao",
+        "deng",
+        "yi",
+        "xia",
+        "ma",
+        "shang",
+        "jiu",
+        "hao"
+      ],
+      "pinyin": "shaodengyixiamashangjiuhao",
+      "shuangpin": "ucdgyixxmauhjqhc"
+    },
+    {
+      "id": "sentence-011",
+      "kind": "sentence",
+      "target": "这个问题怎么解决",
+      "syllables": [
+        "zhe",
+        "ge",
+        "wen",
+        "ti",
+        "zen",
+        "me",
+        "jie",
+        "jue"
+      ],
+      "pinyin": "zhegewentizenmejiejue",
+      "shuangpin": "vegewftizfmejpjt"
+    },
+    {
+      "id": "sentence-012",
+      "kind": "sentence",
+      "target": "我下午还有一个会议",
+      "syllables": [
+        "wo",
+        "xia",
+        "wu",
+        "hai",
+        "you",
+        "yi",
+        "ge",
+        "hui",
+        "yi"
+      ],
+      "pinyin": "woxiawuhaiyouyigehuiyi",
+      "shuangpin": "woxxwuhdyzyigehvyi"
+    },
+    {
+      "id": "sentence-013",
+      "kind": "sentence",
+      "target": "记得带上充电器",
+      "syllables": [
+        "ji",
+        "de",
+        "dai",
+        "shang",
+        "chong",
+        "dian",
+        "qi"
+      ],
+      "pinyin": "jidedaishangchongdianqi",
+      "shuangpin": "jidedduhisdmqi"
+    },
+    {
+      "id": "sentence-014",
+      "kind": "sentence",
+      "target": "请把文件发给我",
+      "syllables": [
+        "qing",
+        "ba",
+        "wen",
+        "jian",
+        "fa",
+        "gei",
+        "wo"
+      ],
+      "pinyin": "qingbawenjianfageiwo",
+      "shuangpin": "qkbawfjmfagwwo"
+    },
+    {
+      "id": "sentence-015",
+      "kind": "sentence",
+      "target": "这家餐厅味道很好",
+      "syllables": [
+        "zhe",
+        "jia",
+        "can",
+        "ting",
+        "wei",
+        "dao",
+        "hen",
+        "hao"
+      ],
+      "pinyin": "zhejiacantingweidaohenhao",
+      "shuangpin": "vejxcjtkwwdchfhc"
+    },
+    {
+      "id": "sentence-016",
+      "kind": "sentence",
+      "target": "下雨了记得带伞",
+      "syllables": [
+        "xia",
+        "yu",
+        "le",
+        "ji",
+        "de",
+        "dai",
+        "san"
+      ],
+      "pinyin": "xiayulejidedaisan",
+      "shuangpin": "xxyulejideddsj"
+    },
+    {
+      "id": "sentence-017",
+      "kind": "sentence",
+      "target": "我们明天再讨论",
+      "syllables": [
+        "wo",
+        "men",
+        "ming",
+        "tian",
+        "zai",
+        "tao",
+        "lun"
+      ],
+      "pinyin": "womenmingtianzaitaolun",
+      "shuangpin": "womfmktmzdtcly"
+    },
+    {
+      "id": "sentence-018",
+      "kind": "sentence",
+      "target": "手机快没电了",
+      "syllables": [
+        "shou",
+        "ji",
+        "kuai",
+        "mei",
+        "dian",
+        "le"
+      ],
+      "pinyin": "shoujikuaimeidianle",
+      "shuangpin": "uzjikkmwdmle"
+    },
+    {
+      "id": "sentence-019",
+      "kind": "sentence",
+      "target": "我正在修改代码",
+      "syllables": [
+        "wo",
+        "zheng",
+        "zai",
+        "xiu",
+        "gai",
+        "dai",
+        "ma"
+      ],
+      "pinyin": "wozhengzaixiugaidaima",
+      "shuangpin": "wovgzdxqgdddma"
+    },
+    {
+      "id": "sentence-020",
+      "kind": "sentence",
+      "target": "希望输入更加流畅",
+      "syllables": [
+        "xi",
+        "wang",
+        "shu",
+        "ru",
+        "geng",
+        "jia",
+        "liu",
+        "chang"
+      ],
+      "pinyin": "xiwangshurugengjialiuchang",
+      "shuangpin": "xiwhuuruggjxlqih"
+    },
+    {
+      "id": "ambiguity-001",
+      "kind": "ambiguity",
+      "target": "西安",
+      "syllables": [
+        "xi",
+        "an"
+      ],
+      "pinyin": "xian",
+      "shuangpin": "xian"
+    },
+    {
+      "id": "ambiguity-002",
+      "kind": "ambiguity",
+      "target": "先",
+      "syllables": [
+        "xian"
+      ],
+      "pinyin": "xian",
+      "shuangpin": "xm"
+    },
+    {
+      "id": "ambiguity-003",
+      "kind": "ambiguity",
+      "target": "方案",
+      "syllables": [
+        "fang",
+        "an"
+      ],
+      "pinyin": "fangan",
+      "shuangpin": "fhan"
+    },
+    {
+      "id": "ambiguity-004",
+      "kind": "ambiguity",
+      "target": "反感",
+      "syllables": [
+        "fan",
+        "gan"
+      ],
+      "pinyin": "fangan",
+      "shuangpin": "fjgj"
+    },
+    {
+      "id": "ambiguity-005",
+      "kind": "ambiguity",
+      "target": "档案",
+      "syllables": [
+        "dang",
+        "an"
+      ],
+      "pinyin": "dangan",
+      "shuangpin": "dhan"
+    },
+    {
+      "id": "ambiguity-006",
+      "kind": "ambiguity",
+      "target": "胆敢",
+      "syllables": [
+        "dan",
+        "gan"
+      ],
+      "pinyin": "dangan",
+      "shuangpin": "djgj"
+    },
+    {
+      "id": "ambiguity-007",
+      "kind": "ambiguity",
+      "target": "皮袄",
+      "syllables": [
+        "pi",
+        "ao"
+      ],
+      "pinyin": "piao",
+      "shuangpin": "piao"
+    },
+    {
+      "id": "ambiguity-008",
+      "kind": "ambiguity",
+      "target": "飘",
+      "syllables": [
+        "piao"
+      ],
+      "pinyin": "piao",
+      "shuangpin": "pn"
+    },
+    {
+      "id": "ambiguity-009",
+      "kind": "ambiguity",
+      "target": "激昂",
+      "syllables": [
+        "ji",
+        "ang"
+      ],
+      "pinyin": "jiang",
+      "shuangpin": "jiah"
+    },
+    {
+      "id": "ambiguity-010",
+      "kind": "ambiguity",
+      "target": "将",
+      "syllables": [
+        "jiang"
+      ],
+      "pinyin": "jiang",
+      "shuangpin": "jl"
+    },
+    {
+      "id": "ambiguity-011",
+      "kind": "ambiguity",
+      "target": "企鹅",
+      "syllables": [
+        "qi",
+        "e"
+      ],
+      "pinyin": "qie",
+      "shuangpin": "qiee"
+    },
+    {
+      "id": "ambiguity-012",
+      "kind": "ambiguity",
+      "target": "切",
+      "syllables": [
+        "qie"
+      ],
+      "pinyin": "qie",
+      "shuangpin": "qp"
+    }
+  ]
+}

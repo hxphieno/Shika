@@ -1,0 +1,123 @@
+{
+  "assertions" : 5410,
+  "diverseCasesPerMode" : 172,
+  "diverseModes" : [
+    "full",
+    "double",
+    "mixed"
+  ],
+  "environment" : "iOS Simulator UIKit host, production controller\/engines, NOT physical-device extension",
+  "failures" : [
+
+  ],
+  "keyP95MS" : 3.3116249999999998,
+  "keys" : 5286,
+  "memorySamples" : [
+    {
+      "phase" : "before-engine",
+      "physicalFootprintBytes" : 20793408
+    },
+    {
+      "phase" : "switches-12",
+      "physicalFootprintBytes" : 25348304
+    },
+    {
+      "phase" : "switches-24",
+      "physicalFootprintBytes" : 34949496
+    },
+    {
+      "phase" : "switches-36",
+      "physicalFootprintBytes" : 36342136
+    },
+    {
+      "phase" : "switches-48",
+      "physicalFootprintBytes" : 37030264
+    },
+    {
+      "phase" : "switches-60",
+      "physicalFootprintBytes" : 37046648
+    },
+    {
+      "phase" : "switches-72",
+      "physicalFootprintBytes" : 37079416
+    },
+    {
+      "phase" : "switches-84",
+      "physicalFootprintBytes" : 37079416
+    },
+    {
+      "phase" : "switches-96",
+      "physicalFootprintBytes" : 37079416
+    },
+    {
+      "phase" : "switches-108",
+      "physicalFootprintBytes" : 37079416
+    },
+    {
+      "phase" : "switches-120",
+      "physicalFootprintBytes" : 36964728
+    },
+    {
+      "phase" : "after-engine-workload",
+      "physicalFootprintBytes" : 36964728
+    },
+    {
+      "phase" : "diverse-full-50",
+      "physicalFootprintBytes" : 36817224
+    },
+    {
+      "phase" : "diverse-full-100",
+      "physicalFootprintBytes" : 36817224
+    },
+    {
+      "phase" : "diverse-full-150",
+      "physicalFootprintBytes" : 36882760
+    },
+    {
+      "phase" : "diverse-full-complete",
+      "physicalFootprintBytes" : 36882760
+    },
+    {
+      "phase" : "diverse-double-50",
+      "physicalFootprintBytes" : 36866352
+    },
+    {
+      "phase" : "diverse-double-100",
+      "physicalFootprintBytes" : 36866352
+    },
+    {
+      "phase" : "diverse-double-150",
+      "physicalFootprintBytes" : 36866352
+    },
+    {
+      "phase" : "diverse-double-complete",
+      "physicalFootprintBytes" : 36866352
+    },
+    {
+      "phase" : "diverse-mixed-50",
+      "physicalFootprintBytes" : 36964728
+    },
+    {
+      "phase" : "diverse-mixed-100",
+      "physicalFootprintBytes" : 36866424
+    },
+    {
+      "phase" : "diverse-mixed-150",
+      "physicalFootprintBytes" : 36882808
+    },
+    {
+      "phase" : "diverse-mixed-complete",
+      "physicalFootprintBytes" : 36899192
+    },
+    {
+      "phase" : "after-ui-screenshots",
+      "physicalFootprintBytes" : 80955912
+    },
+    {
+      "phase" : "after-ui-autorelease-drain",
+      "physicalFootprintBytes" : 54954480
+    }
+  ],
+  "optimized" : true,
+  "switches" : 120
+}

@@ -1,0 +1,1821 @@
+{
+  "schema": "shika_pinyin",
+  "mode": "coverage",
+  "freshProcessAndUserdirPerCase": true,
+  "results": [
+    {
+      "candidates": [
+        {
+          "comment": "jin tian wan shang chi shen me",
+          "index": 0,
+          "text": "今天晚上吃什么"
+        },
+        {
+          "comment": "jin tian wan shang",
+          "index": 1,
+          "text": "今天晚上"
+        },
+        {
+          "comment": "jin tian wan",
+          "index": 2,
+          "text": "今天玩"
+        },
+        {
+          "comment": "jin tian",
+          "index": 3,
+          "text": "今天"
+        },
+        {
+          "comment": "jin tian",
+          "index": 4,
+          "text": "津田"
+        },
+        {
+          "comment": "jin tian",
+          "index": 5,
+          "text": "金田"
+        },
+        {
+          "comment": "jin tian",
+          "index": 6,
+          "text": "金天"
+        },
+        {
+          "comment": "jin tian",
+          "index": 7,
+          "text": "锦田"
+        }
+      ],
+      "id": "sentence-001",
+      "input": "jintianwanshangchishenme",
+      "keyDurationsMS": [
+        0.618333,
+        0.268834,
+        4.086333,
+        81.708208,
+        2.182375,
+        17.911625,
+        10.111666,
+        3.421916,
+        43.348458,
+        39.883708,
+        1.31775,
+        17.808334,
+        1.2925,
+        1.783417,
+        1.1545,
+        24.563333,
+        39.130417,
+        1.988625,
+        9.968584,
+        8.55825,
+        3.870083,
+        2.596875,
+        2.907833,
+        2.2735
+      ],
+      "kind": "sentence",
+      "preedit": "jin tian wan shang chi shen me",
+      "processPeakRSSBytes": 25690112,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "jintianwanshangchishenme",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "jin",
+        "tian",
+        "wan",
+        "shang",
+        "chi",
+        "shen",
+        "me"
+      ],
+      "target": "今天晚上吃什么",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "今天晚上吃什么",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "ming tian zao shang qu shang ban",
+          "index": 0,
+          "text": "明天早上去上班"
+        },
+        {
+          "comment": "ming tian zao shang",
+          "index": 1,
+          "text": "明天早上"
+        },
+        {
+          "comment": "ming tian",
+          "index": 2,
+          "text": "明天"
+        },
+        {
+          "comment": "ming ti a",
+          "index": 3,
+          "text": "命题啊"
+        },
+        {
+          "comment": "ming ti",
+          "index": 4,
+          "text": "命题"
+        },
+        {
+          "comment": "ming ti",
+          "index": 5,
+          "text": "明体"
+        },
+        {
+          "comment": "ming",
+          "index": 6,
+          "text": "名"
+        },
+        {
+          "comment": "ming",
+          "index": 7,
+          "text": "明"
+        }
+      ],
+      "id": "sentence-002",
+      "input": "mingtianzaoshangqushangban",
+      "keyDurationsMS": [
+        0.292,
+        0.197208,
+        0.919958,
+        0.828792,
+        1.274958,
+        0.98825,
+        1.132958,
+        1.269416,
+        0.791208,
+        0.912125,
+        1.039083,
+        0.836208,
+        4.61075,
+        1.101625,
+        1.539833,
+        1.071791,
+        9.02175,
+        1.9575,
+        8.226041,
+        8.287917,
+        2.124583,
+        2.237917,
+        7.2825,
+        16.223333,
+        2.970208,
+        3.239541
+      ],
+      "kind": "sentence",
+      "preedit": "ming tian zao shang qu shang ban",
+      "processPeakRSSBytes": 25165824,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "mingtianzaoshangqushangban",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "ming",
+        "tian",
+        "zao",
+        "shang",
+        "qu",
+        "shang",
+        "ban"
+      ],
+      "target": "明天早上去上班",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "明天早上去上班",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "wo xiang he yi bei ka fei",
+          "index": 0,
+          "text": "我想喝一杯咖啡"
+        },
+        {
+          "comment": "wo xiang he yi bei ka fei",
+          "index": 1,
+          "text": "我想和一杯咖啡"
+        },
+        {
+          "comment": "wo xiang he",
+          "index": 2,
+          "text": "我想喝"
+        },
+        {
+          "comment": "wo xiang he",
+          "index": 3,
+          "text": "我想和"
+        },
+        {
+          "comment": "wo xiang",
+          "index": 4,
+          "text": "我想"
+        },
+        {
+          "comment": "wo xiang",
+          "index": 5,
+          "text": "我乡"
+        },
+        {
+          "comment": "wo xiang",
+          "index": 6,
+          "text": "我向"
+        },
+        {
+          "comment": "wo xiang",
+          "index": 7,
+          "text": "我像"
+        }
+      ],
+      "id": "sentence-003",
+      "input": "woxiangheyibeikafei",
+      "keyDurationsMS": [
+        0.814292,
+        3.282583,
+        3.292041,
+        2.726375,
+        1.293875,
+        1.81925,
+        1.295209,
+        1.081333,
+        1.49,
+        6.337625,
+        1.217166,
+        4.086167,
+        4.010458,
+        2.072583,
+        6.015708,
+        2.567625,
+        5.948875,
+        8.404542,
+        2.625125
+      ],
+      "kind": "sentence",
+      "preedit": "wo xiang he yi bei ka fei",
+      "processPeakRSSBytes": 23658496,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "woxiangheyibeikafei",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "wo",
+        "xiang",
+        "he",
+        "yi",
+        "bei",
+        "ka",
+        "fei"
+      ],
+      "target": "我想喝一杯咖啡",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "我想喝一杯咖啡",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "zhe ge jian pan hen hao yong",
+          "index": 0,
+          "text": "这个键盘很好用"
+        },
+        {
+          "comment": "zhe ge jian pan hen hao yong",
+          "index": 1,
+          "text": "这个间盘很好用"
+        },
+        {
+          "comment": "zhe ge jian",
+          "index": 2,
+          "text": "这个键"
+        },
+        {
+          "comment": "zhe ge jian",
+          "index": 3,
+          "text": "这个件"
+        },
+        {
+          "comment": "zhe ge jia",
+          "index": 4,
+          "text": "这个价"
+        },
+        {
+          "comment": "zhe ge jia",
+          "index": 5,
+          "text": "这个家"
+        },
+        {
+          "comment": "zhe ge",
+          "index": 6,
+          "text": "这个"
+        },
+        {
+          "comment": "zhe ge",
+          "index": 7,
+          "text": "这歌"
+        }
+      ],
+      "id": "sentence-004",
+      "input": "zhegejianpanhenhaoyong",
+      "keyDurationsMS": [
+        0.519083,
+        0.843292,
+        1.297292,
+        1.887917,
+        1.073958,
+        2.178917,
+        1.289792,
+        1.1615,
+        1.295833,
+        7.811125,
+        1.456125,
+        1.373042,
+        5.215208,
+        1.406583,
+        2.675917,
+        7.011375,
+        2.294208,
+        2.146916,
+        10.304542,
+        2.417625,
+        2.571833,
+        2.425708
+      ],
+      "kind": "sentence",
+      "preedit": "zhe ge jian pan hen hao yong",
+      "processPeakRSSBytes": 24674304,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "zhegejianpanhenhaoyong",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "zhe",
+        "ge",
+        "jian",
+        "pan",
+        "hen",
+        "hao",
+        "yong"
+      ],
+      "target": "这个键盘很好用",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "这个键盘很好用",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "qing bang wo jian cha yi xia",
+          "index": 0,
+          "text": "请帮我检查一下"
+        },
+        {
+          "comment": "qing bang wo",
+          "index": 1,
+          "text": "请帮我"
+        },
+        {
+          "comment": "qing bang",
+          "index": 2,
+          "text": "请帮"
+        },
+        {
+          "comment": "qing bang",
+          "index": 3,
+          "text": "青帮"
+        },
+        {
+          "comment": "qing bang",
+          "index": 4,
+          "text": "青棒"
+        },
+        {
+          "comment": "qing ba",
+          "index": 5,
+          "text": "请把"
+        },
+        {
+          "comment": "qing ba",
+          "index": 6,
+          "text": "清吧"
+        },
+        {
+          "comment": "qing",
+          "index": 7,
+          "text": "请"
+        }
+      ],
+      "id": "sentence-005",
+      "input": "qingbangwojianchayixia",
+      "keyDurationsMS": [
+        0.485042,
+        0.350417,
+        1.666625,
+        1.22975,
+        2.367541,
+        1.702709,
+        3.852417,
+        1.474042,
+        1.828333,
+        4.455542,
+        15.205625,
+        1.7485,
+        1.290459,
+        1.176416,
+        13.516708,
+        14.882208,
+        2.783916,
+        16.036375,
+        8.983208,
+        18.268292,
+        2.660417,
+        3.117083
+      ],
+      "kind": "sentence",
+      "preedit": "qing bang wo jian cha yi xia",
+      "processPeakRSSBytes": 24920064,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "qingbangwojianchayixia",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "qing",
+        "bang",
+        "wo",
+        "jian",
+        "cha",
+        "yi",
+        "xia"
+      ],
+      "target": "请帮我检查一下",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "请帮我检查一下",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "wo men zhou mo yi qi chi fan",
+          "index": 0,
+          "text": "我们周末一起吃饭"
+        },
+        {
+          "comment": "wo men zhou",
+          "index": 1,
+          "text": "我们州"
+        },
+        {
+          "comment": "wo men",
+          "index": 2,
+          "text": "我们"
+        },
+        {
+          "comment": "wo me",
+          "index": 3,
+          "text": "我么"
+        },
+        {
+          "comment": "wo",
+          "index": 4,
+          "text": "我"
+        },
+        {
+          "comment": "wo",
+          "index": 5,
+          "text": "握"
+        },
+        {
+          "comment": "wo",
+          "index": 6,
+          "text": "沃"
+        },
+        {
+          "comment": "wo",
+          "index": 7,
+          "text": "卧"
+        }
+      ],
+      "id": "sentence-006",
+      "input": "womenzhoumoyiqichifan",
+      "keyDurationsMS": [
+        0.591459,
+        0.327292,
+        3.887,
+        0.887125,
+        0.72675,
+        1.013166,
+        1.561208,
+        5.228792,
+        1.450166,
+        1.055458,
+        1.223708,
+        6.954833,
+        2.296916,
+        6.319375,
+        4.919,
+        5.797583,
+        6.476541,
+        3.595416,
+        5.985541,
+        2.410833,
+        2.75575
+      ],
+      "kind": "sentence",
+      "preedit": "wo men zhou mo yi qi chi fan",
+      "processPeakRSSBytes": 24510464,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "womenzhoumoyiqichifan",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "wo",
+        "men",
+        "zhou",
+        "mo",
+        "yi",
+        "qi",
+        "chi",
+        "fan"
+      ],
+      "target": "我们周末一起吃饭",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "我们周末一起吃饭",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "wo yi jing dao jia le",
+          "index": 0,
+          "text": "我已经到家了"
+        },
+        {
+          "comment": "wo yi jing",
+          "index": 1,
+          "text": "我已经"
+        },
+        {
+          "comment": "wo yi jing",
+          "index": 2,
+          "text": "我一惊"
+        },
+        {
+          "comment": "wo yi ji",
+          "index": 3,
+          "text": "我一级"
+        },
+        {
+          "comment": "wo yi ji",
+          "index": 4,
+          "text": "我一急"
+        },
+        {
+          "comment": "wo yi",
+          "index": 5,
+          "text": "我一"
+        },
+        {
+          "comment": "wo yi",
+          "index": 6,
+          "text": "我意"
+        },
+        {
+          "comment": "wo yi",
+          "index": 7,
+          "text": "我已"
+        }
+      ],
+      "id": "sentence-007",
+      "input": "woyijingdaojiale",
+      "keyDurationsMS": [
+        0.706209,
+        0.409625,
+        1.393,
+        0.771417,
+        0.723125,
+        0.803833,
+        0.952958,
+        1.288542,
+        3.137125,
+        1.323541,
+        1.362292,
+        5.697042,
+        1.475375,
+        1.635959,
+        5.940167,
+        2.203125
+      ],
+      "kind": "sentence",
+      "preedit": "wo yi jing dao jia le",
+      "processPeakRSSBytes": 22216704,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "woyijingdaojiale",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "wo",
+        "yi",
+        "jing",
+        "dao",
+        "jia",
+        "le"
+      ],
+      "target": "我已经到家了",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "我已经到家了",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "lu shang zhu yi an quan",
+          "index": 0,
+          "text": "路上注意安全"
+        },
+        {
+          "comment": "lu shang",
+          "index": 1,
+          "text": "路上"
+        },
+        {
+          "comment": "lu shang",
+          "index": 2,
+          "text": "陆上"
+        },
+        {
+          "comment": "lu shang",
+          "index": 3,
+          "text": "炉上"
+        },
+        {
+          "comment": "lu shang",
+          "index": 4,
+          "text": "鲁商"
+        },
+        {
+          "comment": "lu sha",
+          "index": 5,
+          "text": "路杀"
+        },
+        {
+          "comment": "lu",
+          "index": 6,
+          "text": "路"
+        },
+        {
+          "comment": "lu",
+          "index": 7,
+          "text": "录"
+        }
+      ],
+      "id": "sentence-008",
+      "input": "lushangzhuyianquan",
+      "keyDurationsMS": [
+        1.320083,
+        2.654292,
+        2.138917,
+        1.958584,
+        0.847709,
+        2.402833,
+        5.269917,
+        1.146,
+        10.070583,
+        1.019667,
+        10.309541,
+        1.303,
+        1.088875,
+        1.307708,
+        15.932292,
+        2.504667,
+        3.234167,
+        3.291333
+      ],
+      "kind": "sentence",
+      "preedit": "lu shang zhu yi an quan",
+      "processPeakRSSBytes": 25362432,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "lushangzhuyianquan",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "lu",
+        "shang",
+        "zhu",
+        "yi",
+        "an",
+        "quan"
+      ],
+      "target": "路上注意安全",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "路上注意安全",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "jin tian de tian qi bu cuo",
+          "index": 0,
+          "text": "今天的天气不错"
+        },
+        {
+          "comment": "jin tian de",
+          "index": 1,
+          "text": "今天的"
+        },
+        {
+          "comment": "jin tian de",
+          "index": 2,
+          "text": "金天德"
+        },
+        {
+          "comment": "jin tian",
+          "index": 3,
+          "text": "今天"
+        },
+        {
+          "comment": "jin tian",
+          "index": 4,
+          "text": "津田"
+        },
+        {
+          "comment": "jin tian",
+          "index": 5,
+          "text": "金田"
+        },
+        {
+          "comment": "jin tian",
+          "index": 6,
+          "text": "金天"
+        },
+        {
+          "comment": "jin tian",
+          "index": 7,
+          "text": "锦田"
+        }
+      ],
+      "id": "sentence-009",
+      "input": "jintiandetianqibucuo",
+      "keyDurationsMS": [
+        0.556542,
+        0.294917,
+        2.0035,
+        1.09475,
+        1.348292,
+        0.984542,
+        4.473917,
+        1.8435,
+        1.305792,
+        3.849,
+        1.340667,
+        1.164125,
+        1.424334,
+        4.90075,
+        1.63575,
+        3.954125,
+        1.680417,
+        3.385833,
+        1.767791,
+        2.586667
+      ],
+      "kind": "sentence",
+      "preedit": "jin tian de tian qi bu cuo",
+      "processPeakRSSBytes": 21823488,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "jintiandetianqibucuo",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "jin",
+        "tian",
+        "de",
+        "tian",
+        "qi",
+        "bu",
+        "cuo"
+      ],
+      "target": "今天的天气不错",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "今天的天气不错",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "shao deng yi xia ma shang jiu hao",
+          "index": 0,
+          "text": "稍等一下马上就好"
+        },
+        {
+          "comment": "shao deng yi xia",
+          "index": 1,
+          "text": "稍等一下"
+        },
+        {
+          "comment": "shao deng",
+          "index": 2,
+          "text": "稍等"
+        },
+        {
+          "comment": "shao de",
+          "index": 3,
+          "text": "少的"
+        },
+        {
+          "comment": "shao de",
+          "index": 4,
+          "text": "少得"
+        },
+        {
+          "comment": "shao de",
+          "index": 5,
+          "text": "烧的"
+        },
+        {
+          "comment": "shao de",
+          "index": 6,
+          "text": "烧得"
+        },
+        {
+          "comment": "shao",
+          "index": 7,
+          "text": "少"
+        }
+      ],
+      "id": "sentence-010",
+      "input": "shaodengyixiamashangjiuhao",
+      "keyDurationsMS": [
+        0.583375,
+        0.64225,
+        1.201125,
+        1.002375,
+        2.239042,
+        1.111,
+        0.827834,
+        0.760125,
+        4.774625,
+        2.788125,
+        1.949833,
+        1.24625,
+        0.869125,
+        1.374459,
+        2.049875,
+        5.870958,
+        7.52625,
+        2.233667,
+        1.873791,
+        1.929042,
+        10.10875,
+        2.216291,
+        2.254125,
+        9.618458,
+        2.777542,
+        2.506667
+      ],
+      "kind": "sentence",
+      "preedit": "shao deng yi xia ma shang jiu hao",
+      "processPeakRSSBytes": 26591232,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "shaodengyixiamashangjiuhao",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "shao",
+        "deng",
+        "yi",
+        "xia",
+        "ma",
+        "shang",
+        "jiu",
+        "hao"
+      ],
+      "target": "稍等一下马上就好",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "稍等一下马上就好",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "zhe ge wen ti zen me jie jue",
+          "index": 0,
+          "text": "这个问题怎么解决"
+        },
+        {
+          "comment": "zhe ge wen ti",
+          "index": 1,
+          "text": "这个问题"
+        },
+        {
+          "comment": "zhe ge",
+          "index": 2,
+          "text": "这个"
+        },
+        {
+          "comment": "zhe ge",
+          "index": 3,
+          "text": "这歌"
+        },
+        {
+          "comment": "zhe ge",
+          "index": 4,
+          "text": "这哥"
+        },
+        {
+          "comment": "zhe",
+          "index": 5,
+          "text": "这"
+        },
+        {
+          "comment": "zhe",
+          "index": 6,
+          "text": "者"
+        },
+        {
+          "comment": "zhe",
+          "index": 7,
+          "text": "着"
+        }
+      ],
+      "id": "sentence-011",
+      "input": "zhegewentizenmejiejue",
+      "keyDurationsMS": [
+        0.553708,
+        0.579417,
+        2.297791,
+        1.486709,
+        0.697125,
+        1.448084,
+        1.487,
+        1.275417,
+        1.854708,
+        0.972459,
+        4.323375,
+        0.833458,
+        1.564083,
+        2.281084,
+        1.413333,
+        5.887041,
+        1.421167,
+        1.835375,
+        6.827042,
+        2.174625,
+        2.088167
+      ],
+      "kind": "sentence",
+      "preedit": "zhe ge wen ti zen me jie jue",
+      "processPeakRSSBytes": 24625152,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "zhegewentizenmejiejue",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "zhe",
+        "ge",
+        "wen",
+        "ti",
+        "zen",
+        "me",
+        "jie",
+        "jue"
+      ],
+      "target": "这个问题怎么解决",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "这个问题怎么解决",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "wo xia wu hai you yi ge hui yi",
+          "index": 0,
+          "text": "我下午还有一个会议"
+        },
+        {
+          "comment": "wo xia wu",
+          "index": 1,
+          "text": "我下午"
+        },
+        {
+          "comment": "wo xia",
+          "index": 2,
+          "text": "我下"
+        },
+        {
+          "comment": "wo xia",
+          "index": 3,
+          "text": "卧下"
+        },
+        {
+          "comment": "wo xi",
+          "index": 4,
+          "text": "我洗"
+        },
+        {
+          "comment": "wo xi",
+          "index": 5,
+          "text": "我喜"
+        },
+        {
+          "comment": "wo xi",
+          "index": 6,
+          "text": "我系"
+        },
+        {
+          "comment": "wo",
+          "index": 7,
+          "text": "我"
+        }
+      ],
+      "id": "sentence-012",
+      "input": "woxiawuhaiyouyigehuiyi",
+      "keyDurationsMS": [
+        0.437875,
+        0.356708,
+        1.055209,
+        1.034083,
+        1.757083,
+        1.483708,
+        0.740292,
+        1.409708,
+        0.733209,
+        0.785042,
+        1.449167,
+        1.463083,
+        1.199208,
+        2.13125,
+        1.526834,
+        2.255291,
+        2.181416,
+        3.321667,
+        1.647875,
+        1.910292,
+        3.474541,
+        1.929208
+      ],
+      "kind": "sentence",
+      "preedit": "wo xia wu hai you yi ge hui yi",
+      "processPeakRSSBytes": 20512768,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "woxiawuhaiyouyigehuiyi",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "wo",
+        "xia",
+        "wu",
+        "hai",
+        "you",
+        "yi",
+        "ge",
+        "hui",
+        "yi"
+      ],
+      "target": "我下午还有一个会议",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "我下午还有一个会议",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "ji de dai shang chong dian qi",
+          "index": 0,
+          "text": "记得带上充电器"
+        },
+        {
+          "comment": "ji de",
+          "index": 1,
+          "text": "记得"
+        },
+        {
+          "comment": "ji de",
+          "index": 2,
+          "text": "记的"
+        },
+        {
+          "comment": "ji de",
+          "index": 3,
+          "text": "积德"
+        },
+        {
+          "comment": "ji de",
+          "index": 4,
+          "text": "急得"
+        },
+        {
+          "comment": "ji de",
+          "index": 5,
+          "text": "基德"
+        },
+        {
+          "comment": "ji de",
+          "index": 6,
+          "text": "挤得"
+        },
+        {
+          "comment": "ji de",
+          "index": 7,
+          "text": "寄的"
+        }
+      ],
+      "id": "sentence-013",
+      "input": "jidedaishangchongdianqi",
+      "keyDurationsMS": [
+        0.416334,
+        0.260209,
+        6.436417,
+        1.135791,
+        1.315208,
+        4.784917,
+        0.987458,
+        2.754833,
+        4.780833,
+        1.386292,
+        1.346084,
+        4.971125,
+        10.236625,
+        9.303583,
+        7.582834,
+        9.883625,
+        1.6795,
+        12.019709,
+        1.973584,
+        3.791375,
+        4.50225,
+        17.749792,
+        3.26175
+      ],
+      "kind": "sentence",
+      "preedit": "ji de dai shang chong dian qi",
+      "processPeakRSSBytes": 26836992,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "jidedaishangchongdianqi",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "ji",
+        "de",
+        "dai",
+        "shang",
+        "chong",
+        "dian",
+        "qi"
+      ],
+      "target": "记得带上充电器",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "记得带上充电器",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "qing ba wen jian fa gei wo",
+          "index": 0,
+          "text": "请把文件发给我"
+        },
+        {
+          "comment": "qing ba wen jian fa gei wo",
+          "index": 1,
+          "text": "清吧文件发给我"
+        },
+        {
+          "comment": "qing ba",
+          "index": 2,
+          "text": "请把"
+        },
+        {
+          "comment": "qing ba",
+          "index": 3,
+          "text": "清吧"
+        },
+        {
+          "comment": "qing",
+          "index": 4,
+          "text": "请"
+        },
+        {
+          "comment": "qing",
+          "index": 5,
+          "text": "情"
+        },
+        {
+          "comment": "qing",
+          "index": 6,
+          "text": "清"
+        },
+        {
+          "comment": "qing",
+          "index": 7,
+          "text": "轻"
+        }
+      ],
+      "id": "sentence-014",
+      "input": "qingbawenjianfageiwo",
+      "keyDurationsMS": [
+        0.547458,
+        0.296125,
+        0.957167,
+        0.454541,
+        0.817917,
+        0.696916,
+        0.910167,
+        3.016166,
+        0.778,
+        2.820208,
+        0.98175,
+        1.136917,
+        1.365709,
+        4.915375,
+        1.232708,
+        3.915458,
+        1.308,
+        1.222,
+        4.154,
+        2.314291
+      ],
+      "kind": "sentence",
+      "preedit": "qing ba wen jian fa gei wo",
+      "processPeakRSSBytes": 22200320,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "qingbawenjianfageiwo",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "qing",
+        "ba",
+        "wen",
+        "jian",
+        "fa",
+        "gei",
+        "wo"
+      ],
+      "target": "请把文件发给我",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "请把文件发给我",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "zhe jia can ting wei dao hen hao",
+          "index": 0,
+          "text": "这家餐厅味道很好"
+        },
+        {
+          "comment": "zhe jia",
+          "index": 1,
+          "text": "这家"
+        },
+        {
+          "comment": "zhe jia",
+          "index": 2,
+          "text": "折价"
+        },
+        {
+          "comment": "zhe jia",
+          "index": 3,
+          "text": "这架"
+        },
+        {
+          "comment": "zhe jia",
+          "index": 4,
+          "text": "这价"
+        },
+        {
+          "comment": "zhe ji",
+          "index": 5,
+          "text": "这几"
+        },
+        {
+          "comment": "zhe ji",
+          "index": 6,
+          "text": "这集"
+        },
+        {
+          "comment": "zhe ji",
+          "index": 7,
+          "text": "这季"
+        }
+      ],
+      "id": "sentence-015",
+      "input": "zhejiacantingweidaohenhao",
+      "keyDurationsMS": [
+        0.366042,
+        0.551333,
+        0.904792,
+        1.049417,
+        0.5905,
+        0.591625,
+        1.329792,
+        0.617125,
+        0.531916,
+        4.073958,
+        0.754583,
+        0.746833,
+        0.780292,
+        3.714083,
+        3.900791,
+        1.199167,
+        4.967709,
+        1.219584,
+        1.100375,
+        5.099167,
+        1.666458,
+        1.345041,
+        6.080583,
+        1.674792,
+        1.526666
+      ],
+      "kind": "sentence",
+      "preedit": "zhe jia can ting wei dao hen hao",
+      "processPeakRSSBytes": 26263552,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "zhejiacantingweidaohenhao",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "zhe",
+        "jia",
+        "can",
+        "ting",
+        "wei",
+        "dao",
+        "hen",
+        "hao"
+      ],
+      "target": "这家餐厅味道很好",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "这家餐厅味道很好",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "xia yu le ji de dai san",
+          "index": 0,
+          "text": "下雨了记得带伞"
+        },
+        {
+          "comment": "xia yu le",
+          "index": 1,
+          "text": "下雨了"
+        },
+        {
+          "comment": "xia yu le",
+          "index": 2,
+          "text": "下狱了"
+        },
+        {
+          "comment": "xia yu",
+          "index": 3,
+          "text": "下雨"
+        },
+        {
+          "comment": "xia yu",
+          "index": 4,
+          "text": "夏雨"
+        },
+        {
+          "comment": "xia yu",
+          "index": 5,
+          "text": "下狱"
+        },
+        {
+          "comment": "xia yu",
+          "index": 6,
+          "text": "夏禹"
+        },
+        {
+          "comment": "xia yu",
+          "index": 7,
+          "text": "辖域"
+        }
+      ],
+      "id": "sentence-016",
+      "input": "xiayulejidedaisan",
+      "keyDurationsMS": [
+        0.272042,
+        0.154584,
+        0.751334,
+        0.50675,
+        0.498125,
+        0.715625,
+        0.717542,
+        1.060125,
+        0.488459,
+        1.05625,
+        0.598166,
+        1.332041,
+        0.815667,
+        0.725292,
+        1.622125,
+        2.693167,
+        1.535709
+      ],
+      "kind": "sentence",
+      "preedit": "xia yu le ji de dai san",
+      "processPeakRSSBytes": 21299200,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "xiayulejidedaisan",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "xia",
+        "yu",
+        "le",
+        "ji",
+        "de",
+        "dai",
+        "san"
+      ],
+      "target": "下雨了记得带伞",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "下雨了记得带伞",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "wo men ming tian zai tao lun",
+          "index": 0,
+          "text": "我们明天在讨论"
+        },
+        {
+          "comment": "wo men ming tian zai tao lun",
+          "index": 1,
+          "text": "我们明天再讨论"
+        },
+        {
+          "comment": "wo men ming",
+          "index": 2,
+          "text": "我们明"
+        },
+        {
+          "comment": "wo men ming",
+          "index": 3,
+          "text": "我们名"
+        },
+        {
+          "comment": "wo men mi",
+          "index": 4,
+          "text": "我们迷"
+        },
+        {
+          "comment": "wo men",
+          "index": 5,
+          "text": "我们"
+        },
+        {
+          "comment": "wo me",
+          "index": 6,
+          "text": "我么"
+        },
+        {
+          "comment": "wo",
+          "index": 7,
+          "text": "我"
+        }
+      ],
+      "id": "sentence-017",
+      "input": "womenmingtianzaitaolun",
+      "keyDurationsMS": [
+        0.327333,
+        0.201209,
+        0.948792,
+        0.649416,
+        0.693209,
+        0.757917,
+        0.983333,
+        2.586916,
+        0.803167,
+        2.32175,
+        0.662542,
+        0.824083,
+        1.138833,
+        3.477292,
+        1.057958,
+        1.236834,
+        5.335291,
+        1.576709,
+        1.242625,
+        4.103208,
+        1.355,
+        1.611042
+      ],
+      "kind": "sentence",
+      "preedit": "wo men ming tian zai tao lun",
+      "processPeakRSSBytes": 23478272,
+      "rank": 2,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "womenmingtianzaitaolun",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "wo",
+        "men",
+        "ming",
+        "tian",
+        "zai",
+        "tao",
+        "lun"
+      ],
+      "target": "我们明天再讨论",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": false,
+      "topChoiceOutput": "我们明天在讨论",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "shou ji kuai mei dian le",
+          "index": 0,
+          "text": "手机快没电了"
+        },
+        {
+          "comment": "shou ji kuai",
+          "index": 1,
+          "text": "手机快"
+        },
+        {
+          "comment": "shou ji",
+          "index": 2,
+          "text": "手机"
+        },
+        {
+          "comment": "shou ji",
+          "index": 3,
+          "text": "收集"
+        },
+        {
+          "comment": "shou ji",
+          "index": 4,
+          "text": "手记"
+        },
+        {
+          "comment": "shou ji",
+          "index": 5,
+          "text": "熟记"
+        },
+        {
+          "comment": "shou ji",
+          "index": 6,
+          "text": "首级"
+        },
+        {
+          "comment": "shou ji",
+          "index": 7,
+          "text": "首集"
+        }
+      ],
+      "id": "sentence-018",
+      "input": "shoujikuaimeidianle",
+      "keyDurationsMS": [
+        0.662083,
+        0.826958,
+        1.506125,
+        1.488834,
+        2.172167,
+        1.758417,
+        1.596791,
+        1.465083,
+        0.851167,
+        1.638541,
+        2.974708,
+        1.715833,
+        1.409417,
+        4.621167,
+        1.342417,
+        2.477041,
+        5.171666,
+        5.86675,
+        2.83825
+      ],
+      "kind": "sentence",
+      "preedit": "shou ji kuai mei dian le",
+      "processPeakRSSBytes": 21708800,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "shoujikuaimeidianle",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "shou",
+        "ji",
+        "kuai",
+        "mei",
+        "dian",
+        "le"
+      ],
+      "target": "手机快没电了",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "手机快没电了",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "wo zheng zai xiu gai dai ma",
+          "index": 0,
+          "text": "我正在修改代码"
+        },
+        {
+          "comment": "wo zheng zai",
+          "index": 1,
+          "text": "我正在"
+        },
+        {
+          "comment": "wo zheng",
+          "index": 2,
+          "text": "我正"
+        },
+        {
+          "comment": "wo zhe",
+          "index": 3,
+          "text": "我这"
+        },
+        {
+          "comment": "wo zhe",
+          "index": 4,
+          "text": "握着"
+        },
+        {
+          "comment": "wo zhe",
+          "index": 5,
+          "text": "窝着"
+        },
+        {
+          "comment": "wo zhe",
+          "index": 6,
+          "text": "卧着"
+        },
+        {
+          "comment": "wo",
+          "index": 7,
+          "text": "我"
+        }
+      ],
+      "id": "sentence-019",
+      "input": "wozhengzaixiugaidaima",
+      "keyDurationsMS": [
+        0.690625,
+        0.311125,
+        1.800125,
+        2.383041,
+        1.448375,
+        6.92325,
+        3.265375,
+        1.648375,
+        1.306875,
+        0.7515,
+        18.999375,
+        5.8095,
+        1.3275,
+        12.819167,
+        2.014167,
+        1.395792,
+        8.668125,
+        2.637917,
+        5.560875,
+        2.115917,
+        1.957833
+      ],
+      "kind": "sentence",
+      "preedit": "wo zheng zai xiu gai dai ma",
+      "processPeakRSSBytes": 23478272,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "wozhengzaixiugaidaima",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "wo",
+        "zheng",
+        "zai",
+        "xiu",
+        "gai",
+        "dai",
+        "ma"
+      ],
+      "target": "我正在修改代码",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "我正在修改代码",
+      "unexpectedCommit": ""
+    },
+    {
+      "candidates": [
+        {
+          "comment": "xi wang shu ru geng jia liu chang",
+          "index": 0,
+          "text": "希望输入更加流畅"
+        },
+        {
+          "comment": "xi wang shu",
+          "index": 1,
+          "text": "希望树"
+        },
+        {
+          "comment": "xi wang",
+          "index": 2,
+          "text": "希望"
+        },
+        {
+          "comment": "xi wang",
+          "index": 3,
+          "text": "西王"
+        },
+        {
+          "comment": "xi wang",
+          "index": 4,
+          "text": "西望"
+        },
+        {
+          "comment": "xi wang",
+          "index": 5,
+          "text": "喜旺"
+        },
+        {
+          "comment": "xi wang",
+          "index": 6,
+          "text": "细网"
+        },
+        {
+          "comment": "xi wang",
+          "index": 7,
+          "text": "奚望"
+        }
+      ],
+      "id": "sentence-020",
+      "input": "xiwangshurugengjialiuchang",
+      "keyDurationsMS": [
+        0.342375,
+        0.220125,
+        1.000875,
+        0.927833,
+        0.941083,
+        1.161875,
+        0.867084,
+        6.102958,
+        1.403666,
+        3.648958,
+        0.996583,
+        3.883458,
+        1.028625,
+        0.985,
+        1.07125,
+        7.9055,
+        1.5645,
+        1.699875,
+        5.817667,
+        1.764625,
+        3.472458,
+        5.793375,
+        6.28975,
+        5.564292,
+        2.543375,
+        3.504208
+      ],
+      "kind": "sentence",
+      "preedit": "xi wang shu ru geng jia liu chang",
+      "processPeakRSSBytes": 27377664,
+      "rank": 1,
+      "remainingAfterTopChoice": "",
+      "remainingInput": "xiwangshurugengjialiuchang",
+      "schema": "shika_pinyin",
+      "syllables": [
+        "xi",
+        "wang",
+        "shu",
+        "ru",
+        "geng",
+        "jia",
+        "liu",
+        "chang"
+      ],
+      "target": "希望输入更加流畅",
+      "topChoiceConsumesAllInput": true,
+      "topChoiceExactOutput": true,
+      "topChoiceOutput": "希望输入更加流畅",
+      "unexpectedCommit": ""
+    }
+  ]
+}

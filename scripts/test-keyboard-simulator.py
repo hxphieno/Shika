@@ -8,10 +8,13 @@ app=work/'ShikaSmoke.app';app.mkdir()
 sdk=subprocess.check_output(['xcrun','--sdk','iphonesimulator','--show-sdk-path'],text=True).strip()
 slice=root/'Vendor/Rime/librime-static.xcframework/ios-arm64_x86_64-simulator'
 subprocess.run(['xcrun','clang','-fobjc-arc','-target','arm64-apple-ios26.2-simulator','-isysroot',sdk,'-I',str(slice/'Headers'),'-c','ShikaKeyBoard/Engine/SKRimeSession.m','-o',str(work/'bridge.o')],check=True)
+optimization = ['-O'] if os.environ.get('SHIKA_SMOKE_OPTIMIZED') == '1' else []
 files=[str(p) for p in pathlib.Path('ShikaKeyBoard').rglob('*.swift')]
-subprocess.run(['xcrun','--sdk','iphonesimulator','swiftc','-sdk',sdk,'-target','arm64-apple-ios26.2-simulator','-module-name','ShikaSmoke','-import-objc-header','ShikaKeyBoard/Engine/ShikaKeyBoard-Bridging-Header.h']+files+[os.environ.get('SHIKA_SMOKE_SOURCE','Tests/KeyboardIntegrationSmoke.swift'),str(work/'bridge.o'),str(slice/'librime.a'),'-lc++','-liconv','-o',str(app/'ShikaSmoke')],check=True)
+subprocess.run(['xcrun','--sdk','iphonesimulator','swiftc','-sdk',sdk,'-target','arm64-apple-ios26.2-simulator','-module-name','ShikaSmoke','-import-objc-header','ShikaKeyBoard/Engine/ShikaKeyBoard-Bridging-Header.h']+optimization+files+[os.environ.get('SHIKA_SMOKE_SOURCE','Tests/KeyboardIntegrationSmoke.swift'),str(work/'bridge.o'),str(slice/'librime.a'),'-lc++','-liconv','-o',str(app/'ShikaSmoke')],check=True)
 (app/'Info.plist').write_bytes(plistlib.dumps({'CFBundleIdentifier':'local.shika.integration','CFBundleExecutable':'ShikaSmoke','CFBundleName':'ShikaSmoke','CFBundlePackageType':'APPL','CFBundleVersion':'1','CFBundleShortVersionString':'1.0','MinimumOSVersion':'26.2','UIDeviceFamily':[1],'UILaunchScreen':{}}))
 shutil.copytree('ShikaKeyBoard/Resources/RimeData.bundle',app/'RimeData.bundle')
+if fixture := os.environ.get('SHIKA_SMOKE_FIXTURE'):
+    shutil.copy2(fixture, app/pathlib.Path(fixture).name)
 device=sys.argv[1] if len(sys.argv)>1 else 'booted'
 subprocess.run(['xcrun','simctl','terminate',device,'local.shika.integration'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
 subprocess.run(['xcrun','simctl','install',device,str(app)],check=True)

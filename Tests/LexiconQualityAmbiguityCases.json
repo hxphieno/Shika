@@ -1,0 +1,517 @@
+{
+  "version": 1,
+  "note": "24 real same-input full-pinyin pairs. Frozen separately after initial corpus; not added to production. Some targets are real place names. shuna is retained only as a non-scored diagnostic elsewhere.",
+  "cases": [
+    {
+      "id": "ambiguity-001",
+      "kind": "ambiguity",
+      "target": "西安",
+      "syllables": [
+        "xi",
+        "an"
+      ],
+      "pinyin": "xian",
+      "shuangpin": "xian"
+    },
+    {
+      "id": "ambiguity-002",
+      "kind": "ambiguity",
+      "target": "先",
+      "syllables": [
+        "xian"
+      ],
+      "pinyin": "xian",
+      "shuangpin": "xm"
+    },
+    {
+      "id": "ambiguity-003",
+      "kind": "ambiguity",
+      "target": "方案",
+      "syllables": [
+        "fang",
+        "an"
+      ],
+      "pinyin": "fangan",
+      "shuangpin": "fhan"
+    },
+    {
+      "id": "ambiguity-004",
+      "kind": "ambiguity",
+      "target": "反感",
+      "syllables": [
+        "fan",
+        "gan"
+      ],
+      "pinyin": "fangan",
+      "shuangpin": "fjgj"
+    },
+    {
+      "id": "ambiguity-005",
+      "kind": "ambiguity",
+      "target": "档案",
+      "syllables": [
+        "dang",
+        "an"
+      ],
+      "pinyin": "dangan",
+      "shuangpin": "dhan"
+    },
+    {
+      "id": "ambiguity-006",
+      "kind": "ambiguity",
+      "target": "胆敢",
+      "syllables": [
+        "dan",
+        "gan"
+      ],
+      "pinyin": "dangan",
+      "shuangpin": "djgj"
+    },
+    {
+      "id": "ambiguity-007",
+      "kind": "ambiguity",
+      "target": "皮袄",
+      "syllables": [
+        "pi",
+        "ao"
+      ],
+      "pinyin": "piao",
+      "shuangpin": "piao"
+    },
+    {
+      "id": "ambiguity-008",
+      "kind": "ambiguity",
+      "target": "飘",
+      "syllables": [
+        "piao"
+      ],
+      "pinyin": "piao",
+      "shuangpin": "pn"
+    },
+    {
+      "id": "ambiguity-009",
+      "kind": "ambiguity",
+      "target": "激昂",
+      "syllables": [
+        "ji",
+        "ang"
+      ],
+      "pinyin": "jiang",
+      "shuangpin": "jiah"
+    },
+    {
+      "id": "ambiguity-010",
+      "kind": "ambiguity",
+      "target": "将",
+      "syllables": [
+        "jiang"
+      ],
+      "pinyin": "jiang",
+      "shuangpin": "jl"
+    },
+    {
+      "id": "ambiguity-011",
+      "kind": "ambiguity",
+      "target": "企鹅",
+      "syllables": [
+        "qi",
+        "e"
+      ],
+      "pinyin": "qie",
+      "shuangpin": "qiee"
+    },
+    {
+      "id": "ambiguity-012",
+      "kind": "ambiguity",
+      "target": "切",
+      "syllables": [
+        "qie"
+      ],
+      "pinyin": "qie",
+      "shuangpin": "qp"
+    },
+    {
+      "id": "extended-01-1",
+      "kind": "ambiguity",
+      "target": "饥饿",
+      "syllables": [
+        "ji",
+        "e"
+      ],
+      "pinyin": "jie",
+      "shuangpin": "jiee"
+    },
+    {
+      "id": "extended-01-2",
+      "kind": "ambiguity",
+      "target": "接",
+      "syllables": [
+        "jie"
+      ],
+      "pinyin": "jie",
+      "shuangpin": "jp"
+    },
+    {
+      "id": "extended-02-1",
+      "kind": "ambiguity",
+      "target": "吉安",
+      "syllables": [
+        "ji",
+        "an"
+      ],
+      "pinyin": "jian",
+      "shuangpin": "jian"
+    },
+    {
+      "id": "extended-02-2",
+      "kind": "ambiguity",
+      "target": "见",
+      "syllables": [
+        "jian"
+      ],
+      "pinyin": "jian",
+      "shuangpin": "jm"
+    },
+    {
+      "id": "extended-03-1",
+      "kind": "ambiguity",
+      "target": "奇案",
+      "syllables": [
+        "qi",
+        "an"
+      ],
+      "pinyin": "qian",
+      "shuangpin": "qian"
+    },
+    {
+      "id": "extended-03-2",
+      "kind": "ambiguity",
+      "target": "钱",
+      "syllables": [
+        "qian"
+      ],
+      "pinyin": "qian",
+      "shuangpin": "qm"
+    },
+    {
+      "id": "extended-04-1",
+      "kind": "ambiguity",
+      "target": "西澳",
+      "syllables": [
+        "xi",
+        "ao"
+      ],
+      "pinyin": "xiao",
+      "shuangpin": "xiao"
+    },
+    {
+      "id": "extended-04-2",
+      "kind": "ambiguity",
+      "target": "小",
+      "syllables": [
+        "xiao"
+      ],
+      "pinyin": "xiao",
+      "shuangpin": "xn"
+    },
+    {
+      "id": "extended-05-1",
+      "kind": "ambiguity",
+      "target": "预案",
+      "syllables": [
+        "yu",
+        "an"
+      ],
+      "pinyin": "yuan",
+      "shuangpin": "yuan"
+    },
+    {
+      "id": "extended-05-2",
+      "kind": "ambiguity",
+      "target": "元",
+      "syllables": [
+        "yuan"
+      ],
+      "pinyin": "yuan",
+      "shuangpin": "yr"
+    },
+    {
+      "id": "extended-06-1",
+      "kind": "ambiguity",
+      "target": "余额",
+      "syllables": [
+        "yu",
+        "e"
+      ],
+      "pinyin": "yue",
+      "shuangpin": "yuee"
+    },
+    {
+      "id": "extended-06-2",
+      "kind": "ambiguity",
+      "target": "月",
+      "syllables": [
+        "yue"
+      ],
+      "pinyin": "yue",
+      "shuangpin": "yt"
+    },
+    {
+      "id": "extended-07-1",
+      "kind": "ambiguity",
+      "target": "骨癌",
+      "syllables": [
+        "gu",
+        "ai"
+      ],
+      "pinyin": "guai",
+      "shuangpin": "guai"
+    },
+    {
+      "id": "extended-07-2",
+      "kind": "ambiguity",
+      "target": "怪",
+      "syllables": [
+        "guai"
+      ],
+      "pinyin": "guai",
+      "shuangpin": "gk"
+    },
+    {
+      "id": "extended-08-1",
+      "kind": "ambiguity",
+      "target": "固安",
+      "syllables": [
+        "gu",
+        "an"
+      ],
+      "pinyin": "guan",
+      "shuangpin": "guan"
+    },
+    {
+      "id": "extended-08-2",
+      "kind": "ambiguity",
+      "target": "关",
+      "syllables": [
+        "guan"
+      ],
+      "pinyin": "guan",
+      "shuangpin": "gr"
+    },
+    {
+      "id": "extended-09-1",
+      "kind": "ambiguity",
+      "target": "湖岸",
+      "syllables": [
+        "hu",
+        "an"
+      ],
+      "pinyin": "huan",
+      "shuangpin": "huan"
+    },
+    {
+      "id": "extended-09-2",
+      "kind": "ambiguity",
+      "target": "换",
+      "syllables": [
+        "huan"
+      ],
+      "pinyin": "huan",
+      "shuangpin": "hr"
+    },
+    {
+      "id": "extended-10-1",
+      "kind": "ambiguity",
+      "target": "酷爱",
+      "syllables": [
+        "ku",
+        "ai"
+      ],
+      "pinyin": "kuai",
+      "shuangpin": "kuai"
+    },
+    {
+      "id": "extended-10-2",
+      "kind": "ambiguity",
+      "target": "快",
+      "syllables": [
+        "kuai"
+      ],
+      "pinyin": "kuai",
+      "shuangpin": "kk"
+    },
+    {
+      "id": "extended-11-1",
+      "kind": "ambiguity",
+      "target": "图案",
+      "syllables": [
+        "tu",
+        "an"
+      ],
+      "pinyin": "tuan",
+      "shuangpin": "tuan"
+    },
+    {
+      "id": "extended-11-2",
+      "kind": "ambiguity",
+      "target": "团",
+      "syllables": [
+        "tuan"
+      ],
+      "pinyin": "tuan",
+      "shuangpin": "tr"
+    },
+    {
+      "id": "extended-12-1",
+      "kind": "ambiguity",
+      "target": "立案",
+      "syllables": [
+        "li",
+        "an"
+      ],
+      "pinyin": "lian",
+      "shuangpin": "lian"
+    },
+    {
+      "id": "extended-12-2",
+      "kind": "ambiguity",
+      "target": "连",
+      "syllables": [
+        "lian"
+      ],
+      "pinyin": "lian",
+      "shuangpin": "lm"
+    },
+    {
+      "id": "extended-13-1",
+      "kind": "ambiguity",
+      "target": "彼岸",
+      "syllables": [
+        "bi",
+        "an"
+      ],
+      "pinyin": "bian",
+      "shuangpin": "bian"
+    },
+    {
+      "id": "extended-13-2",
+      "kind": "ambiguity",
+      "target": "便",
+      "syllables": [
+        "bian"
+      ],
+      "pinyin": "bian",
+      "shuangpin": "bm"
+    },
+    {
+      "id": "extended-14-1",
+      "kind": "ambiguity",
+      "target": "心安",
+      "syllables": [
+        "xin",
+        "an"
+      ],
+      "pinyin": "xinan",
+      "shuangpin": "xban"
+    },
+    {
+      "id": "extended-14-2",
+      "kind": "ambiguity",
+      "target": "西南",
+      "syllables": [
+        "xi",
+        "nan"
+      ],
+      "pinyin": "xinan",
+      "shuangpin": "xinj"
+    },
+    {
+      "id": "extended-15-1",
+      "kind": "ambiguity",
+      "target": "阴暗",
+      "syllables": [
+        "yin",
+        "an"
+      ],
+      "pinyin": "yinan",
+      "shuangpin": "yban"
+    },
+    {
+      "id": "extended-15-2",
+      "kind": "ambiguity",
+      "target": "疑难",
+      "syllables": [
+        "yi",
+        "nan"
+      ],
+      "pinyin": "yinan",
+      "shuangpin": "yinj"
+    },
+    {
+      "id": "extended-16-1",
+      "kind": "ambiguity",
+      "target": "兴安",
+      "syllables": [
+        "xing",
+        "an"
+      ],
+      "pinyin": "xingan",
+      "shuangpin": "xkan"
+    },
+    {
+      "id": "extended-16-2",
+      "kind": "ambiguity",
+      "target": "心肝",
+      "syllables": [
+        "xin",
+        "gan"
+      ],
+      "pinyin": "xingan",
+      "shuangpin": "xbgj"
+    },
+    {
+      "id": "extended-17-1",
+      "kind": "ambiguity",
+      "target": "广安",
+      "syllables": [
+        "guang",
+        "an"
+      ],
+      "pinyin": "guangan",
+      "shuangpin": "glan"
+    },
+    {
+      "id": "extended-17-2",
+      "kind": "ambiguity",
+      "target": "观感",
+      "syllables": [
+        "guan",
+        "gan"
+      ],
+      "pinyin": "guangan",
+      "shuangpin": "grgj"
+    },
+    {
+      "id": "extended-18-1",
+      "kind": "ambiguity",
+      "target": "建安",
+      "syllables": [
+        "jian",
+        "an"
+      ],
+      "pinyin": "jianan",
+      "shuangpin": "jman"
+    },
+    {
+      "id": "extended-18-2",
+      "kind": "ambiguity",
+      "target": "嘉南",
+      "syllables": [
+        "jia",
+        "nan"
+      ],
+      "pinyin": "jianan",
+      "shuangpin": "jxnj"
+    }
+  ]
+}

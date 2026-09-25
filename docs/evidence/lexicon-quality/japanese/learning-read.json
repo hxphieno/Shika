@@ -1,0 +1,17 @@
+{
+  "checks" : [
+    {
+      "detail" : "expected にほん, actual にほん",
+      "label" : "selection frequency survives fresh process",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "mode" : "learning-read",
+  "platform" : "macOS real production engines; not iOS UI or memory validation",
+  "processPeakRSSBytes" : 9781248,
+  "rankingTraining" : false,
+  "results" : [
+
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "checks" : [
+    {
+      "detail" : "日本",
+      "label" : "ja-001 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "東京",
+      "label" : "ja-002 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "大阪",
+      "label" : "ja-003 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "京都",
+      "label" : "ja-004 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "今日",
+      "label" : "ja-005 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "明日",
+      "label" : "ja-006 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "昨日",
+      "label" : "ja-007 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "天気",
+      "label" : "ja-008 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "時間",
+      "label" : "ja-009 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "仕事",
+      "label" : "ja-010 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "学校",
+      "label" : "ja-011 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "先生",
+      "label" : "ja-012 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "学生",
+      "label" : "ja-013 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "勉強",
+      "label" : "ja-014 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "電車",
+      "label" : "ja-015 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "駅",
+      "label" : "ja-016 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "空港",
+      "label" : "ja-017 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "旅行",
+      "label" : "ja-018 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "電話",
+      "label" : "ja-019 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "写真",
+      "label" : "ja-020 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "音楽",
+      "label" : "ja-021 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "映画",
+      "label" : "ja-022 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "友達",
+      "label" : "ja-023 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "家族",
+      "label" : "ja-024 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "名前",
+      "label" : "ja-025 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "入力",
+      "label" : "ja-026 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "変換",
+      "label" : "ja-027 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "辞書",
+      "label" : "ja-028 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "候補",
+      "label" : "ja-029 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "開発",
+      "label" : "ja-030 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "人工知能",
+      "label" : "ja-031 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "自然言語",
+      "label" : "ja-032 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "機械学習",
+      "label" : "ja-033 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "情報処理",
+      "label" : "ja-034 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "お疲れ様です",
+      "label" : "ja-035 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "ありがとうございます",
+      "label" : "ja-036 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "よろしくお願いします",
+      "label" : "ja-037 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "今日はいい天気です",
+      "label" : "ja-038 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "明日また会いましょう",
+      "label" : "ja-039 target commits exactly and clears",
+      "passed" : true
+    },
+    {
+      "detail" : "日本語を勉強しています",
+      "label" : "ja-040 target commits exactly and clears",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "mode" : "commit",
+  "platform" : "macOS real production engines; not iOS UI or memory validation",
+  "processPeakRSSBytes" : 36765696,
+  "rankingTraining" : false,
+  "results" : [
+
+  ]
+}

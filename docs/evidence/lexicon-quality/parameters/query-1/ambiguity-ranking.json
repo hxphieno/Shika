@@ -1,0 +1,3568 @@
+{
+  "caseCount" : 48,
+  "correctionEnabled" : true,
+  "mode" : "ranking",
+  "platform" : "macOS native librime (not iOS extension memory\/latency)",
+  "rankingTraining" : false,
+  "results" : [
+    {
+      "candidates" : [
+        {
+          "comment" : "xian",
+          "index" : 0,
+          "text" : "先"
+        },
+        {
+          "comment" : "xian",
+          "index" : 1,
+          "text" : "现"
+        },
+        {
+          "comment" : "xian",
+          "index" : 2,
+          "text" : "线"
+        },
+        {
+          "comment" : "xian",
+          "index" : 3,
+          "text" : "显"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 4,
+          "text" : "西安"
+        },
+        {
+          "comment" : "xian",
+          "index" : 5,
+          "text" : "险"
+        },
+        {
+          "comment" : "xian",
+          "index" : 6,
+          "text" : "限"
+        },
+        {
+          "comment" : "xian",
+          "index" : 7,
+          "text" : "县"
+        },
+        {
+          "comment" : "纠错 · xi ai",
+          "index" : -1,
+          "text" : "喜爱"
+        },
+        {
+          "comment" : "纠错 · xi nan",
+          "index" : -2,
+          "text" : "西南"
+        }
+      ],
+      "id" : "ambiguity-001",
+      "input" : "xian",
+      "keyDurationsMS" : [
+        0.31816699999999998,
+        0.16250000000000001,
+        1.6045830000000001,
+        0.90654100000000004
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "xian",
+      "processPeakRSSBytes" : 20463616,
+      "rank" : 5,
+      "remainingInput" : "xian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "xi",
+        "an"
+      ],
+      "target" : "西安",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "xian",
+          "index" : 0,
+          "text" : "先"
+        },
+        {
+          "comment" : "xian",
+          "index" : 1,
+          "text" : "现"
+        },
+        {
+          "comment" : "xian",
+          "index" : 2,
+          "text" : "线"
+        },
+        {
+          "comment" : "xian",
+          "index" : 3,
+          "text" : "显"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 4,
+          "text" : "西安"
+        },
+        {
+          "comment" : "xian",
+          "index" : 5,
+          "text" : "险"
+        },
+        {
+          "comment" : "xian",
+          "index" : 6,
+          "text" : "限"
+        },
+        {
+          "comment" : "xian",
+          "index" : 7,
+          "text" : "县"
+        },
+        {
+          "comment" : "纠错 · xi ai",
+          "index" : -1,
+          "text" : "喜爱"
+        },
+        {
+          "comment" : "纠错 · xi nan",
+          "index" : -2,
+          "text" : "西南"
+        }
+      ],
+      "id" : "ambiguity-002",
+      "input" : "xian",
+      "keyDurationsMS" : [
+        0.106708,
+        0.120958,
+        0.59441699999999997,
+        0.575959
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "xian",
+      "processPeakRSSBytes" : 20545536,
+      "rank" : 1,
+      "remainingInput" : "xian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "xian"
+      ],
+      "target" : "先",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "fang an",
+          "index" : 0,
+          "text" : "方案"
+        },
+        {
+          "comment" : "fan gan",
+          "index" : 1,
+          "text" : "反感"
+        },
+        {
+          "comment" : "fa ng an",
+          "index" : -100,
+          "text" : "发嗯按"
+        },
+        {
+          "comment" : "纠错 · fang yan",
+          "index" : -1,
+          "text" : "方言"
+        },
+        {
+          "comment" : "纠错 · fan guan",
+          "index" : -2,
+          "text" : "饭馆"
+        },
+        {
+          "comment" : "纠错 · fan tan",
+          "index" : -3,
+          "text" : "反弹"
+        },
+        {
+          "comment" : "fang",
+          "index" : 2,
+          "text" : "放"
+        },
+        {
+          "comment" : "fang",
+          "index" : 3,
+          "text" : "方"
+        },
+        {
+          "comment" : "fang",
+          "index" : 4,
+          "text" : "房"
+        },
+        {
+          "comment" : "fang",
+          "index" : 5,
+          "text" : "防"
+        }
+      ],
+      "id" : "ambiguity-003",
+      "input" : "fangan",
+      "keyDurationsMS" : [
+        0.25058399999999997,
+        0.23508399999999999,
+        1.014667,
+        1.042959,
+        1.054541,
+        0.91962500000000003
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "fang an",
+      "processPeakRSSBytes" : 23756800,
+      "rank" : 1,
+      "remainingInput" : "fangan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "fang",
+        "an"
+      ],
+      "target" : "方案",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "fang an",
+          "index" : 0,
+          "text" : "方案"
+        },
+        {
+          "comment" : "fan gan",
+          "index" : 1,
+          "text" : "反感"
+        },
+        {
+          "comment" : "fa ng an",
+          "index" : -100,
+          "text" : "发嗯按"
+        },
+        {
+          "comment" : "纠错 · fang yan",
+          "index" : -1,
+          "text" : "方言"
+        },
+        {
+          "comment" : "纠错 · fan guan",
+          "index" : -2,
+          "text" : "饭馆"
+        },
+        {
+          "comment" : "纠错 · fan tan",
+          "index" : -3,
+          "text" : "反弹"
+        },
+        {
+          "comment" : "fang",
+          "index" : 2,
+          "text" : "放"
+        },
+        {
+          "comment" : "fang",
+          "index" : 3,
+          "text" : "方"
+        },
+        {
+          "comment" : "fang",
+          "index" : 4,
+          "text" : "房"
+        },
+        {
+          "comment" : "fang",
+          "index" : 5,
+          "text" : "防"
+        }
+      ],
+      "id" : "ambiguity-004",
+      "input" : "fangan",
+      "keyDurationsMS" : [
+        0.10337499999999999,
+        0.124125,
+        0.484375,
+        0.654833,
+        0.76204099999999997,
+        0.80191699999999999
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "fang an",
+      "processPeakRSSBytes" : 23789568,
+      "rank" : 2,
+      "remainingInput" : "fangan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "fan",
+        "gan"
+      ],
+      "target" : "反感",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "dang an",
+          "index" : 0,
+          "text" : "档案"
+        },
+        {
+          "comment" : "dan gan",
+          "index" : 1,
+          "text" : "单干"
+        },
+        {
+          "comment" : "dan gan",
+          "index" : 2,
+          "text" : "胆敢"
+        },
+        {
+          "comment" : "dan gan",
+          "index" : 3,
+          "text" : "单杆"
+        },
+        {
+          "comment" : "da ng an",
+          "index" : -100,
+          "text" : "打嗯按"
+        },
+        {
+          "comment" : "纠错 · dang ran",
+          "index" : -1,
+          "text" : "当然"
+        },
+        {
+          "comment" : "纠错 · fang an",
+          "index" : -2,
+          "text" : "方案"
+        },
+        {
+          "comment" : "纠错 · dan fan",
+          "index" : -3,
+          "text" : "单反"
+        },
+        {
+          "comment" : "dang a",
+          "index" : 4,
+          "text" : "党啊"
+        },
+        {
+          "comment" : "dang",
+          "index" : 5,
+          "text" : "当"
+        }
+      ],
+      "id" : "ambiguity-005",
+      "input" : "dangan",
+      "keyDurationsMS" : [
+        0.144709,
+        0.121625,
+        0.77233300000000005,
+        0.79791699999999999,
+        0.75358400000000003,
+        0.813083
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "dang an",
+      "processPeakRSSBytes" : 26476544,
+      "rank" : 1,
+      "remainingInput" : "dangan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "dang",
+        "an"
+      ],
+      "target" : "档案",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "dang an",
+          "index" : 0,
+          "text" : "档案"
+        },
+        {
+          "comment" : "dan gan",
+          "index" : 1,
+          "text" : "单干"
+        },
+        {
+          "comment" : "dan gan",
+          "index" : 2,
+          "text" : "胆敢"
+        },
+        {
+          "comment" : "dan gan",
+          "index" : 3,
+          "text" : "单杆"
+        },
+        {
+          "comment" : "da ng an",
+          "index" : -100,
+          "text" : "打嗯按"
+        },
+        {
+          "comment" : "纠错 · dang ran",
+          "index" : -1,
+          "text" : "当然"
+        },
+        {
+          "comment" : "纠错 · fang an",
+          "index" : -2,
+          "text" : "方案"
+        },
+        {
+          "comment" : "纠错 · dan fan",
+          "index" : -3,
+          "text" : "单反"
+        },
+        {
+          "comment" : "dang a",
+          "index" : 4,
+          "text" : "党啊"
+        },
+        {
+          "comment" : "dang",
+          "index" : 5,
+          "text" : "当"
+        }
+      ],
+      "id" : "ambiguity-006",
+      "input" : "dangan",
+      "keyDurationsMS" : [
+        0.097708000000000003,
+        0.105541,
+        0.41299999999999998,
+        0.58291599999999999,
+        0.61683299999999996,
+        0.6825
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "dang an",
+      "processPeakRSSBytes" : 26509312,
+      "rank" : 3,
+      "remainingInput" : "dangan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "dan",
+        "gan"
+      ],
+      "target" : "胆敢",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "piao",
+          "index" : 0,
+          "text" : "票"
+        },
+        {
+          "comment" : "piao",
+          "index" : 1,
+          "text" : "飘"
+        },
+        {
+          "comment" : "piao",
+          "index" : 2,
+          "text" : "漂"
+        },
+        {
+          "comment" : "piao",
+          "index" : 3,
+          "text" : "朴"
+        },
+        {
+          "comment" : "piao",
+          "index" : 4,
+          "text" : "嫖"
+        },
+        {
+          "comment" : "pi ao",
+          "index" : -100,
+          "text" : "皮袄"
+        },
+        {
+          "comment" : "piao",
+          "index" : 5,
+          "text" : "瓢"
+        },
+        {
+          "comment" : "piao",
+          "index" : 6,
+          "text" : "瞟"
+        },
+        {
+          "comment" : "piao",
+          "index" : 7,
+          "text" : "缥"
+        },
+        {
+          "comment" : "纠错 · pi lao",
+          "index" : -1,
+          "text" : "疲劳"
+        }
+      ],
+      "id" : "ambiguity-007",
+      "input" : "piao",
+      "keyDurationsMS" : [
+        0.13383400000000001,
+        0.10345799999999999,
+        0.60662499999999997,
+        0.60624999999999996
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "piao",
+      "processPeakRSSBytes" : 29179904,
+      "rank" : 6,
+      "remainingInput" : "piao",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "pi",
+        "ao"
+      ],
+      "target" : "皮袄",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "piao",
+          "index" : 0,
+          "text" : "票"
+        },
+        {
+          "comment" : "piao",
+          "index" : 1,
+          "text" : "飘"
+        },
+        {
+          "comment" : "piao",
+          "index" : 2,
+          "text" : "漂"
+        },
+        {
+          "comment" : "piao",
+          "index" : 3,
+          "text" : "朴"
+        },
+        {
+          "comment" : "piao",
+          "index" : 4,
+          "text" : "嫖"
+        },
+        {
+          "comment" : "pi ao",
+          "index" : -100,
+          "text" : "皮袄"
+        },
+        {
+          "comment" : "piao",
+          "index" : 5,
+          "text" : "瓢"
+        },
+        {
+          "comment" : "piao",
+          "index" : 6,
+          "text" : "瞟"
+        },
+        {
+          "comment" : "piao",
+          "index" : 7,
+          "text" : "缥"
+        },
+        {
+          "comment" : "纠错 · pi lao",
+          "index" : -1,
+          "text" : "疲劳"
+        }
+      ],
+      "id" : "ambiguity-008",
+      "input" : "piao",
+      "keyDurationsMS" : [
+        0.085458000000000006,
+        0.10154100000000001,
+        0.37245800000000001,
+        0.48649999999999999
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "piao",
+      "processPeakRSSBytes" : 29196288,
+      "rank" : 2,
+      "remainingInput" : "piao",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "piao"
+      ],
+      "target" : "飘",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "jiang",
+          "index" : 0,
+          "text" : "将"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 1,
+          "text" : "江"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 2,
+          "text" : "讲"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 3,
+          "text" : "降"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 4,
+          "text" : "奖"
+        },
+        {
+          "comment" : "jia ng",
+          "index" : -100,
+          "text" : "加嗯"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 5,
+          "text" : "酱"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 6,
+          "text" : "姜"
+        },
+        {
+          "comment" : "ji ang",
+          "index" : 7,
+          "text" : "激昂"
+        },
+        {
+          "comment" : "纠错 · jian gu",
+          "index" : -1,
+          "text" : "兼顾"
+        }
+      ],
+      "id" : "ambiguity-009",
+      "input" : "jiang",
+      "keyDurationsMS" : [
+        0.106917,
+        0.099375000000000005,
+        0.64583299999999999,
+        0.64408299999999996,
+        0.69350000000000001
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "jiang",
+      "processPeakRSSBytes" : 31965184,
+      "rank" : 9,
+      "remainingInput" : "jiang",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "ji",
+        "ang"
+      ],
+      "target" : "激昂",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "jiang",
+          "index" : 0,
+          "text" : "将"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 1,
+          "text" : "江"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 2,
+          "text" : "讲"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 3,
+          "text" : "降"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 4,
+          "text" : "奖"
+        },
+        {
+          "comment" : "jia ng",
+          "index" : -100,
+          "text" : "加嗯"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 5,
+          "text" : "酱"
+        },
+        {
+          "comment" : "jiang",
+          "index" : 6,
+          "text" : "姜"
+        },
+        {
+          "comment" : "ji ang",
+          "index" : 7,
+          "text" : "激昂"
+        },
+        {
+          "comment" : "纠错 · jian gu",
+          "index" : -1,
+          "text" : "兼顾"
+        }
+      ],
+      "id" : "ambiguity-010",
+      "input" : "jiang",
+      "keyDurationsMS" : [
+        0.34141700000000003,
+        0.232541,
+        0.91191599999999995,
+        0.69312499999999999,
+        0.83166600000000002
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "jiang",
+      "processPeakRSSBytes" : 31997952,
+      "rank" : 1,
+      "remainingInput" : "jiang",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "jiang"
+      ],
+      "target" : "将",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "qie",
+          "index" : 0,
+          "text" : "且"
+        },
+        {
+          "comment" : "qie",
+          "index" : 1,
+          "text" : "切"
+        },
+        {
+          "comment" : "qi e",
+          "index" : 2,
+          "text" : "企鹅"
+        },
+        {
+          "comment" : "qie",
+          "index" : 3,
+          "text" : "茄"
+        },
+        {
+          "comment" : "qie",
+          "index" : 4,
+          "text" : "窃"
+        },
+        {
+          "comment" : "qie",
+          "index" : 5,
+          "text" : "惬"
+        },
+        {
+          "comment" : "qie",
+          "index" : 6,
+          "text" : "怯"
+        },
+        {
+          "comment" : "qie",
+          "index" : 7,
+          "text" : "妾"
+        },
+        {
+          "comment" : "纠错 · qi ye",
+          "index" : -1,
+          "text" : "企业"
+        },
+        {
+          "comment" : "纠错 · qi le",
+          "index" : -2,
+          "text" : "起了"
+        }
+      ],
+      "id" : "ambiguity-011",
+      "input" : "qie",
+      "keyDurationsMS" : [
+        0.14916699999999999,
+        0.248667,
+        0.67591699999999999
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "qie",
+      "processPeakRSSBytes" : 33193984,
+      "rank" : 3,
+      "remainingInput" : "qie",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "qi",
+        "e"
+      ],
+      "target" : "企鹅",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "qie",
+          "index" : 0,
+          "text" : "且"
+        },
+        {
+          "comment" : "qie",
+          "index" : 1,
+          "text" : "切"
+        },
+        {
+          "comment" : "qi e",
+          "index" : 2,
+          "text" : "企鹅"
+        },
+        {
+          "comment" : "qie",
+          "index" : 3,
+          "text" : "茄"
+        },
+        {
+          "comment" : "qie",
+          "index" : 4,
+          "text" : "窃"
+        },
+        {
+          "comment" : "qie",
+          "index" : 5,
+          "text" : "惬"
+        },
+        {
+          "comment" : "qie",
+          "index" : 6,
+          "text" : "怯"
+        },
+        {
+          "comment" : "qie",
+          "index" : 7,
+          "text" : "妾"
+        },
+        {
+          "comment" : "纠错 · qi ye",
+          "index" : -1,
+          "text" : "企业"
+        },
+        {
+          "comment" : "纠错 · qi le",
+          "index" : -2,
+          "text" : "起了"
+        }
+      ],
+      "id" : "ambiguity-012",
+      "input" : "qie",
+      "keyDurationsMS" : [
+        0.085999999999999993,
+        0.10158300000000001,
+        0.40066600000000002
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "qie",
+      "processPeakRSSBytes" : 33193984,
+      "rank" : 2,
+      "remainingInput" : "qie",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "qie"
+      ],
+      "target" : "切",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "jie",
+          "index" : 0,
+          "text" : "解"
+        },
+        {
+          "comment" : "ji e",
+          "index" : 1,
+          "text" : "饥饿"
+        },
+        {
+          "comment" : "jie",
+          "index" : 2,
+          "text" : "接"
+        },
+        {
+          "comment" : "jie",
+          "index" : 3,
+          "text" : "结"
+        },
+        {
+          "comment" : "jie",
+          "index" : 4,
+          "text" : "姐"
+        },
+        {
+          "comment" : "jie",
+          "index" : 5,
+          "text" : "节"
+        },
+        {
+          "comment" : "jie",
+          "index" : 6,
+          "text" : "界"
+        },
+        {
+          "comment" : "jie",
+          "index" : 7,
+          "text" : "届"
+        },
+        {
+          "comment" : "纠错 · ji ge",
+          "index" : -1,
+          "text" : "几个"
+        },
+        {
+          "comment" : "纠错 · ji ke",
+          "index" : -2,
+          "text" : "即可"
+        }
+      ],
+      "id" : "extended-01-1",
+      "input" : "jie",
+      "keyDurationsMS" : [
+        0.083333000000000004,
+        0.099500000000000005,
+        0.51554199999999994
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "jie",
+      "processPeakRSSBytes" : 33292288,
+      "rank" : 2,
+      "remainingInput" : "jie",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "ji",
+        "e"
+      ],
+      "target" : "饥饿",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "jie",
+          "index" : 0,
+          "text" : "解"
+        },
+        {
+          "comment" : "ji e",
+          "index" : 1,
+          "text" : "饥饿"
+        },
+        {
+          "comment" : "jie",
+          "index" : 2,
+          "text" : "接"
+        },
+        {
+          "comment" : "jie",
+          "index" : 3,
+          "text" : "结"
+        },
+        {
+          "comment" : "jie",
+          "index" : 4,
+          "text" : "姐"
+        },
+        {
+          "comment" : "jie",
+          "index" : 5,
+          "text" : "节"
+        },
+        {
+          "comment" : "jie",
+          "index" : 6,
+          "text" : "界"
+        },
+        {
+          "comment" : "jie",
+          "index" : 7,
+          "text" : "届"
+        },
+        {
+          "comment" : "纠错 · ji ge",
+          "index" : -1,
+          "text" : "几个"
+        },
+        {
+          "comment" : "纠错 · ji ke",
+          "index" : -2,
+          "text" : "即可"
+        }
+      ],
+      "id" : "extended-01-2",
+      "input" : "jie",
+      "keyDurationsMS" : [
+        0.093124999999999999,
+        0.11479200000000001,
+        0.44416699999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "jie",
+      "processPeakRSSBytes" : 33292288,
+      "rank" : 3,
+      "remainingInput" : "jie",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "jie"
+      ],
+      "target" : "接",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "jian",
+          "index" : 0,
+          "text" : "见"
+        },
+        {
+          "comment" : "jian",
+          "index" : 1,
+          "text" : "间"
+        },
+        {
+          "comment" : "jian",
+          "index" : 2,
+          "text" : "建"
+        },
+        {
+          "comment" : "jian",
+          "index" : 3,
+          "text" : "件"
+        },
+        {
+          "comment" : "jian",
+          "index" : 4,
+          "text" : "简"
+        },
+        {
+          "comment" : "ji an",
+          "index" : -100,
+          "text" : "即按"
+        },
+        {
+          "comment" : "jian",
+          "index" : 5,
+          "text" : "健"
+        },
+        {
+          "comment" : "jian",
+          "index" : 6,
+          "text" : "键"
+        },
+        {
+          "comment" : "jian",
+          "index" : 7,
+          "text" : "减"
+        },
+        {
+          "comment" : "纠错 · ji ran",
+          "index" : -1,
+          "text" : "既然"
+        }
+      ],
+      "id" : "extended-02-1",
+      "input" : "jian",
+      "keyDurationsMS" : [
+        0.092957999999999999,
+        0.113541,
+        0.91412499999999997,
+        0.85979099999999997
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "jian",
+      "processPeakRSSBytes" : 33308672,
+      "rank" : 0,
+      "remainingInput" : "jian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "ji",
+        "an"
+      ],
+      "target" : "吉安",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "jian",
+          "index" : 0,
+          "text" : "见"
+        },
+        {
+          "comment" : "jian",
+          "index" : 1,
+          "text" : "间"
+        },
+        {
+          "comment" : "jian",
+          "index" : 2,
+          "text" : "建"
+        },
+        {
+          "comment" : "jian",
+          "index" : 3,
+          "text" : "件"
+        },
+        {
+          "comment" : "jian",
+          "index" : 4,
+          "text" : "简"
+        },
+        {
+          "comment" : "ji an",
+          "index" : -100,
+          "text" : "即按"
+        },
+        {
+          "comment" : "jian",
+          "index" : 5,
+          "text" : "健"
+        },
+        {
+          "comment" : "jian",
+          "index" : 6,
+          "text" : "键"
+        },
+        {
+          "comment" : "jian",
+          "index" : 7,
+          "text" : "减"
+        },
+        {
+          "comment" : "纠错 · ji ran",
+          "index" : -1,
+          "text" : "既然"
+        }
+      ],
+      "id" : "extended-02-2",
+      "input" : "jian",
+      "keyDurationsMS" : [
+        0.11466700000000001,
+        0.11683399999999999,
+        0.62383299999999997,
+        0.65933399999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "jian",
+      "processPeakRSSBytes" : 33325056,
+      "rank" : 1,
+      "remainingInput" : "jian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "jian"
+      ],
+      "target" : "见",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "qian",
+          "index" : 0,
+          "text" : "前"
+        },
+        {
+          "comment" : "qian",
+          "index" : 1,
+          "text" : "千"
+        },
+        {
+          "comment" : "qian",
+          "index" : 2,
+          "text" : "仟"
+        },
+        {
+          "comment" : "qian",
+          "index" : 3,
+          "text" : "欠"
+        },
+        {
+          "comment" : "qian",
+          "index" : 4,
+          "text" : "钱"
+        },
+        {
+          "comment" : "qi an",
+          "index" : -100,
+          "text" : "奇案"
+        },
+        {
+          "comment" : "qian",
+          "index" : 5,
+          "text" : "签"
+        },
+        {
+          "comment" : "qian",
+          "index" : 6,
+          "text" : "嵌"
+        },
+        {
+          "comment" : "qian",
+          "index" : 7,
+          "text" : "铅"
+        },
+        {
+          "comment" : "纠错 · qi kan",
+          "index" : -1,
+          "text" : "期刊"
+        }
+      ],
+      "id" : "extended-03-1",
+      "input" : "qian",
+      "keyDurationsMS" : [
+        0.098750000000000004,
+        0.137625,
+        0.64433300000000004,
+        0.74333300000000002
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "qian",
+      "processPeakRSSBytes" : 33488896,
+      "rank" : 6,
+      "remainingInput" : "qian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "qi",
+        "an"
+      ],
+      "target" : "奇案",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "qian",
+          "index" : 0,
+          "text" : "前"
+        },
+        {
+          "comment" : "qian",
+          "index" : 1,
+          "text" : "千"
+        },
+        {
+          "comment" : "qian",
+          "index" : 2,
+          "text" : "仟"
+        },
+        {
+          "comment" : "qian",
+          "index" : 3,
+          "text" : "欠"
+        },
+        {
+          "comment" : "qian",
+          "index" : 4,
+          "text" : "钱"
+        },
+        {
+          "comment" : "qi an",
+          "index" : -100,
+          "text" : "奇案"
+        },
+        {
+          "comment" : "qian",
+          "index" : 5,
+          "text" : "签"
+        },
+        {
+          "comment" : "qian",
+          "index" : 6,
+          "text" : "嵌"
+        },
+        {
+          "comment" : "qian",
+          "index" : 7,
+          "text" : "铅"
+        },
+        {
+          "comment" : "纠错 · qi kan",
+          "index" : -1,
+          "text" : "期刊"
+        }
+      ],
+      "id" : "extended-03-2",
+      "input" : "qian",
+      "keyDurationsMS" : [
+        0.104708,
+        0.12862499999999999,
+        0.60004199999999996,
+        0.85754200000000003
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "qian",
+      "processPeakRSSBytes" : 33505280,
+      "rank" : 5,
+      "remainingInput" : "qian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "qian"
+      ],
+      "target" : "钱",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "xiao",
+          "index" : 0,
+          "text" : "小"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 1,
+          "text" : "笑"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 2,
+          "text" : "效"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 3,
+          "text" : "消"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 4,
+          "text" : "校"
+        },
+        {
+          "comment" : "xia o",
+          "index" : -100,
+          "text" : "下哦"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 5,
+          "text" : "销"
+        },
+        {
+          "comment" : "xi ao",
+          "index" : 6,
+          "text" : "西澳"
+        },
+        {
+          "comment" : "xi ao",
+          "index" : 7,
+          "text" : "西奥"
+        },
+        {
+          "comment" : "纠错 · xi bao",
+          "index" : -1,
+          "text" : "细胞"
+        }
+      ],
+      "id" : "extended-04-1",
+      "input" : "xiao",
+      "keyDurationsMS" : [
+        0.10258299999999999,
+        0.135292,
+        0.85012500000000002,
+        0.75308399999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "xiao",
+      "processPeakRSSBytes" : 33734656,
+      "rank" : 8,
+      "remainingInput" : "xiao",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "xi",
+        "ao"
+      ],
+      "target" : "西澳",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "xiao",
+          "index" : 0,
+          "text" : "小"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 1,
+          "text" : "笑"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 2,
+          "text" : "效"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 3,
+          "text" : "消"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 4,
+          "text" : "校"
+        },
+        {
+          "comment" : "xia o",
+          "index" : -100,
+          "text" : "下哦"
+        },
+        {
+          "comment" : "xiao",
+          "index" : 5,
+          "text" : "销"
+        },
+        {
+          "comment" : "xi ao",
+          "index" : 6,
+          "text" : "西澳"
+        },
+        {
+          "comment" : "xi ao",
+          "index" : 7,
+          "text" : "西奥"
+        },
+        {
+          "comment" : "纠错 · xi bao",
+          "index" : -1,
+          "text" : "细胞"
+        }
+      ],
+      "id" : "extended-04-2",
+      "input" : "xiao",
+      "keyDurationsMS" : [
+        0.10104200000000001,
+        0.11924999999999999,
+        0.54900000000000004,
+        0.63166699999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "xiao",
+      "processPeakRSSBytes" : 33734656,
+      "rank" : 1,
+      "remainingInput" : "xiao",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "xiao"
+      ],
+      "target" : "小",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "yuan",
+          "index" : 0,
+          "text" : "原"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 1,
+          "text" : "元"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 2,
+          "text" : "缘"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 3,
+          "text" : "员"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 4,
+          "text" : "袁"
+        },
+        {
+          "comment" : "yu an",
+          "index" : -100,
+          "text" : "预案"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 5,
+          "text" : "院"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 6,
+          "text" : "源"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 7,
+          "text" : "远"
+        },
+        {
+          "comment" : "纠错 · yu yan",
+          "index" : -1,
+          "text" : "语言"
+        }
+      ],
+      "id" : "extended-05-1",
+      "input" : "yuan",
+      "keyDurationsMS" : [
+        0.136542,
+        0.55000000000000004,
+        1.41675,
+        0.82645800000000003
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "yuan",
+      "processPeakRSSBytes" : 34897920,
+      "rank" : 6,
+      "remainingInput" : "yuan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "yu",
+        "an"
+      ],
+      "target" : "预案",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "yuan",
+          "index" : 0,
+          "text" : "原"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 1,
+          "text" : "元"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 2,
+          "text" : "缘"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 3,
+          "text" : "员"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 4,
+          "text" : "袁"
+        },
+        {
+          "comment" : "yu an",
+          "index" : -100,
+          "text" : "预案"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 5,
+          "text" : "院"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 6,
+          "text" : "源"
+        },
+        {
+          "comment" : "yuan",
+          "index" : 7,
+          "text" : "远"
+        },
+        {
+          "comment" : "纠错 · yu yan",
+          "index" : -1,
+          "text" : "语言"
+        }
+      ],
+      "id" : "extended-05-2",
+      "input" : "yuan",
+      "keyDurationsMS" : [
+        0.10062500000000001,
+        0.119542,
+        0.44045899999999999,
+        0.60254099999999999
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "yuan",
+      "processPeakRSSBytes" : 34897920,
+      "rank" : 2,
+      "remainingInput" : "yuan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "yuan"
+      ],
+      "target" : "元",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "yue",
+          "index" : 0,
+          "text" : "月"
+        },
+        {
+          "comment" : "yue",
+          "index" : 1,
+          "text" : "越"
+        },
+        {
+          "comment" : "yue",
+          "index" : 2,
+          "text" : "约"
+        },
+        {
+          "comment" : "yu e",
+          "index" : 3,
+          "text" : "余额"
+        },
+        {
+          "comment" : "yue",
+          "index" : 4,
+          "text" : "乐"
+        },
+        {
+          "comment" : "yue",
+          "index" : 5,
+          "text" : "阅"
+        },
+        {
+          "comment" : "yue",
+          "index" : 6,
+          "text" : "跃"
+        },
+        {
+          "comment" : "yue",
+          "index" : 7,
+          "text" : "悦"
+        },
+        {
+          "comment" : "纠错 · yu ce",
+          "index" : -1,
+          "text" : "预测"
+        },
+        {
+          "comment" : "纠错 · yu le",
+          "index" : -2,
+          "text" : "娱乐"
+        }
+      ],
+      "id" : "extended-06-1",
+      "input" : "yue",
+      "keyDurationsMS" : [
+        0.099583000000000005,
+        0.11650000000000001,
+        0.55712499999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "yue",
+      "processPeakRSSBytes" : 35422208,
+      "rank" : 4,
+      "remainingInput" : "yue",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "yu",
+        "e"
+      ],
+      "target" : "余额",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "yue",
+          "index" : 0,
+          "text" : "月"
+        },
+        {
+          "comment" : "yue",
+          "index" : 1,
+          "text" : "越"
+        },
+        {
+          "comment" : "yue",
+          "index" : 2,
+          "text" : "约"
+        },
+        {
+          "comment" : "yu e",
+          "index" : 3,
+          "text" : "余额"
+        },
+        {
+          "comment" : "yue",
+          "index" : 4,
+          "text" : "乐"
+        },
+        {
+          "comment" : "yue",
+          "index" : 5,
+          "text" : "阅"
+        },
+        {
+          "comment" : "yue",
+          "index" : 6,
+          "text" : "跃"
+        },
+        {
+          "comment" : "yue",
+          "index" : 7,
+          "text" : "悦"
+        },
+        {
+          "comment" : "纠错 · yu ce",
+          "index" : -1,
+          "text" : "预测"
+        },
+        {
+          "comment" : "纠错 · yu le",
+          "index" : -2,
+          "text" : "娱乐"
+        }
+      ],
+      "id" : "extended-06-2",
+      "input" : "yue",
+      "keyDurationsMS" : [
+        0.093167,
+        0.11700000000000001,
+        0.44683299999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "yue",
+      "processPeakRSSBytes" : 35438592,
+      "rank" : 1,
+      "remainingInput" : "yue",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "yue"
+      ],
+      "target" : "月",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "guai",
+          "index" : 0,
+          "text" : "怪"
+        },
+        {
+          "comment" : "guai",
+          "index" : 1,
+          "text" : "拐"
+        },
+        {
+          "comment" : "guai",
+          "index" : 2,
+          "text" : "乖"
+        },
+        {
+          "comment" : "guai",
+          "index" : 3,
+          "text" : "掴"
+        },
+        {
+          "comment" : "gu ai",
+          "index" : 4,
+          "text" : "骨癌"
+        },
+        {
+          "comment" : "guai",
+          "index" : 5,
+          "text" : "夬"
+        },
+        {
+          "comment" : "guai",
+          "index" : 6,
+          "text" : "叏"
+        },
+        {
+          "comment" : "guai",
+          "index" : 7,
+          "text" : "恠"
+        },
+        {
+          "comment" : "纠错 · gu dai",
+          "index" : -1,
+          "text" : "古代"
+        },
+        {
+          "comment" : "纠错 · gu ji",
+          "index" : -2,
+          "text" : "估计"
+        }
+      ],
+      "id" : "extended-07-1",
+      "input" : "guai",
+      "keyDurationsMS" : [
+        0.138708,
+        0.11741600000000001,
+        0.63470800000000005,
+        1.0948329999999999
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "guai",
+      "processPeakRSSBytes" : 36175872,
+      "rank" : 5,
+      "remainingInput" : "guai",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "gu",
+        "ai"
+      ],
+      "target" : "骨癌",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "guai",
+          "index" : 0,
+          "text" : "怪"
+        },
+        {
+          "comment" : "guai",
+          "index" : 1,
+          "text" : "拐"
+        },
+        {
+          "comment" : "guai",
+          "index" : 2,
+          "text" : "乖"
+        },
+        {
+          "comment" : "guai",
+          "index" : 3,
+          "text" : "掴"
+        },
+        {
+          "comment" : "gu ai",
+          "index" : 4,
+          "text" : "骨癌"
+        },
+        {
+          "comment" : "guai",
+          "index" : 5,
+          "text" : "夬"
+        },
+        {
+          "comment" : "guai",
+          "index" : 6,
+          "text" : "叏"
+        },
+        {
+          "comment" : "guai",
+          "index" : 7,
+          "text" : "恠"
+        },
+        {
+          "comment" : "纠错 · gu dai",
+          "index" : -1,
+          "text" : "古代"
+        },
+        {
+          "comment" : "纠错 · gu ji",
+          "index" : -2,
+          "text" : "估计"
+        }
+      ],
+      "id" : "extended-07-2",
+      "input" : "guai",
+      "keyDurationsMS" : [
+        0.122541,
+        0.12512499999999999,
+        1.260791,
+        1.0605830000000001
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "guai",
+      "processPeakRSSBytes" : 36192256,
+      "rank" : 1,
+      "remainingInput" : "guai",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "guai"
+      ],
+      "target" : "怪",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "guan",
+          "index" : 0,
+          "text" : "关"
+        },
+        {
+          "comment" : "guan",
+          "index" : 1,
+          "text" : "管"
+        },
+        {
+          "comment" : "guan",
+          "index" : 2,
+          "text" : "观"
+        },
+        {
+          "comment" : "guan",
+          "index" : 3,
+          "text" : "官"
+        },
+        {
+          "comment" : "guan",
+          "index" : 4,
+          "text" : "馆"
+        },
+        {
+          "comment" : "gu an",
+          "index" : -100,
+          "text" : "固安"
+        },
+        {
+          "comment" : "guan",
+          "index" : 5,
+          "text" : "惯"
+        },
+        {
+          "comment" : "guan",
+          "index" : 6,
+          "text" : "冠"
+        },
+        {
+          "comment" : "guan",
+          "index" : 7,
+          "text" : "灌"
+        },
+        {
+          "comment" : "纠错 · gu ran",
+          "index" : -1,
+          "text" : "固然"
+        }
+      ],
+      "id" : "extended-08-1",
+      "input" : "guan",
+      "keyDurationsMS" : [
+        0.111125,
+        0.119417,
+        0.65033399999999997,
+        0.98904199999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "guan",
+      "processPeakRSSBytes" : 36257792,
+      "rank" : 6,
+      "remainingInput" : "guan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "gu",
+        "an"
+      ],
+      "target" : "固安",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "guan",
+          "index" : 0,
+          "text" : "关"
+        },
+        {
+          "comment" : "guan",
+          "index" : 1,
+          "text" : "管"
+        },
+        {
+          "comment" : "guan",
+          "index" : 2,
+          "text" : "观"
+        },
+        {
+          "comment" : "guan",
+          "index" : 3,
+          "text" : "官"
+        },
+        {
+          "comment" : "guan",
+          "index" : 4,
+          "text" : "馆"
+        },
+        {
+          "comment" : "gu an",
+          "index" : -100,
+          "text" : "固安"
+        },
+        {
+          "comment" : "guan",
+          "index" : 5,
+          "text" : "惯"
+        },
+        {
+          "comment" : "guan",
+          "index" : 6,
+          "text" : "冠"
+        },
+        {
+          "comment" : "guan",
+          "index" : 7,
+          "text" : "灌"
+        },
+        {
+          "comment" : "纠错 · gu ran",
+          "index" : -1,
+          "text" : "固然"
+        }
+      ],
+      "id" : "extended-08-2",
+      "input" : "guan",
+      "keyDurationsMS" : [
+        0.1045,
+        0.12537499999999999,
+        0.58395799999999998,
+        0.66958300000000004
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "guan",
+      "processPeakRSSBytes" : 36257792,
+      "rank" : 1,
+      "remainingInput" : "guan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "guan"
+      ],
+      "target" : "关",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "huan",
+          "index" : 0,
+          "text" : "换"
+        },
+        {
+          "comment" : "huan",
+          "index" : 1,
+          "text" : "还"
+        },
+        {
+          "comment" : "huan",
+          "index" : 2,
+          "text" : "欢"
+        },
+        {
+          "comment" : "huan",
+          "index" : 3,
+          "text" : "环"
+        },
+        {
+          "comment" : "huan",
+          "index" : 4,
+          "text" : "患"
+        },
+        {
+          "comment" : "huan",
+          "index" : 5,
+          "text" : "缓"
+        },
+        {
+          "comment" : "hu an",
+          "index" : 6,
+          "text" : "湖岸"
+        },
+        {
+          "comment" : "huan",
+          "index" : 7,
+          "text" : "幻"
+        },
+        {
+          "comment" : "纠错 · hu ran",
+          "index" : -1,
+          "text" : "忽然"
+        },
+        {
+          "comment" : "纠错 · hu nan",
+          "index" : -2,
+          "text" : "湖南"
+        }
+      ],
+      "id" : "extended-09-1",
+      "input" : "huan",
+      "keyDurationsMS" : [
+        0.13975000000000001,
+        0.119875,
+        0.73412500000000003,
+        0.59966699999999995
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "huan",
+      "processPeakRSSBytes" : 37765120,
+      "rank" : 7,
+      "remainingInput" : "huan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "hu",
+        "an"
+      ],
+      "target" : "湖岸",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "huan",
+          "index" : 0,
+          "text" : "换"
+        },
+        {
+          "comment" : "huan",
+          "index" : 1,
+          "text" : "还"
+        },
+        {
+          "comment" : "huan",
+          "index" : 2,
+          "text" : "欢"
+        },
+        {
+          "comment" : "huan",
+          "index" : 3,
+          "text" : "环"
+        },
+        {
+          "comment" : "huan",
+          "index" : 4,
+          "text" : "患"
+        },
+        {
+          "comment" : "huan",
+          "index" : 5,
+          "text" : "缓"
+        },
+        {
+          "comment" : "hu an",
+          "index" : 6,
+          "text" : "湖岸"
+        },
+        {
+          "comment" : "huan",
+          "index" : 7,
+          "text" : "幻"
+        },
+        {
+          "comment" : "纠错 · hu ran",
+          "index" : -1,
+          "text" : "忽然"
+        },
+        {
+          "comment" : "纠错 · hu nan",
+          "index" : -2,
+          "text" : "湖南"
+        }
+      ],
+      "id" : "extended-09-2",
+      "input" : "huan",
+      "keyDurationsMS" : [
+        0.099083000000000004,
+        0.11841699999999999,
+        0.53770799999999996,
+        0.50775000000000003
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "huan",
+      "processPeakRSSBytes" : 37765120,
+      "rank" : 1,
+      "remainingInput" : "huan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "huan"
+      ],
+      "target" : "换",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "kuai",
+          "index" : 0,
+          "text" : "快"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 1,
+          "text" : "块"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 2,
+          "text" : "会"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 3,
+          "text" : "筷"
+        },
+        {
+          "comment" : "ku ai",
+          "index" : 4,
+          "text" : "酷爱"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 5,
+          "text" : "脍"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 6,
+          "text" : "哙"
+        },
+        {
+          "comment" : "ku ai",
+          "index" : 7,
+          "text" : "苦艾"
+        },
+        {
+          "comment" : "纠错 · ke ai",
+          "index" : -1,
+          "text" : "可爱"
+        },
+        {
+          "comment" : "纠错 · ku qi",
+          "index" : -2,
+          "text" : "哭泣"
+        }
+      ],
+      "id" : "extended-10-1",
+      "input" : "kuai",
+      "keyDurationsMS" : [
+        0.221916,
+        0.42870799999999998,
+        0.62329199999999996,
+        0.53545799999999999
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "kuai",
+      "processPeakRSSBytes" : 38191104,
+      "rank" : 5,
+      "remainingInput" : "kuai",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "ku",
+        "ai"
+      ],
+      "target" : "酷爱",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "kuai",
+          "index" : 0,
+          "text" : "快"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 1,
+          "text" : "块"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 2,
+          "text" : "会"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 3,
+          "text" : "筷"
+        },
+        {
+          "comment" : "ku ai",
+          "index" : 4,
+          "text" : "酷爱"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 5,
+          "text" : "脍"
+        },
+        {
+          "comment" : "kuai",
+          "index" : 6,
+          "text" : "哙"
+        },
+        {
+          "comment" : "ku ai",
+          "index" : 7,
+          "text" : "苦艾"
+        },
+        {
+          "comment" : "纠错 · ke ai",
+          "index" : -1,
+          "text" : "可爱"
+        },
+        {
+          "comment" : "纠错 · ku qi",
+          "index" : -2,
+          "text" : "哭泣"
+        }
+      ],
+      "id" : "extended-10-2",
+      "input" : "kuai",
+      "keyDurationsMS" : [
+        0.10212499999999999,
+        0.11833299999999999,
+        0.44404199999999999,
+        0.51866699999999999
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "kuai",
+      "processPeakRSSBytes" : 38191104,
+      "rank" : 1,
+      "remainingInput" : "kuai",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "kuai"
+      ],
+      "target" : "快",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "tuan",
+          "index" : 0,
+          "text" : "团"
+        },
+        {
+          "comment" : "tu an",
+          "index" : 1,
+          "text" : "图案"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 2,
+          "text" : "湍"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 3,
+          "text" : "抟"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 4,
+          "text" : "疃"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 5,
+          "text" : "團"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 6,
+          "text" : "団"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 7,
+          "text" : "彖"
+        },
+        {
+          "comment" : "纠错 · tu ran",
+          "index" : -1,
+          "text" : "突然"
+        },
+        {
+          "comment" : "纠错 · tian",
+          "index" : -2,
+          "text" : "天"
+        }
+      ],
+      "id" : "extended-11-1",
+      "input" : "tuan",
+      "keyDurationsMS" : [
+        0.14141699999999999,
+        0.120708,
+        0.62024999999999997,
+        0.53987499999999999
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "tuan",
+      "processPeakRSSBytes" : 38748160,
+      "rank" : 2,
+      "remainingInput" : "tuan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "tu",
+        "an"
+      ],
+      "target" : "图案",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "tuan",
+          "index" : 0,
+          "text" : "团"
+        },
+        {
+          "comment" : "tu an",
+          "index" : 1,
+          "text" : "图案"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 2,
+          "text" : "湍"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 3,
+          "text" : "抟"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 4,
+          "text" : "疃"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 5,
+          "text" : "團"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 6,
+          "text" : "団"
+        },
+        {
+          "comment" : "tuan",
+          "index" : 7,
+          "text" : "彖"
+        },
+        {
+          "comment" : "纠错 · tu ran",
+          "index" : -1,
+          "text" : "突然"
+        },
+        {
+          "comment" : "纠错 · tian",
+          "index" : -2,
+          "text" : "天"
+        }
+      ],
+      "id" : "extended-11-2",
+      "input" : "tuan",
+      "keyDurationsMS" : [
+        0.099167000000000005,
+        0.11591700000000001,
+        0.43725000000000003,
+        0.48854199999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "tuan",
+      "processPeakRSSBytes" : 38748160,
+      "rank" : 1,
+      "remainingInput" : "tuan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "tuan"
+      ],
+      "target" : "团",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "lian",
+          "index" : 0,
+          "text" : "连"
+        },
+        {
+          "comment" : "lian",
+          "index" : 1,
+          "text" : "练"
+        },
+        {
+          "comment" : "lian",
+          "index" : 2,
+          "text" : "联"
+        },
+        {
+          "comment" : "lian",
+          "index" : 3,
+          "text" : "脸"
+        },
+        {
+          "comment" : "lian",
+          "index" : 4,
+          "text" : "链"
+        },
+        {
+          "comment" : "lian",
+          "index" : 5,
+          "text" : "恋"
+        },
+        {
+          "comment" : "li an",
+          "index" : 6,
+          "text" : "立案"
+        },
+        {
+          "comment" : "lian",
+          "index" : 7,
+          "text" : "炼"
+        },
+        {
+          "comment" : "纠错 · xian",
+          "index" : -1,
+          "text" : "先"
+        },
+        {
+          "comment" : "纠错 · li na",
+          "index" : -2,
+          "text" : "李娜"
+        }
+      ],
+      "id" : "extended-12-1",
+      "input" : "lian",
+      "keyDurationsMS" : [
+        0.14808299999999999,
+        0.11904099999999999,
+        0.61766699999999997,
+        0.70241699999999996
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "lian",
+      "processPeakRSSBytes" : 39763968,
+      "rank" : 7,
+      "remainingInput" : "lian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "li",
+        "an"
+      ],
+      "target" : "立案",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "lian",
+          "index" : 0,
+          "text" : "连"
+        },
+        {
+          "comment" : "lian",
+          "index" : 1,
+          "text" : "练"
+        },
+        {
+          "comment" : "lian",
+          "index" : 2,
+          "text" : "联"
+        },
+        {
+          "comment" : "lian",
+          "index" : 3,
+          "text" : "脸"
+        },
+        {
+          "comment" : "lian",
+          "index" : 4,
+          "text" : "链"
+        },
+        {
+          "comment" : "lian",
+          "index" : 5,
+          "text" : "恋"
+        },
+        {
+          "comment" : "li an",
+          "index" : 6,
+          "text" : "立案"
+        },
+        {
+          "comment" : "lian",
+          "index" : 7,
+          "text" : "炼"
+        },
+        {
+          "comment" : "纠错 · xian",
+          "index" : -1,
+          "text" : "先"
+        },
+        {
+          "comment" : "纠错 · li na",
+          "index" : -2,
+          "text" : "李娜"
+        }
+      ],
+      "id" : "extended-12-2",
+      "input" : "lian",
+      "keyDurationsMS" : [
+        0.173459,
+        0.12525,
+        0.559334,
+        0.53379100000000002
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "lian",
+      "processPeakRSSBytes" : 39780352,
+      "rank" : 1,
+      "remainingInput" : "lian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "lian"
+      ],
+      "target" : "连",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "bian",
+          "index" : 0,
+          "text" : "变"
+        },
+        {
+          "comment" : "bian",
+          "index" : 1,
+          "text" : "边"
+        },
+        {
+          "comment" : "bian",
+          "index" : 2,
+          "text" : "便"
+        },
+        {
+          "comment" : "bian",
+          "index" : 3,
+          "text" : "编"
+        },
+        {
+          "comment" : "bian",
+          "index" : 4,
+          "text" : "遍"
+        },
+        {
+          "comment" : "bi an",
+          "index" : 5,
+          "text" : "彼岸"
+        },
+        {
+          "comment" : "bian",
+          "index" : 6,
+          "text" : "辨"
+        },
+        {
+          "comment" : "bian",
+          "index" : 7,
+          "text" : "辩"
+        },
+        {
+          "comment" : "纠错 · bi ran",
+          "index" : -1,
+          "text" : "必然"
+        },
+        {
+          "comment" : "纠错 · bu an",
+          "index" : -2,
+          "text" : "不安"
+        }
+      ],
+      "id" : "extended-13-1",
+      "input" : "bian",
+      "keyDurationsMS" : [
+        0.13241700000000001,
+        0.11774999999999999,
+        0.49825000000000003,
+        0.60020799999999996
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "bian",
+      "processPeakRSSBytes" : 40386560,
+      "rank" : 6,
+      "remainingInput" : "bian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "bi",
+        "an"
+      ],
+      "target" : "彼岸",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "bian",
+          "index" : 0,
+          "text" : "变"
+        },
+        {
+          "comment" : "bian",
+          "index" : 1,
+          "text" : "边"
+        },
+        {
+          "comment" : "bian",
+          "index" : 2,
+          "text" : "便"
+        },
+        {
+          "comment" : "bian",
+          "index" : 3,
+          "text" : "编"
+        },
+        {
+          "comment" : "bian",
+          "index" : 4,
+          "text" : "遍"
+        },
+        {
+          "comment" : "bi an",
+          "index" : 5,
+          "text" : "彼岸"
+        },
+        {
+          "comment" : "bian",
+          "index" : 6,
+          "text" : "辨"
+        },
+        {
+          "comment" : "bian",
+          "index" : 7,
+          "text" : "辩"
+        },
+        {
+          "comment" : "纠错 · bi ran",
+          "index" : -1,
+          "text" : "必然"
+        },
+        {
+          "comment" : "纠错 · bu an",
+          "index" : -2,
+          "text" : "不安"
+        }
+      ],
+      "id" : "extended-13-2",
+      "input" : "bian",
+      "keyDurationsMS" : [
+        0.167375,
+        0.13308300000000001,
+        0.40250000000000002,
+        0.46941699999999997
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "bian",
+      "processPeakRSSBytes" : 40386560,
+      "rank" : 3,
+      "remainingInput" : "bian",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "bian"
+      ],
+      "target" : "便",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "xi nan",
+          "index" : 0,
+          "text" : "西南"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 1,
+          "text" : "心安"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 2,
+          "text" : "新安"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 3,
+          "text" : "信安"
+        },
+        {
+          "comment" : "xi nan",
+          "index" : 4,
+          "text" : "溪南"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 5,
+          "text" : "新案"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 6,
+          "text" : "鑫安"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 7,
+          "text" : "辛安"
+        },
+        {
+          "comment" : "纠错 · xian",
+          "index" : -1,
+          "text" : "先"
+        },
+        {
+          "comment" : "纠错 · xin ban",
+          "index" : -2,
+          "text" : "新版"
+        }
+      ],
+      "id" : "extended-14-1",
+      "input" : "xinan",
+      "keyDurationsMS" : [
+        0.087416999999999995,
+        0.10316699999999999,
+        0.52716700000000005,
+        0.62279200000000001,
+        0.55762500000000004
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "xi nan",
+      "processPeakRSSBytes" : 40927232,
+      "rank" : 2,
+      "remainingInput" : "xinan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "xin",
+        "an"
+      ],
+      "target" : "心安",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "xi nan",
+          "index" : 0,
+          "text" : "西南"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 1,
+          "text" : "心安"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 2,
+          "text" : "新安"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 3,
+          "text" : "信安"
+        },
+        {
+          "comment" : "xi nan",
+          "index" : 4,
+          "text" : "溪南"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 5,
+          "text" : "新案"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 6,
+          "text" : "鑫安"
+        },
+        {
+          "comment" : "xin an",
+          "index" : 7,
+          "text" : "辛安"
+        },
+        {
+          "comment" : "纠错 · xian",
+          "index" : -1,
+          "text" : "先"
+        },
+        {
+          "comment" : "纠错 · xin ban",
+          "index" : -2,
+          "text" : "新版"
+        }
+      ],
+      "id" : "extended-14-2",
+      "input" : "xinan",
+      "keyDurationsMS" : [
+        0.085500000000000007,
+        0.10287499999999999,
+        0.38500000000000001,
+        0.57262500000000005,
+        0.52537500000000004
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "xi nan",
+      "processPeakRSSBytes" : 40927232,
+      "rank" : 1,
+      "remainingInput" : "xinan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "xi",
+        "nan"
+      ],
+      "target" : "西南",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "yin an",
+          "index" : 0,
+          "text" : "阴暗"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 1,
+          "text" : "以南"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 2,
+          "text" : "疑难"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 3,
+          "text" : "一男"
+        },
+        {
+          "comment" : "yin an",
+          "index" : 4,
+          "text" : "银氨"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 5,
+          "text" : "一南"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 6,
+          "text" : "役男"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 7,
+          "text" : "亦难"
+        },
+        {
+          "comment" : "纠错 · yi ban",
+          "index" : -1,
+          "text" : "一般"
+        },
+        {
+          "comment" : "纠错 · yi nian",
+          "index" : -2,
+          "text" : "一年"
+        }
+      ],
+      "id" : "extended-15-1",
+      "input" : "yinan",
+      "keyDurationsMS" : [
+        0.090457999999999997,
+        0.10199999999999999,
+        0.47645799999999999,
+        0.55858300000000005,
+        0.53504200000000002
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "yin an",
+      "processPeakRSSBytes" : 41598976,
+      "rank" : 1,
+      "remainingInput" : "yinan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "yin",
+        "an"
+      ],
+      "target" : "阴暗",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "yin an",
+          "index" : 0,
+          "text" : "阴暗"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 1,
+          "text" : "以南"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 2,
+          "text" : "疑难"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 3,
+          "text" : "一男"
+        },
+        {
+          "comment" : "yin an",
+          "index" : 4,
+          "text" : "银氨"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 5,
+          "text" : "一南"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 6,
+          "text" : "役男"
+        },
+        {
+          "comment" : "yi nan",
+          "index" : 7,
+          "text" : "亦难"
+        },
+        {
+          "comment" : "纠错 · yi ban",
+          "index" : -1,
+          "text" : "一般"
+        },
+        {
+          "comment" : "纠错 · yi nian",
+          "index" : -2,
+          "text" : "一年"
+        }
+      ],
+      "id" : "extended-15-2",
+      "input" : "yinan",
+      "keyDurationsMS" : [
+        0.76091699999999995,
+        0.24862500000000001,
+        0.69258299999999995,
+        0.64866699999999999,
+        0.55516699999999997
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "yin an",
+      "processPeakRSSBytes" : 41615360,
+      "rank" : 3,
+      "remainingInput" : "yinan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "yi",
+        "nan"
+      ],
+      "target" : "疑难",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "xin gan",
+          "index" : 0,
+          "text" : "心肝"
+        },
+        {
+          "comment" : "xin gan",
+          "index" : 1,
+          "text" : "心甘"
+        },
+        {
+          "comment" : "xin gan",
+          "index" : 2,
+          "text" : "新干"
+        },
+        {
+          "comment" : "xin gan",
+          "index" : 3,
+          "text" : "辛甘"
+        },
+        {
+          "comment" : "xing an",
+          "index" : 4,
+          "text" : "兴安"
+        },
+        {
+          "comment" : "xi ng an",
+          "index" : -100,
+          "text" : "系嗯按"
+        },
+        {
+          "comment" : "xing an",
+          "index" : 5,
+          "text" : "刑案"
+        },
+        {
+          "comment" : "xing an",
+          "index" : 6,
+          "text" : "姓安"
+        },
+        {
+          "comment" : "纠错 · xin guan",
+          "index" : -1,
+          "text" : "新冠"
+        },
+        {
+          "comment" : "纠错 · xi nan",
+          "index" : -2,
+          "text" : "西南"
+        }
+      ],
+      "id" : "extended-16-1",
+      "input" : "xingan",
+      "keyDurationsMS" : [
+        0.091415999999999997,
+        0.1055,
+        0.44620900000000002,
+        0.59950000000000003,
+        0.59470900000000004,
+        0.72941699999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "xin gan",
+      "processPeakRSSBytes" : 41713664,
+      "rank" : 5,
+      "remainingInput" : "xingan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "xing",
+        "an"
+      ],
+      "target" : "兴安",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "xin gan",
+          "index" : 0,
+          "text" : "心肝"
+        },
+        {
+          "comment" : "xin gan",
+          "index" : 1,
+          "text" : "心甘"
+        },
+        {
+          "comment" : "xin gan",
+          "index" : 2,
+          "text" : "新干"
+        },
+        {
+          "comment" : "xin gan",
+          "index" : 3,
+          "text" : "辛甘"
+        },
+        {
+          "comment" : "xing an",
+          "index" : 4,
+          "text" : "兴安"
+        },
+        {
+          "comment" : "xi ng an",
+          "index" : -100,
+          "text" : "系嗯按"
+        },
+        {
+          "comment" : "xing an",
+          "index" : 5,
+          "text" : "刑案"
+        },
+        {
+          "comment" : "xing an",
+          "index" : 6,
+          "text" : "姓安"
+        },
+        {
+          "comment" : "纠错 · xin guan",
+          "index" : -1,
+          "text" : "新冠"
+        },
+        {
+          "comment" : "纠错 · xi nan",
+          "index" : -2,
+          "text" : "西南"
+        }
+      ],
+      "id" : "extended-16-2",
+      "input" : "xingan",
+      "keyDurationsMS" : [
+        0.085125000000000006,
+        0.10162499999999999,
+        0.39083299999999999,
+        0.51841599999999999,
+        0.66191699999999998,
+        0.94370799999999999
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "xin gan",
+      "processPeakRSSBytes" : 41713664,
+      "rank" : 1,
+      "remainingInput" : "xingan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "xin",
+        "gan"
+      ],
+      "target" : "心肝",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "guan gan",
+          "index" : 0,
+          "text" : "观感"
+        },
+        {
+          "comment" : "guang an",
+          "index" : 1,
+          "text" : "广安"
+        },
+        {
+          "comment" : "guang an",
+          "index" : 2,
+          "text" : "光暗"
+        },
+        {
+          "comment" : "gu an gan",
+          "index" : -100,
+          "text" : "股安敢"
+        },
+        {
+          "comment" : "纠错 · guang fan",
+          "index" : -1,
+          "text" : "广泛"
+        },
+        {
+          "comment" : "纠错 · guan kan",
+          "index" : -2,
+          "text" : "观看"
+        },
+        {
+          "comment" : "纠错 · guang kan",
+          "index" : -3,
+          "text" : "光看"
+        },
+        {
+          "comment" : "guang",
+          "index" : 3,
+          "text" : "光"
+        },
+        {
+          "comment" : "guang",
+          "index" : 4,
+          "text" : "广"
+        },
+        {
+          "comment" : "guang",
+          "index" : 5,
+          "text" : "逛"
+        }
+      ],
+      "id" : "extended-17-1",
+      "input" : "guangan",
+      "keyDurationsMS" : [
+        0.091790999999999998,
+        0.10337499999999999,
+        0.54495899999999997,
+        0.57299999999999995,
+        0.65783400000000003,
+        0.78770799999999996,
+        0.88054100000000002
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "guan gan",
+      "processPeakRSSBytes" : 41992192,
+      "rank" : 2,
+      "remainingInput" : "guangan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "guang",
+        "an"
+      ],
+      "target" : "广安",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "guan gan",
+          "index" : 0,
+          "text" : "观感"
+        },
+        {
+          "comment" : "guang an",
+          "index" : 1,
+          "text" : "广安"
+        },
+        {
+          "comment" : "guang an",
+          "index" : 2,
+          "text" : "光暗"
+        },
+        {
+          "comment" : "gu an gan",
+          "index" : -100,
+          "text" : "股安敢"
+        },
+        {
+          "comment" : "纠错 · guang fan",
+          "index" : -1,
+          "text" : "广泛"
+        },
+        {
+          "comment" : "纠错 · guan kan",
+          "index" : -2,
+          "text" : "观看"
+        },
+        {
+          "comment" : "纠错 · guang kan",
+          "index" : -3,
+          "text" : "光看"
+        },
+        {
+          "comment" : "guang",
+          "index" : 3,
+          "text" : "光"
+        },
+        {
+          "comment" : "guang",
+          "index" : 4,
+          "text" : "广"
+        },
+        {
+          "comment" : "guang",
+          "index" : 5,
+          "text" : "逛"
+        }
+      ],
+      "id" : "extended-17-2",
+      "input" : "guangan",
+      "keyDurationsMS" : [
+        0.095375000000000001,
+        0.104875,
+        0.49020900000000001,
+        0.67249999999999999,
+        0.67870799999999998,
+        0.80425000000000002,
+        1.046125
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "guan gan",
+      "processPeakRSSBytes" : 42041344,
+      "rank" : 1,
+      "remainingInput" : "guangan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "guan",
+        "gan"
+      ],
+      "target" : "观感",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "jian an",
+          "index" : 0,
+          "text" : "建安"
+        },
+        {
+          "comment" : "jia nan",
+          "index" : 1,
+          "text" : "嘉南"
+        },
+        {
+          "comment" : "jian an",
+          "index" : 2,
+          "text" : "健安"
+        },
+        {
+          "comment" : "jia nan",
+          "index" : 3,
+          "text" : "迦南"
+        },
+        {
+          "comment" : "jian an",
+          "index" : 4,
+          "text" : "建案"
+        },
+        {
+          "comment" : "ji a nan",
+          "index" : -100,
+          "text" : "及阿楠"
+        },
+        {
+          "comment" : "jian an",
+          "index" : 5,
+          "text" : "减按"
+        },
+        {
+          "comment" : "jian an",
+          "index" : 6,
+          "text" : "渐暗"
+        },
+        {
+          "comment" : "纠错 · jian dan",
+          "index" : -1,
+          "text" : "简单"
+        },
+        {
+          "comment" : "纠错 · jia ban",
+          "index" : -2,
+          "text" : "加班"
+        }
+      ],
+      "id" : "extended-18-1",
+      "input" : "jianan",
+      "keyDurationsMS" : [
+        0.10316699999999999,
+        0.10475,
+        0.91158399999999995,
+        0.82774999999999999,
+        0.83325000000000005,
+        0.94216699999999998
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "jian an",
+      "processPeakRSSBytes" : 42156032,
+      "rank" : 1,
+      "remainingInput" : "jianan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "jian",
+        "an"
+      ],
+      "target" : "建安",
+      "unexpectedCommit" : ""
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "jian an",
+          "index" : 0,
+          "text" : "建安"
+        },
+        {
+          "comment" : "jia nan",
+          "index" : 1,
+          "text" : "嘉南"
+        },
+        {
+          "comment" : "jian an",
+          "index" : 2,
+          "text" : "健安"
+        },
+        {
+          "comment" : "jia nan",
+          "index" : 3,
+          "text" : "迦南"
+        },
+        {
+          "comment" : "jian an",
+          "index" : 4,
+          "text" : "建案"
+        },
+        {
+          "comment" : "ji a nan",
+          "index" : -100,
+          "text" : "及阿楠"
+        },
+        {
+          "comment" : "jian an",
+          "index" : 5,
+          "text" : "减按"
+        },
+        {
+          "comment" : "jian an",
+          "index" : 6,
+          "text" : "渐暗"
+        },
+        {
+          "comment" : "纠错 · jian dan",
+          "index" : -1,
+          "text" : "简单"
+        },
+        {
+          "comment" : "纠错 · jia ban",
+          "index" : -2,
+          "text" : "加班"
+        }
+      ],
+      "id" : "extended-18-2",
+      "input" : "jianan",
+      "keyDurationsMS" : [
+        0.1145,
+        0.105292,
+        0.49616700000000002,
+        0.54116699999999995,
+        0.64275000000000004,
+        0.75900000000000001
+      ],
+      "kind" : "ambiguity",
+      "preedit" : "jian an",
+      "processPeakRSSBytes" : 42156032,
+      "rank" : 2,
+      "remainingInput" : "jianan",
+      "schema" : "shika_pinyin",
+      "syllables" : [
+        "jia",
+        "nan"
+      ],
+      "target" : "嘉南",
+      "unexpectedCommit" : ""
+    }
+  ],
+  "schema" : "shika_pinyin",
+  "startupMS" : 57.992291999999999
+}
