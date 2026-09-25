@@ -57,6 +57,9 @@ final class SKLearnedSpellingIndex {
         let raw = Array(input.utf8)
         guard (3...49).contains(raw.count), raw.allSatisfy({ (97...122).contains($0) }) else { return [] }
         return entries.enumerated().compactMap { offset, entry -> (Int, Double, Entry)? in
+            // One edit cannot bridge a larger length gap. Check the UTF-8 view
+            // before allocating bytes for an unrelated learned phrase.
+            guard abs(raw.count - entry.code.utf8.count) <= 1 else { return nil }
             guard let cost = Self.editCost(raw, Array(entry.code.utf8)) else { return nil }
             return (offset, cost, entry)
         }.sorted { $0.1 == $1.1 ? $0.0 > $1.0 : $0.1 < $1.1 }.prefix(4).map { $0.2 }
@@ -65,15 +68,17 @@ final class SKLearnedSpellingIndex {
     /// A bounded one-edit search covers replacement, omission, insertion and
     /// adjacent transposition without generating a permanent typo vocabulary.
     private static func editCost(_ a: [UInt8], _ b: [UInt8]) -> Double? {
-        guard a != b, abs(a.count - b.count) <= 1 else { return nil }
+        guard abs(a.count - b.count) <= 1 else { return nil }
         if a.count == b.count {
-            let mismatches = a.indices.filter { a[$0] != b[$0] }
-            if mismatches.count == 1 { return 1 }
-            if mismatches.count == 2, mismatches[1] == mismatches[0] + 1 {
-                let i = mismatches[0], j = mismatches[1]
-                if a[i] == b[j], a[j] == b[i] { return 0.85 }
+            var first: Int?
+            for i in a.indices where a[i] != b[i] {
+                guard let previous = first else { first = i; continue }
+                // Two differences can only be an adjacent transposition.
+                // Reject other paths immediately without allocating positions.
+                guard i == previous + 1, a[previous] == b[i], a[i] == b[previous] else { return nil }
+                return ((i + 1)..<a.count).allSatisfy { a[$0] == b[$0] } ? 0.85 : nil
             }
-            return nil
+            return first == nil ? nil : 1
         }
         let shorter = a.count < b.count ? a : b, longer = a.count < b.count ? b : a
         var i = 0
