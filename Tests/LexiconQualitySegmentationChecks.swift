@@ -37,7 +37,10 @@ struct LexiconQualitySegmentationChecks {
         } else { check("shuna exposes shun a full parse", false) }
         _ = try engine.selectConfiguration(SKShuangpinScheme.configuration)
         for key in "sihx".utf8 { state = engine.process(key: Int32(key)) }
-        check("double pinyin has no full-pinyin segmentation routes", !state.candidates.contains(where: { $0.index <= -100 && $0.index > -1000 }))
+        // -200 belongs to double-pinyin syllable repair, not segmentation.
+        check("double pinyin has no full-pinyin segmentation routes", !state.candidates.contains(where: { $0.index == -100 }))
+        check("double pinyin does not instantiate full-pinyin segmenter",
+            SKPinyinSegmentationCandidates(resources: URL(fileURLWithPath: args[1]), configuration: SKShuangpinScheme.configuration) == nil)
         check("double pinyin still offers silk-smooth", state.candidates.first?.text == "丝滑")
         if let top = state.candidates.first {
             let selected = engine.selectCandidate(at: top.index)
