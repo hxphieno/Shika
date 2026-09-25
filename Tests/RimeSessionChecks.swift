@@ -46,6 +46,22 @@ struct IndependentValidation {
   session.cancel();output="";type("hello");session.commitRaw()
   expect(output=="hello" && session.state.input.isEmpty && session.state.candidates.isEmpty,"raw commit inserts letters and clears composition")
   session.commitRaw();expect(output=="hello","raw commit is one-shot")
+  session.cancel();output="";type("ni");let initial=session.state
+  let enumerated=engine.candidatePage(startingAt: 8, limit: 10)
+  expect(enumerated.candidates.first?.index == 8 && enumerated.candidates.count == 10,"nonmutating enumeration starts at requested absolute index")
+  session.loadMoreCandidates()
+  expect(session.state.candidates.count > initial.candidates.count && session.state.input == initial.input && session.state.preedit == initial.preedit,"expanded candidates preserve composition")
+  let later=session.state.candidates.first(where: {$0.index >= 8})!
+  session.select(later);expect(output == later.text,"expanded native candidate selects by absolute index")
+  session.cancel();output="";type("nihoa")
+  let corrected=session.state.candidates.first(where: {$0.index < 0})!
+  session.loadMoreCandidates();session.select(corrected)
+  expect(output == corrected.text && session.state.input.isEmpty,"expanding preserves correction selection route")
+  session.cancel();output="";type("ni")
+  for _ in 0..<20 { if session.state.isLastPage {break};session.loadMoreCandidates() }
+  expect(session.state.isLastPage,"expanded scrolling reaches last candidate")
+  expect(Set(session.state.candidates.map(\.index)).count == session.state.candidates.count,"expanded candidate identifiers stay unique")
+  session.cancel()
   print("COMPLETE: \(checks) assertions")
  }
 }

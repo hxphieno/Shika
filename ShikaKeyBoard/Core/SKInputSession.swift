@@ -7,14 +7,17 @@ final class SKInputSession {
     private var configuration: SKInputConfiguration
     private let insertText: (String) -> Void
     private let deleteText: () -> Void
+    private let updateComposition: (String) -> Void
+    private var nextCandidateIndex = 0
     private(set) var state = SKEngineState()
     var onUpdate: ((SKEngineState) -> Void)?
 
-    init(engine: SKInputEngine, configuration: SKInputConfiguration, insertText: @escaping (String) -> Void, deleteText: @escaping () -> Void) {
+    init(engine: SKInputEngine, configuration: SKInputConfiguration, insertText: @escaping (String) -> Void, deleteText: @escaping () -> Void, updateComposition: @escaping (String) -> Void = { _ in }) {
         self.engine = engine
         self.configuration = configuration
         self.insertText = insertText
         self.deleteText = deleteText
+        self.updateComposition = updateComposition
     }
 
     func type(_ text: String) {
@@ -39,6 +42,17 @@ final class SKInputSession {
         apply(engine.selectCandidate(at: candidate.index))
     }
 
+    func loadMoreCandidates() {
+        guard !state.input.isEmpty, !state.isLastPage else { return }
+        let page = engine.candidatePage(startingAt: nextCandidateIndex, limit: 40)
+        var seen = Set(state.candidates.map(\.text))
+        state.candidates += page.candidates.filter { seen.insert($0.text).inserted }
+        state.isLastPage = !page.hasMore || page.nextIndex <= nextCandidateIndex
+        nextCandidateIndex = page.nextIndex
+        // Browsing never changes the marked text or the engine's selected page.
+        onUpdate?(state)
+    }
+
     func changePage(backward: Bool) { apply(engine.changePage(backward: backward)) }
     func cancel() { apply(engine.clear()) }
 
@@ -61,10 +75,14 @@ final class SKInputSession {
     }
 
     private func apply(_ result: SKEngineState) {
-        if !result.committedText.isEmpty { insertText(result.committedText) }
+        if !result.committedText.isEmpty {
+            insertText(result.committedText)
+        }
         state = result
         // Commit is a one-shot output, never retained for subsequent UI updates.
         state.committedText = ""
+        nextCandidateIndex = (state.candidates.map(\.index).filter { $0 >= 0 }.max() ?? -1) + 1
+        updateComposition(state.input.isEmpty ? "" : (state.preedit.isEmpty ? state.input : state.preedit))
         onUpdate?(state)
     }
 }

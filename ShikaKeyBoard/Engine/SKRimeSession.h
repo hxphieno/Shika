@@ -9,6 +9,7 @@ NS_ASSUME_NONNULL_BEGIN
                                      error:(NSError **)error;
 - (NSDictionary *)processKey:(int)key;
 - (NSDictionary *)selectCandidate:(NSUInteger)index;
+- (NSDictionary *)candidatePageFromIndex:(NSUInteger)index limit:(NSUInteger)limit;
 - (NSDictionary *)changePage:(BOOL)backward;
 - (NSDictionary *)commitComposition;
 - (NSDictionary *)clearComposition;

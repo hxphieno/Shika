@@ -1,0 +1,17 @@
+Marked text
+PASS 30 marked-text and expanded-candidate checks
+
+Keyboard interaction
+PASS 119 main keyboard interaction assertions
+
+Smoke
+PASS actual UIKit keys -> Rime -> proxy; dual schemas, all language states, selection/space/newline/delete/numeric/scheme flush. Cold load: 0.6872669458389282s. Output: 你好中你好
+
+Runtime
+PASS 300 scheme switches; 1687 production keys; P95 5.833029747009277 ms; late footprint growth -360448 bytes; errors: 
+
+Core: 54 assertions passed; learning persistence and shared runtime checks passed.
+Correction interactions: 32 assertions passed.
+Corpus: 320 cases each, baseline and correction rankings unchanged.
+Builds: Simulator Debug and iPhone Release succeeded (CODE_SIGNING_ALLOWED=NO).
+Bundle validation passed; original simulator keyboard list restored.

@@ -136,6 +136,25 @@ static NSString *Text(const char *text) { return text ? [NSString stringWithUTF8
     [RimeLock() lock]; _api->select_candidate(_session, index);
     NSDictionary *result = [self snapshot]; [RimeLock() unlock]; return result;
 }
+// Enumerate without changing the selected page, composition or correction routes.
+- (NSDictionary *)candidatePageFromIndex:(NSUInteger)index limit:(NSUInteger)limit {
+    [RimeLock() lock];
+    NSMutableArray *candidates = [NSMutableArray new];
+    RimeCandidateListIterator iterator = {0};
+    NSUInteger nextIndex = index;
+    BOOL more = NO;
+    if (limit && _api->candidate_list_from_index(_session, &iterator, (int)index)) {
+        while (_api->candidate_list_next(&iterator)) {
+            if (candidates.count == limit) { more = YES; break; }
+            [candidates addObject:@{@"index": @(iterator.index), @"text": Text(iterator.candidate.text),
+                @"comment": Text(iterator.candidate.comment)}];
+            nextIndex = iterator.index + 1;
+        }
+        _api->candidate_list_end(&iterator);
+    }
+    [RimeLock() unlock];
+    return @{@"candidates": candidates, @"nextIndex": @(nextIndex), @"hasMore": @(more)};
+}
 - (NSDictionary *)changePage:(BOOL)backward {
     [RimeLock() lock]; _api->change_page(_session, backward);
     NSDictionary *result = [self snapshot]; [RimeLock() unlock]; return result;

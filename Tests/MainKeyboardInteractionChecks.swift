@@ -12,8 +12,10 @@ private final class EventRecorder: SKKeyboardEventHandler {
     func didTapSwitchLayout(to layout: SKKeyboardLayoutType) { layouts.append(layout) }
 }
 private final class InteractionProxy: NSObject, UITextDocumentProxy {
+    // Keep committed output separate from the pending composition in this spy.
     var text = ""
-    var documentContextBeforeInput: String? { text }
+    var markedText: String?
+    var documentContextBeforeInput: String? { text + (markedText ?? "") }
     var documentContextAfterInput: String? { "" }
     var selectedText: String? { nil }
     var documentInputMode: UITextInputMode? { nil }
@@ -22,8 +24,11 @@ private final class InteractionProxy: NSObject, UITextDocumentProxy {
     func insertText(_ value: String) { text += value }
     func deleteBackward() { if !text.isEmpty { text.removeLast() } }
     func adjustTextPosition(byCharacterOffset offset: Int) {}
-    func setMarkedText(_ markedText: String, selectedRange: NSRange) {}
-    func unmarkText() {}
+    func setMarkedText(_ markedText: String, selectedRange: NSRange) { self.markedText = markedText }
+    func unmarkText() {
+        text += markedText ?? ""
+        markedText = nil
+    }
 }
 private final class InteractionController: KeyboardViewController {
     let proxy = InteractionProxy()
@@ -172,7 +177,7 @@ final class MainInteractionApp: UIResponder, UIApplicationDelegate {
         for letter in "nihao" { controller.didTapKey(String(letter)) }
         press(language)
         expect(language.currentState == .chinese && mixed.keyRows[1].count == 9, "Language tap renders Chinese state and layout")
-        expect(controller.proxy.text.isEmpty, "Language tap preserves pending Chinese composition")
+        expect(controller.proxy.text.isEmpty && controller.proxy.markedText?.replacingOccurrences(of: " ", with: "") == "nihao", "Language tap preserves pending Chinese composition")
         controller.didTapKey(" ")
         expect(controller.proxy.text == "你好", "Chinese mode commits existing composition once")
         press(language)

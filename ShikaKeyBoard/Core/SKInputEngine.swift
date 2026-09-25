@@ -16,10 +16,17 @@ struct SKEngineState {
     var handled = true
 }
 
+struct SKCandidatePage {
+    let candidates: [SKCandidate]
+    let nextIndex: Int
+    let hasMore: Bool
+}
+
 @MainActor
 protocol SKInputEngine: AnyObject {
     func process(key: Int32) -> SKEngineState
     func selectCandidate(at index: Int) -> SKEngineState
+    func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage
     func changePage(backward: Bool) -> SKEngineState
     func commit() -> SKEngineState
     func clear() -> SKEngineState

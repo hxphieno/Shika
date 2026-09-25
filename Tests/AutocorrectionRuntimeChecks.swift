@@ -15,8 +15,10 @@ private func physicalFootprint() -> UInt64? {
 }
 
 private final class RuntimeProxy: NSObject, UITextDocumentProxy {
+    // Committed output is separate from the pending composition in this spy.
     var text = ""
-    var documentContextBeforeInput: String? { text }
+    var markedText: String?
+    var documentContextBeforeInput: String? { text + (markedText ?? "") }
     var documentContextAfterInput: String? { "" }
     var selectedText: String? { nil }
     var documentInputMode: UITextInputMode? { nil }
@@ -25,8 +27,11 @@ private final class RuntimeProxy: NSObject, UITextDocumentProxy {
     func insertText(_ text: String) { self.text += text }
     func deleteBackward() { if !text.isEmpty { text.removeLast() } }
     func adjustTextPosition(byCharacterOffset offset: Int) {}
-    func setMarkedText(_ markedText: String, selectedRange: NSRange) {}
-    func unmarkText() {}
+    func setMarkedText(_ markedText: String, selectedRange: NSRange) { self.markedText = markedText }
+    func unmarkText() {
+        text += markedText ?? ""
+        markedText = nil
+    }
 }
 private final class RuntimeKeyboard: KeyboardViewController {
     let proxy = RuntimeProxy()
@@ -68,7 +73,9 @@ private final class RuntimeApp: UIResponder, UIApplicationDelegate {
         sample("before-engine", iteration: 0)
         do {
             let start = CFAbsoluteTimeGetCurrent()
-            engine = try SKRimeEngine(configuration: SKInputScheme.shuangpin.configuration, userURL: documents.appendingPathComponent("runtime-user-" + UUID().uuidString))
+            // The process-wide runtime and the later production controller must
+            // use the same user directory (the test app has its own sandbox).
+            engine = try SKRimeEngine(configuration: SKInputScheme.shuangpin.configuration)
             initMilliseconds = (CFAbsoluteTimeGetCurrent() - start) * 1000
             sample("after-initialization", iteration: 0)
             iteration(1)
@@ -128,9 +135,12 @@ private final class RuntimeApp: UIResponder, UIApplicationDelegate {
 
     private func press(_ title: String, in view: UIView) {
         let button = allViews(view).compactMap { $0 as? UIButton }.first {
-            ($0 as? SKMainKeyButton)?.keyTitle == title || $0.title(for: .normal) == title
+            ($0 as? SKMainKeyButton)?.keyTitle == title || $0.title(for: .normal) == title || $0.configuration?.title == title || $0.accessibilityLabel == title
         }
-        if let button { button.sendActions(for: .touchUpInside) }
+        if let button {
+            button.sendActions(for: .touchDown)
+            button.sendActions(for: .touchUpInside)
+        }
         else { failures.append("missing UIKit key \(title)") }
     }
 

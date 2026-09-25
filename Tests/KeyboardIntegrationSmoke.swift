@@ -1,8 +1,10 @@
 import UIKit
 
 final class TestProxy: NSObject, UITextDocumentProxy {
+    // Committed output is separate from the pending composition in this spy.
     var text = ""
-    var documentContextBeforeInput: String? { text }
+    var markedText: String?
+    var documentContextBeforeInput: String? { text + (markedText ?? "") }
     var documentContextAfterInput: String? { "" }
     var selectedText: String? { nil }
     var documentInputMode: UITextInputMode? { nil }
@@ -11,8 +13,11 @@ final class TestProxy: NSObject, UITextDocumentProxy {
     func insertText(_ text: String) { self.text += text }
     func deleteBackward() { if !text.isEmpty { text.removeLast() } }
     func adjustTextPosition(byCharacterOffset offset: Int) {}
-    func setMarkedText(_ markedText: String, selectedRange: NSRange) {}
-    func unmarkText() {}
+    func setMarkedText(_ markedText: String, selectedRange: NSRange) { self.markedText = markedText }
+    func unmarkText() {
+        text += markedText ?? ""
+        markedText = nil
+    }
 }
 final class TestKeyboardController: KeyboardViewController {
     let proxy = TestProxy()
@@ -20,7 +25,7 @@ final class TestKeyboardController: KeyboardViewController {
 }
 func descendants(_ view: UIView) -> [UIView] { [view] + view.subviews.flatMap(descendants) }
 func tap(_ title: String, in view: UIView) {
-    let key = descendants(view).compactMap { $0 as? UIButton }.first { ($0 as? SKMainKeyButton)?.keyTitle == title || $0.title(for: .normal) == title }!
+    let key = descendants(view).compactMap { $0 as? UIButton }.first { ($0 as? SKMainKeyButton)?.keyTitle == title || $0.title(for: .normal) == title || $0.configuration?.title == title || $0.accessibilityLabel == title }!
     key.sendActions(for: .touchDown)
     key.sendActions(for: .touchUpInside)
 }

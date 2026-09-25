@@ -3,7 +3,9 @@ import UIKit
 /// Owns scheme selection and the iOS text connection; views only emit key events.
 class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private let candidateBar = CandidateBarView()
-    private var applyingEngineEdit = false
+    private let textConnection = SKMarkedTextConnection()
+    private let expandedCandidates = SKExpandedCandidatesView()
+    private var candidatesExpanded = false
     private var inputSession: SKInputSession?
     private let chineseJapaneseView = SKChineseJapaneseKeyboardView()
     private let shuangpinView = SKShuangpinKeyboardView()
@@ -36,9 +38,10 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         shuangpinLabel.accessibilityLabel = "中文，双拼"
 
         candidateBar.heightAnchor.constraint(equalToConstant: SKConfig.topBarHeight).isActive = true
-        candidateBar.onSelect = { [weak self] in self?.inputSession?.select($0) }
-        candidateBar.onPage = { [weak self] in self?.inputSession?.changePage(backward: $0) }
-        candidateBar.onCommitRaw = { [weak self] in self?.inputSession?.commitRaw() }
+        candidateBar.onSelect = { [weak self] in self?.selectCandidate($0) }
+        candidateBar.onToggleExpanded = { [weak self] in self?.toggleCandidates() }
+        expandedCandidates.onSelect = { [weak self] in self?.selectCandidate($0) }
+        expandedCandidates.onLoadMore = { [weak self] in self?.inputSession?.loadMoreCandidates() }
         candidateBar.onRetry = { [weak self] in self?.loadEngine() }
         let topBar = UIStackView(arrangedSubviews: [languageButton, shuangpinLabel, candidateBar])
         topBar.axis = .horizontal
@@ -64,6 +67,14 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
             ])
             keyboardBottomConstraints.append(keyboard.bottomAnchor.constraint(equalTo: view.bottomAnchor))
         }
+        expandedCandidates.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(expandedCandidates)
+        NSLayoutConstraint.activate([
+            expandedCandidates.topAnchor.constraint(equalTo: topBar.bottomAnchor),
+            expandedCandidates.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            expandedCandidates.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            expandedCandidates.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
         mainHeightConstraint = chineseJapaneseView.heightAnchor.constraint(equalToConstant: SKMainKeyboardMetrics.portraitHeight)
         mainHeightConstraint?.priority = .init(999)
         updateVisibleKeyboard()
@@ -83,11 +94,15 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
             let session = SKInputSession(engine: engine, configuration: keyboardState.scheme.configuration,
                 insertText: { [weak self] text in
                     guard let self else { return }
-                    applyingEngineEdit = true
-                    textDocumentProxy.insertText(text)
-                    applyingEngineEdit = false
+                    textConnection.insert(text, in: textDocumentProxy)
                 },
-                deleteText: { [weak self] in self?.textDocumentProxy.deleteBackward() })
+                deleteText: { [weak self] in
+                    guard let self else { return }
+                    textConnection.deleteBackward(in: textDocumentProxy)
+                }, updateComposition: { [weak self] text in
+                    guard let self else { return }
+                    textConnection.updateComposition(text, in: textDocumentProxy)
+                })
             session.onUpdate = { [weak self] state in self?.renderCandidates(state) }
             inputSession = session
             renderCandidates(session.state)
@@ -98,7 +113,23 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func renderCandidates(_ state: SKEngineState) {
-        candidateBar.update(state)
+        if state.candidates.isEmpty { candidatesExpanded = false }
+        candidateBar.update(state, expanded: candidatesExpanded)
+        expandedCandidates.update(state)
+        updateVisibleKeyboard()
+    }
+
+    private func toggleCandidates() {
+        guard let inputSession, !inputSession.state.candidates.isEmpty else { return }
+        candidatesExpanded.toggle()
+        expandedCandidates.update(inputSession.state, resetScroll: true)
+        renderCandidates(inputSession.state)
+        if candidatesExpanded { inputSession.loadMoreCandidates() }
+    }
+
+    private func selectCandidate(_ candidate: SKCandidate) {
+        candidatesExpanded = false
+        inputSession?.select(candidate)
     }
 
     func didTapKey(_ key: String) {
@@ -116,18 +147,23 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        textConnection.releaseComposition(in: textDocumentProxy)
         inputSession?.cancel()
     }
 
     override func textWillChange(_ textInput: UITextInput?) {
-        // A host-side cursor/document change invalidates an uncommitted composition.
-        if !applyingEngineEdit { inputSession?.cancel() }
+        // A host-side cursor/document change invalidates the engine composition.
+        if !textConnection.isEditing {
+            textConnection.releaseComposition(in: textDocumentProxy)
+            inputSession?.cancel()
+        }
     }
 
     func didTapSwitchScheme() {
         let next = keyboardState.scheme.next
         do { try inputSession?.switchConfiguration(to: next.configuration) }
         catch { candidateBar.showError(); return }
+        candidatesExpanded = false
         keyboardState.scheme = next
         keyboardState.layout = .alphabet
         UserDefaults.standard.set(keyboardState.scheme.rawValue, forKey: SKInputScheme.preferenceKey)
@@ -139,6 +175,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
 
     func didTapSwitchLayout(to layout: SKKeyboardLayoutType) {
         inputSession?.commitPending()
+        candidatesExpanded = false
         keyboardState.layout = layout
         updateVisibleKeyboard()
     }
@@ -150,9 +187,10 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func updateVisibleKeyboard() {
-        chineseJapaneseView.isHidden = keyboardState.layout != .alphabet || keyboardState.scheme != .chineseJapanese
-        shuangpinView.isHidden = keyboardState.layout != .alphabet || keyboardState.scheme != .shuangpin
-        numberView.isHidden = keyboardState.layout != .number
+        chineseJapaneseView.isHidden = candidatesExpanded || keyboardState.layout != .alphabet || keyboardState.scheme != .chineseJapanese
+        shuangpinView.isHidden = candidatesExpanded || keyboardState.layout != .alphabet || keyboardState.scheme != .shuangpin
+        numberView.isHidden = candidatesExpanded || keyboardState.layout != .number
+        expandedCandidates.isHidden = !candidatesExpanded
         languageButton.isHidden = keyboardState.scheme != .chineseJapanese
         shuangpinLabel.isHidden = keyboardState.scheme != .shuangpin
         // Hidden legacy number-page constraints must not stretch the measured alphabet rows.

@@ -42,6 +42,12 @@ final class SKRimeEngine: SKInputEngine {
         guard index >= 0 else { return displayed }
         return present(decode(session.selectCandidate(UInt(index))))
     }
+    func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage {
+        let data = session.candidatePage(from: UInt(max(0, index)), limit: UInt(max(1, min(limit, 64))))
+        return SKCandidatePage(candidates: decode(data).candidates,
+            nextIndex: data["nextIndex"] as? Int ?? index,
+            hasMore: data["hasMore"] as? Bool ?? false)
+    }
     func changePage(backward: Bool) -> SKEngineState { present(decode(session.changePage(backward))) }
     func commit() -> SKEngineState {
         if let first = displayed.candidates.first, first.index < 0 { return selectCandidate(at: first.index) }

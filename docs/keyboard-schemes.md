@@ -2,7 +2,7 @@
 
 当前提供「中日混合」和「双拼」两个独立键盘。点击底部 🦌 双向切换；上次方案保存在键盘扩展自己的 UserDefaults。数字页不改变方案，返回时恢复原方案。中日语言状态只在当前控制器生命周期内保留。
 
-两套键盘现已通过共享 Rime 底层实现中文输入。双拼采用小鹤双拼；中日键盘的中、日、混合三个状态暂时统一使用中文全拼，日文转换尚未实现。候选栏支持点选、翻页、空格确认和点按拼音原样上屏。
+两套键盘现已通过共享 Rime 底层实现中文输入。双拼采用小鹤双拼；中日键盘的中、日、混合三个状态暂时统一使用中文全拼，日文转换尚未实现。拼音通过系统 marked text 显示在宿主输入框，选词或空格确认时替换为汉字。候选栏为 44pt 单行；右侧向下箭头展开可纵向滚动的候选网格，向上箭头收起，选词后返回键盘。
 
 ## 职责
 
@@ -10,12 +10,13 @@
 - `Engine`：Rime 适配、候选纠错编排和 Objective-C/C 桥接；不依赖具体键盘 UI。
 - `Schemes/ChineseJapanese`：中文全拼配置、中日模式定义、键盘布局及语言按钮。按钮只报告点击，由控制器持有并下发当前模式。
 - `Schemes/Shuangpin`：双拼配置、独立中文布局及生成的音节提示，不依赖中日键盘类。
-- `UI/Components`：共享按键、气泡、注音键、候选栏和 Shift 状态逻辑；两个键盘分别持有自己的 Shift 状态。
+- `UI/Components`：共享按键、气泡、注音键、候选栏、展开候选网格和 Shift 状态逻辑；两个键盘分别持有自己的 Shift 状态。
+- `UI/Integration`：使用公开 UITextDocumentProxy API 管理宿主中的待确认文字，处理文档连接与断开。
 - `UI/Layouts`：共享底部功能栏及数字标点页。
 - `UI/Theme`：尺寸、间距、颜色。
 - `KeyboardViewController`：页面与方案切换、偏好保存、iOS textDocumentProxy 对接。
 
-具体 schema 和输入/拼写规则配置由各自 `Schemes` 目录定义。`SKInputSession` 接收配置并执行规则，`SKRimeEngine` 管理主会话和探测会话，`SKCorrectionCandidates` 整合纠错结果，`SKSpellingCorrector` 查询离线索引。按键组件仅发送事件；`SKInputSession` 处理组合、上屏和删除；控制器连接系统 `textDocumentProxy`。日文状态不影响双拼行为。依赖、构建和验证见 [Rime 接入说明](rime-integration.md)。
+具体 schema 和输入/拼写规则配置由各自 `Schemes` 目录定义。`SKInputSession` 接收配置并执行规则，`SKRimeEngine` 管理主会话和探测会话，`SKCorrectionCandidates` 整合纠错结果，`SKSpellingCorrector` 查询离线索引。按键组件仅发送事件；`SKInputSession` 处理组合、上屏、删除与非破坏性候选浏览；控制器通过 `SKMarkedTextConnection` 连接系统 `textDocumentProxy`。日文状态不影响双拼行为。依赖、构建和验证见 [Rime 接入说明](rime-integration.md)。
 
 ## 维护边界
 

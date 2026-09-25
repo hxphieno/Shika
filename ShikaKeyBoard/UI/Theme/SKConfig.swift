@@ -30,7 +30,7 @@ struct SKConfig {
     static let popUpShadowColor: UIColor = .black
     
     // MARK: - Layout
-    static let topBarHeight: CGFloat = 60
+    static let topBarHeight: CGFloat = 44
     static let keyboardVerticalSpacing: CGFloat = 12
     static let keyboardHorizontalSpacing: CGFloat = 6
     static let numberInputViewSpacing: CGFloat = 10
