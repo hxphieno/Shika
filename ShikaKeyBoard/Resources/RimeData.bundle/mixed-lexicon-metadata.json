@@ -1,0 +1,9 @@
+{
+  "source": "Wanxiang; same pinned snapshot as lexicon-metadata.json",
+  "readings": 1942789,
+  "entries": 2155038,
+  "bytes": 99073913,
+  "sha256": "5cc135ca05f63ada9319ade393c8c8e3f2708678a6dee69b533d3ad15a7a0cb8",
+  "maxHomophones": 12,
+  "maxCodeLength": 64
+}

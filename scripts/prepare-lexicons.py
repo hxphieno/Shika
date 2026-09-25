@@ -78,9 +78,13 @@ if args.language in ('chinese', 'all'):
 
 if args.language in ('japanese', 'all'):
     readings = {}
+    dictionary_sources = {}
+    supplemental_sources = {}
     for item in lock['japanese']['files']:
         text = source(item)
+        supplemental_sources[item['url'].split('/')[-1]] = text
         if '/dictionary' in item['url'] and re.search(r'dictionary\d\d.txt$', item['url']):
+            dictionary_sources[item['url'].split('/')[-1]] = text
             for line in text.splitlines():
                 f = line.split('\t')
                 if len(f) < 5: continue
@@ -101,6 +105,33 @@ if args.language in ('japanese', 'all'):
                 if len(f) >= 2 and re.fullmatch("[a-z'-]+", f[0]):
                     roman[f[0]] = [f[1], f[2] if len(f) > 2 else '']
             (OUTPUT / 'japanese-romaji.json').write_text(json.dumps(roman, ensure_ascii=False, sort_keys=True)+'\n')
+    # Use the pinned official generator, including its POS aliases and median
+    # costs. This is the complete upstream supplement, never test-driven additions.
+    supplemental_count = 0
+    if 'gen_aux_dictionary.py' in supplemental_sources:
+        with tempfile.TemporaryDirectory(prefix='shika-mozc-manual-') as work:
+            work = Path(work)
+            for name in ['gen_aux_dictionary.py', 'words.tsv', 'places.tsv', 'aux_dictionary.tsv', 'id.def']:
+                (work / name).write_text(supplemental_sources[name])
+            # Small source-backed modern vocabulary is kept separate from the
+            # immutable upstream archives and from all evaluation fixtures.
+            (work/'modern.tsv').write_text((SOURCE/'japanese-modern-words.tsv').read_text())
+            with (work/'aux_dictionary.tsv').open('a') as combined:
+                combined.write((SOURCE/'japanese-modern-aux.tsv').read_text())
+            for name, text in dictionary_sources.items(): (work / name).write_text(text)
+            subprocess.run([sys.executable, str(work/'gen_aux_dictionary.py'),
+                '--aux_tsv', str(work/'aux_dictionary.tsv'), '--words_tsv', str(work/'words.tsv'), str(work/'places.tsv'), str(work/'modern.tsv'),
+                '--id_def', str(work/'id.def'), '--dictionary_txts', *[str(work/name) for name in sorted(dictionary_sources)],
+                '--output', str(work/'supplement.txt'), '--strict'], check=True)
+            for line in (work/'supplement.txt').read_text().splitlines():
+                f = line.split('\t')
+                if len(f) < 5: continue
+                reading, left, right, cost, surface = f[:5]
+                if not reading or not all('\u3041' <= c <= '\u3096' or c == 'ー' for c in reading): continue
+                words = readings.setdefault(reading, set())
+                before = len(words)
+                words.add((surface, int(left), int(right), int(cost)))
+                supplemental_count += len(words) - before
     pool = bytearray(); keys = bytearray(); tokens = bytearray(); token_count = 0
     for reading, words in sorted(readings.items(), key=lambda x: x[0].encode('utf8')):
         raw = reading.encode(); offset = len(pool); pool.extend(raw)
@@ -112,7 +143,7 @@ if args.language in ('japanese', 'all'):
     data = b'SKJ1' + struct.pack('<III', len(readings), token_count, 16+len(keys)+len(tokens)) + keys + tokens + pool
     (OUTPUT / 'japanese-lexicon.bin').write_bytes(data)
     stats['japanese'] = {'upstream': lock['japanese']['repo'], 'commit': lock['japanese']['commit'],
-        'readings': len(readings), 'entries': token_count, 'bytes': len(data),
+        'readings': len(readings), 'entries': token_count, 'supplementalEntries': supplemental_count, 'bytes': len(data),
         'sha256': hashlib.sha256(data).hexdigest()}
     print('Japanese:', stats['japanese'], flush=True)
 stats_path.write_text(json.dumps(stats, ensure_ascii=False, indent=2)+'\n')

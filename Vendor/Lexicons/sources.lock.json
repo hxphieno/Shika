@@ -208,6 +208,41 @@
         "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/preedit/romanji-hiragana.tsv",
         "gitBlob": "afa34e8c01d3702d8f7ba8efda4d734be61daaa1",
         "bytes": 2963
+      },
+      {
+        "archive": "mozc/words.gz",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_manual/words.tsv",
+        "gitBlob": "fa6489eb3c2d4784fb2b2f781bc0b84763ff7f3c",
+        "bytes": 32041,
+        "cache": "mozc-words"
+      },
+      {
+        "archive": "mozc/places.gz",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_manual/places.tsv",
+        "gitBlob": "18a3c4fd1db7cbb27f8a443b994cc41f859c1790",
+        "bytes": 5446,
+        "cache": "mozc-places"
+      },
+      {
+        "archive": "mozc/aux.gz",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/aux_dictionary.tsv",
+        "gitBlob": "f542bf05c040c484dd44f8989dcafb1f2ac4aa77",
+        "bytes": 444,
+        "cache": "mozc-aux"
+      },
+      {
+        "archive": "mozc/gen-aux.gz",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/dictionary/gen_aux_dictionary.py",
+        "gitBlob": "db5f61c9a05c80660f1533109d249e0f063850e1",
+        "bytes": 9713,
+        "cache": "mozc-gen-aux"
+      },
+      {
+        "archive": "mozc/id-def.gz",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/id.def",
+        "gitBlob": "65e2e57dd658fa7bae3aa4ee177476fecc66fdab",
+        "bytes": 151747,
+        "cache": "mozc-id-def"
       }
     ]
   }

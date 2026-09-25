@@ -11,9 +11,10 @@
   "japanese": {
     "upstream": "google/mozc",
     "commit": "b9c3fcbd6d76b19649ef572324fa9da2559bc18e",
-    "readings": 744228,
-    "entries": 1281498,
-    "bytes": 55514989,
-    "sha256": "832a820b6ce762847b15cc931e2fc9e58f0ddc2babe259eaab3be6f0d847c4bf"
+    "readings": 744383,
+    "entries": 1281733,
+    "supplementalEntries": 235,
+    "bytes": 55525281,
+    "sha256": "d4f4930f69aa429db5065b3e4579e43abda1236927fb3149af2acbd53442d466"
   }
 }

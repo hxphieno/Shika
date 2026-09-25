@@ -1,0 +1,33 @@
+{
+  "compiledAt": "2026-09-26",
+  "scope": "Factual headwords and independently transcribed readings only. No article sentences or survey dataset copied. Not a claim of exhaustive/latest coverage. Evaluations do not supply entries.",
+  "sources": [
+    {
+      "id": "z-2025-first-half",
+      "url": "https://prtimes.jp/main/html/rd/p/000000105.000020799.html",
+      "publisher": "N.D.Promotion / Z総研",
+      "published": "2025-06-03",
+      "headwords": [
+        "エッホエッホ",
+        "メロい",
+        "グリークヨーグルト",
+        "チョコマシュマロ",
+        "耳ツボジュエリー"
+      ]
+    },
+    {
+      "id": "shibuya109-2026-pickup",
+      "url": "https://www.shibuya109.co.jp/shibuya109lab/reports/shibuya109-lab-%E6%89%80%E9%95%B7%E3%81%8C%E6%B3%A8%E7%9B%AE%E3%81%99%E3%82%8B%E6%9C%80%E6%96%B0%E3%81%AE%E3%82%A4%E3%83%81%E6%8E%A8%E3%81%97%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89%E3%82%92%E3%81%94/",
+      "publisher": "SHIBUYA109 lab.",
+      "published": "2026-01-29",
+      "headwords": [
+        "クローバーコア",
+        "レトロフューチャーコア",
+        "ウィッシュコア",
+        "バレエコア",
+        "ぬい活"
+      ]
+    }
+  ],
+  "costPolicy": "Nouns/interjection use the pinned upstream POS median. メロい inherits all かわいい/かわいい POS alternatives with +1500 cost; no hand-picked minimum score. Other inflections are not generated."
+}

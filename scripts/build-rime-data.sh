@@ -2,6 +2,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 python3 scripts/prepare-lexicons.py
+python3 scripts/prepare-mixed-lexicon.py
 python3 scripts/generate-rime-schemas.py
 work=$(mktemp -d -t shika-rime-data)
 trap 'rm -rf "$work"' EXIT

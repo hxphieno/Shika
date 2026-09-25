@@ -40,3 +40,34 @@ Counts are distinct word/reading/POS records, not a claim of that many unique wo
 or exhaustive language coverage. The frequency threshold for typo proposals is
 separate from normal conversion coverage; every compiled Chinese dictionary entry
 remains available for correctly typed input.
+
+## Mixed decoding and Japanese manual supplements (2026-09-26)
+
+The Japanese build now also runs Mozc's pinned `gen_aux_dictionary.py` on the
+complete official `dictionary_manual/words.tsv`, `places.tsv` and
+`dictionary_oss/aux_dictionary.tsv`. The generator and its `id.def` are archived
+and verified by Git blob hash in the same lock file. It uses upstream POS IDs,
+median costs and auxiliary inheritance, skips existing entries, and adds **226**
+new kana-keyed word/POS records (926 source rows are not 926 new words). Examples
+include modern vocabulary such as サブスク and 推し事. All existing Mozc notices,
+including the dictionary-specific terms in the full root LICENSE, still apply.
+
+`python3 scripts/prepare-mixed-lexicon.py` builds `mixed-chinese.bin` from the same
+normalized Wanxiang source. This separately mapped index exposes boundaries and
+frequencies to the joint decoder; it does not replace Rime's complete dictionary
+or alter pure-mode conversion. It bounds each reading to 12 homophones and codes
+to 64 letters. Metadata records the actual output count, size and SHA-256. Runtime
+search bounds and candidate ranking are separate from vocabulary coverage.
+
+Network excerpts used for evaluation live only under Tests/Fixtures and docs.
+They are not production lexicon entries or training data. No mixed test sentence
+is imported into either production dictionary.
+
+The separately maintained `japanese-modern-{words,aux}.tsv` adds ten source-backed
+headwords from the publishers' 2025/2026 trend reports (for example メロい,
+エッホエッホ, ぬい活). `japanese-modern-sources.json` records each source and date.
+This small factual reading/headword compilation contains no article prose,
+survey responses, mixed sentences or evaluation answers. Official POS median
+costs are reused; the adjective inherits かわいい's POS with a +1500 cost offset.
+After deduplication and POS expansion, official + modern supplements add **235**
+records in total, rather than claiming comprehensive coverage of current slang.
