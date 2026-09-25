@@ -214,6 +214,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         if let inputSession { renderCandidates(inputSession.state) }
         UIAccessibility.post(notification: .announcement,
                              argument: keyboardState.scheme == .shuangpin ? "双拼" : "中日混合")
+        (next == .shuangpin ? shuangpinView.footer : chineseJapaneseView.footer)?.showSchemeTitle()
     }
 
     func didTapSwitchLayout(to layout: SKKeyboardLayoutType) {
@@ -227,6 +228,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private func renderLanguageMode() {
         languageButton.currentState = keyboardState.languageMode
         chineseJapaneseView.currentLanguageState = keyboardState.languageMode
+        chineseJapaneseView.footer?.showSchemeTitle()
     }
 
     private func updateVisibleKeyboard() {

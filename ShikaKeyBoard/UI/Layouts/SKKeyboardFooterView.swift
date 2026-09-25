@@ -5,9 +5,12 @@ final class SKKeyboardFooterView: UIView {
     weak var eventHandler: SKKeyboardEventHandler?
     var keyFrames: [CGRect] = []
     private var keys: [SKMainKeyButton] = []
+    private let space: SKMainKeyButton
+    private var hideSpaceTitle: DispatchWorkItem?
     private let enter = SKMainKeyButton(title: "换行", role: .function)
 
     init(schemeTitle: String, nextSchemeTitle: String) {
+        space = SKMainKeyButton(title: schemeTitle, role: .space)
         super.init(frame: .zero)
         let number = SKMainKeyButton(title: "123", role: .function)
         number.addTarget(self, action: #selector(showNumbers), for: .touchUpInside)
@@ -16,7 +19,6 @@ final class SKKeyboardFooterView: UIView {
         scheme.accessibilityLabel = "切换输入方案"
         scheme.accessibilityHint = "切换到\(nextSchemeTitle)"
         scheme.addTarget(self, action: #selector(switchScheme), for: .touchUpInside)
-        let space = SKMainKeyButton(title: schemeTitle, role: .space)
         space.accessibilityLabel = "空格，当前方案：\(schemeTitle)"
         space.addTarget(self, action: #selector(insertSpace), for: .touchUpInside)
         enter.useSymbol("return", label: "换行")
@@ -25,6 +27,30 @@ final class SKKeyboardFooterView: UIView {
         keys.forEach(addSubview)
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+
+    func showSchemeTitle() {
+        hideSpaceTitle?.cancel()
+        space.titleLabel?.layer.removeAllAnimations()
+        space.titleLabel?.alpha = 1
+        let work = DispatchWorkItem { [weak self] in
+            guard let self else { return }
+            UIView.animate(withDuration: 0.35, delay: 0, options: [.curveEaseOut, .allowUserInteraction]) {
+                self.space.titleLabel?.alpha = 0
+            }
+        }
+        hideSpaceTitle = work
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: work)
+    }
+
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
+        if window != nil { showSchemeTitle() }
+        else {
+            hideSpaceTitle?.cancel()
+            space.titleLabel?.layer.removeAllAnimations()
+            space.titleLabel?.alpha = 0
+        }
+    }
 
     func updateReturnKey(type: UIReturnKeyType) {
         let title: String
