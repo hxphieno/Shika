@@ -72,8 +72,15 @@ final class SKSpellingCorrector {
             }
             variants[value] = min(variants[value] ?? .infinity, cost)
         }
+        // Double-pinyin dictionary codes contain complete two-key syllables.
+        // Skip impossible edit families before allocating their byte arrays.
+        let canChangeLength = profile != .doublePinyin || code.count % 2 == 1
+        let canKeepLength = profile != .doublePinyin || code.count % 2 == 0
         for i in code.indices {
-            var removed = code; removed.remove(at: i); add(removed, 1)
+            if canChangeLength {
+                var removed = code; removed.remove(at: i); add(removed, 1)
+            }
+            guard canKeepLength else { continue }
             for key in Self.alphabet where key != code[i] {
                 var changed = code; changed[i] = key
                 let a = Self.positions[key]!, b = Self.positions[code[i]]!
@@ -84,9 +91,11 @@ final class SKSpellingCorrector {
                 var swapped = code; swapped.swapAt(i, i + 1); add(swapped, 0.85)
             }
         }
-        for i in 0...code.count {
-            for key in Self.alphabet {
-                var inserted = code; inserted.insert(key, at: i); add(inserted, 1)
+        if canChangeLength {
+            for i in 0...code.count {
+                for key in Self.alphabet {
+                    var inserted = code; inserted.insert(key, at: i); add(inserted, 1)
+                }
             }
         }
         let result = data.withUnsafeBytes { bytes in

@@ -1,0 +1,77 @@
+{
+  "baselineCommit": "c885466",
+  "cases": 2629,
+  "signaturesCompared": 46358,
+  "allCodeTextCostFrequencyIdentical": true,
+  "before": {
+    "shika_flypy.cold": {
+      "count": 34329,
+      "p50MS": 0.060959,
+      "p95MS": 0.188417,
+      "p99MS": 0.247541,
+      "totalMS": 2566.769377999998
+    },
+    "shika_flypy.retype": {
+      "count": 34329,
+      "p50MS": 0.000125,
+      "p95MS": 0.000208,
+      "p99MS": 0.000292,
+      "totalMS": 4.26807800000136
+    },
+    "shika_pinyin.cold": {
+      "count": 35208,
+      "p50MS": 0.136583,
+      "p95MS": 0.813542,
+      "p99MS": 1.118583,
+      "totalMS": 8638.445618999624
+    },
+    "shika_pinyin.retype": {
+      "count": 35208,
+      "p50MS": 0.000125,
+      "p95MS": 0.000209,
+      "p99MS": 0.0005,
+      "totalMS": 4.643753000001123
+    }
+  },
+  "after": {
+    "shika_flypy.cold": {
+      "count": 34329,
+      "p50MS": 0.042208,
+      "p95MS": 0.174875,
+      "p99MS": 0.225333,
+      "totalMS": 1980.9995140000497
+    },
+    "shika_flypy.retype": {
+      "count": 34329,
+      "p50MS": 0.000125,
+      "p95MS": 0.000208,
+      "p99MS": 0.000292,
+      "totalMS": 4.273597000001333
+    },
+    "shika_pinyin.cold": {
+      "count": 35208,
+      "p50MS": 0.136375,
+      "p95MS": 0.8135,
+      "p99MS": 1.099875,
+      "totalMS": 8529.489998999758
+    },
+    "shika_pinyin.retype": {
+      "count": 35208,
+      "p50MS": 0.000125,
+      "p95MS": 0.00025,
+      "p99MS": 0.000458,
+      "totalMS": 4.59949500000119
+    }
+  },
+  "clock": "DispatchTime.uptimeNanoseconds",
+  "scope": "Immutable spelling lookup only, three rounds, fresh corrector per word with prefixes then immediate retype; not end-to-end keyboard latency",
+  "discardedExperiments": {
+    "twoLetterPrefix": "Cold p95 worse in 400-case screen; not retained",
+    "oneLetterPrefix": "No stable cold-query gain in 400-case screen; not retained"
+  },
+  "hashes": {
+    "ShikaKeyBoard/Engine/SKSpellingCorrector.swift": "aa6f201f53f7920cf0b1d0743f94c6d66bb9bb8332e2474ff7a4af140769ff2f",
+    "Tests/SpellingSearchPerformanceChecks.swift": "88fa77c67dec49a672e91c98e4d4dbf07201118c8693cbc45e93d69d467fde0f",
+    "/tmp/shika-backend-r2/baseline/SKSpellingCorrector.swift": "91e1fcd61833704348c3988f99d2a37425bc24261edee81fb5aa3d8daf0979d7"
+  }
+}

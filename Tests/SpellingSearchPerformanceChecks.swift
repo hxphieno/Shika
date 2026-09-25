@@ -16,9 +16,9 @@ import Foundation
                 let inputs = (1...max(1, item.input.count)).map { String(item.input.prefix($0)) }
                 for pass in ["cold", "retype"] {
                     for input in inputs {
-                        let start = CFAbsoluteTimeGetCurrent()
+                        let start = DispatchTime.now().uptimeNanoseconds
                         let values = corrector.suggestions(for: input)
-                        timings[item.schema + "." + pass, default: []].append((CFAbsoluteTimeGetCurrent() - start) * 1000)
+                        timings[item.schema + "." + pass, default: []].append(Double(DispatchTime.now().uptimeNanoseconds - start) / 1_000_000)
                         if iteration == 0 {
                             signatures.append(item.schema + ":" + pass + ":" + input + ":" + values.map { "\($0.code)|\($0.text)|\($0.cost)|\($0.frequency)" }.joined(separator: ";"))
                         }
