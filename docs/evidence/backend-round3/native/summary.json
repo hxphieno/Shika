@@ -1,0 +1,18 @@
+{
+  "cases": 2160,
+  "changedCandidateRoutes": 0,
+  "unexpectedCommits": 0,
+  "before": {
+    "keyP50MS": 0.2580881118774414,
+    "keyP95MS": 3.346085548400879,
+    "keyP99MS": 6.319999694824219,
+    "peakRSSBytes": 139067392
+  },
+  "after": {
+    "keyP50MS": 0.28705596923828125,
+    "keyP95MS": 3.3071041107177734,
+    "keyP99MS": 6.119012832641602,
+    "peakRSSBytes": 139018240
+  },
+  "scope": "macOS fresh-user existing regression corpora; results retained in process inflate RSS; not extension footprint; one timing run, not a speed claim"
+}

@@ -1,0 +1,2 @@
+Original workspace: xcodebuild -project Shika.xcodeproj -scheme Shika -sdk iphoneos -destination generic/platform=iOS -derivedDataPath /tmp/shika-backend-r2-device-build CODE_SIGNING_ALLOWED=NO build
+BUILD SUCCEEDED

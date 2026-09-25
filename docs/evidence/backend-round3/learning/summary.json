@@ -1,0 +1,249 @@
+{
+  "signatureCount": 19662,
+  "allSignaturesEqual": true,
+  "runs": {
+    "quiet-before-1": {
+      "timings": {
+        "shika_flypy.0": {
+          "count": 16420,
+          "p50MS": 8.3e-05,
+          "p95MS": 8.4e-05,
+          "p99MS": 0.000125,
+          "totalMS": 1.246879000000199
+        },
+        "shika_flypy.64": {
+          "count": 16420,
+          "p50MS": 0.004417,
+          "p95MS": 0.007334,
+          "p99MS": 0.008417,
+          "totalMS": 84.42481199999699
+        },
+        "shika_flypy.512": {
+          "count": 16420,
+          "p50MS": 0.02875,
+          "p95MS": 0.062125,
+          "p99MS": 0.070458,
+          "totalMS": 668.0970880000023
+        },
+        "shika_pinyin.0": {
+          "count": 16350,
+          "p50MS": 8.3e-05,
+          "p95MS": 8.4e-05,
+          "p99MS": 0.000125,
+          "totalMS": 1.2716010000001956
+        },
+        "shika_pinyin.64": {
+          "count": 16350,
+          "p50MS": 0.004708,
+          "p95MS": 0.005666,
+          "p99MS": 0.006459,
+          "totalMS": 73.74877699999918
+        },
+        "shika_pinyin.512": {
+          "count": 16350,
+          "p50MS": 0.035417,
+          "p95MS": 0.0425,
+          "p99MS": 0.051167,
+          "totalMS": 571.5690430000022
+        }
+      },
+      "peakRSSBytes": 11386880
+    },
+    "quiet-combined-1": {
+      "timings": {
+        "shika_flypy.0": {
+          "count": 16420,
+          "p50MS": 8.3e-05,
+          "p95MS": 0.000125,
+          "p99MS": 0.000167,
+          "totalMS": 1.3416990000002045
+        },
+        "shika_flypy.64": {
+          "count": 16420,
+          "p50MS": 0.001666,
+          "p95MS": 0.003125,
+          "p99MS": 0.003791,
+          "totalMS": 29.465257000003596
+        },
+        "shika_flypy.512": {
+          "count": 16420,
+          "p50MS": 0.013417,
+          "p95MS": 0.024625,
+          "p99MS": 0.027542,
+          "totalMS": 205.69436900000113
+        },
+        "shika_pinyin.0": {
+          "count": 16350,
+          "p50MS": 8.3e-05,
+          "p95MS": 8.4e-05,
+          "p99MS": 0.000125,
+          "totalMS": 1.2744960000001968
+        },
+        "shika_pinyin.64": {
+          "count": 16350,
+          "p50MS": 0.001334,
+          "p95MS": 0.00175,
+          "p99MS": 0.001875,
+          "totalMS": 18.009217000000394
+        },
+        "shika_pinyin.512": {
+          "count": 16350,
+          "p50MS": 0.009708,
+          "p95MS": 0.014,
+          "p99MS": 0.015458,
+          "totalMS": 140.40525999999952
+        }
+      },
+      "peakRSSBytes": 11419648
+    },
+    "quiet-combined-2": {
+      "timings": {
+        "shika_flypy.0": {
+          "count": 16420,
+          "p50MS": 8.3e-05,
+          "p95MS": 8.4e-05,
+          "p99MS": 8.4e-05,
+          "totalMS": 1.1857360000001247
+        },
+        "shika_flypy.64": {
+          "count": 16420,
+          "p50MS": 0.001583,
+          "p95MS": 0.002875,
+          "p99MS": 0.003042,
+          "totalMS": 26.456005000001635
+        },
+        "shika_flypy.512": {
+          "count": 16420,
+          "p50MS": 0.013375,
+          "p95MS": 0.024541,
+          "p99MS": 0.026208,
+          "totalMS": 202.24923
+        },
+        "shika_pinyin.0": {
+          "count": 16350,
+          "p50MS": 8.3e-05,
+          "p95MS": 8.4e-05,
+          "p99MS": 8.4e-05,
+          "totalMS": 1.2402380000001898
+        },
+        "shika_pinyin.64": {
+          "count": 16350,
+          "p50MS": 0.001333,
+          "p95MS": 0.001709,
+          "p99MS": 0.001875,
+          "totalMS": 17.8427840000003
+        },
+        "shika_pinyin.512": {
+          "count": 16350,
+          "p50MS": 0.009666,
+          "p95MS": 0.013875,
+          "p99MS": 0.015167,
+          "totalMS": 139.1986999999986
+        }
+      },
+      "peakRSSBytes": 11337728
+    },
+    "quiet-length-1": {
+      "timings": {
+        "shika_flypy.0": {
+          "count": 16420,
+          "p50MS": 8.3e-05,
+          "p95MS": 0.000125,
+          "p99MS": 0.000125,
+          "totalMS": 1.5432780000001713
+        },
+        "shika_flypy.64": {
+          "count": 16420,
+          "p50MS": 0.003083,
+          "p95MS": 0.006459,
+          "p99MS": 0.007042,
+          "totalMS": 60.075684999996305
+        },
+        "shika_flypy.512": {
+          "count": 16420,
+          "p50MS": 0.024542,
+          "p95MS": 0.048583,
+          "p99MS": 0.054584,
+          "totalMS": 439.752598000002
+        },
+        "shika_pinyin.0": {
+          "count": 16350,
+          "p50MS": 8.3e-05,
+          "p95MS": 8.4e-05,
+          "p99MS": 8.4e-05,
+          "totalMS": 1.21443900000017
+        },
+        "shika_pinyin.64": {
+          "count": 16350,
+          "p50MS": 0.002625,
+          "p95MS": 0.0035,
+          "p99MS": 0.003709,
+          "totalMS": 34.05070000000038
+        },
+        "shika_pinyin.512": {
+          "count": 16350,
+          "p50MS": 0.018417,
+          "p95MS": 0.027416,
+          "p99MS": 0.032125,
+          "totalMS": 271.41398500000423
+        }
+      },
+      "peakRSSBytes": 11468800
+    },
+    "quiet-before-2": {
+      "timings": {
+        "shika_flypy.0": {
+          "count": 16420,
+          "p50MS": 8.3e-05,
+          "p95MS": 8.4e-05,
+          "p99MS": 0.000125,
+          "totalMS": 1.2682160000001939
+        },
+        "shika_flypy.64": {
+          "count": 16420,
+          "p50MS": 0.004417,
+          "p95MS": 0.007292,
+          "p99MS": 0.008125,
+          "totalMS": 83.41885199999705
+        },
+        "shika_flypy.512": {
+          "count": 16420,
+          "p50MS": 0.028959,
+          "p95MS": 0.063334,
+          "p99MS": 0.074042,
+          "totalMS": 679.6083720000038
+        },
+        "shika_pinyin.0": {
+          "count": 16350,
+          "p50MS": 8.3e-05,
+          "p95MS": 8.4e-05,
+          "p99MS": 0.000125,
+          "totalMS": 1.2574460000001988
+        },
+        "shika_pinyin.64": {
+          "count": 16350,
+          "p50MS": 0.004666,
+          "p95MS": 0.005583,
+          "p99MS": 0.005875,
+          "totalMS": 72.66108000000055
+        },
+        "shika_pinyin.512": {
+          "count": 16350,
+          "p50MS": 0.035292,
+          "p95MS": 0.041959,
+          "p99MS": 0.048458,
+          "totalMS": 568.599767999998
+        }
+      },
+      "peakRSSBytes": 11386880
+    }
+  },
+  "order": [
+    "combined-1",
+    "before-1",
+    "length-1",
+    "before-2",
+    "combined-2"
+  ],
+  "fixture": "512 records/profile sampled with Python Random(20260927) from shipped correction index; exact, substitute, omit, insert, transpose and prefix inputs; not natural text accuracy"
+}

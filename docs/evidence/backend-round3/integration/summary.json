@@ -1,0 +1,13 @@
+{
+  "fullLearning": 238,
+  "doubleBehavior": 117,
+  "failures": 0,
+  "reproduction": {
+    "staticOracle": 25596,
+    "learnedOracle": 6564,
+    "candidateRouting": 18
+  },
+  "build": "PASS: original workspace iphoneos unsigned build",
+  "packaging": "PASS: check-rime-bundle.py",
+  "isolatedBuild": "PASS: identical copied project/source tree, same local Rime framework"
+}
