@@ -22,6 +22,18 @@ final class SKCorrectionCandidates {
               // A Hanzi prefix is a deliberate partial selection. Preserve the
               // native composition and its remaining segmentation unchanged.
               profile.allowsCorrection(preedit: state.preedit) else { return state }
+        // Static repairs and learned homophones can share a code. Reuse its
+        // exact native candidates within this presentation only; a later key or
+        // selection must see Rime's current learned ordering.
+        var queriedCandidates: [String: [SKCandidate]] = [:]
+        func exactCandidates(for code: String) -> [SKCandidate] {
+            if let cached = queriedCandidates[code] { return cached }
+            let exact = query(code).candidates.filter {
+                corrector.isExact(comment: $0.comment, input: code)
+            }
+            queriedCandidates[code] = exact
+            return exact
+        }
         let exactFirst = state.candidates.first.map { corrector.isExact(comment: $0.comment, input: state.input) } ?? false
         var extra: [SKCandidate] = []
         let primaryLimit = 3
@@ -30,8 +42,7 @@ final class SKCorrectionCandidates {
             corrector.isExact(comment: $0.comment, input: state.input)
         }.map(\.text))
         for suggestion in corrector.suggestions(for: state.input) {
-            let queried = query(suggestion.code)
-            let exact = queried.candidates.filter { corrector.isExact(comment: $0.comment, input: suggestion.code) }
+            let exact = exactCandidates(for: suggestion.code)
             guard let candidate = exact.first,
                   seen.insert(candidate.text).inserted else { continue }
             let index = -1 - extra.count
@@ -52,8 +63,8 @@ final class SKCorrectionCandidates {
         var learnedCandidates: [SKCandidate] = []
         for entry in learned {
             guard !seen.contains(entry.text),
-                  let candidate = query(entry.code).candidates.first(where: {
-                      $0.text == entry.text && corrector.isExact(comment: $0.comment, input: entry.code)
+                  let candidate = exactCandidates(for: entry.code).first(where: {
+                      $0.text == entry.text
                   }), seen.insert(entry.text).inserted else { continue }
             let index = -1000 - learnedCandidates.count
             corrections[index] = (entry.code, entry.text)
