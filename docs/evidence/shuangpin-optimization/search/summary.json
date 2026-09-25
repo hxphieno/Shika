@@ -1,0 +1,7 @@
+{
+  "cases": 400,
+  "candidateSequenceDifferences": 0,
+  "sourceSHA256": "91e1fcd61833704348c3988f99d2a37425bc24261edee81fb5aa3d8daf0979d7",
+  "fixtureSHA256": "f0c721776f147caf615fb329e2c829a4c36672e6e21d0ff3062b28581951f8ea",
+  "note": "Isolated lookup timings are separate from full-engine timings. Earlier end-to-end timings overlapped compilation and are not used to claim speedup."
+}

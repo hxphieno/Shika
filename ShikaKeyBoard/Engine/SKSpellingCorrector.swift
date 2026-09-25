@@ -15,6 +15,10 @@ final class SKSpellingCorrector {
     private let pool: Int
     private let syllables: [String: String]
     private let profile: SKSpellingProfile
+    private let doublePairs: Set<UInt16>
+    // Only immutable dictionary results are cached, never Rime's learned rank.
+    private var cache: [String: [Suggestion]] = [:]
+    private var cacheOrder: [String] = []
     private static let alphabet = Array(UInt8(97)...UInt8(122))
     private static let positions: [UInt8: (Double, Double)] = {
         var result: [UInt8: (Double, Double)] = [:]
@@ -37,6 +41,10 @@ final class SKSpellingCorrector {
             try? JSONDecoder().decode([String: String].self,
                 from: Data(contentsOf: resources.appendingPathComponent(name)))
         } ?? [:]
+        doublePairs = Set(syllables.values.compactMap { spelling in
+            let bytes = Array(spelling.utf8)
+            return bytes.count == 2 ? UInt16(bytes[0]) << 8 | UInt16(bytes[1]) : nil
+        })
     }
 
     /// Rime's spelling comment describes the whole candidate, including learned
@@ -46,6 +54,7 @@ final class SKSpellingCorrector {
     }
 
     func suggestions(for input: String) -> [Suggestion] {
+        if let cached = cache[input] { return cached }
         let code = Array(input.utf8)
         // Explicit syllable delimiters are intentional. Short prefixes are still
         // being typed; arbitrary long text must not cause unbounded decoding.
@@ -53,6 +62,14 @@ final class SKSpellingCorrector {
         var variants: [[UInt8]: Double] = [:]
         func add(_ value: [UInt8], _ cost: Double) {
             guard value != code else { return }
+            if profile == .doublePinyin {
+                // Every dictionary code is generated from complete two-key
+                // syllables. These paths cannot match any record in the index.
+                guard value.count % 2 == 0 else { return }
+                for offset in stride(from: 0, to: value.count, by: 2) {
+                    guard doublePairs.contains(UInt16(value[offset]) << 8 | UInt16(value[offset + 1])) else { return }
+                }
+            }
             variants[value] = min(variants[value] ?? .infinity, cost)
         }
         for i in code.indices {
@@ -72,7 +89,7 @@ final class SKSpellingCorrector {
                 var inserted = code; inserted.insert(key, at: i); add(inserted, 1)
             }
         }
-        return data.withUnsafeBytes { bytes in
+        let result = data.withUnsafeBytes { bytes in
             var matches: [Suggestion] = []
             for (variant, cost) in variants {
                 var low = 0, high = count
@@ -101,5 +118,9 @@ final class SKSpellingCorrector {
             }
             return matches.sorted { $0.score == $1.score ? $0.code < $1.code : $0.score > $1.score }.prefix(12).map { $0 }
         }
+        if cacheOrder.count == 64 { cache.removeValue(forKey: cacheOrder.removeFirst()) }
+        cacheOrder.append(input)
+        cache[input] = result
+        return result
     }
 }
