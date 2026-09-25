@@ -99,19 +99,29 @@ class SKMainKeyButton: UIButton {
     }
     private func showPreview() {
         guard preview == nil, let window else { return }
-        let keyRect = convert(bounds, to: window)
-        var width = max(54, bounds.width + 24)
-        if keyRect.minX <= SKMainKeyboardMetrics.inset + 0.5 { width = min(width, 55.5) }
-        if keyRect.maxX >= window.bounds.width - SKMainKeyboardMetrics.inset - 0.5 { width = min(width, 54) }
-        let height = bounds.height + 67
-        let left = max(SKMainKeyboardMetrics.inset, min(keyRect.midX - width / 2, window.bounds.width - width - SKMainKeyboardMetrics.inset))
-        let bubble = SKMainKeyPreview(frame: CGRect(x: left, y: keyRect.maxY - height, width: width, height: height))
-        bubble.keyFrame = CGRect(x: keyRect.minX - left, y: height - bounds.height, width: bounds.width, height: bounds.height)
+        // A keyboard extension cannot draw outside its own input view, even
+        // when its local window accepts the subview. Keep previews inside it.
+        var ancestor = superview
+        var container: UIView = window
+        while let view = ancestor {
+            if let surface = view as? SKMainKeyboardSurface {
+                container = surface.superview ?? surface
+                break
+            }
+            ancestor = view.superview
+        }
+        let keyRect = convert(bounds, to: container)
+        let inset = SKMainKeyboardMetrics.inset
+        let width = min(max(54, bounds.width + 24), container.bounds.width - 2 * inset)
+        let left = max(inset, min(keyRect.midX - width / 2, container.bounds.width - width - inset))
+        let top = max(container.bounds.minY + 6, keyRect.minY - 67)
+        let bubble = SKMainKeyPreview(frame: CGRect(x: left, y: top, width: width, height: keyRect.maxY - top))
+        bubble.keyFrame = convert(bounds, to: container).offsetBy(dx: -left, dy: -top)
         bubble.fillColor = SKMainKeyboardMetrics.keyColor.resolvedColor(with: traitCollection)
         bubble.textColor = SKMainKeyboardMetrics.textColor.resolvedColor(with: traitCollection)
         bubble.letter = keyTitle
         bubble.isUserInteractionEnabled = false
-        window.addSubview(bubble)
+        container.addSubview(bubble)
         preview = bubble
     }
 }
@@ -135,7 +145,7 @@ private final class SKMainKeyPreview: UIView {
         // contour. Edge keys keep the outside edge aligned with the keycap.
         let width = bounds.width, bottom = bounds.height
         let radius: CGFloat = 10, keyRadius = SKMainKeyboardMetrics.cornerRadius
-        let shoulder: CGFloat = 51, neckBottom = keyFrame.minY + 7
+        let shoulder = min(51, max(20, keyFrame.minY - 5)), neckBottom = keyFrame.minY + 7
         let path = UIBezierPath()
         path.move(to: CGPoint(x: radius, y: 0))
         path.addLine(to: CGPoint(x: width - radius, y: 0))
@@ -157,8 +167,8 @@ private final class SKMainKeyPreview: UIView {
         path.close()
         fillColor.setFill()
         path.fill()
-        let font = UIFont.systemFont(ofSize: 37)
+        let font = UIFont.systemFont(ofSize: min(37, max(24, keyFrame.minY - 14)))
         let size = (letter as NSString).size(withAttributes: [.font: font])
-        (letter as NSString).draw(at: CGPoint(x: (bounds.width - size.width) / 2 + SKMainKeyButton.opticalOffset(for: letter, font: font), y: 12), withAttributes: [.font: font, .foregroundColor: textColor])
+        (letter as NSString).draw(at: CGPoint(x: (bounds.width - size.width) / 2 + SKMainKeyButton.opticalOffset(for: letter, font: font), y: keyFrame.minY >= 67 ? 12 : max(2, (shoulder - size.height) / 2)), withAttributes: [.font: font, .foregroundColor: textColor])
     }
 }
