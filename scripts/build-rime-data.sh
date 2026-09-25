@@ -15,5 +15,6 @@ cp "$work/user/build/"* ShikaKeyBoard/Resources/RimeData.bundle/build/
 # The old dictionary remains an input fallback, but its compiled table is unused.
 rm -f ShikaKeyBoard/Resources/RimeData.bundle/build/pinyin_simp.{table,reverse}.bin
 cp Vendor/RimeData/default.yaml ShikaKeyBoard/Resources/RimeData.bundle/
+python3 scripts/generate-rime-assist-schemas.py
 
 python3 scripts/generate-correction-index.py

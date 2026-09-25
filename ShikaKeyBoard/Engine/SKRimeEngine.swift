@@ -10,6 +10,12 @@ final class SKRimeEngine: SKInputEngine {
     private let correctionEnabled: Bool
     private var segmentationCandidates: SKPinyinSegmentationCandidates?
     private var correctionCandidates: SKCorrectionCandidates?
+    private var syllableCandidates: SKSyllableCorrectionCandidates?
+    private var syllableProbe: SKRimeSession?
+    private var syllableCache: [String: SKEngineState] = [:]
+    private var syllableCacheOrder: [String] = []
+    private let userDirectory: URL
+    private var learnedSpellings: SKLearnedSpellingIndex?
     private var displayed = SKEngineState()
 
     init(configuration: SKInputConfiguration, resourceURL: URL? = nil, userURL: URL? = nil, correctionEnabled: Bool = true) throws {
@@ -18,31 +24,35 @@ final class SKRimeEngine: SKInputEngine {
         let directory = try userURL ?? FileManager.default.url(for: .applicationSupportDirectory,
             in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("RimeUser", isDirectory: true)
         self.resources = resources
+        self.userDirectory = directory
         self.correctionEnabled = correctionEnabled
         session = try SKRimeSession(sharedPath: resources.path, userPath: directory.path, schema: configuration.schemaID)
         probe = try SKRimeSession(sharedPath: resources.path, userPath: directory.path, schema: configuration.schemaID)
         segmentationCandidates = SKPinyinSegmentationCandidates(resources: resources, configuration: configuration)
         correctionCandidates = correctionEnabled ? SKCorrectionCandidates(resources: resources, configuration: configuration) : nil
+        configureSyllableSearch(configuration)
     }
 
     func process(key: Int32) -> SKEngineState {
+        if key == 32 || key == 0xff0d { invalidateSyllableCache() }
         if key == 32, let first = displayed.candidates.first, first.index < 0 {
             return selectCandidate(at: first.index)
         }
-        return present(decode(session.processKey(key)))
+        return finish(decode(session.processKey(key)), code: displayed.input)
     }
     func selectCandidate(at index: Int) -> SKEngineState {
-        if let correction = segmentationCandidates?.selection(at: index) ?? correctionCandidates?.selection(at: index) {
+        invalidateSyllableCache()
+        if let correction = segmentationCandidates?.selection(at: index) ?? correctionCandidates?.selection(at: index) ?? syllableCandidates?.selection(at: index) {
             let original = displayed.input
             _ = session.replaceInput(correction.code)
             let selected = session.selectText(correction.text)
-            if selected["matched"] as? Bool == true { return present(decode(selected)) }
+            if selected["matched"] as? Bool == true { return finish(decode(selected), code: correction.code) }
             // Preserve input if an unexpected dictionary/session change made a
             // previously displayed candidate unavailable.
             return present(decode(session.replaceInput(original)))
         }
         guard index >= 0 else { return displayed }
-        return present(decode(session.selectCandidate(UInt(index))))
+        return finish(decode(session.selectCandidate(UInt(index))), code: displayed.input)
     }
     func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage {
         let data = session.candidatePage(from: UInt(max(0, index)), limit: UInt(max(1, min(limit, 64))))
@@ -52,8 +62,9 @@ final class SKRimeEngine: SKInputEngine {
     }
     func changePage(backward: Bool) -> SKEngineState { present(decode(session.changePage(backward))) }
     func commit() -> SKEngineState {
+        invalidateSyllableCache()
         if let first = displayed.candidates.first, first.index < 0 { return selectCandidate(at: first.index) }
-        return present(decode(session.commitComposition()))
+        return finish(decode(session.commitComposition()), code: displayed.input)
     }
     func clear() -> SKEngineState { present(decode(session.clearComposition())) }
     func selectConfiguration(_ configuration: SKInputConfiguration) throws -> SKEngineState {
@@ -62,6 +73,7 @@ final class SKRimeEngine: SKInputEngine {
         _ = probe.selectSchema(configuration.schemaID)
         segmentationCandidates = SKPinyinSegmentationCandidates(resources: resources, configuration: configuration)
         correctionCandidates = correctionEnabled ? SKCorrectionCandidates(resources: resources, configuration: configuration) : nil
+        configureSyllableSearch(configuration)
         return present(decode(result))
     }
 
@@ -69,11 +81,42 @@ final class SKRimeEngine: SKInputEngine {
         let segmented = segmentationCandidates?.present(result) { code in
             decode(probe.replaceInput(code))
         } ?? result
-        let state = correctionCandidates?.present(segmented) { code in
+        let corrected = correctionCandidates?.present(segmented, learned: learnedSpellings?.suggestions(for: segmented.input) ?? []) { code in
             decode(probe.replaceInput(code))
         } ?? segmented
+        let state = syllableCandidates?.present(corrected) { code in
+            if let cached = syllableCache[code] { return cached }
+            guard let syllableProbe else { return SKEngineState() }
+            let value = decode(syllableProbe.replaceInput(code))
+            if syllableCacheOrder.count == 32 { syllableCache.removeValue(forKey: syllableCacheOrder.removeFirst()) }
+            syllableCacheOrder.append(code); syllableCache[code] = value
+            return value
+        } ?? corrected
         displayed = state
         return state
+    }
+
+    private func invalidateSyllableCache() {
+        syllableCache.removeAll(keepingCapacity: true)
+        syllableCacheOrder.removeAll(keepingCapacity: true)
+    }
+
+    private func finish(_ state: SKEngineState, code: String) -> SKEngineState {
+        if !state.committedText.isEmpty, state.input.isEmpty {
+            learnedSpellings?.record(code: code, text: state.committedText)
+        }
+        return present(state)
+    }
+
+    private func configureSyllableSearch(_ configuration: SKInputConfiguration) {
+        invalidateSyllableCache()
+        syllableProbe = nil; syllableCandidates = nil
+        learnedSpellings = correctionEnabled && configuration.spelling == .doublePinyin ? SKLearnedSpellingIndex(userDirectory: userDirectory) : nil
+        guard correctionEnabled, configuration.spelling == .doublePinyin,
+              FileManager.default.fileExists(atPath: resources.appendingPathComponent("build/shika_flypy_assist.schema.yaml").path),
+              let helper = try? SKRimeSession(sharedPath: resources.path, userPath: userDirectory.path, schema: "shika_flypy_assist") else { return }
+        syllableProbe = helper
+        syllableCandidates = SKSyllableCorrectionCandidates(resources: resources, configuration: configuration)
     }
 
     private func decode(_ data: [AnyHashable: Any]) -> SKEngineState {
