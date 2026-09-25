@@ -1,0 +1,3465 @@
+{
+  "freshProcessAndUserDirectoryPerCase": true,
+  "count": 494,
+  "passed": 494,
+  "results": [
+    {
+      "id": "spopt-001-clean",
+      "passed": true,
+      "output": "丝滑",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-001-insertion",
+      "passed": true,
+      "output": "丝滑",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-001-transposition",
+      "passed": true,
+      "output": "丝滑",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-002-clean",
+      "passed": true,
+      "output": "键盘",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-002-substitution",
+      "passed": true,
+      "output": "键盘",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-002-omission",
+      "passed": true,
+      "output": "键盘",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-002-insertion",
+      "passed": true,
+      "output": "键盘",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-002-transposition",
+      "passed": true,
+      "output": "键盘",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-004-clean",
+      "passed": true,
+      "output": "词库",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-004-substitution",
+      "passed": true,
+      "output": "词库",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-004-insertion",
+      "passed": true,
+      "output": "词库",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-004-transposition",
+      "passed": true,
+      "output": "词库",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-006-clean",
+      "passed": true,
+      "output": "双拼",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-006-substitution",
+      "passed": true,
+      "output": "双拼",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-006-insertion",
+      "passed": true,
+      "output": "双拼",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-006-transposition",
+      "passed": true,
+      "output": "双拼",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-006-double-error",
+      "passed": true,
+      "output": "双拼",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-007-clean",
+      "passed": true,
+      "output": "纠错",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-007-substitution",
+      "passed": true,
+      "output": "纠错",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-007-omission",
+      "passed": true,
+      "output": "纠错",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-007-insertion",
+      "passed": true,
+      "output": "纠错",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-007-transposition",
+      "passed": true,
+      "output": "纠错",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-009-clean",
+      "passed": true,
+      "output": "引擎",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-009-substitution",
+      "passed": true,
+      "output": "引擎",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-009-omission",
+      "passed": true,
+      "output": "引擎",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-009-insertion",
+      "passed": true,
+      "output": "引擎",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-009-transposition",
+      "passed": true,
+      "output": "引擎",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-010-clean",
+      "passed": true,
+      "output": "界面",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-010-substitution",
+      "passed": true,
+      "output": "界面",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-010-omission",
+      "passed": true,
+      "output": "界面",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-010-insertion",
+      "passed": true,
+      "output": "界面",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-010-transposition",
+      "passed": true,
+      "output": "界面",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-010-double-error",
+      "passed": true,
+      "output": "界面",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-011-clean",
+      "passed": true,
+      "output": "布局",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-011-substitution",
+      "passed": true,
+      "output": "布局",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-011-omission",
+      "passed": true,
+      "output": "布局",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-011-insertion",
+      "passed": true,
+      "output": "布局",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-011-transposition",
+      "passed": true,
+      "output": "布局",
+      "remaining": "",
+      "rank": 9
+    },
+    {
+      "id": "spopt-013-clean",
+      "passed": true,
+      "output": "气泡",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-013-substitution",
+      "passed": true,
+      "output": "气泡",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-013-insertion",
+      "passed": true,
+      "output": "气泡",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-013-transposition",
+      "passed": true,
+      "output": "气泡",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-013-double-error",
+      "passed": true,
+      "output": "气泡",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-014-clean",
+      "passed": true,
+      "output": "滑动",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-014-omission",
+      "passed": true,
+      "output": "滑动",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-014-insertion",
+      "passed": true,
+      "output": "滑动",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-014-transposition",
+      "passed": true,
+      "output": "滑动",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-015-clean",
+      "passed": true,
+      "output": "点击",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-015-substitution",
+      "passed": true,
+      "output": "点击",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-015-omission",
+      "passed": true,
+      "output": "点击",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-015-insertion",
+      "passed": true,
+      "output": "点击",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-015-transposition",
+      "passed": true,
+      "output": "点击",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-015-double-error",
+      "passed": true,
+      "output": "点击",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-016-clean",
+      "passed": true,
+      "output": "延迟",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-016-substitution",
+      "passed": true,
+      "output": "延迟",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-016-insertion",
+      "passed": true,
+      "output": "延迟",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-017-clean",
+      "passed": true,
+      "output": "内存",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-017-substitution",
+      "passed": true,
+      "output": "内存",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-017-omission",
+      "passed": true,
+      "output": "内存",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-017-insertion",
+      "passed": true,
+      "output": "内存",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-017-transposition",
+      "passed": true,
+      "output": "内存",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-018-clean",
+      "passed": true,
+      "output": "缓存",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-018-substitution",
+      "passed": true,
+      "output": "缓存",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-018-omission",
+      "passed": true,
+      "output": "缓存",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-018-insertion",
+      "passed": true,
+      "output": "缓存",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-018-transposition",
+      "passed": true,
+      "output": "缓存",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-019-clean",
+      "passed": true,
+      "output": "编译",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-019-insertion",
+      "passed": true,
+      "output": "编译",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-019-transposition",
+      "passed": true,
+      "output": "编译",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-020-clean",
+      "passed": true,
+      "output": "早餐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-020-substitution",
+      "passed": true,
+      "output": "早餐",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-020-omission",
+      "passed": true,
+      "output": "早餐",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-020-insertion",
+      "passed": true,
+      "output": "早餐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-020-transposition",
+      "passed": true,
+      "output": "早餐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-020-double-error",
+      "passed": true,
+      "output": "早餐",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-021-clean",
+      "passed": true,
+      "output": "午饭",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-021-substitution",
+      "passed": true,
+      "output": "午饭",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-021-insertion",
+      "passed": true,
+      "output": "午饭",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-021-transposition",
+      "passed": true,
+      "output": "午饭",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-021-double-error",
+      "passed": true,
+      "output": "午饭",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-022-clean",
+      "passed": true,
+      "output": "晚餐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-022-substitution",
+      "passed": true,
+      "output": "晚餐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-022-omission",
+      "passed": true,
+      "output": "晚餐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-022-insertion",
+      "passed": true,
+      "output": "晚餐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-022-transposition",
+      "passed": true,
+      "output": "晚餐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-022-double-error",
+      "passed": true,
+      "output": "晚餐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-023-clean",
+      "passed": true,
+      "output": "奶茶",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-023-substitution",
+      "passed": true,
+      "output": "奶茶",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-023-omission",
+      "passed": true,
+      "output": "奶茶",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-023-insertion",
+      "passed": true,
+      "output": "奶茶",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-023-transposition",
+      "passed": true,
+      "output": "奶茶",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-024-clean",
+      "passed": true,
+      "output": "外卖",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-024-substitution",
+      "passed": true,
+      "output": "外卖",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-024-omission",
+      "passed": true,
+      "output": "外卖",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-024-insertion",
+      "passed": true,
+      "output": "外卖",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-024-transposition",
+      "passed": true,
+      "output": "外卖",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-024-double-error",
+      "passed": true,
+      "output": "外卖",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-025-clean",
+      "passed": true,
+      "output": "快递",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-025-substitution",
+      "passed": true,
+      "output": "快递",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-025-insertion",
+      "passed": true,
+      "output": "快递",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-025-transposition",
+      "passed": true,
+      "output": "快递",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-026-clean",
+      "passed": true,
+      "output": "超市",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-026-substitution",
+      "passed": true,
+      "output": "超市",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-026-insertion",
+      "passed": true,
+      "output": "超市",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-026-transposition",
+      "passed": true,
+      "output": "超市",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-026-double-error",
+      "passed": true,
+      "output": "超市",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-027-clean",
+      "passed": true,
+      "output": "水果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-027-substitution",
+      "passed": true,
+      "output": "水果",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-027-insertion",
+      "passed": true,
+      "output": "水果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-027-transposition",
+      "passed": true,
+      "output": "水果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-027-double-error",
+      "passed": true,
+      "output": "水果",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-028-clean",
+      "passed": true,
+      "output": "蔬菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-028-substitution",
+      "passed": true,
+      "output": "蔬菜",
+      "remaining": "",
+      "rank": 15
+    },
+    {
+      "id": "spopt-028-omission",
+      "passed": true,
+      "output": "蔬菜",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-028-insertion",
+      "passed": true,
+      "output": "蔬菜",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-028-transposition",
+      "passed": true,
+      "output": "蔬菜",
+      "remaining": "",
+      "rank": 10
+    },
+    {
+      "id": "spopt-030-clean",
+      "passed": true,
+      "output": "鸡蛋",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-030-substitution",
+      "passed": true,
+      "output": "鸡蛋",
+      "remaining": "",
+      "rank": 9
+    },
+    {
+      "id": "spopt-030-insertion",
+      "passed": true,
+      "output": "鸡蛋",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-030-transposition",
+      "passed": true,
+      "output": "鸡蛋",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-032-clean",
+      "passed": true,
+      "output": "火锅",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-032-substitution",
+      "passed": true,
+      "output": "火锅",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-032-omission",
+      "passed": true,
+      "output": "火锅",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-032-insertion",
+      "passed": true,
+      "output": "火锅",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-032-transposition",
+      "passed": true,
+      "output": "火锅",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-032-double-error",
+      "passed": true,
+      "output": "火锅",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-033-clean",
+      "passed": true,
+      "output": "烧烤",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-033-substitution",
+      "passed": true,
+      "output": "烧烤",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-033-omission",
+      "passed": true,
+      "output": "烧烤",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-033-insertion",
+      "passed": true,
+      "output": "烧烤",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-033-transposition",
+      "passed": true,
+      "output": "烧烤",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-034-clean",
+      "passed": true,
+      "output": "餐厅",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-034-substitution",
+      "passed": true,
+      "output": "餐厅",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-034-omission",
+      "passed": true,
+      "output": "餐厅",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-034-insertion",
+      "passed": true,
+      "output": "餐厅",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-034-transposition",
+      "passed": true,
+      "output": "餐厅",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-035-clean",
+      "passed": true,
+      "output": "好吃",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-035-substitution",
+      "passed": true,
+      "output": "好吃",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-035-insertion",
+      "passed": true,
+      "output": "好吃",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-035-transposition",
+      "passed": true,
+      "output": "好吃",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-035-double-error",
+      "passed": true,
+      "output": "好吃",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-036-clean",
+      "passed": true,
+      "output": "推荐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-036-substitution",
+      "passed": true,
+      "output": "推荐",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-036-omission",
+      "passed": true,
+      "output": "推荐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-036-insertion",
+      "passed": true,
+      "output": "推荐",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-036-transposition",
+      "passed": true,
+      "output": "推荐",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-036-double-error",
+      "passed": true,
+      "output": "推荐",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-037-clean",
+      "passed": true,
+      "output": "预约",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-037-substitution",
+      "passed": true,
+      "output": "预约",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-037-omission",
+      "passed": true,
+      "output": "预约",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-037-insertion",
+      "passed": true,
+      "output": "预约",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-037-transposition",
+      "passed": true,
+      "output": "预约",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-039-clean",
+      "passed": true,
+      "output": "地铁",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-039-substitution",
+      "passed": true,
+      "output": "地铁",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-039-omission",
+      "passed": true,
+      "output": "地铁",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-039-insertion",
+      "passed": true,
+      "output": "地铁",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-039-transposition",
+      "passed": true,
+      "output": "地铁",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-040-clean",
+      "passed": true,
+      "output": "公交",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-040-insertion",
+      "passed": true,
+      "output": "公交",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-040-transposition",
+      "passed": true,
+      "output": "公交",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-041-clean",
+      "passed": true,
+      "output": "早晨",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-041-substitution",
+      "passed": true,
+      "output": "早晨",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-041-insertion",
+      "passed": true,
+      "output": "早晨",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-041-transposition",
+      "passed": true,
+      "output": "早晨",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-042-clean",
+      "passed": true,
+      "output": "黄昏",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-042-substitution",
+      "passed": true,
+      "output": "黄昏",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-042-omission",
+      "passed": true,
+      "output": "黄昏",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-042-insertion",
+      "passed": true,
+      "output": "黄昏",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-042-transposition",
+      "passed": true,
+      "output": "黄昏",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-043-clean",
+      "passed": true,
+      "output": "月亮",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-043-substitution",
+      "passed": true,
+      "output": "月亮",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-043-omission",
+      "passed": true,
+      "output": "月亮",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-043-insertion",
+      "passed": true,
+      "output": "月亮",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-043-transposition",
+      "passed": true,
+      "output": "月亮",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-044-clean",
+      "passed": true,
+      "output": "太阳",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-044-substitution",
+      "passed": true,
+      "output": "太阳",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-044-omission",
+      "passed": true,
+      "output": "太阳",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-044-insertion",
+      "passed": true,
+      "output": "太阳",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-044-transposition",
+      "passed": true,
+      "output": "太阳",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-045-clean",
+      "passed": true,
+      "output": "河流",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-045-substitution",
+      "passed": true,
+      "output": "河流",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-045-omission",
+      "passed": true,
+      "output": "河流",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-045-insertion",
+      "passed": true,
+      "output": "河流",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-045-transposition",
+      "passed": true,
+      "output": "河流",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-047-clean",
+      "passed": true,
+      "output": "石头",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-047-substitution",
+      "passed": true,
+      "output": "石头",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-047-omission",
+      "passed": true,
+      "output": "石头",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-047-insertion",
+      "passed": true,
+      "output": "石头",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-047-transposition",
+      "passed": true,
+      "output": "石头",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-048-clean",
+      "passed": true,
+      "output": "土地",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-048-substitution",
+      "passed": true,
+      "output": "土地",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-048-insertion",
+      "passed": true,
+      "output": "土地",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-048-transposition",
+      "passed": true,
+      "output": "土地",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-049-clean",
+      "passed": true,
+      "output": "空气",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-049-substitution",
+      "passed": true,
+      "output": "空气",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-049-omission",
+      "passed": true,
+      "output": "空气",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-049-insertion",
+      "passed": true,
+      "output": "空气",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-049-transposition",
+      "passed": true,
+      "output": "空气",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-050-clean",
+      "passed": true,
+      "output": "温度",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-050-substitution",
+      "passed": true,
+      "output": "温度",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-050-omission",
+      "passed": true,
+      "output": "温度",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-050-insertion",
+      "passed": true,
+      "output": "温度",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-050-transposition",
+      "passed": true,
+      "output": "温度",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-051-clean",
+      "passed": true,
+      "output": "春天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-051-substitution",
+      "passed": true,
+      "output": "春天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-051-omission",
+      "passed": true,
+      "output": "春天",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-051-insertion",
+      "passed": true,
+      "output": "春天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-051-transposition",
+      "passed": true,
+      "output": "春天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-052-clean",
+      "passed": true,
+      "output": "夏天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-052-substitution",
+      "passed": true,
+      "output": "夏天",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-052-omission",
+      "passed": true,
+      "output": "夏天",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-052-insertion",
+      "passed": true,
+      "output": "夏天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-052-transposition",
+      "passed": true,
+      "output": "夏天",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-052-double-error",
+      "passed": true,
+      "output": "夏天",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-053-clean",
+      "passed": true,
+      "output": "秋天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-053-substitution",
+      "passed": true,
+      "output": "秋天",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-053-omission",
+      "passed": true,
+      "output": "秋天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-053-insertion",
+      "passed": true,
+      "output": "秋天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-053-transposition",
+      "passed": true,
+      "output": "秋天",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-053-double-error",
+      "passed": true,
+      "output": "秋天",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-054-clean",
+      "passed": true,
+      "output": "冬天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-054-substitution",
+      "passed": true,
+      "output": "冬天",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-054-omission",
+      "passed": true,
+      "output": "冬天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-054-insertion",
+      "passed": true,
+      "output": "冬天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-054-transposition",
+      "passed": true,
+      "output": "冬天",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-056-clean",
+      "passed": true,
+      "output": "空调",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-056-substitution",
+      "passed": true,
+      "output": "空调",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-056-omission",
+      "passed": true,
+      "output": "空调",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-056-insertion",
+      "passed": true,
+      "output": "空调",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-056-transposition",
+      "passed": true,
+      "output": "空调",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-056-double-error",
+      "passed": true,
+      "output": "空调",
+      "remaining": "",
+      "rank": 10
+    },
+    {
+      "id": "spopt-057-clean",
+      "passed": true,
+      "output": "沙发",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-057-substitution",
+      "passed": true,
+      "output": "沙发",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-057-omission",
+      "passed": true,
+      "output": "沙发",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-057-insertion",
+      "passed": true,
+      "output": "沙发",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-057-transposition",
+      "passed": true,
+      "output": "沙发",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-058-clean",
+      "passed": true,
+      "output": "椅子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-058-insertion",
+      "passed": true,
+      "output": "椅子",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-058-transposition",
+      "passed": true,
+      "output": "椅子",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-059-clean",
+      "passed": true,
+      "output": "桌子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-059-substitution",
+      "passed": true,
+      "output": "桌子",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-059-omission",
+      "passed": true,
+      "output": "桌子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-059-insertion",
+      "passed": true,
+      "output": "桌子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-059-transposition",
+      "passed": true,
+      "output": "桌子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-060-clean",
+      "passed": true,
+      "output": "台灯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-060-substitution",
+      "passed": true,
+      "output": "台灯",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-060-insertion",
+      "passed": true,
+      "output": "台灯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-060-transposition",
+      "passed": true,
+      "output": "台灯",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-062-clean",
+      "passed": true,
+      "output": "被子",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-062-substitution",
+      "passed": true,
+      "output": "被子",
+      "remaining": "",
+      "rank": 12
+    },
+    {
+      "id": "spopt-062-omission",
+      "passed": true,
+      "output": "被子",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-062-insertion",
+      "passed": true,
+      "output": "被子",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-062-transposition",
+      "passed": true,
+      "output": "被子",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-063-clean",
+      "passed": true,
+      "output": "牙刷",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-063-substitution",
+      "passed": true,
+      "output": "牙刷",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-063-omission",
+      "passed": true,
+      "output": "牙刷",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-063-insertion",
+      "passed": true,
+      "output": "牙刷",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-063-transposition",
+      "passed": true,
+      "output": "牙刷",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-064-clean",
+      "passed": true,
+      "output": "肥皂",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-064-substitution",
+      "passed": true,
+      "output": "肥皂",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-064-insertion",
+      "passed": true,
+      "output": "肥皂",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-064-transposition",
+      "passed": true,
+      "output": "肥皂",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-065-clean",
+      "passed": true,
+      "output": "毛衣",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-065-substitution",
+      "passed": true,
+      "output": "毛衣",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-065-omission",
+      "passed": true,
+      "output": "毛衣",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-065-insertion",
+      "passed": true,
+      "output": "毛衣",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-065-transposition",
+      "passed": true,
+      "output": "毛衣",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-066-clean",
+      "passed": true,
+      "output": "衬衫",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-066-substitution",
+      "passed": true,
+      "output": "衬衫",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-066-insertion",
+      "passed": true,
+      "output": "衬衫",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-066-transposition",
+      "passed": true,
+      "output": "衬衫",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-066-double-error",
+      "passed": true,
+      "output": "衬衫",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-067-clean",
+      "passed": true,
+      "output": "裤子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-067-insertion",
+      "passed": true,
+      "output": "裤子",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-068-clean",
+      "passed": true,
+      "output": "鞋子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-068-substitution",
+      "passed": true,
+      "output": "鞋子",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-068-omission",
+      "passed": true,
+      "output": "鞋子",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-068-insertion",
+      "passed": true,
+      "output": "鞋子",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-068-transposition",
+      "passed": true,
+      "output": "鞋子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-069-clean",
+      "passed": true,
+      "output": "袜子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-069-substitution",
+      "passed": true,
+      "output": "袜子",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-069-omission",
+      "passed": true,
+      "output": "袜子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-069-insertion",
+      "passed": true,
+      "output": "袜子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-069-transposition",
+      "passed": true,
+      "output": "袜子",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-069-double-error",
+      "passed": true,
+      "output": "袜子",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-070-clean",
+      "passed": true,
+      "output": "帽子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-070-substitution",
+      "passed": true,
+      "output": "帽子",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-070-insertion",
+      "passed": true,
+      "output": "帽子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-070-transposition",
+      "passed": true,
+      "output": "帽子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-070-double-error",
+      "passed": true,
+      "output": "帽子",
+      "remaining": "",
+      "rank": 10
+    },
+    {
+      "id": "spopt-071-clean",
+      "passed": true,
+      "output": "眼睛",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-071-substitution",
+      "passed": true,
+      "output": "眼睛",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-071-omission",
+      "passed": true,
+      "output": "眼睛",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-071-insertion",
+      "passed": true,
+      "output": "眼睛",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-071-transposition",
+      "passed": true,
+      "output": "眼睛",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-072-clean",
+      "passed": true,
+      "output": "鼻子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-072-substitution",
+      "passed": true,
+      "output": "鼻子",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-072-insertion",
+      "passed": true,
+      "output": "鼻子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-072-transposition",
+      "passed": true,
+      "output": "鼻子",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-073-clean",
+      "passed": true,
+      "output": "耳朵",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-073-substitution",
+      "passed": true,
+      "output": "耳朵",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-073-omission",
+      "passed": true,
+      "output": "耳朵",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-073-insertion",
+      "passed": true,
+      "output": "耳朵",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-073-transposition",
+      "passed": true,
+      "output": "耳朵",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-073-double-error",
+      "passed": true,
+      "output": "耳朵",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-074-clean",
+      "passed": true,
+      "output": "牙齿",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-074-substitution",
+      "passed": true,
+      "output": "牙齿",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-074-omission",
+      "passed": true,
+      "output": "牙齿",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-074-insertion",
+      "passed": true,
+      "output": "牙齿",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-075-clean",
+      "passed": true,
+      "output": "肩膀",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-075-substitution",
+      "passed": true,
+      "output": "肩膀",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-075-insertion",
+      "passed": true,
+      "output": "肩膀",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-075-transposition",
+      "passed": true,
+      "output": "肩膀",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-076-clean",
+      "passed": true,
+      "output": "胳膊",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-076-substitution",
+      "passed": true,
+      "output": "胳膊",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-076-omission",
+      "passed": true,
+      "output": "胳膊",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-076-insertion",
+      "passed": true,
+      "output": "胳膊",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-076-transposition",
+      "passed": true,
+      "output": "胳膊",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-077-clean",
+      "passed": true,
+      "output": "手指",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-077-substitution",
+      "passed": true,
+      "output": "手指",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-077-insertion",
+      "passed": true,
+      "output": "手指",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-077-transposition",
+      "passed": true,
+      "output": "手指",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-078-clean",
+      "passed": true,
+      "output": "膝盖",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-078-substitution",
+      "passed": true,
+      "output": "膝盖",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-078-omission",
+      "passed": true,
+      "output": "膝盖",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-078-insertion",
+      "passed": true,
+      "output": "膝盖",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-078-transposition",
+      "passed": true,
+      "output": "膝盖",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-079-clean",
+      "passed": true,
+      "output": "声音",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-079-substitution",
+      "passed": true,
+      "output": "声音",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-079-omission",
+      "passed": true,
+      "output": "声音",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-079-insertion",
+      "passed": true,
+      "output": "声音",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-079-transposition",
+      "passed": true,
+      "output": "声音",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-079-double-error",
+      "passed": true,
+      "output": "声音",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-080-clean",
+      "passed": true,
+      "output": "呼吸",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-080-substitution",
+      "passed": true,
+      "output": "呼吸",
+      "remaining": "",
+      "rank": 10
+    },
+    {
+      "id": "spopt-080-insertion",
+      "passed": true,
+      "output": "呼吸",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-080-transposition",
+      "passed": true,
+      "output": "呼吸",
+      "remaining": "",
+      "rank": 11
+    },
+    {
+      "id": "spopt-081-clean",
+      "passed": true,
+      "output": "足球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-081-substitution",
+      "passed": true,
+      "output": "足球",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-081-omission",
+      "passed": true,
+      "output": "足球",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-081-insertion",
+      "passed": true,
+      "output": "足球",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-081-transposition",
+      "passed": true,
+      "output": "足球",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-082-clean",
+      "passed": true,
+      "output": "篮球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-082-substitution",
+      "passed": true,
+      "output": "篮球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-082-omission",
+      "passed": true,
+      "output": "篮球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-082-insertion",
+      "passed": true,
+      "output": "篮球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-082-transposition",
+      "passed": true,
+      "output": "篮球",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-082-double-error",
+      "passed": true,
+      "output": "篮球",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-083-clean",
+      "passed": true,
+      "output": "排球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-083-substitution",
+      "passed": true,
+      "output": "排球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-083-insertion",
+      "passed": true,
+      "output": "排球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-083-transposition",
+      "passed": true,
+      "output": "排球",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-083-double-error",
+      "passed": true,
+      "output": "排球",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-084-clean",
+      "passed": true,
+      "output": "乒乓球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-084-substitution",
+      "passed": true,
+      "output": "乒乓球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-084-omission",
+      "passed": true,
+      "output": "乒乓球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-084-insertion",
+      "passed": true,
+      "output": "乒乓球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-084-transposition",
+      "passed": true,
+      "output": "乒乓球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-084-double-error",
+      "passed": true,
+      "output": "乒乓球",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-085-clean",
+      "passed": true,
+      "output": "网球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-085-substitution",
+      "passed": true,
+      "output": "网球",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-085-omission",
+      "passed": true,
+      "output": "网球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-085-insertion",
+      "passed": true,
+      "output": "网球",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-085-transposition",
+      "passed": true,
+      "output": "网球",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-085-double-error",
+      "passed": true,
+      "output": "网球",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-087-clean",
+      "passed": true,
+      "output": "健身",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-087-substitution",
+      "passed": true,
+      "output": "健身",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-087-omission",
+      "passed": true,
+      "output": "健身",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-087-insertion",
+      "passed": true,
+      "output": "健身",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-087-transposition",
+      "passed": true,
+      "output": "健身",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-089-clean",
+      "passed": true,
+      "output": "登山",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-089-substitution",
+      "passed": true,
+      "output": "登山",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-089-insertion",
+      "passed": true,
+      "output": "登山",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-089-transposition",
+      "passed": true,
+      "output": "登山",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-090-clean",
+      "passed": true,
+      "output": "骑车",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-090-substitution",
+      "passed": true,
+      "output": "骑车",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-090-insertion",
+      "passed": true,
+      "output": "骑车",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-091-clean",
+      "passed": true,
+      "output": "银行",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-091-substitution",
+      "passed": true,
+      "output": "银行",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-091-omission",
+      "passed": true,
+      "output": "银行",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-091-insertion",
+      "passed": true,
+      "output": "银行",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-091-transposition",
+      "passed": true,
+      "output": "银行",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-092-clean",
+      "passed": true,
+      "output": "发票",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-092-substitution",
+      "passed": true,
+      "output": "发票",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-092-insertion",
+      "passed": true,
+      "output": "发票",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-092-transposition",
+      "passed": true,
+      "output": "发票",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-093-clean",
+      "passed": true,
+      "output": "余额",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-093-substitution",
+      "passed": true,
+      "output": "余额",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-093-omission",
+      "passed": true,
+      "output": "余额",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-093-insertion",
+      "passed": true,
+      "output": "余额",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-093-transposition",
+      "passed": true,
+      "output": "余额",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-095-clean",
+      "passed": true,
+      "output": "订单",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-095-substitution",
+      "passed": true,
+      "output": "订单",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-095-insertion",
+      "passed": true,
+      "output": "订单",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-095-transposition",
+      "passed": true,
+      "output": "订单",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-096-clean",
+      "passed": true,
+      "output": "退款",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-096-substitution",
+      "passed": true,
+      "output": "退款",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-096-omission",
+      "passed": true,
+      "output": "退款",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-096-insertion",
+      "passed": true,
+      "output": "退款",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-096-transposition",
+      "passed": true,
+      "output": "退款",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-097-clean",
+      "passed": true,
+      "output": "付款",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-097-substitution",
+      "passed": true,
+      "output": "付款",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-097-omission",
+      "passed": true,
+      "output": "付款",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-097-insertion",
+      "passed": true,
+      "output": "付款",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-097-transposition",
+      "passed": true,
+      "output": "付款",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-098-clean",
+      "passed": true,
+      "output": "收款",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-098-substitution",
+      "passed": true,
+      "output": "收款",
+      "remaining": "",
+      "rank": 9
+    },
+    {
+      "id": "spopt-098-insertion",
+      "passed": true,
+      "output": "收款",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-098-transposition",
+      "passed": true,
+      "output": "收款",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-100-clean",
+      "passed": true,
+      "output": "合同",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-100-substitution",
+      "passed": true,
+      "output": "合同",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-100-omission",
+      "passed": true,
+      "output": "合同",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-100-insertion",
+      "passed": true,
+      "output": "合同",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-100-transposition",
+      "passed": true,
+      "output": "合同",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-101-clean",
+      "passed": true,
+      "output": "权利",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-101-substitution",
+      "passed": true,
+      "output": "权利",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-101-omission",
+      "passed": true,
+      "output": "权利",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-101-insertion",
+      "passed": true,
+      "output": "权利",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-101-transposition",
+      "passed": true,
+      "output": "权利",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-101-double-error",
+      "passed": true,
+      "output": "权利",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-102-clean",
+      "passed": true,
+      "output": "权力",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-102-omission",
+      "passed": true,
+      "output": "权力",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-102-insertion",
+      "passed": true,
+      "output": "权力",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-102-transposition",
+      "passed": true,
+      "output": "权力",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-105-clean",
+      "passed": true,
+      "output": "形式",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-105-substitution",
+      "passed": true,
+      "output": "形式",
+      "remaining": "",
+      "rank": 9
+    },
+    {
+      "id": "spopt-105-omission",
+      "passed": true,
+      "output": "形式",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-105-insertion",
+      "passed": true,
+      "output": "形式",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-105-transposition",
+      "passed": true,
+      "output": "形式",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-105-double-error",
+      "passed": true,
+      "output": "形式",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-106-clean",
+      "passed": true,
+      "output": "形势",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-106-substitution",
+      "passed": true,
+      "output": "形势",
+      "remaining": "",
+      "rank": 13
+    },
+    {
+      "id": "spopt-106-insertion",
+      "passed": true,
+      "output": "形势",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-107-clean",
+      "passed": true,
+      "output": "公式",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-107-substitution",
+      "passed": true,
+      "output": "公式",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-107-insertion",
+      "passed": true,
+      "output": "公式",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-107-transposition",
+      "passed": true,
+      "output": "公式",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-108-clean",
+      "passed": true,
+      "output": "公事",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-109-clean",
+      "passed": true,
+      "output": "事实",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-113-clean",
+      "passed": true,
+      "output": "实验",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-113-substitution",
+      "passed": true,
+      "output": "实验",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-113-omission",
+      "passed": true,
+      "output": "实验",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-113-insertion",
+      "passed": true,
+      "output": "实验",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-113-transposition",
+      "passed": true,
+      "output": "实验",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-114-clean",
+      "passed": true,
+      "output": "试验",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-114-substitution",
+      "passed": true,
+      "output": "试验",
+      "remaining": "",
+      "rank": 12
+    },
+    {
+      "id": "spopt-114-insertion",
+      "passed": true,
+      "output": "试验",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-115-clean",
+      "passed": true,
+      "output": "治理",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-115-substitution",
+      "passed": true,
+      "output": "治理",
+      "remaining": "",
+      "rank": 10
+    },
+    {
+      "id": "spopt-115-insertion",
+      "passed": true,
+      "output": "治理",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-115-transposition",
+      "passed": true,
+      "output": "治理",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-116-clean",
+      "passed": true,
+      "output": "智力",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-116-insertion",
+      "passed": true,
+      "output": "智力",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-117-clean",
+      "passed": true,
+      "output": "意义",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-117-substitution",
+      "passed": true,
+      "output": "意义",
+      "remaining": "",
+      "rank": 11
+    },
+    {
+      "id": "spopt-117-insertion",
+      "passed": true,
+      "output": "意义",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-117-transposition",
+      "passed": true,
+      "output": "意义",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spopt-118-clean",
+      "passed": true,
+      "output": "异议",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-118-insertion",
+      "passed": true,
+      "output": "异议",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-118-transposition",
+      "passed": true,
+      "output": "异议",
+      "remaining": "",
+      "rank": 11
+    },
+    {
+      "id": "spopt-119-clean",
+      "passed": true,
+      "output": "截至",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-119-substitution",
+      "passed": true,
+      "output": "截至",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spopt-119-insertion",
+      "passed": true,
+      "output": "截至",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-119-transposition",
+      "passed": true,
+      "output": "截至",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-120-clean",
+      "passed": true,
+      "output": "截止",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-120-substitution",
+      "passed": true,
+      "output": "截止",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-120-omission",
+      "passed": true,
+      "output": "截止",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-120-insertion",
+      "passed": true,
+      "output": "截止",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-120-transposition",
+      "passed": true,
+      "output": "截止",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spopt-122-clean",
+      "passed": true,
+      "output": "房间里的空调需要重新清洗",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-123-clean",
+      "passed": true,
+      "output": "客厅的沙发旁边放着一盆花",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-123-substitution",
+      "passed": true,
+      "output": "客厅的沙发旁边放着一盆花",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-123-double-error",
+      "passed": true,
+      "output": "客厅的沙发旁边放着一盆花",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-125-clean",
+      "passed": true,
+      "output": "我把刚买的台灯放在床头了",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-126-clean",
+      "passed": true,
+      "output": "这件毛衣穿起来特别暖和",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-126-substitution",
+      "passed": true,
+      "output": "这件毛衣穿起来特别暖和",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-127-clean",
+      "passed": true,
+      "output": "他的衬衫口袋里面有一支笔",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-128-clean",
+      "passed": true,
+      "output": "这双鞋子的颜色看起来不错",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-128-substitution",
+      "passed": true,
+      "output": "这双鞋子的颜色看起来不错",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-128-double-error",
+      "passed": true,
+      "output": "这双鞋子的颜色看起来不错",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-129-clean",
+      "passed": true,
+      "output": "戴上帽子以后感觉暖和多了",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-129-substitution",
+      "passed": true,
+      "output": "戴上帽子以后感觉暖和多了",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-129-double-error",
+      "passed": true,
+      "output": "戴上帽子以后感觉暖和多了",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spopt-130-clean",
+      "passed": true,
+      "output": "早晨起来以后先喝一杯温水",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-130-substitution",
+      "passed": true,
+      "output": "早晨起来以后先喝一杯温水",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-130-double-error",
+      "passed": true,
+      "output": "早晨起来以后先喝一杯温水",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-132-clean",
+      "passed": true,
+      "output": "晚上抬起头就能看见月亮",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-132-substitution",
+      "passed": true,
+      "output": "晚上抬起头就能看见月亮",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-132-double-error",
+      "passed": true,
+      "output": "晚上抬起头就能看见月亮",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spopt-136-clean",
+      "passed": true,
+      "output": "周六下午一起去练习篮球吧",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spopt-136-substitution",
+      "passed": true,
+      "output": "周六下午一起去练习篮球吧",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-136-double-error",
+      "passed": true,
+      "output": "周六下午一起去练习篮球吧",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spopt-138-clean",
+      "passed": true,
+      "output": "我已经收到了这笔订单的货款",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spopt-139-clean",
+      "passed": true,
+      "output": "麻烦你把发票寄到这个地址",
+      "remaining": "",
+      "rank": 1
+    }
+  ]
+}

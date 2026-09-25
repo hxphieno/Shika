@@ -1,0 +1,129 @@
+{
+  "checkCount" : 11,
+  "checks" : [
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "user phrase natural selection 1 commits exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learning selection 1 is drained",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "user phrase natural selection 2 commits exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learning selection 2 is drained",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "user phrase natural selection 3 commits exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learning selection 3 is drained",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "user phrase natural selection 4 commits exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learning selection 4 is drained",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "user phrase natural selection 5 commits exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learning selection 5 is drained",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "five explicit selections promote exact user phrase",
+      "passed" : true
+    }
+  ],
+  "environment" : "macOS native real Rime and production input session; no UIKit or physical device",
+  "failures" : 0,
+  "mode" : "learn",
+  "observations" : [
+    {
+      "candidates" : [
+        {
+          "comment" : "lu jian miao",
+          "index" : 0,
+          "text" : "鹿键喵"
+        },
+        {
+          "comment" : "纠错 · hu jian miao",
+          "index" : -1,
+          "text" : "胡建淼"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 1,
+          "text" : "路检"
+        },
+        {
+          "comment" : "纠错 · lu jian min",
+          "index" : -200,
+          "text" : "陆剑民"
+        },
+        {
+          "comment" : "纠错 · li jian min",
+          "index" : -201,
+          "text" : "李建民"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 2,
+          "text" : "路肩"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 3,
+          "text" : "录检"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 4,
+          "text" : "陆坚"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 5,
+          "text" : "鲁健"
+        },
+        {
+          "comment" : "lu",
+          "index" : 6,
+          "text" : "路"
+        },
+        {
+          "comment" : "lu",
+          "index" : 7,
+          "text" : "录"
+        }
+      ],
+      "input" : "lujmmn",
+      "marked" : "lu jm mn",
+      "name" : "same-process learned ranking",
+      "output" : "",
+      "preedit" : "lu jm mn"
+    }
+  ]
+}

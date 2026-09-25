@@ -1,0 +1,12 @@
+{
+  "commit": "c8b35afccc81cbfecfe62f164afc84a99b2ff67b",
+  "baseline": "Production with existing correction enabled, before all changes in this round",
+  "retainedCommits": [
+    "c3041c4",
+    "6c1db09",
+    "7c00571"
+  ],
+  "rankingUserDirectories": "fresh directory per dataset/version; no answer selection",
+  "simulatorUserDirectory": "Existing local.shika.integration sandbox reused for UI stress and Return checks; not used to calculate ranking accuracy. Only outputs from current test source archived.",
+  "fullDerivedTimingCaveat": "Baseline and final ranking started sequentially, but final overlapped separate isolated-commit replay processes. These raw single-round times are retained and should not be presented as load-isolated timing."
+}

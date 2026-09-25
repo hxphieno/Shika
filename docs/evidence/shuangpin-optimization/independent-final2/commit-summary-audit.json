@@ -1,0 +1,23 @@
+{
+  "confirm": {
+    "count": 305,
+    "allIDsMatchRanking": true,
+    "allOutputsMatchExpected": true,
+    "allRemainingEmpty": true,
+    "summarySHA256": "e954944583800f03be56296daa6759dca0b86786eae1484adb1ad4398984193e"
+  },
+  "heldout": {
+    "count": 494,
+    "allIDsMatchRanking": true,
+    "allOutputsMatchExpected": true,
+    "allRemainingEmpty": true,
+    "summarySHA256": "d20ad661ed265a5809facc0a05cd6817277dceaa050a948c90ad383f209b96f6"
+  },
+  "full-derived": {
+    "count": 571,
+    "allIDsMatchRanking": true,
+    "allOutputsMatchExpected": true,
+    "allRemainingEmpty": true,
+    "summarySHA256": "44acd7e61253601a2e862608475d8ce299aab98acb52c990eaf2c9952a8a5128"
+  }
+}

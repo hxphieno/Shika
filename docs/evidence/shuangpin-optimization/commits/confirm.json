@@ -1,0 +1,2142 @@
+{
+  "freshProcessAndUserDirectoryPerCase": true,
+  "count": 305,
+  "passed": 305,
+  "results": [
+    {
+      "id": "spconfirm-001-clean",
+      "passed": true,
+      "output": "红薯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-001-substitution",
+      "passed": true,
+      "output": "红薯",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-001-omission",
+      "passed": true,
+      "output": "红薯",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-001-insertion",
+      "passed": true,
+      "output": "红薯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-001-transposition",
+      "passed": true,
+      "output": "红薯",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-002-clean",
+      "passed": true,
+      "output": "土豆",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-002-substitution",
+      "passed": true,
+      "output": "土豆",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-002-omission",
+      "passed": true,
+      "output": "土豆",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-002-insertion",
+      "passed": true,
+      "output": "土豆",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-002-transposition",
+      "passed": true,
+      "output": "土豆",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-003-clean",
+      "passed": true,
+      "output": "番茄",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-003-substitution",
+      "passed": true,
+      "output": "番茄",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spconfirm-003-omission",
+      "passed": true,
+      "output": "番茄",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-003-insertion",
+      "passed": true,
+      "output": "番茄",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-003-transposition",
+      "passed": true,
+      "output": "番茄",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-004-clean",
+      "passed": true,
+      "output": "黄瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-004-substitution",
+      "passed": true,
+      "output": "黄瓜",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-004-omission",
+      "passed": true,
+      "output": "黄瓜",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-004-insertion",
+      "passed": true,
+      "output": "黄瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-004-transposition",
+      "passed": true,
+      "output": "黄瓜",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-005-clean",
+      "passed": true,
+      "output": "茄子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-005-substitution",
+      "passed": true,
+      "output": "茄子",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-005-insertion",
+      "passed": true,
+      "output": "茄子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-005-transposition",
+      "passed": true,
+      "output": "茄子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-005-double-error",
+      "passed": true,
+      "output": "茄子",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-006-clean",
+      "passed": true,
+      "output": "白菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-006-substitution",
+      "passed": true,
+      "output": "白菜",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-006-insertion",
+      "passed": true,
+      "output": "白菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-006-double-error",
+      "passed": true,
+      "output": "白菜",
+      "remaining": "",
+      "rank": 11
+    },
+    {
+      "id": "spconfirm-007-clean",
+      "passed": true,
+      "output": "菠菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-007-substitution",
+      "passed": true,
+      "output": "菠菜",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-007-omission",
+      "passed": true,
+      "output": "菠菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-007-insertion",
+      "passed": true,
+      "output": "菠菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-007-transposition",
+      "passed": true,
+      "output": "菠菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-007-double-error",
+      "passed": true,
+      "output": "菠菜",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-008-clean",
+      "passed": true,
+      "output": "南瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-008-substitution",
+      "passed": true,
+      "output": "南瓜",
+      "remaining": "",
+      "rank": 9
+    },
+    {
+      "id": "spconfirm-008-insertion",
+      "passed": true,
+      "output": "南瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-008-transposition",
+      "passed": true,
+      "output": "南瓜",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-009-clean",
+      "passed": true,
+      "output": "冬瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-009-substitution",
+      "passed": true,
+      "output": "冬瓜",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-009-insertion",
+      "passed": true,
+      "output": "冬瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-009-transposition",
+      "passed": true,
+      "output": "冬瓜",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-010-clean",
+      "passed": true,
+      "output": "萝卜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-010-substitution",
+      "passed": true,
+      "output": "萝卜",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-010-omission",
+      "passed": true,
+      "output": "萝卜",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-010-insertion",
+      "passed": true,
+      "output": "萝卜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-010-transposition",
+      "passed": true,
+      "output": "萝卜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-011-clean",
+      "passed": true,
+      "output": "芹菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-011-substitution",
+      "passed": true,
+      "output": "芹菜",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-011-insertion",
+      "passed": true,
+      "output": "芹菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-011-transposition",
+      "passed": true,
+      "output": "芹菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-011-double-error",
+      "passed": true,
+      "output": "芹菜",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-012-clean",
+      "passed": true,
+      "output": "洋葱",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-012-substitution",
+      "passed": true,
+      "output": "洋葱",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spconfirm-012-omission",
+      "passed": true,
+      "output": "洋葱",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-012-insertion",
+      "passed": true,
+      "output": "洋葱",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-012-transposition",
+      "passed": true,
+      "output": "洋葱",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-013-clean",
+      "passed": true,
+      "output": "大蒜",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-013-omission",
+      "passed": true,
+      "output": "大蒜",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-013-insertion",
+      "passed": true,
+      "output": "大蒜",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-013-transposition",
+      "passed": true,
+      "output": "大蒜",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-014-clean",
+      "passed": true,
+      "output": "生姜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-014-substitution",
+      "passed": true,
+      "output": "生姜",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-014-insertion",
+      "passed": true,
+      "output": "生姜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-015-clean",
+      "passed": true,
+      "output": "香菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-015-substitution",
+      "passed": true,
+      "output": "香菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-015-insertion",
+      "passed": true,
+      "output": "香菜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-015-double-error",
+      "passed": true,
+      "output": "香菜",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-016-clean",
+      "passed": true,
+      "output": "花生",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-016-omission",
+      "passed": true,
+      "output": "花生",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-016-insertion",
+      "passed": true,
+      "output": "花生",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-017-clean",
+      "passed": true,
+      "output": "芝麻",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-017-substitution",
+      "passed": true,
+      "output": "芝麻",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-017-insertion",
+      "passed": true,
+      "output": "芝麻",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-017-transposition",
+      "passed": true,
+      "output": "芝麻",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-018-clean",
+      "passed": true,
+      "output": "核桃",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-018-substitution",
+      "passed": true,
+      "output": "核桃",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-018-omission",
+      "passed": true,
+      "output": "核桃",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-018-insertion",
+      "passed": true,
+      "output": "核桃",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-018-transposition",
+      "passed": true,
+      "output": "核桃",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-019-clean",
+      "passed": true,
+      "output": "杏仁",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-020-clean",
+      "passed": true,
+      "output": "葡萄",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-020-substitution",
+      "passed": true,
+      "output": "葡萄",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-020-omission",
+      "passed": true,
+      "output": "葡萄",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-020-insertion",
+      "passed": true,
+      "output": "葡萄",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-020-transposition",
+      "passed": true,
+      "output": "葡萄",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-021-clean",
+      "passed": true,
+      "output": "苹果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-021-substitution",
+      "passed": true,
+      "output": "苹果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-021-omission",
+      "passed": true,
+      "output": "苹果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-021-insertion",
+      "passed": true,
+      "output": "苹果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-021-transposition",
+      "passed": true,
+      "output": "苹果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-022-clean",
+      "passed": true,
+      "output": "香蕉",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-022-substitution",
+      "passed": true,
+      "output": "香蕉",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-022-omission",
+      "passed": true,
+      "output": "香蕉",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-022-insertion",
+      "passed": true,
+      "output": "香蕉",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-022-transposition",
+      "passed": true,
+      "output": "香蕉",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-023-clean",
+      "passed": true,
+      "output": "草莓",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-023-substitution",
+      "passed": true,
+      "output": "草莓",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-023-omission",
+      "passed": true,
+      "output": "草莓",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-023-insertion",
+      "passed": true,
+      "output": "草莓",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-023-transposition",
+      "passed": true,
+      "output": "草莓",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-023-double-error",
+      "passed": true,
+      "output": "草莓",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-024-clean",
+      "passed": true,
+      "output": "西瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-024-substitution",
+      "passed": true,
+      "output": "西瓜",
+      "remaining": "",
+      "rank": 14
+    },
+    {
+      "id": "spconfirm-024-omission",
+      "passed": true,
+      "output": "西瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-024-insertion",
+      "passed": true,
+      "output": "西瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-024-transposition",
+      "passed": true,
+      "output": "西瓜",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-025-clean",
+      "passed": true,
+      "output": "桃子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-025-substitution",
+      "passed": true,
+      "output": "桃子",
+      "remaining": "",
+      "rank": 14
+    },
+    {
+      "id": "spconfirm-025-insertion",
+      "passed": true,
+      "output": "桃子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-025-transposition",
+      "passed": true,
+      "output": "桃子",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-026-clean",
+      "passed": true,
+      "output": "梨子",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-027-clean",
+      "passed": true,
+      "output": "菠萝",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-027-substitution",
+      "passed": true,
+      "output": "菠萝",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spconfirm-027-omission",
+      "passed": true,
+      "output": "菠萝",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-027-insertion",
+      "passed": true,
+      "output": "菠萝",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-027-transposition",
+      "passed": true,
+      "output": "菠萝",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-028-clean",
+      "passed": true,
+      "output": "芒果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-028-substitution",
+      "passed": true,
+      "output": "芒果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-028-omission",
+      "passed": true,
+      "output": "芒果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-028-insertion",
+      "passed": true,
+      "output": "芒果",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-028-transposition",
+      "passed": true,
+      "output": "芒果",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-028-double-error",
+      "passed": true,
+      "output": "芒果",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-029-clean",
+      "passed": true,
+      "output": "柠檬",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-029-substitution",
+      "passed": true,
+      "output": "柠檬",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-029-omission",
+      "passed": true,
+      "output": "柠檬",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-029-insertion",
+      "passed": true,
+      "output": "柠檬",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-029-transposition",
+      "passed": true,
+      "output": "柠檬",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-029-double-error",
+      "passed": true,
+      "output": "柠檬",
+      "remaining": "",
+      "rank": 9
+    },
+    {
+      "id": "spconfirm-030-clean",
+      "passed": true,
+      "output": "石榴",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-030-substitution",
+      "passed": true,
+      "output": "石榴",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-030-insertion",
+      "passed": true,
+      "output": "石榴",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-031-clean",
+      "passed": true,
+      "output": "水杯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-031-substitution",
+      "passed": true,
+      "output": "水杯",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-031-insertion",
+      "passed": true,
+      "output": "水杯",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-032-clean",
+      "passed": true,
+      "output": "水壶",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-032-insertion",
+      "passed": true,
+      "output": "水壶",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-033-clean",
+      "passed": true,
+      "output": "茶杯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-033-substitution",
+      "passed": true,
+      "output": "茶杯",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-033-omission",
+      "passed": true,
+      "output": "茶杯",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-033-insertion",
+      "passed": true,
+      "output": "茶杯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-033-transposition",
+      "passed": true,
+      "output": "茶杯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-034-clean",
+      "passed": true,
+      "output": "茶叶",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-034-substitution",
+      "passed": true,
+      "output": "茶叶",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-034-omission",
+      "passed": true,
+      "output": "茶叶",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-034-insertion",
+      "passed": true,
+      "output": "茶叶",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-035-clean",
+      "passed": true,
+      "output": "茶几",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-035-substitution",
+      "passed": true,
+      "output": "茶几",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-035-insertion",
+      "passed": true,
+      "output": "茶几",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-035-transposition",
+      "passed": true,
+      "output": "茶几",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-036-clean",
+      "passed": true,
+      "output": "浴巾",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-036-insertion",
+      "passed": true,
+      "output": "浴巾",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-037-clean",
+      "passed": true,
+      "output": "拖鞋",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-037-substitution",
+      "passed": true,
+      "output": "拖鞋",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-037-omission",
+      "passed": true,
+      "output": "拖鞋",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-037-insertion",
+      "passed": true,
+      "output": "拖鞋",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-037-transposition",
+      "passed": true,
+      "output": "拖鞋",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-038-clean",
+      "passed": true,
+      "output": "浴室",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-038-insertion",
+      "passed": true,
+      "output": "浴室",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-038-transposition",
+      "passed": true,
+      "output": "浴室",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-039-clean",
+      "passed": true,
+      "output": "厨房",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-039-substitution",
+      "passed": true,
+      "output": "厨房",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-039-insertion",
+      "passed": true,
+      "output": "厨房",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-039-transposition",
+      "passed": true,
+      "output": "厨房",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-040-clean",
+      "passed": true,
+      "output": "卧室",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-040-substitution",
+      "passed": true,
+      "output": "卧室",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-040-omission",
+      "passed": true,
+      "output": "卧室",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-040-insertion",
+      "passed": true,
+      "output": "卧室",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-040-transposition",
+      "passed": true,
+      "output": "卧室",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-041-clean",
+      "passed": true,
+      "output": "阳台",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-041-substitution",
+      "passed": true,
+      "output": "阳台",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-041-omission",
+      "passed": true,
+      "output": "阳台",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-041-insertion",
+      "passed": true,
+      "output": "阳台",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-041-transposition",
+      "passed": true,
+      "output": "阳台",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-042-clean",
+      "passed": true,
+      "output": "抽屉",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-042-substitution",
+      "passed": true,
+      "output": "抽屉",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-042-insertion",
+      "passed": true,
+      "output": "抽屉",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-042-transposition",
+      "passed": true,
+      "output": "抽屉",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-043-clean",
+      "passed": true,
+      "output": "柜子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-043-substitution",
+      "passed": true,
+      "output": "柜子",
+      "remaining": "",
+      "rank": 9
+    },
+    {
+      "id": "spconfirm-043-insertion",
+      "passed": true,
+      "output": "柜子",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-044-clean",
+      "passed": true,
+      "output": "地板",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-044-substitution",
+      "passed": true,
+      "output": "地板",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-044-insertion",
+      "passed": true,
+      "output": "地板",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-044-transposition",
+      "passed": true,
+      "output": "地板",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-045-clean",
+      "passed": true,
+      "output": "墙壁",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-045-substitution",
+      "passed": true,
+      "output": "墙壁",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spconfirm-045-insertion",
+      "passed": true,
+      "output": "墙壁",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-045-transposition",
+      "passed": true,
+      "output": "墙壁",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-046-clean",
+      "passed": true,
+      "output": "屋顶",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-046-substitution",
+      "passed": true,
+      "output": "屋顶",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-046-insertion",
+      "passed": true,
+      "output": "屋顶",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-046-transposition",
+      "passed": true,
+      "output": "屋顶",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-046-double-error",
+      "passed": true,
+      "output": "屋顶",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-047-clean",
+      "passed": true,
+      "output": "楼梯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-047-substitution",
+      "passed": true,
+      "output": "楼梯",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-047-insertion",
+      "passed": true,
+      "output": "楼梯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-047-transposition",
+      "passed": true,
+      "output": "楼梯",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-048-clean",
+      "passed": true,
+      "output": "电梯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-048-substitution",
+      "passed": true,
+      "output": "电梯",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-048-omission",
+      "passed": true,
+      "output": "电梯",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-048-insertion",
+      "passed": true,
+      "output": "电梯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-048-transposition",
+      "passed": true,
+      "output": "电梯",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-049-clean",
+      "passed": true,
+      "output": "窗户",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-049-substitution",
+      "passed": true,
+      "output": "窗户",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-049-insertion",
+      "passed": true,
+      "output": "窗户",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-050-clean",
+      "passed": true,
+      "output": "房门",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-050-substitution",
+      "passed": true,
+      "output": "房门",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spconfirm-050-insertion",
+      "passed": true,
+      "output": "房门",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-050-transposition",
+      "passed": true,
+      "output": "房门",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-051-clean",
+      "passed": true,
+      "output": "车票",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-051-substitution",
+      "passed": true,
+      "output": "车票",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-051-omission",
+      "passed": true,
+      "output": "车票",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-051-insertion",
+      "passed": true,
+      "output": "车票",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-051-transposition",
+      "passed": true,
+      "output": "车票",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-051-double-error",
+      "passed": true,
+      "output": "车票",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spconfirm-052-clean",
+      "passed": true,
+      "output": "车站",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-052-substitution",
+      "passed": true,
+      "output": "车站",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-052-omission",
+      "passed": true,
+      "output": "车站",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-052-insertion",
+      "passed": true,
+      "output": "车站",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-052-transposition",
+      "passed": true,
+      "output": "车站",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-052-double-error",
+      "passed": true,
+      "output": "车站",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-053-clean",
+      "passed": true,
+      "output": "月台",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-053-insertion",
+      "passed": true,
+      "output": "月台",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-054-clean",
+      "passed": true,
+      "output": "隧道",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-054-substitution",
+      "passed": true,
+      "output": "隧道",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-054-omission",
+      "passed": true,
+      "output": "隧道",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-054-insertion",
+      "passed": true,
+      "output": "隧道",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-054-transposition",
+      "passed": true,
+      "output": "隧道",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-055-clean",
+      "passed": true,
+      "output": "轮胎",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-055-substitution",
+      "passed": true,
+      "output": "轮胎",
+      "remaining": "",
+      "rank": 8
+    },
+    {
+      "id": "spconfirm-055-omission",
+      "passed": true,
+      "output": "轮胎",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-055-insertion",
+      "passed": true,
+      "output": "轮胎",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-055-transposition",
+      "passed": true,
+      "output": "轮胎",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-056-clean",
+      "passed": true,
+      "output": "方向盘",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-056-substitution",
+      "passed": true,
+      "output": "方向盘",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-056-omission",
+      "passed": true,
+      "output": "方向盘",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-056-insertion",
+      "passed": true,
+      "output": "方向盘",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-056-transposition",
+      "passed": true,
+      "output": "方向盘",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-056-double-error",
+      "passed": true,
+      "output": "方向盘",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-057-clean",
+      "passed": true,
+      "output": "编制",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-057-substitution",
+      "passed": true,
+      "output": "编制",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-057-omission",
+      "passed": true,
+      "output": "编制",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-057-insertion",
+      "passed": true,
+      "output": "编制",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-058-clean",
+      "passed": true,
+      "output": "编织",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-059-clean",
+      "passed": true,
+      "output": "反应",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-059-substitution",
+      "passed": true,
+      "output": "反应",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-059-omission",
+      "passed": true,
+      "output": "反应",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-059-insertion",
+      "passed": true,
+      "output": "反应",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-059-transposition",
+      "passed": true,
+      "output": "反应",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-060-clean",
+      "passed": true,
+      "output": "反映",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-060-substitution",
+      "passed": true,
+      "output": "反映",
+      "remaining": "",
+      "rank": 7
+    },
+    {
+      "id": "spconfirm-060-omission",
+      "passed": true,
+      "output": "反映",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-060-insertion",
+      "passed": true,
+      "output": "反映",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-060-transposition",
+      "passed": true,
+      "output": "反映",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-061-clean",
+      "passed": true,
+      "output": "报酬",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-061-substitution",
+      "passed": true,
+      "output": "报酬",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-061-omission",
+      "passed": true,
+      "output": "报酬",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-061-insertion",
+      "passed": true,
+      "output": "报酬",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-061-transposition",
+      "passed": true,
+      "output": "报酬",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-062-clean",
+      "passed": true,
+      "output": "报仇",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-062-substitution",
+      "passed": true,
+      "output": "报仇",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-062-insertion",
+      "passed": true,
+      "output": "报仇",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-062-transposition",
+      "passed": true,
+      "output": "报仇",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-063-clean",
+      "passed": true,
+      "output": "品味",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-063-substitution",
+      "passed": true,
+      "output": "品味",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-063-omission",
+      "passed": true,
+      "output": "品味",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-063-insertion",
+      "passed": true,
+      "output": "品味",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-063-transposition",
+      "passed": true,
+      "output": "品味",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-063-double-error",
+      "passed": true,
+      "output": "品味",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-064-clean",
+      "passed": true,
+      "output": "品位",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-064-substitution",
+      "passed": true,
+      "output": "品位",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-064-omission",
+      "passed": true,
+      "output": "品位",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-064-insertion",
+      "passed": true,
+      "output": "品位",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-064-transposition",
+      "passed": true,
+      "output": "品位",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-064-double-error",
+      "passed": true,
+      "output": "品位",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-065-clean",
+      "passed": true,
+      "output": "交代",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-065-substitution",
+      "passed": true,
+      "output": "交代",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-065-insertion",
+      "passed": true,
+      "output": "交代",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-065-transposition",
+      "passed": true,
+      "output": "交代",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-065-double-error",
+      "passed": true,
+      "output": "交代",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-066-clean",
+      "passed": true,
+      "output": "交待",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-066-insertion",
+      "passed": true,
+      "output": "交待",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-066-transposition",
+      "passed": true,
+      "output": "交待",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-067-clean",
+      "passed": true,
+      "output": "终生",
+      "remaining": "",
+      "rank": 2
+    },
+    {
+      "id": "spconfirm-067-substitution",
+      "passed": true,
+      "output": "终生",
+      "remaining": "",
+      "rank": 9
+    },
+    {
+      "id": "spconfirm-067-insertion",
+      "passed": true,
+      "output": "终生",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-068-clean",
+      "passed": true,
+      "output": "钟声",
+      "remaining": "",
+      "rank": 3
+    },
+    {
+      "id": "spconfirm-070-clean",
+      "passed": true,
+      "output": "厨房的窗户今天终于修好了",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-071-clean",
+      "passed": true,
+      "output": "请把那些土豆放到袋子里面",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-072-clean",
+      "passed": true,
+      "output": "这个西瓜需要分成几块才好",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-076-clean",
+      "passed": true,
+      "output": "那些纸张应该都在抽屉里面",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-077-clean",
+      "passed": true,
+      "output": "这栋楼的电梯还需要等多久",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-077-substitution",
+      "passed": true,
+      "output": "这栋楼的电梯还需要等多久",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-077-transposition",
+      "passed": true,
+      "output": "这栋楼的电梯还需要等多久",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-077-double-error",
+      "passed": true,
+      "output": "这栋楼的电梯还需要等多久",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-078-clean",
+      "passed": true,
+      "output": "请提前准备好车票和身份证",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-078-substitution",
+      "passed": true,
+      "output": "请提前准备好车票和身份证",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-078-double-error",
+      "passed": true,
+      "output": "请提前准备好车票和身份证",
+      "remaining": "",
+      "rank": 6
+    },
+    {
+      "id": "spconfirm-079-clean",
+      "passed": true,
+      "output": "穿过前面的隧道就快到家了",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-079-substitution",
+      "passed": true,
+      "output": "穿过前面的隧道就快到家了",
+      "remaining": "",
+      "rank": 4
+    },
+    {
+      "id": "spconfirm-080-clean",
+      "passed": true,
+      "output": "出发之前记得检查一下轮胎",
+      "remaining": "",
+      "rank": 1
+    },
+    {
+      "id": "spconfirm-080-substitution",
+      "passed": true,
+      "output": "出发之前记得检查一下轮胎",
+      "remaining": "",
+      "rank": 5
+    },
+    {
+      "id": "spconfirm-080-double-error",
+      "passed": true,
+      "output": "出发之前记得检查一下轮胎",
+      "remaining": "",
+      "rank": 6
+    }
+  ]
+}

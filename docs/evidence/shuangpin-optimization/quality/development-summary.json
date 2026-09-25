@@ -1,0 +1,476 @@
+{
+  "n": 132,
+  "metrics": [
+    {
+      "kind": "clean",
+      "n": 22,
+      "before": {
+        "top1": 20,
+        "top3": 22,
+        "top5": 22,
+        "top8": 22,
+        "top10": 22
+      },
+      "after": {
+        "top1": 20,
+        "top3": 22,
+        "top5": 22,
+        "top8": 22,
+        "top10": 22
+      }
+    },
+    {
+      "kind": "double-error",
+      "n": 22,
+      "before": {
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "top8": 0,
+        "top10": 0
+      },
+      "after": {
+        "top1": 0,
+        "top3": 0,
+        "top5": 2,
+        "top8": 4,
+        "top10": 4
+      }
+    },
+    {
+      "kind": "insertion",
+      "n": 22,
+      "before": {
+        "top1": 14,
+        "top3": 16,
+        "top5": 16,
+        "top8": 16,
+        "top10": 16
+      },
+      "after": {
+        "top1": 14,
+        "top3": 16,
+        "top5": 18,
+        "top8": 18,
+        "top10": 18
+      }
+    },
+    {
+      "kind": "omission",
+      "n": 22,
+      "before": {
+        "top1": 7,
+        "top3": 12,
+        "top5": 12,
+        "top8": 12,
+        "top10": 12
+      },
+      "after": {
+        "top1": 7,
+        "top3": 12,
+        "top5": 13,
+        "top8": 13,
+        "top10": 13
+      }
+    },
+    {
+      "kind": "substitution",
+      "n": 22,
+      "before": {
+        "top1": 2,
+        "top3": 7,
+        "top5": 11,
+        "top8": 12,
+        "top10": 12
+      },
+      "after": {
+        "top1": 2,
+        "top3": 7,
+        "top5": 15,
+        "top8": 16,
+        "top10": 17
+      }
+    },
+    {
+      "kind": "transposition",
+      "n": 22,
+      "before": {
+        "top1": 7,
+        "top3": 12,
+        "top5": 12,
+        "top8": 14,
+        "top10": 14
+      },
+      "after": {
+        "top1": 7,
+        "top3": 12,
+        "top5": 14,
+        "top8": 16,
+        "top10": 16
+      }
+    }
+  ],
+  "singleErrorTop5NetGain": 9,
+  "singleErrorTop5GainPercentagePoints": 10.227272727272727,
+  "cleanFirstChanges": [],
+  "cleanFirstRegressions": [],
+  "unexpectedCommits": [],
+  "failures": [
+    "spopt-003-double-error",
+    "spopt-005-substitution",
+    "spopt-005-omission",
+    "spopt-005-double-error",
+    "spopt-008-substitution",
+    "spopt-008-omission",
+    "spopt-008-transposition",
+    "spopt-008-double-error",
+    "spopt-012-double-error",
+    "spopt-029-double-error",
+    "spopt-031-double-error",
+    "spopt-038-double-error",
+    "spopt-046-substitution",
+    "spopt-046-double-error",
+    "spopt-055-double-error",
+    "spopt-061-double-error",
+    "spopt-086-double-error",
+    "spopt-088-omission",
+    "spopt-088-transposition",
+    "spopt-088-double-error",
+    "spopt-094-double-error",
+    "spopt-099-double-error",
+    "spopt-104-double-error",
+    "spopt-111-omission",
+    "spopt-111-double-error",
+    "spopt-112-substitution",
+    "spopt-112-omission",
+    "spopt-112-double-error",
+    "spopt-121-substitution",
+    "spopt-121-omission",
+    "spopt-121-insertion",
+    "spopt-121-transposition",
+    "spopt-121-double-error",
+    "spopt-134-omission",
+    "spopt-134-insertion",
+    "spopt-134-transposition",
+    "spopt-137-omission",
+    "spopt-137-insertion",
+    "spopt-137-transposition",
+    "spopt-140-omission",
+    "spopt-140-insertion",
+    "spopt-140-transposition"
+  ],
+  "top5Regressions": [],
+  "timings": {
+    "before": {
+      "keyP50MS": 1.4040470123291016,
+      "keyP95MS": 5.270957946777344,
+      "keyP99MS": 13.353943824768066,
+      "peakRSSBytes": 64913408,
+      "platform": "macOS native engine; peakRSS is not iOS extension footprint",
+      "rankingLearnsAnswers": false,
+      "startupMS": 295.5859899520874
+    },
+    "after": {
+      "keyP50MS": 0.9440183639526367,
+      "keyP95MS": 7.211089134216309,
+      "keyP99MS": 13.043045997619629,
+      "peakRSSBytes": 81674240,
+      "platform": "macOS native engine; peakRSS is not iOS extension footprint",
+      "rankingLearnsAnswers": false,
+      "startupMS": 90.57700634002686
+    }
+  },
+  "qualityGates": {
+    "cleanTop5": true,
+    "cleanFirst": true,
+    "singleErrorGain": true,
+    "eachKind": true
+  },
+  "performanceGates": {
+    "p95Relative": false,
+    "p95Absolute": true,
+    "p99Absolute": true
+  },
+  "groups": {
+    "category:homophone": {
+      "before": {
+        "n": 24,
+        "top1": 5,
+        "top3": 9,
+        "top5": 11,
+        "top8": 11,
+        "top10": 11,
+        "mrr10": 0.2965277777777778
+      },
+      "after": {
+        "n": 24,
+        "top1": 5,
+        "top3": 9,
+        "top5": 17,
+        "top8": 18,
+        "top10": 18,
+        "mrr10": 0.3517361111111111
+      },
+      "missingTop10": [
+        "spopt-104-double-error",
+        "spopt-111-omission",
+        "spopt-111-double-error",
+        "spopt-112-substitution",
+        "spopt-112-omission",
+        "spopt-112-double-error"
+      ]
+    },
+    "category:lexical-reuse": {
+      "before": {
+        "n": 42,
+        "top1": 21,
+        "top3": 28,
+        "top5": 29,
+        "top8": 30,
+        "top10": 30,
+        "mrr10": 0.5773809523809523
+      },
+      "after": {
+        "n": 42,
+        "top1": 21,
+        "top3": 28,
+        "top5": 29,
+        "top8": 30,
+        "top10": 30,
+        "mrr10": 0.5773809523809523
+      },
+      "missingTop10": [
+        "spopt-003-double-error",
+        "spopt-005-substitution",
+        "spopt-005-omission",
+        "spopt-005-double-error",
+        "spopt-008-substitution",
+        "spopt-008-omission",
+        "spopt-008-transposition",
+        "spopt-008-double-error",
+        "spopt-012-double-error",
+        "spopt-029-double-error",
+        "spopt-031-double-error",
+        "spopt-038-double-error"
+      ]
+    },
+    "category:long-sentence": {
+      "before": {
+        "n": 24,
+        "top1": 4,
+        "top3": 4,
+        "top5": 4,
+        "top8": 4,
+        "top10": 4,
+        "mrr10": 0.16666666666666666
+      },
+      "after": {
+        "n": 24,
+        "top1": 4,
+        "top3": 4,
+        "top5": 9,
+        "top8": 10,
+        "top10": 10,
+        "mrr10": 0.22361111111111112
+      },
+      "missingTop10": [
+        "spopt-121-substitution",
+        "spopt-121-omission",
+        "spopt-121-insertion",
+        "spopt-121-transposition",
+        "spopt-121-double-error",
+        "spopt-134-omission",
+        "spopt-134-insertion",
+        "spopt-134-transposition",
+        "spopt-137-omission",
+        "spopt-137-insertion",
+        "spopt-137-transposition",
+        "spopt-140-omission",
+        "spopt-140-insertion",
+        "spopt-140-transposition"
+      ]
+    },
+    "category:new-vocabulary": {
+      "before": {
+        "n": 42,
+        "top1": 20,
+        "top3": 28,
+        "top5": 29,
+        "top8": 31,
+        "top10": 31,
+        "mrr10": 0.5762471655328797
+      },
+      "after": {
+        "n": 42,
+        "top1": 20,
+        "top3": 28,
+        "top5": 29,
+        "top8": 31,
+        "top10": 32,
+        "mrr10": 0.5788926681783824
+      },
+      "missingTop10": [
+        "spopt-046-substitution",
+        "spopt-046-double-error",
+        "spopt-055-double-error",
+        "spopt-061-double-error",
+        "spopt-086-double-error",
+        "spopt-088-omission",
+        "spopt-088-transposition",
+        "spopt-088-double-error",
+        "spopt-094-double-error",
+        "spopt-099-double-error"
+      ]
+    },
+    "length:2-3": {
+      "before": {
+        "n": 108,
+        "top1": 46,
+        "top3": 65,
+        "top5": 69,
+        "top8": 72,
+        "top10": 72,
+        "mrr10": 0.5145282186948855
+      },
+      "after": {
+        "n": 108,
+        "top1": 46,
+        "top3": 65,
+        "top5": 75,
+        "top8": 79,
+        "top10": 80,
+        "mrr10": 0.5278255437977664
+      },
+      "missingTop10": [
+        "spopt-003-double-error",
+        "spopt-005-substitution",
+        "spopt-005-omission",
+        "spopt-005-double-error",
+        "spopt-008-substitution",
+        "spopt-008-omission",
+        "spopt-008-transposition",
+        "spopt-008-double-error",
+        "spopt-012-double-error",
+        "spopt-029-double-error",
+        "spopt-031-double-error",
+        "spopt-038-double-error",
+        "spopt-046-substitution",
+        "spopt-046-double-error",
+        "spopt-055-double-error",
+        "spopt-061-double-error",
+        "spopt-086-double-error",
+        "spopt-088-omission",
+        "spopt-088-transposition",
+        "spopt-088-double-error",
+        "spopt-094-double-error",
+        "spopt-099-double-error",
+        "spopt-104-double-error",
+        "spopt-111-omission",
+        "spopt-111-double-error",
+        "spopt-112-substitution",
+        "spopt-112-omission",
+        "spopt-112-double-error"
+      ]
+    },
+    "length:7+": {
+      "before": {
+        "n": 24,
+        "top1": 4,
+        "top3": 4,
+        "top5": 4,
+        "top8": 4,
+        "top10": 4,
+        "mrr10": 0.16666666666666666
+      },
+      "after": {
+        "n": 24,
+        "top1": 4,
+        "top3": 4,
+        "top5": 9,
+        "top8": 10,
+        "top10": 10,
+        "mrr10": 0.22361111111111112
+      },
+      "missingTop10": [
+        "spopt-121-substitution",
+        "spopt-121-omission",
+        "spopt-121-insertion",
+        "spopt-121-transposition",
+        "spopt-121-double-error",
+        "spopt-134-omission",
+        "spopt-134-insertion",
+        "spopt-134-transposition",
+        "spopt-137-omission",
+        "spopt-137-insertion",
+        "spopt-137-transposition",
+        "spopt-140-omission",
+        "spopt-140-insertion",
+        "spopt-140-transposition"
+      ]
+    },
+    "split:development": {
+      "before": {
+        "n": 132,
+        "top1": 50,
+        "top3": 69,
+        "top5": 73,
+        "top8": 76,
+        "top10": 76,
+        "mrr10": 0.4512806637806639
+      },
+      "after": {
+        "n": 132,
+        "top1": 50,
+        "top3": 69,
+        "top5": 84,
+        "top8": 89,
+        "top10": 90,
+        "mrr10": 0.472513828763829
+      },
+      "missingTop10": [
+        "spopt-003-double-error",
+        "spopt-005-substitution",
+        "spopt-005-omission",
+        "spopt-005-double-error",
+        "spopt-008-substitution",
+        "spopt-008-omission",
+        "spopt-008-transposition",
+        "spopt-008-double-error",
+        "spopt-012-double-error",
+        "spopt-029-double-error",
+        "spopt-031-double-error",
+        "spopt-038-double-error",
+        "spopt-046-substitution",
+        "spopt-046-double-error",
+        "spopt-055-double-error",
+        "spopt-061-double-error",
+        "spopt-086-double-error",
+        "spopt-088-omission",
+        "spopt-088-transposition",
+        "spopt-088-double-error",
+        "spopt-094-double-error",
+        "spopt-099-double-error",
+        "spopt-104-double-error",
+        "spopt-111-omission",
+        "spopt-111-double-error",
+        "spopt-112-substitution",
+        "spopt-112-omission",
+        "spopt-112-double-error",
+        "spopt-121-substitution",
+        "spopt-121-omission",
+        "spopt-121-insertion",
+        "spopt-121-transposition",
+        "spopt-121-double-error",
+        "spopt-134-omission",
+        "spopt-134-insertion",
+        "spopt-134-transposition",
+        "spopt-137-omission",
+        "spopt-137-insertion",
+        "spopt-137-transposition",
+        "spopt-140-omission",
+        "spopt-140-insertion",
+        "spopt-140-transposition"
+      ]
+    }
+  }
+}

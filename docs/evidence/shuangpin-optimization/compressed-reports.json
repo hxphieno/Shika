@@ -1,0 +1,122 @@
+{
+  "quality/shika_flypy-before.json.gz": {
+    "uncompressedSHA256": "4483ba96c86bdfcc5b0c1c2fd0eaaabe1367eb82c067f52f084cfd4d95cdfbea",
+    "uncompressedBytes": 356400,
+    "compressedBytes": 26001
+  },
+  "quality/confirm-baseline.json.gz": {
+    "uncompressedSHA256": "b5e01212bc2172e5102d8bc13e1d2990189dd4f36a4f7871bec8576705e3708c",
+    "uncompressedBytes": 860004,
+    "compressedBytes": 69246
+  },
+  "quality/legacy-release-quiet.json.gz": {
+    "uncompressedSHA256": "b5138be98895714a8ae839dd36b535d85d3a7e02a16a6de11204812a9001ca8a",
+    "uncompressedBytes": 869235,
+    "compressedBytes": 68816
+  },
+  "quality/shika_pinyin-before.json.gz": {
+    "uncompressedSHA256": "6f506cba4ef2cdb359b7e47e595ddbc84ed12253fb5e3981eccf8579a3a3d9ee",
+    "uncompressedBytes": 387343,
+    "compressedBytes": 36769
+  },
+  "quality/legacy-baseline-quiet.json.gz": {
+    "uncompressedSHA256": "75316eee7a71fe82c04118b7412a2c541973aeca83eccaffc88bfa8b76990c22",
+    "uncompressedBytes": 765323,
+    "compressedBytes": 62661
+  },
+  "quality/legacy-baseline.json.gz": {
+    "uncompressedSHA256": "0a1fd2e59b8f2c94277278041f1d1d96f854284710a7fdbe1f8c426ddab75ff6",
+    "uncompressedBytes": 765462,
+    "compressedBytes": 62591
+  },
+  "quality/confirm-final.json.gz": {
+    "uncompressedSHA256": "f943da8aa2579ade6e0a8827abd9279317e43905b9b9b31e2ad7304b90360f57",
+    "uncompressedBytes": 1062987,
+    "compressedBytes": 81417
+  },
+  "quality/shika_pinyin-after.json.gz": {
+    "uncompressedSHA256": "633e91ab192b27c4df4ddfc863892f933f81e553332978084e1732f072bf787a",
+    "uncompressedBytes": 420062,
+    "compressedBytes": 38135
+  },
+  "quality/heldout-final.json.gz": {
+    "uncompressedSHA256": "199a5666159a0dd244f519d5da6033bcdfc95e725743ee8195aa3feb0d60f1b1",
+    "uncompressedBytes": 1571797,
+    "compressedBytes": 128381
+  },
+  "quality/dev-baseline.json.gz": {
+    "uncompressedSHA256": "3d804b192f3fae36a1dbd7acf1905291f7c76fbe247e3847992b5279ad01e4d8",
+    "uncompressedBytes": 246509,
+    "compressedBytes": 23462
+  },
+  "quality/shika_flypy-after.json.gz": {
+    "uncompressedSHA256": "278e5b5268b40f823e0942c9cec897a1383687852cfacaaf1d825745e0e62eca",
+    "uncompressedBytes": 424732,
+    "compressedBytes": 30694
+  },
+  "quality/legacy-release.json.gz": {
+    "uncompressedSHA256": "e4676ddcef470f50b65532894e93c14d161e0a3fdb9986bdf15a06f31cf98032",
+    "uncompressedBytes": 867983,
+    "compressedBytes": 74120
+  },
+  "quality/heldout-baseline.json.gz": {
+    "uncompressedSHA256": "b4f4a08758609df1638a47a84d4af5fcfd9951bb8e2c0f6c280695612423c8af",
+    "uncompressedBytes": 1265830,
+    "compressedBytes": 111588
+  },
+  "quality/dev-assist-homophones.json.gz": {
+    "uncompressedSHA256": "5b07a12c2cf299fae841ec16abc3a7f86faf424d09500aa721694cb1d81cb288",
+    "uncompressedBytes": 301403,
+    "compressedBytes": 26500
+  },
+  "experiments/dev-homophones-only.json.gz": {
+    "uncompressedSHA256": "d1674f91a2acab48ed8346b64725bcd7e375ac1b15d28cbebe721f84c99bd24e",
+    "uncompressedBytes": 273718,
+    "compressedBytes": 24634
+  },
+  "experiments/dev-assist-v1.json.gz": {
+    "uncompressedSHA256": "ef5a25f75f6e448ed69a5cbb754783e108363442d4e306eba9733f047ceea178",
+    "uncompressedBytes": 276468,
+    "compressedBytes": 24637
+  },
+  "experiments/dev-budget4.json.gz": {
+    "uncompressedSHA256": "950c8cb69ebe97a50da9c25be1061f783a8235e91df4ce3927eef5686b9f3ec5",
+    "uncompressedBytes": 314000,
+    "compressedBytes": 25516
+  },
+  "experiments/dev-assist-v2.json.gz": {
+    "uncompressedSHA256": "3ae20d53c52d47b81b14ea0efee06bc61971562b6bbb079efea08d5aac4a0c1c",
+    "uncompressedBytes": 276354,
+    "compressedBytes": 24860
+  },
+  "experiments/dev-assist-v3.json.gz": {
+    "uncompressedSHA256": "007f8584e3f5359669e17c15857ce194978c243c00ee81eebe18a272ea0eb3c2",
+    "uncompressedBytes": 277896,
+    "compressedBytes": 25575
+  },
+  "experiments/dev-diverse2.json.gz": {
+    "uncompressedSHA256": "966b1568bdc7e0204d8b418cc31e195af78840ccbbfc75dfefe4ab77f2bf36a1",
+    "uncompressedBytes": 301384,
+    "compressedBytes": 25102
+  },
+  "full-generalization/full-derived-baseline.json.gz": {
+    "uncompressedSHA256": "534bbf410c68582fa2de4e5508db494fb9c6ec376fd4c9e97607431f0f3020d1",
+    "uncompressedBytes": 1667095,
+    "compressedBytes": 169351
+  },
+  "full-generalization/full-legacy-experiment.json.gz": {
+    "uncompressedSHA256": "5ea175eb7e1c1f9449e9bb88adb9b460f9be5b3cb39530482610d587f9b1251b",
+    "uncompressedBytes": 432558,
+    "compressedBytes": 40647
+  },
+  "full-generalization/full-derived-experiment.json.gz": {
+    "uncompressedSHA256": "918a6d1a5a89c9155319b397988626e9f198ff925cf018373cd570abfa917619",
+    "uncompressedBytes": 1818585,
+    "compressedBytes": 176005
+  },
+  "full-generalization/full-legacy-baseline.json.gz": {
+    "uncompressedSHA256": "f77a5be9e922710c20c6f5c9dc0b56eba786d441a2eed5b66ec6df6d8e3db0e0",
+    "uncompressedBytes": 398639,
+    "compressedBytes": 40085
+  }
+}

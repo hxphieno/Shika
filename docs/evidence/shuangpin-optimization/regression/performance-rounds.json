@@ -1,0 +1,43 @@
+{
+  "note": "Initial legacy final run overlapped compiles and replay processes, so both baseline and final were repeated sequentially. Preserve all rounds; do not compare the anomalous 230ms full-legacy baseline to claim speedup.",
+  "legacyInitial": {
+    "before": {
+      "keyP50MS": 0.24700164794921875,
+      "keyP95MS": 1.365065574645996,
+      "keyP99MS": 3.6759376525878906,
+      "peakRSSBytes": 89571328,
+      "platform": "macOS native engine; peakRSS is not iOS extension footprint",
+      "rankingLearnsAnswers": false,
+      "startupMS": 49.388885498046875
+    },
+    "after": {
+      "keyP50MS": 0.8749961853027344,
+      "keyP95MS": 6.191015243530273,
+      "keyP99MS": 23.94700050354004,
+      "peakRSSBytes": 97632256,
+      "platform": "macOS native engine; peakRSS is not iOS extension footprint",
+      "rankingLearnsAnswers": false,
+      "startupMS": 211.5340232849121
+    }
+  },
+  "legacyRepeated": {
+    "before": {
+      "keyP50MS": 0.25093555450439453,
+      "keyP95MS": 1.744985580444336,
+      "keyP99MS": 5.494952201843262,
+      "peakRSSBytes": 89538560,
+      "platform": "macOS native engine; peakRSS is not iOS extension footprint",
+      "rankingLearnsAnswers": false,
+      "startupMS": 61.58602237701416
+    },
+    "after": {
+      "keyP50MS": 0.23806095123291016,
+      "keyP95MS": 1.5549659729003906,
+      "keyP99MS": 4.59599494934082,
+      "peakRSSBytes": 97976320,
+      "platform": "macOS native engine; peakRSS is not iOS extension footprint",
+      "rankingLearnsAnswers": false,
+      "startupMS": 62.81709671020508
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "fixtureSHA256": "4dfec1e0bee2f211907a7c351f0f946b02e4844b3b9d6ea96b6c76e541f340d4",
+  "all840DerivedInputsMatchFrozenRule": true,
+  "sourceTargetAndSplitPreserved": true,
+  "allCandidateCompletenessAndRanksRecomputed": true,
+  "rankingsDoNotSelectAnswers": true,
+  "top5Regressions": [],
+  "cleanFirstChanges": [],
+  "metrics": {
+    "baseline": {
+      "all": {
+        "clean": {
+          "n": 140,
+          "top1": 118,
+          "top5": 135,
+          "top10": 135
+        },
+        "single-error": {
+          "n": 560,
+          "top1": 255,
+          "top5": 374,
+          "top10": 397
+        },
+        "double-error": {
+          "n": 140,
+          "top1": 0,
+          "top5": 0,
+          "top10": 0
+        }
+      },
+      "development": {
+        "clean": {
+          "n": 22,
+          "top1": 20,
+          "top5": 22,
+          "top10": 22
+        },
+        "single-error": {
+          "n": 88,
+          "top1": 35,
+          "top5": 56,
+          "top10": 61
+        },
+        "double-error": {
+          "n": 22,
+          "top1": 0,
+          "top5": 0,
+          "top10": 0
+        }
+      },
+      "heldout": {
+        "clean": {
+          "n": 118,
+          "top1": 98,
+          "top5": 113,
+          "top10": 113
+        },
+        "single-error": {
+          "n": 472,
+          "top1": 220,
+          "top5": 318,
+          "top10": 336
+        },
+        "double-error": {
+          "n": 118,
+          "top1": 0,
+          "top5": 0,
+          "top10": 0
+        }
+      },
+      "timings": {
+        "keyP95MS": 4.862070083618164,
+        "keyP99MS": 8.670926094055176,
+        "startupMS": 119.02797222137451,
+        "peakRSSBytes": 111198208
+      },
+      "unexpectedCommits": 0
+    },
+    "experiment": {
+      "all": {
+        "clean": {
+          "n": 140,
+          "top1": 118,
+          "top5": 135,
+          "top10": 135
+        },
+        "single-error": {
+          "n": 560,
+          "top1": 255,
+          "top5": 404,
+          "top10": 431
+        },
+        "double-error": {
+          "n": 140,
+          "top1": 0,
+          "top5": 0,
+          "top10": 0
+        }
+      },
+      "development": {
+        "clean": {
+          "n": 22,
+          "top1": 20,
+          "top5": 22,
+          "top10": 22
+        },
+        "single-error": {
+          "n": 88,
+          "top1": 35,
+          "top5": 62,
+          "top10": 67
+        },
+        "double-error": {
+          "n": 22,
+          "top1": 0,
+          "top5": 0,
+          "top10": 0
+        }
+      },
+      "heldout": {
+        "clean": {
+          "n": 118,
+          "top1": 98,
+          "top5": 113,
+          "top10": 113
+        },
+        "single-error": {
+          "n": 472,
+          "top1": 220,
+          "top5": 342,
+          "top10": 364
+        },
+        "double-error": {
+          "n": 118,
+          "top1": 0,
+          "top5": 0,
+          "top10": 0
+        }
+      },
+      "timings": {
+        "keyP95MS": 6.046056747436523,
+        "keyP99MS": 12.9929780960083,
+        "startupMS": 142.64702796936035,
+        "peakRSSBytes": 115146752
+      },
+      "unexpectedCommits": 0
+    }
+  },
+  "note": "Same 140 targets already used for double-pinyin; inherited dev/heldout splits, not new-vocabulary blind evaluation.",
+  "metadataErratumIndependentlyChecked": {
+    "correctedSHA256": "110de696b50606ec91a690d484c8786a5772df7d9db826cd6e59bdc2689a03d9",
+    "all840RankedFieldsUnchanged": true,
+    "correctedEditsReconstructInputs": true
+  },
+  "timingLimit": "Full-pinyin final ranking overlapped briefly with commit replay work; start order was baseline then final but this is not a strictly idle sequential timing experiment."
+}

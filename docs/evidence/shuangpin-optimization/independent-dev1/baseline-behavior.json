@@ -1,0 +1,419 @@
+{
+  "checkCount" : 69,
+  "checks" : [
+    {
+      "detail" : "",
+      "name" : "input retained before Return: nihc",
+      "passed" : true
+    },
+    {
+      "detail" : "output=nihc",
+      "name" : "Return preserves original letters: nihc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle Return reaches host once: nihc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "input retained before Return: nijc",
+      "passed" : true
+    },
+    {
+      "detail" : "output=nijc",
+      "name" : "Return preserves original letters: nijc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle Return reaches host once: nijc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "input retained before Return: nhc",
+      "passed" : true
+    },
+    {
+      "detail" : "output=nhc",
+      "name" : "Return preserves original letters: nhc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle Return reaches host once: nhc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "input retained before Return: niihc",
+      "passed" : true
+    },
+    {
+      "detail" : "output=niihc",
+      "name" : "Return preserves original letters: niihc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle Return reaches host once: niihc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "input retained before Return: nhic",
+      "passed" : true
+    },
+    {
+      "detail" : "output=nhic",
+      "name" : "Return preserves original letters: nhic",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle Return reaches host once: nhic",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "input retained before Return: nihcuijp",
+      "passed" : true
+    },
+    {
+      "detail" : "output=nihcuijp",
+      "name" : "Return preserves original letters: nihcuijp",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle Return reaches host once: nihcuijp",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "input retained before Return: qqqqqqqqqqqqqqqq",
+      "passed" : true
+    },
+    {
+      "detail" : "output=qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+      "name" : "Return preserves original letters: qqqqqqqqqqqqqqqq",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle Return reaches host once: qqqqqqqqqqqqqqqq",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "explicit raw commit preserves typo once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "space selects displayed clean first candidate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle space inserts one literal space",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush commits clean composition once: ，",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush has no stale replay: ，",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush commits clean composition once: 。",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush has no stale replay: 。",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush commits clean composition once: 1",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush has no stale replay: 1",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush commits clean composition once: A",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush has no stale replay: A",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush commits clean composition once: 🦌",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush has no stale replay: 🦌",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush commits clean composition once: -",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal flush has no stale replay: -",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "backspace edits every real input letter only: nihc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle backspace reaches host once: nihc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "backspace edits every real input letter only: niihc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle backspace reaches host once: niihc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "backspace edits every real input letter only: nhc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle backspace reaches host once: nhc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "backspace edits every real input letter only: nihcuijp",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle backspace reaches host once: nihcuijp",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "delete then retype restores the exact typo",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "cancel discards composition without committing",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "cancelled input cannot contaminate next word",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial selection preserves marked prefix: \" \"",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好世界",
+      "name" : "partial selection completes without losing tail: \" \"",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial selection preserves marked prefix: \"\\n\"",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好uijp",
+      "name" : "partial selection completes without losing tail: \"\\n\"",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial selection preserves marked prefix: \"，\"",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好世界，",
+      "name" : "partial selection completes without losing tail: \"，\"",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial selection preserves marked prefix: \"switch\"",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好世界",
+      "name" : "partial selection completes without losing tail: \"switch\"",
+      "passed" : true
+    },
+    {
+      "detail" : "output=嗯常促产撇",
+      "name" : "partial choice survives tail deletion and retyping",
+      "passed" : false
+    },
+    {
+      "detail" : "",
+      "name" : "deleting partial selection eventually clears without host edits",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "input after deleting a partial selection is independent",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "expanded candidates preserve composition and emit nothing",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "expanded candidate IDs are unique",
+      "passed" : true
+    },
+    {
+      "detail" : "selected=倪, output=倪",
+      "name" : "expanded nonfirst selection follows its displayed ID",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "paged nonfirst selection follows its displayed ID",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "paging round trip preserves typo and selection choices",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "correction remains selectable after expansion",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "stale candidate from cancelled input cannot commit",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "switch to full pinyin commits pending double pinyin once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "full pinyin decodes using its own spelling",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "switch back restores double-pinyin spelling",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "long raw commit has no truncation or implicit partial commit",
+      "passed" : true
+    }
+  ],
+  "environment" : "macOS native real Rime and production input session; no UIKit or physical device",
+  "failures" : 1,
+  "mode" : "behavior",
+  "observations" : [
+    {
+      "candidates" : [
+        {
+          "comment" : "ni hao",
+          "index" : 0,
+          "text" : "你好"
+        },
+        {
+          "comment" : "ni hao",
+          "index" : 1,
+          "text" : "拟好"
+        },
+        {
+          "comment" : "ni hao",
+          "index" : 2,
+          "text" : "泥蒿"
+        },
+        {
+          "comment" : "纠错 · ni yao",
+          "index" : -1,
+          "text" : "你要"
+        },
+        {
+          "comment" : "纠错 · ni hui",
+          "index" : -2,
+          "text" : "你会"
+        },
+        {
+          "comment" : "纠错 · ai hao",
+          "index" : -3,
+          "text" : "爱好"
+        },
+        {
+          "comment" : "ni",
+          "index" : 3,
+          "text" : "昵"
+        },
+        {
+          "comment" : "ni",
+          "index" : 4,
+          "text" : "倪"
+        },
+        {
+          "comment" : "ni",
+          "index" : 5,
+          "text" : "你"
+        },
+        {
+          "comment" : "ni",
+          "index" : 6,
+          "text" : "泥"
+        },
+        {
+          "comment" : "ni",
+          "index" : 7,
+          "text" : "拟"
+        }
+      ],
+      "input" : "nihc",
+      "marked" : "ni hc",
+      "name" : "final clean composition",
+      "output" : "",
+      "preedit" : "ni hc"
+    }
+  ]
+}

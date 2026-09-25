@@ -1,0 +1,27 @@
+{
+  "checks" : [
+    {
+      "detail" : "",
+      "name" : "learning target starts below first rank",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learn five explicit joint selections",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learning writes word and language-transition records",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learning promotes chosen mixed sentence to first rank",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "mode" : "learn",
+  "platform" : "macOS production engines, no UIKit"
+}

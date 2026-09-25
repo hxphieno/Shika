@@ -1,0 +1,2674 @@
+{
+  "checkCount" : 66,
+  "checks" : [
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: nihao",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: shishi",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: quanyi",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: quanli",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: jingli",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: xingshi",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: shiyan",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: yiyi",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: jiezhi",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: fanying",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: bianzhi",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: pinwei",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: jiaodai",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: zhongsheng",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: xi'an",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: xian",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: lve",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: nue",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: shanghai",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: nihaoshijie",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: shanghaijiaotongdaxue",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: nohao",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: nihoa",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "snapshot input retains all original keys without commit: zhongguoo",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "full-pinyin Return confirms exact raw input: nihao",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "second Return reaches host once: nihao",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "full-pinyin Return confirms exact raw input: nohao",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "second Return reaches host once: nohao",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "full-pinyin Return confirms exact raw input: nihoa",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "second Return reaches host once: nihoa",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "full-pinyin Return confirms exact raw input: zhongguoo",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "second Return reaches host once: zhongguoo",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "full-pinyin Return confirms exact raw input: shanghaijiaotongdaxue",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "second Return reaches host once: shanghaijiaotongdaxue",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好",
+      "name" : "existing correction consumes full input: nohao",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "existing correction is committed only once: nohao",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好",
+      "name" : "existing correction consumes full input: nihoa",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "existing correction is committed only once: nihoa",
+      "passed" : true
+    },
+    {
+      "detail" : "output=中国",
+      "name" : "existing correction consumes full input: zhongguoo",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "existing correction is committed only once: zhongguoo",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial Chinese selection remains marked: \" \"",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好世界",
+      "name" : "partial Chinese tail survives confirmation: \" \"",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial Chinese selection remains marked: \"\\n\"",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好shijie",
+      "name" : "partial Chinese tail survives confirmation: \"\\n\"",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial Chinese selection remains marked: \"，\"",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好世界，",
+      "name" : "partial Chinese tail survives confirmation: \"，\"",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial Chinese selection remains marked: \"switch\"",
+      "passed" : true
+    },
+    {
+      "detail" : "output=你好世界",
+      "name" : "partial Chinese tail survives confirmation: \"switch\"",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "partial undo preserves all original pinyin",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "Return after partial undo preserves exact original input",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "ordinary delete edits the actual mistyped raw code",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "idle delete alone reaches host",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal follows a single committed Chinese word: ，",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal follows a single committed Chinese word: 1",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal follows a single committed Chinese word: A",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "literal follows a single committed Chinese word: 🦌",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "candidate expansion keeps marked text and unique IDs",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "expanded native candidate selects correct displayed text",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "cancelled correction cannot commit through a stale item",
+      "passed" : true
+    },
+    {
+      "detail" : "target=拟好, output=拟好",
+      "name" : "new same-code alternative has a complete native selection route: nohao",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "new same-code alternative is never replayed",
+      "passed" : true
+    },
+    {
+      "detail" : "target=拟好, output=拟好",
+      "name" : "new same-code alternative has a complete native selection route: nihoa",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "new same-code alternative is never replayed",
+      "passed" : true
+    },
+    {
+      "detail" : "target=种过, output=种过",
+      "name" : "new same-code alternative has a complete native selection route: zhongguoo",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "new same-code alternative is never replayed",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "full-pinyin actions never create the double-pinyin index",
+      "passed" : true
+    }
+  ],
+  "environment" : "macOS native real Rime\/input session; no UI",
+  "extraRouteSelections" : [
+    {
+      "index" : -4,
+      "input" : "nohao",
+      "text" : "拟好"
+    },
+    {
+      "index" : -4,
+      "input" : "nihoa",
+      "text" : "拟好"
+    },
+    {
+      "index" : -4,
+      "input" : "zhongguoo",
+      "text" : "种过"
+    }
+  ],
+  "failures" : 0,
+  "snapshots" : [
+    {
+      "all" : [
+        {
+          "comment" : "ni hao",
+          "index" : 0,
+          "text" : "你好"
+        },
+        {
+          "comment" : "ni hao",
+          "index" : 1,
+          "text" : "拟好"
+        },
+        {
+          "comment" : "ni hao",
+          "index" : 2,
+          "text" : "泥蒿"
+        },
+        {
+          "comment" : "ni ha o",
+          "index" : -100,
+          "text" : "你哈哦"
+        },
+        {
+          "comment" : "纠错 · ni yao",
+          "index" : -1,
+          "text" : "你要"
+        },
+        {
+          "comment" : "纠错 · ni hai",
+          "index" : -2,
+          "text" : "你还"
+        },
+        {
+          "comment" : "纠错 · ai hao",
+          "index" : -3,
+          "text" : "爱好"
+        },
+        {
+          "comment" : "纠错 · ni yao",
+          "index" : -4,
+          "text" : "拟邀"
+        },
+        {
+          "comment" : "纠错 · ni yao",
+          "index" : -5,
+          "text" : "拟鳐"
+        },
+        {
+          "comment" : "ni",
+          "index" : 3,
+          "text" : "你"
+        },
+        {
+          "comment" : "ni",
+          "index" : 4,
+          "text" : "泥"
+        },
+        {
+          "comment" : "ni",
+          "index" : 5,
+          "text" : "拟"
+        },
+        {
+          "comment" : "ni",
+          "index" : 6,
+          "text" : "腻"
+        },
+        {
+          "comment" : "ni",
+          "index" : 7,
+          "text" : "逆"
+        }
+      ],
+      "first" : "你好",
+      "input" : "nihao",
+      "nativeExact" : [
+        {
+          "comment" : "ni hao",
+          "index" : 0,
+          "text" : "你好"
+        },
+        {
+          "comment" : "ni hao",
+          "index" : 1,
+          "text" : "拟好"
+        },
+        {
+          "comment" : "ni hao",
+          "index" : 2,
+          "text" : "泥蒿"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "shi shi",
+          "index" : 0,
+          "text" : "试试"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 1,
+          "text" : "事实"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 2,
+          "text" : "实施"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 3,
+          "text" : "实时"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 4,
+          "text" : "逝世"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 5,
+          "text" : "适时"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 6,
+          "text" : "时时"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 7,
+          "text" : "事事"
+        },
+        {
+          "comment" : "纠错 · zhi shi",
+          "index" : -1,
+          "text" : "只是"
+        },
+        {
+          "comment" : "纠错 · shi zhi",
+          "index" : -2,
+          "text" : "是指"
+        },
+        {
+          "comment" : "纠错 · shi shui",
+          "index" : -3,
+          "text" : "是谁"
+        },
+        {
+          "comment" : "纠错 · zhi shi",
+          "index" : -4,
+          "text" : "知识"
+        },
+        {
+          "comment" : "纠错 · zhi shi",
+          "index" : -5,
+          "text" : "指示"
+        }
+      ],
+      "first" : "试试",
+      "input" : "shishi",
+      "nativeExact" : [
+        {
+          "comment" : "shi shi",
+          "index" : 0,
+          "text" : "试试"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 1,
+          "text" : "事实"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 2,
+          "text" : "实施"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 3,
+          "text" : "实时"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 4,
+          "text" : "逝世"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 5,
+          "text" : "适时"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 6,
+          "text" : "时时"
+        },
+        {
+          "comment" : "shi shi",
+          "index" : 7,
+          "text" : "事事"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "quan yi",
+          "index" : 0,
+          "text" : "权益"
+        },
+        {
+          "comment" : "quan yi",
+          "index" : 1,
+          "text" : "权宜"
+        },
+        {
+          "comment" : "quan yi",
+          "index" : 2,
+          "text" : "全译"
+        },
+        {
+          "comment" : "quan yi",
+          "index" : 3,
+          "text" : "圈椅"
+        },
+        {
+          "comment" : "qu an yi",
+          "index" : -100,
+          "text" : "去安逸"
+        },
+        {
+          "comment" : "纠错 · yuan yi",
+          "index" : -1,
+          "text" : "愿意"
+        },
+        {
+          "comment" : "纠错 · quan li",
+          "index" : -2,
+          "text" : "全力"
+        },
+        {
+          "comment" : "纠错 · qian yi",
+          "index" : -3,
+          "text" : "迁移"
+        },
+        {
+          "comment" : "纠错 · yuan yi",
+          "index" : -4,
+          "text" : "园艺"
+        },
+        {
+          "comment" : "纠错 · yuan yi",
+          "index" : -5,
+          "text" : "原意"
+        },
+        {
+          "comment" : "quan",
+          "index" : 4,
+          "text" : "全"
+        },
+        {
+          "comment" : "quan",
+          "index" : 5,
+          "text" : "权"
+        },
+        {
+          "comment" : "quan",
+          "index" : 6,
+          "text" : "券"
+        },
+        {
+          "comment" : "quan",
+          "index" : 7,
+          "text" : "圈"
+        }
+      ],
+      "first" : "权益",
+      "input" : "quanyi",
+      "nativeExact" : [
+        {
+          "comment" : "quan yi",
+          "index" : 0,
+          "text" : "权益"
+        },
+        {
+          "comment" : "quan yi",
+          "index" : 1,
+          "text" : "权宜"
+        },
+        {
+          "comment" : "quan yi",
+          "index" : 2,
+          "text" : "全译"
+        },
+        {
+          "comment" : "quan yi",
+          "index" : 3,
+          "text" : "圈椅"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "quan li",
+          "index" : 0,
+          "text" : "全力"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 1,
+          "text" : "权利"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 2,
+          "text" : "权力"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 3,
+          "text" : "劝离"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 4,
+          "text" : "圈里"
+        },
+        {
+          "comment" : "qu an li",
+          "index" : -100,
+          "text" : "去案例"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 5,
+          "text" : "泉里"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 6,
+          "text" : "拳理"
+        },
+        {
+          "comment" : "纠错 · guan li",
+          "index" : -1,
+          "text" : "管理"
+        },
+        {
+          "comment" : "纠错 · qun li",
+          "index" : -2,
+          "text" : "群里"
+        },
+        {
+          "comment" : "纠错 · yuan li",
+          "index" : -3,
+          "text" : "原理"
+        },
+        {
+          "comment" : "纠错 · guan li",
+          "index" : -4,
+          "text" : "惯例"
+        },
+        {
+          "comment" : "纠错 · guan li",
+          "index" : -5,
+          "text" : "官吏"
+        },
+        {
+          "comment" : "quan",
+          "index" : 7,
+          "text" : "全"
+        }
+      ],
+      "first" : "全力",
+      "input" : "quanli",
+      "nativeExact" : [
+        {
+          "comment" : "quan li",
+          "index" : 0,
+          "text" : "全力"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 1,
+          "text" : "权利"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 2,
+          "text" : "权力"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 3,
+          "text" : "劝离"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 4,
+          "text" : "圈里"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 5,
+          "text" : "泉里"
+        },
+        {
+          "comment" : "quan li",
+          "index" : 6,
+          "text" : "拳理"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "jing li",
+          "index" : 0,
+          "text" : "经历"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 1,
+          "text" : "经理"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 2,
+          "text" : "精力"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 3,
+          "text" : "净利"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 4,
+          "text" : "警力"
+        },
+        {
+          "comment" : "ji ng li",
+          "index" : -100,
+          "text" : "及嗯里"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 5,
+          "text" : "敬礼"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 6,
+          "text" : "井里"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 7,
+          "text" : "镜里"
+        },
+        {
+          "comment" : "纠错 · jing ji",
+          "index" : -1,
+          "text" : "经济"
+        },
+        {
+          "comment" : "纠错 · jiang li",
+          "index" : -2,
+          "text" : "奖励"
+        },
+        {
+          "comment" : "纠错 · ying li",
+          "index" : -3,
+          "text" : "盈利"
+        },
+        {
+          "comment" : "纠错 · jing ji",
+          "index" : -4,
+          "text" : "竞技"
+        },
+        {
+          "comment" : "纠错 · jing ji",
+          "index" : -5,
+          "text" : "经纪"
+        }
+      ],
+      "first" : "经历",
+      "input" : "jingli",
+      "nativeExact" : [
+        {
+          "comment" : "jing li",
+          "index" : 0,
+          "text" : "经历"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 1,
+          "text" : "经理"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 2,
+          "text" : "精力"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 3,
+          "text" : "净利"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 4,
+          "text" : "警力"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 5,
+          "text" : "敬礼"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 6,
+          "text" : "井里"
+        },
+        {
+          "comment" : "jing li",
+          "index" : 7,
+          "text" : "镜里"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "xing shi",
+          "index" : 0,
+          "text" : "形式"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 1,
+          "text" : "行驶"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 2,
+          "text" : "形势"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 3,
+          "text" : "姓氏"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 4,
+          "text" : "刑事"
+        },
+        {
+          "comment" : "xi ng shi",
+          "index" : -100,
+          "text" : "系嗯是"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 5,
+          "text" : "行使"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 6,
+          "text" : "行事"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 7,
+          "text" : "型式"
+        },
+        {
+          "comment" : "纠错 · xing zhi",
+          "index" : -1,
+          "text" : "性质"
+        },
+        {
+          "comment" : "纠错 · xiang shi",
+          "index" : -2,
+          "text" : "像是"
+        },
+        {
+          "comment" : "纠错 · ping shi",
+          "index" : -3,
+          "text" : "平时"
+        },
+        {
+          "comment" : "纠错 · xing zhi",
+          "index" : -4,
+          "text" : "兴致"
+        },
+        {
+          "comment" : "纠错 · xing zhi",
+          "index" : -5,
+          "text" : "行之"
+        }
+      ],
+      "first" : "形式",
+      "input" : "xingshi",
+      "nativeExact" : [
+        {
+          "comment" : "xing shi",
+          "index" : 0,
+          "text" : "形式"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 1,
+          "text" : "行驶"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 2,
+          "text" : "形势"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 3,
+          "text" : "姓氏"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 4,
+          "text" : "刑事"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 5,
+          "text" : "行使"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 6,
+          "text" : "行事"
+        },
+        {
+          "comment" : "xing shi",
+          "index" : 7,
+          "text" : "型式"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "shi yan",
+          "index" : 0,
+          "text" : "实验"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 1,
+          "text" : "试验"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 2,
+          "text" : "饰演"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 3,
+          "text" : "食盐"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 4,
+          "text" : "誓言"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 5,
+          "text" : "食言"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 6,
+          "text" : "时延"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 7,
+          "text" : "十堰"
+        },
+        {
+          "comment" : "纠错 · shi yao",
+          "index" : -1,
+          "text" : "是要"
+        },
+        {
+          "comment" : "纠错 · shi tan",
+          "index" : -2,
+          "text" : "试探"
+        },
+        {
+          "comment" : "纠错 · shi an",
+          "index" : -3,
+          "text" : "是按"
+        },
+        {
+          "comment" : "纠错 · shi yao",
+          "index" : -4,
+          "text" : "石药"
+        },
+        {
+          "comment" : "纠错 · shi yao",
+          "index" : -5,
+          "text" : "食药"
+        }
+      ],
+      "first" : "实验",
+      "input" : "shiyan",
+      "nativeExact" : [
+        {
+          "comment" : "shi yan",
+          "index" : 0,
+          "text" : "实验"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 1,
+          "text" : "试验"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 2,
+          "text" : "饰演"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 3,
+          "text" : "食盐"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 4,
+          "text" : "誓言"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 5,
+          "text" : "食言"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 6,
+          "text" : "时延"
+        },
+        {
+          "comment" : "shi yan",
+          "index" : 7,
+          "text" : "十堰"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "yi yi",
+          "index" : 0,
+          "text" : "意义"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 1,
+          "text" : "一一"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 2,
+          "text" : "异议"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 3,
+          "text" : "姨姨"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 4,
+          "text" : "依依"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 5,
+          "text" : "一亿"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 6,
+          "text" : "熠熠"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 7,
+          "text" : "意译"
+        },
+        {
+          "comment" : "纠错 · yi ji",
+          "index" : -1,
+          "text" : "以及"
+        },
+        {
+          "comment" : "纠错 · yi ci",
+          "index" : -2,
+          "text" : "一次"
+        },
+        {
+          "comment" : "纠错 · yi qi",
+          "index" : -3,
+          "text" : "一起"
+        },
+        {
+          "comment" : "纠错 · yi ji",
+          "index" : -4,
+          "text" : "一级"
+        },
+        {
+          "comment" : "纠错 · yi ji",
+          "index" : -5,
+          "text" : "一集"
+        }
+      ],
+      "first" : "意义",
+      "input" : "yiyi",
+      "nativeExact" : [
+        {
+          "comment" : "yi yi",
+          "index" : 0,
+          "text" : "意义"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 1,
+          "text" : "一一"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 2,
+          "text" : "异议"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 3,
+          "text" : "姨姨"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 4,
+          "text" : "依依"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 5,
+          "text" : "一亿"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 6,
+          "text" : "熠熠"
+        },
+        {
+          "comment" : "yi yi",
+          "index" : 7,
+          "text" : "意译"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "jie zhi",
+          "index" : 0,
+          "text" : "截止"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 1,
+          "text" : "截至"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 2,
+          "text" : "戒指"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 3,
+          "text" : "介质"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 4,
+          "text" : "节制"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 5,
+          "text" : "截肢"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 6,
+          "text" : "杰志"
+        },
+        {
+          "comment" : "ji e zhi",
+          "index" : 7,
+          "text" : "饥饿值"
+        },
+        {
+          "comment" : "纠错 · jie shi",
+          "index" : -1,
+          "text" : "解释"
+        },
+        {
+          "comment" : "纠错 · ji zhi",
+          "index" : -2,
+          "text" : "机制"
+        },
+        {
+          "comment" : "纠错 · jia zhi",
+          "index" : -3,
+          "text" : "价值"
+        },
+        {
+          "comment" : "纠错 · jie shi",
+          "index" : -4,
+          "text" : "届时"
+        },
+        {
+          "comment" : "纠错 · jie shi",
+          "index" : -5,
+          "text" : "结实"
+        }
+      ],
+      "first" : "截止",
+      "input" : "jiezhi",
+      "nativeExact" : [
+        {
+          "comment" : "jie zhi",
+          "index" : 0,
+          "text" : "截止"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 1,
+          "text" : "截至"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 2,
+          "text" : "戒指"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 3,
+          "text" : "介质"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 4,
+          "text" : "节制"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 5,
+          "text" : "截肢"
+        },
+        {
+          "comment" : "jie zhi",
+          "index" : 6,
+          "text" : "杰志"
+        },
+        {
+          "comment" : "ji e zhi",
+          "index" : 7,
+          "text" : "饥饿值"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "fan ying",
+          "index" : 0,
+          "text" : "反应"
+        },
+        {
+          "comment" : "fan ying",
+          "index" : 1,
+          "text" : "反映"
+        },
+        {
+          "comment" : "fan ying",
+          "index" : 2,
+          "text" : "帆影"
+        },
+        {
+          "comment" : "fan ying",
+          "index" : 3,
+          "text" : "范瑛"
+        },
+        {
+          "comment" : "fan yi ng",
+          "index" : -100,
+          "text" : "翻译嗯"
+        },
+        {
+          "comment" : "纠错 · fang ying",
+          "index" : -1,
+          "text" : "放映"
+        },
+        {
+          "comment" : "纠错 · gan ying",
+          "index" : -2,
+          "text" : "感应"
+        },
+        {
+          "comment" : "纠错 · fan yin",
+          "index" : -3,
+          "text" : "泛音"
+        },
+        {
+          "comment" : "纠错 · fang ying",
+          "index" : -4,
+          "text" : "访英"
+        },
+        {
+          "comment" : "纠错 · fang ying",
+          "index" : -5,
+          "text" : "放鹰"
+        },
+        {
+          "comment" : "fan yi",
+          "index" : 4,
+          "text" : "翻译"
+        },
+        {
+          "comment" : "fan yi",
+          "index" : 5,
+          "text" : "反义"
+        },
+        {
+          "comment" : "fan yi",
+          "index" : 6,
+          "text" : "反以"
+        },
+        {
+          "comment" : "fan yi",
+          "index" : 7,
+          "text" : "犯意"
+        }
+      ],
+      "first" : "反应",
+      "input" : "fanying",
+      "nativeExact" : [
+        {
+          "comment" : "fan ying",
+          "index" : 0,
+          "text" : "反应"
+        },
+        {
+          "comment" : "fan ying",
+          "index" : 1,
+          "text" : "反映"
+        },
+        {
+          "comment" : "fan ying",
+          "index" : 2,
+          "text" : "帆影"
+        },
+        {
+          "comment" : "fan ying",
+          "index" : 3,
+          "text" : "范瑛"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "bian zhi",
+          "index" : 0,
+          "text" : "贬值"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 1,
+          "text" : "编制"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 2,
+          "text" : "变质"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 3,
+          "text" : "编织"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 4,
+          "text" : "便知"
+        },
+        {
+          "comment" : "bi an zhi",
+          "index" : -100,
+          "text" : "比安置"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 5,
+          "text" : "变直"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 6,
+          "text" : "遍植"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 7,
+          "text" : "贬职"
+        },
+        {
+          "comment" : "纠错 · bian shi",
+          "index" : -1,
+          "text" : "便是"
+        },
+        {
+          "comment" : "纠错 · xian zhi",
+          "index" : -2,
+          "text" : "限制"
+        },
+        {
+          "comment" : "纠错 · jian zhi",
+          "index" : -3,
+          "text" : "简直"
+        },
+        {
+          "comment" : "纠错 · bian shi",
+          "index" : -4,
+          "text" : "辨识"
+        },
+        {
+          "comment" : "纠错 · bian shi",
+          "index" : -5,
+          "text" : "便士"
+        }
+      ],
+      "first" : "贬值",
+      "input" : "bianzhi",
+      "nativeExact" : [
+        {
+          "comment" : "bian zhi",
+          "index" : 0,
+          "text" : "贬值"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 1,
+          "text" : "编制"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 2,
+          "text" : "变质"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 3,
+          "text" : "编织"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 4,
+          "text" : "便知"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 5,
+          "text" : "变直"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 6,
+          "text" : "遍植"
+        },
+        {
+          "comment" : "bian zhi",
+          "index" : 7,
+          "text" : "贬职"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "pin wei",
+          "index" : 0,
+          "text" : "品味"
+        },
+        {
+          "comment" : "pin wei",
+          "index" : 1,
+          "text" : "品位"
+        },
+        {
+          "comment" : "pin wei",
+          "index" : 2,
+          "text" : "聘为"
+        },
+        {
+          "comment" : "纠错 · yin wei",
+          "index" : -1,
+          "text" : "因为"
+        },
+        {
+          "comment" : "纠错 · ping wei",
+          "index" : -2,
+          "text" : "评为"
+        },
+        {
+          "comment" : "纠错 · pin lei",
+          "index" : -3,
+          "text" : "品类"
+        },
+        {
+          "comment" : "纠错 · yin wei",
+          "index" : -4,
+          "text" : "银纬"
+        },
+        {
+          "comment" : "纠错 · yin wei",
+          "index" : -5,
+          "text" : "音位"
+        },
+        {
+          "comment" : "pin",
+          "index" : 3,
+          "text" : "品"
+        },
+        {
+          "comment" : "pin",
+          "index" : 4,
+          "text" : "频"
+        },
+        {
+          "comment" : "pin",
+          "index" : 5,
+          "text" : "拼"
+        },
+        {
+          "comment" : "pin",
+          "index" : 6,
+          "text" : "聘"
+        },
+        {
+          "comment" : "pin",
+          "index" : 7,
+          "text" : "贫"
+        }
+      ],
+      "first" : "品味",
+      "input" : "pinwei",
+      "nativeExact" : [
+        {
+          "comment" : "pin wei",
+          "index" : 0,
+          "text" : "品味"
+        },
+        {
+          "comment" : "pin wei",
+          "index" : 1,
+          "text" : "品位"
+        },
+        {
+          "comment" : "pin wei",
+          "index" : 2,
+          "text" : "聘为"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "jiao dai",
+          "index" : 0,
+          "text" : "交代"
+        },
+        {
+          "comment" : "jiao dai",
+          "index" : 1,
+          "text" : "胶带"
+        },
+        {
+          "comment" : "jiao dai",
+          "index" : 2,
+          "text" : "交待"
+        },
+        {
+          "comment" : "jiao dai",
+          "index" : 3,
+          "text" : "胶袋"
+        },
+        {
+          "comment" : "ji ao dai",
+          "index" : -100,
+          "text" : "及澳带"
+        },
+        {
+          "comment" : "纠错 · jiao cai",
+          "index" : -1,
+          "text" : "教材"
+        },
+        {
+          "comment" : "纠错 · jiao da",
+          "index" : -2,
+          "text" : "较大"
+        },
+        {
+          "comment" : "纠错 · jiao di",
+          "index" : -3,
+          "text" : "脚底"
+        },
+        {
+          "comment" : "纠错 · jiao cai",
+          "index" : -4,
+          "text" : "脚踩"
+        },
+        {
+          "comment" : "纠错 · jiao cai",
+          "index" : -5,
+          "text" : "叫菜"
+        },
+        {
+          "comment" : "jiao",
+          "index" : 4,
+          "text" : "叫"
+        },
+        {
+          "comment" : "jiao",
+          "index" : 5,
+          "text" : "交"
+        },
+        {
+          "comment" : "jiao",
+          "index" : 6,
+          "text" : "教"
+        },
+        {
+          "comment" : "jiao",
+          "index" : 7,
+          "text" : "较"
+        }
+      ],
+      "first" : "交代",
+      "input" : "jiaodai",
+      "nativeExact" : [
+        {
+          "comment" : "jiao dai",
+          "index" : 0,
+          "text" : "交代"
+        },
+        {
+          "comment" : "jiao dai",
+          "index" : 1,
+          "text" : "胶带"
+        },
+        {
+          "comment" : "jiao dai",
+          "index" : 2,
+          "text" : "交待"
+        },
+        {
+          "comment" : "jiao dai",
+          "index" : 3,
+          "text" : "胶袋"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "zhong sheng",
+          "index" : 0,
+          "text" : "众生"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 1,
+          "text" : "终生"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 2,
+          "text" : "钟声"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 3,
+          "text" : "仲盛"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 4,
+          "text" : "中升"
+        },
+        {
+          "comment" : "zhong she ng",
+          "index" : -100,
+          "text" : "中社嗯"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 5,
+          "text" : "中盛"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 6,
+          "text" : "众声"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 7,
+          "text" : "重升"
+        },
+        {
+          "comment" : "纠错 · zhong shen",
+          "index" : -1,
+          "text" : "终身"
+        },
+        {
+          "comment" : "纠错 · zhong zheng",
+          "index" : -2,
+          "text" : "重症"
+        },
+        {
+          "comment" : "纠错 · zhong cheng",
+          "index" : -3,
+          "text" : "忠诚"
+        },
+        {
+          "comment" : "纠错 · zhong shen",
+          "index" : -4,
+          "text" : "终审"
+        },
+        {
+          "comment" : "纠错 · zhong shen",
+          "index" : -5,
+          "text" : "众神"
+        }
+      ],
+      "first" : "众生",
+      "input" : "zhongsheng",
+      "nativeExact" : [
+        {
+          "comment" : "zhong sheng",
+          "index" : 0,
+          "text" : "众生"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 1,
+          "text" : "终生"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 2,
+          "text" : "钟声"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 3,
+          "text" : "仲盛"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 4,
+          "text" : "中升"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 5,
+          "text" : "中盛"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 6,
+          "text" : "众声"
+        },
+        {
+          "comment" : "zhong sheng",
+          "index" : 7,
+          "text" : "重升"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "xi an",
+          "index" : 0,
+          "text" : "西安"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 1,
+          "text" : "西岸"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 2,
+          "text" : "锡安"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 3,
+          "text" : "醯胺"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 4,
+          "text" : "洗氨"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 5,
+          "text" : "溪岸"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 6,
+          "text" : "烯胺"
+        },
+        {
+          "comment" : "xi",
+          "index" : 7,
+          "text" : "系"
+        }
+      ],
+      "first" : "西安",
+      "input" : "xi'an",
+      "nativeExact" : [
+        {
+          "comment" : "xi an",
+          "index" : 0,
+          "text" : "西安"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 1,
+          "text" : "西岸"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 2,
+          "text" : "锡安"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 3,
+          "text" : "醯胺"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 4,
+          "text" : "洗氨"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 5,
+          "text" : "溪岸"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 6,
+          "text" : "烯胺"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "xian",
+          "index" : 0,
+          "text" : "先"
+        },
+        {
+          "comment" : "xian",
+          "index" : 1,
+          "text" : "现"
+        },
+        {
+          "comment" : "xian",
+          "index" : 2,
+          "text" : "线"
+        },
+        {
+          "comment" : "xian",
+          "index" : 3,
+          "text" : "显"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 4,
+          "text" : "西安"
+        },
+        {
+          "comment" : "xian",
+          "index" : 5,
+          "text" : "险"
+        },
+        {
+          "comment" : "xian",
+          "index" : 6,
+          "text" : "限"
+        },
+        {
+          "comment" : "xian",
+          "index" : 7,
+          "text" : "县"
+        },
+        {
+          "comment" : "纠错 · xi ai",
+          "index" : -1,
+          "text" : "喜爱"
+        },
+        {
+          "comment" : "纠错 · xi nan",
+          "index" : -2,
+          "text" : "西南"
+        },
+        {
+          "comment" : "纠错 · xi yan",
+          "index" : -3,
+          "text" : "吸烟"
+        },
+        {
+          "comment" : "纠错 · xin an",
+          "index" : -4,
+          "text" : "心安"
+        },
+        {
+          "comment" : "纠错 · xin an",
+          "index" : -5,
+          "text" : "新安"
+        }
+      ],
+      "first" : "先",
+      "input" : "xian",
+      "nativeExact" : [
+        {
+          "comment" : "xian",
+          "index" : 0,
+          "text" : "先"
+        },
+        {
+          "comment" : "xian",
+          "index" : 1,
+          "text" : "现"
+        },
+        {
+          "comment" : "xian",
+          "index" : 2,
+          "text" : "线"
+        },
+        {
+          "comment" : "xian",
+          "index" : 3,
+          "text" : "显"
+        },
+        {
+          "comment" : "xi an",
+          "index" : 4,
+          "text" : "西安"
+        },
+        {
+          "comment" : "xian",
+          "index" : 5,
+          "text" : "险"
+        },
+        {
+          "comment" : "xian",
+          "index" : 6,
+          "text" : "限"
+        },
+        {
+          "comment" : "xian",
+          "index" : 7,
+          "text" : "县"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "lve",
+          "index" : 0,
+          "text" : "略"
+        },
+        {
+          "comment" : "lve",
+          "index" : 1,
+          "text" : "掠"
+        },
+        {
+          "comment" : "lve",
+          "index" : 2,
+          "text" : "畧"
+        },
+        {
+          "comment" : "lv e",
+          "index" : 3,
+          "text" : "绿萼"
+        },
+        {
+          "comment" : "lve",
+          "index" : 4,
+          "text" : "锊"
+        },
+        {
+          "comment" : "lve",
+          "index" : 5,
+          "text" : "圙"
+        },
+        {
+          "comment" : "lve",
+          "index" : 6,
+          "text" : "䂮"
+        },
+        {
+          "comment" : "lve",
+          "index" : 7,
+          "text" : "稤"
+        },
+        {
+          "comment" : "纠错 · lv se",
+          "index" : -1,
+          "text" : "绿色"
+        },
+        {
+          "comment" : "纠错 · lv ke",
+          "index" : -2,
+          "text" : "旅客"
+        },
+        {
+          "comment" : "纠错 · lv de",
+          "index" : -3,
+          "text" : "绿的"
+        },
+        {
+          "comment" : "纠错 · lv se",
+          "index" : -4,
+          "text" : "滤色"
+        },
+        {
+          "comment" : "纠错 · lv ke",
+          "index" : -5,
+          "text" : "吕克"
+        }
+      ],
+      "first" : "略",
+      "input" : "lve",
+      "nativeExact" : [
+        {
+          "comment" : "lve",
+          "index" : 0,
+          "text" : "略"
+        },
+        {
+          "comment" : "lve",
+          "index" : 1,
+          "text" : "掠"
+        },
+        {
+          "comment" : "lve",
+          "index" : 2,
+          "text" : "畧"
+        },
+        {
+          "comment" : "lv e",
+          "index" : 3,
+          "text" : "绿萼"
+        },
+        {
+          "comment" : "lve",
+          "index" : 4,
+          "text" : "锊"
+        },
+        {
+          "comment" : "lve",
+          "index" : 5,
+          "text" : "圙"
+        },
+        {
+          "comment" : "lve",
+          "index" : 6,
+          "text" : "䂮"
+        },
+        {
+          "comment" : "lve",
+          "index" : 7,
+          "text" : "稤"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "nue",
+          "index" : 0,
+          "text" : "疟"
+        },
+        {
+          "comment" : "nue",
+          "index" : 1,
+          "text" : "瘧"
+        },
+        {
+          "comment" : "nue",
+          "index" : 2,
+          "text" : "虐"
+        },
+        {
+          "comment" : "nu e",
+          "index" : -100,
+          "text" : "努额"
+        },
+        {
+          "comment" : "纠错 · jue",
+          "index" : -1,
+          "text" : "觉"
+        },
+        {
+          "comment" : "纠错 · yue",
+          "index" : -2,
+          "text" : "月"
+        },
+        {
+          "comment" : "纠错 · nu le",
+          "index" : -3,
+          "text" : "怒了"
+        },
+        {
+          "comment" : "纠错 · ju e",
+          "index" : -4,
+          "text" : "巨额"
+        },
+        {
+          "comment" : "纠错 · jue",
+          "index" : -5,
+          "text" : "决"
+        },
+        {
+          "comment" : "nu",
+          "index" : 3,
+          "text" : "努"
+        },
+        {
+          "comment" : "nu",
+          "index" : 4,
+          "text" : "怒"
+        },
+        {
+          "comment" : "nu",
+          "index" : 5,
+          "text" : "奴"
+        },
+        {
+          "comment" : "nu",
+          "index" : 6,
+          "text" : "弩"
+        },
+        {
+          "comment" : "nu",
+          "index" : 7,
+          "text" : "驽"
+        }
+      ],
+      "first" : "疟",
+      "input" : "nue",
+      "nativeExact" : [
+        {
+          "comment" : "nue",
+          "index" : 0,
+          "text" : "疟"
+        },
+        {
+          "comment" : "nue",
+          "index" : 1,
+          "text" : "瘧"
+        },
+        {
+          "comment" : "nue",
+          "index" : 2,
+          "text" : "虐"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "shang hai",
+          "index" : 0,
+          "text" : "上海"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 1,
+          "text" : "伤害"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 2,
+          "text" : "商海"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 3,
+          "text" : "上还"
+        },
+        {
+          "comment" : "sha ng hai",
+          "index" : -100,
+          "text" : "啥嗯还"
+        },
+        {
+          "comment" : "纠错 · shang lai",
+          "index" : -1,
+          "text" : "上来"
+        },
+        {
+          "comment" : "纠错 · shang bai",
+          "index" : -2,
+          "text" : "上百"
+        },
+        {
+          "comment" : "纠错 · hang hai",
+          "index" : -3,
+          "text" : "航海"
+        },
+        {
+          "comment" : "shang",
+          "index" : 4,
+          "text" : "上"
+        },
+        {
+          "comment" : "shang",
+          "index" : 5,
+          "text" : "商"
+        },
+        {
+          "comment" : "shang",
+          "index" : 6,
+          "text" : "伤"
+        },
+        {
+          "comment" : "shang",
+          "index" : 7,
+          "text" : "尚"
+        }
+      ],
+      "first" : "上海",
+      "input" : "shanghai",
+      "nativeExact" : [
+        {
+          "comment" : "shang hai",
+          "index" : 0,
+          "text" : "上海"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 1,
+          "text" : "伤害"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 2,
+          "text" : "商海"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 3,
+          "text" : "上还"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "ni hao shi jie",
+          "index" : 0,
+          "text" : "你好世界"
+        },
+        {
+          "comment" : "ni ha o shi jie",
+          "index" : -100,
+          "text" : "你哈哦世界"
+        },
+        {
+          "comment" : "纠错 · niao shi jie",
+          "index" : -1,
+          "text" : "鸟世界"
+        },
+        {
+          "comment" : "ni hao shi",
+          "index" : 1,
+          "text" : "你好是"
+        },
+        {
+          "comment" : "ni hao shi",
+          "index" : 2,
+          "text" : "你好时"
+        },
+        {
+          "comment" : "ni hao shi",
+          "index" : 3,
+          "text" : "你好事"
+        },
+        {
+          "comment" : "ni hao",
+          "index" : 4,
+          "text" : "你好"
+        },
+        {
+          "comment" : "ni hao",
+          "index" : 5,
+          "text" : "拟好"
+        },
+        {
+          "comment" : "ni hao",
+          "index" : 6,
+          "text" : "泥蒿"
+        },
+        {
+          "comment" : "ni",
+          "index" : 7,
+          "text" : "你"
+        }
+      ],
+      "first" : "你好世界",
+      "input" : "nihaoshijie",
+      "nativeExact" : [
+        {
+          "comment" : "ni hao shi jie",
+          "index" : 0,
+          "text" : "你好世界"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "shang hai jiao tong da xue",
+          "index" : 0,
+          "text" : "上海交通大学"
+        },
+        {
+          "comment" : "sha ng hai jiao tong da xue",
+          "index" : -100,
+          "text" : "啥嗯还交通大学"
+        },
+        {
+          "comment" : "shang hai ji",
+          "index" : 1,
+          "text" : "上海籍"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 2,
+          "text" : "上海"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 3,
+          "text" : "伤害"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 4,
+          "text" : "商海"
+        },
+        {
+          "comment" : "shang hai",
+          "index" : 5,
+          "text" : "上还"
+        },
+        {
+          "comment" : "shang",
+          "index" : 6,
+          "text" : "上"
+        },
+        {
+          "comment" : "shang",
+          "index" : 7,
+          "text" : "商"
+        }
+      ],
+      "first" : "上海交通大学",
+      "input" : "shanghaijiaotongdaxue",
+      "nativeExact" : [
+        {
+          "comment" : "shang hai jiao tong da xue",
+          "index" : 0,
+          "text" : "上海交通大学"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "n o hao",
+          "index" : 0,
+          "text" : "嗯哦好"
+        },
+        {
+          "comment" : "纠错 · ni hao",
+          "index" : -1,
+          "text" : "你好"
+        },
+        {
+          "comment" : "纠错 · bo hao",
+          "index" : -2,
+          "text" : "拨号"
+        },
+        {
+          "comment" : "纠错 · wo hao",
+          "index" : -3,
+          "text" : "我好"
+        },
+        {
+          "comment" : "纠错 · ni hao",
+          "index" : -4,
+          "text" : "拟好"
+        },
+        {
+          "comment" : "纠错 · ni hao",
+          "index" : -5,
+          "text" : "泥蒿"
+        },
+        {
+          "comment" : "n",
+          "index" : 1,
+          "text" : "嗯"
+        },
+        {
+          "comment" : "n",
+          "index" : 2,
+          "text" : "㕶"
+        },
+        {
+          "comment" : "n",
+          "index" : 3,
+          "text" : "唔"
+        },
+        {
+          "comment" : "n",
+          "index" : 4,
+          "text" : "𠮾"
+        }
+      ],
+      "first" : "嗯哦好",
+      "input" : "nohao",
+      "nativeExact" : [
+        {
+          "comment" : "n o hao",
+          "index" : 0,
+          "text" : "嗯哦好"
+        }
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "纠错 · ni hao",
+          "index" : -1,
+          "text" : "你好"
+        },
+        {
+          "comment" : "纠错 · ni hua",
+          "index" : -2,
+          "text" : "你花"
+        },
+        {
+          "comment" : "纠错 · ni hao a",
+          "index" : -3,
+          "text" : "你好啊"
+        },
+        {
+          "comment" : "纠错 · ni hao",
+          "index" : -4,
+          "text" : "拟好"
+        },
+        {
+          "comment" : "纠错 · ni hao",
+          "index" : -5,
+          "text" : "泥蒿"
+        },
+        {
+          "comment" : "ni hao o a",
+          "index" : 0,
+          "text" : "你好哦啊"
+        },
+        {
+          "comment" : "ni hui o a",
+          "index" : 1,
+          "text" : "你会哦啊"
+        },
+        {
+          "comment" : "ni hui",
+          "index" : 3,
+          "text" : "你会"
+        },
+        {
+          "comment" : "ni hai",
+          "index" : 4,
+          "text" : "你还"
+        },
+        {
+          "comment" : "ni hai",
+          "index" : 5,
+          "text" : "腻害"
+        },
+        {
+          "comment" : "ni he",
+          "index" : 6,
+          "text" : "你和"
+        }
+      ],
+      "first" : "你好",
+      "input" : "nihoa",
+      "nativeExact" : [
+
+      ]
+    },
+    {
+      "all" : [
+        {
+          "comment" : "zhong guo o",
+          "index" : 0,
+          "text" : "中国哦"
+        },
+        {
+          "comment" : "zhong gu o o",
+          "index" : -100,
+          "text" : "中古哦哦"
+        },
+        {
+          "comment" : "纠错 · zhong guo",
+          "index" : -1,
+          "text" : "中国"
+        },
+        {
+          "comment" : "纠错 · zhong guo mo",
+          "index" : -2,
+          "text" : "中国墨"
+        },
+        {
+          "comment" : "纠错 · zhong guo a",
+          "index" : -3,
+          "text" : "中国啊"
+        },
+        {
+          "comment" : "纠错 · zhong guo",
+          "index" : -4,
+          "text" : "种过"
+        },
+        {
+          "comment" : "纠错 · zhong guo",
+          "index" : -5,
+          "text" : "重过"
+        },
+        {
+          "comment" : "zhong guo",
+          "index" : 4,
+          "text" : "种果"
+        },
+        {
+          "comment" : "zhong guo",
+          "index" : 5,
+          "text" : "中果"
+        },
+        {
+          "comment" : "zhong guo",
+          "index" : 6,
+          "text" : "中过"
+        },
+        {
+          "comment" : "zhong gu",
+          "index" : 7,
+          "text" : "中古"
+        }
+      ],
+      "first" : "中国哦",
+      "input" : "zhongguoo",
+      "nativeExact" : [
+        {
+          "comment" : "zhong guo o",
+          "index" : 0,
+          "text" : "中国哦"
+        }
+      ]
+    }
+  ]
+}

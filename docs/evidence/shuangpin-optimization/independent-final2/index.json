@@ -1,0 +1,86 @@
+{
+  "checkCount" : 15,
+  "checks" : [
+    {
+      "detail" : "",
+      "name" : "corrupt metadata loads as empty without a crash",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "natural valid record repairs corrupt metadata",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "invalid raw or non-Chinese records do not mutate metadata",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "repeated same user word does not create duplicates",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "bounded metadata supports one edit: nijc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "bounded metadata supports one edit: nhc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "bounded metadata supports one edit: niihc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "bounded metadata supports one edit: nhic",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "exact input is not mislabeled as a correction",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "two unrelated edits do not match a single-edit index",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "oversize metadata is rejected before loading",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "600 maximum-length records retain only newest 512",
+      "passed" : true
+    },
+    {
+      "detail" : "bytes=72705",
+      "name" : "maximum-length metadata stays within 128 KiB",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "restarted bounded index restores its newest user entry",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "candidate count is bounded independently of index size",
+      "passed" : true
+    }
+  ],
+  "environment" : "macOS native real Rime and production input session; no UIKit or physical device",
+  "failures" : 0,
+  "mode" : "index",
+  "observations" : [
+
+  ]
+}

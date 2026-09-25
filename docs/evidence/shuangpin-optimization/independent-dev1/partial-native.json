@@ -1,0 +1,227 @@
+[
+  {
+    "step" : "typed",
+    "state" : {
+      "preedit" : "ni hc ui jp",
+      "commit" : "",
+      "candidates" : [
+        {
+          "comment" : "ni hao shi jie",
+          "text" : "你好世界",
+          "index" : 0
+        },
+        {
+          "comment" : "ni hao shi",
+          "text" : "你好是",
+          "index" : 1
+        },
+        {
+          "comment" : "ni hao shi",
+          "text" : "你好时",
+          "index" : 2
+        },
+        {
+          "comment" : "ni hao shi",
+          "text" : "你好事",
+          "index" : 3
+        },
+        {
+          "comment" : "ni hao",
+          "text" : "你好",
+          "index" : 4
+        },
+        {
+          "comment" : "ni hao",
+          "text" : "拟好",
+          "index" : 5
+        },
+        {
+          "comment" : "ni hao",
+          "text" : "泥蒿",
+          "index" : 6
+        },
+        {
+          "comment" : "ni",
+          "text" : "你",
+          "index" : 7
+        }
+      ],
+      "input" : "nihcuijp",
+      "lastPage" : false,
+      "page" : 0
+    }
+  },
+  {
+    "step" : "selected prefix",
+    "state" : {
+      "commit" : "",
+      "input" : "nihcuijp",
+      "matched" : 1,
+      "lastPage" : false,
+      "candidates" : [
+        {
+          "comment" : "shi jie",
+          "text" : "世界",
+          "index" : 0
+        },
+        {
+          "comment" : "shi jie",
+          "text" : "时节",
+          "index" : 1
+        },
+        {
+          "comment" : "shi jie",
+          "text" : "师姐",
+          "index" : 2
+        },
+        {
+          "comment" : "shi jie",
+          "text" : "视界",
+          "index" : 3
+        },
+        {
+          "comment" : "shi jie",
+          "text" : "食街",
+          "index" : 4
+        },
+        {
+          "comment" : "shi jie",
+          "text" : "石阶",
+          "index" : 5
+        },
+        {
+          "comment" : "shi jie",
+          "text" : "使节",
+          "index" : 6
+        },
+        {
+          "comment" : "shi jie",
+          "text" : "十届",
+          "index" : 7
+        }
+      ],
+      "preedit" : "你好ui jp",
+      "page" : 0
+    }
+  },
+  {
+    "step" : "backspace",
+    "state" : {
+      "commit" : "",
+      "input" : "nihcuijp",
+      "handled" : true,
+      "lastPage" : false,
+      "candidates" : [
+        {
+          "comment" : "ni hao shi jie",
+          "text" : "你好世界",
+          "index" : 0
+        },
+        {
+          "comment" : "ni hao shi",
+          "text" : "你好是",
+          "index" : 1
+        },
+        {
+          "comment" : "ni hao shi",
+          "text" : "你好时",
+          "index" : 2
+        },
+        {
+          "comment" : "ni hao shi",
+          "text" : "你好事",
+          "index" : 3
+        },
+        {
+          "comment" : "ni hao",
+          "text" : "你好",
+          "index" : 4
+        },
+        {
+          "comment" : "ni hao",
+          "text" : "拟好",
+          "index" : 5
+        },
+        {
+          "comment" : "ni hao",
+          "text" : "泥蒿",
+          "index" : 6
+        },
+        {
+          "comment" : "ni",
+          "text" : "你",
+          "index" : 7
+        }
+      ],
+      "preedit" : "ni hcuijp",
+      "page" : 0
+    }
+  },
+  {
+    "step" : "retype p",
+    "state" : {
+      "commit" : "",
+      "input" : "nihcuijpp",
+      "handled" : true,
+      "lastPage" : false,
+      "candidates" : [
+        {
+          "comment" : "n chang cu chan pie",
+          "text" : "嗯常促产撇",
+          "index" : 0
+        },
+        {
+          "comment" : "n chang cu chan pie",
+          "text" : "嗯长促产撇",
+          "index" : 1
+        },
+        {
+          "comment" : "n chang cu chan pie",
+          "text" : "嗯常促产瞥",
+          "index" : 2
+        },
+        {
+          "comment" : "n chang cu chan pie",
+          "text" : "嗯长促产瞥",
+          "index" : 3
+        },
+        {
+          "comment" : "n chang cu chan pie",
+          "text" : "嗯常促产丿",
+          "index" : 4
+        },
+        {
+          "comment" : "n",
+          "text" : "嗯",
+          "index" : 5
+        },
+        {
+          "comment" : "n",
+          "text" : "㕶",
+          "index" : 6
+        },
+        {
+          "comment" : "n",
+          "text" : "唔",
+          "index" : 7
+        }
+      ],
+      "preedit" : "n ih cu ij pp",
+      "page" : 0
+    }
+  },
+  {
+    "step" : "space",
+    "state" : {
+      "commit" : "嗯常促产撇",
+      "input" : "",
+      "handled" : true,
+      "lastPage" : false,
+      "candidates" : [
+
+      ],
+      "preedit" : "",
+      "page" : 0
+    }
+  }
+]

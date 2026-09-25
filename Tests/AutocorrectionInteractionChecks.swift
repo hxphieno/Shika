@@ -19,12 +19,14 @@ import Foundation
             expect(output == target && session.state.input.isEmpty, "click \(schema) \(code) commits \(target) once")
             session.commitPending(); expect(output == target, "commit is drained")
         }
-        for suffix in [" ", "\n", "，", "1", "A"] {
+        for suffix in [" ", "，", "1", "A"] {
             try reset("shika_pinyin", "zhnogguo")
             let first = session.state.candidates[0].text
             session.type(suffix)
             expect(output == first + (suffix == " " ? "" : suffix), "\(suffix.debugDescription) follows visible first")
         }
+        try reset("shika_pinyin", "zhnogguo"); session.type("\n")
+        expect(output == "zhnogguo" && session.state.input.isEmpty, "Return confirms original letters without a newline")
         try reset("shika_pinyin", "zhnogguo");session.commitRaw()
         expect(output == "zhnogguo" && session.state.input.isEmpty, "raw input preserves typo")
         try reset("shika_flypy", "niihc");session.deleteBackward()

@@ -1,0 +1,4 @@
+xcodebuild -project Shika.xcodeproj -scheme Shika -sdk iphoneos -destination generic/platform=iOS -derivedDataPath /tmp/shika-shuangpin-final-build CODE_SIGNING_ALLOWED=NO build
+BUILD SUCCEEDED
+check-rime-bundle.py: PASS exact offline resources, full access disabled, privacy and notices bundled, static Rime
+Current external app UI changes included in build, not in engine commits. Unsigned build; not device installation.

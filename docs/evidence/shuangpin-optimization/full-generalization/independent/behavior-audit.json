@@ -1,0 +1,53 @@
+{
+  "sameTestSourceForBeforeAfter": true,
+  "comparisonInputs": 24,
+  "firstAndNativeExactSequenceDifferences": [],
+  "beforeChecks": 60,
+  "afterChecks": 66,
+  "newCorrectionRoutes": [
+    {
+      "index": -4,
+      "input": "nohao",
+      "text": "拟好"
+    },
+    {
+      "index": -4,
+      "input": "nihoa",
+      "text": "拟好"
+    },
+    {
+      "index": -4,
+      "input": "zhongguoo",
+      "text": "种过"
+    }
+  ],
+  "onlyProductionChange": [
+    "SKCorrectionCandidates.swift"
+  ],
+  "experimentMatchesFinalProduction": {
+    "SKJapaneseEngine.swift": true,
+    "SKRimeSession.m": true,
+    "SKBackwardDeletion.swift": true,
+    "SKSyllableCorrectionCandidates.swift": true,
+    "SKPinyinSegmentationCandidates.swift": true,
+    "SKCorrectionCandidates.swift": true,
+    "SKKeyboardEventHandler.swift": true,
+    "SKChineseJapaneseScheme.swift": true,
+    "SKInputEngine.swift": true,
+    "SKShuangpinScheme.swift": true,
+    "SKMixedChineseLexicon.swift": true,
+    "SKMixedEngine.swift": true,
+    "SKInputConfiguration.swift": true,
+    "SKRimeSession.h": true,
+    "SKJapaneseLexicon.swift": true,
+    "SKSpellingCorrector.swift": true,
+    "SKMixedDecoder.swift": true,
+    "SKKeyboardState.swift": true,
+    "SKConversionEngine.swift": true,
+    "SKInputScheme.swift": true,
+    "SKLearnedSpellingIndex.swift": true,
+    "SKRimeEngine.swift": true,
+    "SKInputSession.swift": true
+  },
+  "testSHA256": "2de13751039901e6be14ec05150758a97a495c9d270e567033125f537aae1696"
+}

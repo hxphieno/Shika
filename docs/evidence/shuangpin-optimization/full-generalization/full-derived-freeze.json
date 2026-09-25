@@ -1,0 +1,6 @@
+{
+  "n": 840,
+  "sha256": "4dfec1e0bee2f211907a7c351f0f946b02e4844b3b9d6ea96b6c76e541f340d4",
+  "frozenBeforeFullDerivedRuns": true,
+  "rule": "Protocol v1 keyboard neighbors/hash positions, applied to concatenated syllables. Same targets as double fixture, no quality-based filtering."
+}

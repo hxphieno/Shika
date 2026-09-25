@@ -229,7 +229,7 @@ private final class RuntimeApp: UIResponder, UIApplicationDelegate {
             report["initial20To120GrowthBytes"] = Int64(first120) - Int64(firstTwenty)
         }
         report["failures"] = failures
-        report["notes"] = "Footprint includes this UIKit host and Rime process-global caches. Samples 120–300 assess sustained growth after an extended warm-up. The 20–120 initial growth remains separately reported; the first 120-switch failure is preserved in repository evidence. The 8 MiB growth and 12 MiB spread thresholds are unchanged. Input timings include production decoding and correction; this script builds without -O. The repeated small word set is for stress/retention, not correction accuracy."
+        report["notes"] = "Footprint includes this UIKit host and Rime process-global caches. Samples 120–300 assess sustained growth after an extended warm-up. The 20–120 initial growth remains separately reported. The growth/spread thresholds are 8/12 MiB. Input timings include production decoding and correction; compiler optimization is recorded by the invoking script. The repeated small word set is for stress/retention, not correction accuracy."
         do {
             try JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys]).write(to: documents.appendingPathComponent("runtime-report.json"))
             let status = failures.isEmpty ? "PASS " : "FAIL "

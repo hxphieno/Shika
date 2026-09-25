@@ -1,0 +1,81 @@
+{
+  "checkedAtUTC": "2026-09-25T17:31:12.004696+00:00",
+  "sourcesMatchCurrent": {
+    "ShikaKeyBoard/Core/SKBackwardDeletion.swift": true,
+    "ShikaKeyBoard/Core/SKKeyboardEventHandler.swift": true,
+    "ShikaKeyBoard/Core/SKInputEngine.swift": true,
+    "ShikaKeyBoard/Core/SKInputConfiguration.swift": true,
+    "ShikaKeyBoard/Core/SKKeyboardState.swift": true,
+    "ShikaKeyBoard/Core/SKInputScheme.swift": true,
+    "ShikaKeyBoard/Core/SKInputSession.swift": true,
+    "ShikaKeyBoard/Engine/SKJapaneseEngine.swift": true,
+    "ShikaKeyBoard/Engine/SKSyllableCorrectionCandidates.swift": true,
+    "ShikaKeyBoard/Engine/SKPinyinSegmentationCandidates.swift": true,
+    "ShikaKeyBoard/Engine/SKCorrectionCandidates.swift": true,
+    "ShikaKeyBoard/Engine/SKMixedChineseLexicon.swift": true,
+    "ShikaKeyBoard/Engine/SKMixedEngine.swift": true,
+    "ShikaKeyBoard/Engine/SKJapaneseLexicon.swift": true,
+    "ShikaKeyBoard/Engine/SKSpellingCorrector.swift": true,
+    "ShikaKeyBoard/Engine/SKMixedDecoder.swift": true,
+    "ShikaKeyBoard/Engine/SKConversionEngine.swift": true,
+    "ShikaKeyBoard/Engine/SKLearnedSpellingIndex.swift": true,
+    "ShikaKeyBoard/Engine/SKRimeEngine.swift": true,
+    "ShikaKeyBoard/Schemes/Shuangpin/SKShuangpinScheme.swift": true,
+    "ShikaKeyBoard/Schemes/ChineseJapanese/SKChineseJapaneseScheme.swift": true,
+    "ShikaKeyBoard/Engine/SKRimeSession.h": true,
+    "ShikaKeyBoard/Engine/SKRimeSession.m": true,
+    "Tests/ShuangpinOptimizationBehaviorChecks.swift": true
+  },
+  "resourcesMatchCurrent": {
+    "Info.plist": true,
+    "build/default.yaml": true,
+    "build/shika_chinese.reverse.bin": true,
+    "build/shika_chinese.table.bin": true,
+    "build/shika_flypy.prism.bin": true,
+    "build/shika_flypy.schema.yaml": true,
+    "build/shika_flypy_assist.schema.yaml": true,
+    "build/shika_pinyin.prism.bin": true,
+    "build/shika_pinyin.schema.yaml": true,
+    "correction-syllables.json": true,
+    "default.yaml": true,
+    "japanese-connections.bin": true,
+    "japanese-lexicon.bin": true,
+    "japanese-romaji.json": true,
+    "lexicon-metadata.json": true,
+    "mixed-chinese.bin": true,
+    "mixed-lexicon-metadata.json": true,
+    "shika_flypy.correction.bin": true,
+    "shika_pinyin.correction.bin": true
+  },
+  "coreAndSchemesMatchBaseline": {
+    "ShikaKeyBoard/Core/SKBackwardDeletion.swift": true,
+    "ShikaKeyBoard/Core/SKKeyboardEventHandler.swift": true,
+    "ShikaKeyBoard/Core/SKInputEngine.swift": true,
+    "ShikaKeyBoard/Core/SKInputConfiguration.swift": true,
+    "ShikaKeyBoard/Core/SKKeyboardState.swift": true,
+    "ShikaKeyBoard/Core/SKInputScheme.swift": true,
+    "ShikaKeyBoard/Core/SKInputSession.swift": true,
+    "ShikaKeyBoard/Schemes/Shuangpin/SKShuangpinScheme.swift": true,
+    "ShikaKeyBoard/Schemes/ChineseJapanese/SKChineseJapaneseScheme.swift": true
+  },
+  "environment": "macOS arm64 native production Rime and Swift session; no UIKit, simulator or physical-device execution",
+  "compiledFlags": "-O -whole-module-optimization",
+  "independentChecks": {
+    "behavior": {
+      "checkCount": 70,
+      "failures": 0
+    },
+    "learn": {
+      "checkCount": 13,
+      "failures": 0
+    },
+    "probe": {
+      "checkCount": 19,
+      "failures": 0
+    },
+    "index": {
+      "checkCount": 15,
+      "failures": 0
+    }
+  }
+}

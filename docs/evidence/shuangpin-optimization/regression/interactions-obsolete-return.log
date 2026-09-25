@@ -1,0 +1,18 @@
+PASS click shika_pinyin nohao commits 你好 once
+PASS commit is drained
+PASS click shika_pinyin zhnogguo commits 中国 once
+PASS commit is drained
+PASS click shika_pinyin zhonguo commits 中国 once
+PASS commit is drained
+PASS click shika_pinyin zhongguoo commits 中国 once
+PASS commit is drained
+PASS click shika_flypy nijc commits 你好 once
+PASS commit is drained
+PASS click shika_flypy niihc commits 你好 once
+PASS commit is drained
+PASS click shika_flypy nhc commits 你好 once
+PASS commit is drained
+PASS click shika_flypy svgo commits 中国 once
+PASS commit is drained
+PASS " " follows visible first
+FAIL "\n" follows visible first, output=zhnogguo, state=SKEngineState(input: "", preedit: "", candidates: [], committedText: "", page: 0, isLastPage: false, handled: true)

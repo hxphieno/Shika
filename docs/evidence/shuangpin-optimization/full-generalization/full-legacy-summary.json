@@ -1,0 +1,134 @@
+{
+  "n": 200,
+  "metrics": [
+    {
+      "kind": "clean",
+      "n": 40,
+      "before": {
+        "top1": 37,
+        "top3": 40,
+        "top5": 40,
+        "top8": 40,
+        "top10": 40
+      },
+      "after": {
+        "top1": 37,
+        "top3": 40,
+        "top5": 40,
+        "top8": 40,
+        "top10": 40
+      }
+    },
+    {
+      "kind": "insertion",
+      "n": 40,
+      "before": {
+        "top1": 26,
+        "top3": 31,
+        "top5": 35,
+        "top8": 37,
+        "top10": 37
+      },
+      "after": {
+        "top1": 26,
+        "top3": 34,
+        "top5": 38,
+        "top8": 40,
+        "top10": 40
+      }
+    },
+    {
+      "kind": "omission",
+      "n": 40,
+      "before": {
+        "top1": 11,
+        "top3": 25,
+        "top5": 31,
+        "top8": 33,
+        "top10": 35
+      },
+      "after": {
+        "top1": 11,
+        "top3": 26,
+        "top5": 33,
+        "top8": 35,
+        "top10": 37
+      }
+    },
+    {
+      "kind": "substitution",
+      "n": 40,
+      "before": {
+        "top1": 21,
+        "top3": 29,
+        "top5": 33,
+        "top8": 36,
+        "top10": 36
+      },
+      "after": {
+        "top1": 21,
+        "top3": 30,
+        "top5": 35,
+        "top8": 38,
+        "top10": 38
+      }
+    },
+    {
+      "kind": "transposition",
+      "n": 40,
+      "before": {
+        "top1": 27,
+        "top3": 34,
+        "top5": 36,
+        "top8": 36,
+        "top10": 37
+      },
+      "after": {
+        "top1": 27,
+        "top3": 37,
+        "top5": 39,
+        "top8": 39,
+        "top10": 40
+      }
+    }
+  ],
+  "singleErrorTop5NetGain": 10,
+  "singleErrorTop5GainPercentagePoints": 6.25,
+  "cleanFirstChanges": [],
+  "cleanFirstRegressions": [],
+  "unexpectedCommits": [],
+  "failures": [
+    "full-legacy-12",
+    "full-legacy-97",
+    "full-legacy-101",
+    "full-legacy-122",
+    "full-legacy-131"
+  ],
+  "top5Regressions": [],
+  "timings": {
+    "before": {
+      "keyP50MS": 1.6580820083618164,
+      "keyP95MS": 230.54909706115723,
+      "keyP99MS": 584.447979927063,
+      "peakRSSBytes": 80117760,
+      "platform": "macOS native engine; peakRSS is not iOS extension footprint",
+      "rankingLearnsAnswers": false,
+      "startupMS": 3030.1700830459595
+    },
+    "after": {
+      "keyP50MS": 0.903010368347168,
+      "keyP95MS": 5.108952522277832,
+      "keyP99MS": 8.872032165527344,
+      "peakRSSBytes": 87031808,
+      "platform": "macOS native engine; peakRSS is not iOS extension footprint",
+      "rankingLearnsAnswers": false,
+      "startupMS": 160.09604930877686
+    }
+  },
+  "qualityGates": {
+    "cleanTop5": true,
+    "cleanFirst": true,
+    "singleErrorGain": true,
+    "eachKind": true
+  }
+}

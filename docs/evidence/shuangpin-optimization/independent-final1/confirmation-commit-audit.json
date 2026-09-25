@@ -1,0 +1,9 @@
+{
+  "rankedCompleteTargets": 305,
+  "replayedTargets": 305,
+  "passed": 305,
+  "missingOrUnexpectedIDs": [],
+  "allOutputAndClearAndNoReplayChecksRecomputed": true,
+  "oneResultAndDistinctUserDirectoryPerCase": true,
+  "summarySHA256": "e954944583800f03be56296daa6759dca0b86786eae1484adb1ad4398984193e"
+}

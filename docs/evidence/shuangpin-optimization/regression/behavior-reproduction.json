@@ -1,0 +1,22 @@
+{
+  "script": "scripts/test-shuangpin-behavior.sh",
+  "sha256": "004e1e2f88e40209ca6d8408070d0558ab60de50aaa1782d1165a0e09a1c8e1d",
+  "modes": {
+    "behavior": {
+      "count": 70,
+      "failures": 0
+    },
+    "learn": {
+      "count": 13,
+      "failures": 0
+    },
+    "probe": {
+      "count": 19,
+      "failures": 0
+    },
+    "index": {
+      "count": 15,
+      "failures": 0
+    }
+  }
+}

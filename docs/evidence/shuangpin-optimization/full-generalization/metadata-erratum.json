@@ -1,0 +1,6 @@
+{
+  "rows": 840,
+  "allRankedInputsTargetsIDsUnchanged": true,
+  "reason": "Initial derived file accidentally retained double-pinyin edits metadata. Regenerator records actual full-pinyin edits. Corrected after ranking; all ranked fields independently compared unchanged. Original pre-run freeze hash retained.",
+  "correctedSHA256": "110de696b50606ec91a690d484c8786a5772df7d9db826cd6e59bdc2689a03d9"
+}

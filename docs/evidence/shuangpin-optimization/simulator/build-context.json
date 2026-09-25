@@ -1,0 +1,7 @@
+{
+  "source": "Tests/AutocorrectionRuntimeChecks.swift",
+  "optimization": "-O (SHIKA_SMOKE_OPTIMIZED=1)",
+  "sourceReportNoteErratum": "The inherited report notes incorrectly say without -O; the command above used -O. Earlier 120-switch failure referred to an earlier task, not this run.",
+  "host": "iPhone 17 Pro simulator iOS 26.5; UIKit host and proxy spy, not physical keyboard extension",
+  "productionStage": "6c1db09 double-pinyin optimization; before the later full-pinyin homophone-only generalization"
+}

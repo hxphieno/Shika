@@ -1,0 +1,20 @@
+{
+  "frozenAtUTC": "2026-09-25T17:26:53.899614+00:00",
+  "fixture": "Tests/ShuangpinOptimizationConfirmationCases.json",
+  "sha256": "9d938a23388cce3ae3d9e8520a2eab0ec0fc1430cb2d7bb0eacf681e7b64461e",
+  "caseCount": 480,
+  "targetCount": 80,
+  "priorTargetOverlap": 0,
+  "editsReconstruct": true,
+  "source": "pinned upstream vocabulary and independently authored sentences; no engine queried",
+  "priorCorpusHashes": {
+    "Tests/MixedEngineCases.json": "995730125c309ac2138ec06c7222d6037b0bc8f191c69c7c232e6d60f24e3480",
+    "Tests/ShuangpinOptimizationCases.json": "382c5b44716d406bdab889d4835741d2bd0fa0bd2d74db94381131f6374af7ed",
+    "Tests/AutocorrectionCases.json": "5b9ffcee5fe0e05d8a0095ac99b9385c4dbb93b499496a4b4ac074b6e1665f85",
+    "Tests/LexiconQualityCases.json": "b026682077d1fb0b6ffb8a5b59f179eb0e2732d7acfaade0706dc434f354ad44",
+    "Tests/LexiconQualityAmbiguityCases.json": "60979d47bf1b50367109dbc0c4d6c76ee4dffa759ea705c236e1b8154327cb1a",
+    "Tests/AutocorrectionIndependentHeldout.json": "f0c721776f147caf615fb329e2c829a4c36672e6e21d0ff3062b28581951f8ea",
+    "Tests/LexiconQualityJapaneseCases.json": "746e7372b7544a572d15315fc742c00d839ec65c5309d277fdbffa629b324c81",
+    "Tests/Fixtures/mixed-source-excerpts.json": "54d9261a9a605a25724377509d3c09444fc252c7e6703ac50969e67225aca7e6"
+  }
+}

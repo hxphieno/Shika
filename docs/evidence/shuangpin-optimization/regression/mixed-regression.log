@@ -1,0 +1,58 @@
+PASS: raw composition contains all input and no eager commit
+PASS: candidate IDs unique across uneven pages
+PASS: candidate IDs contiguous across pages
+PASS: zero-size page does not advance
+PASS: out-of-range page is safely empty
+PASS: invalid candidate -1 preserves composition
+PASS: invalid candidate 9223372036854775807 preserves composition
+PASS: page navigation preserves raw input
+PASS: expanded and paged IDs agree
+PASS: browsing does not reorder candidate IDs
+PASS: partial keeps original raw offsets
+PASS: Return preserves selected prefix plus raw tail
+PASS: Return has no duplicate commit
+PASS: tail deletion leaves selected prefix
+PASS: boundary deletion restores raw spelling without dropping it
+PASS: deletion eventually clears locked and raw segments
+PASS: same text with distinct coverage has distinct candidate IDs
+PASS: equal output candidates retain different consumption full=你, partial=你'
+PASS: explicit Chinese syllable boundary retains 西安
+PASS: explicit Chinese syllable boundary excludes single-syllable xian 西安|西岸|锡安|醯胺|系按|系安|系案|系暗
+PASS: two partial selections retain both language prefixes
+PASS: deleting tail preserves two locked prefixes
+PASS: deleting Japanese lock restores raw without consuming it
+PASS: deleting restored Japanese spelling keeps Chinese lock
+PASS: second boundary restores Chinese spelling too
+PASS: session Return emits original letters without newline
+PASS: idle Return inserts newline
+PASS: idle delete reaches document
+PASS: literal flush preserves undecoded tail: ， 今天也ありがとうq，
+PASS: literal flush preserves undecoded tail: 1 今天也ありがとうq1
+PASS: literal flush preserves undecoded tail: 🙂 今天也ありがとうq🙂
+PASS: mode change flush retains selected prefix and raw tail: shika_pinyin 今天也ありがとうq
+PASS: mode change flush retains selected prefix and raw tail: mozc_japanese 今天也ありがとうq
+PASS: mode change flush retains selected prefix and raw tail: shika_flypy 今天也ありがとうq
+PASS: pure mode retains expected candidates: shika_pinyin
+PASS: pure Chinese has no mixed Japanese labels
+PASS: pure mode retains expected candidates: mozc_japanese
+PASS: pure mode retains expected candidates: shika_flypy
+PASS: pure Chinese has no mixed Japanese labels
+PASS: mixed long-vowel UI key stays in composition output=, input=ko-hi-
+PASS: mixed long-vowel Japanese word is selectable
+PASS: idle mixed long vowels remain literal punctuation
+PASS: candidate expansion preserves equal-text different-coverage choices
+PASS: raw commit clears once
+PASS: bounded decoding keeps all 113 raw letters
+PASS: long supported-input flush preserves opaque tail
+PASS: clear removes both selected and previous context
+Independent mixed: 47 checks, 0 failures
+PASS: learning target starts below first rank
+PASS: learn five explicit joint selections
+PASS: learning writes word and language-transition records
+PASS: learning promotes chosen mixed sentence to first rank
+Independent mixed: 4 checks, 0 failures
+PASS: new process loads nonempty persisted learning
+PASS: new process preserves learned first ranking
+PASS: typing/browsing/cancel do not write learning
+Independent mixed: 3 checks, 0 failures
+Independent mixed test artifacts: /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-mixed-independent.Xtcxkt
