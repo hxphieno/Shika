@@ -13,7 +13,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private let languageButton = SKInputSwitchButton()
     private let shuangpinLabel = UILabel()
     private var keyboardState = SKKeyboardState(scheme: SKInputScheme(rawValue:
-        UserDefaults.standard.string(forKey: SKInputScheme.preferenceKey) ?? "") ?? .chineseJapanese)
+        UserDefaults.standard.string(forKey: SKInputScheme.preferenceKey) ?? "") ?? .chineseJapanese,
+        languageMode: SKChineseJapaneseMode(rawValue: UserDefaults.standard.string(forKey: SKChineseJapaneseMode.preferenceKey) ?? "") ?? .mixed)
     private var keyboardBottomConstraints: [NSLayoutConstraint] = []
     private var mainHeightConstraint: NSLayoutConstraint?
 
@@ -29,6 +30,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         languageButton.onTap = { [weak self] in
             guard let self else { return }
             keyboardState.languageMode = keyboardState.languageMode.next
+            UserDefaults.standard.set(keyboardState.languageMode.rawValue, forKey: SKChineseJapaneseMode.preferenceKey)
             renderLanguageMode()
         }
         renderLanguageMode()

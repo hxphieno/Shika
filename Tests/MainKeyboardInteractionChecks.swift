@@ -148,6 +148,7 @@ final class MainInteractionApp: UIResponder, UIApplicationDelegate {
         full.currentLanguageState = .mixed
         expect(full.keyRows[1].count == 10, "Mixed main row keeps long-vowel key")
 
+        UserDefaults.standard.set("mixed", forKey: SKChineseJapaneseMode.preferenceKey)
         UserDefaults.standard.set("shuangpin", forKey: SKInputScheme.preferenceKey)
         let controller = InteractionController()
         host.addChild(controller); host.view.addSubview(controller.view); controller.didMove(toParent: host)

@@ -7,7 +7,9 @@ enum SKChineseJapaneseScheme {
         inputPolicy: .chineseRomanization, spelling: .fullPinyin)
 }
 
-enum SKChineseJapaneseMode {
+enum SKChineseJapaneseMode: String {
+    static let preferenceKey = "shika.chineseJapaneseMode"
+
     case chinese
     case japanese
     case mixed
