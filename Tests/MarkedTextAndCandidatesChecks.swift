@@ -38,10 +38,11 @@ private func tree(_ view: UIView) -> [UIView] { [view] + view.subviews.flatMap(t
         let window = UIWindow(frame: UIScreen.main.bounds)
         let host = UIViewController();host.view.backgroundColor = .systemBackground
         window.rootViewController = host;window.makeKeyAndVisible();self.window = window
-        DispatchQueue.main.async { self.run(host) }
+        Task { @MainActor in await self.run(host) }
         return true
     }
-    func run(_ host: UIViewController) {
+    @MainActor
+    func run(_ host: UIViewController) async {
         let output = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         UserDefaults.standard.set("chineseJapanese", forKey: SKInputScheme.preferenceKey)
         let controller = EditorKeyboard(), editor = controller.proxy.editor
@@ -61,10 +62,13 @@ private func tree(_ view: UIView) -> [UIView] { [view] + view.subviews.flatMap(t
         let grid = tree(panel).compactMap { $0 as? UICollectionView }.first!
         // UIKit settles selection/text layout between real touch events. Give the
         // test host the same run-loop boundary, including after selecting text.
-        func type(_ text: String) {
+        func type(_ text: String) async {
+            // Yield the main queue, not a nested run loop inside one callback.
+            // Selection/layout notifications then settle between touch events.
+            try? await Task.sleep(nanoseconds: 20_000_000)
             for c in text {
-                RunLoop.main.run(until: Date().addingTimeInterval(0.02))
                 controller.didTapKey(String(c))
+                try? await Task.sleep(nanoseconds: 20_000_000)
             }
         }
         func mark() -> String? { editor.markedTextRange.flatMap { editor.text(in: $0) } }
@@ -77,22 +81,22 @@ private func tree(_ view: UIView) -> [UIView] { [view] + view.subviews.flatMap(t
         func reset() { controller.textWillChange(editor);editor.text = "";editor.selectedRange = NSRange(location: 0, length: 0) }
         expect(bar.bounds.height == 44,"candidate bar is one 44pt row")
         expect(!tree(bar).contains { $0.accessibilityIdentifier == "composition" },"candidate bar has no composition line")
-        type("nihao")
+        await type("nihao")
         expect(mark() != nil && editor.text.contains("ni"),"pinyin is marked in real UITextView")
         snapshot("marked-pinyin")
         candidate("你好")?.sendActions(for: .touchUpInside)
         expect(editor.text == "你好" && mark() == nil,"candidate replaces marked pinyin once")
-        type("shijie");controller.didTapKey(" ")
-        expect(editor.text == "你好世界" && mark() == nil,"space replaces next marked phrase")
-        controller.didTapDelete();expect(editor.text == "你好世","idle deletion deletes committed text")
-        type("nihao");controller.didTapDelete()
+        await type("shijie");controller.didTapKey(" ")
+        expect(editor.text == "你好世界" && mark() == nil,"space replaces next marked phrase: \(editor.text ?? "nil")")
+        controller.didTapDelete();expect(editor.text == "你好世","idle deletion deletes committed text: \(editor.text ?? "nil")")
+        await type("nihao");controller.didTapDelete()
         expect(mark() != nil && !editor.text.hasSuffix("ni hao"),"backspace edits marked composition")
         for _ in 0..<4 { controller.didTapDelete() }
-        expect(editor.text == "你好世" && mark() == nil,"deleting composition to empty preserves surrounding text")
-        reset();type("nihaoshijie");candidate("你好")?.sendActions(for: .touchUpInside)
+        expect(editor.text == "你好世" && mark() == nil,"deleting composition to empty preserves surrounding text: \(editor.text ?? "nil")")
+        reset();await type("nihaoshijie");candidate("你好")?.sendActions(for: .touchUpInside)
         expect(mark()?.hasPrefix("你好") == true,"partial Chinese selection stays marked with remaining pinyin")
         controller.didTapKey(" ");expect(editor.text == "你好世界" && mark() == nil,"partial selection completes without duplication")
-        reset();type("ni")
+        reset();await type("ni")
         let originalMarked = mark()
         expand.sendActions(for: .touchUpInside);panel.layoutIfNeeded();grid.layoutIfNeeded()
         expect(!panel.isHidden && grid.numberOfItems(inSection: 0) > 8,"down arrow expands beyond first candidate page")
@@ -116,29 +120,29 @@ private func tree(_ view: UIView) -> [UIView] { [view] + view.subviews.flatMap(t
         grid.delegate?.collectionView?(grid, didSelectItemAt: item)
         expect(expected != nil && editor.text == expected && mark() == nil,"expanded candidate replaces marked text")
         expect(panel.isHidden,"selecting expanded candidate restores keyboard")
-        reset();type("nihoa");let correction = candidate("你好")
+        reset();await type("nihoa");let correction = candidate("你好")
         expand.sendActions(for: .touchUpInside);expand.sendActions(for: .touchUpInside)
         // Fetch the current button after candidate browsing rebuilds the strip.
         expect(correction != nil,"typo correction is available")
         candidate("你好")?.sendActions(for: .touchUpInside)
         expect(editor.text == "你好" && mark() == nil,"correction survives expand-collapse and replaces typo")
-        reset();controller.didTapSwitchScheme();type("nihc")
+        reset();controller.didTapSwitchScheme();await type("nihc")
         expect(mark() != nil,"double-pinyin also uses marked text")
         controller.didTapKey("，");expect(editor.text == "你好，" && mark() == nil,"punctuation confirms marked double-pinyin")
-        type("nihc");controller.didTapSwitchLayout(to: .number)
+        await type("nihc");controller.didTapSwitchLayout(to: .number)
         expect(editor.text == "你好，你好" && mark() == nil,"number-page switch confirms composition")
         controller.didTapSwitchLayout(to: .alphabet)
-        reset();type("nihc");controller.didTapKey("\n")
+        reset();await type("nihc");controller.didTapKey("\n")
         expect(editor.text == "你好\n" && mark() == nil,"newline confirms marked text then inserts newline")
-        reset();type("ni");let visible = editor.text
+        reset();await type("ni");let visible = editor.text
         controller.textWillChange(editor)
         expect(editor.text == visible && mark() == nil,"host cursor change keeps visible text and releases composition")
-        editor.selectedRange = NSRange(location: 0, length: 0);type("nihc");controller.didTapKey(" ")
+        editor.selectedRange = NSRange(location: 0, length: 0);await type("nihc");controller.didTapKey(" ")
         expect(editor.text == "你好" + (visible ?? ""),"new composition after cursor movement does not erase old text")
         reset();editor.text = "替换🙂这里";editor.layoutIfNeeded();editor.selectedRange = NSRange(location: 0, length: 2)
-        type("nihc");controller.didTapKey(" ")
+        await type("nihc");controller.didTapKey(" ")
         expect(editor.text == "你好🙂这里" && mark() == nil,"selected text replacement preserves emoji and surrounding text: \(editor.text ?? "nil")")
-        reset();type("nihc");controller.didTapKey(" ");snapshot("confirmed-text")
+        reset();await type("nihc");controller.didTapKey(" ");snapshot("confirmed-text")
         let disconnected = EditorProxy(), connection = SKMarkedTextConnection()
         disconnected.documentAvailable = false
         connection.releaseComposition(in: disconnected)
