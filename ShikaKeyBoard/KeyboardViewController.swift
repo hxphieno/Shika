@@ -20,21 +20,24 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     override func viewDidLoad() {
         super.viewDidLoad()
         languageButton.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            languageButton.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight),
-            languageButton.heightAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight)
-        ])
+        languageButton.heightAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
+        for marker in [languageButton, shuangpinLabel] as [UIView] {
+            let width = marker.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight)
+            width.priority = .init(999) // Hidden arranged views must be able to collapse to zero.
+            width.isActive = true
+        }
         languageButton.onTap = { [weak self] in
             guard let self else { return }
             keyboardState.languageMode = keyboardState.languageMode.next
             renderLanguageMode()
         }
         renderLanguageMode()
+        shuangpinLabel.accessibilityIdentifier = "mode.shuangpin"
+        languageButton.accessibilityIdentifier = "mode.chineseJapanese"
         shuangpinLabel.text = "双拼"
         shuangpinLabel.font = .systemFont(ofSize: 16, weight: .medium)
         shuangpinLabel.textColor = SKConfig.keyTitleColor
         shuangpinLabel.textAlignment = .center
-        shuangpinLabel.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
         shuangpinLabel.accessibilityLabel = "中文，双拼"
 
         candidateBar.heightAnchor.constraint(equalToConstant: SKConfig.topBarHeight).isActive = true
@@ -46,6 +49,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         let topBar = UIStackView(arrangedSubviews: [languageButton, shuangpinLabel, candidateBar])
         topBar.axis = .horizontal
         topBar.alignment = .center
+        topBar.isLayoutMarginsRelativeArrangement = true
+        topBar.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: SKMainKeyboardMetrics.inset, bottom: 0, trailing: 0)
         topBar.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(topBar)
         NSLayoutConstraint.activate([
@@ -191,8 +196,9 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         shuangpinView.isHidden = candidatesExpanded || keyboardState.layout != .alphabet || keyboardState.scheme != .shuangpin
         numberView.isHidden = candidatesExpanded || keyboardState.layout != .number
         expandedCandidates.isHidden = !candidatesExpanded
-        languageButton.isHidden = keyboardState.scheme != .chineseJapanese
-        shuangpinLabel.isHidden = keyboardState.scheme != .shuangpin
+        let hasCandidates = !(inputSession?.state.candidates.isEmpty ?? true)
+        languageButton.isHidden = hasCandidates || keyboardState.scheme != .chineseJapanese
+        shuangpinLabel.isHidden = hasCandidates || keyboardState.scheme != .shuangpin
         // Hidden legacy number-page constraints must not stretch the measured alphabet rows.
         for (index, constraint) in keyboardBottomConstraints.enumerated() {
             constraint.isActive = index == 2 ? keyboardState.layout == .number : keyboardState.layout == .alphabet
