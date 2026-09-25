@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compile a compact, read-only typo index from Shika's existing Apache-2.0 dictionary.
+"""Compile a compact, read-only typo index from Shika's attributed community dictionary.
 No test vocabulary, external corpus, or mutable user data is part of this index.
 """
 from pathlib import Path
@@ -26,7 +26,7 @@ mapping = {a:b.lower() for a,b in re.findall(r'xform/\^([a-z]+)\$/([A-Z]+)', (so
 (out/'correction-syllables.json').write_text(json.dumps(mapping,sort_keys=True,separators=(',',':'))+'\n')
 for scheme in ('shika_pinyin','shika_flypy'):
     entries = {}
-    for line in (source/'pinyin_simp.dict.yaml').read_text().splitlines():
+    for line in (source/'shika_chinese.dict.yaml').read_text().splitlines():
         fields = line.split('\t')
         if len(fields)<3: continue
         text,pinyin,weight = fields[:3]
@@ -36,6 +36,10 @@ for scheme in ('shika_pinyin','shika_flypy'):
         if scheme=='shika_flypy' and any(s not in mapping for s in syllables): continue
         codes={''.join(mapping[s] for s in syllables)} if scheme=='shika_flypy' else full_codes(syllables)
         frequency=int(weight)
+        # Exact conversion uses the entire lexicon. Typo search is intentionally
+        # limited to common words: rare proper names should not displace intended
+        # everyday words, or turn every mistyped key into a large random-page scan.
+        if frequency < 100: continue
         for code in codes:
             if not code.isascii() or not code.isalpha() or len(code)>48: continue
             if code not in entries or frequency>entries[code][1]: entries[code]=(text,frequency)

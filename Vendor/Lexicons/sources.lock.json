@@ -1,0 +1,214 @@
+{
+  "chinese": {
+    "repo": "amzxyz/rime-wanxiang",
+    "commit": "516b1bb66bdce1fd5785f5481c415f13ff736548",
+    "date": "2026-09-24T08:23:45Z",
+    "license": "CC-BY-4.0",
+    "files": [
+      {
+        "archive": "chinese/zi.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/zi.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/zi.dict.yaml",
+        "gitBlob": "df2f93243b720886e916164dba2af633ad313821",
+        "bytes": 616520
+      },
+      {
+        "archive": "chinese/jichu.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/jichu.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/jichu.dict.yaml",
+        "gitBlob": "f7398acad1509e8cc2068bc272cf4bb3fa307fbe",
+        "bytes": 45092789
+      },
+      {
+        "archive": "chinese/lianxiang.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/lianxiang.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/lianxiang.dict.yaml",
+        "gitBlob": "7816382c5e20d1134ab1e00db6c579e0b0fcb2d8",
+        "bytes": 7842870
+      },
+      {
+        "archive": "chinese/cuoyin.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/cuoyin.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/cuoyin.dict.yaml",
+        "gitBlob": "bfb33516a92f9b740853518a2d97aa9f54a3847e",
+        "bytes": 8107
+      },
+      {
+        "archive": "chinese/duoyin.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/duoyin.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/duoyin.dict.yaml",
+        "gitBlob": "1f5d98d5296c5eb308e5b28ae1f8e0a0f8093c16",
+        "bytes": 142295
+      },
+      {
+        "archive": "chinese/shici.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/shici.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/shici.dict.yaml",
+        "gitBlob": "47f77888237edee44e52410e37a7ee8d4c62631b",
+        "bytes": 16424712
+      },
+      {
+        "archive": "chinese/diming.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/diming.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/diming.dict.yaml",
+        "gitBlob": "512ebf9c20467cbd27f781a617ae9e76d2350222",
+        "bytes": 3146029
+      },
+      {
+        "archive": "chinese/yixue.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/yixue.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/yixue.dict.yaml",
+        "gitBlob": "7c25d9097cc16493739990982feb61ee77b2e983",
+        "bytes": 826294
+      },
+      {
+        "archive": "chinese/huaxue.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/huaxue.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/huaxue.dict.yaml",
+        "gitBlob": "11b30b94da5b56a780dcf282da01b42b5016249c",
+        "bytes": 793045
+      },
+      {
+        "archive": "chinese/yaopin.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/yaopin.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/yaopin.dict.yaml",
+        "gitBlob": "0ad79f5b9e8d0f11f7360eb0c7161d3503bc0462",
+        "bytes": 574420
+      },
+      {
+        "archive": "chinese/mingren.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/mingren.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/mingren.dict.yaml",
+        "gitBlob": "48ff3d13e68d3adeb1c26d7331c26b48a0d7a4b0",
+        "bytes": 551174
+      },
+      {
+        "archive": "chinese/yiren.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/yiren.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/yiren.dict.yaml",
+        "gitBlob": "28bb86cd727f14a5f72f6cfcc2b2d68363aa6ba1",
+        "bytes": 361834
+      },
+      {
+        "archive": "chinese/wuzhong.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/wuzhong.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/wuzhong.dict.yaml",
+        "gitBlob": "6dafb7af4a50e18261fd1b42e7e92fce6deeba69",
+        "bytes": 2014048
+      },
+      {
+        "archive": "chinese/renming.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/renming.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/renming.dict.yaml",
+        "gitBlob": "a19d26e17eb68280a086f0461b31b43232b13818",
+        "bytes": 558295
+      },
+      {
+        "archive": "chinese/taifeng.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/taifeng.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/taifeng.dict.yaml",
+        "gitBlob": "58a65393093342493623f8abfff351aa337ea0c2",
+        "bytes": 8372
+      },
+      {
+        "archive": "chinese/fangyan.dict.yaml.gz",
+        "cache": "amzxyz_rime-wanxiang/dicts/fangyan.dict.yaml",
+        "url": "https://raw.githubusercontent.com/amzxyz/rime-wanxiang/516b1bb66bdce1fd5785f5481c415f13ff736548/dicts/fangyan.dict.yaml",
+        "gitBlob": "8677bb9e06f330e69454125fcfea9445c605863e",
+        "bytes": 8716
+      }
+    ]
+  },
+  "japanese": {
+    "repo": "google/mozc",
+    "commit": "b9c3fcbd6d76b19649ef572324fa9da2559bc18e",
+    "date": "2026-09-25T09:03:02Z",
+    "license": "BSD-3-Clause and IPADIC notices (see LICENSE-Mozc-Dictionary.txt)",
+    "files": [
+      {
+        "archive": "japanese/dictionary00.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary00.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary00.txt",
+        "gitBlob": "18077adc553a7c806b8e7132aa1b088a76a091e0",
+        "bytes": 7157174
+      },
+      {
+        "archive": "japanese/dictionary01.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary01.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary01.txt",
+        "gitBlob": "a071ed32a0c5020effb8a5e53812685dafd4fcb3",
+        "bytes": 6428663
+      },
+      {
+        "archive": "japanese/dictionary02.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary02.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary02.txt",
+        "gitBlob": "db389435d802266ff2842c1bee5ee209b7fd2316",
+        "bytes": 6480134
+      },
+      {
+        "archive": "japanese/dictionary03.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary03.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary03.txt",
+        "gitBlob": "375d770e7580e2ee252c0f3ac05f02db4dda9ddc",
+        "bytes": 7434257
+      },
+      {
+        "archive": "japanese/dictionary04.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary04.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary04.txt",
+        "gitBlob": "ced2557863bf47a2e44de3e8ff98c7579d23e8b4",
+        "bytes": 5399172
+      },
+      {
+        "archive": "japanese/dictionary05.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary05.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary05.txt",
+        "gitBlob": "21318521c410943713bf0d7070b8c6ed37cddad9",
+        "bytes": 5316454
+      },
+      {
+        "archive": "japanese/dictionary06.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary06.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary06.txt",
+        "gitBlob": "aa19a78e7ca4038906e7d4bd4ef35e0b20c4e5f9",
+        "bytes": 5373350
+      },
+      {
+        "archive": "japanese/dictionary07.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary07.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary07.txt",
+        "gitBlob": "4b1945ace2266da167d955c4d64eb60fc75a804b",
+        "bytes": 5315756
+      },
+      {
+        "archive": "japanese/dictionary08.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary08.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary08.txt",
+        "gitBlob": "0122cc7da90ef6e9e771304a0d05369df59dd46a",
+        "bytes": 4887114
+      },
+      {
+        "archive": "japanese/dictionary09.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/dictionary09.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/dictionary09.txt",
+        "gitBlob": "86766b8cc97dcb85fabb15a9258e4d9129584137",
+        "bytes": 6690572
+      },
+      {
+        "archive": "japanese/connection_single_column.txt.gz",
+        "cache": "google_mozc/src/data/dictionary_oss/connection_single_column.txt",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/dictionary_oss/connection_single_column.txt",
+        "gitBlob": "dfee01b21b6086cf229f297f490c6971ac9d1674",
+        "bytes": 36428642
+      },
+      {
+        "archive": "japanese/romanji-hiragana.tsv.gz",
+        "cache": "google_mozc/src/data/preedit/romanji-hiragana.tsv",
+        "url": "https://raw.githubusercontent.com/google/mozc/b9c3fcbd6d76b19649ef572324fa9da2559bc18e/src/data/preedit/romanji-hiragana.tsv",
+        "gitBlob": "afa34e8c01d3702d8f7ba8efda4d734be61daaa1",
+        "bytes": 2963
+      }
+    ]
+  }
+}

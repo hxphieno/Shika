@@ -1,0 +1,19 @@
+{
+  "chinese": {
+    "upstream": "amzxyz/rime-wanxiang",
+    "commit": "516b1bb66bdce1fd5785f5481c415f13ff736548",
+    "communityEntries": 2201959,
+    "entries": 2203505,
+    "legacyOnlyEntries": 1546,
+    "longEntries": 1292496,
+    "sha256": "13541906c30ee94ff5bd5d77d056a7fbc73cfbb4f06e169abbc7f5858d95bda9"
+  },
+  "japanese": {
+    "upstream": "google/mozc",
+    "commit": "b9c3fcbd6d76b19649ef572324fa9da2559bc18e",
+    "readings": 744228,
+    "entries": 1281498,
+    "bytes": 55514989,
+    "sha256": "832a820b6ce762847b15cc931e2fc9e58f0ddc2babe259eaab3be6f0d847c4bf"
+  }
+}

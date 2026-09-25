@@ -1,6 +1,6 @@
 schema:
   schema_id: shika_flypy
-  name: 小鹤双拼
+  name: 双拼
   version: '1.0'
 engine:
   processors: [speller, selector, navigator, express_editor]
@@ -27,6 +27,7 @@ speller:
     - xform/^beng$/BG/
     - xform/^bi$/BI/
     - xform/^bian$/BM/
+    - xform/^biang$/BL/
     - xform/^biao$/BN/
     - xform/^bie$/BP/
     - xform/^bin$/BB/
@@ -39,6 +40,7 @@ speller:
     - xform/^cang$/CH/
     - xform/^cao$/CC/
     - xform/^ce$/CE/
+    - xform/^cei$/CW/
     - xform/^cen$/CF/
     - xform/^ceng$/CG/
     - xform/^cha$/IA/
@@ -204,6 +206,7 @@ speller:
     - xform/^lun$/LY/
     - xform/^luo$/LO/
     - xform/^lv$/LV/
+    - xform/^lve$/LT/
     - xform/^ma$/MA/
     - xform/^mai$/MD/
     - xform/^man$/MJ/
@@ -246,8 +249,10 @@ speller:
     - xform/^nu$/NU/
     - xform/^nuan$/NR/
     - xform/^nue$/NT/
+    - xform/^nun$/NY/
     - xform/^nuo$/NO/
     - xform/^nv$/NV/
+    - xform/^nve$/NT/
     - xform/^o$/OO/
     - xform/^ou$/OU/
     - xform/^pa$/PA/
@@ -291,6 +296,7 @@ speller:
     - xform/^rong$/RS/
     - xform/^rou$/RZ/
     - xform/^ru$/RU/
+    - xform/^rua$/RX/
     - xform/^ruan$/RR/
     - xform/^rui$/RV/
     - xform/^run$/RY/
@@ -427,10 +433,14 @@ speller:
     - xform/^zuo$/ZO/
     - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/
 translator:
-  dictionary: pinyin_simp
+  dictionary: shika_chinese
+  user_dict: pinyin_simp
   prism: shika_flypy
   enable_user_dict: true
   enable_sentence: true
+  max_sentences: 5
+  sentence_cutoff_threshold: 0.01
+  max_homophones: 8
   enable_completion: true
   spelling_hints: 64
   always_show_comments: true

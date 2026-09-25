@@ -8,6 +8,7 @@ final class SKRimeEngine: SKInputEngine {
     private let probe: SKRimeSession
     private let resources: URL
     private let correctionEnabled: Bool
+    private var segmentationCandidates: SKPinyinSegmentationCandidates?
     private var correctionCandidates: SKCorrectionCandidates?
     private var displayed = SKEngineState()
 
@@ -20,6 +21,7 @@ final class SKRimeEngine: SKInputEngine {
         self.correctionEnabled = correctionEnabled
         session = try SKRimeSession(sharedPath: resources.path, userPath: directory.path, schema: configuration.schemaID)
         probe = try SKRimeSession(sharedPath: resources.path, userPath: directory.path, schema: configuration.schemaID)
+        segmentationCandidates = SKPinyinSegmentationCandidates(resources: resources, configuration: configuration)
         correctionCandidates = correctionEnabled ? SKCorrectionCandidates(resources: resources, configuration: configuration) : nil
     }
 
@@ -30,7 +32,7 @@ final class SKRimeEngine: SKInputEngine {
         return present(decode(session.processKey(key)))
     }
     func selectCandidate(at index: Int) -> SKEngineState {
-        if let correction = correctionCandidates?.selection(at: index) {
+        if let correction = segmentationCandidates?.selection(at: index) ?? correctionCandidates?.selection(at: index) {
             let original = displayed.input
             _ = session.replaceInput(correction.code)
             let selected = session.selectText(correction.text)
@@ -58,14 +60,18 @@ final class SKRimeEngine: SKInputEngine {
         let result = session.selectSchema(configuration.schemaID)
         if result["error"] != nil { throw EngineError.missingResources }
         _ = probe.selectSchema(configuration.schemaID)
+        segmentationCandidates = SKPinyinSegmentationCandidates(resources: resources, configuration: configuration)
         correctionCandidates = correctionEnabled ? SKCorrectionCandidates(resources: resources, configuration: configuration) : nil
         return present(decode(result))
     }
 
     private func present(_ result: SKEngineState) -> SKEngineState {
-        let state = correctionCandidates?.present(result) { code in
+        let segmented = segmentationCandidates?.present(result) { code in
             decode(probe.replaceInput(code))
         } ?? result
+        let state = correctionCandidates?.present(segmented) { code in
+            decode(probe.replaceInput(code))
+        } ?? segmented
         displayed = state
         return state
     }

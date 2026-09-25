@@ -31,10 +31,14 @@ speller:
   algebra:
 {algebra}
 translator:
-  dictionary: pinyin_simp
+  dictionary: shika_chinese
+  user_dict: pinyin_simp
   prism: {schema}
   enable_user_dict: true
   enable_sentence: true
+  max_sentences: 5
+  sentence_cutoff_threshold: 0.01
+  max_homophones: 8
   enable_completion: true
   spelling_hints: 64
   always_show_comments: true
@@ -46,7 +50,7 @@ finals = {final: entry['key'] for entry in layout['keys'] for final in entry['fi
 initials = {initial: key for key, initial in layout['initials'].items()}
 zero = layout['zeroInitials']
 syllables=set()
-for line in (root/'pinyin_simp.dict.yaml').read_text().splitlines():
+for line in (root/'shika_chinese.dict.yaml').read_text().splitlines():
     fields=line.split('\t')
     if len(fields)>1: syllables.update(fields[1].split())
 rules=[]
@@ -59,7 +63,7 @@ for syllable in sorted(syllables):
         code=initials.get(initial,initial)+finals.get(final,final)
     if len(code)==2: rules.append(f'    - xform/^{syllable}$/{code.upper()}/')
 rules += ['    - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/']
-emit(root/'shika_flypy.schema.yaml', common.format(schema='shika_flypy',name='小鹤双拼',algebra='\n'.join(rules)))
+emit(root/'shika_flypy.schema.yaml', common.format(schema='shika_flypy',name='双拼',algebra='\n'.join(rules)))
 emit(root/'default.yaml', 'config_version: "1.0"\nschema_list:\n  - schema: shika_pinyin\n  - schema: shika_flypy\n')
 
 def quoted(value):

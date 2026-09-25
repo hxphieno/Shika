@@ -1,10 +1,10 @@
 __build_info:
   rime_version: 1.17.0
   timestamps:
-    default: 1790269468
+    default: 1790341100
     default.custom: 0
     shika_pinyin.custom: 0
-    shika_pinyin.schema: 1790269468
+    shika_pinyin.schema: 1790341098
 engine:
   processors:
     - speller
@@ -30,9 +30,13 @@ speller:
   delimiter: " '"
 translator:
   always_show_comments: true
-  dictionary: pinyin_simp
+  dictionary: shika_chinese
   enable_completion: true
   enable_sentence: true
   enable_user_dict: true
+  max_homophones: 8
+  max_sentences: 5
   prism: shika_pinyin
+  sentence_cutoff_threshold: 0.01
   spelling_hints: 64
+  user_dict: pinyin_simp

@@ -15,10 +15,14 @@ speller:
     - derive/^([nl])ue$/$1ve/
     - abbrev/^([a-z]).+$/$1/
 translator:
-  dictionary: pinyin_simp
+  dictionary: shika_chinese
+  user_dict: pinyin_simp
   prism: shika_pinyin
   enable_user_dict: true
   enable_sentence: true
+  max_sentences: 5
+  sentence_cutoff_threshold: 0.01
+  max_homophones: 8
   enable_completion: true
   spelling_hints: 64
   always_show_comments: true

@@ -32,3 +32,6 @@ Vendor/Rime/librime-static.xcframework/
 # These are shipped offline dictionaries, not Xcode build output.
 !ShikaKeyBoard/Resources/RimeData.bundle/build/
 !ShikaKeyBoard/Resources/RimeData.bundle/build/**
+
+# Reproducible normalized source generated from pinned compressed archives.
+Vendor/RimeData/shika_chinese.dict.yaml
