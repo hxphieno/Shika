@@ -114,7 +114,7 @@ class SKMainKeyButton: UIButton {
         let inset = SKMainKeyboardMetrics.inset
         let width = min(max(54, bounds.width + 24), container.bounds.width - 2 * inset)
         let left = max(inset, min(keyRect.midX - width / 2, container.bounds.width - width - inset))
-        let top = max(container.bounds.minY + 6, keyRect.minY - 67)
+        let top = max(container.bounds.minY + 2, keyRect.minY - 67)
         let bubble = SKMainKeyPreview(frame: CGRect(x: left, y: top, width: width, height: keyRect.maxY - top))
         bubble.keyFrame = convert(bounds, to: container).offsetBy(dx: -left, dy: -top)
         bubble.fillColor = SKMainKeyboardMetrics.keyColor.resolvedColor(with: traitCollection)
@@ -126,7 +126,9 @@ class SKMainKeyButton: UIButton {
     }
 }
 
-private final class SKMainKeyPreview: UIView {
+final class SKMainKeyPreview: UIView {
+    static let capHeight: CGFloat = 51
+    static let font = UIFont.systemFont(ofSize: 37)
     var keyFrame = CGRect.zero
     var fillColor = UIColor.white
     var textColor = UIColor.black
@@ -145,30 +147,44 @@ private final class SKMainKeyPreview: UIView {
         // contour. Edge keys keep the outside edge aligned with the keycap.
         let width = bounds.width, bottom = bounds.height
         let radius: CGFloat = 10, keyRadius = SKMainKeyboardMetrics.cornerRadius
-        let shoulder = min(51, max(20, keyFrame.minY - 5)), neckBottom = keyFrame.minY + 7
+        // Preserve the full-size cap even in the first row. Only the waist
+        // shortens when the extension's top edge leaves less room above a key.
+        let shoulder = Self.capHeight
+        let neckBottom = min(bottom - keyRadius, max(shoulder + 16, keyFrame.minY + 7))
+        let bend = (neckBottom - shoulder) / 2
         let path = UIBezierPath()
         path.move(to: CGPoint(x: radius, y: 0))
         path.addLine(to: CGPoint(x: width - radius, y: 0))
         path.addQuadCurve(to: CGPoint(x: width, y: radius), controlPoint: CGPoint(x: width, y: 0))
-        path.addLine(to: CGPoint(x: width, y: shoulder))
-        path.addCurve(to: CGPoint(x: keyFrame.maxX, y: neckBottom),
-                      controlPoint1: CGPoint(x: width, y: shoulder + 9),
-                      controlPoint2: CGPoint(x: keyFrame.maxX, y: neckBottom - 10))
+        if abs(keyFrame.maxX - width) < 0.5 {
+            // P: the outside edge is one straight line, without a shoulder.
+            path.addLine(to: CGPoint(x: width, y: neckBottom))
+        } else {
+            path.addLine(to: CGPoint(x: width, y: shoulder))
+            path.addCurve(to: CGPoint(x: keyFrame.maxX, y: neckBottom),
+                          controlPoint1: CGPoint(x: width, y: shoulder + bend),
+                          controlPoint2: CGPoint(x: keyFrame.maxX, y: neckBottom - bend))
+        }
         path.addLine(to: CGPoint(x: keyFrame.maxX, y: bottom - keyRadius))
         path.addQuadCurve(to: CGPoint(x: keyFrame.maxX - keyRadius, y: bottom), controlPoint: CGPoint(x: keyFrame.maxX, y: bottom))
         path.addLine(to: CGPoint(x: keyFrame.minX + keyRadius, y: bottom))
         path.addQuadCurve(to: CGPoint(x: keyFrame.minX, y: bottom - keyRadius), controlPoint: CGPoint(x: keyFrame.minX, y: bottom))
-        path.addLine(to: CGPoint(x: keyFrame.minX, y: neckBottom))
-        path.addCurve(to: CGPoint(x: 0, y: shoulder),
-                      controlPoint1: CGPoint(x: keyFrame.minX, y: neckBottom - 10),
-                      controlPoint2: CGPoint(x: 0, y: shoulder + 9))
+        if abs(keyFrame.minX) < 0.5 {
+            // Q: mirror P, keeping the left side straight all the way up.
+            path.addLine(to: CGPoint(x: 0, y: radius))
+        } else {
+            path.addLine(to: CGPoint(x: keyFrame.minX, y: neckBottom))
+            path.addCurve(to: CGPoint(x: 0, y: shoulder),
+                          controlPoint1: CGPoint(x: keyFrame.minX, y: neckBottom - bend),
+                          controlPoint2: CGPoint(x: 0, y: shoulder + bend))
+        }
         path.addLine(to: CGPoint(x: 0, y: radius))
         path.addQuadCurve(to: CGPoint(x: radius, y: 0), controlPoint: .zero)
         path.close()
         fillColor.setFill()
         path.fill()
-        let font = UIFont.systemFont(ofSize: min(37, max(24, keyFrame.minY - 14)))
+        let font = Self.font
         let size = (letter as NSString).size(withAttributes: [.font: font])
-        (letter as NSString).draw(at: CGPoint(x: (bounds.width - size.width) / 2 + SKMainKeyButton.opticalOffset(for: letter, font: font), y: keyFrame.minY >= 67 ? 12 : max(2, (shoulder - size.height) / 2)), withAttributes: [.font: font, .foregroundColor: textColor])
+        (letter as NSString).draw(at: CGPoint(x: (bounds.width - size.width) / 2 + SKMainKeyButton.opticalOffset(for: letter, font: font), y: (shoulder - size.height) / 2), withAttributes: [.font: font, .foregroundColor: textColor])
     }
 }
