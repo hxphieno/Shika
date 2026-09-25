@@ -37,9 +37,7 @@ final class SKCorrectionCandidates {
             let index = -1 - extra.count
             corrections[index] = (suggestion.code, candidate.text)
             extra.append(SKCandidate(index: index, text: candidate.text, comment: "纠错 · " + candidate.comment))
-            if profile == .doublePinyin {
-                alternatives += exact.dropFirst().prefix(2).map { (suggestion.code, $0) }
-            }
+            alternatives += exact.dropFirst().prefix(2).map { (suggestion.code, $0) }
             if extra.count == primaryLimit { break }
         }
         // Keep primary repair routes first; same-code homophones
