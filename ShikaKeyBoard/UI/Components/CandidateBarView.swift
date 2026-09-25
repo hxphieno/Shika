@@ -7,7 +7,7 @@ final class CandidateBarView: UIView {
     var onRetry: (() -> Void)?
     private let scroll = SKKeyboardScrollView()
     private let candidates = UIStackView()
-    private let expand = UIButton(type: .system)
+    private let expand = SKCandidateDisclosureButton()
     private let message = UILabel()
     private let retry = UIButton(type: .system)
     private var visibleCandidates: [SKCandidate] = []
@@ -39,7 +39,7 @@ final class CandidateBarView: UIView {
             scroll.leadingAnchor.constraint(equalTo: leadingAnchor),
             scroll.trailingAnchor.constraint(equalTo: expand.leadingAnchor),
             scroll.bottomAnchor.constraint(equalTo: bottomAnchor),
-            expand.widthAnchor.constraint(equalToConstant: 52),
+            expand.widthAnchor.constraint(equalToConstant: 60),
             expand.trailingAnchor.constraint(equalTo: trailingAnchor),
             expand.topAnchor.constraint(equalTo: topAnchor),
             expand.bottomAnchor.constraint(equalTo: bottomAnchor),
@@ -108,4 +108,23 @@ final class CandidateBarView: UIView {
     }
     @objc private func toggleExpanded() { onToggleExpanded?() }
     @objc private func retryLoading() { onRetry?() }
+}
+
+/// The whole reserved cell is interactive, including the empty space around
+/// the chevron. It never competes with scrolling in the adjacent candidate strip.
+private final class SKCandidateDisclosureButton: UIButton {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        layer.cornerRadius = 10
+        layer.cornerCurve = .continuous
+    }
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        // Allow a little finger drift after a press has started here, but do
+        // not expand initial hit testing into candidates or the top key row.
+        (isTracking ? bounds.insetBy(dx: -6, dy: -6) : bounds).contains(point)
+    }
+    override var isHighlighted: Bool {
+        didSet { backgroundColor = isHighlighted ? .tertiarySystemFill : .clear }
+    }
 }

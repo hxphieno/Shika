@@ -131,7 +131,12 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         candidatesExpanded.toggle()
         expandedCandidates.update(inputSession.state, resetScroll: true)
         renderCandidates(inputSession.state)
-        if candidatesExpanded { inputSession.loadMoreCandidates() }
+        // Prefetch enough for the first screen only. Reopening an already
+        // populated grid should not fetch another page and rebuild the strip.
+        let firstScreenCapacity = Int(ceil(expandedCandidates.bounds.height / 44)) * 4
+        if candidatesExpanded && inputSession.state.candidates.count < firstScreenCapacity {
+            inputSession.loadMoreCandidates()
+        }
     }
 
     private func selectCandidate(_ candidate: SKCandidate) {
