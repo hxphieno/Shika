@@ -6,12 +6,12 @@ import Foundation
         setbuf(stdout, nil)
         let resources = URL(fileURLWithPath: CommandLine.arguments[1])
         let user = URL(fileURLWithPath: CommandLine.arguments[2])
-        let engine = try SKRimeEngine(schema: "shika_pinyin", resourceURL: resources, userURL: user)
+        let engine = try SKRimeEngine(configuration: SKInputScheme.chineseJapanese.configuration, resourceURL: resources, userURL: user)
         var output = "", count = 0
-        let session = SKInputSession(engine: engine, insertText: { output += $0 }, deleteText: { if !output.isEmpty { output.removeLast() } })
+        let session = SKInputSession(engine: engine, configuration: SKInputScheme.chineseJapanese.configuration, insertText: { output += $0 }, deleteText: { if !output.isEmpty { output.removeLast() } })
         func expect(_ ok: Bool, _ label: String) { if !ok { print("FAIL \(label), output=\(output), state=\(session.state)"); exit(1) }; count += 1; print("PASS \(label)") }
         func type(_ text: String) { for c in text { session.type(String(c)) } }
-        func reset(_ schema: String, _ code: String) throws { session.cancel(); output = ""; try session.switchSchema(to: schema); type(code) }
+        func reset(_ schema: String, _ code: String) throws { session.cancel(); output = ""; try session.switchConfiguration(to: SKInputScheme(schemaID: schema)!.configuration); type(code) }
         for (schema, code, target) in [("shika_pinyin", "nohao", "你好"), ("shika_pinyin", "zhnogguo", "中国"), ("shika_pinyin", "zhonguo", "中国"), ("shika_pinyin", "zhongguoo", "中国"), ("shika_flypy", "nijc", "你好"), ("shika_flypy", "niihc", "你好"), ("shika_flypy", "nhc", "你好"), ("shika_flypy", "svgo", "中国")] {
             try reset(schema, code)
             guard let candidate = session.state.candidates.first(where: {$0.text == target}) else { fatalError("Missing \(code) -> \(target)") }
@@ -31,7 +31,7 @@ import Foundation
         expect(session.state.input == "niih" && output.isEmpty, "backspace changes actual raw input")
         session.cancel(); expect(session.state.input.isEmpty && output.isEmpty, "cancel never commits a suggestion")
         try reset("shika_pinyin", "zhnogguo");let first = session.state.candidates[0].text
-        try session.switchSchema(to: "shika_flypy");expect(output == first, "scheme switch commits visible correction once")
+        try session.switchConfiguration(to: SKInputScheme.shuangpin.configuration);expect(output == first, "scheme switch commits visible correction once")
         type("nihc");session.type(" ");expect(output == first + "你好", "new scheme starts clean")
         try reset("shika_pinyin", "ni");session.changePage(backward: false)
         let second = session.state.candidates[1];session.select(second)

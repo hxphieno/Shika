@@ -21,15 +21,15 @@ struct AutocorrectionIndependentChecks {
         let cases = try JSONDecoder().decode([Case].self, from: Data(contentsOf: URL(fileURLWithPath: args[3])))
         let enabled = args[4] == "enabled"
         let testCommit = args[5] == "commit"
-        let engine = try SKRimeEngine(schema: cases[0].schema,
+        let engine = try SKRimeEngine(configuration: SKInputScheme(schemaID: cases[0].schema)!.configuration,
             resourceURL: URL(fileURLWithPath: args[1]), userURL: URL(fileURLWithPath: args[2]), correctionEnabled: enabled)
         var schema = cases[0].schema
         var output = ""
-        let session = SKInputSession(engine: engine, insertText: { output += $0 }, deleteText: { if !output.isEmpty { output.removeLast() } })
+        let session = SKInputSession(engine: engine, configuration: SKInputScheme(schemaID: cases[0].schema)!.configuration, insertText: { output += $0 }, deleteText: { if !output.isEmpty { output.removeLast() } })
         var results: [[String: Any]] = []
         for item in cases {
             session.cancel()
-            if schema != item.schema { try session.switchSchema(to: item.schema); schema = item.schema }
+            if schema != item.schema { try session.switchConfiguration(to: SKInputScheme(schemaID: item.schema)!.configuration); schema = item.schema }
             output = ""
             var durations: [Double] = []
             for character in item.input {

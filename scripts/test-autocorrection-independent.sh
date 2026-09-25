@@ -12,18 +12,15 @@ mkdir -p "$output_dir" "$test_dir/sources"
 # Freeze sources before compilation; other agents may continue unrelated work.
 cp "$repo_dir/ShikaKeyBoard/Engine/SKRimeSession.m" "$test_dir/sources/"
 cp "$repo_dir/ShikaKeyBoard/Engine/SKRimeSession.h" "$test_dir/sources/"
-cp "$repo_dir/ShikaKeyBoard/Engine/SKInputEngine.swift" "$test_dir/sources/"
-cp "$repo_dir/ShikaKeyBoard/Engine/SKSpellingCorrector.swift" "$test_dir/sources/"
-cp "$repo_dir/ShikaKeyBoard/Core/SKInputSession.swift" "$test_dir/sources/"
+cp "$repo_dir"/ShikaKeyBoard/Core/*.swift "$test_dir/sources/"
+cp "$repo_dir"/ShikaKeyBoard/Engine/*.swift "$test_dir/sources/"
+cp "$repo_dir"/ShikaKeyBoard/Schemes/*/*Scheme.swift "$test_dir/sources/"
 cp "$repo_dir/Tests/AutocorrectionIndependentChecks.swift" "$test_dir/sources/"
 shasum -a 256 "$test_dir/sources/"* > "$output_dir/source-hashes.txt"
 xcrun clang -fobjc-arc -c "$test_dir/sources/SKRimeSession.m" \
     -I"$test_dir/sources" -I"$slice/Headers" -o "$test_dir/bridge.o"
 xcrun swiftc -O -module-cache-path "$test_dir/module-cache" -parse-as-library \
-    "$test_dir/sources/AutocorrectionIndependentChecks.swift" \
-    "$test_dir/sources/SKInputEngine.swift" \
-    "$test_dir/sources/SKSpellingCorrector.swift" \
-    "$test_dir/sources/SKInputSession.swift" \
+    "$test_dir"/sources/*.swift \
     "$test_dir/bridge.o" "$slice/librime.a" \
     -import-objc-header "$test_dir/sources/SKRimeSession.h" \
     -framework Foundation -lc++ -liconv -o "$test_dir/independent-checks"

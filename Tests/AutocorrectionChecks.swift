@@ -10,10 +10,10 @@ struct CorrectionCase: Codable {
         let user = URL(fileURLWithPath: CommandLine.arguments[2])
         let cases = try JSONDecoder().decode([CorrectionCase].self, from: Data(contentsOf: URL(fileURLWithPath: CommandLine.arguments[3])))
         let enabled = CommandLine.arguments.last != "baseline"
-        let engine = try SKRimeEngine(schema: "shika_pinyin", resourceURL: resource, userURL: user, correctionEnabled: enabled)
+        let engine = try SKRimeEngine(configuration: SKInputScheme.chineseJapanese.configuration, resourceURL: resource, userURL: user, correctionEnabled: enabled)
         var rows: [[String: Any]] = [], schema = "", delays: [Double] = []
         for item in cases {
-            if item.schema != schema { _ = try engine.selectSchema(item.schema); schema = item.schema }
+            if item.schema != schema { _ = try engine.selectConfiguration(SKInputScheme(schemaID: item.schema)!.configuration); schema = item.schema }
             _ = engine.clear()
             var state = SKEngineState(), keystrokes: [Double] = []
             for ch in item.input.utf8 {

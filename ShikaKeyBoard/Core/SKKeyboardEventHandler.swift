@@ -5,7 +5,7 @@
 //  Created by ShiKa on 2026/2/7.
 //
 
-import UIKit
+import Foundation
 
 enum SKKeyboardLayoutType {
     case alphabet

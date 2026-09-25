@@ -6,14 +6,14 @@ final class SKKeyboardFooterView: UIView {
     var keyFrames: [CGRect] = []
     private var keys: [SKMainKeyButton] = []
 
-    init(schemeTitle: String) {
+    init(schemeTitle: String, nextSchemeTitle: String) {
         super.init(frame: .zero)
         let number = SKMainKeyButton(title: "123", role: .function)
         number.addTarget(self, action: #selector(showNumbers), for: .touchUpInside)
         let scheme = SKMainKeyButton(title: "🦌", role: .function)
         scheme.titleLabel?.font = .systemFont(ofSize: 24)
         scheme.accessibilityLabel = "切换输入方案"
-        scheme.accessibilityHint = schemeTitle == "中日混合" ? "切换到双拼" : "切换到中日混合"
+        scheme.accessibilityHint = "切换到\(nextSchemeTitle)"
         scheme.addTarget(self, action: #selector(switchScheme), for: .touchUpInside)
         let space = SKMainKeyButton(title: schemeTitle, role: .space)
         space.accessibilityLabel = "空格，当前方案：\(schemeTitle)"

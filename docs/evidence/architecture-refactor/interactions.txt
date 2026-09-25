@@ -1,0 +1,33 @@
+PASS click shika_pinyin nohao commits 你好 once
+PASS commit is drained
+PASS click shika_pinyin zhnogguo commits 中国 once
+PASS commit is drained
+PASS click shika_pinyin zhonguo commits 中国 once
+PASS commit is drained
+PASS click shika_pinyin zhongguoo commits 中国 once
+PASS commit is drained
+PASS click shika_flypy nijc commits 你好 once
+PASS commit is drained
+PASS click shika_flypy niihc commits 你好 once
+PASS commit is drained
+PASS click shika_flypy nhc commits 你好 once
+PASS commit is drained
+PASS click shika_flypy svgo commits 中国 once
+PASS commit is drained
+PASS " " follows visible first
+PASS "\n" follows visible first
+PASS "，" follows visible first
+PASS "1" follows visible first
+PASS "A" follows visible first
+PASS raw input preserves typo
+PASS backspace changes actual raw input
+PASS cancel never commits a suggestion
+PASS scheme switch commits visible correction once
+PASS new scheme starts clean
+PASS native page indexes remain valid
+PASS correction survives page round trip
+PASS partial choice stays in native composition
+PASS partial choice then space produces full sentence once
+PASS new user phrase learned through native segments
+PASS exact learned word protected from corrections
+COMPLETE: 32 correction interaction assertions

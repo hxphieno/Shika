@@ -1,5 +1,6 @@
 import Foundation
 
 enum SKShuangpinScheme {
-    static let schemaID = "shika_flypy"
+    static let configuration = SKInputConfiguration(schemaID: "shika_flypy",
+        inputPolicy: .chineseRomanization, spelling: .doublePinyin)
 }

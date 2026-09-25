@@ -1,0 +1,191 @@
+{
+  "rows": [
+    "qwertyuiop",
+    "asdfghjkl",
+    "zxcvbnm"
+  ],
+  "initials": {
+    "u": "sh",
+    "i": "ch",
+    "v": "zh"
+  },
+  "keys": [
+    {
+      "key": "q",
+      "finals": [
+        "iu"
+      ]
+    },
+    {
+      "key": "w",
+      "finals": [
+        "ei"
+      ]
+    },
+    {
+      "key": "e",
+      "finals": [
+        "e"
+      ]
+    },
+    {
+      "key": "r",
+      "finals": [
+        "uan"
+      ]
+    },
+    {
+      "key": "t",
+      "finals": [
+        "ue",
+        "ve"
+      ]
+    },
+    {
+      "key": "y",
+      "finals": [
+        "un"
+      ]
+    },
+    {
+      "key": "u",
+      "finals": [
+        "u"
+      ]
+    },
+    {
+      "key": "i",
+      "finals": [
+        "i"
+      ]
+    },
+    {
+      "key": "o",
+      "finals": [
+        "o",
+        "uo"
+      ]
+    },
+    {
+      "key": "p",
+      "finals": [
+        "ie"
+      ]
+    },
+    {
+      "key": "a",
+      "finals": [
+        "a"
+      ]
+    },
+    {
+      "key": "s",
+      "finals": [
+        "ong",
+        "iong"
+      ]
+    },
+    {
+      "key": "d",
+      "finals": [
+        "ai"
+      ]
+    },
+    {
+      "key": "f",
+      "finals": [
+        "en"
+      ]
+    },
+    {
+      "key": "g",
+      "finals": [
+        "eng"
+      ]
+    },
+    {
+      "key": "h",
+      "finals": [
+        "ang"
+      ]
+    },
+    {
+      "key": "j",
+      "finals": [
+        "an"
+      ]
+    },
+    {
+      "key": "k",
+      "finals": [
+        "ing",
+        "uai"
+      ]
+    },
+    {
+      "key": "l",
+      "finals": [
+        "iang",
+        "uang"
+      ]
+    },
+    {
+      "key": "z",
+      "finals": [
+        "ou"
+      ]
+    },
+    {
+      "key": "x",
+      "finals": [
+        "ia",
+        "ua"
+      ]
+    },
+    {
+      "key": "c",
+      "finals": [
+        "ao"
+      ]
+    },
+    {
+      "key": "v",
+      "finals": [
+        "ui",
+        "v"
+      ]
+    },
+    {
+      "key": "b",
+      "finals": [
+        "in"
+      ]
+    },
+    {
+      "key": "n",
+      "finals": [
+        "iao"
+      ]
+    },
+    {
+      "key": "m",
+      "finals": [
+        "ian"
+      ]
+    }
+  ],
+  "zeroInitials": {
+    "a": "aa",
+    "o": "oo",
+    "e": "ee",
+    "ai": "ai",
+    "ei": "ei",
+    "ao": "ao",
+    "ou": "ou",
+    "an": "an",
+    "en": "en",
+    "ang": "ah",
+    "eng": "eg",
+    "er": "er"
+  }
+}

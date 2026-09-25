@@ -6,16 +6,24 @@
 
 ## 职责
 
-- `Core`：方案身份、输入事件协议、输入会话策略。输入方案与字母/数字页面是两个独立状态。
-- `Engine`：Swift 引擎接口、Rime 实现和 Objective-C/C 桥接；不依赖具体键盘 UI。
-- `Schemes/ChineseJapanese`：中日键盘、布局和中/日/混合按钮。
-- `Schemes/Shuangpin`：独立中文布局、小鹤音节提示及大小写状态，不依赖中日键盘类。
-- `UI/Components`：共享按键、气泡、注音键、候选栏等。
+- `Core`：引擎协议、候选/组合模型、方案配置、输入会话和键盘状态。方案、语言模式与字母/数字页面是独立状态。
+- `Engine`：Rime 适配、候选纠错编排和 Objective-C/C 桥接；不依赖具体键盘 UI。
+- `Schemes/ChineseJapanese`：中文全拼配置、中日模式定义、键盘布局及语言按钮。按钮只报告点击，由控制器持有并下发当前模式。
+- `Schemes/Shuangpin`：双拼配置、独立中文布局及生成的音节提示，不依赖中日键盘类。
+- `UI/Components`：共享按键、气泡、注音键、候选栏和 Shift 状态逻辑；两个键盘分别持有自己的 Shift 状态。
 - `UI/Layouts`：共享底部功能栏及数字标点页。
 - `UI/Theme`：尺寸、间距、颜色。
 - `KeyboardViewController`：页面与方案切换、偏好保存、iOS textDocumentProxy 对接。
 
-具体 schema 身份由各自 `Schemes` 目录定义。按键组件仅发送事件；`SKInputSession` 处理组合、上屏和删除；控制器连接系统 `textDocumentProxy`。日文状态不影响双拼行为。依赖、构建和验证见 [Rime 接入说明](rime-integration.md)。
+具体 schema 和输入/拼写规则配置由各自 `Schemes` 目录定义。`SKInputSession` 接收配置并执行规则，`SKRimeEngine` 管理主会话和探测会话，`SKCorrectionCandidates` 整合纠错结果，`SKSpellingCorrector` 查询离线索引。按键组件仅发送事件；`SKInputSession` 处理组合、上屏和删除；控制器连接系统 `textDocumentProxy`。日文状态不影响双拼行为。依赖、构建和验证见 [Rime 接入说明](rime-integration.md)。
+
+## 维护边界
+
+- `SKInputEngine`、`SKEngineState`、`SKCandidate` 和会话可以独立编译，不需要 UIKit、Objective-C 桥接或 librime；`test-input-session.sh` 会检查这一点。当前仍在一个键盘扩展 target 内，无新增 framework。
+- 当前规则配置保留已有空格选词、回车/标点先提交、单次提交输出、大小写直输和纠错保护行为。三种中日模式仍然共用中文转换，不代表实现了日文解码。
+- `SKRimeRuntime` 在 Objective-C 桥接内部初始化进程级资源，`SKRimeSession` 管理各自会话。同一进程重复加载必须使用相同资源/用户目录；销毁一个会话不会终止其他会话。
+- 修改双拼映射时编辑 `Vendor/RimeData/shuangpin-layout.json`，运行 `python3 scripts/generate-rime-schemas.py` 生成 UI 提示及 Rime schema。`--check` 可只读检查生成物是否过期。更新正式词库仍使用 `scripts/build-rime-data.sh`，纠错索引从生成的 schema 派生。
+- 数字符号页保留独立布局和样式，不参与此次架构合并。
 
 ## 小鹤键位来源
 

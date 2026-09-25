@@ -10,9 +10,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private let numberView = SKNumberInputView()
     private let languageButton = SKInputSwitchButton()
     private let shuangpinLabel = UILabel()
-    private var currentScheme = SKInputScheme(rawValue:
-        UserDefaults.standard.string(forKey: SKInputScheme.preferenceKey) ?? "") ?? .chineseJapanese
-    private var currentLayout: SKKeyboardLayoutType = .alphabet
+    private var keyboardState = SKKeyboardState(scheme: SKInputScheme(rawValue:
+        UserDefaults.standard.string(forKey: SKInputScheme.preferenceKey) ?? "") ?? .chineseJapanese)
     private var keyboardBottomConstraints: [NSLayoutConstraint] = []
     private var mainHeightConstraint: NSLayoutConstraint?
 
@@ -23,9 +22,12 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
             languageButton.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight),
             languageButton.heightAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight)
         ])
-        languageButton.stateChangeHandler = { [weak self] state in
-            self?.chineseJapaneseView.currentLanguageState = state
+        languageButton.onTap = { [weak self] in
+            guard let self else { return }
+            keyboardState.languageMode = keyboardState.languageMode.next
+            renderLanguageMode()
         }
+        renderLanguageMode()
         shuangpinLabel.text = "双拼"
         shuangpinLabel.font = .systemFont(ofSize: 16, weight: .medium)
         shuangpinLabel.textColor = SKConfig.keyTitleColor
@@ -77,8 +79,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
 
     private func loadEngine() {
         do {
-            let engine = try SKRimeEngine(schema: currentScheme.schemaID)
-            let session = SKInputSession(engine: engine,
+            let engine = try SKRimeEngine(configuration: keyboardState.scheme.configuration)
+            let session = SKInputSession(engine: engine, configuration: keyboardState.scheme.configuration,
                 insertText: { [weak self] text in
                     guard let self else { return }
                     applyingEngineEdit = true
@@ -123,34 +125,40 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     func didTapSwitchScheme() {
-        let next = currentScheme.next
-        do { try inputSession?.switchSchema(to: next.schemaID) }
+        let next = keyboardState.scheme.next
+        do { try inputSession?.switchConfiguration(to: next.configuration) }
         catch { candidateBar.showError(); return }
-        currentScheme = next
-        currentLayout = .alphabet
-        UserDefaults.standard.set(currentScheme.rawValue, forKey: SKInputScheme.preferenceKey)
+        keyboardState.scheme = next
+        keyboardState.layout = .alphabet
+        UserDefaults.standard.set(keyboardState.scheme.rawValue, forKey: SKInputScheme.preferenceKey)
         updateVisibleKeyboard()
         if let inputSession { renderCandidates(inputSession.state) }
         UIAccessibility.post(notification: .announcement,
-                             argument: currentScheme == .shuangpin ? "双拼" : "中日混合")
+                             argument: keyboardState.scheme == .shuangpin ? "双拼" : "中日混合")
     }
 
     func didTapSwitchLayout(to layout: SKKeyboardLayoutType) {
         inputSession?.commitPending()
-        currentLayout = layout
+        keyboardState.layout = layout
         updateVisibleKeyboard()
     }
 
+    private func renderLanguageMode() {
+        // All three modes retain the Chinese conversion baseline in this MVP.
+        languageButton.currentState = keyboardState.languageMode
+        chineseJapaneseView.currentLanguageState = keyboardState.languageMode
+    }
+
     private func updateVisibleKeyboard() {
-        chineseJapaneseView.isHidden = currentLayout != .alphabet || currentScheme != .chineseJapanese
-        shuangpinView.isHidden = currentLayout != .alphabet || currentScheme != .shuangpin
-        numberView.isHidden = currentLayout != .number
-        languageButton.isHidden = currentScheme != .chineseJapanese
-        shuangpinLabel.isHidden = currentScheme != .shuangpin
+        chineseJapaneseView.isHidden = keyboardState.layout != .alphabet || keyboardState.scheme != .chineseJapanese
+        shuangpinView.isHidden = keyboardState.layout != .alphabet || keyboardState.scheme != .shuangpin
+        numberView.isHidden = keyboardState.layout != .number
+        languageButton.isHidden = keyboardState.scheme != .chineseJapanese
+        shuangpinLabel.isHidden = keyboardState.scheme != .shuangpin
         // Hidden legacy number-page constraints must not stretch the measured alphabet rows.
         for (index, constraint) in keyboardBottomConstraints.enumerated() {
-            constraint.isActive = index == 2 ? currentLayout == .number : currentLayout == .alphabet
+            constraint.isActive = index == 2 ? keyboardState.layout == .number : keyboardState.layout == .alphabet
         }
-        mainHeightConstraint?.isActive = currentLayout == .alphabet
+        mainHeightConstraint?.isActive = keyboardState.layout == .alphabet
     }
 }

@@ -164,6 +164,26 @@ final class MainInteractionApp: UIResponder, UIApplicationDelegate {
         }
         let image = UIGraphicsImageRenderer(bounds: controller.view.bounds).image { controller.view.layer.render(in: $0.cgContext) }
         try? image.pngData()?.write(to: output.appendingPathComponent("main-interaction-final.png"))
+        // Language state belongs to the controller and survives scheme switches.
+        controller.didTapSwitchScheme()
+        let language = tree(controller.view).compactMap { $0 as? SKInputSwitchButton }.first!
+        let mixed = tree(controller.view).compactMap { $0 as? SKChineseJapaneseKeyboardView }.first!
+        expect(language.currentState == .mixed && mixed.currentLanguageState == .mixed, "Language mode starts mixed")
+        for letter in "nihao" { controller.didTapKey(String(letter)) }
+        press(language)
+        expect(language.currentState == .chinese && mixed.keyRows[1].count == 9, "Language tap renders Chinese state and layout")
+        expect(controller.proxy.text.isEmpty, "Language tap preserves pending Chinese composition")
+        controller.didTapKey(" ")
+        expect(controller.proxy.text == "你好", "Chinese mode commits existing composition once")
+        press(language)
+        expect(language.currentState == .japanese && mixed.keyRows[1].count == 10, "Next language tap renders Japanese layout")
+        controller.didTapSwitchScheme(); controller.didTapSwitchScheme()
+        expect(language.currentState == .japanese && mixed.currentLanguageState == .japanese, "Language state survives switching away and back")
+        for letter in "shijie" { controller.didTapKey(String(letter)) }
+        controller.didTapKey(" ")
+        expect(controller.proxy.text == "你好世界", "Japanese UI mode retains MVP Chinese conversion")
+        press(language)
+        expect(language.currentState == .mixed && mixed.currentLanguageState == .mixed, "Language cycle returns to mixed")
         let report = (failures.isEmpty ? "PASS " : "FAIL ") + "\(assertions) main keyboard interaction assertions\n" + failures.joined(separator: "\n")
         try? report.write(to: output.appendingPathComponent("result.txt"), atomically: true, encoding: .utf8)
         try? JSONSerialization.data(withJSONObject: ["assertions": assertions, "failures": failures], options: .prettyPrinted)

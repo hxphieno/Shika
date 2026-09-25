@@ -1,0 +1,99 @@
+{
+  "baselineCommit": "23bf20340459b51cca3b35f4df6377440af25700",
+  "comparisons": [
+    {
+      "suite": 320,
+      "file": "baseline.json",
+      "identical": true,
+      "ignoredField": "maxKeyMilliseconds",
+      "normalizedResultsSHA256": "7f390f51e04239b6d3a030aab51c07a5f71f3280bc9076cc2fc09d2aa5d4d7ca"
+    },
+    {
+      "suite": 320,
+      "file": "correction.json",
+      "identical": true,
+      "ignoredField": "maxKeyMilliseconds",
+      "normalizedResultsSHA256": "8bd01c62822cb78fae2afa82814267cfcba6f2a7fbfb4a6c12044d877c73ede6"
+    },
+    {
+      "suite": 400,
+      "file": "baseline-ranking.json",
+      "identical": true,
+      "ignoredField": "keyDurationsMS",
+      "normalizedResultsSHA256": "92b8b12acc861ede43547c56f8d4de3f703948f769083e521cb753f539966fcc"
+    },
+    {
+      "suite": 400,
+      "file": "corrected-ranking.json",
+      "identical": true,
+      "ignoredField": "keyDurationsMS",
+      "normalizedResultsSHA256": "f1dcbf272b7ad2dc6df67198e6a30357c74a699b3ed103a35574c39d73ab39c2"
+    },
+    {
+      "suite": 400,
+      "file": "corrected-commit.json",
+      "identical": true,
+      "ignoredField": "keyDurationsMS",
+      "normalizedResultsSHA256": "d4b0e229aea07c3468409256eaf1d4021c5b19c9a45a5cacf64da103e4b111be"
+    }
+  ],
+  "mainKeyboardSnapshots": {
+    "count": 33,
+    "identical": true,
+    "keyFramesIdentical": true,
+    "sha256": {
+      "chinese-320-dark.png": "5f8d8710b587d935c2c00e27f1cbbba864c41cec5b1c8b8fdd21f4f5713c9d80",
+      "chinese-320-light.png": "09b17eb9bbe5e5e94ee732fd031e6a96588a059c02f4d0d46c00b896eec9ea23",
+      "chinese-375-dark.png": "9a72414083362b8ce9741aa93d345902aa3c0737f1087ff28f17fd166d215765",
+      "chinese-375-light.png": "02f52a8e35ce27e970dadfb6410af7dc9ff38c6e236ce8dddad43fd40bc0c3f4",
+      "chinese-402-dark.png": "e99a99c68887316341401b9e0a2dc4ba3f64c67c73e029189bc9aca8e5c79b2e",
+      "chinese-402-light.png": "9ecf63d0564c25973e74fa16819e855f15e6be8ba02a85177c4dc3382a7a0da1",
+      "chinese-440-dark.png": "389b698c802f0ad9030a5c68d9f6e7865fd325487fc99fbb9de42bdc7f773f03",
+      "chinese-440-light.png": "7876ce33062e4c0435c7bd259cde8a2e90d1b8f8af92451e0be4bacfe23d6f44",
+      "chinese-874-dark.png": "29bb2523799c8a3765bd401416215fe00e16d7ce6cd4afc81dec9db5f2ccd554",
+      "chinese-874-light.png": "76108f5fc091914fa7e44f66416e687a495bd14dcbf25b461c4df28132d75afb",
+      "japanese-320-dark.png": "1449c20b31f30885f473561d96aa9467afa909219b5b38a69909238de4f2f4d3",
+      "japanese-320-light.png": "0bf44b1f9faa45d9ffc46785e7013f9b73274ae3330f306ce7d10d0a93d7f167",
+      "japanese-375-dark.png": "fc3b507e39865e9f8d073e371a57087e177c92c5849a73c56e589595ad27b775",
+      "japanese-375-light.png": "db91767e97c63df4442e4d8d1dc30daab15a000611d9bc8fc9e3f4add739caf3",
+      "japanese-402-dark.png": "66af9055c8df8a90645aa8a7b507324b26ea4d1f2f40a894db5ba94d85cb86e3",
+      "japanese-402-light.png": "2f7efa89af21ced2d1d7b1deafb8ea5ccf4da4d8bdf71c928332c434342adb07",
+      "japanese-440-dark.png": "b0869e44679d46d633fadfce4348db987e6d2b90ef9ec67abef4e41d9f118106",
+      "japanese-440-light.png": "d684d6281f8fee9498be23a41f42b0845a455ace4976f5f324ad42107034eca0",
+      "japanese-874-dark.png": "de3f2a37b0f70ca7639782dd5e9c0c59ec716e05be947b2fb6bb470ba0c3bd2c",
+      "japanese-874-light.png": "14fb31db6fdc2b944a381be3c8a11f187042e721dddea6bab7e28d7098fd5b99",
+      "popup-p.png": "18217b0b81e9e509b20075198a1eac6b7a31753e9051a50acfb792c6afea7cfb",
+      "popup-q.png": "5acf7d90d36785bc30c9cdf67aa18d06c26378f5bdd8e7f17e0d09d88761bcaf",
+      "popup-t.png": "3423842e2a3aba5464ed4c753fd62e73f448b06843058d970cc6b37bd4c0bf4b",
+      "shuangpin-320-dark.png": "345a201842e229f8d165464be60fc8df14c60a3efef122f27b2e8d3bef5f7ea0",
+      "shuangpin-320-light.png": "f81c6a8da3fbda165f1fd2a8646b33c2f30690c1034e6bd4601e9929a05ac800",
+      "shuangpin-375-dark.png": "71373443679919b4cd00bd54c5bf233309f3553132f867dbd7ad5c64b915917d",
+      "shuangpin-375-light.png": "4f5d041682d01c199d1bf37108e3481148c0193ccc6512277acb1298e011badd",
+      "shuangpin-402-dark.png": "25495a490807fea738cf32ca228bd7aa22a3c5fd6db7b14b905c528b024fa7a0",
+      "shuangpin-402-light.png": "60cf4ff73958d1a11582e6fa8233483b8aa1ff550d0a3cf0e9c965e5db42d187",
+      "shuangpin-440-dark.png": "9686f9ffafa0f57cc109198dea27958ff322043713b0a0aee1fbc5185119ce7d",
+      "shuangpin-440-light.png": "736b41a55f722c6f08dfa35d8b9f36956a944fc6d124defed93225b3f098f42d",
+      "shuangpin-874-dark.png": "66b5ad0dd529e115f6eecbf242dea15906153d41c9555279d37d99ef6c8ae406",
+      "shuangpin-874-light.png": "beed62e56fade7d922494027a6671affcef52466b588a8e4e84577907f55577c"
+    }
+  },
+  "numericSnapshots": {
+    "count": 10,
+    "changedAgainstFirstBinary": 10,
+    "unchangedOriginalSourceRecompiledAlsoChanged": 10,
+    "sourceModified": false
+  },
+  "checks": {
+    "sessionAssertions": 48,
+    "correctionInteractionAssertions": 32,
+    "keyboardInteractionAssertions": 119,
+    "crossProcessLearning": "passed",
+    "sharedRuntimeAndConflictingDirectories": "passed",
+    "standaloneCoreCompilation": "passed",
+    "UIKitRimeProxyIntegration": "passed (test proxy)",
+    "simulatorDebugBuild": "passed",
+    "iPhoneReleaseBuild": "passed (unsigned)",
+    "generatedSyllableMappings": 413,
+    "resourcesChanged": false
+  }
+}

@@ -7,25 +7,13 @@
 
 import UIKit
 
-enum SKInputSwitchState {
-    case chinese
-    case japanese
-    case mixed
-    
-    var next: SKInputSwitchState {
-        switch self {
-        case .chinese: return .japanese
-        case .japanese: return .mixed
-        case .mixed: return .chinese
-        }
-    }
-}
-
 class SKInputSwitchButton: UIButton {
     
-    var stateChangeHandler: ((SKInputSwitchState) -> Void)?
+    var onTap: (() -> Void)?
     
-    private(set) var currentState: SKInputSwitchState = .mixed
+    var currentState: SKChineseJapaneseMode = .mixed {
+        didSet { updateDisplay(); setNeedsLayout() }
+    }
     
     // UI Components
     private let singleLabel: UILabel = {
@@ -111,10 +99,7 @@ class SKInputSwitchButton: UIButton {
     }
     
     @objc private func didTapButton() {
-        currentState = currentState.next
-        stateChangeHandler?(currentState)
-        updateDisplay()
-        setNeedsLayout()
+        onTap?()
     }
     
     private func updateDisplay() {

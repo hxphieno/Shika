@@ -14,7 +14,7 @@ final class SKSpellingCorrector {
     private let count: Int
     private let pool: Int
     private let syllables: [String: String]
-    private let doublePinyin: Bool
+    private let profile: SKSpellingProfile
     private static let alphabet = Array(UInt8(97)...UInt8(122))
     private static let positions: [UInt8: (Double, Double)] = {
         var result: [UInt8: (Double, Double)] = [:]
@@ -26,37 +26,23 @@ final class SKSpellingCorrector {
         return result
     }()
 
-    init?(resources: URL, schema: String) {
-        guard let bytes = try? Data(contentsOf: resources.appendingPathComponent(schema + ".correction.bin"), options: .mappedIfSafe),
+    init?(resources: URL, configuration: SKInputConfiguration) {
+        guard let bytes = try? Data(contentsOf: resources.appendingPathComponent(configuration.schemaID + ".correction.bin"), options: .mappedIfSafe),
               bytes.count >= 8, bytes.prefix(4) == Data("SKC1".utf8) else { return nil }
         let n = bytes.withUnsafeBytes { Int($0.loadUnaligned(fromByteOffset: 4, as: UInt32.self).littleEndian) }
         guard n > 0, n <= (bytes.count - 8) / 16 else { return nil }
         data = bytes; count = n; pool = 8 + n * 16
-        doublePinyin = schema == "shika_flypy"
-        syllables = (try? JSONDecoder().decode([String: String].self,
-            from: Data(contentsOf: resources.appendingPathComponent("correction-syllables.json")))) ?? [:]
+        profile = configuration.spelling
+        syllables = profile.syllableResource.flatMap { name in
+            try? JSONDecoder().decode([String: String].self,
+                from: Data(contentsOf: resources.appendingPathComponent(name)))
+        } ?? [:]
     }
 
     /// Rime's spelling comment describes the whole candidate, including learned
     /// phrases. Comparing its canonical code protects exact user words as well.
     func isExact(comment: String, input: String) -> Bool {
-        let parts = comment.split(whereSeparator: { $0 == " " || $0 == "'" })
-        guard !parts.isEmpty else { return false }
-        let code: String
-        if doublePinyin {
-            let mapped = parts.compactMap { syllables[String($0)] }
-            guard mapped.count == parts.count else { return false }
-            code = mapped.joined()
-        } else {
-            code = parts.joined().replacingOccurrences(of: "nue", with: "nve")
-                .replacingOccurrences(of: "lue", with: "lve")
-        }
-        var normalizedInput = input.replacingOccurrences(of: "'", with: "")
-        if !doublePinyin {
-            normalizedInput = normalizedInput.replacingOccurrences(of: "nue", with: "nve")
-                .replacingOccurrences(of: "lue", with: "lve")
-        }
-        return code == normalizedInput
+        profile.isExact(comment: comment, input: input, syllables: syllables)
     }
 
     func suggestions(for input: String) -> [Suggestion] {

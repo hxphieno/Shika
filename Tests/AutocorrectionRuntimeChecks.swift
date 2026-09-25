@@ -68,7 +68,7 @@ private final class RuntimeApp: UIResponder, UIApplicationDelegate {
         sample("before-engine", iteration: 0)
         do {
             let start = CFAbsoluteTimeGetCurrent()
-            engine = try SKRimeEngine(schema: "shika_flypy", userURL: documents.appendingPathComponent("runtime-user-" + UUID().uuidString))
+            engine = try SKRimeEngine(configuration: SKInputScheme.shuangpin.configuration, userURL: documents.appendingPathComponent("runtime-user-" + UUID().uuidString))
             initMilliseconds = (CFAbsoluteTimeGetCurrent() - start) * 1000
             sample("after-initialization", iteration: 0)
             iteration(1)
@@ -89,7 +89,7 @@ private final class RuntimeApp: UIResponder, UIApplicationDelegate {
             do {
                 _ = engine.clear()
                 let switchStart = CFAbsoluteTimeGetCurrent()
-                _ = try engine.selectSchema(schema)
+                _ = try engine.selectConfiguration(SKInputScheme(schemaID: schema)!.configuration)
                 switchTimes.append((CFAbsoluteTimeGetCurrent() - switchStart) * 1000)
                 var state = SKEngineState()
                 for key in test.0.utf8 {

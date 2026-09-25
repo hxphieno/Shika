@@ -9,19 +9,27 @@ static NSRecursiveLock *RimeLock(void) {
 }
 static NSString *Text(const char *text) { return text ? [NSString stringWithUTF8String:text] ?: @"" : @""; }
 
-@implementation SKRimeSession {
-    RimeSessionId _session;
-    RimeApi *_api;
-}
-- (instancetype)initWithSharedPath:(NSString *)sharedPath userPath:(NSString *)userPath schema:(NSString *)schema error:(NSError **)error {
-    self = [super init];
-    if (!self) return nil;
-    [RimeLock() lock];
-    _api = rime_get_api();
-    static BOOL initialized = NO;
-    if (!initialized) {
+// Process lifetime is separate from session lifetime. Call under RimeLock().
+// All sessions in one extension process share the same immutable directories.
+@interface SKRimeRuntime : NSObject
++ (RimeApi *)prepareSharedPath:(NSString *)sharedPath userPath:(NSString *)userPath error:(NSError **)error;
+@end
+
+@implementation SKRimeRuntime
++ (RimeApi *)prepareSharedPath:(NSString *)sharedPath userPath:(NSString *)userPath error:(NSError **)error {
+    RimeApi *api = rime_get_api();
+    static NSString *sharedDirectory;
+    static NSString *userDirectory;
+    sharedPath = sharedPath.stringByStandardizingPath;
+    userPath = userPath.stringByStandardizingPath;
+    if (sharedDirectory && (![sharedDirectory isEqualToString:sharedPath] || ![userDirectory isEqualToString:userPath])) {
+        if (error) *error = [NSError errorWithDomain:@"Shika.Rime" code:2
+            userInfo:@{NSLocalizedDescriptionKey: @"Rime 运行时已使用另一组资源目录初始化"}];
+        return NULL;
+    }
+    if (!sharedDirectory) {
         if (![[NSFileManager defaultManager] createDirectoryAtPath:userPath withIntermediateDirectories:YES attributes:nil error:error]) {
-            [RimeLock() unlock]; return nil;
+            return NULL;
         }
         // Production uses precompiled bundle data. Never deploy or write into the bundle.
         RIME_STRUCT(RimeTraits, traits);
@@ -33,10 +41,25 @@ static NSString *Text(const char *text) { return text ? [NSString stringWithUTF8
         traits.log_dir = "";
         static const char *modules[] = {"default", NULL};
         traits.modules = modules;
-        _api->setup(&traits);
-        _api->initialize(&traits);
-        initialized = YES;
+        api->setup(&traits);
+        api->initialize(&traits);
+        sharedDirectory = [sharedPath copy];
+        userDirectory = [userPath copy];
     }
+    return api;
+}
+@end
+
+@implementation SKRimeSession {
+    RimeSessionId _session;
+    RimeApi *_api;
+}
+- (instancetype)initWithSharedPath:(NSString *)sharedPath userPath:(NSString *)userPath schema:(NSString *)schema error:(NSError **)error {
+    self = [super init];
+    if (!self) return nil;
+    [RimeLock() lock];
+    _api = [SKRimeRuntime prepareSharedPath:sharedPath userPath:userPath error:error];
+    if (!_api) { [RimeLock() unlock]; return nil; }
     _session = _api->create_session();
     BOOL ok = _session && _api->select_schema(_session, schema.UTF8String);
     if (ok) _api->set_option(_session, "ascii_mode", False);

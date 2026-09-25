@@ -4,26 +4,26 @@ import Foundation
 @MainActor
 final class SKInputSession {
     private let engine: SKInputEngine
+    private var configuration: SKInputConfiguration
     private let insertText: (String) -> Void
     private let deleteText: () -> Void
     private(set) var state = SKEngineState()
     var onUpdate: ((SKEngineState) -> Void)?
 
-    init(engine: SKInputEngine, insertText: @escaping (String) -> Void, deleteText: @escaping () -> Void) {
+    init(engine: SKInputEngine, configuration: SKInputConfiguration, insertText: @escaping (String) -> Void, deleteText: @escaping () -> Void) {
         self.engine = engine
+        self.configuration = configuration
         self.insertText = insertText
         self.deleteText = deleteText
     }
 
     func type(_ text: String) {
-        if text == " " && !state.input.isEmpty {
-            apply(engine.process(key: 0x20))
-        } else if text.unicodeScalars.count == 1, let scalar = text.unicodeScalars.first,
-                  (97...122).contains(scalar.value) || scalar.value == 39 {
-            let next = engine.process(key: Int32(scalar.value))
+        switch configuration.inputPolicy.action(for: text, isComposing: !state.input.isEmpty) {
+        case let .engineKey(key, insertIfUnhandled):
+            let next = engine.process(key: key)
             apply(next)
-            if !next.handled { insertText(text) }
-        } else {
+            if insertIfUnhandled && !next.handled { insertText(text) }
+        case .literal:
             commitPending()
             insertText(text)
         }
@@ -53,9 +53,11 @@ final class SKInputSession {
         apply(engine.commit())
     }
 
-    func switchSchema(to schema: String) throws {
+    func switchConfiguration(to configuration: SKInputConfiguration) throws {
         commitPending()
-        apply(try engine.selectSchema(schema))
+        let result = try engine.selectConfiguration(configuration)
+        self.configuration = configuration
+        apply(result)
     }
 
     private func apply(_ result: SKEngineState) {
