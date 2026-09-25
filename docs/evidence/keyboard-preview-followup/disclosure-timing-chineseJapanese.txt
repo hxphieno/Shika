@@ -1,0 +1,1 @@
+chineseJapanese: slowest synchronous expand + layout + collapse + layout across 20 cycles = 5.989291705191135 ms

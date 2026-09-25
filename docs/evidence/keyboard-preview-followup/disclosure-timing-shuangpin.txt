@@ -1,0 +1,1 @@
+shuangpin: slowest synchronous expand + layout + collapse + layout across 20 cycles = 5.315833375789225 ms

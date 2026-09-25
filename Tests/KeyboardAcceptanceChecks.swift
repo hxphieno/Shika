@@ -38,6 +38,25 @@ private final class KeyboardAcceptanceApp: UIResponder, UIApplicationDelegate {
         }
         try? image.pngData()?.write(to: output.appendingPathComponent(name + ".png"))
     }
+    // Read the rendered silhouette, independently of the path construction.
+    func silhouette(_ view: UIView) -> [(Int, Int)?] {
+        let width = Int(ceil(view.bounds.width)), height = Int(ceil(view.bounds.height))
+        var pixels = [UInt8](repeating: 0, count: width * height * 4)
+        pixels.withUnsafeMutableBytes { storage in
+            let context = CGContext(data: storage.baseAddress, width: width, height: height,
+                bitsPerComponent: 8, bytesPerRow: width * 4, space: CGColorSpaceCreateDeviceRGB(),
+                bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)!
+            context.translateBy(x: 0, y: CGFloat(height)); context.scaleBy(x: 1, y: -1)
+            // drawHierarchy would include the shadow; layer rendering preserves
+            // the view's actual cap silhouette while a high alpha excludes it.
+            view.layer.render(in: context)
+        }
+        return (0..<height).map { y in
+            let occupied = (0..<width).filter { pixels[(y * width + $0) * 4 + 3] > 200 }
+            guard let first = occupied.first, let last = occupied.last else { return nil }
+            return (first, last)
+        }
+    }
     func application(_ app: UIApplication, didFinishLaunchingWithOptions options: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let host = UIViewController()
@@ -90,6 +109,34 @@ private final class KeyboardAcceptanceApp: UIResponder, UIApplicationDelegate {
                         expect(frame.minY >= 2 && frame.minX >= 2 && frame.maxX <= width - 2, "\(scheme) \(width) \(title): preview shadow has edge clearance")
                         expect(frame.minY < keyFrame.minY - 20, "\(scheme) \(width) \(title): preview rises visibly above key")
                         expect(!preview.isUserInteractionEnabled, "\(scheme) \(width) \(title): preview cannot steal touches")
+                        let rows = silhouette(preview)
+                        let fullWidth = Int(ceil(preview.bounds.width))
+                        // A 51pt cap must retain full width for its straight sides;
+                        // these pixels would fail on the old shortened 27pt cap.
+                        for y in [15, 25, 35, 45, 50] {
+                            expect(rows[y].map { $0.0 <= 1 && $0.1 >= fullWidth - 2 } == true,
+                                   "\(scheme) \(width) \(title): rendered cap keeps full width at y=\(y)")
+                        }
+                        expect(SKMainKeyPreview.font.pointSize == 37, "\(scheme) \(width) \(title): preview letter retains 37pt size")
+                        let localKey = key.convert(key.bounds, to: preview)
+                        // Exclude the original 8pt bottom-key corner, not the waist.
+                        let waistEnd = min(rows.count - 9, Int(localKey.maxY) - 9)
+                        if title == "q" {
+                            expect((12...waistEnd).allSatisfy { rows[$0].map { $0.0 <= 1 } == true },
+                                   "\(scheme) \(width): Q outer side remains straight through cap and waist")
+                        }
+                        if title == "p" {
+                            expect((12...waistEnd).allSatisfy { rows[$0].map { $0.1 >= fullWidth - 2 } == true },
+                                   "\(scheme) \(width): P outer side remains straight through cap and waist; width=\(preview.bounds.width) key=\(localKey), rows=\((12...waistEnd).filter { rows[$0].map { $0.1 < fullWidth - 2 } ?? true }.map { "\($0):\(String(describing: rows[$0]))" })")
+                        }
+                        if waistEnd > 52 {
+                            for y in 52...waistEnd {
+                                if let prior = rows[y - 1], let row = rows[y] {
+                                    expect(row.0 >= prior.0 - 1 && row.1 <= prior.1 + 1,
+                                           "\(scheme) \(width) \(title): waist does not reverse at y=\(y)")
+                                }
+                            }
+                        }
                         if width == 402 || (width == 320 && title == "q") || (width == 874 && title == "p") {
                             capture(controller.view, "acceptance-preview-\(scheme)-\(Int(width))-\(title)")
                         }
@@ -149,6 +196,18 @@ private final class KeyboardAcceptanceApp: UIResponder, UIApplicationDelegate {
                 let hit = controller.view.hitTest(arrow.convert(point, to: controller.view), with: nil)
                 expect(hit === arrow || hit?.isDescendant(of: arrow) == true, "\(scheme): arrow edge remains tappable")
             }
+            expect(arrow.bounds.width >= 60, "\(scheme): disclosure reserves 60pt target")
+            for point in [CGPoint(x: -0.1, y: 22), CGPoint(x: 60.1, y: 22), CGPoint(x: 30, y: -0.1), CGPoint(x: 30, y: 44.1)] {
+                expect(!arrow.point(inside: point, with: nil), "\(scheme): initial disclosure hit excludes neighboring regions")
+            }
+            let leftOfArrow = arrow.convert(CGPoint(x: -1, y: 22), to: controller.view)
+            let belowArrow = arrow.convert(CGPoint(x: 30, y: 45), to: controller.view)
+            expect(controller.view.hitTest(leftOfArrow, with: nil) !== arrow, "\(scheme): adjacent candidate region is not stolen")
+            expect(controller.view.hitTest(belowArrow, with: nil) !== arrow, "\(scheme): main key region is not stolen")
+            arrow.isHighlighted = true
+            expect(arrow.backgroundColor != .clear, "\(scheme): disclosure press shows immediate highlight")
+            arrow.isHighlighted = false
+            expect(arrow.backgroundColor == .clear, "\(scheme): disclosure release clears highlight")
             let before = controller.proxy.marked
             scroll.setContentOffset(CGPoint(x: min(70, scroll.contentSize.width - scroll.bounds.width), y: 0), animated: false)
             expect(controller.proxy.marked == before && controller.proxy.text.isEmpty, "\(scheme): candidate scroll does not commit or change composition")
@@ -157,6 +216,24 @@ private final class KeyboardAcceptanceApp: UIResponder, UIApplicationDelegate {
             expect(!grid.isHidden && main.isHidden && mode.isHidden, "\(scheme): arrow expands grid without mode marker")
             arrow.sendActions(for: .touchUpInside); controller.view.layoutIfNeeded()
             expect(grid.isHidden && !main.isHidden && controller.proxy.marked == before, "\(scheme): collapse restores keys and composition")
+            let collection = acceptanceTree(grid).compactMap { $0 as? UICollectionView }.first!
+            let initialExpandedCount = collection.numberOfItems(inSection: 0)
+            expect(initialExpandedCount > 8, "\(scheme): first expansion loads more than the initial strip")
+            var maximumToggleMilliseconds: Double = 0
+            for cycle in 0..<20 {
+                let start = CACurrentMediaTime()
+                arrow.sendActions(for: .touchUpInside); controller.view.layoutIfNeeded()
+                expect(!grid.isHidden && main.isHidden, "\(scheme): repeated disclosure expands cycle \(cycle)")
+                expect(collection.numberOfItems(inSection: 0) == initialExpandedCount,
+                       "\(scheme): reopening does not append candidate pages cycle \(cycle)")
+                arrow.sendActions(for: .touchUpInside); controller.view.layoutIfNeeded()
+                maximumToggleMilliseconds = max(maximumToggleMilliseconds, (CACurrentMediaTime() - start) * 1000)
+                expect(grid.isHidden && !main.isHidden && controller.proxy.marked == before,
+                       "\(scheme): repeated disclosure collapses without changing text cycle \(cycle)")
+            }
+            let timing = "\(scheme): slowest synchronous expand + layout + collapse + layout across 20 cycles = \(maximumToggleMilliseconds) ms\n"
+            let timingURL = output.appendingPathComponent("disclosure-timing-" + scheme + ".txt")
+            try? timing.write(to: timingURL, atomically: true, encoding: .utf8)
             capture(controller.view, "acceptance-candidate-filled-" + scheme)
             controller.didTapKey(" "); controller.view.layoutIfNeeded()
             expect(!controller.proxy.text.isEmpty && controller.proxy.marked == nil && !mode.isHidden, "\(scheme): selection commits and restores mode")
