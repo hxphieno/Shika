@@ -16,6 +16,7 @@ final class SKRimeEngine: SKInputEngine {
     private var syllableCacheOrder: [String] = []
     private let userDirectory: URL
     private var learnedSpellings: SKLearnedSpellingIndex?
+    private var spellingProfile: SKSpellingProfile
     private var displayed = SKEngineState()
 
     init(configuration: SKInputConfiguration, resourceURL: URL? = nil, userURL: URL? = nil, correctionEnabled: Bool = true) throws {
@@ -26,6 +27,7 @@ final class SKRimeEngine: SKInputEngine {
         self.resources = resources
         self.userDirectory = directory
         self.correctionEnabled = correctionEnabled
+        spellingProfile = configuration.spelling
         session = try SKRimeSession(sharedPath: resources.path, userPath: directory.path, schema: configuration.schemaID)
         probe = try SKRimeSession(sharedPath: resources.path, userPath: directory.path, schema: configuration.schemaID)
         segmentationCandidates = SKPinyinSegmentationCandidates(resources: resources, configuration: configuration)
@@ -102,8 +104,18 @@ final class SKRimeEngine: SKInputEngine {
     }
 
     private func finish(_ state: SKEngineState, code: String) -> SKEngineState {
-        if !state.committedText.isEmpty, state.input.isEmpty {
-            learnedSpellings?.record(code: code, text: state.committedText)
+        if let learnedSpellings, !state.committedText.isEmpty, state.input.isEmpty {
+            if spellingProfile == .doublePinyin {
+                learnedSpellings.record(code: code, text: state.committedText)
+            } else if (4...48).contains(code.utf8.count) {
+                // Full pinyin can also commit abbreviations or partial readings.
+                // Record only a complete spelling verified by the native comment,
+                // including phrases just learned through multiple selections.
+                let exact = decode(probe.replaceInput(code)).candidates.contains {
+                    $0.text == state.committedText && spellingProfile.isExact(comment: $0.comment, input: code, syllables: [:])
+                }
+                if exact { learnedSpellings.record(code: code.replacingOccurrences(of: "'", with: ""), text: state.committedText) }
+            }
         }
         return present(state)
     }
@@ -111,7 +123,8 @@ final class SKRimeEngine: SKInputEngine {
     private func configureSyllableSearch(_ configuration: SKInputConfiguration) {
         invalidateSyllableCache()
         syllableProbe = nil; syllableCandidates = nil
-        learnedSpellings = correctionEnabled && configuration.spelling == .doublePinyin ? SKLearnedSpellingIndex(userDirectory: userDirectory) : nil
+        spellingProfile = configuration.spelling
+        learnedSpellings = correctionEnabled ? SKLearnedSpellingIndex(userDirectory: userDirectory, profile: configuration.spelling) : nil
         guard correctionEnabled, configuration.spelling == .doublePinyin,
               FileManager.default.fileExists(atPath: resources.appendingPathComponent("build/shika_flypy_assist.schema.yaml").path),
               let helper = try? SKRimeSession(sharedPath: resources.path, userPath: userDirectory.path, schema: "shika_flypy_assist") else { return }

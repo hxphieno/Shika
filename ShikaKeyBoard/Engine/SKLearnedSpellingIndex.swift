@@ -8,21 +8,27 @@ final class SKLearnedSpellingIndex {
         let text: String
     }
     private let url: URL
+    private let profile: SKSpellingProfile
     private var entries: [Entry]
     private static let capacity = 512
+    private static let byteLimit = 131072
 
-    init(userDirectory: URL) {
-        url = userDirectory.appendingPathComponent("double-pinyin-spelling.json")
+    init(userDirectory: URL, profile: SKSpellingProfile = .doublePinyin) {
+        self.profile = profile
+        let filename = profile == .doublePinyin ? "double-pinyin-spelling.json" : "full-pinyin-spelling.json"
+        url = userDirectory.appendingPathComponent(filename)
         let size = (try? url.resourceValues(forKeys: [.fileSizeKey]).fileSize) ?? 0
-        if size > 0, size <= 131072, let data = try? Data(contentsOf: url),
+        if size > 0, size <= Self.byteLimit, let data = try? Data(contentsOf: url),
            let decoded = try? JSONDecoder().decode([Entry].self, from: data) {
-            entries = Array(decoded.filter(Self.valid).suffix(Self.capacity))
+            entries = Array(decoded.filter { Self.valid($0, profile: profile) }.suffix(Self.capacity))
         } else { entries = [] }
     }
 
-    private static func valid(_ entry: Entry) -> Bool {
+    private static func valid(_ entry: Entry, profile: SKSpellingProfile) -> Bool {
         let code = entry.code.utf8
-        return (4...48).contains(code.count) && code.count == entry.text.count * 2 &&
+        let lengthMatches = profile == .doublePinyin ? code.count == entry.text.count * 2 :
+            entry.text.count >= 2 && (entry.text.count...entry.text.count * 6).contains(code.count)
+        return (4...48).contains(code.count) && lengthMatches &&
             code.allSatisfy { (97...122).contains($0) } &&
             entry.text.unicodeScalars.allSatisfy {
                 (0x3400...0x9fff).contains($0.value) || (0x20000...0x323af).contains($0.value)
@@ -31,11 +37,20 @@ final class SKLearnedSpellingIndex {
 
     func record(code: String, text: String) {
         let entry = Entry(code: code, text: text)
-        guard Self.valid(entry), entries.last != entry else { return }
+        guard Self.valid(entry, profile: profile), entries.last != entry else { return }
         entries.removeAll { $0 == entry }
         entries.append(entry)
         if entries.count > Self.capacity { entries.removeFirst(entries.count - Self.capacity) }
-        if let data = try? JSONEncoder().encode(entries) { try? data.write(to: url, options: .atomic) }
+        let encoder = JSONEncoder()
+        guard var data = try? encoder.encode(entries) else { return }
+        // Supplementary Han characters use four UTF-8 bytes. A record-count
+        // bound alone can exceed our own reload limit for long full-pinyin words.
+        while data.count > Self.byteLimit {
+            entries.removeFirst()
+            guard let trimmed = try? encoder.encode(entries) else { return }
+            data = trimmed
+        }
+        try? data.write(to: url, options: .atomic)
     }
 
     func suggestions(for input: String) -> [Entry] {
