@@ -44,6 +44,7 @@ final class SmokeApp: UIResponder, UIApplicationDelegate {
     func check(_ host: UIViewController) {
         let output = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         UserDefaults.standard.set("shuangpin", forKey: SKInputScheme.preferenceKey)
+        UserDefaults.standard.set("chinese", forKey: SKChineseJapaneseMode.preferenceKey)
         let start = Date()
         let controller = TestKeyboardController()
         host.addChild(controller)
@@ -82,12 +83,12 @@ final class SmokeApp: UIResponder, UIApplicationDelegate {
         for key in "vsgo" { tap(String(key), in: double) }
         tap("🦌", in: double)
         assert(!mixed.isHidden && controller.proxy.text.hasSuffix("中国"))
-        for _ in 0..<3 {
-            for key in "nihao" { tap(String(key), in: mixed) }
-            tap("你好", in: bar)
+        for (input, target) in [("nihao", "你好"), ("nihon", "日本"), ("nihao", "你好")] {
+            for key in input { tap(String(key), in: mixed) }
+            tap(target, in: bar)
             language.sendActions(for: .touchUpInside)
         }
-        assert(controller.proxy.text.hasSuffix("你好你好你好"))
+        assert(controller.proxy.text.hasSuffix("你好日本你好"))
         tap("🦌", in: mixed)
         for key in "nihc" { tap(String(key), in: double) }
         controller.view.layoutIfNeeded()

@@ -5,4 +5,8 @@ struct SKKeyboardState {
     var scheme: SKInputScheme
     var languageMode: SKChineseJapaneseMode = .mixed
     var layout: SKKeyboardLayoutType = .alphabet
+
+    var configuration: SKInputConfiguration {
+        scheme == .chineseJapanese ? SKChineseJapaneseScheme.configuration(for: languageMode) : scheme.configuration
+    }
 }

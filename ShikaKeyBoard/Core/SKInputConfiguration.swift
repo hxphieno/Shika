@@ -5,10 +5,15 @@ struct SKInputConfiguration {
     let schemaID: String
     let inputPolicy: SKInputPolicy
     let spelling: SKSpellingProfile
+    var language: SKConversionLanguage = .chinese
 }
+
+enum SKConversionLanguage { case chinese, japanese, mixed }
 
 enum SKInputPolicy {
     case chineseRomanization
+    case japaneseRomanization
+    case mixedRomanization
 
     enum Action {
         case engineKey(Int32, insertIfUnhandled: Bool)
@@ -18,8 +23,11 @@ enum SKInputPolicy {
     /// Newline, uppercase letters and symbols retain the existing MVP behavior.
     func action(for text: String, isComposing: Bool) -> Action {
         switch self {
-        case .chineseRomanization:
+        case .chineseRomanization, .japaneseRomanization, .mixedRomanization:
             if text == " " && isComposing { return .engineKey(0x20, insertIfUnhandled: false) }
+            if self == .japaneseRomanization && (text == "ー" || text == "-") {
+                return .engineKey(45, insertIfUnhandled: false)
+            }
             guard text.unicodeScalars.count == 1, let scalar = text.unicodeScalars.first,
                   (97...122).contains(scalar.value) || scalar.value == 39 else { return .literal }
             return .engineKey(Int32(scalar.value), insertIfUnhandled: true)

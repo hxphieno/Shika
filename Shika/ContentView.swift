@@ -12,7 +12,7 @@ struct ContentView: View {
             Form {
                 Section("启用键盘") {
                     Text("在系统设置 → 通用 → 键盘 → 键盘 → 添加新键盘中选择 Shika。输入时使用地球图标切换到 Shika。")
-                    Text("无需开启完全访问。点击 🦌 切换双拼与中文全拼；中／日／混合三个状态目前均提供中文全拼。")
+                    Text("无需开启完全访问。点击 🦌 切换双拼与中日键盘；中／日／混分别提供中文拼音、日文罗马字及两种语言的候选。")
                         .foregroundStyle(.secondary)
                 }
                 Section("试着输入") {

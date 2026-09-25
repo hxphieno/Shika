@@ -29,7 +29,10 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         }
         languageButton.onTap = { [weak self] in
             guard let self else { return }
-            keyboardState.languageMode = keyboardState.languageMode.next
+            let next = keyboardState.languageMode.next
+            do { try inputSession?.switchConfiguration(to: SKChineseJapaneseScheme.configuration(for: next)) }
+            catch { candidateBar.showError(); return }
+            keyboardState.languageMode = next
             UserDefaults.standard.set(keyboardState.languageMode.rawValue, forKey: SKChineseJapaneseMode.preferenceKey)
             renderLanguageMode()
         }
@@ -97,8 +100,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
 
     private func loadEngine() {
         do {
-            let engine = try SKRimeEngine(configuration: keyboardState.scheme.configuration)
-            let session = SKInputSession(engine: engine, configuration: keyboardState.scheme.configuration,
+            let engine = try SKConversionEngine(configuration: keyboardState.configuration)
+            let session = SKInputSession(engine: engine, configuration: keyboardState.configuration,
                 insertText: { [weak self] text in
                     guard let self else { return }
                     textConnection.insert(text, in: textDocumentProxy)
@@ -173,7 +176,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
 
     func didTapSwitchScheme() {
         let next = keyboardState.scheme.next
-        do { try inputSession?.switchConfiguration(to: next.configuration) }
+        do { try inputSession?.switchConfiguration(to: next == .chineseJapanese
+            ? SKChineseJapaneseScheme.configuration(for: keyboardState.languageMode) : next.configuration) }
         catch { candidateBar.showError(); return }
         candidatesExpanded = false
         keyboardState.scheme = next
@@ -193,7 +197,6 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func renderLanguageMode() {
-        // All three modes retain the Chinese conversion baseline in this MVP.
         languageButton.currentState = keyboardState.languageMode
         chineseJapaneseView.currentLanguageState = keyboardState.languageMode
     }

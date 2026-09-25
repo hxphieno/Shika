@@ -45,6 +45,7 @@ private func tree(_ view: UIView) -> [UIView] { [view] + view.subviews.flatMap(t
     func run(_ host: UIViewController) async {
         let output = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         UserDefaults.standard.set("chineseJapanese", forKey: SKInputScheme.preferenceKey)
+        UserDefaults.standard.set("chinese", forKey: SKChineseJapaneseMode.preferenceKey)
         let controller = EditorKeyboard(), editor = controller.proxy.editor
         editor.frame = CGRect(x: 16, y: 90, width: 370, height: 140)
         editor.font = .systemFont(ofSize: 24)
