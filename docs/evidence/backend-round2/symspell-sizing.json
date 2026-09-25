@@ -1,0 +1,16 @@
+{
+  "shika_flypy.correction.bin": {
+    "dictionaryCodes": 963122,
+    "fileBytes": 31733131,
+    "uncoalescedDeletePostingUpperCountForPrefix7AndDistance1": 7056116,
+    "postingIDsOnlyBytesAtUInt32": 28224464,
+    "note": "Sizing only, not a built SymSpell index. Does not include keys/hash overhead and repeated-letter deletion dedup can reduce postings; not an RSS prediction."
+  },
+  "shika_pinyin.correction.bin": {
+    "dictionaryCodes": 962355,
+    "fileBytes": 35206502,
+    "uncoalescedDeletePostingUpperCountForPrefix7AndDistance1": 7629649,
+    "postingIDsOnlyBytesAtUInt32": 30518596,
+    "note": "Sizing only, not a built SymSpell index. Does not include keys/hash overhead and repeated-letter deletion dedup can reduce postings; not an RSS prediction."
+  }
+}

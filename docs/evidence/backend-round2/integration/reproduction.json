@@ -1,0 +1,29 @@
+{
+  "script": "scripts/test-full-pinyin-learning.sh",
+  "results": {
+    "learn": {
+      "failed": 0,
+      "mode": "learn",
+      "passed": 99,
+      "platform": "macOS native production engine; no UIKit or device"
+    },
+    "probe": {
+      "failed": 0,
+      "mode": "probe",
+      "passed": 115,
+      "platform": "macOS native production engine; no UIKit or device"
+    },
+    "disabled": {
+      "failed": 0,
+      "mode": "disabled",
+      "passed": 16,
+      "platform": "macOS native production engine; no UIKit or device"
+    },
+    "index": {
+      "failed": 0,
+      "mode": "index",
+      "passed": 8,
+      "platform": "macOS native production engine; no UIKit or device"
+    }
+  }
+}

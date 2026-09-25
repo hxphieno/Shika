@@ -1,0 +1,10 @@
+{
+  "gateFrozenBeforeRun": {
+    "additionalFullPinyinCommitP95MS": 2,
+    "absoluteCommitP95MS": 10
+  },
+  "additionalP95MS": 1.263876,
+  "passed": true,
+  "learningMetadataByteBudgetFixAfterRun": "Only affects oversized metadata; measured six short words never approach the byte limit. Final simulator run includes the fix.",
+  "productionOnlySourceHashesAreIn": "baseline/current source snapshots under /tmp/shika-backend-r2"
+}

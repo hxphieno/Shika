@@ -1,0 +1,133 @@
+{
+  "environment" : "iOS Simulator UIKit host, production Rime and Swift; not a keyboard extension process or physical device",
+  "failures" : [
+
+  ],
+  "initial20To120GrowthBytes" : 475136,
+  "initializationMilliseconds" : 58.848023414611816,
+  "keyCount" : 1687,
+  "keyMaxMilliseconds" : 59.66496467590332,
+  "keyP50Milliseconds" : 0.39398670196533203,
+  "keyP95Milliseconds" : 1.3250112533569336,
+  "keyP99Milliseconds" : 2.3400783538818359,
+  "lateWindowGrowthBytes" : 32768,
+  "lateWindowSpreadBytes" : 32768,
+  "memorySamples" : [
+    {
+      "phase" : "before-engine",
+      "physFootprintBytes" : 21678168,
+      "switches" : 0
+    },
+    {
+      "phase" : "after-initialization",
+      "physFootprintBytes" : 27330672,
+      "switches" : 0
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 29771960,
+      "switches" : 1
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 35588400,
+      "switches" : 10
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 35932488,
+      "switches" : 20
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36342088,
+      "switches" : 40
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36358472,
+      "switches" : 60
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36358472,
+      "switches" : 80
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36374856,
+      "switches" : 100
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36407624,
+      "switches" : 120
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36424008,
+      "switches" : 140
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36424008,
+      "switches" : 160
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36424008,
+      "switches" : 180
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36424008,
+      "switches" : 200
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36440392,
+      "switches" : 220
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36440392,
+      "switches" : 240
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36440392,
+      "switches" : 260
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36440392,
+      "switches" : 280
+    },
+    {
+      "phase" : "after-switches",
+      "physFootprintBytes" : 36440392,
+      "switches" : 300
+    },
+    {
+      "phase" : "after-session-release",
+      "physFootprintBytes" : 36407576,
+      "switches" : 300
+    },
+    {
+      "phase" : "after-keyboard-screenshots",
+      "physFootprintBytes" : 50809304,
+      "switches" : 300
+    },
+    {
+      "phase" : "after-ui-autorelease-drain",
+      "physFootprintBytes" : 51022296,
+      "switches" : 300
+    }
+  ],
+  "memoryStable" : true,
+  "notes" : "Footprint includes this UIKit host and Rime process-global caches. Samples 120–300 assess sustained growth after an extended warm-up. The 20–120 initial growth remains separately reported. The growth\/spread thresholds are 8\/12 MiB. Input timings include production decoding and correction; compiler optimization is recorded by the invoking script. The repeated small word set is for stress\/retention, not correction accuracy.",
+  "osVersion" : "26.5",
+  "stabilityWindowStart" : 120,
+  "switchCount" : 300,
+  "switchP95Milliseconds" : 3.8979053497314453
+}

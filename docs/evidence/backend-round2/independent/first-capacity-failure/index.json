@@ -1,0 +1,51 @@
+{
+  "checks" : [
+    {
+      "detail" : "",
+      "name" : "full corrupt JSON is ignored",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "full valid record replaces corrupt JSON",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "invalid full metadata is rejected",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "oversized full JSON is ignored",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "full capacity retains newest 512",
+      "passed" : true
+    },
+    {
+      "detail" : "bytes=134145",
+      "name" : "full maximum accepted Unicode entries fit own load bound",
+      "passed" : false
+    },
+    {
+      "detail" : "",
+      "name" : "restart restores newest full capacity entry",
+      "passed" : false
+    },
+    {
+      "detail" : "",
+      "name" : "full metadata never creates double file",
+      "passed" : true
+    }
+  ],
+  "failed" : 2,
+  "mode" : "index",
+  "observations" : [
+
+  ],
+  "passed" : 6,
+  "platform" : "macOS native production engine; no UIKit or device"
+}

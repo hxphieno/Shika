@@ -1,0 +1,42 @@
+{
+  "order": [
+    "after",
+    "before"
+  ],
+  "cases": 1542,
+  "allSignaturesIdentical": true,
+  "signatures": 22886,
+  "before": {
+    "shika_flypy.cold": {
+      "count": 34329,
+      "p50MS": 0.061625,
+      "p95MS": 0.190458,
+      "p99MS": 0.257459,
+      "totalMS": 2503.4729249999796
+    },
+    "shika_flypy.retype": {
+      "count": 34329,
+      "p50MS": 0.000125,
+      "p95MS": 0.000208,
+      "p99MS": 0.000333,
+      "totalMS": 4.320430000001436
+    }
+  },
+  "after": {
+    "shika_flypy.cold": {
+      "count": 34329,
+      "p50MS": 0.041458,
+      "p95MS": 0.173792,
+      "p99MS": 0.226875,
+      "totalMS": 2078.0420930000755
+    },
+    "shika_flypy.retype": {
+      "count": 34329,
+      "p50MS": 0.000125,
+      "p95MS": 0.000208,
+      "p99MS": 0.000292,
+      "totalMS": 4.152501000001459
+    }
+  },
+  "purpose": "Control for baseline-first file/cache warmup in the first run; double-pinyin subset of the same frozen inputs"
+}

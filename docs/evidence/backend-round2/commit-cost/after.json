@@ -1,0 +1,44 @@
+{
+  "failures" : [
+
+  ],
+  "note" : "Repeated fixed words measure selection\/learning overhead, not ranking accuracy or natural usage.",
+  "peakRSSBytes" : 43089920,
+  "platform" : "macOS native engine, optimized build, fresh user directory",
+  "profiles" : [
+    {
+      "commits" : {
+        "count" : 120,
+        "maxMS" : 7.1132910000000003,
+        "p50MS" : 0.85370800000000002,
+        "p95MS" : 1.2553749999999999,
+        "p99MS" : 1.6460840000000001
+      },
+      "keys" : {
+        "count" : 480,
+        "maxMS" : 0.73204199999999997,
+        "p50MS" : 0.16170899999999999,
+        "p95MS" : 0.32208300000000001,
+        "p99MS" : 0.48362500000000003
+      },
+      "schema" : "shika_flypy"
+    },
+    {
+      "commits" : {
+        "count" : 120,
+        "maxMS" : 1.6401250000000001,
+        "p50MS" : 0.95450000000000002,
+        "p95MS" : 1.2880419999999999,
+        "p99MS" : 1.618333
+      },
+      "keys" : {
+        "count" : 800,
+        "maxMS" : 0.79037500000000005,
+        "p50MS" : 0.24520900000000001,
+        "p95MS" : 0.49354100000000001,
+        "p99MS" : 0.63983299999999999
+      },
+      "schema" : "shika_pinyin"
+    }
+  ]
+}

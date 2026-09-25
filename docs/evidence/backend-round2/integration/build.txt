@@ -1,0 +1,3 @@
+iPhone generic device build: BUILD SUCCEEDED (CODE_SIGNING_ALLOWED=NO).
+Offline bundle check: PASS exact resources, full access disabled, privacy/notices bundled, static Rime.
+Not a physical-device installation or App Store review.

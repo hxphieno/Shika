@@ -1,0 +1,124 @@
+import Foundation
+
+/// Independently frozen phrases and transformations; uses real native selection,
+/// never writes Rime user dictionaries. Learn and probe must be separate processes.
+@main struct BackendRound2LearningChecks {
+    struct Phrase: Decodable { let target: String; let syllables: [String]; let code: String; let typos: [String]; let typoKinds: [String] }
+    @MainActor static func main() throws {
+        let a = CommandLine.arguments
+        guard a.count == 6 else { fatalError("resources user fixture report learn|probe|disabled|index") }
+        let resources = URL(fileURLWithPath: a[1]), user = URL(fileURLWithPath: a[2]), mode = a[5]
+        let phrases = try JSONDecoder().decode([Phrase].self, from: Data(contentsOf: URL(fileURLWithPath: a[3])))
+        try FileManager.default.createDirectory(at: user, withIntermediateDirectories: true)
+        let full = SKInputScheme.chineseJapanese.configuration, double = SKInputScheme.shuangpin.configuration
+        let engine = try SKRimeEngine(configuration: full, resourceURL: resources, userURL: user, correctionEnabled: mode != "disabled")
+        var output = "", marked = "", insertions: [String] = [], checks: [[String: Any]] = [], observations: [[String: Any]] = []
+        let session = SKInputSession(engine: engine, configuration: full, insertText: { output += $0; insertions.append($0) }, deleteText: { if !output.isEmpty { output.removeLast() } }, updateComposition: { marked = $0 })
+        let metadata = user.appendingPathComponent("full-pinyin-spelling.json"), doubleMetadata = user.appendingPathComponent("double-pinyin-spelling.json")
+        func check(_ name: String, _ passed: Bool, _ detail: String = "") {
+            checks.append(["name": name, "passed": passed, "detail": detail]); print("\(passed ? "PASS" : "FAIL") \(name) \(detail)")
+        }
+        func type(_ text: String) { for c in text { session.type(String(c)) } }
+        func reset(_ raw: String = "") throws {
+            session.cancel(); try session.switchConfiguration(to: full); output = ""; marked = ""; insertions = []; type(raw)
+        }
+        func clear() -> Bool { session.state.input.isEmpty && session.state.preedit.isEmpty && session.state.candidates.isEmpty && marked.isEmpty }
+        func choose(_ text: String, paging: Bool = true) -> Bool {
+            for _ in 0...(paging ? 50 : 0) {
+                if let c = session.state.candidates.first(where: { $0.text == text }) { session.select(c); return true }
+                if session.state.isLastPage { break }; let count = session.state.candidates.count; session.loadMoreCandidates(); if session.state.candidates.count == count { break }
+            }
+            return false
+        }
+        func records() -> [[String: String]] { (try? JSONDecoder().decode([[String: String]].self, from: Data(contentsOf: metadata))) ?? [] }
+        func trace(_ name: String) {
+            observations.append(["name": name, "input": session.state.input, "preedit": session.state.preedit, "output": output,
+                "candidates": session.state.candidates.map { ["text": $0.text, "index": $0.index, "comment": $0.comment] as [String: Any] }])
+        }
+        func learn(_ phrase: Phrase, count: Int) throws {
+            for n in 0..<count {
+                try reset(phrase.code)
+                var selected = true
+                if let complete = session.state.candidates.first(where: { $0.text == phrase.target }) { session.select(complete) }
+                else { for c in phrase.target { selected = choose(String(c)) && selected } }
+                check("natural complete selection \(phrase.target) #\(n+1)", selected && output == phrase.target && clear(), "output=\(output); remaining=\(session.state.input)")
+                let committed = output; session.commitPending(); check("no duplicate commit \(phrase.target) #\(n+1)", output == committed)
+            }
+        }
+        if mode == "learn" {
+            let initial = try? Data(contentsOf: metadata)
+            for phrase in phrases { try reset(phrase.code); session.loadMoreCandidates(); session.cancel() }
+            try reset("nihao"); session.type("\n"); check("Return emits raw full pinyin once", output == "nihao" && clear() && insertions == ["nihao"])
+            try reset("nihao"); session.commitRaw(); session.commitRaw(); check("explicit raw path drains once", output == "nihao" && clear())
+            try reset("nihaoshijie"); let partial = choose("你好")
+            check("partial selection keeps marked tail without metadata", partial && output.isEmpty && marked.hasPrefix("你好") && (try? Data(contentsOf: metadata)) == initial)
+            session.deleteBackward(); check("partial delete restores original full input", session.state.input == "nihaoshijie" && output.isEmpty && !marked.hasPrefix("你好"))
+            session.type("\n"); check("Return after partial undo preserves every original letter", output == "nihaoshijie" && clear())
+            try reset("nh"); let abbreviation = choose("你好")
+            check("native abbreviation remains usable", abbreviation && output == "你好" && clear())
+            check("browse cancel Return raw abbreviation and partial do not record", (try? Data(contentsOf: metadata)) == initial)
+            for phrase in phrases { try reset(phrase.code); trace("cold exact \(phrase.target)"); for raw in phrase.typos { try reset(raw); trace("cold typo \(phrase.target) \(raw)") } }
+            for phrase in phrases { try learn(phrase, count: 5); check("complete spelling stored \(phrase.target)", records().contains { $0["code"] == phrase.code && $0["text"] == phrase.target }) }
+            check("full learning does not create double metadata", !FileManager.default.fileExists(atPath: doubleMetadata.path))
+            let fullBefore = try? Data(contentsOf: metadata)
+            session.cancel(); try session.switchConfiguration(to: double); output = ""; type("nihc"); session.type(" ")
+            check("double profile still commits normal first word", output == "你好" && clear())
+            check("profile switch creates only its own spelling file", FileManager.default.fileExists(atPath: doubleMetadata.path) && (try? Data(contentsOf: metadata)) == fullBefore)
+        } else if mode == "probe" {
+            let before = try? Data(contentsOf: metadata), doubleBefore = try? Data(contentsOf: doubleMetadata)
+            // Freeze every new-process observation before selecting any typo answer.
+            for phrase in phrases {
+                try reset(phrase.code); trace("restarted exact \(phrase.target)")
+                check("restarted native learned first word \(phrase.target)", session.state.candidates.first?.text == phrase.target)
+                for (offset, raw) in phrase.typos.enumerated() {
+                    try reset(raw); trace("restarted typo \(phrase.target) \(raw)")
+                    check("restarted \(phrase.typoKinds[offset]) offers \(phrase.target)", session.state.candidates.contains { $0.text == phrase.target }, "input=\(raw)")
+                }
+            }
+            session.cancel(); check("read-only probe does not rewrite metadata", (try? Data(contentsOf: metadata)) == before)
+            for phrase in phrases {
+                for raw in phrase.typos {
+                    try reset(raw); let selected = choose(phrase.target, paging: false)
+                    check("typo selection fully consumes \(raw)", selected && output == phrase.target && clear(), "output=\(output); input=\(session.state.input)")
+                    let text = output; session.commitPending(); check("corrected output is not replayed \(raw)", text == output)
+                }
+                let saved = records().filter { $0["text"] == phrase.target }
+                check("corrected metadata keeps only verified code \(phrase.target)", saved == [["code": phrase.code, "text": phrase.target]])
+            }
+            try reset("maoyundeng"); session.type("\n"); check("learned phrase Return remains raw", output == "maoyundeng" && clear())
+            check("full probe never writes double profile metadata", (try? Data(contentsOf: doubleMetadata)) == doubleBefore)
+        } else if mode == "disabled" {
+            try learn(phrases[0], count: 5)
+            check("disabled correction does not write either metadata file", !FileManager.default.fileExists(atPath: metadata.path) && !FileManager.default.fileExists(atPath: doubleMetadata.path))
+            try reset(phrases[0].code); check("disabled mode retains native learned word", session.state.candidates.first?.text == phrases[0].target)
+            for raw in phrases[0].typos { try reset(raw); check("disabled mode has no synthetic learned correction \(raw)", !session.state.candidates.contains { $0.index <= -1000 }); trace("disabled typo \(raw)") }
+        } else if mode == "index" {
+            #if !LEGACY
+            let dir = user.appendingPathComponent("index-fixture"); try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+            let file = dir.appendingPathComponent("full-pinyin-spelling.json")
+            try Data("{broken".utf8).write(to: file)
+            var index = SKLearnedSpellingIndex(userDirectory: dir, profile: .fullPinyin)
+            check("full corrupt JSON is ignored", index.suggestions(for: "niha").isEmpty)
+            index.record(code: "nihao", text: "你好"); check("full valid record replaces corrupt JSON", (try? JSONDecoder().decode([SKLearnedSpellingIndex.Entry].self, from: Data(contentsOf: file))) == [.init(code: "nihao", text: "你好")])
+            let original = try Data(contentsOf: file)
+            for (code, text) in [("nh", "你好"), ("NIHAO", "你好"), ("ni'hao", "你好"), ("nihao", "hello"), ("nihao", "🦌你好")] { index.record(code: code, text: text) }
+            check("invalid full metadata is rejected", try Data(contentsOf: file) == original)
+            try Data(repeating: 32, count: 131073).write(to: file); index = SKLearnedSpellingIndex(userDirectory: dir, profile: .fullPinyin)
+            check("oversized full JSON is ignored", index.suggestions(for: "niha").isEmpty)
+            func uniqueCode(_ number: Int) -> String { var n = number; var bytes = [UInt8](repeating: 97, count: 4); for i in (0..<4).reversed() { bytes[i] += UInt8(n % 26); n /= 26 }; return String(bytes: bytes, encoding: .utf8)! }
+            for i in 0..<600 { index.record(code: String(repeating: "a", count: 44) + uniqueCode(i), text: String(repeating: "𠀀", count: 47) + String(UnicodeScalar(0x20000 + i)!)) }
+            let data = try Data(contentsOf: file), entries = try JSONDecoder().decode([SKLearnedSpellingIndex.Entry].self, from: data)
+            check("full capacity retains newest 512", entries.count == 512 && entries.first?.code == String(repeating: "a", count: 44) + uniqueCode(88))
+            check("full maximum accepted Unicode entries fit own load bound", data.count <= 131072, "bytes=\(data.count)")
+            index = SKLearnedSpellingIndex(userDirectory: dir, profile: .fullPinyin)
+            check("restart restores newest full capacity entry", index.suggestions(for: "b" + String(repeating: "a", count: 43) + uniqueCode(599)).contains { $0.code == entries.last?.code })
+            check("full metadata never creates double file", !FileManager.default.fileExists(atPath: dir.appendingPathComponent("double-pinyin-spelling.json").path))
+            #endif
+        } else { fatalError("unknown mode") }
+        let failed = checks.filter { !($0["passed"] as! Bool) }
+        let report: [String: Any] = ["mode": mode, "checks": checks, "observations": observations, "passed": checks.count - failed.count, "failed": failed.count, "platform": "macOS native production engine; no UIKit or device"]
+        try JSONSerialization.data(withJSONObject: report, options: [.prettyPrinted, .sortedKeys]).write(to: URL(fileURLWithPath: a[4]))
+        print("\(checks.count-failed.count)/\(checks.count) PASS")
+        if !failed.isEmpty { exit(1) }
+    }
+}

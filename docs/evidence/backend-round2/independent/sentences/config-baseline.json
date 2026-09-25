@@ -1,0 +1,18 @@
+{
+  "shika_flypy" : {
+    "max_homophones" : 8,
+    "sentence_cutoff_threshold" : 0.01,
+    "max_sentences" : 5
+  },
+  "shika_flypy_assist" : {
+    "max_homophones" : 8,
+    "sentence_cutoff_threshold" : 0.01,
+    "max_sentences" : 5
+  },
+  "shika_pinyin" : {
+    "max_homophones" : 8,
+    "sentence_cutoff_threshold" : 0.01,
+    "max_sentences" : 5
+  },
+  "version" : "1.17.0"
+}

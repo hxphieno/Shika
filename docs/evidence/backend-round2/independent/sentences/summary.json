@@ -1,0 +1,174 @@
+{
+  "existing-development/shika_flypy": {
+    "n": 132,
+    "before": {
+      "1": 50,
+      "5": 84,
+      "10": 90,
+      "1000": 92
+    },
+    "after": {
+      "1": 50,
+      "5": 78,
+      "10": 89,
+      "1000": 92
+    },
+    "firstChanged": 0,
+    "candidatesChanged": 36
+  },
+  "existing-development/shika_pinyin": {
+    "n": 132,
+    "before": {
+      "1": 55,
+      "5": 84,
+      "10": 89,
+      "1000": 90
+    },
+    "after": {
+      "1": 55,
+      "5": 77,
+      "10": 89,
+      "1000": 90
+    },
+    "firstChanged": 0,
+    "candidatesChanged": 54
+  },
+  "new-sentences/shika_flypy": {
+    "n": 36,
+    "before": {
+      "1": 22,
+      "5": 30,
+      "10": 30,
+      "1000": 30
+    },
+    "after": {
+      "1": 22,
+      "5": 30,
+      "10": 30,
+      "1000": 30
+    },
+    "firstChanged": 0,
+    "candidatesChanged": 22
+  },
+  "new-sentences/shika_pinyin": {
+    "n": 36,
+    "before": {
+      "1": 22,
+      "5": 30,
+      "10": 30,
+      "1000": 30
+    },
+    "after": {
+      "1": 22,
+      "5": 30,
+      "10": 30,
+      "1000": 30
+    },
+    "firstChanged": 0,
+    "candidatesChanged": 22
+  },
+  "rankChanged": [
+    {
+      "id": "r2-dev-spopt-003-transposition",
+      "target": "候选",
+      "before": 3,
+      "after": 4
+    },
+    {
+      "id": "r2-dev-spopt-029-substitution",
+      "target": "牛奶",
+      "before": 2,
+      "after": 6
+    },
+    {
+      "id": "r2-dev-spopt-086-substitution",
+      "target": "跑步",
+      "before": 2,
+      "after": 6
+    },
+    {
+      "id": "r2-dev-spopt-086-transposition",
+      "target": "跑步",
+      "before": 2,
+      "after": 6
+    },
+    {
+      "id": "r2-dev-spopt-088-substitution",
+      "target": "散步",
+      "before": 4,
+      "after": 7
+    },
+    {
+      "id": "r2-dev-spopt-103-double-error",
+      "target": "经历",
+      "before": 8,
+      "after": 12
+    },
+    {
+      "id": "r2-dev-spopt-134-substitution",
+      "target": "我们打算在沙滩上待一会儿",
+      "before": 5,
+      "after": 6
+    },
+    {
+      "id": "r2-dev-spopt-137-substitution",
+      "target": "晚饭结束以后出去散步半小时",
+      "before": 4,
+      "after": 6
+    },
+    {
+      "id": "r2-dev-full-spopt-005-insertion",
+      "target": "词频",
+      "before": 3,
+      "after": 6
+    },
+    {
+      "id": "r2-dev-full-spopt-029-substitution",
+      "target": "牛奶",
+      "before": 2,
+      "after": 6
+    },
+    {
+      "id": "r2-dev-full-spopt-029-insertion",
+      "target": "牛奶",
+      "before": 3,
+      "after": 6
+    },
+    {
+      "id": "r2-dev-full-spopt-031-omission",
+      "target": "米饭",
+      "before": 4,
+      "after": 7
+    },
+    {
+      "id": "r2-dev-full-spopt-055-insertion",
+      "target": "冰箱",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "r2-dev-full-spopt-061-omission",
+      "target": "枕头",
+      "before": 4,
+      "after": 8
+    },
+    {
+      "id": "r2-dev-full-spopt-094-omission",
+      "target": "账户",
+      "before": 4,
+      "after": 7
+    },
+    {
+      "id": "r2-dev-full-spopt-099-substitution",
+      "target": "预算",
+      "before": 2,
+      "after": 3
+    },
+    {
+      "id": "r2-dev-full-spopt-111-omission",
+      "target": "通知",
+      "before": 4,
+      "after": 8
+    }
+  ]
+}
