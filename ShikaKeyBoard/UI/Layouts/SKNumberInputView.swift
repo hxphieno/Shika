@@ -143,8 +143,10 @@ class SKNumberInputView: UIView {
         }
         
         for (index, item) in items.enumerated() {
-            let width: CGFloat = (item.count >= 2) ? 42 : 33 // Simple heuristic from ref
-            let button = SKIMKeyButton(title: item, width: width, backgroundColor: UIColor(white: 0.95, alpha: 1))
+            // Equal column widths keep related marks vertically aligned.
+            let width: CGFloat = 42
+            let button = SKIMKeyButton(title: item, width: width, font: .systemFont(ofSize: item.count > 1 ? 20 : 26), backgroundColor: UIColor(white: 0.95, alpha: 1))
+            button.accessibilityIdentifier = "symbol.\(index)"
             button.addTarget(self, action: #selector(punctuationKeyPressed(_:)), for: .touchUpInside)
             
             let rowIndex = index % 4
