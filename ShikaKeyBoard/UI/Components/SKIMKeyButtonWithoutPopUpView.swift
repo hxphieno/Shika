@@ -12,6 +12,11 @@ class SKIMKeyButtonWithoutPopUpView: UIButton {
     var keyColor: UIColor
     var keyFont: UIFont
     var keyTitle: String
+    var touchInsets = UIEdgeInsets.zero
+
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        bounds.inset(by: touchInsets).contains(point)
+    }
 
     init(title: String,
          width: CGFloat = SKConfig.defaultKeyWidth,

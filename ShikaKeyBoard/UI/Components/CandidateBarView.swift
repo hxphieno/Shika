@@ -5,7 +5,7 @@ final class CandidateBarView: UIView {
     var onSelect: ((SKCandidate) -> Void)?
     var onToggleExpanded: (() -> Void)?
     var onRetry: (() -> Void)?
-    private let scroll = UIScrollView()
+    private let scroll = SKKeyboardScrollView()
     private let candidates = UIStackView()
     private let expand = UIButton(type: .system)
     private let message = UILabel()
@@ -18,7 +18,7 @@ final class CandidateBarView: UIView {
         scroll.showsHorizontalScrollIndicator = false
         scroll.clipsToBounds = true
         candidates.axis = .horizontal
-        candidates.spacing = 4
+        candidates.spacing = 0
         expand.accessibilityIdentifier = "candidates.expand"
         expand.tintColor = .label
         expand.addTarget(self, action: #selector(toggleExpanded), for: .touchUpInside)
@@ -39,7 +39,7 @@ final class CandidateBarView: UIView {
             scroll.leadingAnchor.constraint(equalTo: leadingAnchor),
             scroll.trailingAnchor.constraint(equalTo: expand.leadingAnchor),
             scroll.bottomAnchor.constraint(equalTo: bottomAnchor),
-            expand.widthAnchor.constraint(equalToConstant: 44),
+            expand.widthAnchor.constraint(equalToConstant: 52),
             expand.trailingAnchor.constraint(equalTo: trailingAnchor),
             expand.topAnchor.constraint(equalTo: topAnchor),
             expand.bottomAnchor.constraint(equalTo: bottomAnchor),
@@ -52,7 +52,9 @@ final class CandidateBarView: UIView {
             message.centerYAnchor.constraint(equalTo: centerYAnchor),
             message.trailingAnchor.constraint(lessThanOrEqualTo: expand.leadingAnchor),
             retry.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
-            retry.centerYAnchor.constraint(equalTo: centerYAnchor)
+            retry.centerYAnchor.constraint(equalTo: centerYAnchor),
+            retry.widthAnchor.constraint(greaterThanOrEqualToConstant: 44),
+            retry.heightAnchor.constraint(equalToConstant: 44)
         ])
         update(SKEngineState())
     }
@@ -78,7 +80,13 @@ final class CandidateBarView: UIView {
             config.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { values in
                 var values = values; values.font = UIFont.systemFont(ofSize: 20); return values
             }
+            config.titleLineBreakMode = .byClipping
             button.configuration = config
+            button.titleLabel?.numberOfLines = 1
+            // Configuration titles may otherwise wrap and compress inside the
+            // scroll stack. Preserve each word's natural single-line width.
+            let textWidth = (candidate.text as NSString).size(withAttributes: [.font: UIFont.systemFont(ofSize: 20)]).width
+            button.widthAnchor.constraint(equalToConstant: max(44, ceil(textWidth) + 18)).isActive = true
             button.tag = candidate.index
             button.accessibilityIdentifier = "candidate.\(candidate.index)"
             button.accessibilityLabel = candidate.text

@@ -13,6 +13,30 @@ class SKNumberInputView: UIView {
     
     weak var eventHandler: SKKeyboardEventHandler?
     private var mainStackView: UIStackView!
+    private var numberButtons: [SKIMKeyButtonWithoutPopUpView] = []
+    private var symbolButtons: [SKIMKeyButtonWithoutPopUpView] = []
+    private var symbolScrollView: UIScrollView?
+
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        guard !isHidden, alpha > 0.01, isUserInteractionEnabled, bounds.contains(point) else { return nil }
+        let hit = super.hitTest(point, with: event)
+        if hit is UIControl { return hit }
+        // Fill only half of each visual gutter. Symbol targets remain clipped
+        // to their scroll viewport and cannot steal touches from the numbers.
+        let inSymbols = symbolScrollView.map { $0.frame.contains(mainStackView.convert(point, from: self)) } ?? false
+        let keys = inSymbols ? symbolButtons : numberButtons
+        let nearby: UIView? = keys.filter { $0.point(inside: $0.convert(point, from: self), with: event) }
+            .min { lhs, rhs in
+                let a = lhs.convert(CGPoint(x: lhs.bounds.midX, y: lhs.bounds.midY), to: self)
+                let b = rhs.convert(CGPoint(x: rhs.bounds.midX, y: rhs.bounds.midY), to: self)
+                return hypot(a.x - point.x, a.y - point.y) < hypot(b.x - point.x, b.y - point.y)
+            }
+        return nearby ?? hit
+    }
+
+    private func enlargeTouchArea(_ button: SKIMKeyButtonWithoutPopUpView) {
+        button.touchInsets = UIEdgeInsets(top: -6, left: -3, bottom: -6, right: -3)
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,6 +72,8 @@ class SKNumberInputView: UIView {
     
     private func updateNumberAndPunctuationStackView() {
         mainStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
+        numberButtons.removeAll()
+        symbolButtons.removeAll()
         
         // Left Side: Numbers 3x3 + Bottom Row
         let leftView = UIStackView()
@@ -68,6 +94,8 @@ class SKNumberInputView: UIView {
                 let number = i * 3 + j
                 let numberButton = SKIMKeyButton(title: "\(number)", width: 55, font: UIFont.systemFont(ofSize: 20, weight: .regular))
                 numberButton.addTarget(self, action: #selector(numberKeyPressed(_:)), for: .touchUpInside)
+                enlargeTouchArea(numberButton)
+                numberButtons.append(numberButton)
                 numberLineRow.addArrangedSubview(numberButton)
             }
             leftView.addArrangedSubview(numberLineRow)
@@ -90,13 +118,18 @@ class SKNumberInputView: UIView {
         deleteButton.addTarget(self, action: #selector(deleteKeyPressed), for: .touchUpInside)
         // TODO: Long press delete
         
+        for button in [returnButton, zeroButton, deleteButton] {
+            enlargeTouchArea(button)
+            numberButtons.append(button)
+        }
         numberLine3Row.addArrangedSubview(returnButton)
         numberLine3Row.addArrangedSubview(zeroButton)
         numberLine3Row.addArrangedSubview(deleteButton)
         leftView.addArrangedSubview(numberLine3Row)
         
         // Right Side: ScrollView with Punctuation
-        let scrollView = UIScrollView()
+        let scrollView = SKKeyboardScrollView()
+        symbolScrollView = scrollView
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         // Make sure scroll view clips bounds so content doesn't overflow
@@ -146,6 +179,8 @@ class SKNumberInputView: UIView {
             // Equal column widths keep related marks vertically aligned.
             let width: CGFloat = 42
             let button = SKIMKeyButton(title: item, width: width, font: .systemFont(ofSize: item.count > 1 ? 20 : 26), backgroundColor: UIColor(white: 0.95, alpha: 1))
+            enlargeTouchArea(button)
+            symbolButtons.append(button)
             button.accessibilityIdentifier = "symbol.\(index)"
             button.addTarget(self, action: #selector(punctuationKeyPressed(_:)), for: .touchUpInside)
             
