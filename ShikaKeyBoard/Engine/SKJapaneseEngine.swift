@@ -7,7 +7,6 @@ final class SKJapaneseEngine: SKInputEngine {
     private let learningURL: URL
     private var learned: [String: [String: Int]]
     private var input = ""
-    private var literalPrefix = ""
     private var kana = ""
     private var pending = ""
     private var texts: [String] = []
@@ -21,14 +20,8 @@ final class SKJapaneseEngine: SKInputEngine {
     }
 
     func replaceInput(_ text: String) -> SKEngineState {
-        updateInput(text, literalPrefix: "")
-    }
-
-    private func updateInput(_ text: String, literalPrefix: String) -> SKEngineState {
-        self.literalPrefix = literalPrefix
         input = text; page = 0
         (kana, pending) = lexicon.reading(input)
-        kana = literalPrefix + kana
         texts = pending.isEmpty ? lexicon.convert(kana) : []
         // Promotion applies only to a previously selected, still valid candidate.
         let scores = learned[kana] ?? [:]
@@ -36,26 +29,29 @@ final class SKJapaneseEngine: SKInputEngine {
             let a = scores[$0.element] ?? 0, b = scores[$1.element] ?? 0
             return a == b ? $0.offset < $1.offset : a > b
         }.map(\.element)
+        // Keep the reading easy to select, independently of learned word order.
+        if pending.isEmpty && !kana.isEmpty {
+            texts.removeAll { $0 == kana }
+            texts.insert(kana, at: min(2, texts.count))
+        }
         return snapshot()
     }
 
     func process(key: Int32) -> SKEngineState {
         if key == 0x20 { return commit() }
         if key == 0xff0d {
-            // Native Japanese Return confirms the visible reading, not the
-            // first converted candidate, and does not also invoke the host.
-            let text = kana + pending
+            // Like Chinese composition, Return confirms the original spelling.
+            let text = input
             var state = clear(); state.committedText = text; return state
         }
         if key == 0xff08 {
-            let next = lexicon.removingLastUnit(kana: kana, pending: pending, preferring: literalPrefix + input)
-            return updateInput(next.input, literalPrefix: next.literalPrefix)
+            return replaceInput(String(input.dropLast()))
         }
         guard let scalar = UnicodeScalar(UInt32(bitPattern: key)),
               (97...122).contains(key) || key == 39 || key == 45 else {
             var state = snapshot(); state.handled = false; return state
         }
-        return updateInput(input + String(scalar), literalPrefix: literalPrefix)
+        return replaceInput(input + String(scalar))
     }
 
     func selectCandidate(at index: Int) -> SKEngineState {
@@ -73,11 +69,11 @@ final class SKJapaneseEngine: SKInputEngine {
     }
     func commit() -> SKEngineState {
         if !texts.isEmpty { return selectCandidate(at: 0) }
-        let text = kana + pending
+        let text = input
         var state = clear(); state.committedText = text; return state
     }
     func clear() -> SKEngineState {
-        input = ""; literalPrefix = ""; kana = ""; pending = ""; texts = []; page = 0
+        input = ""; kana = ""; pending = ""; texts = []; page = 0
         return snapshot()
     }
     func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage {
@@ -96,7 +92,7 @@ final class SKJapaneseEngine: SKInputEngine {
     }
     private func snapshot() -> SKEngineState {
         let items = candidatePage(startingAt: page * 8, limit: 8)
-        return SKEngineState(input: literalPrefix + input, preedit: kana + pending, candidates: items.candidates,
+        return SKEngineState(input: input, preedit: input, candidates: items.candidates,
             page: page, isLastPage: !items.hasMore)
     }
 }

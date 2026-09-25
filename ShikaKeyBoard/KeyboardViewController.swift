@@ -195,9 +195,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func updateReturnKey() {
-        let confirmsJapanese = keyboardState.configuration.language == .japanese && !(inputSession?.state.input.isEmpty ?? true)
         for footer in [chineseJapaneseView.footer, shuangpinView.footer] {
-            footer?.updateReturnKey(type: textDocumentProxy.returnKeyType ?? .default, confirmsJapanese: confirmsJapanese)
+            footer?.updateReturnKey(type: textDocumentProxy.returnKeyType ?? .default)
         }
     }
 

@@ -126,14 +126,18 @@ private func returnVisible(_ view: UIView) -> Bool {
         let cases: [(String, SKInputScheme, SKChineseJapaneseMode, String, String)] = [
             ("full pinyin", .chineseJapanese, .chinese, "nihao", "nihao"),
             ("double pinyin", .shuangpin, .chinese, "nihc", "nihc"),
-            ("Japanese", .chineseJapanese, .japanese, "nihon", "にほん"),
+            ("Japanese", .chineseJapanese, .japanese, "nihon", "nihon"),
             ("mixed", .chineseJapanese, .mixed, "nihao", "nihao")
         ]
         for (name, scheme, language, input, confirmation) in cases {
             let keyboard = make(scheme, language, .send), proxy = keyboard.proxy
             expect(style(keyboard, "发送"), "\(name): idle footer follows send host")
             await type(input, keyboard)
-            expect(marked(keyboard) != nil && style(keyboard, language == .japanese ? "确定" : "发送"), "\(name): composing label matches native host/Japanese behavior")
+            expect(marked(keyboard) != nil && style(keyboard, "发送"), "\(name): composing keeps the host return label")
+            if language == .japanese {
+                expect(marked(keyboard) == input, "Japanese marked text shows the original romaji")
+                expect(candidate(keyboard, "にほん")?.tag == 2, "Japanese kana is the third selectable candidate")
+            }
             // First return travels through the real footer. It must not pick the
             // first converted candidate, send, or insert a newline.
             enter(keyboard).sendActions(for: .touchUpInside); await settle()
@@ -142,6 +146,18 @@ private func returnVisible(_ view: UIView) -> Bool {
             // The second press also covers the controller's public key path.
             keyboard.didTapKey("\n"); await settle()
             expect(proxy.host.sent == [confirmation] && proxy.insertions.filter { $0 == "\n" }.count == 1 && proxy.editor.text == confirmation, "\(name): second return reaches send host exactly once")
+            if language == .japanese {
+                await reset(keyboard); await type("kya", keyboard)
+                keyboard.didTapDelete()
+                expect(marked(keyboard) == "ky", "Japanese backspace deletes one visible original letter")
+                enter(keyboard).sendActions(for: .touchUpInside)
+                expect(proxy.editor.text == "ky" && marked(keyboard) == nil && proxy.host.sent.isEmpty, "Japanese return after deletion preserves exact remaining spelling")
+                await reset(keyboard); await type("nihon", keyboard)
+                candidate(keyboard, "にほん")?.sendActions(for: .touchUpInside)
+                expect(proxy.editor.text == "にほん" && marked(keyboard) == nil && proxy.host.sent.isEmpty, "third kana candidate commits kana without sending")
+                enter(keyboard).sendActions(for: .touchUpInside)
+                expect(proxy.host.sent == ["にほん"], "return after selecting kana invokes host send")
+            }
             detach(keyboard)
         }
         let keyboard = make(.chineseJapanese, .chinese, .default), proxy = keyboard.proxy
@@ -179,6 +195,24 @@ private func returnVisible(_ view: UIView) -> Bool {
         doublePartial?.sendActions(for: .touchUpInside); await settle()
         enter(keyboard).sendActions(for: .touchUpInside); await settle()
         expect(doublePartial != nil && proxy.editor.text == "你好uijp" && marked(keyboard) == nil && proxy.host.sent.isEmpty && !proxy.insertions.contains("\n"), "double-pinyin partial return preserves selected Chinese and remaining code without sending", proxy.editor.text ?? "nil")
+        do {
+            let resources = Bundle.main.url(forResource: "RimeData", withExtension: "bundle")!
+            let directory = FileManager.default.temporaryDirectory.appendingPathComponent("return-japanese-\(UUID())")
+            let japanese = try SKJapaneseEngine(resources: resources, userDirectory: directory)
+            for (raw, kana) in [("nihon", "にほん"), ("toukyou", "とうきょう"), ("gakkou", "がっこう")] {
+                var state = japanese.replaceInput(raw)
+                expect(state.preedit == raw && state.candidates.count >= 3 && state.candidates[2].text == kana,
+                       "\(raw): raw preedit and third kana candidate")
+                for _ in 0..<3 { _ = japanese.selectCandidate(at: 2); state = japanese.replaceInput(raw) }
+                let candidates = japanese.candidatePage(startingAt: 0, limit: 64).candidates
+                expect(candidates.filter { $0.text == kana }.count == 1 && candidates[2].text == kana,
+                       "\(raw): learned kana remains third without duplicate")
+                expect(japanese.process(key: 0x20).committedText == state.candidates.first?.text,
+                       "\(raw): space still commits the displayed first word")
+            }
+            let incomplete = japanese.replaceInput("gakk")
+            expect(incomplete.preedit == "gakk" && japanese.process(key: 0xff0d).committedText == "gakk", "incomplete Japanese return preserves every original letter")
+        } catch { expect(false, "Japanese focused engine loads", error.localizedDescription) }
         let failed = checks.filter { !($0["passed"] as! Bool) }
         let report = "\(failed.isEmpty ? "PASS" : "FAIL") \(checks.count) focused return-key checks\n" + failed.map { "\($0["label"]!): \($0["detail"]!)" }.joined(separator: "\n")
         let output = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]

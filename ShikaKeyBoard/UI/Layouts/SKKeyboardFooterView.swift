@@ -26,27 +26,24 @@ final class SKKeyboardFooterView: UIView {
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
-    func updateReturnKey(type: UIReturnKeyType, confirmsJapanese: Bool) {
+    func updateReturnKey(type: UIReturnKeyType) {
         let title: String
-        if confirmsJapanese { title = "确定" }
-        else {
-            switch type {
-            case .go: title = "前往"
-            case .google, .yahoo, .search: title = "搜索"
-            case .join: title = "加入"
-            case .next: title = "下一项"
-            case .route: title = "路线"
-            case .send: title = "发送"
-            case .done: title = "完成"
-            case .emergencyCall: title = "紧急呼叫"
-            case .continue: title = "继续"
-            default: title = "换行"
-            }
+        switch type {
+        case .go: title = "前往"
+        case .google, .yahoo, .search: title = "搜索"
+        case .join: title = "加入"
+        case .next: title = "下一项"
+        case .route: title = "路线"
+        case .send: title = "发送"
+        case .done: title = "完成"
+        case .emergencyCall: title = "紧急呼叫"
+        case .continue: title = "继续"
+        default: title = "换行"
         }
         enter.keyTitle = title
         enter.setImage(nil, for: .normal)
         enter.accessibilityLabel = title
-        enter.isPrimaryAction = !confirmsJapanese && title != "换行"
+        enter.isPrimaryAction = title != "换行"
         if title == "换行" { enter.useSymbol("return", label: title) }
         else if title == "发送" { enter.useSymbol("arrow.up", label: title) }
     }

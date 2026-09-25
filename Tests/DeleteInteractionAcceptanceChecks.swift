@@ -264,10 +264,10 @@ private func visible(_ view: UIView) -> Bool {
         do {
             let resources = Bundle.main.url(forResource: "RimeData", withExtension: "bundle")!
             let japanese = try SKJapaneseEngine(resources: resources, userDirectory: output.appendingPathComponent("delete-japanese-\(UUID())"))
-            for (input, expected) in [("ky", "k"), ("ka", ""), ("kya", "き"), ("gakkou", "がっこ"), ("galtu", "が"), ("gakk", "がっ"), ("kk", "っ"), ("ss", "っ"), ("tt", "っ"), ("ssa", "っ"), ("kky", "っk"), ("sshi", "っ"), ("kanpai", "かんぱ"), ("shin'you", "しんよ"), ("ko-hi-", "こーひ"), ("nihon", "にほ"), ("nna", "ん"), ("nn", ""), ("va", "ゔ")] {
+            for (input, expected) in [("ky", "k"), ("ka", "k"), ("kya", "ky"), ("gakkou", "gakko"), ("galtu", "galt"), ("gakk", "gak"), ("kk", "k"), ("ss", "s"), ("tt", "t"), ("ssa", "ss"), ("kky", "kk"), ("sshi", "ssh"), ("kanpai", "kanpa"), ("shin'you", "shin'yo"), ("ko-hi-", "ko-hi"), ("nihon", "niho"), ("nna", "nn"), ("nn", "n"), ("va", "v")] {
                 _ = japanese.replaceInput(input)
                 let result = japanese.process(key: 0xff08)
-                expect(result.preedit == expected && result.committedText.isEmpty, "Japanese deletes pending letter or visible kana: \(input)", result.preedit)
+                expect(result.input == expected && result.preedit == expected && result.committedText.isEmpty, "Japanese deletes one visible raw letter: \(input)", result.preedit)
                 var last = result
                 for _ in 0..<20 {
                     if last.input.isEmpty { break }
@@ -276,24 +276,24 @@ private func visible(_ view: UIView) -> Bool {
                 expect(last.input.isEmpty && last.preedit.isEmpty, "Japanese \(input) deletion reaches empty without stalling")
             }
             let special = japanese.replaceInput("www")
-            expect(special.preedit == "wっw", "imported literal/carry rule is represented before deletion")
-            for expected in ["wっ", "w", ""] {
+            expect(special.input == "www" && special.preedit == "www", "Japanese preedit retains original spelling for imported carry rules")
+            for expected in ["ww", "w", ""] {
                 let deleted = japanese.process(key: 0xff08)
-                expect(deleted.preedit == expected, "literal-prefix consecutive deletion preserves visible units: \(expected)", deleted.preedit)
+                expect(deleted.input == expected && deleted.preedit == expected, "Japanese consecutive deletion removes one raw letter: \(expected)", deleted.preedit)
             }
             _ = japanese.replaceInput("www"); _ = japanese.process(key: 0xff08)
             let continued = japanese.process(key: 97)
-            expect(continued.preedit == "wっあ", "typing after literal-prefix deletion does not reinterpret completed Latin text", continued.preedit)
-            expect(japanese.process(key: 0xff08).preedit == "wっ", "deleting appended kana restores frozen literal prefix")
+            expect(continued.input == "wwa" && continued.preedit == "wwa", "typing after deletion appends to remaining raw spelling", continued.preedit)
+            expect(japanese.process(key: 0xff08).preedit == "ww", "deleting appended letter restores previous raw spelling")
             let replaced = japanese.replaceInput("ka")
-            expect(replaced.preedit == "か", "replaceInput resets frozen prefix")
+            expect(replaced.input == "ka" && replaced.preedit == "ka", "replaceInput replaces the entire raw composition")
             _ = japanese.replaceInput("www"); _ = japanese.process(key: 0xff08); _ = japanese.clear()
-            expect(japanese.process(key: 97).preedit == "あ", "clear resets frozen prefix before new input")
+            expect(japanese.process(key: 97).preedit == "a", "clear removes previous spelling before new input")
             _ = japanese.replaceInput("www"); _ = japanese.process(key: 0xff08)
             let beforeCommit = japanese.candidatePage(startingAt: 0, limit: 1).candidates.first?.text
             let committedLiteral = japanese.commit()
-            expect(committedLiteral.input.isEmpty && committedLiteral.preedit.isEmpty && !committedLiteral.committedText.isEmpty && (beforeCommit == nil || committedLiteral.committedText == beforeCommit), "literal-prefix candidate commit clears state")
-            expect(japanese.process(key: 97).preedit == "あ", "candidate commit does not leak frozen prefix into next composition")
+            expect(committedLiteral.input.isEmpty && committedLiteral.preedit.isEmpty && !committedLiteral.committedText.isEmpty && (beforeCommit == nil || committedLiteral.committedText == beforeCommit), "Japanese commit clears raw composition state")
+            expect(japanese.process(key: 97).preedit == "a", "commit does not leak prior spelling into next composition")
         } catch { expect(false, "Japanese delete engine loads", error.localizedDescription) }
         keyboard.viewWillDisappear(false)
         keyboard.view.removeFromSuperview(); editor.removeFromSuperview()
@@ -307,18 +307,22 @@ private func visible(_ view: UIView) -> Bool {
         jpKeyboard.view.frame = CGRect(x: 0, y: 280, width: 402, height: 260); jpKeyboard.view.layoutIfNeeded()
         set(jpEditor, "正文"); await wait(0.03)
         for c in "kya" { jpKeyboard.didTapKey(String(c)); await wait(0.02) }
-        expect(jpEditor.text == "正文きゃ" && jpEditor.markedTextRange != nil, "Japanese controller presents kana in host marked range")
+        expect(jpEditor.text == "正文kya" && jpEditor.markedTextRange != nil, "Japanese controller presents raw spelling in host marked range")
         _ = jpKeyboard.didDeleteBackward(byWord: false)
-        expect(jpEditor.text == "正文き" && jpEditor.markedTextRange != nil, "Japanese host deletes small kana without leaking romaji")
+        expect(jpEditor.text == "正文ky" && jpEditor.markedTextRange != nil, "Japanese host removes one raw letter per delete")
+        _ = jpKeyboard.didDeleteBackward(byWord: true)
+        let retainedLastLetter = jpEditor.text == "正文k" && jpEditor.markedTextRange != nil
         let jpBoundary = jpKeyboard.didDeleteBackward(byWord: true)
-        expect(jpBoundary == .restartDelay && jpEditor.text == "正文" && jpEditor.markedTextRange == nil, "Japanese last kana clears marked range and protects body")
+        expect(retainedLastLetter && jpBoundary == .restartDelay && jpEditor.text == "正文" && jpEditor.markedTextRange == nil, "Japanese final raw letter clears marked range and protects body")
         for c in "gakk" { jpKeyboard.didTapKey(String(c)); await wait(0.02) }
         _ = jpKeyboard.didDeleteBackward(byWord: false)
-        expect(jpEditor.text == "正文がっ", "Japanese host pending deletion preserves completed sokuon")
+        expect(jpEditor.text == "正文gak", "Japanese host gakk deletion displays remaining raw spelling")
         _ = jpKeyboard.didDeleteBackward(byWord: false)
-        expect(jpEditor.text == "正文が", "Japanese host next delete removes sokuon itself")
+        expect(jpEditor.text == "正文ga", "Japanese host next delete removes exactly one raw letter")
         _ = jpKeyboard.didDeleteBackward(byWord: false)
-        expect(jpEditor.text == "正文" && jpEditor.markedTextRange == nil, "Japanese composition reaches empty without body loss")
+        let retainedG = jpEditor.text == "正文g" && jpEditor.markedTextRange != nil
+        _ = jpKeyboard.didDeleteBackward(byWord: false)
+        expect(retainedG && jpEditor.text == "正文" && jpEditor.markedTextRange == nil, "Japanese raw composition reaches empty without body loss")
         _ = jpKeyboard.didDeleteBackward(byWord: false)
         expect(jpEditor.text == "正", "Japanese next native delete reaches committed body")
         let image = UIGraphicsImageRenderer(bounds: host.view.bounds).image { host.view.layer.render(in: $0.cgContext) }

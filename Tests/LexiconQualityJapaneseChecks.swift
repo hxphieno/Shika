@@ -72,7 +72,7 @@ struct LexiconQualityJapaneseChecks {
             let first = type("nihon", into: engine)
             check("Japanese candidates available", !first.candidates.isEmpty)
             let removed = engine.process(key: 0xff08)
-            check("backspace edits raw composition", removed.input == "niho" && removed.preedit == "にほ", "\(removed.input) / \(removed.preedit)")
+            check("backspace edits raw composition", removed.input == "niho" && removed.preedit == "niho", "\(removed.input) / \(removed.preedit)")
             let erased = engine.clear()
             check("clear removes composition and candidates", erased.input.isEmpty && erased.preedit.isEmpty && erased.candidates.isEmpty)
             let emptyDelete = engine.process(key: 0xff08)
@@ -112,7 +112,7 @@ struct LexiconQualityJapaneseChecks {
             let changed = try mixed.selectConfiguration(SKChineseJapaneseScheme.configuration(for: .japanese))
             check("language switch clears old composition", changed.input.isEmpty && changed.candidates.isEmpty)
             let native = type("nihon", into: mixed)
-            check("pure Japanese configured through common boundary", !native.candidates.isEmpty && native.preedit == "にほん")
+            check("pure Japanese configured through common boundary", !native.candidates.isEmpty && native.preedit == "nihon")
         }
         var finalUsage = rusage(); getrusage(RUSAGE_SELF, &finalUsage)
         let report: [String: Any] = ["processPeakRSSBytes": finalUsage.ru_maxrss, "mode": mode, "results": rows, "checks": checks, "failed": checks.filter { !($0["passed"] as! Bool) }.count,
