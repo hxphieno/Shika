@@ -10,6 +10,7 @@ class SKMainKeyButton: UIButton {
     private var preview: SKMainKeyPreview?
     private var deletion: SKDeleteKeyInteraction?
     var touchBounds: CGRect?
+    var isPrimaryAction = false { didSet { updateAppearance() } }
     var onDelete: ((Bool) -> SKDeleteFeedback)? {
         didSet {
             deletion?.cancel()
@@ -67,6 +68,13 @@ class SKMainKeyButton: UIButton {
 
     override var isHighlighted: Bool { didSet { updateAppearance() } }
     private func updateAppearance() {
+        if isPrimaryAction {
+            backgroundColor = isHighlighted ? UIColor.systemBlue.withAlphaComponent(0.7) : .systemBlue
+            setTitleColor(.white, for: .normal); tintColor = .white
+            return
+        }
+        setTitleColor(SKMainKeyboardMetrics.textColor, for: .normal)
+        tintColor = SKMainKeyboardMetrics.textColor
         let base = SKMainKeyboardMetrics.keyColor.resolvedColor(with: traitCollection)
         backgroundColor = isHighlighted && keyRole != .letter
             ? (traitCollection.userInterfaceStyle == .dark ? UIColor(white: 0.42, alpha: 1) : UIColor(white: 0.81, alpha: 1)) : base
@@ -75,7 +83,7 @@ class SKMainKeyButton: UIButton {
     func useSymbol(_ name: String, label: String) {
         setTitle(nil, for: .normal)
         setImage(UIImage(systemName: name, withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .regular)), for: .normal)
-        tintColor = SKMainKeyboardMetrics.textColor
+        tintColor = isPrimaryAction ? .white : SKMainKeyboardMetrics.textColor
         accessibilityLabel = label
     }
 

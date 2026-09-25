@@ -73,7 +73,9 @@ final class SmokeApp: UIResponder, UIApplicationDelegate {
         assert(controller.proxy.text == "你好中")
         tap("c", in: double)
         tap("换行", in: double)
-        assert(controller.proxy.text == "你好中你好\n")
+        assert(controller.proxy.text == "你好中nihc")
+        tap("换行", in: double)
+        assert(controller.proxy.text == "你好中nihc\n")
         for key in "nihc" { tap(String(key), in: double) }
         tap("123", in: double)
         assert(controller.proxy.text.hasSuffix("你好"))

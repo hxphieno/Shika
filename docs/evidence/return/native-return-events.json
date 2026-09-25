@@ -1,0 +1,562 @@
+[
+  {
+    "event" : "ready",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : ""
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "か",
+    "returnType" : 0,
+    "text" : ""
+  },
+  {
+    "event" : "selection",
+    "language" : "ja-JP",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "か"
+  },
+  {
+    "event" : "didChange",
+    "language" : "ja-JP",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "か"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "ja-JP",
+    "marked" : true,
+    "replacement" : "か",
+    "returnType" : 0,
+    "text" : "か"
+  },
+  {
+    "event" : "selection",
+    "language" : "ja-JP",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "か"
+  },
+  {
+    "event" : "didChange",
+    "language" : "ja-JP",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "か"
+  },
+  {
+    "event" : "selection",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "か"
+  },
+  {
+    "event" : "selection",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "か"
+  },
+  {
+    "event" : "didChange",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "か"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "\n",
+    "returnType" : 0,
+    "text" : "か"
+  },
+  {
+    "event" : "selection",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "か\n"
+  },
+  {
+    "event" : "didChange",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "か\n"
+  },
+  {
+    "event" : "type changed",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "か\n"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "\n",
+    "returnType" : 7,
+    "text" : "か\n"
+  },
+  {
+    "event" : "host action",
+    "language" : "ja-JP",
+    "marked" : false,
+    "replacement" : "\n",
+    "returnType" : 7,
+    "text" : "か\n"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : ""
+  },
+  {
+    "event" : "reset",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : ""
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "n",
+    "returnType" : 7,
+    "text" : ""
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "n"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "n"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "i",
+    "returnType" : 7,
+    "text" : "n"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "ni"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "ni"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "h",
+    "returnType" : 7,
+    "text" : "ni"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "ni h"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "ni h"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "a",
+    "returnType" : 7,
+    "text" : "ni h"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "ni ha"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "ni ha"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "o",
+    "returnType" : 7,
+    "text" : "ni ha"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "ni hao"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "ni hao"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "nihao",
+    "returnType" : 7,
+    "text" : "ni hao"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "nihao"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "nihao"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "nihao"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "nihao"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 7,
+    "text" : "nihao"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "\n",
+    "returnType" : 7,
+    "text" : "nihao"
+  },
+  {
+    "event" : "host action",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "\n",
+    "returnType" : 7,
+    "text" : "nihao"
+  },
+  {
+    "event" : "type changed",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "nihao"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "\n",
+    "returnType" : 0,
+    "text" : "nihao"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "nihao\n"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "nihao\n"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : ""
+  },
+  {
+    "event" : "reset",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : ""
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "n",
+    "returnType" : 0,
+    "text" : ""
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "n"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "n"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "i",
+    "returnType" : 0,
+    "text" : "n"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "ni"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "ni"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "h",
+    "returnType" : 0,
+    "text" : "ni"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "ni h"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "ni h"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "a",
+    "returnType" : 0,
+    "text" : "ni h"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "ni ha"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "ni ha"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "o",
+    "returnType" : 0,
+    "text" : "ni ha"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "ni hao"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "ni hao"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "你hao"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "你hao"
+  },
+  {
+    "event" : "shouldChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "你hao",
+    "returnType" : 0,
+    "text" : "你hao"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "你hao"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : true,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "你hao"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "你hao"
+  },
+  {
+    "event" : "selection",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "你hao"
+  },
+  {
+    "event" : "didChange",
+    "language" : "zh-Hans",
+    "marked" : false,
+    "replacement" : "",
+    "returnType" : 0,
+    "text" : "你hao"
+  }
+]

@@ -20,10 +20,11 @@ enum SKInputPolicy {
         case literal
     }
 
-    /// Newline, uppercase letters and symbols retain the existing MVP behavior.
+    /// Return confirms composition first; only an idle return reaches the host.
     func action(for text: String, isComposing: Bool) -> Action {
         switch self {
         case .chineseRomanization, .japaneseRomanization, .mixedRomanization:
+            if text == "\n" && isComposing { return .engineKey(0xff0d, insertIfUnhandled: false) }
             if text == " " && isComposing { return .engineKey(0x20, insertIfUnhandled: false) }
             if self == .japaneseRomanization && (text == "ー" || text == "-") {
                 return .engineKey(45, insertIfUnhandled: false)

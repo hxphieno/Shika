@@ -41,6 +41,12 @@ final class SKJapaneseEngine: SKInputEngine {
 
     func process(key: Int32) -> SKEngineState {
         if key == 0x20 { return commit() }
+        if key == 0xff0d {
+            // Native Japanese Return confirms the visible reading, not the
+            // first converted candidate, and does not also invoke the host.
+            let text = kana + pending
+            var state = clear(); state.committedText = text; return state
+        }
         if key == 0xff08 {
             let next = lexicon.removingLastUnit(kana: kana, pending: pending, preferring: literalPrefix + input)
             return updateInput(next.input, literalPrefix: next.literalPrefix)

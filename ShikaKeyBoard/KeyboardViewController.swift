@@ -189,6 +189,18 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         }
     }
 
+    override func textDidChange(_ textInput: UITextInput?) {
+        super.textDidChange(textInput)
+        updateReturnKey()
+    }
+
+    private func updateReturnKey() {
+        let confirmsJapanese = keyboardState.configuration.language == .japanese && !(inputSession?.state.input.isEmpty ?? true)
+        for footer in [chineseJapaneseView.footer, shuangpinView.footer] {
+            footer?.updateReturnKey(type: textDocumentProxy.returnKeyType ?? .default, confirmsJapanese: confirmsJapanese)
+        }
+    }
+
     func didTapSwitchScheme() {
         SKDeleteKeyInteraction.cancelActive()
         let next = keyboardState.scheme.next
@@ -219,6 +231,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func updateVisibleKeyboard() {
+        updateReturnKey()
         chineseJapaneseView.isHidden = candidatesExpanded || keyboardState.layout != .alphabet || keyboardState.scheme != .chineseJapanese
         shuangpinView.isHidden = candidatesExpanded || keyboardState.layout != .alphabet || keyboardState.scheme != .shuangpin
         numberView.isHidden = candidatesExpanded || keyboardState.layout != .number

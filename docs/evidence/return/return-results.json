@@ -1,0 +1,175 @@
+{
+  "checks" : [
+    {
+      "detail" : "",
+      "label" : "full pinyin: idle footer follows send host",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "full pinyin: composing label matches native host\/Japanese behavior",
+      "passed" : true
+    },
+    {
+      "detail" : "nihao",
+      "label" : "full pinyin: first return confirms composition only",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "full pinyin: host return label restores after confirmation",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "full pinyin: second return reaches send host exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "double pinyin: idle footer follows send host",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "double pinyin: composing label matches native host\/Japanese behavior",
+      "passed" : true
+    },
+    {
+      "detail" : "nihc",
+      "label" : "double pinyin: first return confirms composition only",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "double pinyin: host return label restores after confirmation",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "double pinyin: second return reaches send host exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese: idle footer follows send host",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese: composing label matches native host\/Japanese behavior",
+      "passed" : true
+    },
+    {
+      "detail" : "にほん",
+      "label" : "Japanese: first return confirms composition only",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese: host return label restores after confirmation",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese: second return reaches send host exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mixed: idle footer follows send host",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mixed: composing label matches native host\/Japanese behavior",
+      "passed" : true
+    },
+    {
+      "detail" : "nihao",
+      "label" : "mixed: first return confirms composition only",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mixed: host return label restores after confirmation",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mixed: second return reaches send host exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "default host displays newline",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "candidate selection restores host newline action",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "return after candidate inserts one native newline",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "host trait refresh changes footer to search",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Chinese composition preserves host search label",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "deleting composition restores search label",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "host trait refresh changes footer to send",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "return after selected candidate sends exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "space still selects the first converted candidate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "partial Chinese selection target is available",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "partial selection keeps chosen Chinese in the marked range",
+      "passed" : true
+    },
+    {
+      "detail" : "你好shijie",
+      "label" : "return preserves selected Chinese and confirms only remaining raw code",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "second return after partial confirmation sends once",
+      "passed" : true
+    },
+    {
+      "detail" : "你好uijp",
+      "label" : "double-pinyin partial return preserves selected Chinese and remaining code without sending",
+      "passed" : true
+    }
+  ],
+  "failures" : 0
+}
