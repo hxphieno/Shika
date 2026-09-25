@@ -13,9 +13,32 @@ class SKIMKeyButtonWithoutPopUpView: UIButton {
     var keyFont: UIFont
     var keyTitle: String
     var touchInsets = UIEdgeInsets.zero
+    private var deletion: SKDeleteKeyInteraction?
+    private var deletionBackground: UIColor?
+    var onDelete: ((Bool) -> SKDeleteFeedback)? {
+        didSet {
+            deletion?.cancel()
+            if onDelete != nil { deletionBackground = backgroundColor }
+            deletion = onDelete.map { SKDeleteKeyInteraction(control: self, action: $0) }
+        }
+    }
+    override var isHighlighted: Bool {
+        didSet {
+            guard onDelete != nil else { return }
+            backgroundColor = isHighlighted ? UIColor(white: 0.8, alpha: 1) : deletionBackground
+        }
+    }
+    override func accessibilityActivate() -> Bool {
+        deletion?.activateOnce() ?? super.accessibilityActivate()
+    }
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
+        if window == nil { deletion?.cancel() }
+    }
 
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-        bounds.inset(by: touchInsets).contains(point)
+        let area = bounds.inset(by: touchInsets)
+        return (onDelete != nil && isTracking ? area.insetBy(dx: -6, dy: -6) : area).contains(point)
     }
 
     init(title: String,

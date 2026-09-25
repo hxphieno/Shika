@@ -33,7 +33,28 @@ final class SKMarkedTextConnection {
             edit { proxy.insertText(text) }
         }
     }
-    func deleteBackward(in proxy: UITextDocumentProxy) { edit { proxy.deleteBackward() } }
+    func deleteBackward(in proxy: UITextDocumentProxy, byWord: Bool = false) {
+        edit {
+            // A selected range is one native edit, never followed by a word burst.
+            guard byWord, proxy.selectedText?.isEmpty != false,
+                  let context = proxy.documentContextBeforeInput, !context.isEmpty else {
+                proxy.deleteBackward(); return
+            }
+            let count = SKBackwardDeletion.characterCount(in: context)
+            guard let document = documentID(in: proxy) else { proxy.deleteBackward(); return }
+            for _ in 0..<count {
+                guard documentID(in: proxy) == document,
+                      proxy.selectedText?.isEmpty != false,
+                      let before = proxy.documentContextBeforeInput, !before.isEmpty else { break }
+                proxy.deleteBackward()
+                // Some hosts update their proxy asynchronously or expose only a
+                // moving context window. Stop rather than deleting against stale
+                // assumptions; the next timer tick can read fresh context.
+                guard let after = proxy.documentContextBeforeInput,
+                      before.hasPrefix(after), after.count < before.count else { break }
+            }
+        }
+    }
 
     /// A host cursor/focus change ends our ownership. Preserve visible text;
     /// do not erase an old range through a proxy that may now point elsewhere.

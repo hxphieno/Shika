@@ -56,6 +56,42 @@ final class SKJapaneseLexicon {
         return (kana, "")
     }
 
+    /// Backspace follows the visible kana, not a hidden romaji keystroke history.
+    /// Incomplete romaji still retreats one key; e.g. ky → k, but ka/か → empty.
+    func removingLastUnit(kana: String, pending: String, preferring input: String) -> (literalPrefix: String, input: String) {
+        let target = pending.isEmpty ? String(kana.dropLast()) : kana
+        let targetPending = String(pending.dropLast())
+        guard !target.isEmpty else { return ("", targetPending) }
+        // Prefer the original spelling when a complete prefix represents it.
+        var prefix = input
+        while !prefix.isEmpty {
+            prefix.removeLast()
+            let decoded = reading(prefix)
+            if decoded.pending == targetPending && decoded.kana == target { return ("", prefix) }
+        }
+        // Removing a small kana can change a syllable (kya/きゃ → ki/き).
+        // A carried consonant also needs reconstruction: gakk/がっk → がっ.
+        // Use the same imported romaji rules to encode the remaining reading.
+        var codes: [String: String] = [:]
+        for (code, value) in roman where value.count == 2 && value[1].isEmpty && !value[0].isEmpty {
+            let kana = value[0]
+            if let old = codes[kana], old.count < code.count || (old.count == code.count && old < code) { continue }
+            codes[kana] = code
+        }
+        codes["ん"] = "n'" // An n followed by a vowel must remain syllabic ん.
+        let tokens = codes.keys.sorted { $0.count == $1.count ? $0 < $1 : $0.count > $1.count }
+        var remaining = target, result = ""
+        while !remaining.isEmpty {
+            guard let token = tokens.first(where: { remaining.hasPrefix($0) }), let code = codes[token] else {
+                // Some imported rules emit literal Latin text. Keep completed
+                // text separate instead of feeding it through romaji a second time.
+                return (target, targetPending)
+            }
+            result += code; remaining.removeFirst(token.count)
+        }
+        return ("", result + targetPending)
+    }
+
     func words(for reading: String) -> [Word] {
         let key = Array(reading.utf8)
         return data.withUnsafeBytes { bytes in

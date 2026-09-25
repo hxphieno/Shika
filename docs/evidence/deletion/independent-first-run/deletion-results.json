@@ -1,0 +1,723 @@
+{
+  "checks" : [
+    {
+      "detail" : "",
+      "label" : "main delete has visible highlighted state",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main highlight returns to normal color",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number delete has visible highlighted state",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number highlight returns to normal color",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main deletes once on press",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main release has no second delete or leftover timer",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main brief hold has initial delay",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main real timer repeats after delay",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main touchCancel stops repetitions",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main drag exit pauses",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main reentry does not immediately delete again",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main reentry resumes remaining cadence",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main release outside stops",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "main VoiceOver activation deletes once without timer",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number deletes once on press",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number release has no second delete or leftover timer",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number brief hold has initial delay",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number real timer repeats after delay",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number touchCancel stops repetitions",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number drag exit pauses",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number reentry does not immediately delete again",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number reentry resumes remaining cadence",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number release outside stops",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "number VoiceOver activation deletes once without timer",
+      "passed" : true
+    },
+    {
+      "detail" : "firstWordEvent=Optional(17)",
+      "label" : "sustained hold reaches word stage after sixteen character repeats",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "word-stage repeats use the slower bounded cadence",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "composition boundary feedback restarts delay and character stage",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "stop feedback ends gesture",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "disabled cancels held deletion",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "hidden-parent cancels held deletion",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "alpha-parent cancels held deletion",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "interaction-parent cancels held deletion",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "removed cancels held deletion",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "app-inactive cancels held deletion",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "scene-inactive cancels held deletion",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "second-control cancels held deletion",
+      "passed" : true
+    },
+    {
+      "detail" : "中",
+      "label" : "native character deletion matches UIKit: 中文",
+      "passed" : true
+    },
+    {
+      "detail" : "hell",
+      "label" : "native character deletion matches UIKit: hello",
+      "passed" : true
+    },
+    {
+      "detail" : "12",
+      "label" : "native character deletion matches UIKit: 123",
+      "passed" : true
+    },
+    {
+      "detail" : "甲",
+      "label" : "native character deletion matches UIKit: 甲，",
+      "passed" : true
+    },
+    {
+      "detail" : "A",
+      "label" : "native character deletion matches UIKit: A\n",
+      "passed" : true
+    },
+    {
+      "detail" : "A",
+      "label" : "native character deletion matches UIKit: A🙂",
+      "passed" : true
+    },
+    {
+      "detail" : "A",
+      "label" : "native character deletion matches UIKit: A👨‍👩‍👧‍👦",
+      "passed" : true
+    },
+    {
+      "detail" : "A",
+      "label" : "native character deletion matches UIKit: A👍🏽",
+      "passed" : true
+    },
+    {
+      "detail" : "A",
+      "label" : "native character deletion matches UIKit: A🇯🇵",
+      "passed" : true
+    },
+    {
+      "detail" : "A",
+      "label" : "native character deletion matches UIKit: Aé",
+      "passed" : true
+    },
+    {
+      "detail" : "A",
+      "label" : "native character deletion matches UIKit: A1️⃣",
+      "passed" : true
+    },
+    {
+      "detail" : "A",
+      "label" : "native character deletion matches UIKit: A👩🏽‍💻",
+      "passed" : true
+    },
+    {
+      "detail" : "Aक्‍",
+      "label" : "native character deletion matches UIKit: Aक्‍ष",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "native character deletion matches UIKit: ",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "selected range is one native edit even in word stage: A👨‍👩‍👧‍👦B",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "selected range is one native edit even in word stage: 甲中文乙",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "selected range is one native edit even in word stage: A👍🏽B",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "selected range is one native edit even in word stage: AéB",
+      "passed" : true
+    },
+    {
+      "detail" : "hello ",
+      "label" : "word deletion respects boundary\/burst cap: hello world",
+      "passed" : true
+    },
+    {
+      "detail" : "hello ",
+      "label" : "word deletion respects boundary\/burst cap: hello world   ",
+      "passed" : true
+    },
+    {
+      "detail" : "hello",
+      "label" : "word deletion respects boundary\/burst cap: hello!",
+      "passed" : true
+    },
+    {
+      "detail" : "hello",
+      "label" : "word deletion respects boundary\/burst cap: hello\n",
+      "passed" : true
+    },
+    {
+      "detail" : "hello\n",
+      "label" : "word deletion respects boundary\/burst cap: hello\nworld",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "word deletion respects boundary\/burst cap:    ",
+      "passed" : true
+    },
+    {
+      "detail" : "x aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "label" : "word deletion respects boundary\/burst cap: x aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "stale-context never bursts against stale assumptions",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "moving-window never bursts against stale assumptions",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "changed-document never bursts against stale assumptions",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "nil-context never bursts against stale assumptions",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pinyin composition delete 0 preserves surrounding body",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pinyin composition delete 1 preserves surrounding body",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pinyin composition delete 2 preserves surrounding body",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pinyin composition delete 3 preserves surrounding body",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pinyin composition delete 4 preserves surrounding body",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pinyin empty composition signals fresh body delay",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pinyin following deletion reaches body once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pinyin actual key tap has no duplicate controller action",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pinyin number-page actual delete repeats",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "shuangpin composition delete 0 preserves surrounding body",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "shuangpin composition delete 1 preserves surrounding body",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "shuangpin composition delete 2 preserves surrounding body",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "shuangpin composition delete 3 preserves surrounding body",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "shuangpin empty composition signals fresh body delay",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "shuangpin following deletion reaches body once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "shuangpin actual key tap has no duplicate controller action",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "shuangpin number-page actual delete repeats",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "held deletion stops at composition boundary for fresh delay",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "held deletion resumes body after boundary pause",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "controller other-key cancels held key",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "controller layout cancels held key",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "controller scheme cancels held key",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "controller cursor cancels held key",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "controller disappear cancels held key",
+      "passed" : true
+    },
+    {
+      "detail" : "k",
+      "label" : "Japanese deletes pending letter or visible kana: ky",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese ky deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese deletes pending letter or visible kana: ka",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese ka deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "き",
+      "label" : "Japanese deletes pending letter or visible kana: kya",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese kya deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "がっこ",
+      "label" : "Japanese deletes pending letter or visible kana: gakkou",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese gakkou deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "が",
+      "label" : "Japanese deletes pending letter or visible kana: galtu",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese galtu deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "がk",
+      "label" : "Japanese deletes pending letter or visible kana: gakk",
+      "passed" : false
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese gakk deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "かんぱ",
+      "label" : "Japanese deletes pending letter or visible kana: kanpai",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese kanpai deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "しんよ",
+      "label" : "Japanese deletes pending letter or visible kana: shin'you",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese shin'you deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "こーひ",
+      "label" : "Japanese deletes pending letter or visible kana: ko-hi-",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese ko-hi- deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "にほ",
+      "label" : "Japanese deletes pending letter or visible kana: nihon",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese nihon deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "ん",
+      "label" : "Japanese deletes pending letter or visible kana: nna",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese nna deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese deletes pending letter or visible kana: nn",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese nn deletion reaches empty without stalling",
+      "passed" : true
+    },
+    {
+      "detail" : "ゔ",
+      "label" : "Japanese deletes pending letter or visible kana: va",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese va deletion reaches empty without stalling",
+      "passed" : true
+    }
+  ],
+  "failures" : 1,
+  "method" : "Real UIKit editors, real timers, programmatic UIControl events. No private touch injection, physical-finger gesture, or claim of Apple's exact cadence.",
+  "traces" : [
+    {
+      "events" : [
+        {
+          "byWord" : false,
+          "seconds" : 0.00014591217041015625
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.45067191123962402
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.55159199237823486
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.65265095233917236
+        }
+      ],
+      "label" : "main-repeat"
+    },
+    {
+      "events" : [
+        {
+          "byWord" : false,
+          "seconds" : 0.00019109249114990234
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.45038604736328125
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.55093002319335938
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.65204000473022461
+        }
+      ],
+      "label" : "number-repeat"
+    },
+    {
+      "events" : [
+        {
+          "byWord" : false,
+          "seconds" : 0.00027096271514892578
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.45058798789978027
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.55171895027160645
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.65248394012451172
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.75358700752258301
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.85436689853668213
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.95521998405456543
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.0555139780044556
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.1557528972625732
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.2561969757080078
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.3562968969345093
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.4573209285736084
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.5584169626235962
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.6594759225845337
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.76031494140625
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.8605319261550903
+        },
+        {
+          "byWord" : false,
+          "seconds" : 1.9616929292678833
+        },
+        {
+          "byWord" : true,
+          "seconds" : 2.0623229742050171
+        },
+        {
+          "byWord" : true,
+          "seconds" : 2.2132129669189453
+        }
+      ],
+      "label" : "acceleration"
+    },
+    {
+      "events" : [
+        {
+          "byWord" : false,
+          "seconds" : 0.00018894672393798828
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.45067799091339111
+        },
+        {
+          "byWord" : false,
+          "seconds" : 0.90169298648834229
+        }
+      ],
+      "label" : "boundary-delay"
+    }
+  ]
+}

@@ -115,8 +115,10 @@ class SKNumberInputView: UIView {
         zeroButton.addTarget(self, action: #selector(numberKeyPressed(_:)), for: .touchUpInside)
         
         let deleteButton = SKIMKeyButtonWithoutPopUpView(title: "⌫", width: 55, font: UIFont.systemFont(ofSize: 20, weight: .regular))
-        deleteButton.addTarget(self, action: #selector(deleteKeyPressed), for: .touchUpInside)
-        // TODO: Long press delete
+        deleteButton.accessibilityLabel = "删除"
+        deleteButton.onDelete = { [weak self] byWord in
+            self?.eventHandler?.didDeleteBackward(byWord: byWord) ?? .stop
+        }
         
         for button in [returnButton, zeroButton, deleteButton] {
             enlargeTouchArea(button)
@@ -205,7 +207,4 @@ class SKNumberInputView: UIView {
         eventHandler?.didTapSwitchLayout(to: .alphabet)
     }
     
-    @objc private func deleteKeyPressed() {
-         eventHandler?.didTapDelete()
-    }
 }

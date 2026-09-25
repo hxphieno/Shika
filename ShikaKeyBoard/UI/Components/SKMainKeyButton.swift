@@ -8,10 +8,14 @@ class SKMainKeyButton: UIButton {
     let keyRole: Role
     var keyTitle: String { didSet { setTitle(keyTitle, for: .normal) } }
     private var preview: SKMainKeyPreview?
-    private var repeatTimer: Timer?
+    private var deletion: SKDeleteKeyInteraction?
     var touchBounds: CGRect?
-    var onPress: (() -> Void)?
-    var onRepeat: (() -> Void)?
+    var onDelete: ((Bool) -> SKDeleteFeedback)? {
+        didSet {
+            deletion?.cancel()
+            deletion = onDelete.map { action in SKDeleteKeyInteraction(control: self, action: action) }
+        }
+    }
 
     init(title: String, role: Role = .letter) {
         keyTitle = title
@@ -51,12 +55,13 @@ class SKMainKeyButton: UIButton {
 
     // UIKit tracking must agree with hit testing for presses in visual gutters.
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-        touchBounds?.contains(point) ?? super.point(inside: point, with: event)
+        let area = touchBounds ?? bounds
+        return (onDelete != nil && isTracking ? area.insetBy(dx: -6, dy: -6) : area).contains(point)
     }
 
     override func accessibilityActivate() -> Bool {
         // VoiceOver activates controls without a touchDown/touchUp sequence.
-        if let onPress { onPress(); return true }
+        if let deletion { return deletion.activateOnce() }
         return super.accessibilityActivate()
     }
 
@@ -75,27 +80,15 @@ class SKMainKeyButton: UIButton {
     }
 
     @objc private func pressBegan() {
-        onPress?()
         if keyRole == .letter { showPreview() }
-        if onRepeat != nil && repeatTimer == nil {
-            repeatTimer = Timer.scheduledTimer(withTimeInterval: 0.45, repeats: false) { [weak self] _ in
-                guard let self else { return }
-                onRepeat?()
-                repeatTimer = Timer.scheduledTimer(withTimeInterval: 0.085, repeats: true) { [weak self] _ in self?.onRepeat?() }
-                if let repeatTimer { RunLoop.main.add(repeatTimer, forMode: .common) }
-            }
-            if let repeatTimer { RunLoop.main.add(repeatTimer, forMode: .common) }
-        }
     }
     @objc private func pressEnded() {
         preview?.removeFromSuperview()
         preview = nil
-        repeatTimer?.invalidate()
-        repeatTimer = nil
     }
     override func didMoveToWindow() {
         super.didMoveToWindow()
-        if window == nil { pressEnded() }
+        if window == nil { pressEnded(); deletion?.cancel() }
     }
     private func showPreview() {
         guard preview == nil, let window else { return }

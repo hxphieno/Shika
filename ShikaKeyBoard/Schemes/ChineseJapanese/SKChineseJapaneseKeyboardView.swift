@@ -21,8 +21,9 @@ final class SKChineseJapaneseKeyboardView: SKMainKeyboardSurface {
         let bottom = SKKeyboardFooterView(schemeTitle: "中日混合", nextSchemeTitle: "双拼")
         footer = bottom
         delete.useSymbol("delete.left", label: "删除")
-        delete.onPress = { [weak self] in self?.eventHandler?.didTapDelete() }
-        delete.onRepeat = { [weak self] in self?.eventHandler?.didTapDelete() }
+        delete.onDelete = { [weak self] byWord in
+            self?.eventHandler?.didDeleteBackward(byWord: byWord) ?? .stop
+        }
         shift.addTarget(self, action: #selector(toggleShift), for: .touchUpInside)
         let hold = UILongPressGestureRecognizer(target: self, action: #selector(holdShift(_:)))
         shift.addGestureRecognizer(hold)

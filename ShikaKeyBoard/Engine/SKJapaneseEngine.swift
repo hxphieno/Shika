@@ -7,6 +7,7 @@ final class SKJapaneseEngine: SKInputEngine {
     private let learningURL: URL
     private var learned: [String: [String: Int]]
     private var input = ""
+    private var literalPrefix = ""
     private var kana = ""
     private var pending = ""
     private var texts: [String] = []
@@ -20,8 +21,14 @@ final class SKJapaneseEngine: SKInputEngine {
     }
 
     func replaceInput(_ text: String) -> SKEngineState {
+        updateInput(text, literalPrefix: "")
+    }
+
+    private func updateInput(_ text: String, literalPrefix: String) -> SKEngineState {
+        self.literalPrefix = literalPrefix
         input = text; page = 0
         (kana, pending) = lexicon.reading(input)
+        kana = literalPrefix + kana
         texts = pending.isEmpty ? lexicon.convert(kana) : []
         // Promotion applies only to a previously selected, still valid candidate.
         let scores = learned[kana] ?? [:]
@@ -34,12 +41,15 @@ final class SKJapaneseEngine: SKInputEngine {
 
     func process(key: Int32) -> SKEngineState {
         if key == 0x20 { return commit() }
-        if key == 0xff08 { return replaceInput(String(input.dropLast())) }
+        if key == 0xff08 {
+            let next = lexicon.removingLastUnit(kana: kana, pending: pending, preferring: literalPrefix + input)
+            return updateInput(next.input, literalPrefix: next.literalPrefix)
+        }
         guard let scalar = UnicodeScalar(UInt32(bitPattern: key)),
               (97...122).contains(key) || key == 39 || key == 45 else {
             var state = snapshot(); state.handled = false; return state
         }
-        return replaceInput(input + String(scalar))
+        return updateInput(input + String(scalar), literalPrefix: literalPrefix)
     }
 
     func selectCandidate(at index: Int) -> SKEngineState {
@@ -61,7 +71,7 @@ final class SKJapaneseEngine: SKInputEngine {
         var state = clear(); state.committedText = text; return state
     }
     func clear() -> SKEngineState {
-        input = ""; kana = ""; pending = ""; texts = []; page = 0
+        input = ""; literalPrefix = ""; kana = ""; pending = ""; texts = []; page = 0
         return snapshot()
     }
     func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage {
@@ -80,7 +90,7 @@ final class SKJapaneseEngine: SKInputEngine {
     }
     private func snapshot() -> SKEngineState {
         let items = candidatePage(startingAt: page * 8, limit: 8)
-        return SKEngineState(input: input, preedit: kana + pending, candidates: items.candidates,
+        return SKEngineState(input: literalPrefix + input, preedit: kana + pending, candidates: items.candidates,
             page: page, isLastPage: !items.hasMore)
     }
 }

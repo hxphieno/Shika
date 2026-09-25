@@ -1,0 +1,197 @@
+{
+  "checks" : [
+    {
+      "detail" : "し + ",
+      "label" : "romaji shi",
+      "passed" : true
+    },
+    {
+      "detail" : "ち + ",
+      "label" : "romaji chi",
+      "passed" : true
+    },
+    {
+      "detail" : "つ + ",
+      "label" : "romaji tsu",
+      "passed" : true
+    },
+    {
+      "detail" : "きゃ + ",
+      "label" : "romaji kya",
+      "passed" : true
+    },
+    {
+      "detail" : "しゃ + ",
+      "label" : "romaji sha",
+      "passed" : true
+    },
+    {
+      "detail" : "りょ + ",
+      "label" : "romaji ryo",
+      "passed" : true
+    },
+    {
+      "detail" : "がっこう + ",
+      "label" : "romaji gakkou",
+      "passed" : true
+    },
+    {
+      "detail" : "こんにちは + ",
+      "label" : "romaji konnichiha",
+      "passed" : true
+    },
+    {
+      "detail" : "かんぱい + ",
+      "label" : "romaji kanpai",
+      "passed" : true
+    },
+    {
+      "detail" : "きんようび + ",
+      "label" : "romaji kin'youbi",
+      "passed" : true
+    },
+    {
+      "detail" : "しんよう + ",
+      "label" : "romaji shin'you",
+      "passed" : true
+    },
+    {
+      "detail" : "ん + ",
+      "label" : "romaji nn",
+      "passed" : true
+    },
+    {
+      "detail" : "なん + ",
+      "label" : "romaji nan",
+      "passed" : true
+    },
+    {
+      "detail" : "なに + ",
+      "label" : "romaji nani",
+      "passed" : true
+    },
+    {
+      "detail" : "にほん + ",
+      "label" : "romaji nihon",
+      "passed" : true
+    },
+    {
+      "detail" : "こーひー + ",
+      "label" : "romaji ko-hi-",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "incomplete consonants remain pending",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese candidates available",
+      "passed" : true
+    },
+    {
+      "detail" : "niho \/ にほ",
+      "label" : "backspace edits raw composition",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "clear removes composition and candidates",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "backspace on empty remains empty",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "space commits displayed top exactly once",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "second commit is empty",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "invalid selection preserves composition",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Japanese pagination advances indices",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pending letters have marked text",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pending commit does not lose letters",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mixed nihon exposes Japanese",
+      "passed" : true
+    },
+    {
+      "detail" : "candidate 日本, output 日本",
+      "label" : "mixed nihon routes selected Japanese exactly",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mixed toukyou exposes Japanese",
+      "passed" : true
+    },
+    {
+      "detail" : "candidate 東京, output 東京",
+      "label" : "mixed toukyou routes selected Japanese exactly",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mixed gakkou exposes Japanese",
+      "passed" : true
+    },
+    {
+      "detail" : "candidate 学校, output 学校",
+      "label" : "mixed gakkou routes selected Japanese exactly",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mixed expansion exposes beyond three Japanese choices",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "expanded Japanese candidate routes exactly",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "language switch clears old composition",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pure Japanese configured through common boundary",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "mode" : "functional",
+  "platform" : "macOS real production engines; not iOS UI or memory validation",
+  "processPeakRSSBytes" : 42942464,
+  "rankingTraining" : false,
+  "results" : [
+
+  ]
+}

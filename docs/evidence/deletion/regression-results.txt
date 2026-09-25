@@ -1,0 +1,6 @@
+Main keyboard integration: PASS 119 assertions (before final Japanese carry correction; UI source unchanged).
+Input session: PASS 54 assertions; cross-process learning and shared runtime checks passed.
+Japanese visible-unit deletion: PASS 5264 invariants, 312 romaji rules and 378 distinct prefixes.
+Japanese ranking: 40 cases, Top1 92.5%, Top5 100%; 79 functional checks, no failures.
+Final unsigned Release iphoneos build: BUILD SUCCEEDED.
+Final bundle audit: PASS exact offline resources, full access disabled, privacy and notices bundled, static Rime.

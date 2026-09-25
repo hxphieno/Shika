@@ -29,6 +29,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         }
         languageButton.onTap = { [weak self] in
             guard let self else { return }
+            SKDeleteKeyInteraction.cancelActive()
             let next = keyboardState.languageMode.next
             do { try inputSession?.switchConfiguration(to: SKChineseJapaneseScheme.configuration(for: next)) }
             catch { candidateBar.showError(); return }
@@ -99,6 +100,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func loadEngine() {
+        SKDeleteKeyInteraction.cancelActive()
         do {
             let engine = try SKConversionEngine(configuration: keyboardState.configuration)
             let session = SKInputSession(engine: engine, configuration: keyboardState.configuration,
@@ -130,6 +132,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func toggleCandidates() {
+        SKDeleteKeyInteraction.cancelActive()
         guard let inputSession, !inputSession.state.candidates.isEmpty else { return }
         candidatesExpanded.toggle()
         expandedCandidates.update(inputSession.state, resetScroll: true)
@@ -143,25 +146,36 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func selectCandidate(_ candidate: SKCandidate) {
+        SKDeleteKeyInteraction.cancelActive()
         candidatesExpanded = false
         inputSession?.select(candidate)
     }
 
     func didTapKey(_ key: String) {
+        SKDeleteKeyInteraction.cancelActive()
         if let inputSession { inputSession.type(key) }
         else { textDocumentProxy.insertText(key) }
     }
-    func didTapDelete() {
-        if let inputSession { inputSession.deleteBackward() }
-        else { textDocumentProxy.deleteBackward() }
+    func didTapDelete() { _ = didDeleteBackward(byWord: false) }
+
+    func didDeleteBackward(byWord: Bool) -> SKDeleteFeedback {
+        if let inputSession, !inputSession.state.input.isEmpty {
+            // Composition always retreats through its decoder, never by words.
+            inputSession.deleteBackward()
+            return inputSession.state.input.isEmpty ? .restartDelay : .continueRepeating
+        }
+        textConnection.deleteBackward(in: textDocumentProxy, byWord: byWord)
+        return .continueRepeating
     }
     func didTapNextKeyboard() {
+        SKDeleteKeyInteraction.cancelActive()
         inputSession?.commitPending()
         advanceToNextInputMode()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        SKDeleteKeyInteraction.cancelActive()
         textConnection.releaseComposition(in: textDocumentProxy)
         inputSession?.cancel()
     }
@@ -169,12 +183,14 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     override func textWillChange(_ textInput: UITextInput?) {
         // A host-side cursor/document change invalidates the engine composition.
         if !textConnection.isEditing {
+            SKDeleteKeyInteraction.cancelActive()
             textConnection.releaseComposition(in: textDocumentProxy)
             inputSession?.cancel()
         }
     }
 
     func didTapSwitchScheme() {
+        SKDeleteKeyInteraction.cancelActive()
         let next = keyboardState.scheme.next
         do { try inputSession?.switchConfiguration(to: next == .chineseJapanese
             ? SKChineseJapaneseScheme.configuration(for: keyboardState.languageMode) : next.configuration) }
@@ -190,6 +206,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     func didTapSwitchLayout(to layout: SKKeyboardLayoutType) {
+        SKDeleteKeyInteraction.cancelActive()
         inputSession?.commitPending()
         candidatesExpanded = false
         keyboardState.layout = layout

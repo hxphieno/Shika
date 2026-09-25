@@ -21,8 +21,9 @@ final class SKShuangpinKeyboardView: SKMainKeyboardSurface {
         }
         footer = SKKeyboardFooterView(schemeTitle: "双拼", nextSchemeTitle: "中日混合")
         delete.useSymbol("delete.left", label: "删除")
-        delete.onPress = { [weak self] in self?.eventHandler?.didTapDelete() }
-        delete.onRepeat = { [weak self] in self?.eventHandler?.didTapDelete() }
+        delete.onDelete = { [weak self] byWord in
+            self?.eventHandler?.didDeleteBackward(byWord: byWord) ?? .stop
+        }
         keyRows = [rows[0], rows[1], [shift] + rows[2] + [delete]]
         shift.addTarget(self, action: #selector(toggleShift), for: .touchUpInside)
         let hold = UILongPressGestureRecognizer(target: self, action: #selector(holdShift(_:)))
