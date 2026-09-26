@@ -1,0 +1,1547 @@
+[
+  {
+    "code" : "haibiandianqiyanhuo",
+    "items" : [
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 0,
+        "text" : "还变电器烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 1,
+        "text" : "还变电器验货"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 2,
+        "text" : "还变电器焰火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 3,
+        "text" : "海边电器烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 4,
+        "text" : "海边电气烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 5,
+        "text" : "还变电器演活"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 6,
+        "text" : "海边电器验货"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 7,
+        "text" : "海边电器焰火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 8,
+        "text" : "海边电气验货"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 9,
+        "text" : "海边电气焰火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 10,
+        "text" : "海变电器烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 11,
+        "text" : "还变电器言或"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 12,
+        "text" : "还编电器烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 13,
+        "text" : "还编电气烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 14,
+        "text" : "海边电器演活"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 15,
+        "text" : "海边点其烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 16,
+        "text" : "海边踮起烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 17,
+        "text" : "海变电器验货"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 18,
+        "text" : "海边电气演活"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 19,
+        "text" : "海边点起烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 20,
+        "text" : "海变电器焰火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 21,
+        "text" : "还变电气烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 22,
+        "text" : "还编电器验货"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 23,
+        "text" : "海边电企烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 18,
+        "id" : 24,
+        "text" : "还变电器掩护"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 18,
+        "id" : 25,
+        "text" : "海边电器掩护"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 18,
+        "id" : 26,
+        "text" : "海边电气掩护"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 16,
+        "id" : 27,
+        "text" : "还变电器言"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 16,
+        "id" : 28,
+        "text" : "海边点起眼"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 16,
+        "id" : 29,
+        "text" : "海边点气焰"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 15,
+        "id" : 30,
+        "text" : "还变电器呀"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 15,
+        "id" : 31,
+        "text" : "海边点气压"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 15,
+        "id" : 32,
+        "text" : "海边电器呀"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 13,
+        "id" : 33,
+        "text" : "还变电器"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 13,
+        "id" : 34,
+        "text" : "海边电器"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 13,
+        "id" : 35,
+        "text" : "海边电气"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 11,
+        "id" : 36,
+        "text" : "海边点"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 11,
+        "id" : 37,
+        "text" : "还编点"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 11,
+        "id" : 38,
+        "text" : "还变点"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 10,
+        "id" : 39,
+        "text" : "还贬低啊"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 10,
+        "id" : 40,
+        "text" : "还遍地啊"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 10,
+        "id" : 41,
+        "text" : "海贬低啊"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 9,
+        "id" : 42,
+        "text" : "还贬低"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 9,
+        "id" : 43,
+        "text" : "还遍地"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 9,
+        "id" : 44,
+        "text" : "海边地"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 7,
+        "id" : 45,
+        "text" : "海边"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 7,
+        "id" : 46,
+        "text" : "还编"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 7,
+        "id" : 47,
+        "text" : "还变"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 6,
+        "id" : 48,
+        "text" : "还比啊"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 6,
+        "id" : 49,
+        "text" : "还必啊"
+      },
+      {
+        "comment" : "中日",
+        "consumed" : 6,
+        "id" : 50,
+        "text" : "配備啊"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 5,
+        "id" : 51,
+        "text" : "还比"
+      },
+      {
+        "comment" : "日文",
+        "consumed" : 5,
+        "id" : 52,
+        "text" : "配備"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 5,
+        "id" : 53,
+        "text" : "海笔"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 5,
+        "id" : 54,
+        "text" : "还必"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 3,
+        "id" : 55,
+        "text" : "还"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 3,
+        "id" : 56,
+        "text" : "海"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 3,
+        "id" : 57,
+        "text" : "孩"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 3,
+        "id" : 58,
+        "text" : "害"
+      },
+      {
+        "comment" : "日文",
+        "consumed" : 2,
+        "id" : 59,
+        "text" : "は"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 2,
+        "id" : 60,
+        "text" : "哈"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 61,
+        "text" : "还编电器焰火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 62,
+        "text" : "还编电气验货"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 63,
+        "text" : "海边点其验货"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 64,
+        "text" : "还编电气焰火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 65,
+        "text" : "孩变电器烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 66,
+        "text" : "海边点起眼或"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 67,
+        "text" : "害变电器烟火"
+      },
+      {
+        "comment" : "中文",
+        "consumed" : 19,
+        "id" : 68,
+        "text" : "海边点气焰或"
+      }
+    ],
+    "mode" : "mixed",
+    "preedit" : "haibiandianqiyanhuo"
+  },
+  {
+    "code" : "haibiandianqiyanhuo",
+    "items" : [
+      {
+        "comment" : "hai bian dian qi yan huo",
+        "consumed" : -1,
+        "id" : 0,
+        "text" : "还变电器烟火"
+      },
+      {
+        "comment" : "hai bian",
+        "consumed" : -1,
+        "id" : 1,
+        "text" : "海边"
+      },
+      {
+        "comment" : "hai bian",
+        "consumed" : -1,
+        "id" : 2,
+        "text" : "还编"
+      },
+      {
+        "comment" : "hai bi",
+        "consumed" : -1,
+        "id" : 3,
+        "text" : "海笔"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 4,
+        "text" : "还"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 5,
+        "text" : "海"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 6,
+        "text" : "孩"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 7,
+        "text" : "害"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 8,
+        "text" : "嗨"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 9,
+        "text" : "亥"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 10,
+        "text" : "咳"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 11,
+        "text" : "骸"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 12,
+        "text" : "還"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 13,
+        "text" : "骇"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 14,
+        "text" : "氦"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 15,
+        "text" : "醢"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 16,
+        "text" : "嗐"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 17,
+        "text" : "咍"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 18,
+        "text" : "胲"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 19,
+        "text" : "駭"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 20,
+        "text" : "塰"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 21,
+        "text" : "駴"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 22,
+        "text" : "酼"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 23,
+        "text" : "饚"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 24,
+        "text" : "妎"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 25,
+        "text" : "烸"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 26,
+        "text" : "餀"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 27,
+        "text" : "㐪"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 28,
+        "text" : "㕢"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 29,
+        "text" : "㜾"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 30,
+        "text" : "㤥"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 31,
+        "text" : "㦟"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 32,
+        "text" : "㧡"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 33,
+        "text" : "㨟"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 34,
+        "text" : "㰧"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 35,
+        "text" : "㰩"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 36,
+        "text" : "㱚"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 37,
+        "text" : "㱼"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 38,
+        "text" : "㺔"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 39,
+        "text" : "㾂"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 40,
+        "text" : "䂤"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 41,
+        "text" : "䇋"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 42,
+        "text" : "䍖"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 43,
+        "text" : "䝳"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 44,
+        "text" : "䠹"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 45,
+        "text" : "䠽"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 46,
+        "text" : "䯐"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 47,
+        "text" : "䱺"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 48,
+        "text" : "侅"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 49,
+        "text" : "嘿"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 50,
+        "text" : "嚡"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 51,
+        "text" : "拸"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 52,
+        "text" : "猲"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 53,
+        "text" : "絯"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 54,
+        "text" : "郂"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 55,
+        "text" : "𠀅"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 56,
+        "text" : "𠔑"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 57,
+        "text" : "𠹛"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 58,
+        "text" : "𡕗"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 59,
+        "text" : "𡧱"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 60,
+        "text" : "𡾨"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 61,
+        "text" : "𢁓"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 62,
+        "text" : "𢞐"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 63,
+        "text" : "𢩸"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 64,
+        "text" : "𢻜"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 65,
+        "text" : "𣖻"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 66,
+        "text" : "𣢇"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 67,
+        "text" : "𣳗"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 68,
+        "text" : "𣳠"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 69,
+        "text" : "𤵽"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 70,
+        "text" : "𤸎"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 71,
+        "text" : "𥁐"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 72,
+        "text" : "𥂧"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 73,
+        "text" : "𥩤"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 74,
+        "text" : "𥩲"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 75,
+        "text" : "𦐤"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 76,
+        "text" : "𦤦"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 77,
+        "text" : "𦤬"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 78,
+        "text" : "𦷷"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 79,
+        "text" : "𧻲"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 80,
+        "text" : "𧽊"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 81,
+        "text" : "𧽖"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 82,
+        "text" : "𨀖"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 83,
+        "text" : "𨡬"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 84,
+        "text" : "𨸜"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 85,
+        "text" : "𩞞"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 86,
+        "text" : "𩠚"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 87,
+        "text" : "𩡔"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 88,
+        "text" : "𩩰"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 89,
+        "text" : "𩪃"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 90,
+        "text" : "𩰶"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 91,
+        "text" : "𩹄"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 92,
+        "text" : "𬐚"
+      }
+    ],
+    "mode" : "pinyin",
+    "preedit" : "hai bian dian qi yan huo"
+  },
+  {
+    "code" : "hdbmdmqiyjho",
+    "items" : [
+      {
+        "comment" : "hai bian dian qi yan huo",
+        "consumed" : -1,
+        "id" : 0,
+        "text" : "还变电器烟火"
+      },
+      {
+        "comment" : "hai bian",
+        "consumed" : -1,
+        "id" : 1,
+        "text" : "海边"
+      },
+      {
+        "comment" : "hai bian",
+        "consumed" : -1,
+        "id" : 2,
+        "text" : "还编"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 3,
+        "text" : "还"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 4,
+        "text" : "海"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 5,
+        "text" : "孩"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 6,
+        "text" : "害"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 7,
+        "text" : "嗨"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 8,
+        "text" : "亥"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 9,
+        "text" : "咳"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 10,
+        "text" : "骸"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 11,
+        "text" : "還"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 12,
+        "text" : "骇"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 13,
+        "text" : "氦"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 14,
+        "text" : "醢"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 15,
+        "text" : "嗐"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 16,
+        "text" : "咍"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 17,
+        "text" : "胲"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 18,
+        "text" : "駭"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 19,
+        "text" : "塰"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 20,
+        "text" : "駴"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 21,
+        "text" : "酼"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 22,
+        "text" : "饚"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 23,
+        "text" : "妎"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 24,
+        "text" : "烸"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 25,
+        "text" : "餀"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 26,
+        "text" : "㐪"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 27,
+        "text" : "㕢"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 28,
+        "text" : "㜾"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 29,
+        "text" : "㤥"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 30,
+        "text" : "㦟"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 31,
+        "text" : "㧡"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 32,
+        "text" : "㨟"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 33,
+        "text" : "㰧"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 34,
+        "text" : "㰩"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 35,
+        "text" : "㱚"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 36,
+        "text" : "㱼"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 37,
+        "text" : "㺔"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 38,
+        "text" : "㾂"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 39,
+        "text" : "䂤"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 40,
+        "text" : "䇋"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 41,
+        "text" : "䍖"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 42,
+        "text" : "䝳"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 43,
+        "text" : "䠹"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 44,
+        "text" : "䠽"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 45,
+        "text" : "䯐"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 46,
+        "text" : "䱺"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 47,
+        "text" : "侅"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 48,
+        "text" : "嘿"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 49,
+        "text" : "嚡"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 50,
+        "text" : "拸"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 51,
+        "text" : "猲"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 52,
+        "text" : "絯"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 53,
+        "text" : "郂"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 54,
+        "text" : "𠀅"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 55,
+        "text" : "𠔑"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 56,
+        "text" : "𠹛"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 57,
+        "text" : "𡕗"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 58,
+        "text" : "𡧱"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 59,
+        "text" : "𡾨"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 60,
+        "text" : "𢁓"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 61,
+        "text" : "𢞐"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 62,
+        "text" : "𢩸"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 63,
+        "text" : "𢻜"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 64,
+        "text" : "𣖻"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 65,
+        "text" : "𣢇"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 66,
+        "text" : "𣳗"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 67,
+        "text" : "𣳠"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 68,
+        "text" : "𤵽"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 69,
+        "text" : "𤸎"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 70,
+        "text" : "𥁐"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 71,
+        "text" : "𥂧"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 72,
+        "text" : "𥩤"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 73,
+        "text" : "𥩲"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 74,
+        "text" : "𦐤"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 75,
+        "text" : "𦤦"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 76,
+        "text" : "𦤬"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 77,
+        "text" : "𦷷"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 78,
+        "text" : "𧻲"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 79,
+        "text" : "𧽊"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 80,
+        "text" : "𧽖"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 81,
+        "text" : "𨀖"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 82,
+        "text" : "𨡬"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 83,
+        "text" : "𨸜"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 84,
+        "text" : "𩞞"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 85,
+        "text" : "𩠚"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 86,
+        "text" : "𩡔"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 87,
+        "text" : "𩩰"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 88,
+        "text" : "𩪃"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 89,
+        "text" : "𩰶"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 90,
+        "text" : "𩹄"
+      },
+      {
+        "comment" : "hai",
+        "consumed" : -1,
+        "id" : 91,
+        "text" : "𬐚"
+      }
+    ],
+    "mode" : "shuangpin",
+    "preedit" : "hd bm dm qi yj ho"
+  }
+]

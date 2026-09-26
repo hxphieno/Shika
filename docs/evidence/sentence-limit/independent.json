@@ -1,0 +1,3469 @@
+{
+  "checks" : [
+    {
+      "detail" : "6",
+      "label" : "haibiandianqiyanhuo: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "haibiandianqiyanhuo: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "haibiandianqiyanhuo: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "6",
+      "label" : "jintianyearigatou: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "jintianyearigatou: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "jintianyearigatou: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "1",
+      "label" : "jintianyearigadou: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "jintianyearigadou: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "jintianyearigadou: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "6",
+      "label" : "mingtianqudongjing: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mingtianqudongjing: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "mingtianqudongjing: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "5",
+      "label" : "woaini: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "woaini: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "woaini: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "6",
+      "label" : "nihaoshijie: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "nihaoshijie: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "nihaoshijie: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "6",
+      "label" : "woxiangchifan: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "woxiangchifan: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "woxiangchifan: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "1",
+      "label" : "arigatou: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "arigatou: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "arigatou: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "4",
+      "label" : "konnichiha: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "konnichiha: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "konnichiha: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "5",
+      "label" : "zhonghuarenmingongheguo: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "zhonghuarenmingongheguo: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "zhonghuarenmingongheguo: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "long dictionary word fixture exists",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "long dictionary word retained",
+      "passed" : true
+    },
+    {
+      "detail" : "6",
+      "label" : "jisuanjikexue: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "jisuanjikexue: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "jisuanjikexue: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "3",
+      "label" : "haibian: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "haibian: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "haibian: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "0",
+      "label" : "fuyuanxiaoqu: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "fuyuanxiaoqu: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "fuyuanxiaoqu: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "more-than-six long-word fixture exists",
+      "passed" : true
+    },
+    {
+      "detail" : "福苑小区|福园小区|富苑小区|福源小区|府苑小区|富源小区|复原|幅员|福源|复员|富源|复元|复圆|福元|富裕啊|富裕|冬|赋予|富余|富于|负于|ふゆ|馥郁|浮于|抚育|フユ|服|不|复|府|富|福|付|负|婦|副|負|幅|符|譜|歩|附|斑|麩|ふ|富园小区",
+      "label" : "all seven genuine long homophones survive cap",
+      "passed" : true
+    },
+    {
+      "detail" : "6",
+      "label" : "hai'bian'dian'qi'yan'huo: no more than six generated full sentences",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "hai'bian'dian'qi'yan'huo: after six suggestions all partial choices are single words",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "hai'bian'dian'qi'yan'huo: candidate identities unique",
+      "passed" : true
+    },
+    {
+      "detail" : "还变电器烟火|海边|还编|海笔|还|海|孩",
+      "label" : "pinyin: prefix 海边 remains accessible after at most six full alternatives",
+      "passed" : true
+    },
+    {
+      "detail" : "海边dian qi yan huo",
+      "label" : "pinyin: prefix selection keeps composition",
+      "passed" : true
+    },
+    {
+      "detail" : "海边dianqiyanhuo",
+      "label" : "pinyin: Return keeps selected prefix",
+      "passed" : true
+    },
+    {
+      "detail" : "海边电器烟火|海边电气烟火|海边|还编|还|海|孩",
+      "label" : "shuangpin: prefix 海边 remains accessible after at most six full alternatives",
+      "passed" : true
+    },
+    {
+      "detail" : "海边dm qi yj ho",
+      "label" : "shuangpin: prefix selection keeps composition",
+      "passed" : true
+    },
+    {
+      "detail" : "海边dmqiyjho",
+      "label" : "shuangpin: Return keeps selected prefix",
+      "passed" : true
+    },
+    {
+      "detail" : "海边电器烟火|海边电气烟火|还变电器烟火|还变电器验货|还变电器焰火|还变电器演活|海边|还编|配備|海笔|はいび|拝眉",
+      "label" : "screenshot: 海边 immediately after six suggestions",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "screenshot: only six full sentence candidates across all pages",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "screenshot: initial rows agree with expanded pages",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "pagination size does not change IDs or ordering",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "next-page navigation follows same candidate IDs",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "previous-page navigation retains original ordering",
+      "passed" : true
+    },
+    {
+      "detail" : "海边dianqiyanhuo",
+      "label" : "prefix selection retains exact raw suffix",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "selected prefix exposes next word 电器",
+      "passed" : true
+    },
+    {
+      "detail" : "海边dianqiyanhuo",
+      "label" : "Return preserves selected prefix and raw suffix",
+      "passed" : true
+    },
+    {
+      "detail" : "海边电器烟火",
+      "label" : "word-by-word selection commits whole intended phrase",
+      "passed" : true
+    },
+    {
+      "detail" : "海边dianqiyanhuo",
+      "label" : "unpredicted sentence: 海边 keeps exact remaining code",
+      "passed" : true
+    },
+    {
+      "detail" : "海边点qiyanhuo",
+      "label" : "unpredicted sentence: 点 keeps exact remaining code",
+      "passed" : true
+    },
+    {
+      "detail" : "海边点起yanhuo",
+      "label" : "unpredicted sentence: 起 keeps exact remaining code",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "unpredicted sentence: 烟火 keeps exact remaining code",
+      "passed" : true
+    },
+    {
+      "detail" : "海边点起烟火",
+      "label" : "unpredicted sentence can be assembled word by word",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "space still commits first sentence",
+      "passed" : true
+    }
+  ],
+  "count" : 68,
+  "failed" : [
+
+  ],
+  "samples" : [
+    {
+      "candidates" : [
+        {
+          "consumed" : 19,
+          "segments" : 1,
+          "text" : "还变电器烟火"
+        },
+        {
+          "consumed" : 19,
+          "segments" : 3,
+          "text" : "还变电器验货"
+        },
+        {
+          "consumed" : 19,
+          "segments" : 3,
+          "text" : "还变电器焰火"
+        },
+        {
+          "consumed" : 19,
+          "segments" : 3,
+          "text" : "海边电器烟火"
+        },
+        {
+          "consumed" : 19,
+          "segments" : 3,
+          "text" : "海边电气烟火"
+        },
+        {
+          "consumed" : 19,
+          "segments" : 3,
+          "text" : "还变电器演活"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "海边"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "还编"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "配備"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "海笔"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "はいび"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "拝眉"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "拝び"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "还"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "海"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "孩"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "はい"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "害"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "ハイ"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "履い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "杯"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "肺"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "嗨"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "亥"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "廃"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "吐い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "咳"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "骸"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "敗"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "穿い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "這い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "掃い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "這入"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "は"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "哈"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "派"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "葉"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "歯"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "刃"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "蛤"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "波"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "羽"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "铪"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "端"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "覇"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "虾"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "奤"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "紦"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "蝦"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "鉿"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "貼"
+        }
+      ],
+      "generatedCount" : 6,
+      "input" : "haibiandianqiyanhuo"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 17,
+          "segments" : 2,
+          "text" : "今天也ありがとう"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 2,
+          "text" : "今天也有難う"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 2,
+          "text" : "今天也有り難う"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 3,
+          "text" : "今天业ありがとう"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 3,
+          "text" : "今天夜ありがとう"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 3,
+          "text" : "今天野ありがとう"
+        },
+        {
+          "consumed" : 9,
+          "segments" : 1,
+          "text" : "今天也"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "今天"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "津田"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "金田"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "金天"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "锦田"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "陣地"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "人知"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "人智"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "浸提"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "近体"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "人治"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "神地"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "进"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "金"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "近"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "人"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "今"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "仅"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "紧"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "尽"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "陣"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "腎"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "じん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "ジン"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "津"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "神"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "仁"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "迅"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "湛"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "静"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "甚"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "及"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "即"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "既"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "時"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "次"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "じ"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "计"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "急"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "积"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "几"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "地"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "児"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "暨"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "字"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "自"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "路"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "事"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "持"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "辞"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "痔"
+        }
+      ],
+      "generatedCount" : 6,
+      "input" : "jintianyearigatou"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 17,
+          "segments" : 2,
+          "text" : "今天也ありがとう"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 2,
+          "text" : "今天也有り難う"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 2,
+          "text" : "今天也有難う"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 3,
+          "text" : "今天也有賀都"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 3,
+          "text" : "今天业ありがとう"
+        },
+        {
+          "consumed" : 17,
+          "segments" : 3,
+          "text" : "今天夜ありがとう"
+        },
+        {
+          "consumed" : 9,
+          "segments" : 1,
+          "text" : "今天也"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "今天"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "津田"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "金田"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "金天"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "锦田"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "陣地"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "人知"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "人智"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "浸提"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "近体"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "人治"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "神地"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "进"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "金"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "近"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "人"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "今"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "仅"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "紧"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "尽"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "陣"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "腎"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "じん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "ジン"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "津"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "神"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "仁"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "迅"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "湛"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "静"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "甚"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "及"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "即"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "既"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "時"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "次"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "じ"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "计"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "急"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "积"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "几"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "地"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "児"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "暨"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "字"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "自"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "路"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "事"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "持"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "辞"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "痔"
+        }
+      ],
+      "generatedCount" : 1,
+      "input" : "jintianyearigadou"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 18,
+          "segments" : 1,
+          "text" : "明天去东京"
+        },
+        {
+          "consumed" : 18,
+          "segments" : 2,
+          "text" : "明天去动静"
+        },
+        {
+          "consumed" : 18,
+          "segments" : 2,
+          "text" : "明天去东经"
+        },
+        {
+          "consumed" : 18,
+          "segments" : 3,
+          "text" : "明天区东京"
+        },
+        {
+          "consumed" : 18,
+          "segments" : 2,
+          "text" : "明天去东境"
+        },
+        {
+          "consumed" : 18,
+          "segments" : 2,
+          "text" : "明天去冬景"
+        },
+        {
+          "consumed" : 10,
+          "segments" : 1,
+          "text" : "明天去"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "明天"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "命题啊"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "命题"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "明体"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "名"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "明"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "命"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "鸣"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "铭"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "冥"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "茗"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "溟"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "民"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "敏"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "闽"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "闵"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "皿"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "みん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "ミン"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "悯"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "明"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "泯"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "抿"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "鳴"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "見ん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "旻"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "観ん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "看ん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "視ん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "觀ん"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "米"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "見"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "み"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "未"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "身"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "観"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "密"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "迷"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "味"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "診"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "秘"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "蜜"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "弥"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "泌"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "咪"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "呒"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "呣"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "嘸"
+        }
+      ],
+      "generatedCount" : 6,
+      "input" : "mingtianqudongjing"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "我爱你"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 3,
+          "text" : "我哎你"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 2,
+          "text" : "握爱你"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 3,
+          "text" : "我唉你"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 2,
+          "text" : "我挨你"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 3,
+          "text" : "我癌你"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "我爱"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "我啊"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "我"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "握"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "を"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "沃"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "卧"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "窝"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "涡"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "蜗"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "ヲ"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "挝"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "我猜你"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "我爱您"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "我买你"
+        }
+      ],
+      "generatedCount" : 5,
+      "input" : "woaini"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 11,
+          "segments" : 1,
+          "text" : "你好世界"
+        },
+        {
+          "consumed" : 11,
+          "segments" : 2,
+          "text" : "に好时节"
+        },
+        {
+          "consumed" : 11,
+          "segments" : 2,
+          "text" : "に好世界"
+        },
+        {
+          "consumed" : 11,
+          "segments" : 2,
+          "text" : "你好时节"
+        },
+        {
+          "consumed" : 11,
+          "segments" : 2,
+          "text" : "你好师姐"
+        },
+        {
+          "consumed" : 11,
+          "segments" : 2,
+          "text" : "你好视界"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "你好是"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "你好时"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "你好事"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "你好"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "拟好"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "泥蒿"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "には"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "丹羽"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "ニハ"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "二派"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "二波"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "你"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "に"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "2"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "似"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "泥"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "拟"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "煮"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "腻"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "逆"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "荷"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "尼"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "妮"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "匿"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "丹"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "煎"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "二"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "嗯"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "ん"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "ン"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "㕶"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "唔"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "𠮾"
+        },
+        {
+          "consumed" : 11,
+          "segments" : 1,
+          "text" : "鸟世界"
+        }
+      ],
+      "generatedCount" : 6,
+      "input" : "nihaoshijie"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 13,
+          "segments" : 1,
+          "text" : "我想吃饭"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 2,
+          "text" : "我像吃饭"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 2,
+          "text" : "握想吃饭"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 2,
+          "text" : "握像吃饭"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 2,
+          "text" : "我乡吃饭"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 2,
+          "text" : "我向吃饭"
+        },
+        {
+          "consumed" : 10,
+          "segments" : 1,
+          "text" : "我想吃"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "我想"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "我乡"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "我向"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "我像"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "我先"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "我县"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "我嫌"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "我西安"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "我下"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "卧下"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "我洗"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "我喜"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "我系"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "我"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "握"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "を"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "沃"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "卧"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "窝"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "涡"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "蜗"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "ヲ"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "挝"
+        }
+      ],
+      "generatedCount" : 6,
+      "input" : "woxiangchifan"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "ありがとう"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "有難う"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "有り難う"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "アリガトウ"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "有りがとう"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 2,
+          "text" : "あり難う"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "ありがと"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "アリガト"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "有賀"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "有我"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "アリガ"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "在我"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "在賀"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "有雅"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "あり"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "有り"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "アリ"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "在り"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "蟻"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "有"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "阿里"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "亜里"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "有里"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "安里"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "啊"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "阿"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "あ"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "锕"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "亜"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "嗄"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "腌"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "吖"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "呵"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "錒"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "有"
+        },
+        {
+          "consumed" : 1,
+          "segments" : 1,
+          "text" : "在"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "難有う"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "在り難う"
+        }
+      ],
+      "generatedCount" : 1,
+      "input" : "arigatou"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 10,
+          "segments" : 1,
+          "text" : "こんにちは"
+        },
+        {
+          "consumed" : 10,
+          "segments" : 1,
+          "text" : "コンニチハ"
+        },
+        {
+          "consumed" : 10,
+          "segments" : 2,
+          "text" : "今日は"
+        },
+        {
+          "consumed" : 10,
+          "segments" : 2,
+          "text" : "今日哈"
+        },
+        {
+          "consumed" : 10,
+          "segments" : 2,
+          "text" : "こんにち派"
+        },
+        {
+          "consumed" : 10,
+          "segments" : 2,
+          "text" : "今日葉"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "今日"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "こんにち"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "今"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "混ん"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "こん"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "金"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "痕"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "込ん"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "近"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "昆"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "崑"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "来ん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "今"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "混ん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "こん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "金"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "痕"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "込ん"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "近"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "昆"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "崑"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "来ん"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "個"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "子"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "こ"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "小"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "来"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "古"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "湖"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "故"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "濃"
+        }
+      ],
+      "generatedCount" : 4,
+      "input" : "konnichiha"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 23,
+          "segments" : 1,
+          "text" : "中华人民共和国"
+        },
+        {
+          "consumed" : 23,
+          "segments" : 3,
+          "text" : "种花人民共和国"
+        },
+        {
+          "consumed" : 23,
+          "segments" : 4,
+          "text" : "中花人民共和国"
+        },
+        {
+          "consumed" : 23,
+          "segments" : 4,
+          "text" : "中话人民共和国"
+        },
+        {
+          "consumed" : 23,
+          "segments" : 3,
+          "text" : "重话人民共和国"
+        },
+        {
+          "consumed" : 23,
+          "segments" : 4,
+          "text" : "中画人民共和国"
+        },
+        {
+          "consumed" : 14,
+          "segments" : 1,
+          "text" : "中华人民"
+        },
+        {
+          "consumed" : 11,
+          "segments" : 1,
+          "text" : "种花人"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "中华"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "种花"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "重话"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "中化"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "重画"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "钟华"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "钟花"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "中户"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "中湖"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "中"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "种"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "重"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "众"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "终"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "钟"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "仲"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "忠"
+        }
+      ],
+      "generatedCount" : 5,
+      "input" : "zhonghuarenmingongheguo"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 13,
+          "segments" : 1,
+          "text" : "计算机科学"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 2,
+          "text" : "计算机课学"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 2,
+          "text" : "计算机可学"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 3,
+          "text" : "计算及科学"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 3,
+          "text" : "计算即可学"
+        },
+        {
+          "consumed" : 13,
+          "segments" : 2,
+          "text" : "计算机课血"
+        },
+        {
+          "consumed" : 10,
+          "segments" : 1,
+          "text" : "计算机课"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "计算机"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "计算"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "肌酸"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "即算"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "己酸"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "激素啊"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "激素"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "急速"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "极速"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "寄宿"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "JIS"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "疾速"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "ジス"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "じす"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "辞す"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "持す"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "侍す"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "及"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "即"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "既"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "時"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "次"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "じ"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "计"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "急"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "积"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "几"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "地"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "児"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "暨"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "字"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "自"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "路"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "事"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "持"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "辞"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "痔"
+        }
+      ],
+      "generatedCount" : 6,
+      "input" : "jisuanjikexue"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "海边"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "还编"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 2,
+          "text" : "还变"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 2,
+          "text" : "还边"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 2,
+          "text" : "还便"
+        },
+        {
+          "consumed" : 7,
+          "segments" : 1,
+          "text" : "改变"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "配備"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "海笔"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "はいび"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "拝眉"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "拝び"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "还"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "海"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "孩"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "害"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "はい"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "ハイ"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "嗨"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "履い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "杯"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "肺"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "亥"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "廃"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "吐い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "咳"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "骸"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "敗"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "穿い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "這い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "掃い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "這入"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "は"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "哈"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "派"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "葉"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "歯"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "刃"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "蛤"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "波"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "羽"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "铪"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "端"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "覇"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "虾"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "奤"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "紦"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "蝦"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "鉿"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "貼"
+        }
+      ],
+      "generatedCount" : 3,
+      "input" : "haibian"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 12,
+          "segments" : 1,
+          "text" : "福苑小区"
+        },
+        {
+          "consumed" : 12,
+          "segments" : 1,
+          "text" : "福园小区"
+        },
+        {
+          "consumed" : 12,
+          "segments" : 1,
+          "text" : "富苑小区"
+        },
+        {
+          "consumed" : 12,
+          "segments" : 1,
+          "text" : "福源小区"
+        },
+        {
+          "consumed" : 12,
+          "segments" : 1,
+          "text" : "府苑小区"
+        },
+        {
+          "consumed" : 12,
+          "segments" : 1,
+          "text" : "富源小区"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "复原"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "幅员"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "福源"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "复员"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "富源"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "复元"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "复圆"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "福元"
+        },
+        {
+          "consumed" : 5,
+          "segments" : 1,
+          "text" : "富裕啊"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "富裕"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "冬"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "赋予"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "富余"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "富于"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "负于"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "ふゆ"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "馥郁"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "浮于"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "抚育"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "フユ"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "服"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "不"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "复"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "府"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "富"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "福"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "付"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "负"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "婦"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "副"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "負"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "幅"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "符"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "譜"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "歩"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "附"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "斑"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "麩"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "ふ"
+        },
+        {
+          "consumed" : 12,
+          "segments" : 1,
+          "text" : "富园小区"
+        }
+      ],
+      "generatedCount" : 0,
+      "input" : "fuyuanxiaoqu"
+    },
+    {
+      "candidates" : [
+        {
+          "consumed" : 24,
+          "segments" : 1,
+          "text" : "还变电器烟火"
+        },
+        {
+          "consumed" : 24,
+          "segments" : 6,
+          "text" : "还变点其言或"
+        },
+        {
+          "consumed" : 24,
+          "segments" : 6,
+          "text" : "还边点其言或"
+        },
+        {
+          "consumed" : 24,
+          "segments" : 6,
+          "text" : "还便点其言或"
+        },
+        {
+          "consumed" : 24,
+          "segments" : 6,
+          "text" : "还变点其研或"
+        },
+        {
+          "consumed" : 24,
+          "segments" : 6,
+          "text" : "还变点其验或"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "海边"
+        },
+        {
+          "consumed" : 8,
+          "segments" : 1,
+          "text" : "还编"
+        },
+        {
+          "consumed" : 6,
+          "segments" : 1,
+          "text" : "海笔"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "还"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "海"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "孩"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "害"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "嗨"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "亥"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "咳"
+        },
+        {
+          "consumed" : 4,
+          "segments" : 1,
+          "text" : "骸"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "还"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "海"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "孩"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "はい"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "害"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "ハイ"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "履い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "杯"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "肺"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "嗨"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "亥"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "廃"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "吐い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "咳"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "骸"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "敗"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "穿い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "這い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "掃い"
+        },
+        {
+          "consumed" : 3,
+          "segments" : 1,
+          "text" : "這入"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "は"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "哈"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "派"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "葉"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "歯"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "刃"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "蛤"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "波"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "羽"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "铪"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "端"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "覇"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "虾"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "奤"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "紦"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "蝦"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "鉿"
+        },
+        {
+          "consumed" : 2,
+          "segments" : 1,
+          "text" : "貼"
+        }
+      ],
+      "generatedCount" : 6,
+      "input" : "hai'bian'dian'qi'yan'huo"
+    }
+  ]
+}

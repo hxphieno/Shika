@@ -134,6 +134,7 @@ final class SKMixedDecoder {
         var chineseCosts = Array(repeating: Double.infinity, count: length + 1)
         lattice[0] = [Path(segments: [], cost: 0)]; chineseCosts[0] = 0
         var prefixes: [Path] = []
+        var wholeWords = Set<String>()
         for start in 0..<length {
             let incoming = ordered(lattice[start], limit: beamWidth)
             guard !incoming.isEmpty else { continue }
@@ -146,6 +147,15 @@ final class SKMixedDecoder {
                     choices += corrections(code)
                 }
                 for word in choices {
+                    // Selectable prefixes are dictionary words from the first
+                    // boundary, not shorter sentences assembled by the beam.
+                    if start == 0 {
+                        if end == raw.count { wholeWords.insert(word.text) }
+                        else {
+                            prefixes.append(Path(segments: [word],
+                                cost: word.cost + transition(context, word) - bonus(context, word)))
+                        }
+                    }
                     if word.language == .chinese {
                         chineseCosts[end] = min(chineseCosts[end], chineseCosts[start] + word.cost)
                     }
@@ -159,7 +169,6 @@ final class SKMixedDecoder {
                     lattice[end] = ordered(lattice[end], limit: beamWidth * 2)
                 }
             }
-            if start > 0 { prefixes += incoming.prefix(3) }
         }
         var complete = lattice[length].map { path -> Path in
             var path = path
@@ -191,6 +200,7 @@ final class SKMixedDecoder {
             let word = Segment(raw: input, text: suggestion.text, language: .chinese, left: 0, right: 0,
                 cost: max(1, 7.5 - 0.40 * log(suggestion.frequency + 1)) + 3 * suggestion.cost, corrected: true)
             complete.append(Path(segments: [word], cost: word.cost + transition(context, word) - bonus(context, word)))
+            wholeWords.insert(word.text)
         }
         // Refine promising Chinese runs with Rime's sentence model AFTER joint
         // boundary search. At most four distinct runs are queried, with the
@@ -242,15 +252,18 @@ final class SKMixedDecoder {
         complete += refined
         var seen = Set<String>()
         let whole = ordered(complete, limit: beamWidth * 2).filter { seen.insert("\($0.consumed):\($0.text)").inserted }
-        // Full-sentence choices first, then useful selectable prefixes, grouped
-        // by longest coverage. IDs are assigned only after this final ordering.
-        var result = Array(whole.prefix(24))
+        // Native/refined sentences may have been collapsed into one segment.
+        // Verify actual dictionary membership rather than guessing from segment
+        // count or output length; genuine long words remain available.
+        wholeWords.formUnion(chinese.words(for: input.replacingOccurrences(of: "'", with: "")).map(\.text))
+        // Six complete recommendations at most, then words from the beginning
+        // of the remaining input. Never append more generated sentences later.
+        var result = Array(whole.prefix(6))
         let partial = prefixes.sorted {
             $0.consumed == $1.consumed ? ($0.cost == $1.cost ? $0.text < $1.text : $0.cost < $1.cost) : $0.consumed > $1.consumed
         }.filter { seen.insert("\($0.consumed):\($0.text)").inserted }
-        result += partial.prefix(40)
-        // Preserve more alternatives for expanded candidates without recomputing.
-        result += whole.dropFirst(24).prefix(16)
+        result += partial
+        result += whole.dropFirst(6).filter { wholeWords.contains($0.text) }
         return result
     }
 }

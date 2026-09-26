@@ -1,0 +1,33 @@
+{
+  "coldStartComparison": [
+    {
+      "mode": "mixed",
+      "beforeCount": 69,
+      "afterCount": 51,
+      "unchanged": false,
+      "beforeHaibianPosition": 46,
+      "afterHaibianPosition": 7
+    },
+    {
+      "mode": "pinyin",
+      "beforeCount": 93,
+      "afterCount": 93,
+      "unchanged": true,
+      "beforeHaibianPosition": 2,
+      "afterHaibianPosition": 2
+    },
+    {
+      "mode": "shuangpin",
+      "beforeCount": 92,
+      "afterCount": 92,
+      "unchanged": true,
+      "beforeHaibianPosition": 2,
+      "afterHaibianPosition": 2
+    }
+  ],
+  "mixedTopSixUnchanged": true,
+  "iosTestedSources": {
+    "ShikaKeyBoard/Engine/SKMixedDecoder.swift": "eced548774cde05179790ee51615ff7761e2f03f9dccbbae4a0cbd3131f89994",
+    "Tests/SentenceLimitDisplayChecks.swift": "5ccd3d458d187dc8e9a344ec3de00830c6bf5f35ce2dffeef7516302c3ddb51e"
+  }
+}

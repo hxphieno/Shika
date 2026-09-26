@@ -1,0 +1,7 @@
+{
+  "ShikaKeyBoard/Engine/SKMixedDecoder.swift": "eced548774cde05179790ee51615ff7761e2f03f9dccbbae4a0cbd3131f89994",
+  "Tests/SentenceLimitIndependentChecks.swift": "b38d9a75259ad00772aa9ed273deddedd3ddc0f5ae0a39b6430bdc8520e4bb52",
+  "scripts/test-sentence-limit.sh": "bc000c25191cea861a89156832c268cbb5a97ebd4e968dae7f5b7a99df379f75",
+  "frozenDecoderSHA256": "eced548774cde05179790ee51615ff7761e2f03f9dccbbae4a0cbd3131f89994",
+  "currentMatchesTested": true
+}
