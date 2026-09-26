@@ -68,6 +68,20 @@ final class SKRimeEngine: SKInputEngine {
         if let first = displayed.candidates.first, first.index < 0 { return selectCandidate(at: first.index) }
         return finish(decode(session.commitComposition()), code: displayed.input)
     }
+    func commitLiteralFallback(rawInput: String) -> SKEngineState {
+        // express_editor's raw confirmation preserves segments already selected
+        // inside Rime; clearing and inserting get_input() would lose that prefix.
+        process(key: 0xff0d)
+    }
+    func commitCandidate(at index: Int) -> SKEngineState {
+        let selected = selectCandidate(at: index)
+        guard !selected.input.isEmpty else { return selected }
+        // This exceptional flush starts with a filtered native first choice.
+        // Do not auto-select another, unchecked candidate for the remaining tail.
+        var flushed = commitLiteralFallback(rawInput: selected.input)
+        flushed.committedText = selected.committedText + flushed.committedText
+        return flushed
+    }
     func clear() -> SKEngineState { present(decode(session.clearComposition())) }
     func selectConfiguration(_ configuration: SKInputConfiguration) throws -> SKEngineState {
         let result = session.selectSchema(configuration.schemaID)

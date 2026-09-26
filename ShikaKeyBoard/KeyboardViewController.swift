@@ -104,6 +104,7 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         do {
             let engine = try SKConversionEngine(configuration: keyboardState.configuration)
             let session = SKInputSession(engine: engine, configuration: keyboardState.configuration,
+                candidateIsDisplayable: SKCandidateGlyphCoverage().canDisplay,
                 insertText: { [weak self] text in
                     guard let self else { return }
                     textConnection.insert(text, in: textDocumentProxy)

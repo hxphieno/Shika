@@ -1,0 +1,924 @@
+{
+  "checks" : 29,
+  "failures" : [
+
+  ],
+  "fontResults" : [
+    {
+      "id" : "ascii",
+      "text" : "abc XYZ 123",
+      "visible" : true
+    },
+    {
+      "id" : "chinese",
+      "text" : "丝滑的中文输入法",
+      "visible" : true
+    },
+    {
+      "id" : "japanese",
+      "text" : "今日はありがとうカタカナ",
+      "visible" : true
+    },
+    {
+      "id" : "japanese-ext",
+      "text" : "𠮷野家",
+      "visible" : true
+    },
+    {
+      "id" : "korean",
+      "text" : "안녕하세요",
+      "visible" : true
+    },
+    {
+      "id" : "nfc-kana",
+      "text" : "ばぱがざゔ",
+      "visible" : true
+    },
+    {
+      "id" : "nfd-kana",
+      "text" : "ばぱがざゔ",
+      "visible" : true
+    },
+    {
+      "id" : "nfc-latin",
+      "text" : "café",
+      "visible" : true
+    },
+    {
+      "id" : "nfd-latin",
+      "text" : "café",
+      "visible" : true
+    },
+    {
+      "id" : "heart-text",
+      "text" : "❤︎",
+      "visible" : true
+    },
+    {
+      "id" : "heart-emoji",
+      "text" : "❤️",
+      "visible" : true
+    },
+    {
+      "id" : "zwj-family",
+      "text" : "👨‍👩‍👧‍👦",
+      "visible" : true
+    },
+    {
+      "id" : "zwj-profession",
+      "text" : "👩🏽‍💻",
+      "visible" : true
+    },
+    {
+      "id" : "skin-tone",
+      "text" : "👍🏽",
+      "visible" : true
+    },
+    {
+      "id" : "regional-flag",
+      "text" : "🇯🇵🇨🇳",
+      "visible" : true
+    },
+    {
+      "id" : "keycap",
+      "text" : "1️⃣",
+      "visible" : true
+    },
+    {
+      "id" : "rainbow-flag",
+      "text" : "🏳️‍🌈",
+      "visible" : true
+    },
+    {
+      "id" : "literal-square",
+      "text" : "□▢",
+      "visible" : true
+    },
+    {
+      "id" : "literal-replacement",
+      "text" : "�",
+      "visible" : true
+    },
+    {
+      "id" : "space",
+      "text" : " ",
+      "visible" : true
+    },
+    {
+      "id" : "newline",
+      "text" : "\n",
+      "visible" : true
+    },
+    {
+      "id" : "zero-width-joiner",
+      "text" : "‍",
+      "visible" : true
+    },
+    {
+      "id" : "variation-selector",
+      "text" : "️",
+      "visible" : true
+    },
+    {
+      "id" : "empty",
+      "text" : "",
+      "visible" : true
+    },
+    {
+      "id" : "unassigned",
+      "text" : "͸",
+      "visible" : false
+    },
+    {
+      "id" : "private-use",
+      "text" : "󰀀",
+      "visible" : false
+    },
+    {
+      "id" : "extension-b",
+      "text" : "𠀀",
+      "visible" : false
+    },
+    {
+      "id" : "extension-g",
+      "text" : "𰀀",
+      "visible" : false
+    },
+    {
+      "id" : "extension-h",
+      "text" : "𱍐",
+      "visible" : false
+    },
+    {
+      "id" : "cjk-ivs",
+      "text" : "葛󠄀",
+      "visible" : true
+    },
+    {
+      "id" : "cjk-ivs-unsupported",
+      "text" : "葛󠇯",
+      "visible" : true
+    },
+    {
+      "id" : "unsupported-inside-word",
+      "text" : "你͸好",
+      "visible" : false
+    }
+  ],
+  "platform" : "26.5",
+  "raw" : [
+    {
+      "index" : 0,
+      "text" : "颠簸调拨",
+      "visible" : true
+    },
+    {
+      "index" : 1,
+      "text" : "电波调拨",
+      "visible" : true
+    },
+    {
+      "index" : 2,
+      "text" : "点播调拨",
+      "visible" : true
+    },
+    {
+      "index" : 3,
+      "text" : "颠簸",
+      "visible" : true
+    },
+    {
+      "index" : 4,
+      "text" : "电波",
+      "visible" : true
+    },
+    {
+      "index" : 5,
+      "text" : "点播",
+      "visible" : true
+    },
+    {
+      "index" : 6,
+      "text" : "点拨",
+      "visible" : true
+    },
+    {
+      "index" : 7,
+      "text" : "点",
+      "visible" : true
+    },
+    {
+      "index" : 8,
+      "text" : "电",
+      "visible" : true
+    },
+    {
+      "index" : 9,
+      "text" : "店",
+      "visible" : true
+    },
+    {
+      "index" : 10,
+      "text" : "典",
+      "visible" : true
+    },
+    {
+      "index" : 11,
+      "text" : "殿",
+      "visible" : true
+    },
+    {
+      "index" : 12,
+      "text" : "垫",
+      "visible" : true
+    },
+    {
+      "index" : 13,
+      "text" : "淀",
+      "visible" : true
+    },
+    {
+      "index" : 14,
+      "text" : "颠",
+      "visible" : true
+    },
+    {
+      "index" : 15,
+      "text" : "奠",
+      "visible" : true
+    },
+    {
+      "index" : 16,
+      "text" : "點",
+      "visible" : true
+    },
+    {
+      "index" : 17,
+      "text" : "甸",
+      "visible" : true
+    },
+    {
+      "index" : 18,
+      "text" : "滇",
+      "visible" : true
+    },
+    {
+      "index" : 19,
+      "text" : "巅",
+      "visible" : true
+    },
+    {
+      "index" : 20,
+      "text" : "碘",
+      "visible" : true
+    },
+    {
+      "index" : 21,
+      "text" : "惦",
+      "visible" : true
+    },
+    {
+      "index" : 22,
+      "text" : "掂",
+      "visible" : true
+    },
+    {
+      "index" : 23,
+      "text" : "佃",
+      "visible" : true
+    },
+    {
+      "index" : 24,
+      "text" : "玷",
+      "visible" : true
+    },
+    {
+      "index" : 25,
+      "text" : "沾",
+      "visible" : true
+    },
+    {
+      "index" : 26,
+      "text" : "癫",
+      "visible" : true
+    },
+    {
+      "index" : 27,
+      "text" : "癜",
+      "visible" : true
+    },
+    {
+      "index" : 28,
+      "text" : "踮",
+      "visible" : true
+    },
+    {
+      "index" : 29,
+      "text" : "靛",
+      "visible" : true
+    },
+    {
+      "index" : 30,
+      "text" : "钿",
+      "visible" : true
+    },
+    {
+      "index" : 31,
+      "text" : "坫",
+      "visible" : true
+    },
+    {
+      "index" : 32,
+      "text" : "簟",
+      "visible" : true
+    },
+    {
+      "index" : 33,
+      "text" : "阽",
+      "visible" : true
+    },
+    {
+      "index" : 34,
+      "text" : "琔",
+      "visible" : true
+    },
+    {
+      "index" : 35,
+      "text" : "扂",
+      "visible" : true
+    },
+    {
+      "index" : 36,
+      "text" : "電",
+      "visible" : true
+    },
+    {
+      "index" : 37,
+      "text" : "槙",
+      "visible" : true
+    },
+    {
+      "index" : 38,
+      "text" : "瘨",
+      "visible" : true
+    },
+    {
+      "index" : 39,
+      "text" : "墊",
+      "visible" : true
+    },
+    {
+      "index" : 40,
+      "text" : "顛",
+      "visible" : true
+    },
+    {
+      "index" : 41,
+      "text" : "槇",
+      "visible" : true
+    },
+    {
+      "index" : 42,
+      "text" : "奌",
+      "visible" : true
+    },
+    {
+      "index" : 43,
+      "text" : "澱",
+      "visible" : true
+    },
+    {
+      "index" : 44,
+      "text" : "巔",
+      "visible" : true
+    },
+    {
+      "index" : 45,
+      "text" : "癲",
+      "visible" : true
+    },
+    {
+      "index" : 46,
+      "text" : "壂",
+      "visible" : true
+    },
+    {
+      "index" : 47,
+      "text" : "傎",
+      "visible" : true
+    },
+    {
+      "index" : 48,
+      "text" : "顚",
+      "visible" : true
+    },
+    {
+      "index" : 49,
+      "text" : "嚸",
+      "visible" : true
+    },
+    {
+      "index" : 50,
+      "text" : "跕",
+      "visible" : true
+    },
+    {
+      "index" : 51,
+      "text" : "蒧",
+      "visible" : true
+    },
+    {
+      "index" : 52,
+      "text" : "巓",
+      "visible" : true
+    },
+    {
+      "index" : 53,
+      "text" : "攧",
+      "visible" : true
+    },
+    {
+      "index" : 54,
+      "text" : "嵮",
+      "visible" : true
+    },
+    {
+      "index" : 55,
+      "text" : "橂",
+      "visible" : true
+    },
+    {
+      "index" : 56,
+      "text" : "敁",
+      "visible" : true
+    },
+    {
+      "index" : 57,
+      "text" : "橝",
+      "visible" : true
+    },
+    {
+      "index" : 58,
+      "text" : "厧",
+      "visible" : true
+    },
+    {
+      "index" : 59,
+      "text" : "敟",
+      "visible" : true
+    },
+    {
+      "index" : 60,
+      "text" : "驔",
+      "visible" : true
+    },
+    {
+      "index" : 61,
+      "text" : "蕇",
+      "visible" : true
+    },
+    {
+      "index" : 62,
+      "text" : "婰",
+      "visible" : true
+    },
+    {
+      "index" : 63,
+      "text" : "椣",
+      "visible" : true
+    },
+    {
+      "index" : 64,
+      "text" : "蹎",
+      "visible" : true
+    },
+    {
+      "index" : 65,
+      "text" : "婝",
+      "visible" : true
+    },
+    {
+      "index" : 66,
+      "text" : "磹",
+      "visible" : true
+    },
+    {
+      "index" : 67,
+      "text" : "㒹",
+      "visible" : true
+    },
+    {
+      "index" : 68,
+      "text" : "㓠",
+      "visible" : true
+    },
+    {
+      "index" : 69,
+      "text" : "㚲",
+      "visible" : true
+    },
+    {
+      "index" : 70,
+      "text" : "㝪",
+      "visible" : true
+    },
+    {
+      "index" : 71,
+      "text" : "㞟",
+      "visible" : true
+    },
+    {
+      "index" : 72,
+      "text" : "㥆",
+      "visible" : true
+    },
+    {
+      "index" : 73,
+      "text" : "㵤",
+      "visible" : true
+    },
+    {
+      "index" : 74,
+      "text" : "㶘",
+      "visible" : true
+    },
+    {
+      "index" : 75,
+      "text" : "㸃",
+      "visible" : true
+    },
+    {
+      "index" : 76,
+      "text" : "㼭",
+      "visible" : true
+    },
+    {
+      "index" : 77,
+      "text" : "䍄",
+      "visible" : true
+    },
+    {
+      "index" : 78,
+      "text" : "䓦",
+      "visible" : true
+    },
+    {
+      "index" : 79,
+      "text" : "䟍",
+      "visible" : true
+    },
+    {
+      "index" : 80,
+      "text" : "䧃",
+      "visible" : true
+    },
+    {
+      "index" : 81,
+      "text" : "䩇",
+      "visible" : true
+    },
+    {
+      "index" : 82,
+      "text" : "䩚",
+      "visible" : true
+    },
+    {
+      "index" : 83,
+      "text" : "丶",
+      "visible" : true
+    },
+    {
+      "index" : 84,
+      "text" : "佔",
+      "visible" : true
+    },
+    {
+      "index" : 85,
+      "text" : "痁",
+      "visible" : true
+    },
+    {
+      "index" : 86,
+      "text" : "痶",
+      "visible" : true
+    },
+    {
+      "index" : 87,
+      "text" : "窴",
+      "visible" : true
+    },
+    {
+      "index" : 88,
+      "text" : "蜔",
+      "visible" : true
+    },
+    {
+      "index" : 89,
+      "text" : "鈿",
+      "visible" : true
+    },
+    {
+      "index" : 90,
+      "text" : "齻",
+      "visible" : true
+    },
+    {
+      "index" : 91,
+      "text" : "𠑘",
+      "visible" : false
+    },
+    {
+      "index" : 92,
+      "text" : "𠔓",
+      "visible" : false
+    },
+    {
+      "index" : 93,
+      "text" : "𠔰",
+      "visible" : false
+    },
+    {
+      "index" : 94,
+      "text" : "𠕆",
+      "visible" : true
+    },
+    {
+      "index" : 95,
+      "text" : "𠕇",
+      "visible" : true
+    },
+    {
+      "index" : 96,
+      "text" : "𠢣",
+      "visible" : false
+    },
+    {
+      "index" : 97,
+      "text" : "𠤎",
+      "visible" : true
+    },
+    {
+      "index" : 98,
+      "text" : "𠩷",
+      "visible" : false
+    },
+    {
+      "index" : 99,
+      "text" : "𠫉",
+      "visible" : false
+    },
+    {
+      "index" : 100,
+      "text" : "𠶧",
+      "visible" : true
+    },
+    {
+      "index" : 101,
+      "text" : "𡪐",
+      "visible" : false
+    },
+    {
+      "index" : 102,
+      "text" : "𡱇",
+      "visible" : false
+    },
+    {
+      "index" : 103,
+      "text" : "𡼓",
+      "visible" : false
+    },
+    {
+      "index" : 104,
+      "text" : "𢅝",
+      "visible" : false
+    },
+    {
+      "index" : 105,
+      "text" : "𢕯",
+      "visible" : false
+    },
+    {
+      "index" : 106,
+      "text" : "𢖩",
+      "visible" : false
+    },
+    {
+      "index" : 107,
+      "text" : "𢻅",
+      "visible" : false
+    },
+    {
+      "index" : 108,
+      "text" : "𣇖",
+      "visible" : false
+    },
+    {
+      "index" : 109,
+      "text" : "𣒂",
+      "visible" : false
+    },
+    {
+      "index" : 110,
+      "text" : "𣢥",
+      "visible" : false
+    },
+    {
+      "index" : 111,
+      "text" : "𣣈",
+      "visible" : false
+    },
+    {
+      "index" : 112,
+      "text" : "𣣣",
+      "visible" : false
+    },
+    {
+      "index" : 113,
+      "text" : "𣧛",
+      "visible" : false
+    },
+    {
+      "index" : 114,
+      "text" : "𣪀",
+      "visible" : false
+    },
+    {
+      "index" : 115,
+      "text" : "𣪪",
+      "visible" : false
+    },
+    {
+      "index" : 116,
+      "text" : "𣪫",
+      "visible" : false
+    },
+    {
+      "index" : 117,
+      "text" : "𣵦",
+      "visible" : false
+    },
+    {
+      "index" : 118,
+      "text" : "𤠶",
+      "visible" : true
+    },
+    {
+      "index" : 119,
+      "text" : "𤩱",
+      "visible" : true
+    },
+    {
+      "index" : 120,
+      "text" : "𤿶",
+      "visible" : false
+    },
+    {
+      "index" : 121,
+      "text" : "𥅑",
+      "visible" : false
+    },
+    {
+      "index" : 122,
+      "text" : "𥇞",
+      "visible" : false
+    },
+    {
+      "index" : 123,
+      "text" : "𥑼",
+      "visible" : false
+    },
+    {
+      "index" : 124,
+      "text" : "𥢏",
+      "visible" : false
+    },
+    {
+      "index" : 125,
+      "text" : "𥦟",
+      "visible" : false
+    },
+    {
+      "index" : 126,
+      "text" : "𥧑",
+      "visible" : false
+    },
+    {
+      "index" : 127,
+      "text" : "𥮏",
+      "visible" : false
+    },
+    {
+      "index" : 128,
+      "text" : "𥳢",
+      "visible" : false
+    },
+    {
+      "index" : 129,
+      "text" : "𥴫",
+      "visible" : false
+    },
+    {
+      "index" : 130,
+      "text" : "𥵏",
+      "visible" : false
+    },
+    {
+      "index" : 131,
+      "text" : "𦅆",
+      "visible" : false
+    },
+    {
+      "index" : 132,
+      "text" : "𦒻",
+      "visible" : false
+    },
+    {
+      "index" : 133,
+      "text" : "𦕒",
+      "visible" : false
+    },
+    {
+      "index" : 134,
+      "text" : "𦽄",
+      "visible" : false
+    },
+    {
+      "index" : 135,
+      "text" : "𧄺",
+      "visible" : false
+    },
+    {
+      "index" : 136,
+      "text" : "𧍿",
+      "visible" : false
+    },
+    {
+      "index" : 137,
+      "text" : "𧽍",
+      "visible" : false
+    },
+    {
+      "index" : 138,
+      "text" : "𨈀",
+      "visible" : false
+    },
+    {
+      "index" : 139,
+      "text" : "𩂵",
+      "visible" : false
+    },
+    {
+      "index" : 140,
+      "text" : "𩄠",
+      "visible" : false
+    },
+    {
+      "index" : 141,
+      "text" : "𩅀",
+      "visible" : false
+    },
+    {
+      "index" : 142,
+      "text" : "𩆔",
+      "visible" : false
+    },
+    {
+      "index" : 143,
+      "text" : "𩥄",
+      "visible" : false
+    },
+    {
+      "index" : 144,
+      "text" : "𩨋",
+      "visible" : false
+    },
+    {
+      "index" : 145,
+      "text" : "𩬑",
+      "visible" : true
+    },
+    {
+      "index" : 146,
+      "text" : "𪑩",
+      "visible" : false
+    },
+    {
+      "index" : 147,
+      "text" : "𪓼",
+      "visible" : false
+    },
+    {
+      "index" : 148,
+      "text" : "𪖚",
+      "visible" : false
+    },
+    {
+      "index" : 149,
+      "text" : "𫁥",
+      "visible" : false
+    }
+  ],
+  "rawCount" : 150,
+  "removedCount" : 52,
+  "visibleCount" : 98
+}

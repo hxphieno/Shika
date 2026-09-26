@@ -41,6 +41,26 @@ protocol SKInputEngine: AnyObject {
     func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage
     func changePage(backward: Bool) -> SKEngineState
     func commit() -> SKEngineState
+    /// Flush for punctuation/mode changes, choosing a visible alternative.
+    /// Unlike a space/selection, this must not leave an uncommitted tail.
+    func commitCandidate(at index: Int) -> SKEngineState
+    /// No displayable choice remains. Preserve engine-owned confirmed prefixes.
+    func commitLiteralFallback(rawInput: String) -> SKEngineState
     func clear() -> SKEngineState
     func selectConfiguration(_ configuration: SKInputConfiguration) throws -> SKEngineState
+}
+
+extension SKInputEngine {
+    func commitLiteralFallback(rawInput: String) -> SKEngineState {
+        var result = clear()
+        result.committedText = rawInput
+        return result
+    }
+    func commitCandidate(at index: Int) -> SKEngineState {
+        let selected = selectCandidate(at: index)
+        guard !selected.input.isEmpty else { return selected }
+        var flushed = commit()
+        flushed.committedText = selected.committedText + flushed.committedText
+        return flushed
+    }
 }

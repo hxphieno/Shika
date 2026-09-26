@@ -103,11 +103,18 @@ final class SKMixedEngine: SKInputEngine {
     /// Punctuation/mode changes flush once; selecting a prefix must never drop
     /// the undecoded tail when the caller immediately switches engines.
     func commit() -> SKEngineState {
-        if let choice = candidates.first {
+        commitCandidate(at: 0)
+    }
+    func commitCandidate(at index: Int) -> SKEngineState {
+        if candidates.indices.contains(index) {
+            let choice = candidates[index]
             let tail = String(remaining.dropFirst(choice.consumed))
             return finish(prefix + choice.text + tail, segments: tail.isEmpty ? locked + choice.segments : [])
         }
         return finish(prefix + remaining, segments: [])
+    }
+    func commitLiteralFallback(rawInput: String) -> SKEngineState {
+        finish(prefix + remaining, segments: [])
     }
     private func finish(_ text: String, segments: [SKMixedDecoder.Segment]) -> SKEngineState {
         if !segments.isEmpty { remember(segments); context = segments.last }

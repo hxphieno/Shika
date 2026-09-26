@@ -29,6 +29,8 @@ final class SKConversionEngine: SKInputEngine {
     func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage { engine.candidatePage(startingAt: index, limit: limit) }
     func changePage(backward: Bool) -> SKEngineState { engine.changePage(backward: backward) }
     func commit() -> SKEngineState { engine.commit() }
+    func commitCandidate(at index: Int) -> SKEngineState { engine.commitCandidate(at: index) }
+    func commitLiteralFallback(rawInput: String) -> SKEngineState { engine.commitLiteralFallback(rawInput: rawInput) }
     func clear() -> SKEngineState { engine.clear() }
     func selectConfiguration(_ configuration: SKInputConfiguration) throws -> SKEngineState {
         // Construct before replacing, so missing resources leave a usable engine.

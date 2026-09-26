@@ -1,0 +1,14 @@
+{
+  "actual" : "颠簸调拨，",
+  "expected" : "颠簸dnbo，",
+  "passed" : false,
+  "remaining" : "",
+  "scope" : "Real Rime; only visibility policy injected to reproduce partial-flush route",
+  "visibleBeforeFlush" : [
+    {
+      "comment" : "dian bo",
+      "index" : 3,
+      "text" : "颠簸"
+    }
+  ]
+}

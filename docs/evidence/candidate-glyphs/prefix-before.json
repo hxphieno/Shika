@@ -1,0 +1,10 @@
+{
+  "actual" : "jintianyearigatouq，",
+  "afterSpacePreedit" : "今天也arigatouq",
+  "expected" : "今天也arigatouq，",
+  "initialVisible" : [
+    "今天也"
+  ],
+  "passed" : false,
+  "remaining" : ""
+}

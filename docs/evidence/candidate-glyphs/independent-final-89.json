@@ -1,0 +1,1208 @@
+{
+  "checks" : [
+    {
+      "detail" : "",
+      "label" : "ascii: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".SFNS-Regular",
+      "label" : "ascii: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "chinese: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".PingFangUIDisplaySC-Regular",
+      "label" : "chinese: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "japanese: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".PingFangUIDisplaySC-Regular,.CJKSymbolsFallbackSC-Regular",
+      "label" : "japanese: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "japanese-ext: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".PingFangUIDisplaySC-Regular",
+      "label" : "japanese-ext: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "korean: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".AppleSDGothicNeoI-Regular",
+      "label" : "korean: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "nfc-kana: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".CJKSymbolsFallbackSC-Regular,.HiraKakuInterface-W4",
+      "label" : "nfc-kana: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "nfd-kana: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".CJKSymbolsFallbackSC-Regular",
+      "label" : "nfd-kana: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "nfc-latin: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".SFNS-Regular",
+      "label" : "nfc-latin: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "nfd-latin: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".SFNS-Regular",
+      "label" : "nfd-latin: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "heart-text: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "ZapfDingbatsITC",
+      "label" : "heart-text: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "heart-emoji: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".AppleColorEmojiUI",
+      "label" : "heart-emoji: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "zwj-family: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".AppleColorEmojiUI",
+      "label" : "zwj-family: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "zwj-profession: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".AppleColorEmojiUI",
+      "label" : "zwj-profession: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "skin-tone: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".AppleColorEmojiUI",
+      "label" : "skin-tone: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "regional-flag: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".AppleColorEmojiUI",
+      "label" : "regional-flag: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "keycap: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".AppleColorEmojiUI",
+      "label" : "keycap: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "rainbow-flag: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".AppleColorEmojiUI",
+      "label" : "rainbow-flag: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "literal-square: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".SFNS-Regular,.HiraKakuInterface-W4",
+      "label" : "literal-square: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "literal-replacement: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".SFNS-Regular",
+      "label" : "literal-replacement: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "space: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".SFNS-Regular",
+      "label" : "space: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "newline: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".SFNS-Regular",
+      "label" : "newline: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "zero-width-joiner: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : ".SFNS-Regular",
+      "label" : "zero-width-joiner: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "variation-selector: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "LastResort",
+      "label" : "variation-selector: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "empty: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "empty: ordinary display preserved",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "unassigned: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "private-use: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "extension-b: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "extension-g: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "extension-h: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "cjk-ivs: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "cjk-ivs-unsupported: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "unsupported-inside-word: shaped fallback agrees with gate",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "canonically equivalent input has distinct byte cache keys",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "long supported text remains displayable",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "over-512-byte text is not retained",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "font decision cache at most 512 entries",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "all retained cache keys at most 512 bytes",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "evicted NFC and NFD rerender safely",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "all-visible initial candidate records unchanged",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "all-visible pagination preserves all candidate records",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "all-visible space retains native key dispatch",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "all-visible flush retains native commit",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "filter preserves surviving IDs and consumed counts",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "hidden stale candidate cannot be manually selected",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "space selects first visible original ID",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "Return commits original letters despite hidden first",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "initial hidden scan bounded to four page calls",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "valid candidates after long hidden run remain reachable",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "late pagination never commits or changes raw input",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "late pagination reaches true end and retains IDs",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "cancelled continuation cannot refill old input",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "new input cancels old candidate continuation",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "same text with distinct consumed lengths not merged",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "real mixed visible partial candidate exists",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "filtered browsing does not create mixed learning",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "space partial selection retains pending tail",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "partial selection alone does not train mixed learning",
+      "passed" : true
+    },
+    {
+      "detail" : "今天也arigatouq，",
+      "label" : "all-hidden tail flush retains previously selected mixed prefix",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "all-hidden tail fallback does not train learning",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "punctuation flush of visible partial preserves raw tail",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "label" : "raw-tail mixed flush does not train nonexistent full phrase",
+      "passed" : true
+    },
+    {
+      "detail" : "颠簸dnbo",
+      "label" : "Rime confirmed prefix survives hidden-tail ending \" \"",
+      "passed" : true
+    },
+    {
+      "detail" : "颠簸dnbo，",
+      "label" : "Rime confirmed prefix survives hidden-tail ending \"，\"",
+      "passed" : true
+    },
+    {
+      "detail" : "颠簸dnbo",
+      "label" : "Rime confirmed prefix survives hidden-tail ending \"\\n\"",
+      "passed" : true
+    },
+    {
+      "detail" : "颠簸dnbo，",
+      "label" : "Rime automatic visible-prefix flush cannot select unchecked tail",
+      "passed" : true
+    }
+  ],
+  "failed" : 0,
+  "fontProbes" : [
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".SFNS-Regular"
+      ],
+      "id" : "ascii",
+      "runInkBounds" : [
+        "(0.888671875, -0.234375, 110.37660598754883, 14.8046875)"
+      ],
+      "text" : "abc XYZ 123",
+      "textUTF8" : [
+        97,
+        98,
+        99,
+        32,
+        88,
+        89,
+        90,
+        32,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".PingFangUIDisplaySC-Regular"
+      ],
+      "id" : "chinese",
+      "runInkBounds" : [
+        "(1.0526315789473684, -2.0300751879699246, 150.99624060150376, 17.55639097744361)"
+      ],
+      "text" : "丝滑的中文输入法",
+      "textUTF8" : [
+        228,
+        184,
+        157,
+        230,
+        187,
+        145,
+        231,
+        154,
+        132,
+        228,
+        184,
+        173,
+        230,
+        150,
+        135,
+        232,
+        190,
+        147,
+        229,
+        133,
+        165,
+        230,
+        179,
+        149
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".PingFangUIDisplaySC-Regular",
+        ".CJKSymbolsFallbackSC-Regular"
+      ],
+      "id" : "japanese",
+      "runInkBounds" : [
+        "(0.6578947368421052, -1.9172932330827066, 33.94736842105263, 17.293233082706767)",
+        "(40.4101522737546, -0.9912804038549794, 185.99357503441945, 16.96190913262965)"
+      ],
+      "text" : "今日はありがとうカタカナ",
+      "textUTF8" : [
+        228,
+        187,
+        138,
+        230,
+        151,
+        165,
+        227,
+        129,
+        175,
+        227,
+        129,
+        130,
+        227,
+        130,
+        138,
+        227,
+        129,
+        140,
+        227,
+        129,
+        168,
+        227,
+        129,
+        134,
+        227,
+        130,
+        171,
+        227,
+        130,
+        191,
+        227,
+        130,
+        171,
+        227,
+        131,
+        138
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".PingFangUIDisplaySC-Regular"
+      ],
+      "id" : "japanese-ext",
+      "runInkBounds" : [
+        "(1.0150375939849623, -1.9172932330827066, 55.13157894736842, 17.424812030075188)"
+      ],
+      "text" : "𠮷野家",
+      "textUTF8" : [
+        240,
+        160,
+        174,
+        183,
+        233,
+        135,
+        142,
+        229,
+        174,
+        182
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".AppleSDGothicNeoI-Regular"
+      ],
+      "id" : "korean",
+      "runInkBounds" : [
+        "(1.0, -1.4000000000000001, 84.74000000000001, 17.48)"
+      ],
+      "text" : "안녕하세요",
+      "textUTF8" : [
+        236,
+        149,
+        136,
+        235,
+        133,
+        149,
+        237,
+        149,
+        152,
+        236,
+        132,
+        184,
+        236,
+        154,
+        148
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".CJKSymbolsFallbackSC-Regular",
+        ".HiraKakuInterface-W4"
+      ],
+      "id" : "nfc-kana",
+      "runInkBounds" : [
+        "(1.6429554841670493, -0.9821018815970629, 73.49242771913723, 17.209729233593393)",
+        "(78.19642461386431, -0.7017543859649124, 16.121883656509695, 15.420129270544784)"
+      ],
+      "text" : "ばぱがざゔ",
+      "textUTF8" : [
+        227,
+        129,
+        176,
+        227,
+        129,
+        177,
+        227,
+        129,
+        140,
+        227,
+        129,
+        150,
+        227,
+        130,
+        148
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".CJKSymbolsFallbackSC-Regular"
+      ],
+      "id" : "nfd-kana",
+      "runInkBounds" : [
+        "(1.6429554841670493, -0.9821018815970629, 89.42634235888023, 17.209729233593393)"
+      ],
+      "text" : "ばぱがざゔ",
+      "textUTF8" : [
+        227,
+        129,
+        175,
+        227,
+        130,
+        153,
+        227,
+        129,
+        175,
+        227,
+        130,
+        154,
+        227,
+        129,
+        139,
+        227,
+        130,
+        153,
+        227,
+        129,
+        149,
+        227,
+        130,
+        153,
+        227,
+        129,
+        134,
+        227,
+        130,
+        153
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".SFNS-Regular"
+      ],
+      "id" : "nfc-latin",
+      "runInkBounds" : [
+        "(0.947265625, -0.1953125, 36.00990295410156, 15.25390625)"
+      ],
+      "text" : "café",
+      "textUTF8" : [
+        99,
+        97,
+        102,
+        195,
+        169
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".SFNS-Regular"
+      ],
+      "id" : "nfd-latin",
+      "runInkBounds" : [
+        "(0.947265625, -0.1953125, 36.00990295410156, 15.25390625)"
+      ],
+      "text" : "café",
+      "textUTF8" : [
+        99,
+        97,
+        102,
+        101,
+        204,
+        129
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        "ZapfDingbatsITC"
+      ],
+      "id" : "heart-text",
+      "runInkBounds" : [
+        "(0.498046875, 0.517578125, 17.197265625, 12.48046875)"
+      ],
+      "text" : "❤︎",
+      "textUTF8" : [
+        226,
+        157,
+        164,
+        239,
+        184,
+        142
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".AppleColorEmojiUI"
+      ],
+      "id" : "heart-emoji",
+      "runInkBounds" : [
+        "(1.21, -3.5, 22.0, 22.0)"
+      ],
+      "text" : "❤️",
+      "textUTF8" : [
+        226,
+        157,
+        164,
+        239,
+        184,
+        143
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".AppleColorEmojiUI"
+      ],
+      "id" : "zwj-family",
+      "runInkBounds" : [
+        "(1.21, -3.5, 22.0, 22.0)"
+      ],
+      "text" : "👨‍👩‍👧‍👦",
+      "textUTF8" : [
+        240,
+        159,
+        145,
+        168,
+        226,
+        128,
+        141,
+        240,
+        159,
+        145,
+        169,
+        226,
+        128,
+        141,
+        240,
+        159,
+        145,
+        167,
+        226,
+        128,
+        141,
+        240,
+        159,
+        145,
+        166
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".AppleColorEmojiUI"
+      ],
+      "id" : "zwj-profession",
+      "runInkBounds" : [
+        "(1.21, -3.5, 22.0, 22.0)"
+      ],
+      "text" : "👩🏽‍💻",
+      "textUTF8" : [
+        240,
+        159,
+        145,
+        169,
+        240,
+        159,
+        143,
+        189,
+        226,
+        128,
+        141,
+        240,
+        159,
+        146,
+        187
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".AppleColorEmojiUI"
+      ],
+      "id" : "skin-tone",
+      "runInkBounds" : [
+        "(1.21, -3.5, 22.0, 22.0)"
+      ],
+      "text" : "👍🏽",
+      "textUTF8" : [
+        240,
+        159,
+        145,
+        141,
+        240,
+        159,
+        143,
+        189
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".AppleColorEmojiUI"
+      ],
+      "id" : "regional-flag",
+      "runInkBounds" : [
+        "(1.21, -3.5, 47.0, 22.0)"
+      ],
+      "text" : "🇯🇵🇨🇳",
+      "textUTF8" : [
+        240,
+        159,
+        135,
+        175,
+        240,
+        159,
+        135,
+        181,
+        240,
+        159,
+        135,
+        168,
+        240,
+        159,
+        135,
+        179
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".AppleColorEmojiUI"
+      ],
+      "id" : "keycap",
+      "runInkBounds" : [
+        "(1.21, -3.5, 22.0, 22.0)"
+      ],
+      "text" : "1️⃣",
+      "textUTF8" : [
+        49,
+        239,
+        184,
+        143,
+        226,
+        131,
+        163
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".AppleColorEmojiUI"
+      ],
+      "id" : "rainbow-flag",
+      "runInkBounds" : [
+        "(1.21, -3.5, 22.0, 22.0)"
+      ],
+      "text" : "🏳️‍🌈",
+      "textUTF8" : [
+        240,
+        159,
+        143,
+        179,
+        239,
+        184,
+        143,
+        226,
+        128,
+        141,
+        240,
+        159,
+        140,
+        136
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".SFNS-Regular",
+        ".HiraKakuInterface-W4"
+      ],
+      "id" : "literal-square",
+      "runInkBounds" : [
+        "(1.953125, -0.09765625, 14.27734375, 14.27734375)",
+        "(18.6023343721145, -1.348107109879963, 16.73130193905817, 16.73130193905817)"
+      ],
+      "text" : "□▢",
+      "textUTF8" : [
+        226,
+        150,
+        161,
+        226,
+        150,
+        162
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".SFNS-Regular"
+      ],
+      "id" : "literal-replacement",
+      "runInkBounds" : [
+        "(1.552734375, -1.728515625, 17.568359375, 17.55859375)"
+      ],
+      "text" : "�",
+      "textUTF8" : [
+        239,
+        191,
+        189
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".SFNS-Regular"
+      ],
+      "id" : "space",
+      "runInkBounds" : [
+        "(0.0, 0.0, 0.0, 0.0)"
+      ],
+      "text" : " ",
+      "textUTF8" : [
+        32
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".SFNS-Regular"
+      ],
+      "id" : "newline",
+      "runInkBounds" : [
+        "(0.0, 0.0, 0.0, 0.0)"
+      ],
+      "text" : "\n",
+      "textUTF8" : [
+        10
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".SFNS-Regular"
+      ],
+      "id" : "zero-width-joiner",
+      "runInkBounds" : [
+        "(0.0, 0.0, 0.0, 0.0)"
+      ],
+      "text" : "‍",
+      "textUTF8" : [
+        226,
+        128,
+        141
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        "LastResort"
+      ],
+      "id" : "variation-selector",
+      "runInkBounds" : [
+        "(0.0, 0.0, 0.0, 0.0)"
+      ],
+      "text" : "️",
+      "textUTF8" : [
+        239,
+        184,
+        143
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+
+      ],
+      "id" : "empty",
+      "runInkBounds" : [
+
+      ],
+      "text" : "",
+      "textUTF8" : [
+
+      ]
+    },
+    {
+      "displayable" : false,
+      "fonts" : [
+        "LastResort"
+      ],
+      "id" : "unassigned",
+      "runInkBounds" : [
+        "(2.001953125, -1.953125, 17.98828125, 17.978515625)"
+      ],
+      "text" : "͸",
+      "textUTF8" : [
+        205,
+        184
+      ]
+    },
+    {
+      "displayable" : false,
+      "fonts" : [
+        "LastResort"
+      ],
+      "id" : "private-use",
+      "runInkBounds" : [
+        "(2.001953125, -1.953125, 17.98828125, 17.978515625)"
+      ],
+      "text" : "󰀀",
+      "textUTF8" : [
+        243,
+        176,
+        128,
+        128
+      ]
+    },
+    {
+      "displayable" : false,
+      "fonts" : [
+        "LastResort"
+      ],
+      "id" : "extension-b",
+      "runInkBounds" : [
+        "(2.001953125, -1.953125, 17.98828125, 17.978515625)"
+      ],
+      "text" : "𠀀",
+      "textUTF8" : [
+        240,
+        160,
+        128,
+        128
+      ]
+    },
+    {
+      "displayable" : false,
+      "fonts" : [
+        "LastResort"
+      ],
+      "id" : "extension-g",
+      "runInkBounds" : [
+        "(2.001953125, -1.953125, 17.98828125, 17.978515625)"
+      ],
+      "text" : "𰀀",
+      "textUTF8" : [
+        240,
+        176,
+        128,
+        128
+      ]
+    },
+    {
+      "displayable" : false,
+      "fonts" : [
+        "LastResort"
+      ],
+      "id" : "extension-h",
+      "runInkBounds" : [
+        "(2.001953125, -1.953125, 17.98828125, 17.978515625)"
+      ],
+      "text" : "𱍐",
+      "textUTF8" : [
+        240,
+        177,
+        141,
+        144
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".PingFangUIDisplaySC-Regular"
+      ],
+      "id" : "cjk-ivs",
+      "runInkBounds" : [
+        "(0.8270676691729323, -1.9172932330827066, 16.74812030075188, 17.349624060150376)"
+      ],
+      "text" : "葛󠄀",
+      "textUTF8" : [
+        232,
+        145,
+        155,
+        243,
+        160,
+        132,
+        128
+      ]
+    },
+    {
+      "displayable" : true,
+      "fonts" : [
+        ".PingFangUIDisplaySC-Regular"
+      ],
+      "id" : "cjk-ivs-unsupported",
+      "runInkBounds" : [
+        "(0.8270676691729323, -1.9172932330827066, 16.74812030075188, 17.349624060150376)"
+      ],
+      "text" : "葛󠇯",
+      "textUTF8" : [
+        232,
+        145,
+        155,
+        243,
+        160,
+        135,
+        175
+      ]
+    },
+    {
+      "displayable" : false,
+      "fonts" : [
+        ".PingFangUIDisplaySC-Regular",
+        "LastResort",
+        ".PingFangUIDisplaySC-Regular"
+      ],
+      "id" : "unsupported-inside-word",
+      "runInkBounds" : [
+        "(0.5827067669172932, -1.9548872180451127, 17.19924812030075, 17.462406015037594)",
+        "(23.656088463345863, -1.953125, 17.98828125, 17.978515625)",
+        "(47.05834410244361, -1.9924812030075187, 17.12406015037594, 17.518796992481203)"
+      ],
+      "text" : "你͸好",
+      "textUTF8" : [
+        228,
+        189,
+        160,
+        205,
+        184,
+        229,
+        165,
+        189
+      ]
+    }
+  ],
+  "passed" : 89,
+  "platform" : "macOS; font availability is device-specific",
+  "rimePartialObservations" : [
+    {
+      "ending" : " ",
+      "output" : "颠簸dnbo",
+      "preeditAfterPrefix" : "颠簸dn bo",
+      "rawAfterPrefix" : "dmbodnbo"
+    },
+    {
+      "ending" : "，",
+      "output" : "颠簸dnbo，",
+      "preeditAfterPrefix" : "颠簸dn bo",
+      "rawAfterPrefix" : "dmbodnbo"
+    },
+    {
+      "ending" : "\n",
+      "output" : "颠簸dnbo",
+      "preeditAfterPrefix" : "颠簸dn bo",
+      "rawAfterPrefix" : "dmbodnbo"
+    }
+  ],
+  "scope" : "Independent font boundary, session paging spies and real mixed partial selection"
+}

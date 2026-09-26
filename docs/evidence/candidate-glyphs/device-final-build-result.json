@@ -1,0 +1,30 @@
+{
+  "unsigned_iphone_build": "PASS",
+  "offline_resource_check": "PASS: exact offline resources, full access disabled, privacy and notices bundled, static Rime",
+  "production_source_comparison": {
+    "Core/SKInputEngine.swift": {
+      "source": "3ba6c30e09fedd85ff08fbff87502da7ce654dfe55a66f31939aac76f94066d5",
+      "built": "3ba6c30e09fedd85ff08fbff87502da7ce654dfe55a66f31939aac76f94066d5"
+    },
+    "Core/SKInputSession.swift": {
+      "source": "449078f8ca8686ab9dc485a5ca35c2fa5393f40ec92ae64852bfac3592b30568",
+      "built": "449078f8ca8686ab9dc485a5ca35c2fa5393f40ec92ae64852bfac3592b30568"
+    },
+    "Engine/SKConversionEngine.swift": {
+      "source": "40745095e6bd5eb2b56486da8e8737b3574dcc249a013002fd91ffb2a48abe9c",
+      "built": "40745095e6bd5eb2b56486da8e8737b3574dcc249a013002fd91ffb2a48abe9c"
+    },
+    "Engine/SKMixedEngine.swift": {
+      "source": "884357da414c7fcb710226f25bac6cedb120dce00ada8d6750be5345100800f7",
+      "built": "884357da414c7fcb710226f25bac6cedb120dce00ada8d6750be5345100800f7"
+    },
+    "Engine/SKRimeEngine.swift": {
+      "source": "e4ebc9e5d57bbb3d57d331a8511afd78d5cc41a61409df0629e0609718f93c98",
+      "built": "e4ebc9e5d57bbb3d57d331a8511afd78d5cc41a61409df0629e0609718f93c98"
+    },
+    "Platform/SKCandidateGlyphCoverage.swift": {
+      "source": "1be3ef12316e524806e749b771c3a4eaf204dee743e5111d11e0216b45546f1d",
+      "built": "1be3ef12316e524806e749b771c3a4eaf204dee743e5111d11e0216b45546f1d"
+    }
+  }
+}

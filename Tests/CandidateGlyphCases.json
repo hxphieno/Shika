@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ascii",
+    "text": "abc XYZ 123",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "chinese",
+    "text": "丝滑的中文输入法",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "japanese",
+    "text": "今日はありがとうカタカナ",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "japanese-ext",
+    "text": "𠮷野家",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "korean",
+    "text": "안녕하세요",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "nfc-kana",
+    "text": "ばぱがざゔ",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "nfd-kana",
+    "text": "ばぱがざゔ",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "nfc-latin",
+    "text": "café",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "nfd-latin",
+    "text": "café",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "heart-text",
+    "text": "❤︎",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "heart-emoji",
+    "text": "❤️",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "zwj-family",
+    "text": "👨‍👩‍👧‍👦",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "zwj-profession",
+    "text": "👩🏽‍💻",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "skin-tone",
+    "text": "👍🏽",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "regional-flag",
+    "text": "🇯🇵🇨🇳",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "keycap",
+    "text": "1️⃣",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "rainbow-flag",
+    "text": "🏳️‍🌈",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "literal-square",
+    "text": "□▢",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "literal-replacement",
+    "text": "�",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "space",
+    "text": " ",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "newline",
+    "text": "\n",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "zero-width-joiner",
+    "text": "‍",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "variation-selector",
+    "text": "️",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "empty",
+    "text": "",
+    "expect": "preserve-normal-display"
+  },
+  {
+    "id": "unassigned",
+    "text": "͸",
+    "expect": "observe-device-fallback-only"
+  },
+  {
+    "id": "private-use",
+    "text": "󰀀",
+    "expect": "observe-device-fallback-only"
+  },
+  {
+    "id": "extension-b",
+    "text": "𠀀",
+    "expect": "observe-device-fallback-only"
+  },
+  {
+    "id": "extension-g",
+    "text": "𰀀",
+    "expect": "observe-device-fallback-only"
+  },
+  {
+    "id": "extension-h",
+    "text": "𱍐",
+    "expect": "observe-device-fallback-only"
+  },
+  {
+    "id": "cjk-ivs",
+    "text": "葛󠄀",
+    "expect": "observe-device-fallback-only"
+  },
+  {
+    "id": "cjk-ivs-unsupported",
+    "text": "葛󠇯",
+    "expect": "observe-device-fallback-only"
+  },
+  {
+    "id": "unsupported-inside-word",
+    "text": "你͸好",
+    "expect": "observe-device-fallback-only"
+  }
+]

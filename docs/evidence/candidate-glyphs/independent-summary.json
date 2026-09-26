@@ -1,0 +1,26 @@
+{
+  "passed": 89,
+  "failed": 0,
+  "focusedCheck": [
+    {
+      "detail": "颠簸dnbo，",
+      "label": "Rime automatic visible-prefix flush cannot select unchecked tail",
+      "passed": true
+    }
+  ],
+  "allProductionHashesMatch": true,
+  "before": {
+    "actual": "颠簸调拨，",
+    "expected": "颠簸dnbo，",
+    "passed": false,
+    "remaining": "",
+    "scope": "Real Rime; only visibility policy injected to reproduce partial-flush route",
+    "visibleBeforeFlush": [
+      {
+        "comment": "dian bo",
+        "index": 3,
+        "text": "颠簸"
+      }
+    ]
+  }
+}
