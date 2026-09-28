@@ -125,7 +125,7 @@ private func returnVisible(_ view: UIView) -> Bool {
         }
         let cases: [(String, SKInputScheme, SKChineseJapaneseMode, String, String)] = [
             ("full pinyin", .chineseJapanese, .chinese, "nihao", "nihao"),
-            ("double pinyin", .shuangpin, .chinese, "nihc", "nihc"),
+            ("double pinyin", .shuangpin, .chinese, "nihk", "nihk"),
             ("Japanese", .chineseJapanese, .japanese, "nihon", "nihon"),
             ("mixed", .chineseJapanese, .mixed, "nihao", "nihao")
         ]
@@ -190,11 +190,11 @@ private func returnVisible(_ view: UIView) -> Bool {
         enter(keyboard).sendActions(for: .touchUpInside); await settle()
         expect(proxy.host.sent == ["你好shijie"] && proxy.insertions.filter { $0 == "\n" }.count == 1, "second return after partial confirmation sends once")
         await reset(keyboard); keyboard.didTapSwitchScheme(); keyboard.view.layoutIfNeeded()
-        await type("nihcuijp", keyboard)
+        await type("nihkuijx", keyboard)
         let doublePartial = candidate(keyboard, "你好")
         doublePartial?.sendActions(for: .touchUpInside); await settle()
         enter(keyboard).sendActions(for: .touchUpInside); await settle()
-        expect(doublePartial != nil && proxy.editor.text == "你好uijp" && marked(keyboard) == nil && proxy.host.sent.isEmpty && !proxy.insertions.contains("\n"), "double-pinyin partial return preserves selected Chinese and remaining code without sending", proxy.editor.text ?? "nil")
+        expect(doublePartial != nil && proxy.editor.text == "你好uijx" && marked(keyboard) == nil && proxy.host.sent.isEmpty && !proxy.insertions.contains("\n"), "double-pinyin partial return preserves selected Chinese and remaining code without sending", proxy.editor.text ?? "nil")
         do {
             let resources = Bundle.main.url(forResource: "RimeData", withExtension: "bundle")!
             let directory = FileManager.default.temporaryDirectory.appendingPathComponent("return-japanese-\(UUID())")

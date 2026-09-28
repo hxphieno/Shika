@@ -35,23 +35,3 @@ struct SKConfig {
     static let keyboardHorizontalSpacing: CGFloat = 6
     static let numberInputViewSpacing: CGFloat = 10
 }
-
-struct SKUtils {
-    
-    /// Recursively disables clipsToBounds and masksToBounds up the view hierarchy.
-    /// This is a common workaround for iOS Keyboard Extensions to allow popups to overflow the main view.
-    static func disableClipping(for view: UIView?) {
-        var current: UIView? = view
-        while let v = current {
-            v.clipsToBounds = false
-            v.layer.masksToBounds = false
-            current = v.superview
-        }
-        
-        // Also check window
-        if let window = view?.window {
-            window.clipsToBounds = false
-            window.layer.masksToBounds = false
-        }
-    }
-}

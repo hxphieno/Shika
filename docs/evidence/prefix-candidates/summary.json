@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-26",
+  "scope": "Real shipped resources; macOS engines/session checks and unsigned iOS Release build. No physical-device installation.",
+  "prefixAssertions": {
+    "passed": 672,
+    "total": 672
+  },
+  "mixedReference": {
+    "cases": 250,
+    "top1": 202,
+    "top3": 221,
+    "top6": 230,
+    "behaviorFailures": 0
+  },
+  "mixedFinal": {
+    "cases": 250,
+    "top1": 202,
+    "top3": 221,
+    "top6": 230,
+    "behaviorFailures": 0
+  },
+  "mixedCasesWithIdenticalFirstSix": 250,
+  "comparisonScope": "Compare the current six-sentence recommendation limit. The historical report also contains older generated sentences after position six, which current production already excludes.",
+  "japaneseDeletionAssertions": 7661,
+  "japaneseCacheAssertions": 28,
+  "unicodeAssertions": 15,
+  "mixedLearningAssertions": 16,
+  "iOSReleaseBuild": "passed",
+  "bundledResources": "verified",
+  "sourceSHA256": {
+    "ShikaKeyBoard/Engine/SKRimeEngine.swift": "32fb695863fe55059ac1ed956ab4cda737af0f4f896f7f5936a08612097815b7",
+    "ShikaKeyBoard/Engine/SKMixedEngine.swift": "f11e4a0b8504c397a4019df17e2f9832ae4fd18772eaa9c613b5f4b44b946504",
+    "ShikaKeyBoard/Engine/SKMixedDecoder.swift": "53d215b41fd32c48bfaa1d7b361249b5da8fd4fdf3669c5f6c0b45dfef014bd6",
+    "ShikaKeyBoard/Engine/SKJapaneseEngine.swift": "96b8f3fdc42d3c5a0308d684290dccd2ccff7a6e2ce9b0dab460d6fbc3f5ea52",
+    "ShikaKeyBoard/Engine/SKJapaneseLexicon.swift": "e455c3ff844305f2d373d0959718cc72a7d73da4c5f5359a23f14b7f22f424aa",
+    "ShikaKeyBoard/Engine/SKPinyinPrefixCandidates.swift": "417e5924782af05dc7df0f32b7cfba3fad16a322a9cffeaeaf7b4db5e7fb7bc2"
+  }
+}

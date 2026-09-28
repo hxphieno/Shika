@@ -7,8 +7,8 @@ import Darwin
         let args = CommandLine.arguments
         let resources = URL(fileURLWithPath: args[1]), user = URL(fileURLWithPath: args[2])
         let engine = try SKRimeEngine(configuration: SKInputScheme.shuangpin.configuration, resourceURL: resources, userURL: user)
-        let words = [("你好", "nihao", "nihc"), ("中国", "zhongguo", "vsgo"),
-                     ("世界", "shijie", "uijp"), ("今天", "jintian", "jbtm"),
+        let words = [("你好", "nihao", "nihk"), ("中国", "zhongguo", "vsgo"),
+                     ("世界", "shijie", "uijx"), ("今天", "jintian", "jbtm"),
                      ("明天", "mingtian", "mktm"), ("天气", "tianqi", "tmqi")]
         var reports: [[String: Any]] = [], failures: [String] = []
         for schema in ["shika_flypy", "shika_pinyin"] {

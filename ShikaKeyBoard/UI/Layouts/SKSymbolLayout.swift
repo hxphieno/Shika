@@ -19,7 +19,38 @@ struct SKSymbolLayout {
         ["=", "%", "‰", "°"],
         ["¥", "$", "€", "£"],
         ["#", "&", "*", "\\"],
-        ["~", "|", "·", "——"]
+        ["~", "|", "·", "——"],
+        // iOS punctuation variants, kept after the existing familiar inventory.
+        ["‘", "’", "〔", "〕"],
+        ["〈", "〉", "［", "］"],
+        ["｛", "｝", "＜", "＞"],
+        ["«", "»", "„", "＂"],
+        ["＇", "…", "⋯", "⋯⋯"],
+        ["–", "—", "－", "〜"],
+        ["～", "・", "•", "§"],
+        ["¡", "¿", "^", "`"],
+        ["＃", "％", "＆", "＊"],
+        ["＋", "＝", "／", "＼"],
+        ["＠", "＾", "＿", "｜"],
+        ["．", "＄", "￥", "￡"],
+        ["¢", "₩", "₽", "→"],
+        ["○", "☆", "♪", "〒"]
     ]
     static let punctuation = columns.flatMap { $0 }
+
+    static let pairedSymbols = [
+        ["（", "）"], ["“", "”"], ["《", "》"], ["【", "】"],
+        ["「", "」"], ["『", "』"], ["(", ")"], ["[", "]"], ["{", "}"], ["<", ">"],
+        ["‘", "’"], ["〔", "〕"], ["〈", "〉"], ["［", "］"],
+        ["｛", "｝"], ["＜", "＞"], ["«", "»"]
+    ]
+
+    // Writing-convention hints, not language restrictions on Unicode characters.
+    private static let cjkBadges = Set("，。？！、；：（）“”‘’《》〈〉【】「」『』［］｛｝〔〕＜＞＂＇．".map(String.init))
+    private static let englishBadges = Set(".,?!:;()[]{}<>".map(String.init) + ["'", "\""])
+    static func badge(for symbol: String) -> String? {
+        if cjkBadges.contains(symbol) { return "中日" }
+        if englishBadges.contains(symbol) { return "英" }
+        return nil
+    }
 }

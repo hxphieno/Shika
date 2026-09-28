@@ -59,24 +59,24 @@ final class SmokeApp: UIResponder, UIApplicationDelegate {
         let bar = descendants(controller.view).first { $0 is CandidateBarView }!
         let number = descendants(controller.view).first { $0 is SKNumberInputView }!
         let language = descendants(controller.view).first { $0 is SKInputSwitchButton } as! UIButton
-        for key in "nihc" { tap(String(key), in: double) }
+        for key in "nihk" { tap(String(key), in: double) }
         assert(controller.proxy.text.isEmpty)
         tap("你好", in: bar)
         assert(controller.proxy.text == "你好")
         for key in "vsgo" { tap(String(key), in: double) }
-        tap("双拼", in: double)
+        tap("自然码双拼", in: double)
         assert(controller.proxy.text == "你好中国")
         tap("⌫", in: double)
         assert(controller.proxy.text == "你好中")
-        for key in "nihc" { tap(String(key), in: double) }
+        for key in "nihk" { tap(String(key), in: double) }
         tap("⌫", in: double)
         assert(controller.proxy.text == "你好中")
         tap("c", in: double)
         tap("换行", in: double)
-        assert(controller.proxy.text == "你好中nihc")
+        assert(controller.proxy.text == "你好中nihk")
         tap("换行", in: double)
-        assert(controller.proxy.text == "你好中nihc\n")
-        for key in "nihc" { tap(String(key), in: double) }
+        assert(controller.proxy.text == "你好中nihk\n")
+        for key in "nihk" { tap(String(key), in: double) }
         tap("123", in: double)
         assert(controller.proxy.text.hasSuffix("你好"))
         tap("1", in: number)
@@ -92,7 +92,7 @@ final class SmokeApp: UIResponder, UIApplicationDelegate {
         }
         assert(controller.proxy.text.hasSuffix("你好日本你好"))
         tap("🦌", in: mixed)
-        for key in "nihc" { tap(String(key), in: double) }
+        for key in "nihk" { tap(String(key), in: double) }
         controller.view.layoutIfNeeded()
         for width: CGFloat in [320, 390, 430] {
             controller.view.frame.size.width = width

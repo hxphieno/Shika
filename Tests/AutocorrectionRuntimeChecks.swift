@@ -91,7 +91,7 @@ private final class RuntimeApp: UIResponder, UIApplicationDelegate {
             let fullPinyin = number % 2 == 1
             let schema = fullPinyin ? "shika_pinyin" : "shika_flypy"
             let full = [("nohao", "你好"), ("zhnogguo", "中国"), ("zhongguoo", "中国"), ("zhonguo", "中国")]
-            let double = [("nijc", "你好"), ("niihc", "你好"), ("nhc", "你好"), ("svgo", "中国")]
+            let double = [("nijk", "你好"), ("niihk", "你好"), ("nhk", "你好"), ("svgo", "中国")]
             let test = (fullPinyin ? full : double)[((number - 1) / 2) % 4]
             do {
                 _ = engine.clear()
@@ -183,12 +183,12 @@ private final class RuntimeApp: UIResponder, UIApplicationDelegate {
         label.text = "全拼纠错\nzhnogguo → \(controller.proxy.text)\n真实按键 → Rime → 文本代理"
         saveScreen("runtime-pinyin-committed")
         press("🦌", in: full)
-        for key in "niihc" { press(String(key), in: double) }
-        label.text = "双拼纠错\n原输入：niihc\n已上屏：\(controller.proxy.text)\n等待选择候选"
+        for key in "niihk" { press(String(key), in: double) }
+        label.text = "双拼纠错\n原输入：niihk\n已上屏：\(controller.proxy.text)\n等待选择候选"
         saveScreen("runtime-shuangpin-candidates")
         press("你好", in: bar)
         if controller.proxy.text != "中国你好" { failures.append("UIKit double-pinyin correction did not commit 你好 once") }
-        label.text = "双拼纠错\nniihc → 你好\n累计上屏：\(controller.proxy.text)\n已完成 \(totalSwitches) 次方案切换"
+        label.text = "双拼纠错\nniihk → 你好\n累计上屏：\(controller.proxy.text)\n已完成 \(totalSwitches) 次方案切换"
         saveScreen("runtime-shuangpin-committed")
         sample("after-keyboard-screenshots", iteration: totalSwitches)
     }

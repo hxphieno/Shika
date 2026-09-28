@@ -80,7 +80,7 @@ struct MixedCorpus: Decodable { let cases: [MixedCase] }
                     check("partial prefix available: \(raw)", false, all.map(\.text).joined(separator: "|")); continue
                 }
                 let after = engine.selectCandidate(at: selected.index)
-                check("partial stays marked: \(raw)", after.committedText.isEmpty && after.preedit == prefix + remainder, after.preedit)
+                check("partial stays marked: \(raw)", after.committedText.isEmpty && after.preedit.replacingOccurrences(of: " ", with: "") == prefix + remainder, after.preedit)
                 all = engine.candidatePage(startingAt: 0, limit: 64).candidates
                 check("remainder top3: \(raw)", all.prefix(3).contains(where: {$0.text == expected}), all.prefix(3).map(\.text).joined(separator: "|"))
                 let enter = engine.process(key: 0xff0d)
@@ -94,6 +94,17 @@ struct MixedCorpus: Decodable { let cases: [MixedCase] }
                     state = engine.process(key: 0xff08)
                     check("delete at prefix boundary restores spelling", !state.input.isEmpty && state.preedit != prefix, state.preedit)
                 }
+            }
+            let pinyin = type("nihao")
+            check("mixed pinyin displays syllable spaces", pinyin.preedit == "ni hao", pinyin.preedit)
+            check("mixed pinyin Return omits display spaces", engine.process(key: 0xff0d).committedText == "nihao")
+            for raw in ["jintianyearigatou", "arigatoujintianye", "zhegesugoiwoxihuan", "jintianyearigatouzzz", "xi'an"] {
+                let state = type(raw)
+                check("display preserves raw letters: \(raw)", state.preedit.replacingOccurrences(of: " ", with: "") == raw, state.preedit)
+                if raw != "xi'an" { check("display separates words: \(raw)", state.preedit.contains(" "), state.preedit) }
+                let deleted = engine.process(key: 0xff08)
+                check("delete removes one raw letter: \(raw)", deleted.input == String(raw.dropLast()) && deleted.preedit.replacingOccurrences(of: " ", with: "") == deleted.input, deleted.preedit)
+                check("Return after deletion omits display spaces", engine.process(key: 0xff0d).committedText == String(raw.dropLast()))
             }
             let before = type("jintianyearigatou")
             let expanded = engine.candidatePage(startingAt: 8, limit: 40)
@@ -121,12 +132,34 @@ struct MixedCorpus: Decodable { let cases: [MixedCase] }
                 session.type(" ")
                 check("session commits mixed sentence once", output == "今天也ありがとう" && marked.isEmpty, output)
             } else {check("session can select prefix after expansion", false)}
-            for (config, raw, expected) in [(SKChineseJapaneseScheme.configuration,"nihao","你好"), (SKInputScheme.shuangpin.configuration,"nihc","你好"), (SKChineseJapaneseScheme.configuration(for: .japanese),"arigatou","ありがとう")] {
+            for raw in ["nihao", String(repeating: "q", count: 110)] {
+                session.cancel(); output = ""
+                for c in raw { session.type(String(c)) }
+                check("raw candidate appended: \(raw)", session.state.candidates.last?.text == raw)
+                session.loadMoreCandidates()
+                check("raw candidate stays last and unique", session.state.candidates.last?.text == raw && session.state.candidates.filter { $0.text == raw }.count == 1)
+                if let literal = session.state.candidates.last { session.select(literal) }
+                check("raw candidate commits once without spaces", output == raw && marked.isEmpty && session.state.candidates.isEmpty, output)
+            }
+            output = ""
+            for c in String(repeating: "q", count: 110) { session.type(String(c)) }
+            check("unmatched input has a visible candidate", session.state.candidates.count == 1)
+            session.type(" ")
+            check("space commits unmatched raw input", output == String(repeating: "q", count: 110) && marked.isEmpty, output)
+            for (config, raw, expected) in [(SKChineseJapaneseScheme.configuration,"nihao","你好"), (SKInputScheme.shuangpin.configuration,"nihk","你好"), (SKChineseJapaneseScheme.configuration(for: .japanese),"arigatou","ありがとう")] {
                 try session.switchConfiguration(to: configuration) // direct mixed engine intentionally rejects nonmixed modes
                 let pure = try SKConversionEngine(configuration: config, resourceURL: resources, userURL: user)
                 var state = SKEngineState()
                 for c in raw.utf8 {state = pure.process(key: Int32(c))}
                 check("pure mode unchanged: \(raw)", state.candidates.contains(where: {$0.text == expected}))
+                _ = pure.clear()
+                var literalOutput = ""
+                let pureSession = SKInputSession(engine: pure, configuration: config, insertText: { literalOutput += $0 }, deleteText: {})
+                for c in raw { pureSession.type(String(c)) }
+                pureSession.loadMoreCandidates()
+                check("pure mode raw candidate last: \(raw)", pureSession.state.candidates.last?.text == raw)
+                if let literal = pureSession.state.candidates.last { pureSession.select(literal) }
+                check("pure mode raw selection: \(raw)", literalOutput == raw && pureSession.state.input.isEmpty, literalOutput)
             }
         }
         let report: [String: Any] = ["mode":args[5], "cases": rows, "checks":checks,

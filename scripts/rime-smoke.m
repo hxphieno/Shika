@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
         NSError *error=nil;
         SKRimeSession *session=[[SKRimeSession alloc] initWithSharedPath:@(argv[1]) userPath:@(argv[2]) schema:@"shika_flypy" error:&error];
         if(!session) { NSLog(@"%@",error); return 1; }
-        NSArray *cases=@[@[@"shika_flypy",@"nihc",@"你好"],@[@"shika_flypy",@"vsgo",@"中国"],@[@"shika_flypy",@"uijp",@"世界"],@[@"shika_flypy",@"aa",@"啊"],@[@"shika_pinyin",@"nihao",@"你好"],@[@"shika_pinyin",@"zhongguo",@"中国"],@[@"shika_pinyin",@"shijie",@"世界"]];
+        NSArray *cases=@[@[@"shika_flypy",@"nihk",@"你好"],@[@"shika_flypy",@"vsgo",@"中国"],@[@"shika_flypy",@"uijx",@"世界"],@[@"shika_flypy",@"aa",@"啊"],@[@"shika_pinyin",@"nihao",@"你好"],@[@"shika_pinyin",@"zhongguo",@"中国"],@[@"shika_pinyin",@"shijie",@"世界"]];
         for (NSArray *test in cases) {
             [session selectSchema:test[0]];
             NSDictionary *state=Type(session,test[1]);

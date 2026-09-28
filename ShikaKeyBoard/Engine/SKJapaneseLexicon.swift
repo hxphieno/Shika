@@ -9,6 +9,11 @@ final class SKJapaneseLexicon {
         let right: Int
         let cost: Int
     }
+    struct Completion {
+        let reading: String
+        let word: Word
+        let isLiteral: Bool
+    }
     private let data: Data
     private let connections: Data
     private let count: Int
@@ -22,6 +27,8 @@ final class SKJapaneseLexicon {
     // canonically equivalent but byte-distinct readings (ば and は + U+3099).
     private var conversionCache: [Data: [String]] = [:]
     private var conversionCacheOrder: [Data] = []
+    private var completionCache: [String: [Completion]] = [:]
+    private var completionCacheOrder: [String] = []
 
     init(resources: URL) throws {
         data = try Data(contentsOf: resources.appendingPathComponent("japanese-lexicon.bin"), options: .alwaysMapped)
@@ -63,37 +70,90 @@ final class SKJapaneseLexicon {
     }
 
     func words(for reading: String) -> [Word] {
+        lookup(reading, completing: false).map(\.word)
+    }
+
+    private func lookup(_ reading: String, completing: Bool) -> [(reading: String, word: Word)] {
         let key = Array(reading.utf8)
         return data.withUnsafeBytes { bytes in
-            var low = 0, high = count
-            while low < high {
-                let mid = (low + high) / 2, record = 16 + mid * 12
+            func readingBytes(_ index: Int) -> UnsafeRawBufferPointer {
+                let record = 16 + index * 12
                 let start = pool + Int(bytes.loadUnaligned(fromByteOffset: record, as: UInt32.self).littleEndian)
                 let length = Int(bytes.loadUnaligned(fromByteOffset: record + 4, as: UInt16.self).littleEndian)
-                guard start <= bytes.count, length <= bytes.count - start else { return [] }
-                var order = 0
-                for i in 0..<min(length, key.count) where bytes[start + i] != key[i] {
-                    order = bytes[start + i] < key[i] ? -1 : 1; break
-                }
-                if order == 0 { order = length == key.count ? 0 : (length < key.count ? -1 : 1) }
-                if order < 0 { low = mid + 1; continue }
-                if order > 0 { high = mid; continue }
+                guard start <= bytes.count, length <= bytes.count - start else { return UnsafeRawBufferPointer(start: nil, count: 0) }
+                return UnsafeRawBufferPointer(rebasing: bytes[start..<(start + length)])
+            }
+            var low = 0, high = count
+            while low < high {
+                let mid = (low + high) / 2
+                if readingBytes(mid).lexicographicallyPrecedes(key) { low = mid + 1 }
+                else { high = mid }
+            }
+            var result: [(reading: String, word: Word)] = []
+            while low < count {
+                let candidate = readingBytes(low)
+                guard completing ? candidate.starts(with: key) : candidate.elementsEqual(key) else { break }
+                let reading = String(decoding: candidate, as: UTF8.self)
+                let record = 16 + low * 12
                 let n = Int(bytes.loadUnaligned(fromByteOffset: record + 6, as: UInt16.self).littleEndian)
                 let first = Int(bytes.loadUnaligned(fromByteOffset: record + 8, as: UInt32.self).littleEndian)
-                guard tokenStart + (first + n) * 12 <= pool else { return [] }
-                return (first..<(first + n)).compactMap { index in
+                guard tokenStart + (first + n) * 12 <= pool else { break }
+                for index in first..<(first + n) {
                     let offset = tokenStart + index * 12
                     let start = pool + Int(bytes.loadUnaligned(fromByteOffset: offset, as: UInt32.self).littleEndian)
                     let length = Int(bytes.loadUnaligned(fromByteOffset: offset + 4, as: UInt16.self).littleEndian)
-                    guard start <= bytes.count, length <= bytes.count - start else { return nil }
-                    return Word(text: String(decoding: bytes[start..<(start + length)], as: UTF8.self),
+                    guard start <= bytes.count, length <= bytes.count - start else { continue }
+                    let word = Word(text: String(decoding: bytes[start..<(start + length)], as: UTF8.self),
                         left: Int(bytes.loadUnaligned(fromByteOffset: offset + 6, as: UInt16.self).littleEndian),
                         right: Int(bytes.loadUnaligned(fromByteOffset: offset + 8, as: UInt16.self).littleEndian),
                         cost: Int(bytes.loadUnaligned(fromByteOffset: offset + 10, as: Int16.self).littleEndian))
+                    result.append((reading, word))
                 }
+                if !completing { break }
+                low += 1
             }
-            return []
+            return result
         }
+    }
+
+    /// Complete only legal romaji rules at the active tail. The raw composition
+    /// stays untouched; each choice carries its completed reading for learning.
+    func completionWords(for input: String) -> [Completion] {
+        if let cached = completionCache[input] { return cached }
+        let partial = reading(input)
+        guard !partial.pending.isEmpty else { return [] }
+        let readings = Set(roman.compactMap { code, value -> String? in
+            guard code.hasPrefix(partial.pending), code != partial.pending,
+                  value.count == 2, value[1].isEmpty else { return nil }
+            return partial.kana + value[0]
+        })
+        var choices: [Completion] = []
+        for reading in readings.sorted() {
+            // One kana can cover most of a dictionary section. Keep that case
+            // to syllable completions; longer prefixes also predict whole words.
+            choices += lookup(reading, completing: reading.count >= 2).map {
+                Completion(reading: $0.reading, word: $0.word, isLiteral: false)
+            }
+            choices.append(Completion(reading: reading,
+                word: Word(text: reading, left: 0, right: 0, cost: 18000), isLiteral: true))
+        }
+        // Score once per word, not once per sort comparison across a prefix
+        // range. Cache only immutable results; engines apply learning afterward.
+        let scored = choices.map { choice in
+            (choice: choice, cost: choice.word.cost + connection(from: 0, to: choice.word.left)
+                + connection(from: choice.word.right, to: 0))
+        }
+        var seen = Set<String>()
+        let result = Array(scored.sorted {
+            if $0.cost != $1.cost { return $0.cost < $1.cost }
+            if $0.choice.word.text != $1.choice.word.text { return $0.choice.word.text < $1.choice.word.text }
+            return $0.choice.reading < $1.choice.reading
+        }.map(\.choice).filter { seen.insert($0.word.text).inserted }.prefix(64))
+        if completionCacheOrder.count == 32 {
+            completionCache.removeValue(forKey: completionCacheOrder.removeFirst())
+        }
+        completionCacheOrder.append(input); completionCache[input] = result
+        return result
     }
 
     func connection(from right: Int, to left: Int) -> Int {

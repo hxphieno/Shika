@@ -67,7 +67,8 @@ import Foundation
         check("Return does not train a cached candidate", try Data(contentsOf: learningURL) == saved)
         _ = engine.replaceInput("hashi")
         let pending = engine.process(key: 104)
-        check("pending consonant has no stale cached candidates", pending.input == "hashih" && pending.candidates.isEmpty)
+        check("pending consonant offers fresh completions instead of stale cached candidates",
+              pending.input == "hashih" && !pending.candidates.isEmpty && !pending.candidates.contains { $0.text == alternate.text })
         let deleted = engine.process(key: 0xff08)
         check("deleting pending consonant restores fresh learned rank", deleted.input == "hashi" && deleted.candidates.first?.text == alternate.text)
         _ = engine.clear()

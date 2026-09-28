@@ -9,6 +9,7 @@ final class SKRimeEngine: SKInputEngine {
     private let resources: URL
     private let correctionEnabled: Bool
     private var segmentationCandidates: SKPinyinSegmentationCandidates?
+    private var prefixCandidates: SKPinyinPrefixCandidates?
     private var correctionCandidates: SKCorrectionCandidates?
     private var syllableCandidates: SKSyllableCorrectionCandidates?
     private var syllableProbe: SKRimeSession?
@@ -18,6 +19,10 @@ final class SKRimeEngine: SKInputEngine {
     private var learnedSpellings: SKLearnedSpellingIndex?
     private var spellingProfile: SKSpellingProfile
     private var displayed = SKEngineState()
+    private var choices: [SKCandidate] = []
+    private var nativeIndices: [Int: Int] = [:]
+    private var nativeCursor = 0
+    private var nativeHasMore = false
 
     init(configuration: SKInputConfiguration, resourceURL: URL? = nil, userURL: URL? = nil, correctionEnabled: Bool = true) throws {
         let resources = resourceURL ?? Bundle.main.url(forResource: "RimeData", withExtension: "bundle")
@@ -31,20 +36,21 @@ final class SKRimeEngine: SKInputEngine {
         session = try SKRimeSession(sharedPath: resources.path, userPath: directory.path, schema: configuration.schemaID)
         probe = try SKRimeSession(sharedPath: resources.path, userPath: directory.path, schema: configuration.schemaID)
         segmentationCandidates = SKPinyinSegmentationCandidates(resources: resources, configuration: configuration)
+        prefixCandidates = SKPinyinPrefixCandidates(resources: resources, configuration: configuration)
         correctionCandidates = correctionEnabled ? SKCorrectionCandidates(resources: resources, configuration: configuration) : nil
         configureSyllableSearch(configuration)
     }
 
     func process(key: Int32) -> SKEngineState {
         if key == 32 || key == 0xff0d { invalidateSyllableCache() }
-        if key == 32, let first = displayed.candidates.first, first.index < 0 {
+        if key == 32, let first = displayed.candidates.first {
             return selectCandidate(at: first.index)
         }
         return finish(decode(session.processKey(key)), code: displayed.input)
     }
     func selectCandidate(at index: Int) -> SKEngineState {
         invalidateSyllableCache()
-        if let correction = segmentationCandidates?.selection(at: index) ?? correctionCandidates?.selection(at: index) ?? syllableCandidates?.selection(at: index) {
+        if let correction = prefixCandidates?.selection(at: index) ?? segmentationCandidates?.selection(at: index) ?? correctionCandidates?.selection(at: index) ?? syllableCandidates?.selection(at: index) {
             let original = displayed.input
             _ = session.replaceInput(correction.code)
             let selected = session.selectText(correction.text)
@@ -53,19 +59,39 @@ final class SKRimeEngine: SKInputEngine {
             // previously displayed candidate unavailable.
             return present(decode(session.replaceInput(original)))
         }
-        guard index >= 0 else { return displayed }
-        return finish(decode(session.selectCandidate(UInt(index))), code: displayed.input)
+        guard let nativeIndex = nativeIndices[index] else { return displayed }
+        return finish(decode(session.selectCandidate(UInt(nativeIndex))), code: displayed.input)
     }
     func candidatePage(startingAt index: Int, limit: Int) -> SKCandidatePage {
-        let data = session.candidatePage(from: UInt(max(0, index)), limit: UInt(max(1, min(limit, 64))))
-        return SKCandidatePage(candidates: decode(data).candidates,
-            nextIndex: data["nextIndex"] as? Int ?? index,
-            hasMore: data["hasMore"] as? Bool ?? false)
+        let requestedEnd = max(0, index) + max(0, min(limit, 64))
+        // Quotas never reset when the expanded grid asks for another page.
+        // Only further single characters may follow the initial grouped list.
+        for _ in 0..<4 where choices.count < requestedEnd && nativeHasMore {
+            let data = session.candidatePage(from: UInt(nativeCursor), limit: 256)
+            let cursor = data["nextIndex"] as? Int ?? nativeCursor
+            nativeHasMore = (data["hasMore"] as? Bool ?? false) && cursor > nativeCursor
+            nativeCursor = cursor
+            var seen = Set(choices.map(\.contentIdentity))
+            for candidate in SKCandidateGrouping.decode(data) where candidate.text.count == 1 && seen.insert(candidate.contentIdentity).inserted {
+                appendChoice(candidate)
+            }
+        }
+        let start = min(max(0, index), choices.count), end = min(requestedEnd, choices.count)
+        return SKCandidatePage(candidates: Array(choices[start..<end]), nextIndex: end,
+            hasMore: end < choices.count || nativeHasMore)
     }
-    func changePage(backward: Bool) -> SKEngineState { present(decode(session.changePage(backward))) }
+    func changePage(backward: Bool) -> SKEngineState {
+        let target = max(0, displayed.page + (backward ? -1 : 1))
+        let items = candidatePage(startingAt: target * 8, limit: 8)
+        guard !items.candidates.isEmpty else { return displayed }
+        displayed.page = target; displayed.candidates = items.candidates; displayed.isLastPage = !items.hasMore
+        return displayed
+    }
     func commit() -> SKEngineState {
         invalidateSyllableCache()
-        if let first = displayed.candidates.first, first.index < 0 { return selectCandidate(at: first.index) }
+        if let first = displayed.candidates.first, first.index < 0 || nativeIndices[first.index] != 0 {
+            return commitCandidate(at: first.index)
+        }
         return finish(decode(session.commitComposition()), code: displayed.input)
     }
     func commitLiteralFallback(rawInput: String) -> SKEngineState {
@@ -88,6 +114,7 @@ final class SKRimeEngine: SKInputEngine {
         if result["error"] != nil { throw EngineError.missingResources }
         _ = probe.selectSchema(configuration.schemaID)
         segmentationCandidates = SKPinyinSegmentationCandidates(resources: resources, configuration: configuration)
+        prefixCandidates = SKPinyinPrefixCandidates(resources: resources, configuration: configuration)
         correctionCandidates = correctionEnabled ? SKCorrectionCandidates(resources: resources, configuration: configuration) : nil
         configureSyllableSearch(configuration)
         return present(decode(result))
@@ -108,8 +135,30 @@ final class SKRimeEngine: SKInputEngine {
             syllableCacheOrder.append(code); syllableCache[code] = value
             return value
         } ?? corrected
-        displayed = state
-        return state
+        displayed = prefixCandidates?.present(state) { code in
+            decode(probe.replaceInput(code))
+        } ?? state
+        let window = SKCandidateGrouping.nativeWindow(session)
+        let grouped = SKCandidateGrouping.arrange(recommendations: displayed.candidates,
+            words: displayed.candidates + window.items, text: { $0.text }, identity: { $0.contentIdentity })
+        choices = []; nativeIndices = [:]
+        nativeCursor = window.next; nativeHasMore = window.more
+        for candidate in grouped { appendChoice(candidate) }
+        displayed.page = 0
+        displayed.candidates = Array(choices.prefix(8))
+        displayed.isLastPage = choices.count <= 8 && !nativeHasMore
+        let output = displayed
+        displayed.committedText = ""
+        return output
+    }
+
+    private func appendChoice(_ candidate: SKCandidate) {
+        // Keep synthetic correction IDs intact. Positive presentation IDs map
+        // back to Rime's original absolute indices, including prefix choices.
+        let index = candidate.index < 0 ? candidate.index : choices.count
+        if candidate.index >= 0 { nativeIndices[index] = candidate.index }
+        choices.append(SKCandidate(index: index, text: candidate.text, comment: candidate.comment,
+            consumedInputCount: candidate.consumedInputCount))
     }
 
     private func invalidateSyllableCache() {

@@ -216,7 +216,7 @@ private func visible(_ view: UIView) -> Bool {
         }
         for scheme in ["pinyin", "shuangpin"] {
             if scheme == "shuangpin" { keyboard.didTapSwitchScheme() }
-            resetEditor("正文"); await type(scheme == "pinyin" ? "nihao" : "nihc")
+            resetEditor("正文"); await type(scheme == "pinyin" ? "nihao" : "nihk")
             let rawCount = scheme == "pinyin" ? 5 : 4
             for step in 0..<rawCount {
                 let feedback = keyboard.didDeleteBackward(byWord: true)

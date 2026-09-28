@@ -1,0 +1,76 @@
+{
+  "primary": {
+    "cases": 840,
+    "unexpectedCommits": 0,
+    "keyP95MS": 0.7729530334472656,
+    "groups": {
+      "clean": {
+        "count": 140,
+        "completeCandidateHits": 135,
+        "top1": 119
+      },
+      "substitution": {
+        "count": 140,
+        "completeCandidateHits": 116,
+        "top1": 21
+      },
+      "omission": {
+        "count": 140,
+        "completeCandidateHits": 74,
+        "top1": 41
+      },
+      "insertion": {
+        "count": 140,
+        "completeCandidateHits": 117,
+        "top1": 94
+      },
+      "transposition": {
+        "count": 140,
+        "completeCandidateHits": 107,
+        "top1": 26
+      },
+      "double-error": {
+        "count": 140,
+        "completeCandidateHits": 39,
+        "top1": 6
+      }
+    }
+  },
+  "confirmation": {
+    "cases": 480,
+    "unexpectedCommits": 0,
+    "keyP95MS": 0.7960796356201172,
+    "groups": {
+      "clean": {
+        "count": 80,
+        "completeCandidateHits": 76,
+        "top1": 62
+      },
+      "substitution": {
+        "count": 80,
+        "completeCandidateHits": 63,
+        "top1": 7
+      },
+      "omission": {
+        "count": 80,
+        "completeCandidateHits": 34,
+        "top1": 13
+      },
+      "insertion": {
+        "count": 80,
+        "completeCandidateHits": 64,
+        "top1": 47
+      },
+      "transposition": {
+        "count": 80,
+        "completeCandidateHits": 51,
+        "top1": 14
+      },
+      "double-error": {
+        "count": 80,
+        "completeCandidateHits": 13,
+        "top1": 2
+      }
+    }
+  }
+}

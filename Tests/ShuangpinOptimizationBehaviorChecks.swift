@@ -49,11 +49,29 @@ import Foundation
                 "preedit": session.state.preedit, "marked": marked,
                 "candidates": session.state.candidates.prefix(12).map { ["text": $0.text, "index": $0.index, "comment": $0.comment] as [String: Any] }])
         }
-        let metadata = user.appendingPathComponent("double-pinyin-spelling.json")
+        let metadata = user.appendingPathComponent("ziranma-double-pinyin-spelling.json")
         if args[4] == "index" {
+            let migrationDirectory = user.appendingPathComponent("migration-fixtures")
+            try FileManager.default.createDirectory(at: migrationDirectory, withIntermediateDirectories: true)
+            let legacyFile = migrationDirectory.appendingPathComponent("double-pinyin-spelling.json")
+            let legacy: [[String: String]] = [["code": "nihc", "text": "你好"], ["code": "lujmmn", "text": "鹿键喵"],
+                ["code": "aaooeeaieiaoouanenaheger", "text": String(repeating: "字", count: 12)]]
+            let legacyData = try JSONEncoder().encode(legacy)
+            try legacyData.write(to: legacyFile)
+            let migrated = SKLearnedSpellingIndex(userDirectory: migrationDirectory)
+            check("old learned spelling converts to Ziranma", migrated.suggestions(for: "nijk").contains(where: { $0.code == "nihk" && $0.text == "你好" }))
+            check("old custom phrase converts to Ziranma", migrated.suggestions(for: "lujmc").contains(where: { $0.code == "lujmmc" && $0.text == "鹿键喵" }))
+            check("migration preserves the legacy file", try Data(contentsOf: legacyFile) == legacyData)
+            let migratedFile = migrationDirectory.appendingPathComponent("ziranma-double-pinyin-spelling.json")
+            let migratedData = try Data(contentsOf: migratedFile)
+            let migratedRecords = try JSONDecoder().decode([[String: String]].self, from: migratedData)
+            check("migration preserves all zero initial spellings", migratedRecords.last == legacy.last)
+            try Data("[]".utf8).write(to: legacyFile)
+            _ = SKLearnedSpellingIndex(userDirectory: migrationDirectory)
+            check("existing natural code index is not reimported", try Data(contentsOf: migratedFile) == migratedData)
             let directory = user.appendingPathComponent("index-fixtures")
             try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
-            let file = directory.appendingPathComponent("double-pinyin-spelling.json")
+            let file = directory.appendingPathComponent("ziranma-double-pinyin-spelling.json")
             func records() throws -> [[String: String]] {
                 try JSONDecoder().decode([[String: String]].self, from: Data(contentsOf: file))
             }
@@ -65,26 +83,26 @@ import Foundation
             }
             try Data("{broken json".utf8).write(to: file)
             var index = SKLearnedSpellingIndex(userDirectory: directory)
-            check("corrupt metadata loads as empty without a crash", index.suggestions(for: "nijc").isEmpty)
-            index.record(code: "nihc", text: "你好")
-            check("natural valid record repairs corrupt metadata", try records() == [["code": "nihc", "text": "你好"]])
+            check("corrupt metadata loads as empty without a crash", index.suggestions(for: "nijk").isEmpty)
+            index.record(code: "nihk", text: "你好")
+            check("natural valid record repairs corrupt metadata", try records() == [["code": "nihk", "text": "你好"]])
             let clean = try Data(contentsOf: file)
-            for (raw, text) in [("nihao", "你好"), ("NIHC", "你好"), ("ni'hc", "你好"), ("nihc", "ni"), ("nihc", "🦌鹿")] {
+            for (raw, text) in [("nihao", "你好"), ("NIHK", "你好"), ("ni'hk", "你好"), ("nihk", "ni"), ("nihk", "🦌鹿")] {
                 index.record(code: raw, text: text)
             }
             check("invalid raw or non-Chinese records do not mutate metadata", try Data(contentsOf: file) == clean)
-            index.record(code: "nihc", text: "你好")
+            index.record(code: "nihk", text: "你好")
             check("repeated same user word does not create duplicates", try records().count == 1)
-            for raw in ["nijc", "nhc", "niihc", "nhic"] {
-                check("bounded metadata supports one edit: \(raw)", index.suggestions(for: raw).contains(where: { $0.code == "nihc" && $0.text == "你好" }))
+            for raw in ["nijk", "nhk", "niihk", "nhik"] {
+                check("bounded metadata supports one edit: \(raw)", index.suggestions(for: raw).contains(where: { $0.code == "nihk" && $0.text == "你好" }))
             }
-            check("exact input is not mislabeled as a correction", index.suggestions(for: "nihc").isEmpty)
-            check("two unrelated edits do not match a single-edit index", index.suggestions(for: "xxhc").isEmpty)
+            check("exact input is not mislabeled as a correction", index.suggestions(for: "nihk").isEmpty)
+            check("two unrelated edits do not match a single-edit index", index.suggestions(for: "xxhk").isEmpty)
             var oversized = clean
             oversized.append(Data(repeating: 32, count: 131073 - oversized.count))
             try oversized.write(to: file)
             index = SKLearnedSpellingIndex(userDirectory: directory)
-            check("oversize metadata is rejected before loading", index.suggestions(for: "nijc").isEmpty)
+            check("oversize metadata is rejected before loading", index.suggestions(for: "nijk").isEmpty)
             try Data("[]".utf8).write(to: file)
             index = SKLearnedSpellingIndex(userDirectory: directory)
             for i in 0..<600 {
@@ -101,16 +119,16 @@ import Foundation
             check("candidate count is bounded independently of index size", index.suggestions(for: String(lastCode.dropLast())).count <= 4)
         } else if args[4] == "learn" {
             let originalMetadata = try? Data(contentsOf: metadata)
-            try reset("lujmmn"); session.loadMoreCandidates(); session.cancel()
-            try reset("nihc"); session.type("\n")
+            try reset("lujmmc"); session.loadMoreCandidates(); session.cancel()
+            try reset("nihk"); session.type("\n")
             check("typing browsing cancel and raw Return do not create metadata", (try? Data(contentsOf: metadata)) == originalMetadata)
-            try reset("nihcuijp"); let partialOnly = choose("你好")
+            try reset("nihkuijx"); let partialOnly = choose("你好")
             check("uncommitted partial selection does not record a whole user word", partialOnly && output.isEmpty && (try? Data(contentsOf: metadata)) == originalMetadata)
             session.cancel()
             // Not a production dictionary addition: create this phrase only
             // through the exact same displayed-candidate selections as a user.
             for i in 0..<5 {
-                try reset("lujmmn")
+                try reset("lujmmc")
                 let fullChoice = session.state.candidates.first(where: { $0.text == "鹿键喵" })
                 var selected = true
                 if let fullChoice { session.select(fullChoice) }
@@ -118,25 +136,25 @@ import Foundation
                 check("user phrase natural selection \(i + 1) commits exactly once", selected && output == "鹿键喵" && isClear(), "output=\(output), remaining=\(session.state.input)")
                 session.commitPending(); check("learning selection \(i + 1) is drained", output == "鹿键喵")
             }
-            try reset("lujmmn")
+            try reset("lujmmc")
             check("five explicit selections promote exact user phrase", session.state.candidates.first?.text == "鹿键喵")
             trace("same-process learned ranking"); session.cancel()
         } else if args[4] == "probe" {
-            try reset("lujmmn")
+            try reset("lujmmc")
             check("new process restores learned user phrase at first rank", session.state.candidates.first?.text == "鹿键喵")
             check("loading and typing learned phrase do not commit", output.isEmpty)
             trace("new-process learned ranking")
-            session.loadMoreCandidates(); session.cancel(); type("lujmmn")
+            session.loadMoreCandidates(); session.cancel(); type("lujmmc")
             check("browsing and cancel preserve learned first ranking", session.state.candidates.first?.text == "鹿键喵" && output.isEmpty)
             session.type("\n")
-            check("Return on learned phrase still confirms raw letters", output == "lujmmn" && isClear())
+            check("Return on learned phrase still confirms raw letters", output == "lujmmc" && isClear())
             let persisted = try? Data(contentsOf: metadata)
-            try reset("nihc"); session.loadMoreCandidates(); session.cancel()
-            try reset("nihc"); session.type("\n")
+            try reset("nihk"); session.loadMoreCandidates(); session.cancel()
+            try reset("nihk"); session.type("\n")
             check("noncommitting actions leave persisted metadata unchanged", (try? Data(contentsOf: metadata)) == persisted)
             // Three substitutions plus omission, insertion and transposition.
             // Freeze and rank all before selecting any typo.
-            let userTypos = ["kujmmn", "lukmmn", "lujmmm", "lujmn", "lujjmmn", "lumjmn"]
+            let userTypos = ["kujmmc", "lukmmc", "lujmmv", "lujmc", "lujjmmc", "lumjmc"]
             for raw in userTypos {
                 try reset(raw)
                 trace("learned user phrase single-key typo: \(raw)")
@@ -151,12 +169,12 @@ import Foundation
             }
             if let data = try? Data(contentsOf: metadata),
                let records = try? JSONDecoder().decode([[String: String]].self, from: data) {
-                check("corrected selections retain the correct spelling metadata", records.contains(where: { $0["code"] == "lujmmn" && $0["text"] == "鹿键喵" }))
+                check("corrected selections retain the correct spelling metadata", records.contains(where: { $0["code"] == "lujmmc" && $0["text"] == "鹿键喵" }))
                 check("typo codes never replace the learned correct spelling", !records.contains(where: { userTypos.contains($0["code"] ?? "") && $0["text"] == "鹿键喵" }))
             } else { check("learned spelling metadata is readable", false) }
             session.cancel()
         } else {
-            for raw in ["nihc", "nijc", "nhc", "niihc", "nhic", "nihcuijp", String(repeating: "q", count: 129)] {
+            for raw in ["nihk", "nijk", "nhk", "niihk", "nhik", "nihkuijx", String(repeating: "q", count: 129)] {
                 try reset(raw)
                 check("input retained before Return: \(raw.prefix(16))", session.state.input == raw && output.isEmpty)
                 session.type("\n")
@@ -164,17 +182,17 @@ import Foundation
                 session.type("\n")
                 check("idle Return reaches host once: \(raw.prefix(16))", output == raw + "\n" && insertions == [raw, "\n"])
             }
-            try reset("niihc"); session.commitRaw(); session.commitRaw()
-            check("explicit raw commit preserves typo once", output == "niihc" && isClear() && insertions == ["niihc"])
-            try reset("nihc"); session.type(" ")
+            try reset("niihk"); session.commitRaw(); session.commitRaw()
+            check("explicit raw commit preserves typo once", output == "niihk" && isClear() && insertions == ["niihk"])
+            try reset("nihk"); session.type(" ")
             check("space selects displayed clean first candidate", output == "你好" && isClear())
             session.type(" "); check("idle space inserts one literal space", output == "你好 ")
             for literal in ["，", "。", "1", "A", "🦌", "-"] {
-                try reset("nihc"); session.type(literal)
+                try reset("nihk"); session.type(literal)
                 check("literal flush commits clean composition once: \(literal)", output == "你好" + literal && isClear())
                 session.commitPending(); check("literal flush has no stale replay: \(literal)", output == "你好" + literal)
             }
-            for raw in ["nihc", "niihc", "nhc", "nihcuijp"] {
+            for raw in ["nihk", "niihk", "nhk", "nihkuijx"] {
                 try reset(); output = "宿主"; type(raw)
                 var rawDeleted = true
                 for remaining in stride(from: raw.count - 1, through: 0, by: -1) {
@@ -184,32 +202,32 @@ import Foundation
                 check("backspace edits every real input letter only: \(raw)", rawDeleted && isClear())
                 session.deleteBackward(); check("idle backspace reaches host once: \(raw)", output == "宿" && deletes == 1)
             }
-            try reset("niihc"); session.deleteBackward(); type("c")
-            check("delete then retype restores the exact typo", session.state.input == "niihc" && output.isEmpty)
+            try reset("niihk"); session.deleteBackward(); type("k")
+            check("delete then retype restores the exact typo", session.state.input == "niihk" && output.isEmpty)
             session.cancel(); check("cancel discards composition without committing", output.isEmpty && isClear())
-            type("nihc"); session.type(" "); check("cancelled input cannot contaminate next word", output == "你好")
+            type("nihk"); session.type(" "); check("cancelled input cannot contaminate next word", output == "你好")
 
             for terminator in [" ", "\n", "，", "switch"] {
-                try reset("nihcuijp")
+                try reset("nihkuijx")
                 let found = choose("你好")
                 check("partial selection preserves marked prefix: \(terminator.debugDescription)", found && output.isEmpty && marked.hasPrefix("你好") && !session.state.input.isEmpty)
                 if terminator == "switch" { try session.switchConfiguration(to: full) }
                 else { session.type(terminator) }
-                let expected = terminator == "\n" ? "你好uijp" : "你好世界" + (terminator == "，" ? "，" : "")
+                let expected = terminator == "\n" ? "你好uijx" : "你好世界" + (terminator == "，" ? "，" : "")
                 check("partial selection completes without losing tail: \(terminator.debugDescription)", output == expected && isClear(), "output=\(output)")
             }
-            try reset("nihcuijp"); let selectedPrefix = choose("你好")
+            try reset("nihkuijx"); let selectedPrefix = choose("你好")
             session.deleteBackward()
             check("first partial-selection delete restores all raw spelling",
-                  selectedPrefix && session.state.input == "nihcuijp" && output.isEmpty && deletes == 0 && !marked.hasPrefix("你好"))
+                  selectedPrefix && session.state.input == "nihkuijx" && output.isEmpty && deletes == 0 && !marked.hasPrefix("你好"))
             session.type("\n")
             check("Return after undoing partial choice preserves every original key",
-                  output == "nihcuijp" && isClear(), "output=\(output)")
-            try reset("nihcuijp"); _ = choose("你好")
+                  output == "nihkuijx" && isClear(), "output=\(output)")
+            try reset("nihkuijx"); _ = choose("你好")
             var deleteSteps = 0
             while !session.state.input.isEmpty && deleteSteps < 30 { session.deleteBackward(); deleteSteps += 1 }
             check("deleting partial selection eventually clears without host edits", isClear() && output.isEmpty && deletes == 0)
-            type("nihc"); session.type(" "); check("input after deleting a partial selection is independent", output == "你好")
+            type("nihk"); session.type(" "); check("input after deleting a partial selection is independent", output == "你好")
 
             try reset("ni")
             let firstInput = session.state.input, firstMarked = marked, initial = session.state.candidates
@@ -224,27 +242,27 @@ import Foundation
             if let later = session.state.candidates.dropFirst().first {
                 session.select(later); check("paged nonfirst selection follows its displayed ID", output == later.text && isClear())
             } else { check("second page has a nonfirst candidate", false) }
-            try reset("niihc"); let before = session.state.candidates
+            try reset("niihk"); let before = session.state.candidates
             session.changePage(backward: false); session.changePage(backward: true)
-            check("paging round trip preserves typo and selection choices", output.isEmpty && session.state.input == "niihc" && session.state.candidates == before)
+            check("paging round trip preserves typo and selection choices", output.isEmpty && session.state.input == "niihk" && session.state.candidates == before)
             if let corrected = session.state.candidates.first(where: { $0.text == "你好" }) {
                 session.loadMoreCandidates(); session.select(corrected)
                 check("correction remains selectable after expansion", output == "你好" && isClear())
             } else { check("known insertion correction is available", false) }
-            try reset("nihc"); let stale = session.state.candidates.first
+            try reset("nihk"); let stale = session.state.candidates.first
             session.cancel()
             if let stale { session.select(stale) }
             check("stale candidate from cancelled input cannot commit", output.isEmpty && isClear())
 
-            try reset("nihc"); try session.switchConfiguration(to: full)
+            try reset("nihk"); try session.switchConfiguration(to: full)
             check("switch to full pinyin commits pending double pinyin once", output == "你好" && isClear())
             type("shijie"); session.type(" ")
             check("full pinyin decodes using its own spelling", output == "你好世界")
-            try session.switchConfiguration(to: double); type("nihc"); session.type(" ")
+            try session.switchConfiguration(to: double); type("nihk"); session.type(" ")
             check("switch back restores double-pinyin spelling", output == "你好世界你好")
-            try reset(String(repeating: "nihcuijp", count: 18)); session.commitRaw()
-            check("long raw commit has no truncation or implicit partial commit", output == String(repeating: "nihcuijp", count: 18) && isClear())
-            try reset("nihc"); trace("final clean composition"); session.cancel()
+            try reset(String(repeating: "nihkuijx", count: 18)); session.commitRaw()
+            check("long raw commit has no truncation or implicit partial commit", output == String(repeating: "nihkuijx", count: 18) && isClear())
+            try reset("nihk"); trace("final clean composition"); session.cancel()
         }
         let failed = checks.filter { !($0["passed"] as! Bool) }.count
         let report: [String: Any] = ["mode": args[4], "environment": "macOS native real Rime and production input session; no UIKit or physical device", "checks": checks, "checkCount": checks.count, "failures": failed, "observations": observations]

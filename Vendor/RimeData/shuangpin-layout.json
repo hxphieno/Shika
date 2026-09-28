@@ -19,7 +19,8 @@
     {
       "key": "w",
       "finals": [
-        "ei"
+        "ia",
+        "ua"
       ]
     },
     {
@@ -31,20 +32,22 @@
     {
       "key": "r",
       "finals": [
-        "uan"
+        "uan",
+        "van"
       ]
     },
     {
       "key": "t",
       "finals": [
-        "ue",
-        "ve"
+        "ve",
+        "ue"
       ]
     },
     {
       "key": "y",
       "finals": [
-        "un"
+        "uai",
+        "ing"
       ]
     },
     {
@@ -69,7 +72,8 @@
     {
       "key": "p",
       "finals": [
-        "ie"
+        "vn",
+        "un"
       ]
     },
     {
@@ -88,7 +92,8 @@
     {
       "key": "d",
       "finals": [
-        "ai"
+        "iang",
+        "uang"
       ]
     },
     {
@@ -118,34 +123,31 @@
     {
       "key": "k",
       "finals": [
-        "ing",
-        "uai"
+        "ao"
       ]
     },
     {
       "key": "l",
       "finals": [
-        "iang",
-        "uang"
+        "ai"
       ]
     },
     {
       "key": "z",
       "finals": [
-        "ou"
+        "ei"
       ]
     },
     {
       "key": "x",
       "finals": [
-        "ia",
-        "ua"
+        "ie"
       ]
     },
     {
       "key": "c",
       "finals": [
-        "ao"
+        "iao"
       ]
     },
     {
@@ -158,13 +160,13 @@
     {
       "key": "b",
       "finals": [
-        "in"
+        "ou"
       ]
     },
     {
       "key": "n",
       "finals": [
-        "iao"
+        "in"
       ]
     },
     {

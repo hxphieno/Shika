@@ -1,7 +1,7 @@
 import UIKit
 
 /// Measurements from the iOS 26.5 / 402pt system alphabet keyboard.
-/// Kept separate from SKConfig so the custom number/symbol page is unchanged.
+/// Shared by the alphabet and number/symbol surfaces.
 enum SKMainKeyboardMetrics {
     static let portraitHeight: CGFloat = 216
     static let keyHeight: CGFloat = 43
@@ -11,6 +11,8 @@ enum SKMainKeyboardMetrics {
     static let cornerRadius: CGFloat = 8
     static let keyColor = UIColor { $0.userInterfaceStyle == .dark
         ? UIColor(white: 61.0 / 255, alpha: 1) : .white }
+    static let symbolColor = UIColor { $0.userInterfaceStyle == .dark
+        ? UIColor(white: 0.23, alpha: 1) : UIColor(white: 0.83, alpha: 1) }
     static let textColor = UIColor.label
 
     static func frames(width: CGFloat, height: CGFloat, secondRowCount: Int) -> [[CGRect]] {

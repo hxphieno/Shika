@@ -9,6 +9,8 @@ import UIKit
 
 class SKInputSwitchButton: UIButton {
     
+    var isShuangpin = false { didSet { updateDisplay(); setNeedsLayout() } }
+
     var onTap: (() -> Void)?
     
     var currentState: SKChineseJapaneseMode = .mixed {
@@ -42,7 +44,7 @@ class SKInputSwitchButton: UIButton {
     
     private let bracketsLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
-        layer.strokeColor = UIColor.black.cgColor
+        layer.strokeColor = UIColor.label.cgColor
         layer.fillColor = UIColor.clear.cgColor
         layer.lineWidth = 1.5
         return layer
@@ -76,6 +78,7 @@ class SKInputSwitchButton: UIButton {
         
         setupConstraints()
         updateDisplay()
+        registerForTraitChanges([UITraitUserInterfaceStyle.self]) { (self: SKInputSwitchButton, _) in self.setNeedsLayout() }
         
         self.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
     }
@@ -103,6 +106,14 @@ class SKInputSwitchButton: UIButton {
     }
     
     private func updateDisplay() {
+        if isShuangpin {
+            singleLabel.text = "双拼"
+            singleLabel.isHidden = false
+            topLeftLabel.isHidden = true
+            bottomRightLabel.isHidden = true
+            bracketsLayer.isHidden = true
+            return
+        }
         switch currentState {
         case .chinese:
             singleLabel.text = "中"
@@ -129,6 +140,7 @@ class SKInputSwitchButton: UIButton {
     }
     
     private func updateBrackets() {
+        bracketsLayer.strokeColor = UIColor.label.resolvedColor(with: traitCollection).cgColor
         guard currentState == .mixed else { return }
         
         // Ensure layout is current so we have correct bounds

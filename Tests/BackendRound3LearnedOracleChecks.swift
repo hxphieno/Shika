@@ -27,7 +27,7 @@ import Foundation
             let codes = all(4) + (profile == .doublePinyin ? Array(all(6).prefix(243)) : all(5)) +
                 ["abac", "abac", String(repeating: "a", count: 48), "ab"+String(repeating: "c", count: 46)]
             let entries = codes.enumerated().map { i, code in Entry(code: code, text: String(repeating: "词", count: (profile == .doublePinyin ? code.count/2 : max(2, (code.count+5)/6))-1)+String(UnicodeScalar(0x4e00+i)!)) }
-            let filename = profile == .doublePinyin ? "double-pinyin-spelling.json" : "full-pinyin-spelling.json"
+            let filename = profile == .doublePinyin ? "ziranma-double-pinyin-spelling.json" : "full-pinyin-spelling.json"
             try JSONEncoder().encode(entries).write(to: directory.appendingPathComponent(filename))
             let index = SKLearnedSpellingIndex(userDirectory: directory, profile: profile)
             let prepared = entries.map { Array($0.code) }

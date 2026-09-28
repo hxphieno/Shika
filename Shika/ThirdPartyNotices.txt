@@ -1,7 +1,7 @@
-Shika third-party notices
+鹿边输入法 third-party notices
 
-Wanxiang dictionary by amzxyz and contributors, CC BY 4.0: https://github.com/amzxyz/rime-wanxiang (tones normalized and entries merged by Shika).
-Mozc OSS dictionary and connection data: https://github.com/google/mozc (converted to offline binary format by Shika).
+Wanxiang dictionary by amzxyz and contributors, CC BY 4.0: https://github.com/amzxyz/rime-wanxiang (tones normalized and entries merged by 鹿边输入法).
+Mozc OSS dictionary and connection data: https://github.com/google/mozc (converted to offline binary format by 鹿边输入法).
 Pinned revisions: Vendor/Lexicons/sources.lock.json.
 
 Rime 1.17.0: https://github.com/rime/librime

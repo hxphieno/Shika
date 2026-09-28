@@ -122,6 +122,36 @@ final class SKMixedDecoder {
         }.filter { seen.insert("\($0.last?.language.rawValue ?? ""):\($0.last?.right ?? 0):\($0.text)").inserted }.prefix(limit))
     }
 
+    /// Match native readings to raw letters, including per-syllable initials
+    /// and a final unfinished syllable. Output length is never an input offset.
+    private func consumedInput(_ input: String, syllables: [String]) -> Int? {
+        let raw = Array(input)
+        var offsets: Set<Int> = [0]
+        for (index, syllable) in syllables.enumerated() {
+            var next = Set<Int>()
+            let spellings = Set([syllable, syllable.replacingOccurrences(of: "nue", with: "nve")
+                .replacingOccurrences(of: "lue", with: "lve")])
+            for offset in offsets where offset < raw.count {
+                for spelling in spellings {
+                    let letters = Array(spelling)
+                    var lengths: Set<Int> = [1, letters.count]
+                    if index == syllables.count - 1 { lengths.formUnion(1...letters.count) }
+                    for length in lengths where offset + length <= raw.count {
+                        guard raw[offset..<(offset + length)].elementsEqual(letters.prefix(length)) else { continue }
+                        // Only a terminal syllable may be partly completed;
+                        // other syllables must be full spellings or initials.
+                        if length != 1 && length != letters.count && offset + length != raw.count { continue }
+                        var end = offset + length
+                        if end < raw.count && raw[end] == "'" { end += 1 }
+                        next.insert(end)
+                    }
+                }
+            }
+            offsets = next
+        }
+        return offsets.max()
+    }
+
     /// Native Chinese candidates provide sentence ranking and abbreviations.
     /// Word graph decoding itself performs zero per-substring Rime queries.
     func decode(_ input: String, context: Segment?, native: [SKCandidate], chineseQuery: (String) -> [SKCandidate],
@@ -134,6 +164,7 @@ final class SKMixedDecoder {
         var chineseCosts = Array(repeating: Double.infinity, count: length + 1)
         lattice[0] = [Path(segments: [], cost: 0)]; chineseCosts[0] = 0
         var prefixes: [Path] = []
+        var predictions: [Path] = []
         var wholeWords = Set<String>()
         for start in 0..<length {
             let incoming = ordered(lattice[start], limit: beamWidth)
@@ -145,6 +176,23 @@ final class SKMixedDecoder {
                 // words retain priority; this cannot multiply at every boundary.
                 if end == length, !choices.contains(where: { $0.language == .japanese }) {
                     choices += corrections(code)
+                    // Literal kana completions belong to Japanese-only input.
+                    // They must not turn an undecoded Chinese tail into a whole
+                    // speculative kana sentence in the joint word graph.
+                    let completions = japanese.completionWords(for: code).filter { !$0.isLiteral }.prefix(16).map {
+                        Segment(raw: code, text: $0.word.text, language: .japanese,
+                            left: $0.word.left, right: $0.word.right,
+                            cost: 4.5 + Double($0.word.cost) / 2000, corrected: false)
+                    }
+                    for word in completions {
+                        for path in incoming {
+                            let previous = path.last ?? context
+                            let score = path.cost + word.cost + transition(previous, word) - bonus(previous, word)
+                                + Double(japanese.connection(from: word.right, to: 0)) / 2000
+                            predictions.append(Path(segments: path.segments + [word], cost: score))
+                        }
+                    }
+                    if predictions.count > beamWidth * 4 { predictions = ordered(predictions, limit: beamWidth * 2) }
                 }
                 for word in choices {
                     // Selectable prefixes are dictionary words from the first
@@ -179,19 +227,31 @@ final class SKMixedDecoder {
         }
         // Calibrate native sentence alternatives against the Chinese word path,
         // instead of comparing Rime and Mozc's unrelated raw cost scales.
-        for (rank, item) in native.prefix(16).enumerated() {
-            let code = item.comment.split(whereSeparator: { $0 == " " || $0 == "'" }).joined()
-            let plain = input.replacingOccurrences(of: "'", with: "")
-            guard !code.isEmpty, plain.hasPrefix(code), code.allSatisfy({ $0.isASCII && $0.isLetter }) else { continue }
-            var end = 0, letters = 0
-            for c in raw { end += 1; if c != "'" { letters += 1 }; if letters == code.count { break } }
-            guard end <= length else { continue }
-            let base = chineseCosts[end]
-            guard base.isFinite else { continue }
+        var nativeWords: [Path] = []
+        for (rank, item) in native.enumerated() {
+            let syllables = item.comment.split(whereSeparator: { $0 == " " || $0 == "'" }).map(String.init)
+            let code = syllables.joined()
+            guard !code.isEmpty, code.allSatisfy({ $0.isASCII && $0.isLetter }),
+                  let end = consumedInput(input, syllables: syllables), end <= length else { continue }
+            let exact = String(raw.prefix(end)).replacingOccurrences(of: "'", with: "") == code
+            let dictionaryWord = chinese.words(for: code).first { $0.text == item.text }
+            // The compact mixed index prunes rare homophones. A native single
+            // character is still a dictionary entry, never a generated sentence.
+            let isWord = dictionaryWord != nil || (item.text.count == 1 && syllables.count == 1)
+            // Abbreviated dictionary words are useful; a generated sentence
+            // interpreting an arbitrary Japanese/raw tail as Chinese initials
+            // must not replace that tail during an automatic flush.
+            guard exact || (raw.count <= length && isWord) else { continue }
+            let base = chineseCosts[end].isFinite ? chineseCosts[end] :
+                dictionaryWord.map { max(1, 7.5 - 0.40 * log($0.frequency + 1)) } ?? Double(syllables.count) * 3
             let segment = Segment(raw: String(raw.prefix(end)), text: item.text, language: .chinese,
-                left: 0, right: 0, cost: base - 0.25 + Double(rank) * 0.35, corrected: false)
+                left: 0, right: 0, cost: base - 0.25 + Double(rank) * 0.35 + (exact ? 0 : 3), corrected: false)
             let path = Path(segments: [segment], cost: segment.cost + transition(context, segment) - bonus(context, segment))
             if end == raw.count { complete.append(path) } else { prefixes.append(path) }
+            if isWord, end == raw.count {
+                wholeWords.insert(item.text)
+                nativeWords.append(path)
+            }
         }
         // Preserve the existing Chinese typo channel for the active remainder.
         // These are lexicon-supported full words, never arbitrary replacements
@@ -259,11 +319,24 @@ final class SKMixedDecoder {
         // Six complete recommendations at most, then words from the beginning
         // of the remaining input. Never append more generated sentences later.
         var result = Array(whole.prefix(6))
+        let predicted = ordered(predictions, limit: beamWidth)
+        // Completed paths keep their places. Tail predictions fill unused
+        // recommendation slots, so they cannot prune existing full sentences.
+        for path in predicted where result.count < 6 {
+            if seen.insert("\(path.consumed):\(path.text)").inserted { result.append(path) }
+        }
         let partial = prefixes.sorted {
             $0.consumed == $1.consumed ? ($0.cost == $1.cost ? $0.text < $1.text : $0.cost < $1.cost) : $0.consumed > $1.consumed
         }.filter { seen.insert("\($0.consumed):\($0.text)").inserted }
         result += partial
         result += whole.dropFirst(6).filter { wholeWords.contains($0.text) }
-        return result
+        result += nativeWords.filter { seen.insert("\($0.consumed):\($0.text)").inserted }
+        result += predicted.filter { $0.segments.count == 1 && seen.insert("\($0.consumed):\($0.text)").inserted }
+        let completedWords = Set(predicted.filter { $0.segments.count == 1 }.map { "\($0.consumed):\($0.text)" })
+        let words = result.filter {
+            $0.consumed < input.count || wholeWords.contains($0.text) || completedWords.contains("\($0.consumed):\($0.text)")
+        }
+        return SKCandidateGrouping.arrange(recommendations: Array(result.prefix(6)), words: words,
+            text: { $0.text }, identity: { "\($0.consumed):\($0.text)" })
     }
 }

@@ -6,6 +6,7 @@ import Foundation
 final class SKMixedEngine: SKInputEngine {
     private let decoder: SKMixedDecoder
     private let native: SKRimeSession
+    private let prefixCandidates: SKPinyinPrefixCandidates?
     private let learningURL: URL
     private var learned: [String: Int]
     private var input = ""
@@ -13,13 +14,16 @@ final class SKMixedEngine: SKInputEngine {
     private var context: SKMixedDecoder.Segment?
     private var candidates: [SKMixedDecoder.Path] = []
     private var page = 0
-    private var chineseCache: [String: [SKCandidate]] = [:]
+    private var chineseCache: [String: (candidates: [SKCandidate], preedit: String)] = [:]
+    private var displayRemaining = ""
     private var lockedCount: Int { locked.reduce(0) { $0 + $1.raw.count } }
     private var prefix: String { locked.map(\.text).joined() }
     private var remaining: String { String(input.dropFirst(lockedCount)) }
 
     init(resources: URL, userDirectory: URL, beamWidth: Int = 16) throws {
         decoder = try SKMixedDecoder(resources: resources, beamWidth: beamWidth)
+        prefixCandidates = SKPinyinPrefixCandidates(resources: resources, configuration: SKInputConfiguration(
+            schemaID: "shika_pinyin", inputPolicy: .chineseRomanization, spelling: .fullPinyin))
         native = try SKRimeSession(sharedPath: resources.path, userPath: userDirectory.path, schema: "shika_pinyin")
         learningURL = userDirectory.appendingPathComponent("mixed-learning.json")
         learned = (try? JSONDecoder().decode([String: Int].self, from: Data(contentsOf: learningURL))) ?? [:]
@@ -60,17 +64,37 @@ final class SKMixedEngine: SKInputEngine {
         page = 0
         let chinese = queryChinese(remaining)
         candidates = decoder.decode(remaining, context: locked.last ?? context, native: chinese, chineseQuery: queryChinese, bonus: bonus)
+        // Display boundaries only: offsets and commits always use the raw input.
+        var parts = (candidates.first?.segments ?? []).map { segment in
+            guard segment.language == .chinese else { return segment.raw }
+            _ = queryChinese(segment.raw)
+            let preedit = chineseCache[segment.raw]?.preedit ?? segment.raw
+            return preedit.replacingOccurrences(of: " ", with: "") == segment.raw ? preedit : segment.raw
+        }
+        let tail = String(remaining.dropFirst(candidates.first?.consumed ?? 0))
+        if !tail.isEmpty { parts.append(tail) }
+        displayRemaining = parts.joined(separator: " ")
         return snapshot()
     }
     private func queryChinese(_ code: String) -> [SKCandidate] {
-        if let cached = chineseCache[code] { return cached }
+        if let cached = chineseCache[code] { return cached.candidates }
         let result = native.replaceInput(code)
-        let items = (result["candidates"] as? [[String: Any]] ?? []).compactMap { item -> SKCandidate? in
-            guard let text = item["text"] as? String else { return nil }
-            return SKCandidate(index: 0, text: text, comment: item["comment"] as? String ?? "")
+        let window = SKCandidateGrouping.nativeWindow(native)
+        func candidates(_ rows: [[String: Any]]) -> [SKCandidate] {
+            rows.compactMap { item -> SKCandidate? in
+                guard let text = item["text"] as? String else { return nil }
+                return SKCandidate(index: item["index"] as? Int ?? 0, text: text, comment: item["comment"] as? String ?? "")
+            }
         }
+        let state = SKEngineState(input: code, preedit: result["preedit"] as? String ?? code,
+            candidates: SKCandidateGrouping.arrange(recommendations: window.items,
+                words: window.items, text: { $0.text }, identity: { $0.contentIdentity }))
+        let items = prefixCandidates?.present(state) { completion in
+            let queried = native.replaceInput(completion)
+            return SKEngineState(candidates: candidates(queried["candidates"] as? [[String: Any]] ?? []))
+        }.candidates ?? state.candidates
         if chineseCache.count >= 256 { chineseCache.removeAll(keepingCapacity: true) }
-        chineseCache[code] = items
+        chineseCache[code] = (items, result["preedit"] as? String ?? code)
         return items
     }
     func process(key: Int32) -> SKEngineState {
@@ -120,12 +144,14 @@ final class SKMixedEngine: SKInputEngine {
         if !segments.isEmpty { remember(segments); context = segments.last }
         else { context = nil }
         input = ""; locked = []; candidates = []; page = 0
+        displayRemaining = ""
         _ = native.clearComposition()
         var state = snapshot(); state.committedText = text
         return state
     }
     func clear() -> SKEngineState {
         context = nil; input = ""; locked = []; candidates = []; page = 0
+        displayRemaining = ""
         decoder.resetCache(); chineseCache.removeAll(keepingCapacity: true); _ = native.clearComposition()
         return snapshot()
     }
@@ -150,7 +176,7 @@ final class SKMixedEngine: SKInputEngine {
     }
     private func snapshot() -> SKEngineState {
         let items = candidatePage(startingAt: page * 8, limit: 8)
-        return SKEngineState(input: input, preedit: prefix + remaining, candidates: items.candidates,
+        return SKEngineState(input: input, preedit: prefix + displayRemaining, candidates: items.candidates,
             page: page, isLastPage: !items.hasMore)
     }
 }

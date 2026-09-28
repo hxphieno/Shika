@@ -1,0 +1,533 @@
+{
+  "checkCount" : 19,
+  "checks" : [
+    {
+      "detail" : "",
+      "name" : "new process restores learned user phrase at first rank",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "loading and typing learned phrase do not commit",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "browsing and cancel preserve learned first ranking",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "Return on learned phrase still confirms raw letters",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "noncommitting actions leave persisted metadata unchanged",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learned user phrase is offered for single-key typo: kujmmc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learned user phrase is offered for single-key typo: lukmmc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learned user phrase is offered for single-key typo: lujmmv",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learned user phrase is offered for single-key typo: lujmc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learned user phrase is offered for single-key typo: lujjmmc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "learned user phrase is offered for single-key typo: lumjmc",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "learned typo selection consumes whole input: kujmmc",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "learned typo selection consumes whole input: lukmmc",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "learned typo selection consumes whole input: lujmmv",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "learned typo selection consumes whole input: lujmc",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "learned typo selection consumes whole input: lujjmmc",
+      "passed" : true
+    },
+    {
+      "detail" : "output=鹿键喵, remaining=",
+      "name" : "learned typo selection consumes whole input: lumjmc",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "corrected selections retain the correct spelling metadata",
+      "passed" : true
+    },
+    {
+      "detail" : "",
+      "name" : "typo codes never replace the learned correct spelling",
+      "passed" : true
+    }
+  ],
+  "environment" : "macOS native real Rime and production input session; no UIKit or physical device",
+  "failures" : 0,
+  "mode" : "probe",
+  "observations" : [
+    {
+      "candidates" : [
+        {
+          "comment" : "lu jian miao",
+          "index" : 0,
+          "text" : "鹿键喵"
+        },
+        {
+          "comment" : "纠错 · hu jian miao",
+          "index" : -1,
+          "text" : "胡建淼"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 1,
+          "text" : "路检"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 2,
+          "text" : "路肩"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 3,
+          "text" : "录检"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 4,
+          "text" : "陆坚"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 5,
+          "text" : "鲁健"
+        },
+        {
+          "comment" : "lu",
+          "index" : 6,
+          "text" : "路"
+        },
+        {
+          "comment" : "lu",
+          "index" : 7,
+          "text" : "录"
+        }
+      ],
+      "input" : "lujmmc",
+      "marked" : "lu jm mc",
+      "name" : "new-process learned ranking",
+      "output" : "",
+      "preedit" : "lu jm mc"
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "ku jian miao",
+          "index" : 0,
+          "text" : "枯尖秒"
+        },
+        {
+          "comment" : "纠错 · hu jian miao",
+          "index" : -1,
+          "text" : "胡建淼"
+        },
+        {
+          "comment" : "纠错 · lu jian miao",
+          "index" : -1000,
+          "text" : "鹿键喵"
+        },
+        {
+          "comment" : "纠错 · ling jian miao",
+          "index" : -200,
+          "text" : "零件秒"
+        },
+        {
+          "comment" : "纠错 · li jian miao",
+          "index" : -201,
+          "text" : "利剑秒"
+        },
+        {
+          "comment" : "纠错 · jing jian miao",
+          "index" : -202,
+          "text" : "精简秒"
+        },
+        {
+          "comment" : "ku jian",
+          "index" : 1,
+          "text" : "枯尖"
+        },
+        {
+          "comment" : "ku",
+          "index" : 2,
+          "text" : "库"
+        },
+        {
+          "comment" : "ku",
+          "index" : 3,
+          "text" : "苦"
+        },
+        {
+          "comment" : "ku",
+          "index" : 4,
+          "text" : "哭"
+        },
+        {
+          "comment" : "ku",
+          "index" : 5,
+          "text" : "酷"
+        },
+        {
+          "comment" : "ku",
+          "index" : 6,
+          "text" : "裤"
+        }
+      ],
+      "input" : "kujmmc",
+      "marked" : "ku jm mc",
+      "name" : "learned user phrase single-key typo: kujmmc",
+      "output" : "",
+      "preedit" : "ku jm mc"
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "纠错 · lu jian miao",
+          "index" : -1000,
+          "text" : "鹿键喵"
+        },
+        {
+          "comment" : "lu",
+          "index" : 0,
+          "text" : "路"
+        },
+        {
+          "comment" : "lu",
+          "index" : 1,
+          "text" : "录"
+        },
+        {
+          "comment" : "纠错 · lu lin miao",
+          "index" : -200,
+          "text" : "陆琳秒"
+        },
+        {
+          "comment" : "lu",
+          "index" : 2,
+          "text" : "陆"
+        },
+        {
+          "comment" : "lu",
+          "index" : 3,
+          "text" : "露"
+        },
+        {
+          "comment" : "lu",
+          "index" : 4,
+          "text" : "鲁"
+        },
+        {
+          "comment" : "lu",
+          "index" : 5,
+          "text" : "卢"
+        },
+        {
+          "comment" : "lu",
+          "index" : 6,
+          "text" : "炉"
+        },
+        {
+          "comment" : "lu",
+          "index" : 7,
+          "text" : "鹿"
+        }
+      ],
+      "input" : "lukmmc",
+      "marked" : "lukmmc",
+      "name" : "learned user phrase single-key typo: lukmmc",
+      "output" : "",
+      "preedit" : "lukmmc"
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "纠错 · lu jian miao",
+          "index" : -1000,
+          "text" : "鹿键喵"
+        },
+        {
+          "comment" : "lu jian m zhong",
+          "index" : 0,
+          "text" : "路检呒中"
+        },
+        {
+          "comment" : "lu jian m zhong",
+          "index" : 1,
+          "text" : "路检呣中"
+        },
+        {
+          "comment" : "纠错 · lu jian mou",
+          "index" : -200,
+          "text" : "路检某"
+        },
+        {
+          "comment" : "纠错 · lu jian mou",
+          "index" : -201,
+          "text" : "路肩某"
+        },
+        {
+          "comment" : "纠错 · lu jian miao",
+          "index" : -202,
+          "text" : "路检秒"
+        },
+        {
+          "comment" : "lu jian m zhong",
+          "index" : 2,
+          "text" : "路肩呒中"
+        },
+        {
+          "comment" : "lu jian m zhong",
+          "index" : 3,
+          "text" : "路肩呣中"
+        },
+        {
+          "comment" : "lu jian m zhe",
+          "index" : 4,
+          "text" : "路检呒这"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 5,
+          "text" : "路检"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 6,
+          "text" : "路肩"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 7,
+          "text" : "录检"
+        }
+      ],
+      "input" : "lujmmv",
+      "marked" : "lu jm m v",
+      "name" : "learned user phrase single-key typo: lujmmv",
+      "output" : "",
+      "preedit" : "lu jm m v"
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "纠错 · lu jiao",
+          "index" : -1,
+          "text" : "鹿角"
+        },
+        {
+          "comment" : "纠错 · lu jian miao",
+          "index" : -1000,
+          "text" : "鹿键喵"
+        },
+        {
+          "comment" : "纠错 · shan miao",
+          "index" : -2,
+          "text" : "山庙"
+        },
+        {
+          "comment" : "纠错 · lu jian",
+          "index" : -3,
+          "text" : "路检"
+        },
+        {
+          "comment" : "纠错 · lu jian",
+          "index" : -4,
+          "text" : "路肩"
+        },
+        {
+          "comment" : "纠错 · lu jian",
+          "index" : -5,
+          "text" : "录检"
+        },
+        {
+          "comment" : "lu jian ceng",
+          "index" : 0,
+          "text" : "卢见曾"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 4,
+          "text" : "陆坚"
+        },
+        {
+          "comment" : "lu jian",
+          "index" : 5,
+          "text" : "鲁健"
+        },
+        {
+          "comment" : "lu",
+          "index" : 6,
+          "text" : "路"
+        },
+        {
+          "comment" : "lu",
+          "index" : 7,
+          "text" : "录"
+        }
+      ],
+      "input" : "lujmc",
+      "marked" : "lu jm c",
+      "name" : "learned user phrase single-key typo: lujmc",
+      "output" : "",
+      "preedit" : "lu jm c"
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "纠错 · lu jian miao",
+          "index" : -1000,
+          "text" : "鹿键喵"
+        },
+        {
+          "comment" : "lu",
+          "index" : 0,
+          "text" : "路"
+        },
+        {
+          "comment" : "lu",
+          "index" : 1,
+          "text" : "录"
+        },
+        {
+          "comment" : "lu",
+          "index" : 2,
+          "text" : "陆"
+        },
+        {
+          "comment" : "lu",
+          "index" : 3,
+          "text" : "露"
+        },
+        {
+          "comment" : "lu",
+          "index" : 4,
+          "text" : "鲁"
+        },
+        {
+          "comment" : "lu",
+          "index" : 5,
+          "text" : "卢"
+        },
+        {
+          "comment" : "lu",
+          "index" : 6,
+          "text" : "炉"
+        },
+        {
+          "comment" : "lu",
+          "index" : 7,
+          "text" : "鹿"
+        }
+      ],
+      "input" : "lujjmmc",
+      "marked" : "lujjmmc",
+      "name" : "learned user phrase single-key typo: lujjmmc",
+      "output" : "",
+      "preedit" : "lujjmmc"
+    },
+    {
+      "candidates" : [
+        {
+          "comment" : "lu man miao",
+          "index" : 0,
+          "text" : "录满秒"
+        },
+        {
+          "comment" : "lu man miao",
+          "index" : 1,
+          "text" : "卢曼秒"
+        },
+        {
+          "comment" : "lu man miao",
+          "index" : 2,
+          "text" : "鲁曼秒"
+        },
+        {
+          "comment" : "纠错 · lu man man",
+          "index" : -1,
+          "text" : "路漫漫"
+        },
+        {
+          "comment" : "纠错 · lu jian miao",
+          "index" : -1000,
+          "text" : "鹿键喵"
+        },
+        {
+          "comment" : "lu man",
+          "index" : 3,
+          "text" : "录满"
+        },
+        {
+          "comment" : "lu man",
+          "index" : 4,
+          "text" : "卢曼"
+        },
+        {
+          "comment" : "lu man",
+          "index" : 5,
+          "text" : "鲁曼"
+        },
+        {
+          "comment" : "lu man",
+          "index" : 6,
+          "text" : "芦鳗"
+        },
+        {
+          "comment" : "lu",
+          "index" : 7,
+          "text" : "路"
+        }
+      ],
+      "input" : "lumjmc",
+      "marked" : "lu mj mc",
+      "name" : "learned user phrase single-key typo: lumjmc",
+      "output" : "",
+      "preedit" : "lu mj mc"
+    }
+  ]
+}

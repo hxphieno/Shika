@@ -2,6 +2,11 @@ import UIKit
 
 /// Geometry shared by the independent Chinese/Japanese and double-pinyin keyboards.
 class SKMainKeyboardSurface: UIView {
+    override var isHidden: Bool {
+        didSet {
+            if isHidden { keyRows.flatMap { $0 }.forEach { $0.cancelPreview() } }
+        }
+    }
     var keyRows: [[SKMainKeyButton]] = [] {
         didSet {
             oldValue.flatMap { $0 }.filter { key in !keyRows.flatMap { $0 }.contains(where: { $0 === key }) }.forEach { $0.removeFromSuperview() }

@@ -15,13 +15,34 @@ final class SKLearnedSpellingIndex {
 
     init(userDirectory: URL, profile: SKSpellingProfile = .doublePinyin) {
         self.profile = profile
-        let filename = profile == .doublePinyin ? "double-pinyin-spelling.json" : "full-pinyin-spelling.json"
+        let filename = profile == .doublePinyin ? "ziranma-double-pinyin-spelling.json" : "full-pinyin-spelling.json"
         url = userDirectory.appendingPathComponent(filename)
-        let size = (try? url.resourceValues(forKeys: [.fileSizeKey]).fileSize) ?? 0
-        if size > 0, size <= Self.byteLimit, let data = try? Data(contentsOf: url),
+        // The Rime user dictionary stores phonetic readings and remains shared.
+        // Only this auxiliary index stores layout-specific keystrokes.
+        let migrate = profile == .doublePinyin && !FileManager.default.fileExists(atPath: url.path)
+        let source = migrate ? userDirectory.appendingPathComponent("double-pinyin-spelling.json") : url
+        let size = (try? source.resourceValues(forKeys: [.fileSizeKey]).fileSize) ?? 0
+        if size > 0, size <= Self.byteLimit, let data = try? Data(contentsOf: source),
            let decoded = try? JSONDecoder().decode([Entry].self, from: data) {
             entries = Array(decoded.filter { Self.valid($0, profile: profile) }.suffix(Self.capacity))
+            if migrate {
+                entries = entries.map { Entry(code: Self.ziranmaCode(fromXiaohe: $0.code), text: $0.text) }
+                // Keep the old file intact; never reimport it once migrated.
+                if let data = try? JSONEncoder().encode(entries) { try? data.write(to: url, options: .atomic) }
+            }
         } else { entries = [] }
+    }
+
+    private static func ziranmaCode(fromXiaohe code: String) -> String {
+        let zeroInitials: Set<String> = ["aa", "oo", "ee", "ai", "ei", "ao", "ou", "an", "en", "ah", "eg", "er"]
+        let finals: [Character: Character] = ["w": "z", "y": "p", "p": "x", "d": "l",
+            "k": "y", "l": "d", "z": "b", "x": "w", "c": "k", "b": "n", "n": "c"]
+        var letters = Array(code)
+        for offset in stride(from: 0, to: letters.count, by: 2) {
+            let pair = String(letters[offset...offset + 1])
+            if !zeroInitials.contains(pair) { letters[offset + 1] = finals[letters[offset + 1]] ?? letters[offset + 1] }
+        }
+        return String(letters)
     }
 
     private static func valid(_ entry: Entry, profile: SKSpellingProfile) -> Bool {

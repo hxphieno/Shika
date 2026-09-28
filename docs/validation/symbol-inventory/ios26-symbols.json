@@ -1,0 +1,1296 @@
+{
+  "runtime": "iOS 26.5 (23F77)",
+  "root": "/Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library",
+  "sources": {
+    "PrivateFrameworks/UIKitCore.framework/Keyboard-default.plist": {
+      "symbols": {
+        "¡": [
+          "Roman-Accent-!"
+        ],
+        "!": [
+          "Roman-Accent-!",
+          "Roman-Accent-1!"
+        ],
+        "”": [
+          "Roman-Accent-\"",
+          "Roman-Accent-»"
+        ],
+        "“": [
+          "Roman-Accent-\"",
+          "Roman-Accent-«"
+        ],
+        "„": [
+          "Roman-Accent-\"",
+          "Roman-Accent-«"
+        ],
+        "»": [
+          "Roman-Accent-\"",
+          "Roman-Accent-»"
+        ],
+        "«": [
+          "Roman-Accent-\"",
+          "Roman-Accent-«"
+        ],
+        "\"": [
+          "Roman-Accent-\"",
+          "Roman-Accent-'\"",
+          "Roman-Accent-.?",
+          "Roman-Accent-«",
+          "Roman-Accent-»"
+        ],
+        "‰": [
+          "Roman-Accent-%"
+        ],
+        "%": [
+          "Roman-Accent-%",
+          "Roman-Accent-5%"
+        ],
+        "§": [
+          "Roman-Accent-&"
+        ],
+        "&": [
+          "Roman-Accent-&",
+          "Roman-Accent-7&"
+        ],
+        "’": [
+          "Roman-Accent-'"
+        ],
+        "‘": [
+          "Roman-Accent-'"
+        ],
+        "`": [
+          "Roman-Accent-'"
+        ],
+        "'": [
+          "Roman-Accent-'",
+          "Roman-Accent-,!",
+          "Roman-Accent-«",
+          "Roman-Accent-»"
+        ],
+        "<": [
+          "Roman-Accent-,<"
+        ],
+        "–": [
+          "Roman-Accent--"
+        ],
+        "—": [
+          "Roman-Accent--"
+        ],
+        "•": [
+          "Roman-Accent--"
+        ],
+        "-": [
+          "Roman-Accent--"
+        ],
+        "_": [
+          "Roman-Accent--_"
+        ],
+        "…": [
+          "Roman-Accent-."
+        ],
+        ".": [
+          "Roman-Accent-."
+        ],
+        ">": [
+          "Roman-Accent-.>"
+        ],
+        "\\": [
+          "Roman-Accent-/"
+        ],
+        "/": [
+          "Roman-Accent-/"
+        ],
+        "?": [
+          "Roman-Accent-/?",
+          "Roman-Accent-?"
+        ],
+        "°": [
+          "Roman-Accent-0"
+        ],
+        ")": [
+          "Roman-Accent-0)"
+        ],
+        "@": [
+          "Roman-Accent-2@"
+        ],
+        "#": [
+          "Roman-Accent-3#"
+        ],
+        "$": [
+          "Roman-Accent-4$",
+          "UI-Currency-$",
+          "UI-Currency-£",
+          "UI-Currency-¥",
+          "UI-Currency-€"
+        ],
+        "^": [
+          "Roman-Accent-6^"
+        ],
+        "*": [
+          "Roman-Accent-8*"
+        ],
+        "(": [
+          "Roman-Accent-9("
+        ],
+        ":": [
+          "Roman-Accent-;:"
+        ],
+        "+": [
+          "Roman-Accent-=+"
+        ],
+        "¿": [
+          "Roman-Accent-?"
+        ],
+        "{": [
+          "Roman-Accent-[{"
+        ],
+        "|": [
+          "Roman-Accent-\\|"
+        ],
+        "}": [
+          "Roman-Accent-]}"
+        ],
+        "€": [
+          "UI-Currency-$",
+          "UI-Currency-£",
+          "UI-Currency-¥",
+          "UI-Currency-€",
+          "UI-Currency-＄"
+        ],
+        "£": [
+          "UI-Currency-$",
+          "UI-Currency-£",
+          "UI-Currency-¥",
+          "UI-Currency-€",
+          "UI-Currency-＄"
+        ],
+        "¥": [
+          "UI-Currency-$",
+          "UI-Currency-£",
+          "UI-Currency-¥",
+          "UI-Currency-€",
+          "UI-Currency-＄"
+        ],
+        "₩": [
+          "UI-Currency-$",
+          "UI-Currency-£",
+          "UI-Currency-¥",
+          "UI-Currency-€",
+          "UI-Currency-＄"
+        ],
+        "₽": [
+          "UI-Currency-$",
+          "UI-Currency-£",
+          "UI-Currency-¥",
+          "UI-Currency-€",
+          "UI-Currency-＄"
+        ],
+        "￥": [
+          "UI-Currency-¥"
+        ],
+        "＄": [
+          "UI-Currency-¥",
+          "UI-Currency-＄"
+        ]
+      }
+    },
+    "TextInput/TextInput_en.bundle/Keyboard-en.plist": {
+      "symbols": {}
+    },
+    "TextInput/TextInput_en.bundle/Keyboard-en_US.plist": {
+      "symbols": {
+        "$": [
+          "UI-Currency-$"
+        ],
+        "¢": [
+          "UI-Currency-$"
+        ]
+      }
+    },
+    "TextInput/TextInput_ja.bundle/Keyboard-ja.plist": {
+      "symbols": {
+        "！": [
+          "Roman-Accent-!",
+          "Roman-Accent-！"
+        ],
+        "!": [
+          "Roman-Accent-!",
+          "Roman-Accent-！"
+        ],
+        "“": [
+          "Roman-Accent-\""
+        ],
+        "”": [
+          "Roman-Accent-\""
+        ],
+        "＂": [
+          "Roman-Accent-\""
+        ],
+        "\"": [
+          "Roman-Accent-\"",
+          "Roman-Accent-2\""
+        ],
+        "＃": [
+          "Roman-Accent-#"
+        ],
+        "#": [
+          "Roman-Accent-#"
+        ],
+        "％": [
+          "Roman-Accent-%"
+        ],
+        "%": [
+          "Roman-Accent-%"
+        ],
+        "＆": [
+          "Roman-Accent-&"
+        ],
+        "&": [
+          "Roman-Accent-&",
+          "Roman-Accent-6&"
+        ],
+        "‘": [
+          "Roman-Accent-'"
+        ],
+        "’": [
+          "Roman-Accent-'"
+        ],
+        "＇": [
+          "Roman-Accent-'"
+        ],
+        "'": [
+          "Roman-Accent-'",
+          "Roman-Accent-7'"
+        ],
+        "（": [
+          "Roman-Accent-("
+        ],
+        "(": [
+          "Roman-Accent-(",
+          "Roman-Accent-8("
+        ],
+        "）": [
+          "Roman-Accent-)"
+        ],
+        ")": [
+          "Roman-Accent-)",
+          "Roman-Accent-9)"
+        ],
+        "＊": [
+          "Roman-Accent-*"
+        ],
+        "*": [
+          "Roman-Accent-*",
+          "Roman-Accent-:*"
+        ],
+        "＋": [
+          "Roman-Accent-+"
+        ],
+        "+": [
+          "Roman-Accent-+",
+          "Roman-Accent-;+"
+        ],
+        "—": [
+          "Roman-Accent--"
+        ],
+        "-": [
+          "Roman-Accent--"
+        ],
+        "－": [
+          "Roman-Accent--"
+        ],
+        "–": [
+          "Roman-Accent--"
+        ],
+        "／": [
+          "Roman-Accent-/"
+        ],
+        "/": [
+          "Roman-Accent-/"
+        ],
+        "：": [
+          "Roman-Accent-:"
+        ],
+        ":": [
+          "Roman-Accent-:"
+        ],
+        "；": [
+          "Roman-Accent-;"
+        ],
+        ";": [
+          "Roman-Accent-;"
+        ],
+        "＜": [
+          "Roman-Accent-<"
+        ],
+        "<": [
+          "Roman-Accent-<",
+          "Roman-Accent-、<"
+        ],
+        "＝": [
+          "Roman-Accent-="
+        ],
+        "=": [
+          "Roman-Accent-=",
+          "Roman-Accent-ー="
+        ],
+        "＞": [
+          "Roman-Accent->"
+        ],
+        ">": [
+          "Roman-Accent->",
+          "Roman-Accent-。>"
+        ],
+        "？": [
+          "Roman-Accent-?",
+          "Roman-Accent-？"
+        ],
+        "?": [
+          "Roman-Accent-?",
+          "Roman-Accent-・?",
+          "Roman-Accent-？"
+        ],
+        "＠": [
+          "Roman-Accent-@"
+        ],
+        "@": [
+          "Roman-Accent-@"
+        ],
+        "`": [
+          "Roman-Accent-@`"
+        ],
+        "［": [
+          "Roman-Accent-["
+        ],
+        "[": [
+          "Roman-Accent-["
+        ],
+        "＼": [
+          "Roman-Accent-\\"
+        ],
+        "\\": [
+          "Roman-Accent-\\"
+        ],
+        "］": [
+          "Roman-Accent-]"
+        ],
+        "]": [
+          "Roman-Accent-]"
+        ],
+        "＾": [
+          "Roman-Accent-^"
+        ],
+        "^": [
+          "Roman-Accent-^"
+        ],
+        "~": [
+          "Roman-Accent-^~",
+          "Roman-Accent-〜"
+        ],
+        "＿": [
+          "Roman-Accent-_"
+        ],
+        "_": [
+          "Roman-Accent-_"
+        ],
+        "｛": [
+          "Roman-Accent-{"
+        ],
+        "{": [
+          "Roman-Accent-{"
+        ],
+        "｜": [
+          "Roman-Accent-|"
+        ],
+        "|": [
+          "Roman-Accent-|",
+          "Roman-Accent-¥|"
+        ],
+        "｝": [
+          "Roman-Accent-}"
+        ],
+        "}": [
+          "Roman-Accent-}"
+        ],
+        "『": [
+          "Roman-Accent-「",
+          "Roman-Accent-「『"
+        ],
+        "【": [
+          "Roman-Accent-「"
+        ],
+        "《": [
+          "Roman-Accent-「"
+        ],
+        "〔": [
+          "Roman-Accent-「"
+        ],
+        "「": [
+          "Roman-Accent-「"
+        ],
+        "』": [
+          "Roman-Accent-」",
+          "Roman-Accent-」』"
+        ],
+        "】": [
+          "Roman-Accent-」"
+        ],
+        "》": [
+          "Roman-Accent-」"
+        ],
+        "〕": [
+          "Roman-Accent-」"
+        ],
+        "」": [
+          "Roman-Accent-」"
+        ],
+        "〜": [
+          "Roman-Accent-〜"
+        ]
+      }
+    },
+    "TextInput/TextInput_ja.bundle/Keyboard-ja_JP-Romaji.plist": {
+      "symbols": {}
+    },
+    "TextInput/TextInput_ja.bundle/Keyboard-ja_JP-Kana.plist": {
+      "symbols": {}
+    },
+    "TextInput/TextInput_ja.bundle/Keyboard-ja_JP-Kana-iPhone.plist": {
+      "symbols": {
+        ".": [
+          "Roman-Accent-.,?!",
+          "Roman-Accent-/.,-/"
+        ],
+        "?": [
+          "Roman-Accent-.,?!"
+        ],
+        "!": [
+          "Roman-Accent-.,?!"
+        ],
+        ",": [
+          "Roman-Accent-.,?!",
+          "Roman-Accent-/.,-/"
+        ],
+        "(": [
+          "Roman-Accent-/()[]",
+          "Roman-Accent-’”()"
+        ],
+        "[": [
+          "Roman-Accent-/()[]"
+        ],
+        "]": [
+          "Roman-Accent-/()[]"
+        ],
+        ")": [
+          "Roman-Accent-/()[]",
+          "Roman-Accent-’”()"
+        ],
+        "-": [
+          "Roman-Accent-/.,-/"
+        ],
+        "/": [
+          "Roman-Accent-/.,-/",
+          "Roman-Accent-@#/&_"
+        ],
+        "…": [
+          "Roman-Accent-0/〜…"
+        ],
+        "〜": [
+          "Roman-Accent-0/〜…"
+        ],
+        "♪": [
+          "Roman-Accent-1/☆♪→"
+        ],
+        "→": [
+          "Roman-Accent-1/☆♪→"
+        ],
+        "☆": [
+          "Roman-Accent-1/☆♪→"
+        ],
+        "$": [
+          "Roman-Accent-2/¥$€"
+        ],
+        "€": [
+          "Roman-Accent-2/¥$€"
+        ],
+        "¥": [
+          "Roman-Accent-2/¥$€"
+        ],
+        "°": [
+          "Roman-Accent-3/%°#"
+        ],
+        "#": [
+          "Roman-Accent-3/%°#",
+          "Roman-Accent-@#/&_"
+        ],
+        "%": [
+          "Roman-Accent-3/%°#"
+        ],
+        "＊": [
+          "Roman-Accent-4/○＊・"
+        ],
+        "・": [
+          "Roman-Accent-4/○＊・"
+        ],
+        "○": [
+          "Roman-Accent-4/○＊・"
+        ],
+        "×": [
+          "Roman-Accent-5/+×÷"
+        ],
+        "÷": [
+          "Roman-Accent-5/+×÷"
+        ],
+        "+": [
+          "Roman-Accent-5/+×÷"
+        ],
+        "=": [
+          "Roman-Accent-6/<=>"
+        ],
+        ">": [
+          "Roman-Accent-6/<=>"
+        ],
+        "<": [
+          "Roman-Accent-6/<=>"
+        ],
+        "」": [
+          "Roman-Accent-7/「」:",
+          "Roman-Accent-や"
+        ],
+        ":": [
+          "Roman-Accent-7/「」:"
+        ],
+        "「": [
+          "Roman-Accent-7/「」:",
+          "Roman-Accent-や"
+        ],
+        "〒": [
+          "Roman-Accent-8/〒々〆"
+        ],
+        "|": [
+          "Roman-Accent-9/^|\\"
+        ],
+        "\\": [
+          "Roman-Accent-9/^|\\"
+        ],
+        "^": [
+          "Roman-Accent-9/^|\\"
+        ],
+        "@": [
+          "Roman-Accent-@#/&_"
+        ],
+        "&": [
+          "Roman-Accent-@#/&_"
+        ],
+        "_": [
+          "Roman-Accent-@#/&_"
+        ],
+        "'": [
+          "Roman-Accent-’”()"
+        ],
+        "\"": [
+          "Roman-Accent-’”()"
+        ],
+        "、": [
+          "Roman-Accent-、。？！"
+        ],
+        "？": [
+          "Roman-Accent-、。？！"
+        ],
+        "！": [
+          "Roman-Accent-、。？！"
+        ],
+        "。": [
+          "Roman-Accent-、。？！"
+        ]
+      }
+    },
+    "TextInput/TextInput_zh.bundle/Keyboard-zh.plist": {
+      "symbols": {
+        "!": [
+          "Roman-Accent-!",
+          "Roman-Accent-！"
+        ],
+        "！": [
+          "Roman-Accent-!",
+          "Roman-Accent-1！",
+          "Roman-Accent-’-Pinyin-Plane",
+          "Roman-Accent-？！",
+          "Roman-Accent-！",
+          "Roman-Accent-，。",
+          "Roman-Accent-，。？！",
+          "Roman-Accent-，！",
+          "Roman-Accent-？！、",
+          "Roman-Accent-？！"
+        ],
+        "＃": [
+          "Roman-Accent-#",
+          "Roman-Accent-@/#/_-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "#": [
+          "Roman-Accent-#",
+          "Roman-Accent-._@/#",
+          "Roman-Accent-@#/&_",
+          "Roman-Accent-@/#/_"
+        ],
+        "$": [
+          "Roman-Accent-$/¥€£",
+          "Roman-Accent-¥/$€£"
+        ],
+        "€": [
+          "Roman-Accent-$/¥€£",
+          "Roman-Accent-$/¥€£-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-¥/$€£",
+          "Roman-Accent-¥/$€£-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "£": [
+          "Roman-Accent-$/¥€£",
+          "Roman-Accent-¥/$€£"
+        ],
+        "¥": [
+          "Roman-Accent-$/¥€£",
+          "Roman-Accent-4¥",
+          "Roman-Accent-¥/$€£"
+        ],
+        "＄": [
+          "Roman-Accent-$/¥€£-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-¥/$€£-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "￡": [
+          "Roman-Accent-$/¥€£-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-¥/$€£-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "￥": [
+          "Roman-Accent-$/¥€£-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-¥/$€£-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "％": [
+          "Roman-Accent-%",
+          "Roman-Accent-·/*%=-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "%": [
+          "Roman-Accent-%",
+          "Roman-Accent-·/*%="
+        ],
+        "＆": [
+          "Roman-Accent-&",
+          "Roman-Accent-;/&-^-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "&": [
+          "Roman-Accent-&",
+          "Roman-Accent-;/&-^",
+          "Roman-Accent-@#/&_"
+        ],
+        "’": [
+          "Roman-Accent-'",
+          "Roman-Accent-‘’/「」",
+          "Roman-Accent-“”",
+          "Roman-Accent-“”/‘’",
+          "Roman-Accent-」"
+        ],
+        "‘": [
+          "Roman-Accent-'",
+          "Roman-Accent-‘’/「」",
+          "Roman-Accent-‘’/「」",
+          "Roman-Accent-“”",
+          "Roman-Accent-“”/‘’",
+          "Roman-Accent-「"
+        ],
+        "'": [
+          "Roman-Accent-'",
+          "Roman-Accent-’-Pinyin-Plane"
+        ],
+        "＇": [
+          "Roman-Accent-'"
+        ],
+        "\"": [
+          "Roman-Accent-'\"",
+          "Roman-Accent-“",
+          "Roman-Accent-”"
+        ],
+        "(": [
+          "Roman-Accent-(",
+          "Roman-Accent-()/[]-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-()/[]-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-（"
+        ],
+        "（": [
+          "Roman-Accent-(",
+          "Roman-Accent-()/[]",
+          "Roman-Accent-()/[]",
+          "Roman-Accent-9（",
+          "Roman-Accent-（"
+        ],
+        "［": [
+          "Roman-Accent-()/[]",
+          "Roman-Accent-【",
+          "Roman-Accent-［"
+        ],
+        "）": [
+          "Roman-Accent-()/[]",
+          "Roman-Accent-)",
+          "Roman-Accent-0）",
+          "Roman-Accent-）"
+        ],
+        "］": [
+          "Roman-Accent-()/[]",
+          "Roman-Accent-】",
+          "Roman-Accent-］"
+        ],
+        "[": [
+          "Roman-Accent-()/[]-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-【",
+          "Roman-Accent-［"
+        ],
+        ")": [
+          "Roman-Accent-()/[]-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-)",
+          "Roman-Accent-）"
+        ],
+        "]": [
+          "Roman-Accent-()/[]-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-】",
+          "Roman-Accent-］"
+        ],
+        "＊": [
+          "Roman-Accent-*",
+          "Roman-Accent-8＊",
+          "Roman-Accent-·/*%=-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "*": [
+          "Roman-Accent-*",
+          "Roman-Accent-·/*%="
+        ],
+        "＋": [
+          "Roman-Accent-+",
+          "Roman-Accent-＝＋"
+        ],
+        "+": [
+          "Roman-Accent-+"
+        ],
+        ",": [
+          "Roman-Accent-,",
+          "Roman-Accent-.,:",
+          "Roman-Accent-，"
+        ],
+        "，": [
+          "Roman-Accent-,",
+          "Roman-Accent-’-Pinyin-Plane",
+          "Roman-Accent-？！",
+          "Roman-Accent-？！",
+          "Roman-Accent-，",
+          "Roman-Accent-，。？！",
+          "Roman-Accent-，。？！"
+        ],
+        "—": [
+          "Roman-Accent--"
+        ],
+        "-": [
+          "Roman-Accent--",
+          "Roman-Accent-;/&-^"
+        ],
+        "－": [
+          "Roman-Accent--",
+          "Roman-Accent-;/&-^-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "–": [
+          "Roman-Accent--"
+        ],
+        "．": [
+          "Roman-Accent-."
+        ],
+        ".": [
+          "Roman-Accent-.",
+          "Roman-Accent-.,:",
+          "Roman-Accent-.,:",
+          "Roman-Accent-._@/#"
+        ],
+        ":": [
+          "Roman-Accent-.,:",
+          "Roman-Accent-:",
+          "Roman-Accent-："
+        ],
+        "@": [
+          "Roman-Accent-._@/#",
+          "Roman-Accent-@",
+          "Roman-Accent-@#/&_",
+          "Roman-Accent-@/#/_"
+        ],
+        "/": [
+          "Roman-Accent-._@/#",
+          "Roman-Accent-/",
+          "Roman-Accent-@#/&_",
+          "Roman-Accent-@/#/_"
+        ],
+        "_": [
+          "Roman-Accent-._@/#",
+          "Roman-Accent-@#/&_",
+          "Roman-Accent-@/#/_",
+          "Roman-Accent-_"
+        ],
+        "／": [
+          "Roman-Accent-/",
+          "Roman-Accent-@/#/_-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "……": [
+          "Roman-Accent-6……"
+        ],
+        "⋯⋯": [
+          "Roman-Accent-6⋯⋯"
+        ],
+        "：": [
+          "Roman-Accent-:",
+          "Roman-Accent-：",
+          "Roman-Accent-；："
+        ],
+        ";": [
+          "Roman-Accent-;",
+          "Roman-Accent-;/&-^-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-；"
+        ],
+        "；": [
+          "Roman-Accent-;",
+          "Roman-Accent-;/&-^",
+          "Roman-Accent-；"
+        ],
+        "^": [
+          "Roman-Accent-;/&-^",
+          "Roman-Accent-^"
+        ],
+        "＾": [
+          "Roman-Accent-;/&-^-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-^"
+        ],
+        "＝": [
+          "Roman-Accent-=",
+          "Roman-Accent-·/*%=-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "=": [
+          "Roman-Accent-=",
+          "Roman-Accent-·/*%="
+        ],
+        "?": [
+          "Roman-Accent-?",
+          "Roman-Accent-？"
+        ],
+        "？": [
+          "Roman-Accent-?",
+          "Roman-Accent-’-Pinyin-Plane",
+          "Roman-Accent-。？",
+          "Roman-Accent-？！",
+          "Roman-Accent-，。",
+          "Roman-Accent-，。？！",
+          "Roman-Accent-／？",
+          "Roman-Accent-？",
+          "Roman-Accent-？！、",
+          "Roman-Accent-？！、",
+          "Roman-Accent-？！",
+          "Roman-Accent-？！"
+        ],
+        "＠": [
+          "Roman-Accent-@",
+          "Roman-Accent-@/#/_-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "＿": [
+          "Roman-Accent-@/#/_-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-_"
+        ],
+        "＼": [
+          "Roman-Accent-\\",
+          "Roman-Accent-、/•|\\-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "\\": [
+          "Roman-Accent-\\",
+          "Roman-Accent-、/•|\\"
+        ],
+        "~": [
+          "Roman-Accent-~",
+          "Roman-Accent-～"
+        ],
+        "～": [
+          "Roman-Accent-~",
+          "Roman-Accent-｀～",
+          "Roman-Accent-～"
+        ],
+        "•": [
+          "Roman-Accent-·",
+          "Roman-Accent-•",
+          "Roman-Accent-、/•|\\",
+          "Roman-Accent-、/•|\\-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "·": [
+          "Roman-Accent-·",
+          "Roman-Accent-·/*%=",
+          "Roman-Accent-·/*%=-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-•",
+          "Roman-Accent-、·"
+        ],
+        "°": [
+          "Roman-Accent-·",
+          "Roman-Accent-•"
+        ],
+        "「": [
+          "Roman-Accent-‘’/「」",
+          "Roman-Accent-“",
+          "Roman-Accent-「",
+          "Roman-Accent-「」",
+          "Roman-Accent-「」",
+          "Roman-Accent-，「"
+        ],
+        "」": [
+          "Roman-Accent-‘’/「」",
+          "Roman-Accent-”",
+          "Roman-Accent-。」",
+          "Roman-Accent-「」",
+          "Roman-Accent-」"
+        ],
+        "。": [
+          "Roman-Accent-’-Pinyin-Plane",
+          "Roman-Accent-？！",
+          "Roman-Accent-，。？！"
+        ],
+        "“": [
+          "Roman-Accent-“",
+          "Roman-Accent-“”",
+          "Roman-Accent-“”",
+          "Roman-Accent-“”/‘’",
+          "Roman-Accent-“”/‘’",
+          "Roman-Accent-「",
+          "Roman-Accent-，“"
+        ],
+        "＂": [
+          "Roman-Accent-“",
+          "Roman-Accent-”"
+        ],
+        "『": [
+          "Roman-Accent-“",
+          "Roman-Accent-「",
+          "Roman-Accent-「」",
+          "Roman-Accent-「『",
+          "Roman-Accent-『』/{}",
+          "Roman-Accent-『』/{}",
+          "Roman-Accent-『』/{}-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-『』/{}-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "”": [
+          "Roman-Accent-“”",
+          "Roman-Accent-“”/‘’",
+          "Roman-Accent-”",
+          "Roman-Accent-。”",
+          "Roman-Accent-」"
+        ],
+        "』": [
+          "Roman-Accent-”",
+          "Roman-Accent-「」",
+          "Roman-Accent-」",
+          "Roman-Accent-」』",
+          "Roman-Accent-『』/{}",
+          "Roman-Accent-『』/{}-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "…": [
+          "Roman-Accent-…",
+          "Roman-Accent-⋯"
+        ],
+        "⋯": [
+          "Roman-Accent-…",
+          "Roman-Accent-⋯"
+        ],
+        "——": [
+          "Roman-Accent-⋯⋯",
+          "Roman-Accent-－——"
+        ],
+        "、": [
+          "Roman-Accent-、/•|\\",
+          "Roman-Accent-、/•|\\-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-？！、",
+          "Roman-Accent-？！"
+        ],
+        "|": [
+          "Roman-Accent-、/•|\\",
+          "Roman-Accent-｜"
+        ],
+        "｜": [
+          "Roman-Accent-、/•|\\-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-、·",
+          "Roman-Accent-｜"
+        ],
+        "》": [
+          "Roman-Accent-。》",
+          "Roman-Accent-《》/<>",
+          "Roman-Accent-《》/<>-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-》"
+        ],
+        "《": [
+          "Roman-Accent-《",
+          "Roman-Accent-《》/<>",
+          "Roman-Accent-《》/<>",
+          "Roman-Accent-《》/<>-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-《》/<>-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-，《"
+        ],
+        "〈": [
+          "Roman-Accent-《"
+        ],
+        "<": [
+          "Roman-Accent-《",
+          "Roman-Accent-《》/<>"
+        ],
+        "＜": [
+          "Roman-Accent-《",
+          "Roman-Accent-《》/<>-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        ">": [
+          "Roman-Accent-《》/<>",
+          "Roman-Accent-》"
+        ],
+        "＞": [
+          "Roman-Accent-《》/<>-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-》"
+        ],
+        "〉": [
+          "Roman-Accent-》"
+        ],
+        "｛": [
+          "Roman-Accent-『』/{}",
+          "Roman-Accent-【】/{}",
+          "Roman-Accent-［｛",
+          "Roman-Accent-｛"
+        ],
+        "｝": [
+          "Roman-Accent-『』/{}",
+          "Roman-Accent-【】/{}",
+          "Roman-Accent-］｝",
+          "Roman-Accent-｝"
+        ],
+        "{": [
+          "Roman-Accent-『』/{}-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-【】/{}-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-｛"
+        ],
+        "}": [
+          "Roman-Accent-『』/{}-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-【】/{}-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-｝"
+        ],
+        "【": [
+          "Roman-Accent-【",
+          "Roman-Accent-【】/{}",
+          "Roman-Accent-【】/{}",
+          "Roman-Accent-【】/{}-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-【】/{}-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-［"
+        ],
+        "〔": [
+          "Roman-Accent-【",
+          "Roman-Accent-［"
+        ],
+        "】": [
+          "Roman-Accent-【】/{}",
+          "Roman-Accent-【】/{}-Symbol-Alternative-Width-Toggle-Plane",
+          "Roman-Accent-】",
+          "Roman-Accent-］"
+        ],
+        "〕": [
+          "Roman-Accent-】",
+          "Roman-Accent-］"
+        ]
+      }
+    },
+    "TextInput/TextInput_zh.bundle/Keyboard-zh_Hans.plist": {
+      "symbols": {
+        "……": [
+          "Roman-Accent-。"
+        ],
+        "…": [
+          "Roman-Accent-。"
+        ],
+        "。": [
+          "Roman-Accent-。"
+        ],
+        ".": [
+          "Roman-Accent-。"
+        ]
+      }
+    },
+    "TextInput/TextInput_zh.bundle/Keyboard-zh_Hans-Pinyin.plist": {
+      "symbols": {}
+    },
+    "TextInput/TextInput_zh.bundle/Keyboard-zh_Hant.plist": {
+      "symbols": {
+        "、": [
+          "Roman-Accent-、/•|\\",
+          "Roman-Accent-、/•|\\-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "|": [
+          "Roman-Accent-、/•|\\"
+        ],
+        "\\": [
+          "Roman-Accent-、/•|\\"
+        ],
+        "•": [
+          "Roman-Accent-、/•|\\",
+          "Roman-Accent-、/•|\\-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "｜": [
+          "Roman-Accent-、/•|\\-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "＼": [
+          "Roman-Accent-、/•|\\-Symbol-Alternative-Width-Toggle-Plane"
+        ],
+        "⋯⋯": [
+          "Roman-Accent-。"
+        ],
+        "⋯": [
+          "Roman-Accent-。"
+        ],
+        "。": [
+          "Roman-Accent-。"
+        ],
+        ".": [
+          "Roman-Accent-。"
+        ],
+        "“": [
+          "Roman-Accent-＂"
+        ],
+        "”": [
+          "Roman-Accent-＂"
+        ],
+        "\"": [
+          "Roman-Accent-＂"
+        ],
+        "＂": [
+          "Roman-Accent-＂"
+        ],
+        "„": [
+          "Roman-Accent-＂"
+        ],
+        "，": [
+          "Roman-Accent-，"
+        ],
+        ",": [
+          "Roman-Accent-，"
+        ]
+      }
+    },
+    "TextInput/TextInput_zh.bundle/Keyboard-zh_Hant-Pinyin.plist": {
+      "symbols": {}
+    }
+  },
+  "symbols": [
+    "!",
+    "\"",
+    "#",
+    "$",
+    "%",
+    "&",
+    "'",
+    "(",
+    ")",
+    "*",
+    "+",
+    ",",
+    "-",
+    ".",
+    "/",
+    ":",
+    ";",
+    "<",
+    "=",
+    ">",
+    "?",
+    "@",
+    "[",
+    "\\",
+    "]",
+    "^",
+    "_",
+    "`",
+    "{",
+    "|",
+    "}",
+    "~",
+    "¡",
+    "¢",
+    "£",
+    "¥",
+    "§",
+    "«",
+    "°",
+    "·",
+    "»",
+    "¿",
+    "×",
+    "÷",
+    "–",
+    "—",
+    "——",
+    "‘",
+    "’",
+    "“",
+    "”",
+    "„",
+    "•",
+    "…",
+    "……",
+    "‰",
+    "₩",
+    "€",
+    "₽",
+    "→",
+    "⋯",
+    "⋯⋯",
+    "○",
+    "☆",
+    "♪",
+    "、",
+    "。",
+    "〈",
+    "〉",
+    "《",
+    "》",
+    "「",
+    "」",
+    "『",
+    "』",
+    "【",
+    "】",
+    "〒",
+    "〔",
+    "〕",
+    "〜",
+    "・",
+    "！",
+    "＂",
+    "＃",
+    "＄",
+    "％",
+    "＆",
+    "＇",
+    "（",
+    "）",
+    "＊",
+    "＋",
+    "，",
+    "－",
+    "．",
+    "／",
+    "：",
+    "；",
+    "＜",
+    "＝",
+    "＞",
+    "？",
+    "＠",
+    "［",
+    "＼",
+    "］",
+    "＾",
+    "＿",
+    "｛",
+    "｜",
+    "｝",
+    "～",
+    "￡",
+    "￥"
+  ]
+}

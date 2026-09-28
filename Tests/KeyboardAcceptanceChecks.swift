@@ -66,6 +66,19 @@ private final class KeyboardAcceptanceApp: UIResponder, UIApplicationDelegate {
         return true
     }
     func run(_ host: UIViewController) {
+        if ProcessInfo.processInfo.environment["SHIKA_ACCEPTANCE_CANDIDATES_ONLY"] == "1" {
+            let previousScheme = UserDefaults.standard.string(forKey: SKInputScheme.preferenceKey)
+            let previousMode = UserDefaults.standard.string(forKey: SKChineseJapaneseMode.preferenceKey)
+            defer {
+                UserDefaults.standard.set(previousScheme, forKey: SKInputScheme.preferenceKey)
+                UserDefaults.standard.set(previousMode, forKey: SKChineseJapaneseMode.preferenceKey)
+            }
+            UserDefaults.standard.set("mixed", forKey: SKChineseJapaneseMode.preferenceKey)
+            checkModesAndCandidates(host)
+            checkCandidateNaturalWidths(host)
+            finish("candidates")
+            return
+        }
         if CommandLine.arguments.contains("verify-persistence") {
             let controller = attach(host)
             let mode = acceptanceTree(controller.view).compactMap { $0 as? SKInputSwitchButton }.first!
@@ -168,7 +181,7 @@ private final class KeyboardAcceptanceApp: UIResponder, UIApplicationDelegate {
         for scheme in ["shuangpin", "chineseJapanese"] {
             UserDefaults.standard.set(scheme, forKey: SKInputScheme.preferenceKey)
             let controller = attach(host)
-            let mode = acceptanceTree(controller.view).first { $0.accessibilityIdentifier == "mode." + scheme }!
+            let mode = acceptanceTree(controller.view).first { $0.accessibilityIdentifier == "mode.selector" }!
             let main = acceptanceTree(controller.view).compactMap { $0 as? SKMainKeyboardSurface }.first { !$0.isHidden }!
             let q = main.keyRows[0][0]
             let candidateBar = acceptanceTree(controller.view).compactMap { $0 as? CandidateBarView }.first!
@@ -188,7 +201,7 @@ private final class KeyboardAcceptanceApp: UIResponder, UIApplicationDelegate {
             let scroll = acceptanceTree(candidateBar).compactMap { $0 as? UIScrollView }.first!
             let arrow = acceptanceTree(candidateBar).compactMap { $0 as? UIButton }.first { $0.accessibilityIdentifier == "candidates.expand" }!
             expect(arrow.bounds.width >= 48 && arrow.bounds.height >= 44, "\(scheme): expanded arrow has enlarged 48×44 target")
-            expect(scroll.bounds.height >= 44 && scroll.contentSize.width > scroll.bounds.width, "\(scheme): candidates retain full-height horizontal scroll area")
+            expect(scroll.bounds.height >= 44 && scroll.contentSize.width + scroll.contentInset.right > scroll.bounds.width, "\(scheme): candidates retain full-height horizontal scroll area")
             let buttons = acceptanceTree(scroll).compactMap { $0 as? UIButton }.filter { $0.accessibilityIdentifier?.hasPrefix("candidate.") == true }
             expect(scroll.canCancelContentTouches && buttons.allSatisfy { scroll.touchesShouldCancel(in: $0) }, "\(scheme): dragging from a candidate can cancel its tap")
             expect(buttons.allSatisfy { $0.bounds.width >= 44 && $0.bounds.height >= 44 }, "\(scheme): every candidate has minimum 44×44 target")
@@ -196,8 +209,9 @@ private final class KeyboardAcceptanceApp: UIResponder, UIApplicationDelegate {
                 let hit = controller.view.hitTest(arrow.convert(point, to: controller.view), with: nil)
                 expect(hit === arrow || hit?.isDescendant(of: arrow) == true, "\(scheme): arrow edge remains tappable")
             }
-            expect(arrow.bounds.width >= 60, "\(scheme): disclosure reserves 60pt target")
-            for point in [CGPoint(x: -0.1, y: 22), CGPoint(x: 60.1, y: 22), CGPoint(x: 30, y: -0.1), CGPoint(x: 30, y: 44.1)] {
+            expect(arrow.bounds.width >= 72, "\(scheme): disclosure reserves 72pt target")
+            expect(!arrow.isDescendant(of: scroll), "\(scheme): fixed arrow is independent of candidate panning")
+            for point in [CGPoint(x: -0.1, y: 22), CGPoint(x: arrow.bounds.width + 0.1, y: 22), CGPoint(x: 30, y: -0.1), CGPoint(x: 30, y: 44.1)] {
                 expect(!arrow.point(inside: point, with: nil), "\(scheme): initial disclosure hit excludes neighboring regions")
             }
             let leftOfArrow = arrow.convert(CGPoint(x: -1, y: 22), to: controller.view)
@@ -253,7 +267,7 @@ private final class KeyboardAcceptanceApp: UIResponder, UIApplicationDelegate {
             }
             controller.view.frame.size.width = 402
             controller.view.setNeedsLayout(); controller.view.layoutIfNeeded()
-            for character in (scheme == "shuangpin" ? "uijp" : "shijie") { controller.didTapKey(String(character)) }
+            for character in (scheme == "shuangpin" ? "uijx" : "shijie") { controller.didTapKey(String(character)) }
             controller.view.layoutIfNeeded()
             checkCandidateWidths(candidateBar, label: scheme + " real phrase before expansion")
             let phraseTitles = acceptanceTree(candidateBar).compactMap { ($0 as? UIButton)?.accessibilityLabel }

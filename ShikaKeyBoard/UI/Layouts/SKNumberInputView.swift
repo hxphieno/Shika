@@ -1,210 +1,113 @@
-//
-//  SKNumberInputView.swift
-//  ShikaKeyBoard
-//
-//  Created by ShiKa on 2026/1/30.
-//
-
 import UIKit
 
-// SKNumberInputViewDelegate removed in favor of SKKeyboardEventHandler
-
-class SKNumberInputView: UIView {
-    
+/// Keeps the numeric pad and horizontally scrolling symbol columns, using the
+/// same keycaps, row geometry and interactions as the alphabet keyboards.
+final class SKNumberInputView: UIView {
     weak var eventHandler: SKKeyboardEventHandler?
-    private var mainStackView: UIStackView!
-    private var numberButtons: [SKIMKeyButtonWithoutPopUpView] = []
-    private var symbolButtons: [SKIMKeyButtonWithoutPopUpView] = []
-    private var symbolScrollView: UIScrollView?
+    private var numberButtons: [SKMainKeyButton] = []
+    private var symbolButtons: [SKMainKeyButton] = []
+    private let symbolScrollView = SKKeyboardScrollView()
+    private let symbolContent = UIView()
+    private let symbolMemory = SKSymbolMemory()
 
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        guard !isHidden, alpha > 0.01, isUserInteractionEnabled, bounds.contains(point) else { return nil }
-        let hit = super.hitTest(point, with: event)
-        if hit is UIControl { return hit }
-        // Fill only half of each visual gutter. Symbol targets remain clipped
-        // to their scroll viewport and cannot steal touches from the numbers.
-        let inSymbols = symbolScrollView.map { $0.frame.contains(mainStackView.convert(point, from: self)) } ?? false
-        let keys = inSymbols ? symbolButtons : numberButtons
-        let nearby: UIView? = keys.filter { $0.point(inside: $0.convert(point, from: self), with: event) }
-            .min { lhs, rhs in
-                let a = lhs.convert(CGPoint(x: lhs.bounds.midX, y: lhs.bounds.midY), to: self)
-                let b = rhs.convert(CGPoint(x: rhs.bounds.midX, y: rhs.bounds.midY), to: self)
-                return hypot(a.x - point.x, a.y - point.y) < hypot(b.x - point.x, b.y - point.y)
-            }
-        return nearby ?? hit
-    }
-
-    private func enlargeTouchArea(_ button: SKIMKeyButtonWithoutPopUpView) {
-        button.touchInsets = UIEdgeInsets(top: -6, left: -3, bottom: -6, right: -3)
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
-        updateNumberAndPunctuationStackView()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupView()
-        updateNumberAndPunctuationStackView()
-    }
-    
-    private func setupView() {
-        // No background color
-        
-        mainStackView = UIStackView()
-        mainStackView.axis = .horizontal
-        mainStackView.distribution = .fill
-        mainStackView.alignment = .fill
-        mainStackView.spacing = SKConfig.numberInputViewSpacing
-        mainStackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.addSubview(mainStackView)
-        
-        NSLayoutConstraint.activate([
-            mainStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
-            mainStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),
-            mainStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -5),
-            mainStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5)
-        ])
-    }
-    
-    private func updateNumberAndPunctuationStackView() {
-        mainStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
-        numberButtons.removeAll()
-        symbolButtons.removeAll()
-        
-        // Left Side: Numbers 3x3 + Bottom Row
-        let leftView = UIStackView()
-        leftView.axis = .vertical
-        leftView.spacing = SKConfig.keyboardVerticalSpacing
-        leftView.alignment = .fill
-        leftView.distribution = .fill
-        
-        // 1-9 Grid
-        for i in 0..<3 {
-            let numberLineRow = UIStackView()
-            numberLineRow.axis = .horizontal
-            numberLineRow.spacing = SKConfig.keyboardHorizontalSpacing
-            numberLineRow.alignment = .fill
-            numberLineRow.distribution = .fill
-            
-            for j in 1..<4 {
-                let number = i * 3 + j
-                let numberButton = SKIMKeyButton(title: "\(number)", width: 55, font: UIFont.systemFont(ofSize: 20, weight: .regular))
-                numberButton.addTarget(self, action: #selector(numberKeyPressed(_:)), for: .touchUpInside)
-                enlargeTouchArea(numberButton)
-                numberButtons.append(numberButton)
-                numberLineRow.addArrangedSubview(numberButton)
+        for title in (1...9).map(String.init) + ["返回", "0", "⌫"] {
+            let isFunction = title == "返回" || title == "⌫"
+            let key = SKMainKeyButton(title: title, role: isFunction ? .function : .letter)
+            key.accessibilityIdentifier = "number.\(title)"
+            if title == "返回" {
+                key.addTarget(self, action: #selector(returnToAlpha), for: .touchUpInside)
+            } else if title == "⌫" {
+                key.useSymbol("delete.left", label: "删除")
+                key.onDelete = { [weak self] byWord in
+                    self?.eventHandler?.didDeleteBackward(byWord: byWord) ?? .stop
+                }
+            } else {
+                key.addTarget(self, action: #selector(typeKey(_:)), for: .touchUpInside)
             }
-            leftView.addArrangedSubview(numberLineRow)
+            numberButtons.append(key)
+            addSubview(key)
         }
-        
-        // Bottom Row: Return, 0, Delete
-        let numberLine3Row = UIStackView()
-        numberLine3Row.axis = .horizontal
-        numberLine3Row.spacing = 6
-        numberLine3Row.alignment = .fill
-        numberLine3Row.distribution = .fill
-        
-        let returnButton = SKIMKeyButtonWithoutPopUpView(title: "返回", width: 55, font: UIFont.systemFont(ofSize: 16, weight: .regular), backgroundColor: UIColor(white: 0.9, alpha: 1))
-        returnButton.addTarget(self, action: #selector(returnToAlphaPressed), for: .touchUpInside)
-        
-        let zeroButton = SKIMKeyButton(title: "0", width: 55, font: UIFont.systemFont(ofSize: 20, weight: .regular))
-        zeroButton.addTarget(self, action: #selector(numberKeyPressed(_:)), for: .touchUpInside)
-        
-        let deleteButton = SKIMKeyButtonWithoutPopUpView(title: "⌫", width: 55, font: UIFont.systemFont(ofSize: 20, weight: .regular))
-        deleteButton.accessibilityLabel = "删除"
-        deleteButton.onDelete = { [weak self] byWord in
-            self?.eventHandler?.didDeleteBackward(byWord: byWord) ?? .stop
+        symbolScrollView.showsHorizontalScrollIndicator = false
+        symbolScrollView.alwaysBounceHorizontal = true
+        symbolScrollView.clipsToBounds = true
+        symbolScrollView.addSubview(symbolContent)
+        addSubview(symbolScrollView)
+        for (index, title) in SKSymbolLayout.punctuation.enumerated() {
+            let key = SKSymbolKeyButton(symbol: title)
+            key.accessibilityIdentifier = "symbol.\(index)"
+            key.addTarget(self, action: #selector(typeKey(_:)), for: .touchUpInside)
+            symbolButtons.append(key)
+            symbolContent.addSubview(key)
         }
-        
-        for button in [returnButton, zeroButton, deleteButton] {
-            enlargeTouchArea(button)
-            numberButtons.append(button)
+        refreshSymbolOrder()
+    }
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+    override var intrinsicContentSize: CGSize {
+        CGSize(width: UIView.noIntrinsicMetric, height: SKMainKeyboardMetrics.portraitHeight)
+    }
+
+    override var isHidden: Bool {
+        didSet {
+            if isHidden { (numberButtons + symbolButtons).forEach { $0.cancelPreview() } }
+            else if oldValue { refreshSymbolOrder() }
         }
-        numberLine3Row.addArrangedSubview(returnButton)
-        numberLine3Row.addArrangedSubview(zeroButton)
-        numberLine3Row.addArrangedSubview(deleteButton)
-        leftView.addArrangedSubview(numberLine3Row)
-        
-        // Right Side: ScrollView with Punctuation
-        let scrollView = SKKeyboardScrollView()
-        symbolScrollView = scrollView
-        scrollView.showsHorizontalScrollIndicator = false
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        // Make sure scroll view clips bounds so content doesn't overflow
-        scrollView.clipsToBounds = true
-        
-        let contentStackView = waterfallView(items: SKSymbolLayout.punctuation)
-        scrollView.addSubview(contentStackView)
-        contentStackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            contentStackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            contentStackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-            contentStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            contentStackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            contentStackView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
-        ])
-        
-        mainStackView.addArrangedSubview(leftView)
-        mainStackView.addArrangedSubview(scrollView)
-        
-        // Constraint for scroll view width or priority?
-        // In ref: `scrollView.trailingAnchor.constraint(equalTo: mainKeyboardStackView.trailingAnchor).isActive = true`
-        // In UIStackView, we just need to make sure leftView doesn't hug everything.
-        // SKIMKeyButton has fixed width now. Left view has fixed width (roughly 55*3 + spacing).
-        // ScrollView should take the rest.
     }
-    
-    private func waterfallView(items: [String]) -> UIStackView {
-        let wtfView = UIStackView()
-        wtfView.axis = .vertical
-        wtfView.spacing = SKConfig.keyboardVerticalSpacing
-        wtfView.distribution = .fillEqually // rows have equal height
-        
-        var rowViews = [UIStackView]()
-        
-        for _ in 0..<4 {
-            let rowView = UIStackView()
-            rowView.axis = .horizontal
-            rowView.spacing = SKConfig.keyboardHorizontalSpacing
-            rowView.distribution = .fill // Buttons have fixed width
-            rowView.alignment = .fill
-            wtfView.addArrangedSubview(rowView)
-            rowViews.append(rowView)
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let inset = SKMainKeyboardMetrics.inset, gap = SKMainKeyboardMetrics.gap
+        let rows = SKMainKeyboardMetrics.frames(width: bounds.width, height: bounds.height, secondRowCount: 9)
+        let numberWidth = min(60, ((bounds.width - 2 * inset - gap) * 0.46 - 2 * gap) / 3)
+        let split = inset + 3 * numberWidth + 2.5 * gap
+        for (index, key) in numberButtons.enumerated() {
+            let row = index / 3, column = index % 3
+            let y = rows[row][0].minY, height = rows[row][0].height
+            key.frame = CGRect(x: inset + CGFloat(column) * (numberWidth + gap), y: y, width: numberWidth, height: height)
+            let left = column == 0 ? 0 : key.frame.minX - gap / 2
+            let right = column == 2 ? split : key.frame.maxX + gap / 2
+            let top = row == 0 ? 0 : (rows[row - 1][0].maxY + y) / 2
+            let bottom = row == 3 ? bounds.height : (key.frame.maxY + rows[row + 1][0].minY) / 2
+            key.touchBounds = CGRect(x: left - key.frame.minX, y: top - y, width: right - left, height: bottom - top)
         }
-        
-        for (index, item) in items.enumerated() {
-            // Equal column widths keep related marks vertically aligned.
-            let width: CGFloat = 42
-            let button = SKIMKeyButton(title: item, width: width, font: .systemFont(ofSize: item.count > 1 ? 20 : 26), backgroundColor: UIColor(white: 0.95, alpha: 1))
-            enlargeTouchArea(button)
-            symbolButtons.append(button)
-            button.accessibilityIdentifier = "symbol.\(index)"
-            button.addTarget(self, action: #selector(punctuationKeyPressed(_:)), for: .touchUpInside)
-            
-            let rowIndex = index % 4
-            rowViews[rowIndex].addArrangedSubview(button)
+        symbolScrollView.frame = CGRect(x: split, y: 0, width: max(0, bounds.width - split), height: bounds.height)
+        let symbolWidth = min(48, max(24, (symbolScrollView.bounds.width - inset - 3.5 * gap) / 4))
+        let columnCount = (symbolButtons.count + 3) / 4
+        let contentWidth = gap / 2 + CGFloat(columnCount) * (symbolWidth + gap) - gap + inset
+        symbolContent.frame = CGRect(x: 0, y: 0, width: contentWidth, height: bounds.height)
+        symbolScrollView.contentSize = symbolContent.bounds.size
+        for (index, key) in symbolButtons.enumerated() {
+            let row = index % 4, column = index / 4
+            let y = rows[row][0].minY, height = rows[row][0].height
+            key.frame = CGRect(x: gap / 2 + CGFloat(column) * (symbolWidth + gap), y: y, width: symbolWidth, height: height)
+            let top = row == 0 ? 0 : (rows[row - 1][0].maxY + y) / 2
+            let bottom = row == 3 ? bounds.height : (key.frame.maxY + rows[row + 1][0].minY) / 2
+            let right = column == columnCount - 1 ? contentWidth : key.frame.maxX + gap / 2
+            key.touchBounds = CGRect(x: -gap / 2, y: top - y, width: right - key.frame.minX + gap / 2, height: bottom - top)
         }
-        
-        return wtfView
+        let maxOffset = max(0, contentWidth - symbolScrollView.bounds.width)
+        if !symbolScrollView.isDragging && !symbolScrollView.isDecelerating {
+            symbolScrollView.contentOffset.x = min(maxOffset, max(0, symbolScrollView.contentOffset.x))
+        }
     }
-    
-    @objc private func numberKeyPressed(_ sender: UIButton) {
-        guard let title = sender.title(for: .normal) else { return }
-        eventHandler?.didTapKey(title)
+
+    // Keep the symbol viewport clipped; enlarged symbol targets cannot steal
+    // numeric taps. Returning the actual key lets UIKit track the whole cell.
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        guard !isHidden, alpha > 0.01, isUserInteractionEnabled, bounds.contains(point) else { return nil }
+        return super.hitTest(point, with: event)
     }
-    
-    @objc private func punctuationKeyPressed(_ sender: UIButton) {
-        guard let title = sender.title(for: .normal) else { return }
-         eventHandler?.didTapKey(title) 
+    private func refreshSymbolOrder() {
+        let order = symbolMemory.orderedSymbols()
+        let positions = Dictionary(uniqueKeysWithValues: order.enumerated().map { ($0.element, $0.offset) })
+        symbolButtons.sort { positions[$0.keyTitle, default: 0] < positions[$1.keyTitle, default: 0] }
+        symbolScrollView.contentOffset = .zero
+        setNeedsLayout()
     }
-    
-    @objc private func returnToAlphaPressed() {
-        eventHandler?.didTapSwitchLayout(to: .alphabet)
+    @objc private func typeKey(_ key: SKMainKeyButton) {
+        if key.usesSymbolTint { symbolMemory.record(key.keyTitle) }
+        eventHandler?.didTapKey(key.keyTitle)
     }
-    
+    @objc private func returnToAlpha() { eventHandler?.didTapSwitchLayout(to: .alphabet) }
 }

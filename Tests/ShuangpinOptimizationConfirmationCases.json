@@ -211,9 +211,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "tudz",
+    "input": "tudb",
     "target": "土豆",
-    "correct": "tudz",
+    "correct": "tudb",
     "split": "heldout",
     "id": "spconfirm-002-clean",
     "source": {
@@ -239,9 +239,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "yudz",
+    "input": "yudb",
     "target": "土豆",
-    "correct": "tudz",
+    "correct": "tudb",
     "split": "heldout",
     "id": "spconfirm-002-substitution",
     "source": {
@@ -274,9 +274,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "udz",
+    "input": "udb",
     "target": "土豆",
-    "correct": "tudz",
+    "correct": "tudb",
     "split": "heldout",
     "id": "spconfirm-002-omission",
     "source": {
@@ -309,9 +309,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "ytudz",
+    "input": "ytudb",
     "target": "土豆",
-    "correct": "tudz",
+    "correct": "tudb",
     "split": "heldout",
     "id": "spconfirm-002-insertion",
     "source": {
@@ -344,9 +344,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "tduz",
+    "input": "tdub",
     "target": "土豆",
-    "correct": "tudz",
+    "correct": "tudb",
     "split": "heldout",
     "id": "spconfirm-002-transposition",
     "source": {
@@ -379,9 +379,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "yudx",
+    "input": "yudn",
     "target": "土豆",
-    "correct": "tudz",
+    "correct": "tudb",
     "split": "heldout",
     "id": "spconfirm-002-double-error",
     "source": {
@@ -412,17 +412,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "z",
-        "new": "x"
+        "old": "b",
+        "new": "n"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "fjqp",
+    "input": "fjqx",
     "target": "番茄",
-    "correct": "fjqp",
+    "correct": "fjqx",
     "split": "heldout",
     "id": "spconfirm-003-clean",
     "source": {
@@ -448,9 +448,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "gjqp",
+    "input": "gjqx",
     "target": "番茄",
-    "correct": "fjqp",
+    "correct": "fjqx",
     "split": "heldout",
     "id": "spconfirm-003-substitution",
     "source": {
@@ -483,9 +483,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "jqp",
+    "input": "jqx",
     "target": "番茄",
-    "correct": "fjqp",
+    "correct": "fjqx",
     "split": "heldout",
     "id": "spconfirm-003-omission",
     "source": {
@@ -518,9 +518,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "gfjqp",
+    "input": "gfjqx",
     "target": "番茄",
-    "correct": "fjqp",
+    "correct": "fjqx",
     "split": "heldout",
     "id": "spconfirm-003-insertion",
     "source": {
@@ -553,9 +553,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "fjpq",
+    "input": "fjxq",
     "target": "番茄",
-    "correct": "fjqp",
+    "correct": "fjqx",
     "split": "heldout",
     "id": "spconfirm-003-transposition",
     "source": {
@@ -580,17 +580,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "qp",
-        "new": "pq"
+        "old": "qx",
+        "new": "xq"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "gjqo",
+    "input": "gjqc",
     "target": "番茄",
-    "correct": "fjqp",
+    "correct": "fjqx",
     "split": "heldout",
     "id": "spconfirm-003-double-error",
     "source": {
@@ -621,17 +621,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "p",
-        "new": "o"
+        "old": "x",
+        "new": "c"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "hlgx",
+    "input": "hdgw",
     "target": "黄瓜",
-    "correct": "hlgx",
+    "correct": "hdgw",
     "split": "heldout",
     "id": "spconfirm-004-clean",
     "source": {
@@ -657,9 +657,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "hkgx",
+    "input": "hfgw",
     "target": "黄瓜",
-    "correct": "hlgx",
+    "correct": "hdgw",
     "split": "heldout",
     "id": "spconfirm-004-substitution",
     "source": {
@@ -684,17 +684,17 @@
       {
         "operation": "substitute",
         "index": 1,
-        "old": "l",
-        "new": "k"
+        "old": "d",
+        "new": "f"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "hgx",
+    "input": "hgw",
     "target": "黄瓜",
-    "correct": "hlgx",
+    "correct": "hdgw",
     "split": "heldout",
     "id": "spconfirm-004-omission",
     "source": {
@@ -719,7 +719,7 @@
       {
         "operation": "delete",
         "index": 1,
-        "old": "l",
+        "old": "d",
         "new": ""
       }
     ]
@@ -727,9 +727,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "hklgx",
+    "input": "hfdgw",
     "target": "黄瓜",
-    "correct": "hlgx",
+    "correct": "hdgw",
     "split": "heldout",
     "id": "spconfirm-004-insertion",
     "source": {
@@ -755,16 +755,16 @@
         "operation": "insert",
         "index": 1,
         "old": "",
-        "new": "k"
+        "new": "f"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "lhgx",
+    "input": "dhgw",
     "target": "黄瓜",
-    "correct": "hlgx",
+    "correct": "hdgw",
     "split": "heldout",
     "id": "spconfirm-004-transposition",
     "source": {
@@ -789,17 +789,17 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "hl",
-        "new": "lh"
+        "old": "hd",
+        "new": "dh"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "jlgc",
+    "input": "jdge",
     "target": "黄瓜",
-    "correct": "hlgx",
+    "correct": "hdgw",
     "split": "heldout",
     "id": "spconfirm-004-double-error",
     "source": {
@@ -830,17 +830,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "x",
-        "new": "c"
+        "old": "w",
+        "new": "e"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "qpzi",
+    "input": "qxzi",
     "target": "茄子",
-    "correct": "qpzi",
+    "correct": "qxzi",
     "split": "heldout",
     "id": "spconfirm-005-clean",
     "source": {
@@ -866,9 +866,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "wpzi",
+    "input": "wxzi",
     "target": "茄子",
-    "correct": "qpzi",
+    "correct": "qxzi",
     "split": "heldout",
     "id": "spconfirm-005-substitution",
     "source": {
@@ -901,9 +901,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "pzi",
+    "input": "xzi",
     "target": "茄子",
-    "correct": "qpzi",
+    "correct": "qxzi",
     "split": "heldout",
     "id": "spconfirm-005-omission",
     "source": {
@@ -936,9 +936,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "wqpzi",
+    "input": "wqxzi",
     "target": "茄子",
-    "correct": "qpzi",
+    "correct": "qxzi",
     "split": "heldout",
     "id": "spconfirm-005-insertion",
     "source": {
@@ -971,9 +971,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "qzpi",
+    "input": "qzxi",
     "target": "茄子",
-    "correct": "qpzi",
+    "correct": "qxzi",
     "split": "heldout",
     "id": "spconfirm-005-transposition",
     "source": {
@@ -998,17 +998,17 @@
       {
         "operation": "transpose",
         "index": 1,
-        "old": "pz",
-        "new": "zp"
+        "old": "xz",
+        "new": "zx"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "wpzo",
+    "input": "wxzo",
     "target": "茄子",
-    "correct": "qpzi",
+    "correct": "qxzi",
     "split": "heldout",
     "id": "spconfirm-005-double-error",
     "source": {
@@ -1047,9 +1047,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "bdcd",
+    "input": "blcl",
     "target": "白菜",
-    "correct": "bdcd",
+    "correct": "blcl",
     "split": "heldout",
     "id": "spconfirm-006-clean",
     "source": {
@@ -1075,9 +1075,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "bdvd",
+    "input": "blvl",
     "target": "白菜",
-    "correct": "bdcd",
+    "correct": "blcl",
     "split": "heldout",
     "id": "spconfirm-006-substitution",
     "source": {
@@ -1110,9 +1110,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "bdd",
+    "input": "bll",
     "target": "白菜",
-    "correct": "bdcd",
+    "correct": "blcl",
     "split": "heldout",
     "id": "spconfirm-006-omission",
     "source": {
@@ -1145,9 +1145,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "bdvcd",
+    "input": "blvcl",
     "target": "白菜",
-    "correct": "bdcd",
+    "correct": "blcl",
     "split": "heldout",
     "id": "spconfirm-006-insertion",
     "source": {
@@ -1180,9 +1180,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "bddc",
+    "input": "bllc",
     "target": "白菜",
-    "correct": "bdcd",
+    "correct": "blcl",
     "split": "heldout",
     "id": "spconfirm-006-transposition",
     "source": {
@@ -1207,17 +1207,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "cd",
-        "new": "dc"
+        "old": "cl",
+        "new": "lc"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "ndcf",
+    "input": "nlck",
     "target": "白菜",
-    "correct": "bdcd",
+    "correct": "blcl",
     "split": "heldout",
     "id": "spconfirm-006-double-error",
     "source": {
@@ -1248,17 +1248,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "bocd",
+    "input": "bocl",
     "target": "菠菜",
-    "correct": "bocd",
+    "correct": "bocl",
     "split": "heldout",
     "id": "spconfirm-007-clean",
     "source": {
@@ -1284,9 +1284,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "bocf",
+    "input": "bock",
     "target": "菠菜",
-    "correct": "bocd",
+    "correct": "bocl",
     "split": "heldout",
     "id": "spconfirm-007-substitution",
     "source": {
@@ -1311,8 +1311,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
@@ -1321,7 +1321,7 @@
     "kind": "omission",
     "input": "boc",
     "target": "菠菜",
-    "correct": "bocd",
+    "correct": "bocl",
     "split": "heldout",
     "id": "spconfirm-007-omission",
     "source": {
@@ -1346,7 +1346,7 @@
       {
         "operation": "delete",
         "index": 3,
-        "old": "d",
+        "old": "l",
         "new": ""
       }
     ]
@@ -1354,9 +1354,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "bocfd",
+    "input": "bockl",
     "target": "菠菜",
-    "correct": "bocd",
+    "correct": "bocl",
     "split": "heldout",
     "id": "spconfirm-007-insertion",
     "source": {
@@ -1382,16 +1382,16 @@
         "operation": "insert",
         "index": 3,
         "old": "",
-        "new": "f"
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "obcd",
+    "input": "obcl",
     "target": "菠菜",
-    "correct": "bocd",
+    "correct": "bocl",
     "split": "heldout",
     "id": "spconfirm-007-transposition",
     "source": {
@@ -1424,9 +1424,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "nocf",
+    "input": "nock",
     "target": "菠菜",
-    "correct": "bocd",
+    "correct": "bocl",
     "split": "heldout",
     "id": "spconfirm-007-double-error",
     "source": {
@@ -1457,17 +1457,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "njgx",
+    "input": "njgw",
     "target": "南瓜",
-    "correct": "njgx",
+    "correct": "njgw",
     "split": "heldout",
     "id": "spconfirm-008-clean",
     "source": {
@@ -1493,9 +1493,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "njgc",
+    "input": "njge",
     "target": "南瓜",
-    "correct": "njgx",
+    "correct": "njgw",
     "split": "heldout",
     "id": "spconfirm-008-substitution",
     "source": {
@@ -1520,8 +1520,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "x",
-        "new": "c"
+        "old": "w",
+        "new": "e"
       }
     ]
   },
@@ -1530,7 +1530,7 @@
     "kind": "omission",
     "input": "njg",
     "target": "南瓜",
-    "correct": "njgx",
+    "correct": "njgw",
     "split": "heldout",
     "id": "spconfirm-008-omission",
     "source": {
@@ -1555,7 +1555,7 @@
       {
         "operation": "delete",
         "index": 3,
-        "old": "x",
+        "old": "w",
         "new": ""
       }
     ]
@@ -1563,9 +1563,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "njgcx",
+    "input": "njgew",
     "target": "南瓜",
-    "correct": "njgx",
+    "correct": "njgw",
     "split": "heldout",
     "id": "spconfirm-008-insertion",
     "source": {
@@ -1591,16 +1591,16 @@
         "operation": "insert",
         "index": 3,
         "old": "",
-        "new": "c"
+        "new": "e"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "ngjx",
+    "input": "ngjw",
     "target": "南瓜",
-    "correct": "njgx",
+    "correct": "njgw",
     "split": "heldout",
     "id": "spconfirm-008-transposition",
     "source": {
@@ -1633,9 +1633,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "mjgc",
+    "input": "mjge",
     "target": "南瓜",
-    "correct": "njgx",
+    "correct": "njgw",
     "split": "heldout",
     "id": "spconfirm-008-double-error",
     "source": {
@@ -1666,17 +1666,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "x",
-        "new": "c"
+        "old": "w",
+        "new": "e"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "dsgx",
+    "input": "dsgw",
     "target": "冬瓜",
-    "correct": "dsgx",
+    "correct": "dsgw",
     "split": "heldout",
     "id": "spconfirm-009-clean",
     "source": {
@@ -1702,9 +1702,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "ddgx",
+    "input": "ddgw",
     "target": "冬瓜",
-    "correct": "dsgx",
+    "correct": "dsgw",
     "split": "heldout",
     "id": "spconfirm-009-substitution",
     "source": {
@@ -1737,9 +1737,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "dgx",
+    "input": "dgw",
     "target": "冬瓜",
-    "correct": "dsgx",
+    "correct": "dsgw",
     "split": "heldout",
     "id": "spconfirm-009-omission",
     "source": {
@@ -1772,9 +1772,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "ddsgx",
+    "input": "ddsgw",
     "target": "冬瓜",
-    "correct": "dsgx",
+    "correct": "dsgw",
     "split": "heldout",
     "id": "spconfirm-009-insertion",
     "source": {
@@ -1807,9 +1807,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "dsxg",
+    "input": "dswg",
     "target": "冬瓜",
-    "correct": "dsgx",
+    "correct": "dsgw",
     "split": "heldout",
     "id": "spconfirm-009-transposition",
     "source": {
@@ -1834,17 +1834,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "gx",
-        "new": "xg"
+        "old": "gw",
+        "new": "wg"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "fsgc",
+    "input": "fsge",
     "target": "冬瓜",
-    "correct": "dsgx",
+    "correct": "dsgw",
     "split": "heldout",
     "id": "spconfirm-009-double-error",
     "source": {
@@ -1875,8 +1875,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "x",
-        "new": "c"
+        "old": "w",
+        "new": "e"
       }
     ]
   },
@@ -2092,9 +2092,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "qbcd",
+    "input": "qncl",
     "target": "芹菜",
-    "correct": "qbcd",
+    "correct": "qncl",
     "split": "heldout",
     "id": "spconfirm-011-clean",
     "source": {
@@ -2120,9 +2120,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "qncd",
+    "input": "qmcl",
     "target": "芹菜",
-    "correct": "qbcd",
+    "correct": "qncl",
     "split": "heldout",
     "id": "spconfirm-011-substitution",
     "source": {
@@ -2147,17 +2147,17 @@
       {
         "operation": "substitute",
         "index": 1,
-        "old": "b",
-        "new": "n"
+        "old": "n",
+        "new": "m"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "qcd",
+    "input": "qcl",
     "target": "芹菜",
-    "correct": "qbcd",
+    "correct": "qncl",
     "split": "heldout",
     "id": "spconfirm-011-omission",
     "source": {
@@ -2182,7 +2182,7 @@
       {
         "operation": "delete",
         "index": 1,
-        "old": "b",
+        "old": "n",
         "new": ""
       }
     ]
@@ -2190,9 +2190,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "qnbcd",
+    "input": "qmncl",
     "target": "芹菜",
-    "correct": "qbcd",
+    "correct": "qncl",
     "split": "heldout",
     "id": "spconfirm-011-insertion",
     "source": {
@@ -2218,16 +2218,16 @@
         "operation": "insert",
         "index": 1,
         "old": "",
-        "new": "n"
+        "new": "m"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "qcbd",
+    "input": "qcnl",
     "target": "芹菜",
-    "correct": "qbcd",
+    "correct": "qncl",
     "split": "heldout",
     "id": "spconfirm-011-transposition",
     "source": {
@@ -2252,17 +2252,17 @@
       {
         "operation": "transpose",
         "index": 1,
-        "old": "bc",
-        "new": "cb"
+        "old": "nc",
+        "new": "cn"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "wbcf",
+    "input": "wnck",
     "target": "芹菜",
-    "correct": "qbcd",
+    "correct": "qncl",
     "split": "heldout",
     "id": "spconfirm-011-double-error",
     "source": {
@@ -2293,8 +2293,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
@@ -2719,9 +2719,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "ugjl",
+    "input": "ugjd",
     "target": "生姜",
-    "correct": "ugjl",
+    "correct": "ugjd",
     "split": "heldout",
     "id": "spconfirm-014-clean",
     "source": {
@@ -2747,9 +2747,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "ugkl",
+    "input": "ugkd",
     "target": "生姜",
-    "correct": "ugjl",
+    "correct": "ugjd",
     "split": "heldout",
     "id": "spconfirm-014-substitution",
     "source": {
@@ -2782,9 +2782,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "ugl",
+    "input": "ugd",
     "target": "生姜",
-    "correct": "ugjl",
+    "correct": "ugjd",
     "split": "heldout",
     "id": "spconfirm-014-omission",
     "source": {
@@ -2817,9 +2817,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "ugkjl",
+    "input": "ugkjd",
     "target": "生姜",
-    "correct": "ugjl",
+    "correct": "ugjd",
     "split": "heldout",
     "id": "spconfirm-014-insertion",
     "source": {
@@ -2852,9 +2852,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "ujgl",
+    "input": "ujgd",
     "target": "生姜",
-    "correct": "ugjl",
+    "correct": "ugjd",
     "split": "heldout",
     "id": "spconfirm-014-transposition",
     "source": {
@@ -2887,9 +2887,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "igjk",
+    "input": "igjf",
     "target": "生姜",
-    "correct": "ugjl",
+    "correct": "ugjd",
     "split": "heldout",
     "id": "spconfirm-014-double-error",
     "source": {
@@ -2920,17 +2920,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "l",
-        "new": "k"
+        "old": "d",
+        "new": "f"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "xlcd",
+    "input": "xdcl",
     "target": "香菜",
-    "correct": "xlcd",
+    "correct": "xdcl",
     "split": "heldout",
     "id": "spconfirm-015-clean",
     "source": {
@@ -2956,9 +2956,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "clcd",
+    "input": "cdcl",
     "target": "香菜",
-    "correct": "xlcd",
+    "correct": "xdcl",
     "split": "heldout",
     "id": "spconfirm-015-substitution",
     "source": {
@@ -2991,9 +2991,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "lcd",
+    "input": "dcl",
     "target": "香菜",
-    "correct": "xlcd",
+    "correct": "xdcl",
     "split": "heldout",
     "id": "spconfirm-015-omission",
     "source": {
@@ -3026,9 +3026,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "cxlcd",
+    "input": "cxdcl",
     "target": "香菜",
-    "correct": "xlcd",
+    "correct": "xdcl",
     "split": "heldout",
     "id": "spconfirm-015-insertion",
     "source": {
@@ -3061,9 +3061,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "xldc",
+    "input": "xdlc",
     "target": "香菜",
-    "correct": "xlcd",
+    "correct": "xdcl",
     "split": "heldout",
     "id": "spconfirm-015-transposition",
     "source": {
@@ -3088,17 +3088,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "cd",
-        "new": "dc"
+        "old": "cl",
+        "new": "lc"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "clcf",
+    "input": "cdck",
     "target": "香菜",
-    "correct": "xlcd",
+    "correct": "xdcl",
     "split": "heldout",
     "id": "spconfirm-015-double-error",
     "source": {
@@ -3129,17 +3129,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "hxug",
+    "input": "hwug",
     "target": "花生",
-    "correct": "hxug",
+    "correct": "hwug",
     "split": "heldout",
     "id": "spconfirm-016-clean",
     "source": {
@@ -3165,9 +3165,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "hxig",
+    "input": "hwig",
     "target": "花生",
-    "correct": "hxug",
+    "correct": "hwug",
     "split": "heldout",
     "id": "spconfirm-016-substitution",
     "source": {
@@ -3200,9 +3200,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "hxg",
+    "input": "hwg",
     "target": "花生",
-    "correct": "hxug",
+    "correct": "hwug",
     "split": "heldout",
     "id": "spconfirm-016-omission",
     "source": {
@@ -3235,9 +3235,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "hxiug",
+    "input": "hwiug",
     "target": "花生",
-    "correct": "hxug",
+    "correct": "hwug",
     "split": "heldout",
     "id": "spconfirm-016-insertion",
     "source": {
@@ -3270,9 +3270,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "xhug",
+    "input": "whug",
     "target": "花生",
-    "correct": "hxug",
+    "correct": "hwug",
     "split": "heldout",
     "id": "spconfirm-016-transposition",
     "source": {
@@ -3297,17 +3297,17 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "hx",
-        "new": "xh"
+        "old": "hw",
+        "new": "wh"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "jxuh",
+    "input": "jwuh",
     "target": "花生",
-    "correct": "hxug",
+    "correct": "hwug",
     "split": "heldout",
     "id": "spconfirm-016-double-error",
     "source": {
@@ -3555,9 +3555,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "hetc",
+    "input": "hetk",
     "target": "核桃",
-    "correct": "hetc",
+    "correct": "hetk",
     "split": "heldout",
     "id": "spconfirm-018-clean",
     "source": {
@@ -3583,9 +3583,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "jetc",
+    "input": "jetk",
     "target": "核桃",
-    "correct": "hetc",
+    "correct": "hetk",
     "split": "heldout",
     "id": "spconfirm-018-substitution",
     "source": {
@@ -3618,9 +3618,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "etc",
+    "input": "etk",
     "target": "核桃",
-    "correct": "hetc",
+    "correct": "hetk",
     "split": "heldout",
     "id": "spconfirm-018-omission",
     "source": {
@@ -3653,9 +3653,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "jhetc",
+    "input": "jhetk",
     "target": "核桃",
-    "correct": "hetc",
+    "correct": "hetk",
     "split": "heldout",
     "id": "spconfirm-018-insertion",
     "source": {
@@ -3688,9 +3688,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "hect",
+    "input": "hekt",
     "target": "核桃",
-    "correct": "hetc",
+    "correct": "hetk",
     "split": "heldout",
     "id": "spconfirm-018-transposition",
     "source": {
@@ -3715,17 +3715,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "tc",
-        "new": "ct"
+        "old": "tk",
+        "new": "kt"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "jetv",
+    "input": "jetl",
     "target": "核桃",
-    "correct": "hetc",
+    "correct": "hetk",
     "split": "heldout",
     "id": "spconfirm-018-double-error",
     "source": {
@@ -3756,17 +3756,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "c",
-        "new": "v"
+        "old": "k",
+        "new": "l"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "xkrf",
+    "input": "xyrf",
     "target": "杏仁",
-    "correct": "xkrf",
+    "correct": "xyrf",
     "split": "heldout",
     "id": "spconfirm-019-clean",
     "source": {
@@ -3792,9 +3792,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "xlrf",
+    "input": "xurf",
     "target": "杏仁",
-    "correct": "xkrf",
+    "correct": "xyrf",
     "split": "heldout",
     "id": "spconfirm-019-substitution",
     "source": {
@@ -3819,8 +3819,8 @@
       {
         "operation": "substitute",
         "index": 1,
-        "old": "k",
-        "new": "l"
+        "old": "y",
+        "new": "u"
       }
     ]
   },
@@ -3829,7 +3829,7 @@
     "kind": "omission",
     "input": "xrf",
     "target": "杏仁",
-    "correct": "xkrf",
+    "correct": "xyrf",
     "split": "heldout",
     "id": "spconfirm-019-omission",
     "source": {
@@ -3854,7 +3854,7 @@
       {
         "operation": "delete",
         "index": 1,
-        "old": "k",
+        "old": "y",
         "new": ""
       }
     ]
@@ -3862,9 +3862,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "xlkrf",
+    "input": "xuyrf",
     "target": "杏仁",
-    "correct": "xkrf",
+    "correct": "xyrf",
     "split": "heldout",
     "id": "spconfirm-019-insertion",
     "source": {
@@ -3890,16 +3890,16 @@
         "operation": "insert",
         "index": 1,
         "old": "",
-        "new": "l"
+        "new": "u"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "kxrf",
+    "input": "yxrf",
     "target": "杏仁",
-    "correct": "xkrf",
+    "correct": "xyrf",
     "split": "heldout",
     "id": "spconfirm-019-transposition",
     "source": {
@@ -3924,17 +3924,17 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "xk",
-        "new": "kx"
+        "old": "xy",
+        "new": "yx"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "ckrg",
+    "input": "cyrg",
     "target": "杏仁",
-    "correct": "xkrf",
+    "correct": "xyrf",
     "split": "heldout",
     "id": "spconfirm-019-double-error",
     "source": {
@@ -3973,9 +3973,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "putc",
+    "input": "putk",
     "target": "葡萄",
-    "correct": "putc",
+    "correct": "putk",
     "split": "heldout",
     "id": "spconfirm-020-clean",
     "source": {
@@ -4001,9 +4001,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "pitc",
+    "input": "pitk",
     "target": "葡萄",
-    "correct": "putc",
+    "correct": "putk",
     "split": "heldout",
     "id": "spconfirm-020-substitution",
     "source": {
@@ -4036,9 +4036,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "ptc",
+    "input": "ptk",
     "target": "葡萄",
-    "correct": "putc",
+    "correct": "putk",
     "split": "heldout",
     "id": "spconfirm-020-omission",
     "source": {
@@ -4071,9 +4071,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "piutc",
+    "input": "piutk",
     "target": "葡萄",
-    "correct": "putc",
+    "correct": "putk",
     "split": "heldout",
     "id": "spconfirm-020-insertion",
     "source": {
@@ -4106,9 +4106,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "ptuc",
+    "input": "ptuk",
     "target": "葡萄",
-    "correct": "putc",
+    "correct": "putk",
     "split": "heldout",
     "id": "spconfirm-020-transposition",
     "source": {
@@ -4141,9 +4141,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "outv",
+    "input": "outl",
     "target": "葡萄",
-    "correct": "putc",
+    "correct": "putk",
     "split": "heldout",
     "id": "spconfirm-020-double-error",
     "source": {
@@ -4174,17 +4174,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "c",
-        "new": "v"
+        "old": "k",
+        "new": "l"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "pkgo",
+    "input": "pygo",
     "target": "苹果",
-    "correct": "pkgo",
+    "correct": "pygo",
     "split": "heldout",
     "id": "spconfirm-021-clean",
     "source": {
@@ -4210,9 +4210,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "pkgp",
+    "input": "pygp",
     "target": "苹果",
-    "correct": "pkgo",
+    "correct": "pygo",
     "split": "heldout",
     "id": "spconfirm-021-substitution",
     "source": {
@@ -4245,9 +4245,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "pkg",
+    "input": "pyg",
     "target": "苹果",
-    "correct": "pkgo",
+    "correct": "pygo",
     "split": "heldout",
     "id": "spconfirm-021-omission",
     "source": {
@@ -4280,9 +4280,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "pkgpo",
+    "input": "pygpo",
     "target": "苹果",
-    "correct": "pkgo",
+    "correct": "pygo",
     "split": "heldout",
     "id": "spconfirm-021-insertion",
     "source": {
@@ -4315,9 +4315,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "pkog",
+    "input": "pyog",
     "target": "苹果",
-    "correct": "pkgo",
+    "correct": "pygo",
     "split": "heldout",
     "id": "spconfirm-021-transposition",
     "source": {
@@ -4350,9 +4350,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "okgp",
+    "input": "oygp",
     "target": "苹果",
-    "correct": "pkgo",
+    "correct": "pygo",
     "split": "heldout",
     "id": "spconfirm-021-double-error",
     "source": {
@@ -4391,9 +4391,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "xljn",
+    "input": "xdjc",
     "target": "香蕉",
-    "correct": "xljn",
+    "correct": "xdjc",
     "split": "heldout",
     "id": "spconfirm-022-clean",
     "source": {
@@ -4419,9 +4419,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "xkjn",
+    "input": "xfjc",
     "target": "香蕉",
-    "correct": "xljn",
+    "correct": "xdjc",
     "split": "heldout",
     "id": "spconfirm-022-substitution",
     "source": {
@@ -4446,17 +4446,17 @@
       {
         "operation": "substitute",
         "index": 1,
-        "old": "l",
-        "new": "k"
+        "old": "d",
+        "new": "f"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "xjn",
+    "input": "xjc",
     "target": "香蕉",
-    "correct": "xljn",
+    "correct": "xdjc",
     "split": "heldout",
     "id": "spconfirm-022-omission",
     "source": {
@@ -4481,7 +4481,7 @@
       {
         "operation": "delete",
         "index": 1,
-        "old": "l",
+        "old": "d",
         "new": ""
       }
     ]
@@ -4489,9 +4489,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "xkljn",
+    "input": "xfdjc",
     "target": "香蕉",
-    "correct": "xljn",
+    "correct": "xdjc",
     "split": "heldout",
     "id": "spconfirm-022-insertion",
     "source": {
@@ -4517,16 +4517,16 @@
         "operation": "insert",
         "index": 1,
         "old": "",
-        "new": "k"
+        "new": "f"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "lxjn",
+    "input": "dxjc",
     "target": "香蕉",
-    "correct": "xljn",
+    "correct": "xdjc",
     "split": "heldout",
     "id": "spconfirm-022-transposition",
     "source": {
@@ -4551,17 +4551,17 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "xl",
-        "new": "lx"
+        "old": "xd",
+        "new": "dx"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "cljm",
+    "input": "cdjv",
     "target": "香蕉",
-    "correct": "xljn",
+    "correct": "xdjc",
     "split": "heldout",
     "id": "spconfirm-022-double-error",
     "source": {
@@ -4592,17 +4592,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "n",
-        "new": "m"
+        "old": "c",
+        "new": "v"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "ccmw",
+    "input": "ckmz",
     "target": "草莓",
-    "correct": "ccmw",
+    "correct": "ckmz",
     "split": "heldout",
     "id": "spconfirm-023-clean",
     "source": {
@@ -4628,9 +4628,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "cvmw",
+    "input": "clmz",
     "target": "草莓",
-    "correct": "ccmw",
+    "correct": "ckmz",
     "split": "heldout",
     "id": "spconfirm-023-substitution",
     "source": {
@@ -4655,17 +4655,17 @@
       {
         "operation": "substitute",
         "index": 1,
-        "old": "c",
-        "new": "v"
+        "old": "k",
+        "new": "l"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "cmw",
+    "input": "cmz",
     "target": "草莓",
-    "correct": "ccmw",
+    "correct": "ckmz",
     "split": "heldout",
     "id": "spconfirm-023-omission",
     "source": {
@@ -4690,7 +4690,7 @@
       {
         "operation": "delete",
         "index": 1,
-        "old": "c",
+        "old": "k",
         "new": ""
       }
     ]
@@ -4698,9 +4698,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "cvcmw",
+    "input": "clkmz",
     "target": "草莓",
-    "correct": "ccmw",
+    "correct": "ckmz",
     "split": "heldout",
     "id": "spconfirm-023-insertion",
     "source": {
@@ -4726,16 +4726,16 @@
         "operation": "insert",
         "index": 1,
         "old": "",
-        "new": "v"
+        "new": "l"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "cmcw",
+    "input": "cmkz",
     "target": "草莓",
-    "correct": "ccmw",
+    "correct": "ckmz",
     "split": "heldout",
     "id": "spconfirm-023-transposition",
     "source": {
@@ -4760,17 +4760,17 @@
       {
         "operation": "transpose",
         "index": 1,
-        "old": "cm",
-        "new": "mc"
+        "old": "km",
+        "new": "mk"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "vcme",
+    "input": "vkmx",
     "target": "草莓",
-    "correct": "ccmw",
+    "correct": "ckmz",
     "split": "heldout",
     "id": "spconfirm-023-double-error",
     "source": {
@@ -4801,17 +4801,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "w",
-        "new": "e"
+        "old": "z",
+        "new": "x"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "xigx",
+    "input": "xigw",
     "target": "西瓜",
-    "correct": "xigx",
+    "correct": "xigw",
     "split": "heldout",
     "id": "spconfirm-024-clean",
     "source": {
@@ -4837,9 +4837,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "xihx",
+    "input": "xihw",
     "target": "西瓜",
-    "correct": "xigx",
+    "correct": "xigw",
     "split": "heldout",
     "id": "spconfirm-024-substitution",
     "source": {
@@ -4872,9 +4872,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "xix",
+    "input": "xiw",
     "target": "西瓜",
-    "correct": "xigx",
+    "correct": "xigw",
     "split": "heldout",
     "id": "spconfirm-024-omission",
     "source": {
@@ -4907,9 +4907,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "xihgx",
+    "input": "xihgw",
     "target": "西瓜",
-    "correct": "xigx",
+    "correct": "xigw",
     "split": "heldout",
     "id": "spconfirm-024-insertion",
     "source": {
@@ -4942,9 +4942,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "xixg",
+    "input": "xiwg",
     "target": "西瓜",
-    "correct": "xigx",
+    "correct": "xigw",
     "split": "heldout",
     "id": "spconfirm-024-transposition",
     "source": {
@@ -4969,17 +4969,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "gx",
-        "new": "xg"
+        "old": "gw",
+        "new": "wg"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "cigc",
+    "input": "cige",
     "target": "西瓜",
-    "correct": "xigx",
+    "correct": "xigw",
     "split": "heldout",
     "id": "spconfirm-024-double-error",
     "source": {
@@ -5010,17 +5010,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "x",
-        "new": "c"
+        "old": "w",
+        "new": "e"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "tczi",
+    "input": "tkzi",
     "target": "桃子",
-    "correct": "tczi",
+    "correct": "tkzi",
     "split": "heldout",
     "id": "spconfirm-025-clean",
     "source": {
@@ -5046,9 +5046,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "tcxi",
+    "input": "tkxi",
     "target": "桃子",
-    "correct": "tczi",
+    "correct": "tkzi",
     "split": "heldout",
     "id": "spconfirm-025-substitution",
     "source": {
@@ -5081,9 +5081,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "tci",
+    "input": "tki",
     "target": "桃子",
-    "correct": "tczi",
+    "correct": "tkzi",
     "split": "heldout",
     "id": "spconfirm-025-omission",
     "source": {
@@ -5116,9 +5116,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "tcxzi",
+    "input": "tkxzi",
     "target": "桃子",
-    "correct": "tczi",
+    "correct": "tkzi",
     "split": "heldout",
     "id": "spconfirm-025-insertion",
     "source": {
@@ -5151,9 +5151,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "ctzi",
+    "input": "ktzi",
     "target": "桃子",
-    "correct": "tczi",
+    "correct": "tkzi",
     "split": "heldout",
     "id": "spconfirm-025-transposition",
     "source": {
@@ -5178,17 +5178,17 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "tc",
-        "new": "ct"
+        "old": "tk",
+        "new": "kt"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "yczo",
+    "input": "ykzo",
     "target": "桃子",
-    "correct": "tczi",
+    "correct": "tkzi",
     "split": "heldout",
     "id": "spconfirm-025-double-error",
     "source": {
@@ -5854,9 +5854,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "nkmg",
+    "input": "nymg",
     "target": "柠檬",
-    "correct": "nkmg",
+    "correct": "nymg",
     "split": "heldout",
     "id": "spconfirm-029-clean",
     "source": {
@@ -5882,9 +5882,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "nlmg",
+    "input": "numg",
     "target": "柠檬",
-    "correct": "nkmg",
+    "correct": "nymg",
     "split": "heldout",
     "id": "spconfirm-029-substitution",
     "source": {
@@ -5909,8 +5909,8 @@
       {
         "operation": "substitute",
         "index": 1,
-        "old": "k",
-        "new": "l"
+        "old": "y",
+        "new": "u"
       }
     ]
   },
@@ -5919,7 +5919,7 @@
     "kind": "omission",
     "input": "nmg",
     "target": "柠檬",
-    "correct": "nkmg",
+    "correct": "nymg",
     "split": "heldout",
     "id": "spconfirm-029-omission",
     "source": {
@@ -5944,7 +5944,7 @@
       {
         "operation": "delete",
         "index": 1,
-        "old": "k",
+        "old": "y",
         "new": ""
       }
     ]
@@ -5952,9 +5952,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "nlkmg",
+    "input": "nuymg",
     "target": "柠檬",
-    "correct": "nkmg",
+    "correct": "nymg",
     "split": "heldout",
     "id": "spconfirm-029-insertion",
     "source": {
@@ -5980,16 +5980,16 @@
         "operation": "insert",
         "index": 1,
         "old": "",
-        "new": "l"
+        "new": "u"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "nmkg",
+    "input": "nmyg",
     "target": "柠檬",
-    "correct": "nkmg",
+    "correct": "nymg",
     "split": "heldout",
     "id": "spconfirm-029-transposition",
     "source": {
@@ -6014,17 +6014,17 @@
       {
         "operation": "transpose",
         "index": 1,
-        "old": "km",
-        "new": "mk"
+        "old": "ym",
+        "new": "my"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "mkmh",
+    "input": "mymh",
     "target": "柠檬",
-    "correct": "nkmg",
+    "correct": "nymg",
     "split": "heldout",
     "id": "spconfirm-029-double-error",
     "source": {
@@ -6272,9 +6272,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "uvbw",
+    "input": "uvbz",
     "target": "水杯",
-    "correct": "uvbw",
+    "correct": "uvbz",
     "split": "heldout",
     "id": "spconfirm-031-clean",
     "source": {
@@ -6300,9 +6300,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "ivbw",
+    "input": "ivbz",
     "target": "水杯",
-    "correct": "uvbw",
+    "correct": "uvbz",
     "split": "heldout",
     "id": "spconfirm-031-substitution",
     "source": {
@@ -6335,9 +6335,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "vbw",
+    "input": "vbz",
     "target": "水杯",
-    "correct": "uvbw",
+    "correct": "uvbz",
     "split": "heldout",
     "id": "spconfirm-031-omission",
     "source": {
@@ -6370,9 +6370,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "iuvbw",
+    "input": "iuvbz",
     "target": "水杯",
-    "correct": "uvbw",
+    "correct": "uvbz",
     "split": "heldout",
     "id": "spconfirm-031-insertion",
     "source": {
@@ -6405,9 +6405,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "vubw",
+    "input": "vubz",
     "target": "水杯",
-    "correct": "uvbw",
+    "correct": "uvbz",
     "split": "heldout",
     "id": "spconfirm-031-transposition",
     "source": {
@@ -6440,9 +6440,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "ivbe",
+    "input": "ivbx",
     "target": "水杯",
-    "correct": "uvbw",
+    "correct": "uvbz",
     "split": "heldout",
     "id": "spconfirm-031-double-error",
     "source": {
@@ -6473,8 +6473,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "w",
-        "new": "e"
+        "old": "z",
+        "new": "x"
       }
     ]
   },
@@ -6690,9 +6690,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "iabw",
+    "input": "iabz",
     "target": "茶杯",
-    "correct": "iabw",
+    "correct": "iabz",
     "split": "heldout",
     "id": "spconfirm-033-clean",
     "source": {
@@ -6718,9 +6718,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "oabw",
+    "input": "oabz",
     "target": "茶杯",
-    "correct": "iabw",
+    "correct": "iabz",
     "split": "heldout",
     "id": "spconfirm-033-substitution",
     "source": {
@@ -6753,9 +6753,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "abw",
+    "input": "abz",
     "target": "茶杯",
-    "correct": "iabw",
+    "correct": "iabz",
     "split": "heldout",
     "id": "spconfirm-033-omission",
     "source": {
@@ -6788,9 +6788,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "oiabw",
+    "input": "oiabz",
     "target": "茶杯",
-    "correct": "iabw",
+    "correct": "iabz",
     "split": "heldout",
     "id": "spconfirm-033-insertion",
     "source": {
@@ -6823,9 +6823,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "iawb",
+    "input": "iazb",
     "target": "茶杯",
-    "correct": "iabw",
+    "correct": "iabz",
     "split": "heldout",
     "id": "spconfirm-033-transposition",
     "source": {
@@ -6850,17 +6850,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "bw",
-        "new": "wb"
+        "old": "bz",
+        "new": "zb"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "oabe",
+    "input": "oabx",
     "target": "茶杯",
-    "correct": "iabw",
+    "correct": "iabz",
     "split": "heldout",
     "id": "spconfirm-033-double-error",
     "source": {
@@ -6891,8 +6891,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "w",
-        "new": "e"
+        "old": "z",
+        "new": "x"
       }
     ]
   },
@@ -7317,9 +7317,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "yujb",
+    "input": "yujn",
     "target": "浴巾",
-    "correct": "yujb",
+    "correct": "yujn",
     "split": "heldout",
     "id": "spconfirm-036-clean",
     "source": {
@@ -7345,9 +7345,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "yijb",
+    "input": "yijn",
     "target": "浴巾",
-    "correct": "yujb",
+    "correct": "yujn",
     "split": "heldout",
     "id": "spconfirm-036-substitution",
     "source": {
@@ -7380,9 +7380,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "yjb",
+    "input": "yjn",
     "target": "浴巾",
-    "correct": "yujb",
+    "correct": "yujn",
     "split": "heldout",
     "id": "spconfirm-036-omission",
     "source": {
@@ -7415,9 +7415,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "yiujb",
+    "input": "yiujn",
     "target": "浴巾",
-    "correct": "yujb",
+    "correct": "yujn",
     "split": "heldout",
     "id": "spconfirm-036-insertion",
     "source": {
@@ -7450,9 +7450,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "yubj",
+    "input": "yunj",
     "target": "浴巾",
-    "correct": "yujb",
+    "correct": "yujn",
     "split": "heldout",
     "id": "spconfirm-036-transposition",
     "source": {
@@ -7477,17 +7477,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "jb",
-        "new": "bj"
+        "old": "jn",
+        "new": "nj"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "uujn",
+    "input": "uujm",
     "target": "浴巾",
-    "correct": "yujb",
+    "correct": "yujn",
     "split": "heldout",
     "id": "spconfirm-036-double-error",
     "source": {
@@ -7518,17 +7518,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "b",
-        "new": "n"
+        "old": "n",
+        "new": "m"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "toxp",
+    "input": "toxx",
     "target": "拖鞋",
-    "correct": "toxp",
+    "correct": "toxx",
     "split": "heldout",
     "id": "spconfirm-037-clean",
     "source": {
@@ -7554,9 +7554,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "toxo",
+    "input": "toxc",
     "target": "拖鞋",
-    "correct": "toxp",
+    "correct": "toxx",
     "split": "heldout",
     "id": "spconfirm-037-substitution",
     "source": {
@@ -7581,8 +7581,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "p",
-        "new": "o"
+        "old": "x",
+        "new": "c"
       }
     ]
   },
@@ -7591,7 +7591,7 @@
     "kind": "omission",
     "input": "tox",
     "target": "拖鞋",
-    "correct": "toxp",
+    "correct": "toxx",
     "split": "heldout",
     "id": "spconfirm-037-omission",
     "source": {
@@ -7616,7 +7616,7 @@
       {
         "operation": "delete",
         "index": 3,
-        "old": "p",
+        "old": "x",
         "new": ""
       }
     ]
@@ -7624,9 +7624,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "toxop",
+    "input": "toxcx",
     "target": "拖鞋",
-    "correct": "toxp",
+    "correct": "toxx",
     "split": "heldout",
     "id": "spconfirm-037-insertion",
     "source": {
@@ -7652,16 +7652,16 @@
         "operation": "insert",
         "index": 3,
         "old": "",
-        "new": "o"
+        "new": "c"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "otxp",
+    "input": "otxx",
     "target": "拖鞋",
-    "correct": "toxp",
+    "correct": "toxx",
     "split": "heldout",
     "id": "spconfirm-037-transposition",
     "source": {
@@ -7694,9 +7694,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "yoxo",
+    "input": "yoxc",
     "target": "拖鞋",
-    "correct": "toxp",
+    "correct": "toxx",
     "split": "heldout",
     "id": "spconfirm-037-double-error",
     "source": {
@@ -7727,8 +7727,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "p",
-        "new": "o"
+        "old": "x",
+        "new": "c"
       }
     ]
   },
@@ -8362,9 +8362,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "yhtd",
+    "input": "yhtl",
     "target": "阳台",
-    "correct": "yhtd",
+    "correct": "yhtl",
     "split": "heldout",
     "id": "spconfirm-041-clean",
     "source": {
@@ -8390,9 +8390,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "yhtf",
+    "input": "yhtk",
     "target": "阳台",
-    "correct": "yhtd",
+    "correct": "yhtl",
     "split": "heldout",
     "id": "spconfirm-041-substitution",
     "source": {
@@ -8417,8 +8417,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
@@ -8427,7 +8427,7 @@
     "kind": "omission",
     "input": "yht",
     "target": "阳台",
-    "correct": "yhtd",
+    "correct": "yhtl",
     "split": "heldout",
     "id": "spconfirm-041-omission",
     "source": {
@@ -8452,7 +8452,7 @@
       {
         "operation": "delete",
         "index": 3,
-        "old": "d",
+        "old": "l",
         "new": ""
       }
     ]
@@ -8460,9 +8460,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "yhtfd",
+    "input": "yhtkl",
     "target": "阳台",
-    "correct": "yhtd",
+    "correct": "yhtl",
     "split": "heldout",
     "id": "spconfirm-041-insertion",
     "source": {
@@ -8488,16 +8488,16 @@
         "operation": "insert",
         "index": 3,
         "old": "",
-        "new": "f"
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "ythd",
+    "input": "ythl",
     "target": "阳台",
-    "correct": "yhtd",
+    "correct": "yhtl",
     "split": "heldout",
     "id": "spconfirm-041-transposition",
     "source": {
@@ -8530,9 +8530,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "uhtf",
+    "input": "uhtk",
     "target": "阳台",
-    "correct": "yhtd",
+    "correct": "yhtl",
     "split": "heldout",
     "id": "spconfirm-041-double-error",
     "source": {
@@ -8563,17 +8563,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "izti",
+    "input": "ibti",
     "target": "抽屉",
-    "correct": "izti",
+    "correct": "ibti",
     "split": "heldout",
     "id": "spconfirm-042-clean",
     "source": {
@@ -8599,9 +8599,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "izyi",
+    "input": "ibyi",
     "target": "抽屉",
-    "correct": "izti",
+    "correct": "ibti",
     "split": "heldout",
     "id": "spconfirm-042-substitution",
     "source": {
@@ -8634,9 +8634,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "izi",
+    "input": "ibi",
     "target": "抽屉",
-    "correct": "izti",
+    "correct": "ibti",
     "split": "heldout",
     "id": "spconfirm-042-omission",
     "source": {
@@ -8669,9 +8669,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "izyti",
+    "input": "ibyti",
     "target": "抽屉",
-    "correct": "izti",
+    "correct": "ibti",
     "split": "heldout",
     "id": "spconfirm-042-insertion",
     "source": {
@@ -8704,9 +8704,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "izit",
+    "input": "ibit",
     "target": "抽屉",
-    "correct": "izti",
+    "correct": "ibti",
     "split": "heldout",
     "id": "spconfirm-042-transposition",
     "source": {
@@ -8739,9 +8739,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "ozto",
+    "input": "obto",
     "target": "抽屉",
-    "correct": "izti",
+    "correct": "ibti",
     "split": "heldout",
     "id": "spconfirm-042-double-error",
     "source": {
@@ -9198,9 +9198,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "qlbi",
+    "input": "qdbi",
     "target": "墙壁",
-    "correct": "qlbi",
+    "correct": "qdbi",
     "split": "heldout",
     "id": "spconfirm-045-clean",
     "source": {
@@ -9226,9 +9226,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "wlbi",
+    "input": "wdbi",
     "target": "墙壁",
-    "correct": "qlbi",
+    "correct": "qdbi",
     "split": "heldout",
     "id": "spconfirm-045-substitution",
     "source": {
@@ -9261,9 +9261,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "lbi",
+    "input": "dbi",
     "target": "墙壁",
-    "correct": "qlbi",
+    "correct": "qdbi",
     "split": "heldout",
     "id": "spconfirm-045-omission",
     "source": {
@@ -9296,9 +9296,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "wqlbi",
+    "input": "wqdbi",
     "target": "墙壁",
-    "correct": "qlbi",
+    "correct": "qdbi",
     "split": "heldout",
     "id": "spconfirm-045-insertion",
     "source": {
@@ -9331,9 +9331,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "qlib",
+    "input": "qdib",
     "target": "墙壁",
-    "correct": "qlbi",
+    "correct": "qdbi",
     "split": "heldout",
     "id": "spconfirm-045-transposition",
     "source": {
@@ -9366,9 +9366,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "wlbo",
+    "input": "wdbo",
     "target": "墙壁",
-    "correct": "qlbi",
+    "correct": "qdbi",
     "split": "heldout",
     "id": "spconfirm-045-double-error",
     "source": {
@@ -9407,9 +9407,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "wudk",
+    "input": "wudy",
     "target": "屋顶",
-    "correct": "wudk",
+    "correct": "wudy",
     "split": "heldout",
     "id": "spconfirm-046-clean",
     "source": {
@@ -9435,9 +9435,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "wudl",
+    "input": "wudu",
     "target": "屋顶",
-    "correct": "wudk",
+    "correct": "wudy",
     "split": "heldout",
     "id": "spconfirm-046-substitution",
     "source": {
@@ -9462,8 +9462,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "k",
-        "new": "l"
+        "old": "y",
+        "new": "u"
       }
     ]
   },
@@ -9472,7 +9472,7 @@
     "kind": "omission",
     "input": "wud",
     "target": "屋顶",
-    "correct": "wudk",
+    "correct": "wudy",
     "split": "heldout",
     "id": "spconfirm-046-omission",
     "source": {
@@ -9497,7 +9497,7 @@
       {
         "operation": "delete",
         "index": 3,
-        "old": "k",
+        "old": "y",
         "new": ""
       }
     ]
@@ -9505,9 +9505,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "wudlk",
+    "input": "wuduy",
     "target": "屋顶",
-    "correct": "wudk",
+    "correct": "wudy",
     "split": "heldout",
     "id": "spconfirm-046-insertion",
     "source": {
@@ -9533,16 +9533,16 @@
         "operation": "insert",
         "index": 3,
         "old": "",
-        "new": "l"
+        "new": "u"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "uwdk",
+    "input": "uwdy",
     "target": "屋顶",
-    "correct": "wudk",
+    "correct": "wudy",
     "split": "heldout",
     "id": "spconfirm-046-transposition",
     "source": {
@@ -9575,9 +9575,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "eudl",
+    "input": "eudu",
     "target": "屋顶",
-    "correct": "wudk",
+    "correct": "wudy",
     "split": "heldout",
     "id": "spconfirm-046-double-error",
     "source": {
@@ -9608,17 +9608,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "k",
-        "new": "l"
+        "old": "y",
+        "new": "u"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "lzti",
+    "input": "lbti",
     "target": "楼梯",
-    "correct": "lzti",
+    "correct": "lbti",
     "split": "heldout",
     "id": "spconfirm-047-clean",
     "source": {
@@ -9644,9 +9644,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "lzyi",
+    "input": "lbyi",
     "target": "楼梯",
-    "correct": "lzti",
+    "correct": "lbti",
     "split": "heldout",
     "id": "spconfirm-047-substitution",
     "source": {
@@ -9679,9 +9679,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "lzi",
+    "input": "lbi",
     "target": "楼梯",
-    "correct": "lzti",
+    "correct": "lbti",
     "split": "heldout",
     "id": "spconfirm-047-omission",
     "source": {
@@ -9714,9 +9714,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "lzyti",
+    "input": "lbyti",
     "target": "楼梯",
-    "correct": "lzti",
+    "correct": "lbti",
     "split": "heldout",
     "id": "spconfirm-047-insertion",
     "source": {
@@ -9749,9 +9749,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "ltzi",
+    "input": "ltbi",
     "target": "楼梯",
-    "correct": "lzti",
+    "correct": "lbti",
     "split": "heldout",
     "id": "spconfirm-047-transposition",
     "source": {
@@ -9776,17 +9776,17 @@
       {
         "operation": "transpose",
         "index": 1,
-        "old": "zt",
-        "new": "tz"
+        "old": "bt",
+        "new": "tb"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "kzto",
+    "input": "kbto",
     "target": "楼梯",
-    "correct": "lzti",
+    "correct": "lbti",
     "split": "heldout",
     "id": "spconfirm-047-double-error",
     "source": {
@@ -10034,9 +10034,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "ilhu",
+    "input": "idhu",
     "target": "窗户",
-    "correct": "ilhu",
+    "correct": "idhu",
     "split": "heldout",
     "id": "spconfirm-049-clean",
     "source": {
@@ -10062,9 +10062,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "ilju",
+    "input": "idju",
     "target": "窗户",
-    "correct": "ilhu",
+    "correct": "idhu",
     "split": "heldout",
     "id": "spconfirm-049-substitution",
     "source": {
@@ -10097,9 +10097,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "ilu",
+    "input": "idu",
     "target": "窗户",
-    "correct": "ilhu",
+    "correct": "idhu",
     "split": "heldout",
     "id": "spconfirm-049-omission",
     "source": {
@@ -10132,9 +10132,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "iljhu",
+    "input": "idjhu",
     "target": "窗户",
-    "correct": "ilhu",
+    "correct": "idhu",
     "split": "heldout",
     "id": "spconfirm-049-insertion",
     "source": {
@@ -10167,9 +10167,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "lihu",
+    "input": "dihu",
     "target": "窗户",
-    "correct": "ilhu",
+    "correct": "idhu",
     "split": "heldout",
     "id": "spconfirm-049-transposition",
     "source": {
@@ -10194,17 +10194,17 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "il",
-        "new": "li"
+        "old": "id",
+        "new": "di"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "olhi",
+    "input": "odhi",
     "target": "窗户",
-    "correct": "ilhu",
+    "correct": "idhu",
     "split": "heldout",
     "id": "spconfirm-049-double-error",
     "source": {
@@ -10452,9 +10452,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "iepn",
+    "input": "iepc",
     "target": "车票",
-    "correct": "iepn",
+    "correct": "iepc",
     "split": "heldout",
     "id": "spconfirm-051-clean",
     "source": {
@@ -10480,9 +10480,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "iepm",
+    "input": "iepv",
     "target": "车票",
-    "correct": "iepn",
+    "correct": "iepc",
     "split": "heldout",
     "id": "spconfirm-051-substitution",
     "source": {
@@ -10507,8 +10507,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "n",
-        "new": "m"
+        "old": "c",
+        "new": "v"
       }
     ]
   },
@@ -10517,7 +10517,7 @@
     "kind": "omission",
     "input": "iep",
     "target": "车票",
-    "correct": "iepn",
+    "correct": "iepc",
     "split": "heldout",
     "id": "spconfirm-051-omission",
     "source": {
@@ -10542,7 +10542,7 @@
       {
         "operation": "delete",
         "index": 3,
-        "old": "n",
+        "old": "c",
         "new": ""
       }
     ]
@@ -10550,9 +10550,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "iepmn",
+    "input": "iepvc",
     "target": "车票",
-    "correct": "iepn",
+    "correct": "iepc",
     "split": "heldout",
     "id": "spconfirm-051-insertion",
     "source": {
@@ -10578,16 +10578,16 @@
         "operation": "insert",
         "index": 3,
         "old": "",
-        "new": "m"
+        "new": "v"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "ienp",
+    "input": "iecp",
     "target": "车票",
-    "correct": "iepn",
+    "correct": "iepc",
     "split": "heldout",
     "id": "spconfirm-051-transposition",
     "source": {
@@ -10612,17 +10612,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "pn",
-        "new": "np"
+        "old": "pc",
+        "new": "cp"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "oepm",
+    "input": "oepv",
     "target": "车票",
-    "correct": "iepn",
+    "correct": "iepc",
     "split": "heldout",
     "id": "spconfirm-051-double-error",
     "source": {
@@ -10653,8 +10653,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "n",
-        "new": "m"
+        "old": "c",
+        "new": "v"
       }
     ]
   },
@@ -10870,9 +10870,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "yttd",
+    "input": "yttl",
     "target": "月台",
-    "correct": "yttd",
+    "correct": "yttl",
     "split": "heldout",
     "id": "spconfirm-053-clean",
     "source": {
@@ -10898,9 +10898,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "uttd",
+    "input": "uttl",
     "target": "月台",
-    "correct": "yttd",
+    "correct": "yttl",
     "split": "heldout",
     "id": "spconfirm-053-substitution",
     "source": {
@@ -10933,9 +10933,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "ttd",
+    "input": "ttl",
     "target": "月台",
-    "correct": "yttd",
+    "correct": "yttl",
     "split": "heldout",
     "id": "spconfirm-053-omission",
     "source": {
@@ -10968,9 +10968,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "uyttd",
+    "input": "uyttl",
     "target": "月台",
-    "correct": "yttd",
+    "correct": "yttl",
     "split": "heldout",
     "id": "spconfirm-053-insertion",
     "source": {
@@ -11003,9 +11003,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "tytd",
+    "input": "tytl",
     "target": "月台",
-    "correct": "yttd",
+    "correct": "yttl",
     "split": "heldout",
     "id": "spconfirm-053-transposition",
     "source": {
@@ -11038,9 +11038,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "uttf",
+    "input": "uttk",
     "target": "月台",
-    "correct": "yttd",
+    "correct": "yttl",
     "split": "heldout",
     "id": "spconfirm-053-double-error",
     "source": {
@@ -11071,17 +11071,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "svdc",
+    "input": "svdk",
     "target": "隧道",
-    "correct": "svdc",
+    "correct": "svdk",
     "split": "heldout",
     "id": "spconfirm-054-clean",
     "source": {
@@ -11107,9 +11107,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "svdv",
+    "input": "svdl",
     "target": "隧道",
-    "correct": "svdc",
+    "correct": "svdk",
     "split": "heldout",
     "id": "spconfirm-054-substitution",
     "source": {
@@ -11134,8 +11134,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "c",
-        "new": "v"
+        "old": "k",
+        "new": "l"
       }
     ]
   },
@@ -11144,7 +11144,7 @@
     "kind": "omission",
     "input": "svd",
     "target": "隧道",
-    "correct": "svdc",
+    "correct": "svdk",
     "split": "heldout",
     "id": "spconfirm-054-omission",
     "source": {
@@ -11169,7 +11169,7 @@
       {
         "operation": "delete",
         "index": 3,
-        "old": "c",
+        "old": "k",
         "new": ""
       }
     ]
@@ -11177,9 +11177,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "svdvc",
+    "input": "svdlk",
     "target": "隧道",
-    "correct": "svdc",
+    "correct": "svdk",
     "split": "heldout",
     "id": "spconfirm-054-insertion",
     "source": {
@@ -11205,16 +11205,16 @@
         "operation": "insert",
         "index": 3,
         "old": "",
-        "new": "v"
+        "new": "l"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "svcd",
+    "input": "svkd",
     "target": "隧道",
-    "correct": "svdc",
+    "correct": "svdk",
     "split": "heldout",
     "id": "spconfirm-054-transposition",
     "source": {
@@ -11239,17 +11239,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "dc",
-        "new": "cd"
+        "old": "dk",
+        "new": "kd"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "dvdv",
+    "input": "dvdl",
     "target": "隧道",
-    "correct": "svdc",
+    "correct": "svdk",
     "split": "heldout",
     "id": "spconfirm-054-double-error",
     "source": {
@@ -11280,17 +11280,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "c",
-        "new": "v"
+        "old": "k",
+        "new": "l"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "lytd",
+    "input": "lptl",
     "target": "轮胎",
-    "correct": "lytd",
+    "correct": "lptl",
     "split": "heldout",
     "id": "spconfirm-055-clean",
     "source": {
@@ -11316,9 +11316,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "lutd",
+    "input": "lotl",
     "target": "轮胎",
-    "correct": "lytd",
+    "correct": "lptl",
     "split": "heldout",
     "id": "spconfirm-055-substitution",
     "source": {
@@ -11343,17 +11343,17 @@
       {
         "operation": "substitute",
         "index": 1,
-        "old": "y",
-        "new": "u"
+        "old": "p",
+        "new": "o"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "ltd",
+    "input": "ltl",
     "target": "轮胎",
-    "correct": "lytd",
+    "correct": "lptl",
     "split": "heldout",
     "id": "spconfirm-055-omission",
     "source": {
@@ -11378,7 +11378,7 @@
       {
         "operation": "delete",
         "index": 1,
-        "old": "y",
+        "old": "p",
         "new": ""
       }
     ]
@@ -11386,9 +11386,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "luytd",
+    "input": "loptl",
     "target": "轮胎",
-    "correct": "lytd",
+    "correct": "lptl",
     "split": "heldout",
     "id": "spconfirm-055-insertion",
     "source": {
@@ -11414,16 +11414,16 @@
         "operation": "insert",
         "index": 1,
         "old": "",
-        "new": "u"
+        "new": "o"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "yltd",
+    "input": "pltl",
     "target": "轮胎",
-    "correct": "lytd",
+    "correct": "lptl",
     "split": "heldout",
     "id": "spconfirm-055-transposition",
     "source": {
@@ -11448,17 +11448,17 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "ly",
-        "new": "yl"
+        "old": "lp",
+        "new": "pl"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "kytf",
+    "input": "kptk",
     "target": "轮胎",
-    "correct": "lytd",
+    "correct": "lptl",
     "split": "heldout",
     "id": "spconfirm-055-double-error",
     "source": {
@@ -11489,17 +11489,17 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "fhxlpj",
+    "input": "fhxdpj",
     "target": "方向盘",
-    "correct": "fhxlpj",
+    "correct": "fhxdpj",
     "split": "heldout",
     "id": "spconfirm-056-clean",
     "source": {
@@ -11527,9 +11527,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "fhxkpj",
+    "input": "fhxfpj",
     "target": "方向盘",
-    "correct": "fhxlpj",
+    "correct": "fhxdpj",
     "split": "heldout",
     "id": "spconfirm-056-substitution",
     "source": {
@@ -11556,8 +11556,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "l",
-        "new": "k"
+        "old": "d",
+        "new": "f"
       }
     ]
   },
@@ -11566,7 +11566,7 @@
     "kind": "omission",
     "input": "fhxpj",
     "target": "方向盘",
-    "correct": "fhxlpj",
+    "correct": "fhxdpj",
     "split": "heldout",
     "id": "spconfirm-056-omission",
     "source": {
@@ -11593,7 +11593,7 @@
       {
         "operation": "delete",
         "index": 3,
-        "old": "l",
+        "old": "d",
         "new": ""
       }
     ]
@@ -11601,9 +11601,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "fhxklpj",
+    "input": "fhxfdpj",
     "target": "方向盘",
-    "correct": "fhxlpj",
+    "correct": "fhxdpj",
     "split": "heldout",
     "id": "spconfirm-056-insertion",
     "source": {
@@ -11631,16 +11631,16 @@
         "operation": "insert",
         "index": 3,
         "old": "",
-        "new": "k"
+        "new": "f"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "hfxlpj",
+    "input": "hfxdpj",
     "target": "方向盘",
-    "correct": "fhxlpj",
+    "correct": "fhxdpj",
     "split": "heldout",
     "id": "spconfirm-056-transposition",
     "source": {
@@ -11675,9 +11675,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "fjxlpk",
+    "input": "fjxdpk",
     "target": "方向盘",
-    "correct": "fhxlpj",
+    "correct": "fhxdpj",
     "split": "heldout",
     "id": "spconfirm-056-double-error",
     "source": {
@@ -12148,9 +12148,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "fjyk",
+    "input": "fjyy",
     "target": "反应",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-059-clean",
     "source": {
@@ -12177,9 +12177,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "fjuk",
+    "input": "fjuy",
     "target": "反应",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-059-substitution",
     "source": {
@@ -12213,9 +12213,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "fjk",
+    "input": "fjy",
     "target": "反应",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-059-omission",
     "source": {
@@ -12249,9 +12249,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "fjuyk",
+    "input": "fjuyy",
     "target": "反应",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-059-insertion",
     "source": {
@@ -12285,9 +12285,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "fyjk",
+    "input": "fyjy",
     "target": "反应",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-059-transposition",
     "source": {
@@ -12321,9 +12321,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "gjyl",
+    "input": "gjyu",
     "target": "反应",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-059-double-error",
     "source": {
@@ -12354,8 +12354,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "k",
-        "new": "l"
+        "old": "y",
+        "new": "u"
       }
     ],
     "homophonePair": "反应/反映"
@@ -12363,9 +12363,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "fjyk",
+    "input": "fjyy",
     "target": "反映",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-060-clean",
     "source": {
@@ -12392,9 +12392,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "gjyk",
+    "input": "gjyy",
     "target": "反映",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-060-substitution",
     "source": {
@@ -12428,9 +12428,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "jyk",
+    "input": "jyy",
     "target": "反映",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-060-omission",
     "source": {
@@ -12464,9 +12464,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "gfjyk",
+    "input": "gfjyy",
     "target": "反映",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-060-insertion",
     "source": {
@@ -12500,9 +12500,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "fjky",
+    "input": "jfyy",
     "target": "反映",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-060-transposition",
     "source": {
@@ -12526,9 +12526,9 @@
     "edits": [
       {
         "operation": "transpose",
-        "index": 2,
-        "old": "yk",
-        "new": "ky"
+        "index": 0,
+        "old": "fj",
+        "new": "jf"
       }
     ],
     "homophonePair": "反应/反映"
@@ -12536,9 +12536,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "gjyl",
+    "input": "gjyu",
     "target": "反映",
-    "correct": "fjyk",
+    "correct": "fjyy",
     "split": "heldout",
     "id": "spconfirm-060-double-error",
     "source": {
@@ -12569,8 +12569,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "k",
-        "new": "l"
+        "old": "y",
+        "new": "u"
       }
     ],
     "homophonePair": "反应/反映"
@@ -12578,9 +12578,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "bciz",
+    "input": "bkib",
     "target": "报酬",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-061-clean",
     "source": {
@@ -12607,9 +12607,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "nciz",
+    "input": "nkib",
     "target": "报酬",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-061-substitution",
     "source": {
@@ -12643,9 +12643,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "ciz",
+    "input": "kib",
     "target": "报酬",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-061-omission",
     "source": {
@@ -12679,9 +12679,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "nbciz",
+    "input": "nbkib",
     "target": "报酬",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-061-insertion",
     "source": {
@@ -12715,9 +12715,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "cbiz",
+    "input": "kbib",
     "target": "报酬",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-061-transposition",
     "source": {
@@ -12742,8 +12742,8 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "bc",
-        "new": "cb"
+        "old": "bk",
+        "new": "kb"
       }
     ],
     "homophonePair": "报酬/报仇"
@@ -12751,9 +12751,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "ncix",
+    "input": "nkin",
     "target": "报酬",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-061-double-error",
     "source": {
@@ -12784,8 +12784,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "z",
-        "new": "x"
+        "old": "b",
+        "new": "n"
       }
     ],
     "homophonePair": "报酬/报仇"
@@ -12793,9 +12793,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "bciz",
+    "input": "bkib",
     "target": "报仇",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-062-clean",
     "source": {
@@ -12822,9 +12822,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "bcoz",
+    "input": "bkob",
     "target": "报仇",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-062-substitution",
     "source": {
@@ -12858,9 +12858,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "bcz",
+    "input": "bkb",
     "target": "报仇",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-062-omission",
     "source": {
@@ -12894,9 +12894,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "bcoiz",
+    "input": "bkoib",
     "target": "报仇",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-062-insertion",
     "source": {
@@ -12930,9 +12930,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "bicz",
+    "input": "bikb",
     "target": "报仇",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-062-transposition",
     "source": {
@@ -12957,8 +12957,8 @@
       {
         "operation": "transpose",
         "index": 1,
-        "old": "ci",
-        "new": "ic"
+        "old": "ki",
+        "new": "ik"
       }
     ],
     "homophonePair": "报酬/报仇"
@@ -12966,9 +12966,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "ncix",
+    "input": "nkin",
     "target": "报仇",
-    "correct": "bciz",
+    "correct": "bkib",
     "split": "heldout",
     "id": "spconfirm-062-double-error",
     "source": {
@@ -12999,8 +12999,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "z",
-        "new": "x"
+        "old": "b",
+        "new": "n"
       }
     ],
     "homophonePair": "报酬/报仇"
@@ -13008,9 +13008,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "pbww",
+    "input": "pnwz",
     "target": "品味",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-063-clean",
     "source": {
@@ -13037,9 +13037,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "pbew",
+    "input": "pnez",
     "target": "品味",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-063-substitution",
     "source": {
@@ -13073,9 +13073,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "pbw",
+    "input": "pnz",
     "target": "品味",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-063-omission",
     "source": {
@@ -13109,9 +13109,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "pbeww",
+    "input": "pnewz",
     "target": "品味",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-063-insertion",
     "source": {
@@ -13145,9 +13145,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "bpww",
+    "input": "npwz",
     "target": "品味",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-063-transposition",
     "source": {
@@ -13172,8 +13172,8 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "pb",
-        "new": "bp"
+        "old": "pn",
+        "new": "np"
       }
     ],
     "homophonePair": "品味/品位"
@@ -13181,9 +13181,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "obwe",
+    "input": "onwx",
     "target": "品味",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-063-double-error",
     "source": {
@@ -13214,8 +13214,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "w",
-        "new": "e"
+        "old": "z",
+        "new": "x"
       }
     ],
     "homophonePair": "品味/品位"
@@ -13223,9 +13223,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "pbww",
+    "input": "pnwz",
     "target": "品位",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-064-clean",
     "source": {
@@ -13252,9 +13252,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "pbwe",
+    "input": "pnwx",
     "target": "品位",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-064-substitution",
     "source": {
@@ -13279,8 +13279,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "w",
-        "new": "e"
+        "old": "z",
+        "new": "x"
       }
     ],
     "homophonePair": "品味/品位"
@@ -13288,9 +13288,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "pbw",
+    "input": "pnw",
     "target": "品位",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-064-omission",
     "source": {
@@ -13315,7 +13315,7 @@
       {
         "operation": "delete",
         "index": 3,
-        "old": "w",
+        "old": "z",
         "new": ""
       }
     ],
@@ -13324,9 +13324,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "pbwew",
+    "input": "pnwxz",
     "target": "品位",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-064-insertion",
     "source": {
@@ -13352,7 +13352,7 @@
         "operation": "insert",
         "index": 3,
         "old": "",
-        "new": "e"
+        "new": "x"
       }
     ],
     "homophonePair": "品味/品位"
@@ -13360,9 +13360,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "pwbw",
+    "input": "pwnz",
     "target": "品位",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-064-transposition",
     "source": {
@@ -13387,8 +13387,8 @@
       {
         "operation": "transpose",
         "index": 1,
-        "old": "bw",
-        "new": "wb"
+        "old": "nw",
+        "new": "wn"
       }
     ],
     "homophonePair": "品味/品位"
@@ -13396,9 +13396,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "obwe",
+    "input": "onwx",
     "target": "品位",
-    "correct": "pbww",
+    "correct": "pnwz",
     "split": "heldout",
     "id": "spconfirm-064-double-error",
     "source": {
@@ -13429,8 +13429,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "w",
-        "new": "e"
+        "old": "z",
+        "new": "x"
       }
     ],
     "homophonePair": "品味/品位"
@@ -13438,9 +13438,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "jndd",
+    "input": "jcdl",
     "target": "交代",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-065-clean",
     "source": {
@@ -13467,9 +13467,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "jnfd",
+    "input": "jcfl",
     "target": "交代",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-065-substitution",
     "source": {
@@ -13503,9 +13503,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "jnd",
+    "input": "jcl",
     "target": "交代",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-065-omission",
     "source": {
@@ -13539,9 +13539,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "jnfdd",
+    "input": "jcfdl",
     "target": "交代",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-065-insertion",
     "source": {
@@ -13575,9 +13575,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "njdd",
+    "input": "cjdl",
     "target": "交代",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-065-transposition",
     "source": {
@@ -13602,8 +13602,8 @@
       {
         "operation": "transpose",
         "index": 0,
-        "old": "jn",
-        "new": "nj"
+        "old": "jc",
+        "new": "cj"
       }
     ],
     "homophonePair": "交代/交待"
@@ -13611,9 +13611,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "kndf",
+    "input": "kcdk",
     "target": "交代",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-065-double-error",
     "source": {
@@ -13644,8 +13644,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ],
     "homophonePair": "交代/交待"
@@ -13653,9 +13653,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "jndd",
+    "input": "jcdl",
     "target": "交待",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-066-clean",
     "source": {
@@ -13682,9 +13682,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "jnfd",
+    "input": "jcfl",
     "target": "交待",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-066-substitution",
     "source": {
@@ -13718,9 +13718,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "jnd",
+    "input": "jcl",
     "target": "交待",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-066-omission",
     "source": {
@@ -13754,9 +13754,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "jnfdd",
+    "input": "jcfdl",
     "target": "交待",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-066-insertion",
     "source": {
@@ -13790,9 +13790,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "jdnd",
+    "input": "jdcl",
     "target": "交待",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-066-transposition",
     "source": {
@@ -13817,8 +13817,8 @@
       {
         "operation": "transpose",
         "index": 1,
-        "old": "nd",
-        "new": "dn"
+        "old": "cd",
+        "new": "dc"
       }
     ],
     "homophonePair": "交代/交待"
@@ -13826,9 +13826,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "kndf",
+    "input": "kcdk",
     "target": "交待",
-    "correct": "jndd",
+    "correct": "jcdl",
     "split": "heldout",
     "id": "spconfirm-066-double-error",
     "source": {
@@ -13859,8 +13859,8 @@
       {
         "operation": "substitute",
         "index": 3,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ],
     "homophonePair": "交代/交待"
@@ -14298,9 +14298,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "wobaghxihcdeputcfhjbpjzi",
+    "input": "wobaghxihkdeputkfhjnpjzi",
     "target": "我把刚洗好的葡萄放进盘子",
-    "correct": "wobaghxihcdeputcfhjbpjzi",
+    "correct": "wobaghxihkdeputkfhjnpjzi",
     "split": "heldout",
     "id": "spconfirm-069-clean",
     "source": {
@@ -14330,9 +14330,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "wobaghxihcdeputcfhjbojzi",
+    "input": "wobaghxihkdeputkfhjnojzi",
     "target": "我把刚洗好的葡萄放进盘子",
-    "correct": "wobaghxihcdeputcfhjbpjzi",
+    "correct": "wobaghxihkdeputkfhjnpjzi",
     "split": "heldout",
     "id": "spconfirm-069-substitution",
     "source": {
@@ -14369,9 +14369,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "wobaghxihcdeputcfhjbjzi",
+    "input": "wobaghxihkdeputkfhjnjzi",
     "target": "我把刚洗好的葡萄放进盘子",
-    "correct": "wobaghxihcdeputcfhjbpjzi",
+    "correct": "wobaghxihkdeputkfhjnpjzi",
     "split": "heldout",
     "id": "spconfirm-069-omission",
     "source": {
@@ -14408,9 +14408,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "wobaghxihcdeputcfhjbopjzi",
+    "input": "wobaghxihkdeputkfhjnopjzi",
     "target": "我把刚洗好的葡萄放进盘子",
-    "correct": "wobaghxihcdeputcfhjbpjzi",
+    "correct": "wobaghxihkdeputkfhjnpjzi",
     "split": "heldout",
     "id": "spconfirm-069-insertion",
     "source": {
@@ -14447,9 +14447,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "wobaghxihcdeptucfhjbpjzi",
+    "input": "wobaghxihkdeptukfhjnpjzi",
     "target": "我把刚洗好的葡萄放进盘子",
-    "correct": "wobaghxihcdeputcfhjbpjzi",
+    "correct": "wobaghxihkdeputkfhjnpjzi",
     "split": "heldout",
     "id": "spconfirm-069-transposition",
     "source": {
@@ -14486,9 +14486,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "wobaghxohcdeputcfjjbpjzi",
+    "input": "wobaghxohkdeputkfjjnpjzi",
     "target": "我把刚洗好的葡萄放进盘子",
-    "correct": "wobaghxihcdeputcfhjbpjzi",
+    "correct": "wobaghxihkdeputkfhjnpjzi",
     "split": "heldout",
     "id": "spconfirm-069-double-error",
     "source": {
@@ -14531,9 +14531,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "iufhdeilhujbtmvsyuxqhcle",
+    "input": "iufhdeidhujntmvsyuxqhkle",
     "target": "厨房的窗户今天终于修好了",
-    "correct": "iufhdeilhujbtmvsyuxqhcle",
+    "correct": "iufhdeidhujntmvsyuxqhkle",
     "split": "heldout",
     "id": "spconfirm-070-clean",
     "source": {
@@ -14563,9 +14563,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "iufhdeilhujbtmbsyuxqhcle",
+    "input": "iufhdeidhujntmbsyuxqhkle",
     "target": "厨房的窗户今天终于修好了",
-    "correct": "iufhdeilhujbtmvsyuxqhcle",
+    "correct": "iufhdeidhujntmvsyuxqhkle",
     "split": "heldout",
     "id": "spconfirm-070-substitution",
     "source": {
@@ -14602,9 +14602,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "iufhdeilhujbtmsyuxqhcle",
+    "input": "iufhdeidhujntmsyuxqhkle",
     "target": "厨房的窗户今天终于修好了",
-    "correct": "iufhdeilhujbtmvsyuxqhcle",
+    "correct": "iufhdeidhujntmvsyuxqhkle",
     "split": "heldout",
     "id": "spconfirm-070-omission",
     "source": {
@@ -14641,9 +14641,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "iufhdeilhujbtmbvsyuxqhcle",
+    "input": "iufhdeidhujntmbvsyuxqhkle",
     "target": "厨房的窗户今天终于修好了",
-    "correct": "iufhdeilhujbtmvsyuxqhcle",
+    "correct": "iufhdeidhujntmvsyuxqhkle",
     "split": "heldout",
     "id": "spconfirm-070-insertion",
     "source": {
@@ -14680,9 +14680,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "iufhdeilhujbtmsvyuxqhcle",
+    "input": "iufhdeidhujntmsvyuxqhkle",
     "target": "厨房的窗户今天终于修好了",
-    "correct": "iufhdeilhujbtmvsyuxqhcle",
+    "correct": "iufhdeidhujntmvsyuxqhkle",
     "split": "heldout",
     "id": "spconfirm-070-transposition",
     "source": {
@@ -14719,9 +14719,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "iufhdeikhujbtmvsyixqhcle",
+    "input": "iufhdeifhujntmvsyixqhkle",
     "target": "厨房的窗户今天终于修好了",
-    "correct": "iufhdeilhujbtmvsyuxqhcle",
+    "correct": "iufhdeidhujntmvsyuxqhkle",
     "split": "heldout",
     "id": "spconfirm-070-double-error",
     "source": {
@@ -14750,8 +14750,8 @@
       {
         "operation": "substitute",
         "index": 7,
-        "old": "l",
-        "new": "k"
+        "old": "d",
+        "new": "f"
       },
       {
         "operation": "substitute",
@@ -14764,9 +14764,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "qkbanaxptudzfhdcddzilimm",
+    "input": "qybanaxxtudbfhdkdlzilimm",
     "target": "请把那些土豆放到袋子里面",
-    "correct": "qkbanaxptudzfhdcddzilimm",
+    "correct": "qybanaxxtudbfhdkdlzilimm",
     "split": "heldout",
     "id": "spconfirm-071-clean",
     "source": {
@@ -14796,9 +14796,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "qkbanaxptudzfhdcddxilimm",
+    "input": "qybanaxxtudbfhdkdlxilimm",
     "target": "请把那些土豆放到袋子里面",
-    "correct": "qkbanaxptudzfhdcddzilimm",
+    "correct": "qybanaxxtudbfhdkdlzilimm",
     "split": "heldout",
     "id": "spconfirm-071-substitution",
     "source": {
@@ -14835,9 +14835,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "qkbanaxptudzfhdcddilimm",
+    "input": "qybanaxxtudbfhdkdlilimm",
     "target": "请把那些土豆放到袋子里面",
-    "correct": "qkbanaxptudzfhdcddzilimm",
+    "correct": "qybanaxxtudbfhdkdlzilimm",
     "split": "heldout",
     "id": "spconfirm-071-omission",
     "source": {
@@ -14874,9 +14874,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "qkbanaxptudzfhdcddxzilimm",
+    "input": "qybanaxxtudbfhdkdlxzilimm",
     "target": "请把那些土豆放到袋子里面",
-    "correct": "qkbanaxptudzfhdcddzilimm",
+    "correct": "qybanaxxtudbfhdkdlzilimm",
     "split": "heldout",
     "id": "spconfirm-071-insertion",
     "source": {
@@ -14913,9 +14913,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "qkbanaxptudzfhdcddzliimm",
+    "input": "qybanaxxtudbfhdkdlzliimm",
     "target": "请把那些土豆放到袋子里面",
-    "correct": "qkbanaxptudzfhdcddzilimm",
+    "correct": "qybanaxxtudbfhdkdlzilimm",
     "split": "heldout",
     "id": "spconfirm-071-transposition",
     "source": {
@@ -14952,9 +14952,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "qkbanaxotudzfhdcdfzilimm",
+    "input": "qybanaxctudbfhdkdkzilimm",
     "target": "请把那些土豆放到袋子里面",
-    "correct": "qkbanaxptudzfhdcddzilimm",
+    "correct": "qybanaxxtudbfhdkdlzilimm",
     "split": "heldout",
     "id": "spconfirm-071-double-error",
     "source": {
@@ -14983,23 +14983,23 @@
       {
         "operation": "substitute",
         "index": 7,
-        "old": "p",
-        "new": "o"
+        "old": "x",
+        "new": "c"
       },
       {
         "operation": "substitute",
         "index": 17,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "vegexigxxuycffigjikkcdhc",
+    "input": "vegexigwxuykffigjikyclhk",
     "target": "这个西瓜需要分成几块才好",
-    "correct": "vegexigxxuycffigjikkcdhc",
+    "correct": "vegexigwxuykffigjikyclhk",
     "split": "heldout",
     "id": "spconfirm-072-clean",
     "source": {
@@ -15029,9 +15029,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "vegexihxxuycffigjikkcdhc",
+    "input": "vegexihwxuykffigjikyclhk",
     "target": "这个西瓜需要分成几块才好",
-    "correct": "vegexigxxuycffigjikkcdhc",
+    "correct": "vegexigwxuykffigjikyclhk",
     "split": "heldout",
     "id": "spconfirm-072-substitution",
     "source": {
@@ -15068,9 +15068,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "vegexixxuycffigjikkcdhc",
+    "input": "vegexiwxuykffigjikyclhk",
     "target": "这个西瓜需要分成几块才好",
-    "correct": "vegexigxxuycffigjikkcdhc",
+    "correct": "vegexigwxuykffigjikyclhk",
     "split": "heldout",
     "id": "spconfirm-072-omission",
     "source": {
@@ -15107,9 +15107,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "vegexihgxxuycffigjikkcdhc",
+    "input": "vegexihgwxuykffigjikyclhk",
     "target": "这个西瓜需要分成几块才好",
-    "correct": "vegexigxxuycffigjikkcdhc",
+    "correct": "vegexigwxuykffigjikyclhk",
     "split": "heldout",
     "id": "spconfirm-072-insertion",
     "source": {
@@ -15146,9 +15146,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "vegexigxxucyffigjikkcdhc",
+    "input": "vegexigwxukyffigjikyclhk",
     "target": "这个西瓜需要分成几块才好",
-    "correct": "vegexigxxuycffigjikkcdhc",
+    "correct": "vegexigwxuykffigjikyclhk",
     "split": "heldout",
     "id": "spconfirm-072-transposition",
     "source": {
@@ -15177,17 +15177,17 @@
       {
         "operation": "transpose",
         "index": 10,
-        "old": "yc",
-        "new": "cy"
+        "old": "yk",
+        "new": "ky"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "vegexigcxuycffigjokkcdhc",
+    "input": "vegexigexuykffigjokyclhk",
     "target": "这个西瓜需要分成几块才好",
-    "correct": "vegexigxxuycffigjikkcdhc",
+    "correct": "vegexigwxuykffigjikyclhk",
     "split": "heldout",
     "id": "spconfirm-072-double-error",
     "source": {
@@ -15216,8 +15216,8 @@
       {
         "operation": "substitute",
         "index": 7,
-        "old": "x",
-        "new": "c"
+        "old": "w",
+        "new": "e"
       },
       {
         "operation": "substitute",
@@ -15230,9 +15230,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "ghcduckddeuvhuhdfhzdnabm",
+    "input": "ghclukkldeuvhuhlfhzlnabm",
     "target": "刚才烧开的水壶还放在那边",
-    "correct": "ghcduckddeuvhuhdfhzdnabm",
+    "correct": "ghclukkldeuvhuhlfhzlnabm",
     "split": "heldout",
     "id": "spconfirm-073-clean",
     "source": {
@@ -15262,9 +15262,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "ghcdickddeuvhuhdfhzdnabm",
+    "input": "ghclikkldeuvhuhlfhzlnabm",
     "target": "刚才烧开的水壶还放在那边",
-    "correct": "ghcduckddeuvhuhdfhzdnabm",
+    "correct": "ghclukkldeuvhuhlfhzlnabm",
     "split": "heldout",
     "id": "spconfirm-073-substitution",
     "source": {
@@ -15301,9 +15301,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "ghcdckddeuvhuhdfhzdnabm",
+    "input": "ghclkkldeuvhuhlfhzlnabm",
     "target": "刚才烧开的水壶还放在那边",
-    "correct": "ghcduckddeuvhuhdfhzdnabm",
+    "correct": "ghclukkldeuvhuhlfhzlnabm",
     "split": "heldout",
     "id": "spconfirm-073-omission",
     "source": {
@@ -15340,9 +15340,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "ghcdiuckddeuvhuhdfhzdnabm",
+    "input": "ghcliukkldeuvhuhlfhzlnabm",
     "target": "刚才烧开的水壶还放在那边",
-    "correct": "ghcduckddeuvhuhdfhzdnabm",
+    "correct": "ghclukkldeuvhuhlfhzlnabm",
     "split": "heldout",
     "id": "spconfirm-073-insertion",
     "source": {
@@ -15379,9 +15379,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "ghdcuckddeuvhuhdfhzdnabm",
+    "input": "ghlcukkldeuvhuhlfhzlnabm",
     "target": "刚才烧开的水壶还放在那边",
-    "correct": "ghcduckddeuvhuhdfhzdnabm",
+    "correct": "ghclukkldeuvhuhlfhzlnabm",
     "split": "heldout",
     "id": "spconfirm-073-transposition",
     "source": {
@@ -15410,17 +15410,17 @@
       {
         "operation": "transpose",
         "index": 2,
-        "old": "cd",
-        "new": "dc"
+        "old": "cl",
+        "new": "lc"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "ghcduckfdeuvhuhdfjzdnabm",
+    "input": "ghclukkkdeuvhuhlfjzlnabm",
     "target": "刚才烧开的水壶还放在那边",
-    "correct": "ghcduckddeuvhuhdfhzdnabm",
+    "correct": "ghclukkldeuvhuhlfhzlnabm",
     "split": "heldout",
     "id": "spconfirm-073-double-error",
     "source": {
@@ -15449,8 +15449,8 @@
       {
         "operation": "substitute",
         "index": 7,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       },
       {
         "operation": "substitute",
@@ -15463,9 +15463,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "tavgzdtnxryitnxbdeyujb",
+    "input": "tavgzltcxryitcxndeyujn",
     "target": "她正在挑选一条新的浴巾",
-    "correct": "tavgzdtnxryitnxbdeyujb",
+    "correct": "tavgzltcxryitcxndeyujn",
     "split": "heldout",
     "id": "spconfirm-074-clean",
     "source": {
@@ -15494,9 +15494,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "tavgzdtnxryiynxbdeyujb",
+    "input": "tavgzltcxryiycxndeyujn",
     "target": "她正在挑选一条新的浴巾",
-    "correct": "tavgzdtnxryitnxbdeyujb",
+    "correct": "tavgzltcxryitcxndeyujn",
     "split": "heldout",
     "id": "spconfirm-074-substitution",
     "source": {
@@ -15532,9 +15532,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "tavgzdtnxryinxbdeyujb",
+    "input": "tavgzltcxryicxndeyujn",
     "target": "她正在挑选一条新的浴巾",
-    "correct": "tavgzdtnxryitnxbdeyujb",
+    "correct": "tavgzltcxryitcxndeyujn",
     "split": "heldout",
     "id": "spconfirm-074-omission",
     "source": {
@@ -15570,9 +15570,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "tavgzdtnxryiytnxbdeyujb",
+    "input": "tavgzltcxryiytcxndeyujn",
     "target": "她正在挑选一条新的浴巾",
-    "correct": "tavgzdtnxryitnxbdeyujb",
+    "correct": "tavgzltcxryitcxndeyujn",
     "split": "heldout",
     "id": "spconfirm-074-insertion",
     "source": {
@@ -15608,9 +15608,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "tavgzdtxnryitnxbdeyujb",
+    "input": "tavgzltxcryitcxndeyujn",
     "target": "她正在挑选一条新的浴巾",
-    "correct": "tavgzdtnxryitnxbdeyujb",
+    "correct": "tavgzltcxryitcxndeyujn",
     "split": "heldout",
     "id": "spconfirm-074-transposition",
     "source": {
@@ -15638,17 +15638,17 @@
       {
         "operation": "transpose",
         "index": 7,
-        "old": "nx",
-        "new": "xn"
+        "old": "cx",
+        "new": "xc"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "tavgzdynxryitnxndeyujb",
+    "input": "tavgzlycxryitcxmdeyujn",
     "target": "她正在挑选一条新的浴巾",
-    "correct": "tavgzdtnxryitnxbdeyujb",
+    "correct": "tavgzltcxryitcxndeyujn",
     "split": "heldout",
     "id": "spconfirm-074-double-error",
     "source": {
@@ -15682,17 +15682,17 @@
       {
         "operation": "substitute",
         "index": 15,
-        "old": "b",
-        "new": "n"
+        "old": "n",
+        "new": "m"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "wobanaultoxplqzdmfkzle",
+    "input": "wobanaudtoxxlqzlmfkble",
     "target": "我把那双拖鞋留在门口了",
-    "correct": "wobanaultoxplqzdmfkzle",
+    "correct": "wobanaudtoxxlqzlmfkble",
     "split": "heldout",
     "id": "spconfirm-075-clean",
     "source": {
@@ -15721,9 +15721,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "wobanaultoxplqzdmgkzle",
+    "input": "wobanaudtoxxlqzlmgkble",
     "target": "我把那双拖鞋留在门口了",
-    "correct": "wobanaultoxplqzdmfkzle",
+    "correct": "wobanaudtoxxlqzlmfkble",
     "split": "heldout",
     "id": "spconfirm-075-substitution",
     "source": {
@@ -15759,9 +15759,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "wobanaultoxplqzdmkzle",
+    "input": "wobanaudtoxxlqzlmkble",
     "target": "我把那双拖鞋留在门口了",
-    "correct": "wobanaultoxplqzdmfkzle",
+    "correct": "wobanaudtoxxlqzlmfkble",
     "split": "heldout",
     "id": "spconfirm-075-omission",
     "source": {
@@ -15797,9 +15797,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "wobanaultoxplqzdmgfkzle",
+    "input": "wobanaudtoxxlqzlmgfkble",
     "target": "我把那双拖鞋留在门口了",
-    "correct": "wobanaultoxplqzdmfkzle",
+    "correct": "wobanaudtoxxlqzlmfkble",
     "split": "heldout",
     "id": "spconfirm-075-insertion",
     "source": {
@@ -15835,9 +15835,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "wobanaulotxplqzdmfkzle",
+    "input": "wobanaudotxxlqzlmfkble",
     "target": "我把那双拖鞋留在门口了",
-    "correct": "wobanaultoxplqzdmfkzle",
+    "correct": "wobanaudtoxxlqzlmfkble",
     "split": "heldout",
     "id": "spconfirm-075-transposition",
     "source": {
@@ -15873,9 +15873,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "wobanailtoxplqzfmfkzle",
+    "input": "wobanaidtoxxlqzkmfkble",
     "target": "我把那双拖鞋留在门口了",
-    "correct": "wobanaultoxplqzdmfkzle",
+    "correct": "wobanaudtoxxlqzlmfkble",
     "split": "heldout",
     "id": "spconfirm-075-double-error",
     "source": {
@@ -15909,17 +15909,17 @@
       {
         "operation": "substitute",
         "index": 15,
-        "old": "d",
-        "new": "f"
+        "old": "l",
+        "new": "k"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "naxpvivhykgddzzdiztilimm",
+    "input": "naxxvivhyygldbzlibtilimm",
     "target": "那些纸张应该都在抽屉里面",
-    "correct": "naxpvivhykgddzzdiztilimm",
+    "correct": "naxxvivhyygldbzlibtilimm",
     "split": "heldout",
     "id": "spconfirm-076-clean",
     "source": {
@@ -15949,9 +15949,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "naxpvivhykgddzxdiztilimm",
+    "input": "naxxvivhyygldbxlibtilimm",
     "target": "那些纸张应该都在抽屉里面",
-    "correct": "naxpvivhykgddzzdiztilimm",
+    "correct": "naxxvivhyygldbzlibtilimm",
     "split": "heldout",
     "id": "spconfirm-076-substitution",
     "source": {
@@ -15988,9 +15988,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "naxpvivhykgddzdiztilimm",
+    "input": "naxxvivhyygldblibtilimm",
     "target": "那些纸张应该都在抽屉里面",
-    "correct": "naxpvivhykgddzzdiztilimm",
+    "correct": "naxxvivhyygldbzlibtilimm",
     "split": "heldout",
     "id": "spconfirm-076-omission",
     "source": {
@@ -16027,9 +16027,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "naxpvivhykgddzxzdiztilimm",
+    "input": "naxxvivhyygldbxzlibtilimm",
     "target": "那些纸张应该都在抽屉里面",
-    "correct": "naxpvivhykgddzzdiztilimm",
+    "correct": "naxxvivhyygldbzlibtilimm",
     "split": "heldout",
     "id": "spconfirm-076-insertion",
     "source": {
@@ -16066,9 +16066,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "naxpvivhygkddzzdiztilimm",
+    "input": "naxxvivhygyldbzlibtilimm",
     "target": "那些纸张应该都在抽屉里面",
-    "correct": "naxpvivhykgddzzdiztilimm",
+    "correct": "naxxvivhyygldbzlibtilimm",
     "split": "heldout",
     "id": "spconfirm-076-transposition",
     "source": {
@@ -16097,17 +16097,17 @@
       {
         "operation": "transpose",
         "index": 9,
-        "old": "kg",
-        "new": "gk"
+        "old": "yg",
+        "new": "gy"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "naxpvivjykgddzzdixtilimm",
+    "input": "naxxvivjyygldbzlintilimm",
     "target": "那些纸张应该都在抽屉里面",
-    "correct": "naxpvivhykgddzzdiztilimm",
+    "correct": "naxxvivhyygldbzlibtilimm",
     "split": "heldout",
     "id": "spconfirm-076-double-error",
     "source": {
@@ -16142,17 +16142,17 @@
       {
         "operation": "substitute",
         "index": 17,
-        "old": "z",
-        "new": "x"
+        "old": "b",
+        "new": "n"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "vedslzdedmtihdxuycdgdojq",
+    "input": "vedslbdedmtihlxuykdgdojq",
     "target": "这栋楼的电梯还需要等多久",
-    "correct": "vedslzdedmtihdxuycdgdojq",
+    "correct": "vedslbdedmtihlxuykdgdojq",
     "split": "heldout",
     "id": "spconfirm-077-clean",
     "source": {
@@ -16182,9 +16182,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "vedslzdedmtihdcuycdgdojq",
+    "input": "vedslbdedmtihlcuykdgdojq",
     "target": "这栋楼的电梯还需要等多久",
-    "correct": "vedslzdedmtihdxuycdgdojq",
+    "correct": "vedslbdedmtihlxuykdgdojq",
     "split": "heldout",
     "id": "spconfirm-077-substitution",
     "source": {
@@ -16221,9 +16221,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "vedslzdedmtihduycdgdojq",
+    "input": "vedslbdedmtihluykdgdojq",
     "target": "这栋楼的电梯还需要等多久",
-    "correct": "vedslzdedmtihdxuycdgdojq",
+    "correct": "vedslbdedmtihlxuykdgdojq",
     "split": "heldout",
     "id": "spconfirm-077-omission",
     "source": {
@@ -16260,9 +16260,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "vedslzdedmtihdcxuycdgdojq",
+    "input": "vedslbdedmtihlcxuykdgdojq",
     "target": "这栋楼的电梯还需要等多久",
-    "correct": "vedslzdedmtihdxuycdgdojq",
+    "correct": "vedslbdedmtihlxuykdgdojq",
     "split": "heldout",
     "id": "spconfirm-077-insertion",
     "source": {
@@ -16299,9 +16299,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "vesdlzdedmtihdxuycdgdojq",
+    "input": "vesdlbdedmtihlxuykdgdojq",
     "target": "这栋楼的电梯还需要等多久",
-    "correct": "vedslzdedmtihdxuycdgdojq",
+    "correct": "vedslbdedmtihlxuykdgdojq",
     "split": "heldout",
     "id": "spconfirm-077-transposition",
     "source": {
@@ -16338,9 +16338,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "vedslzdrdmtihdxuyvdgdojq",
+    "input": "vedslbdrdmtihlxuyldgdojq",
     "target": "这栋楼的电梯还需要等多久",
-    "correct": "vedslzdedmtihdxuycdgdojq",
+    "correct": "vedslbdedmtihlxuykdgdojq",
     "split": "heldout",
     "id": "spconfirm-077-double-error",
     "source": {
@@ -16375,17 +16375,17 @@
       {
         "operation": "substitute",
         "index": 17,
-        "old": "c",
-        "new": "v"
+        "old": "k",
+        "new": "l"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "qktiqmvybwhciepnheufffvg",
+    "input": "qytiqmvpbzhkiepcheufffvg",
     "target": "请提前准备好车票和身份证",
-    "correct": "qktiqmvybwhciepnheufffvg",
+    "correct": "qytiqmvpbzhkiepcheufffvg",
     "split": "heldout",
     "id": "spconfirm-078-clean",
     "source": {
@@ -16415,9 +16415,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "qktiqmvybwhciepnheugffvg",
+    "input": "qytiqmvpbzhkiepcheugffvg",
     "target": "请提前准备好车票和身份证",
-    "correct": "qktiqmvybwhciepnheufffvg",
+    "correct": "qytiqmvpbzhkiepcheufffvg",
     "split": "heldout",
     "id": "spconfirm-078-substitution",
     "source": {
@@ -16454,9 +16454,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "qktiqmvybwhciepnheuffvg",
+    "input": "qytiqmvpbzhkiepcheuffvg",
     "target": "请提前准备好车票和身份证",
-    "correct": "qktiqmvybwhciepnheufffvg",
+    "correct": "qytiqmvpbzhkiepcheufffvg",
     "split": "heldout",
     "id": "spconfirm-078-omission",
     "source": {
@@ -16493,9 +16493,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "qktiqmvybwhciepnheugfffvg",
+    "input": "qytiqmvpbzhkiepcheugfffvg",
     "target": "请提前准备好车票和身份证",
-    "correct": "qktiqmvybwhciepnheufffvg",
+    "correct": "qytiqmvpbzhkiepcheufffvg",
     "split": "heldout",
     "id": "spconfirm-078-insertion",
     "source": {
@@ -16532,9 +16532,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "qktiqmvybwhicepnheufffvg",
+    "input": "qytiqmvpbzhikepcheufffvg",
     "target": "请提前准备好车票和身份证",
-    "correct": "qktiqmvybwhciepnheufffvg",
+    "correct": "qytiqmvpbzhkiepcheufffvg",
     "split": "heldout",
     "id": "spconfirm-078-transposition",
     "source": {
@@ -16563,17 +16563,17 @@
       {
         "operation": "transpose",
         "index": 11,
-        "old": "ci",
-        "new": "ic"
+        "old": "ki",
+        "new": "ik"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "qktiqmvubwhciepnhrufffvg",
+    "input": "qytiqmvobzhkiepchrufffvg",
     "target": "请提前准备好车票和身份证",
-    "correct": "qktiqmvybwhciepnheufffvg",
+    "correct": "qytiqmvpbzhkiepcheufffvg",
     "split": "heldout",
     "id": "spconfirm-078-double-error",
     "source": {
@@ -16602,8 +16602,8 @@
       {
         "operation": "substitute",
         "index": 7,
-        "old": "y",
-        "new": "u"
+        "old": "p",
+        "new": "o"
       },
       {
         "operation": "substitute",
@@ -16616,9 +16616,9 @@
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "irgoqmmmdesvdcjqkkdcjxle",
+    "input": "irgoqmmmdesvdkjqkydkjwle",
     "target": "穿过前面的隧道就快到家了",
-    "correct": "irgoqmmmdesvdcjqkkdcjxle",
+    "correct": "irgoqmmmdesvdkjqkydkjwle",
     "split": "heldout",
     "id": "spconfirm-079-clean",
     "source": {
@@ -16648,9 +16648,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "irgpqmmmdesvdcjqkkdcjxle",
+    "input": "irgpqmmmdesvdkjqkydkjwle",
     "target": "穿过前面的隧道就快到家了",
-    "correct": "irgoqmmmdesvdcjqkkdcjxle",
+    "correct": "irgoqmmmdesvdkjqkydkjwle",
     "split": "heldout",
     "id": "spconfirm-079-substitution",
     "source": {
@@ -16687,9 +16687,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "irgqmmmdesvdcjqkkdcjxle",
+    "input": "irgqmmmdesvdkjqkydkjwle",
     "target": "穿过前面的隧道就快到家了",
-    "correct": "irgoqmmmdesvdcjqkkdcjxle",
+    "correct": "irgoqmmmdesvdkjqkydkjwle",
     "split": "heldout",
     "id": "spconfirm-079-omission",
     "source": {
@@ -16726,9 +16726,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "irgpoqmmmdesvdcjqkkdcjxle",
+    "input": "irgpoqmmmdesvdkjqkydkjwle",
     "target": "穿过前面的隧道就快到家了",
-    "correct": "irgoqmmmdesvdcjqkkdcjxle",
+    "correct": "irgoqmmmdesvdkjqkydkjwle",
     "split": "heldout",
     "id": "spconfirm-079-insertion",
     "source": {
@@ -16765,9 +16765,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "irgoqmmmdesvdcjqkkdjcxle",
+    "input": "irgoqmmmdesvdkjqkydjkwle",
     "target": "穿过前面的隧道就快到家了",
-    "correct": "irgoqmmmdesvdcjqkkdcjxle",
+    "correct": "irgoqmmmdesvdkjqkydkjwle",
     "split": "heldout",
     "id": "spconfirm-079-transposition",
     "source": {
@@ -16796,17 +16796,17 @@
       {
         "operation": "transpose",
         "index": 19,
-        "old": "cj",
-        "new": "jc"
+        "old": "kj",
+        "new": "jk"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "irgoqmmndesvdcjqkldcjxle",
+    "input": "irgoqmmndesvdkjqkudkjwle",
     "target": "穿过前面的隧道就快到家了",
-    "correct": "irgoqmmmdesvdcjqkkdcjxle",
+    "correct": "irgoqmmmdesvdkjqkydkjwle",
     "split": "heldout",
     "id": "spconfirm-079-double-error",
     "source": {
@@ -16841,17 +16841,17 @@
       {
         "operation": "substitute",
         "index": 17,
-        "old": "k",
-        "new": "l"
+        "old": "y",
+        "new": "u"
       }
     ]
   },
   {
     "schema": "shika_flypy",
     "kind": "clean",
-    "input": "iufaviqmjidejmiayixxlytd",
+    "input": "iufaviqmjidejmiayixwlptl",
     "target": "出发之前记得检查一下轮胎",
-    "correct": "iufaviqmjidejmiayixxlytd",
+    "correct": "iufaviqmjidejmiayixwlptl",
     "split": "heldout",
     "id": "spconfirm-080-clean",
     "source": {
@@ -16881,9 +16881,9 @@
   {
     "schema": "shika_flypy",
     "kind": "substitution",
-    "input": "iufaviqmkidejmiayixxlytd",
+    "input": "iufaviqmkidejmiayixwlptl",
     "target": "出发之前记得检查一下轮胎",
-    "correct": "iufaviqmjidejmiayixxlytd",
+    "correct": "iufaviqmjidejmiayixwlptl",
     "split": "heldout",
     "id": "spconfirm-080-substitution",
     "source": {
@@ -16920,9 +16920,9 @@
   {
     "schema": "shika_flypy",
     "kind": "omission",
-    "input": "iufaviqmidejmiayixxlytd",
+    "input": "iufaviqmidejmiayixwlptl",
     "target": "出发之前记得检查一下轮胎",
-    "correct": "iufaviqmjidejmiayixxlytd",
+    "correct": "iufaviqmjidejmiayixwlptl",
     "split": "heldout",
     "id": "spconfirm-080-omission",
     "source": {
@@ -16959,9 +16959,9 @@
   {
     "schema": "shika_flypy",
     "kind": "insertion",
-    "input": "iufaviqmkjidejmiayixxlytd",
+    "input": "iufaviqmkjidejmiayixwlptl",
     "target": "出发之前记得检查一下轮胎",
-    "correct": "iufaviqmjidejmiayixxlytd",
+    "correct": "iufaviqmjidejmiayixwlptl",
     "split": "heldout",
     "id": "spconfirm-080-insertion",
     "source": {
@@ -16998,9 +16998,9 @@
   {
     "schema": "shika_flypy",
     "kind": "transposition",
-    "input": "iufaviqmjdiejmiayixxlytd",
+    "input": "iufaviqmjdiejmiayixwlptl",
     "target": "出发之前记得检查一下轮胎",
-    "correct": "iufaviqmjidejmiayixxlytd",
+    "correct": "iufaviqmjidejmiayixwlptl",
     "split": "heldout",
     "id": "spconfirm-080-transposition",
     "source": {
@@ -17037,9 +17037,9 @@
   {
     "schema": "shika_flypy",
     "kind": "double-error",
-    "input": "iufaviqnjidejmiayoxxlytd",
+    "input": "iufaviqnjidejmiayoxwlptl",
     "target": "出发之前记得检查一下轮胎",
-    "correct": "iufaviqmjidejmiayixxlytd",
+    "correct": "iufaviqmjidejmiayixwlptl",
     "split": "heldout",
     "id": "spconfirm-080-double-error",
     "source": {

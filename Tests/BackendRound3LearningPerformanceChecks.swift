@@ -17,7 +17,7 @@ import Darwin
         for schema in fixtures.keys.sorted() {
             let fixture = fixtures[schema]!
             let profile: SKSpellingProfile = schema == "shika_flypy" ? .doublePinyin : .fullPinyin
-            let filename = profile == .doublePinyin ? "double-pinyin-spelling.json" : "full-pinyin-spelling.json"
+            let filename = profile == .doublePinyin ? "ziranma-double-pinyin-spelling.json" : "full-pinyin-spelling.json"
             for capacity in [0, 64, 512] {
                 try JSONEncoder().encode(Array(fixture.entries.prefix(capacity)))
                     .write(to: user.appendingPathComponent(filename))

@@ -11,6 +11,7 @@ final class SKInputSession {
     private let candidateIsDisplayable: (String) -> Bool
     private let specialCandidates: SKSpecialCandidates
     private var specialCandidate: SKCandidate?
+    private var rawCandidate: SKCandidate?
     private var nextCandidateIndex = 0
     private var preferVisibleCandidate = false
     private var revision = 0
@@ -31,8 +32,12 @@ final class SKInputSession {
     func type(_ text: String) {
         switch configuration.inputPolicy.action(for: text, isComposing: !state.input.isEmpty) {
         case let .engineKey(key, insertIfUnhandled):
+            if key == 32, !preferVisibleCandidate, state.candidates.first == rawCandidate, rawCandidate != nil {
+                apply(engine.commitLiteralFallback(rawInput: state.input))
+                return
+            }
             if key == 32, preferVisibleCandidate {
-                if let first = state.candidates.first { select(first) }
+                if let first = state.candidates.first, first != rawCandidate { select(first) }
                 else { apply(engine.commitLiteralFallback(rawInput: state.input)) }
                 return
             }
@@ -52,6 +57,10 @@ final class SKInputSession {
 
     func select(_ candidate: SKCandidate) {
         guard state.candidates.contains(candidate) else { return }
+        if candidate == rawCandidate {
+            commitRaw()
+            return
+        }
         if candidate == specialCandidate {
             // Only whole, unconfirmed Chinese input can produce this choice.
             // Clear marked text and native composition without learning a word
@@ -70,6 +79,7 @@ final class SKInputSession {
 
     private func appendCandidates(until target: Int, revision expectedRevision: Int) {
         guard revision == expectedRevision else { return }
+        if let rawCandidate { state.candidates.removeAll { $0 == rawCandidate } }
         var seen = Set(state.candidates.map(\.contentIdentity))
         // Bound synchronous work. A run of missing glyphs must not hide later
         // valid candidates or monopolize the input thread while scanning them.
@@ -95,12 +105,17 @@ final class SKInputSession {
     }
 
     private func publishCandidates() {
+        if let rawCandidate { state.candidates.removeAll { $0 == rawCandidate } }
         if let specialCandidate { state.candidates.removeAll { $0 == specialCandidate } }
         specialCandidate = specialCandidates.suggestion(for: state, configuration: configuration,
                                                         isDisplayable: candidateIsDisplayable)
         if let specialCandidate {
             state.candidates.removeAll { $0.text == specialCandidate.text }
             state.candidates.insert(specialCandidate, at: min(2, state.candidates.count))
+        }
+        rawCandidate = state.input.isEmpty ? nil : SKCandidate(index: Int.min + 1, text: state.input, comment: "")
+        if let rawCandidate, !state.candidates.contains(where: { $0.text == rawCandidate.text }) {
+            state.candidates.append(rawCandidate)
         }
         onUpdate?(state)
     }
@@ -116,8 +131,12 @@ final class SKInputSession {
 
     func commitPending() {
         guard !state.input.isEmpty else { return }
+        if let rawCandidate, state.candidates.first == rawCandidate {
+            apply(engine.commitLiteralFallback(rawInput: state.input))
+            return
+        }
         if preferVisibleCandidate {
-            if let first = state.candidates.first { apply(engine.commitCandidate(at: first.index)) }
+            if let first = state.candidates.first, first != rawCandidate { apply(engine.commitCandidate(at: first.index)) }
             else { apply(engine.commitLiteralFallback(rawInput: state.input)) }
             return
         }
@@ -140,12 +159,13 @@ final class SKInputSession {
         }
         state = result
         specialCandidate = nil
+        rawCandidate = nil
         state.candidates = result.candidates.filter { candidateIsDisplayable($0.text) }
         preferVisibleCandidate = result.candidates.first.map { !candidateIsDisplayable($0.text) } ?? false
         // Commit is a one-shot output, never retained for subsequent UI updates.
         state.committedText = ""
-        // Pagination follows native IDs, including hidden rows. Never renumber
-        // survivors: the engine still needs its original ID for selection.
+        // Pagination follows engine IDs, including hidden rows. Never renumber
+        // survivors: the engine owns the mapping back to native selections.
         nextCandidateIndex = (result.candidates.map(\.index).filter { $0 >= 0 }.max() ?? -1) + 1
         updateComposition(state.input.isEmpty ? "" : (state.preedit.isEmpty ? state.input : state.preedit))
         if state.candidates.count < result.candidates.count, !state.isLastPage {

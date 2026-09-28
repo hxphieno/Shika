@@ -11,40 +11,29 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     private let shuangpinView = SKShuangpinKeyboardView()
     private let numberView = SKNumberInputView()
     private let languageButton = SKInputSwitchButton()
-    private let shuangpinLabel = UILabel()
     private var keyboardState = SKKeyboardState(scheme: SKInputScheme(rawValue:
         UserDefaults.standard.string(forKey: SKInputScheme.preferenceKey) ?? "") ?? .chineseJapanese,
         languageMode: SKChineseJapaneseMode(rawValue: UserDefaults.standard.string(forKey: SKChineseJapaneseMode.preferenceKey) ?? "") ?? .mixed)
     private var keyboardBottomConstraints: [NSLayoutConstraint] = []
-    private var mainHeightConstraint: NSLayoutConstraint?
+    private var keyboardHeightConstraint: NSLayoutConstraint?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Size the input view itself, rather than asking UIKit to infer its
+        // height from a (possibly hidden) keyboard page. System chrome stays
+        // outside these 44 + 216 points; do not add safe-area padding again.
+        inputView?.allowsSelfSizing = true
+        keyboardHeightConstraint = view.heightAnchor.constraint(equalToConstant: keyboardHeight)
+        keyboardHeightConstraint?.priority = .init(999)
+        keyboardHeightConstraint?.isActive = true
         languageButton.translatesAutoresizingMaskIntoConstraints = false
         languageButton.heightAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight).isActive = true
-        for marker in [languageButton, shuangpinLabel] as [UIView] {
-            let width = marker.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight)
-            width.priority = .init(999) // Hidden arranged views must be able to collapse to zero.
-            width.isActive = true
-        }
-        languageButton.onTap = { [weak self] in
-            guard let self else { return }
-            SKDeleteKeyInteraction.cancelActive()
-            let next = keyboardState.languageMode.next
-            do { try inputSession?.switchConfiguration(to: SKChineseJapaneseScheme.configuration(for: next)) }
-            catch { candidateBar.showError(); return }
-            keyboardState.languageMode = next
-            UserDefaults.standard.set(keyboardState.languageMode.rawValue, forKey: SKChineseJapaneseMode.preferenceKey)
-            renderLanguageMode()
-        }
+        let modeWidth = languageButton.widthAnchor.constraint(equalToConstant: SKConfig.defaultKeyHeight)
+        modeWidth.priority = .init(999) // Allow the stack to collapse the hidden mode button.
+        modeWidth.isActive = true
+        languageButton.accessibilityIdentifier = "mode.selector"
+        languageButton.showsMenuAsPrimaryAction = true
         renderLanguageMode()
-        shuangpinLabel.accessibilityIdentifier = "mode.shuangpin"
-        languageButton.accessibilityIdentifier = "mode.chineseJapanese"
-        shuangpinLabel.text = "双拼"
-        shuangpinLabel.font = .systemFont(ofSize: 16, weight: .medium)
-        shuangpinLabel.textColor = SKConfig.keyTitleColor
-        shuangpinLabel.textAlignment = .center
-        shuangpinLabel.accessibilityLabel = "中文，双拼"
 
         candidateBar.heightAnchor.constraint(equalToConstant: SKConfig.topBarHeight).isActive = true
         candidateBar.onSelect = { [weak self] in self?.selectCandidate($0) }
@@ -52,7 +41,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         expandedCandidates.onSelect = { [weak self] in self?.selectCandidate($0) }
         expandedCandidates.onLoadMore = { [weak self] in self?.inputSession?.loadMoreCandidates() }
         candidateBar.onRetry = { [weak self] in self?.loadEngine() }
-        let topBar = UIStackView(arrangedSubviews: [languageButton, shuangpinLabel, candidateBar])
+        let topBar = SKCandidateInteractionRow(arrangedSubviews: [languageButton, candidateBar])
+        topBar.candidateBar = candidateBar
         topBar.axis = .horizontal
         topBar.alignment = .center
         topBar.isLayoutMarginsRelativeArrangement = true
@@ -68,6 +58,9 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         chineseJapaneseView.eventHandler = self
         shuangpinView.eventHandler = self
         numberView.eventHandler = self
+        for footer in [chineseJapaneseView.footer, shuangpinView.footer] {
+            footer?.inputModeSwitchKey.addTarget(self, action: #selector(switchSystemKeyboard(_:with:)), for: .allTouchEvents)
+        }
         for keyboard in [chineseJapaneseView, shuangpinView, numberView] as [UIView] {
             keyboard.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(keyboard)
@@ -86,17 +79,24 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
             expandedCandidates.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             expandedCandidates.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
-        mainHeightConstraint = chineseJapaneseView.heightAnchor.constraint(equalToConstant: SKMainKeyboardMetrics.portraitHeight)
-        mainHeightConstraint?.priority = .init(999)
         updateVisibleKeyboard()
         loadEngine()
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        let mainHeight: CGFloat = traitCollection.verticalSizeClass == .compact ? 162 : SKMainKeyboardMetrics.portraitHeight
-        if mainHeightConstraint?.constant != mainHeight { mainHeightConstraint?.constant = mainHeight }
-        SKUtils.disableClipping(for: view)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        shuangpinView.setLearningMode(SKKeyboardPreferences.load().shuangpinLearningMode)
+    }
+
+    private var keyboardHeight: CGFloat {
+        SKConfig.topBarHeight + (traitCollection.verticalSizeClass == .compact ? 162 : SKMainKeyboardMetrics.portraitHeight)
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if keyboardHeightConstraint?.constant != keyboardHeight {
+            keyboardHeightConstraint?.constant = keyboardHeight
+        }
     }
 
     private func loadEngine() {
@@ -174,6 +174,16 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         advanceToNextInputMode()
     }
 
+    @objc private func switchSystemKeyboard(_ sender: UIView, with event: UIEvent?) {
+        // Accessibility activation may arrive without a touch event.
+        guard let event else { didTapNextKeyboard(); return }
+        SKDeleteKeyInteraction.cancelActive()
+        inputSession?.commitPending()
+        // UIKit owns short taps and the long-press keyboard list. There is no
+        // public API for selecting the system Emoji keyboard directly.
+        handleInputModeList(from: sender, with: event)
+    }
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         SKDeleteKeyInteraction.cancelActive()
@@ -202,20 +212,46 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     func didTapSwitchScheme() {
+        selectInputMode(scheme: keyboardState.scheme.next, languageMode: keyboardState.languageMode)
+    }
+
+    func selectInputMode(scheme: SKInputScheme, languageMode: SKChineseJapaneseMode) {
         SKDeleteKeyInteraction.cancelActive()
-        let next = keyboardState.scheme.next
-        do { try inputSession?.switchConfiguration(to: next == .chineseJapanese
-            ? SKChineseJapaneseScheme.configuration(for: keyboardState.languageMode) : next.configuration) }
+        let configuration = scheme == .chineseJapanese
+            ? SKChineseJapaneseScheme.configuration(for: languageMode) : scheme.configuration
+        do { try inputSession?.switchConfiguration(to: configuration) }
         catch { candidateBar.showError(); return }
         candidatesExpanded = false
-        keyboardState.scheme = next
+        keyboardState.scheme = scheme
+        keyboardState.languageMode = languageMode
         keyboardState.layout = .alphabet
-        UserDefaults.standard.set(keyboardState.scheme.rawValue, forKey: SKInputScheme.preferenceKey)
+        UserDefaults.standard.set(scheme.rawValue, forKey: SKInputScheme.preferenceKey)
+        UserDefaults.standard.set(languageMode.rawValue, forKey: SKChineseJapaneseMode.preferenceKey)
+        renderLanguageMode()
         updateVisibleKeyboard()
         if let inputSession { renderCandidates(inputSession.state) }
-        UIAccessibility.post(notification: .announcement,
-                             argument: keyboardState.scheme == .shuangpin ? "双拼" : "中日混合")
-        (next == .shuangpin ? shuangpinView.footer : chineseJapaneseView.footer)?.showSchemeTitle()
+        (scheme == .shuangpin ? shuangpinView.footer : chineseJapaneseView.footer)?.showSchemeTitle()
+        UIAccessibility.post(notification: .announcement, argument: languageButton.accessibilityValue)
+    }
+
+    private func updateModeMenu() {
+        let choices: [(String, SKInputScheme, SKChineseJapaneseMode)] = [
+            ("自然码双拼", .shuangpin, keyboardState.languageMode),
+            ("中文", .chineseJapanese, .chinese),
+            ("日文", .chineseJapanese, .japanese),
+            ("中日混合", .chineseJapanese, .mixed)
+        ]
+        languageButton.menu = UIMenu(children: choices.map { title, scheme, mode in
+            let selected = keyboardState.scheme == scheme && (scheme == .shuangpin || keyboardState.languageMode == mode)
+            return UIAction(title: title, state: selected ? .on : .off) { [weak self] _ in
+                self?.selectInputMode(scheme: scheme, languageMode: mode)
+            }
+        })
+        languageButton.isShuangpin = keyboardState.scheme == .shuangpin
+        languageButton.accessibilityLabel = "切换输入模式"
+        languageButton.accessibilityValue = choices.first {
+            $0.1 == keyboardState.scheme && ($0.1 == .shuangpin || $0.2 == keyboardState.languageMode)
+        }?.0
     }
 
     func didTapSwitchLayout(to layout: SKKeyboardLayoutType) {
@@ -227,9 +263,11 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
     }
 
     private func renderLanguageMode() {
+        updateModeMenu()
         languageButton.currentState = keyboardState.languageMode
         chineseJapaneseView.currentLanguageState = keyboardState.languageMode
-        chineseJapaneseView.footer?.showSchemeTitle()
+        let title = keyboardState.languageMode == .chinese ? "中文" : keyboardState.languageMode == .japanese ? "日文" : "中日混合"
+        chineseJapaneseView.footer?.showSchemeTitle(title)
     }
 
     private func updateVisibleKeyboard() {
@@ -238,13 +276,8 @@ class KeyboardViewController: UIInputViewController, SKKeyboardEventHandler {
         shuangpinView.isHidden = candidatesExpanded || keyboardState.layout != .alphabet || keyboardState.scheme != .shuangpin
         numberView.isHidden = candidatesExpanded || keyboardState.layout != .number
         expandedCandidates.isHidden = !candidatesExpanded
-        let hasCandidates = !(inputSession?.state.candidates.isEmpty ?? true)
-        languageButton.isHidden = hasCandidates || keyboardState.scheme != .chineseJapanese
-        shuangpinLabel.isHidden = hasCandidates || keyboardState.scheme != .shuangpin
-        // Hidden legacy number-page constraints must not stretch the measured alphabet rows.
-        for (index, constraint) in keyboardBottomConstraints.enumerated() {
-            constraint.isActive = index == 2 ? keyboardState.layout == .number : keyboardState.layout == .alphabet
-        }
-        mainHeightConstraint?.isActive = keyboardState.layout == .alphabet
+        languageButton.isHidden = !(inputSession?.state.candidates.isEmpty ?? true)
+        // Every layout uses the same keyboard height, including the number/symbol page.
+        for constraint in keyboardBottomConstraints { constraint.isActive = true }
     }
 }

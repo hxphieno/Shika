@@ -9,7 +9,11 @@ import time
 root = pathlib.Path(__file__).resolve().parent.parent
 device = sys.argv[1] if len(sys.argv) > 1 else "booted"
 env = dict(os.environ, SHIKA_SMOKE_SOURCE="Tests/KeyboardAcceptanceChecks.swift")
+if "--candidates-only" in sys.argv:
+    env["SIMCTL_CHILD_SHIKA_ACCEPTANCE_CANDIDATES_ONLY"] = "1"
 subprocess.run([sys.executable, str(root / "scripts/test-keyboard-simulator.py"), device], cwd=root, env=env, check=True)
+if "--candidates-only" in sys.argv:
+    raise SystemExit(0)
 container = pathlib.Path(subprocess.check_output(
     ["xcrun", "simctl", "get_app_container", device, "local.shika.integration", "data"], text=True).strip())
 report = container / "Documents/keyboard-acceptance-persistence-result.txt"

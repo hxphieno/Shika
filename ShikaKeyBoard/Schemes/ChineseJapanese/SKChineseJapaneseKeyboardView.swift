@@ -6,19 +6,24 @@ final class SKChineseJapaneseKeyboardView: SKMainKeyboardSurface {
     private var letters: [[SKMainKeyButton]] = []
     private let shift = SKMainKeyButton(title: "⇧", role: .function)
     private let delete = SKMainKeyButton(title: "⌫", role: .function)
+    private let longVowelKey = SKLongVowelKeyButton()
     var currentLanguageState: SKChineseJapaneseMode = .mixed { didSet { arrangeRows() } }
+    override var isHidden: Bool {
+        didSet { if isHidden { longVowelKey.cancelLongVowelSelection() } }
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         letters = SKChineseJapaneseLayout.lowercase.map { row in
             row.map { title in
-                let button = SKMainKeyButton(title: title == "—" ? "ー" : title)
+                let button: SKMainKeyButton = title == "l" ? longVowelKey : SKMainKeyButton(title: title == "—" ? "ー" : title)
                 button.accessibilityIdentifier = "chineseJapanese.\(button.keyTitle)"
                 button.addTarget(self, action: #selector(typeLetter(_:)), for: .touchUpInside)
                 return button
             }
         }
-        let bottom = SKKeyboardFooterView(schemeTitle: "中日混合", nextSchemeTitle: "双拼")
+        longVowelKey.onSelection = { [weak self] text in self?.typeText(text) }
+        let bottom = SKKeyboardFooterView(schemeTitle: "中日混合", nextSchemeTitle: "自然码双拼")
         footer = bottom
         delete.useSymbol("delete.left", label: "删除")
         delete.onDelete = { [weak self] byWord in
@@ -33,7 +38,8 @@ final class SKChineseJapaneseKeyboardView: SKMainKeyboardSurface {
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     private func arrangeRows() {
         guard letters.count == 3 else { return }
-        let middle = currentLanguageState == .chinese ? Array(letters[1].prefix(9)) : letters[1]
+        longVowelKey.isLongVowelEnabled = currentLanguageState == .mixed
+        let middle = currentLanguageState == .japanese ? letters[1] : Array(letters[1].prefix(9))
         keyRows = [letters[0], middle, [shift] + letters[2] + [delete]]
     }
     private func updateShift() {
@@ -45,8 +51,11 @@ final class SKChineseJapaneseKeyboardView: SKMainKeyboardSurface {
         }
     }
     @objc private func typeLetter(_ sender: SKMainKeyButton) {
+        typeText(sender.keyTitle)
+    }
+    private func typeText(_ text: String) {
         shiftState.willTypeLetter()
-        eventHandler?.didTapKey(sender.keyTitle)
+        eventHandler?.didTapKey(text)
         if shiftState.didTypeLetter() { updateShift() }
     }
     @objc private func toggleShift() {

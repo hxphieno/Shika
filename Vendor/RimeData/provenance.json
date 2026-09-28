@@ -4,5 +4,6 @@
   "dictionary_sha256": "e341598343a0f0f2035bb1aafc34a7f3bb7887deeecb3f60796262aaa2983e6b",
   "license": "Apache-2.0",
   "schema_generator": "scripts/generate-rime-schemas.py",
-  "xiaohe_layout_reference": "https://flypy.cc/"
+  "shuangpin_layout": "自然码双拼",
+  "shuangpin_layout_reference": "User-provided keyboard chart, 2026-09-26"
 }

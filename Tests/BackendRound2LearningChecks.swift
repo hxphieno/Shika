@@ -14,7 +14,7 @@ import Foundation
         let engine = try SKRimeEngine(configuration: full, resourceURL: resources, userURL: user, correctionEnabled: mode != "disabled")
         var output = "", marked = "", insertions: [String] = [], checks: [[String: Any]] = [], observations: [[String: Any]] = []
         let session = SKInputSession(engine: engine, configuration: full, insertText: { output += $0; insertions.append($0) }, deleteText: { if !output.isEmpty { output.removeLast() } }, updateComposition: { marked = $0 })
-        let metadata = user.appendingPathComponent("full-pinyin-spelling.json"), doubleMetadata = user.appendingPathComponent("double-pinyin-spelling.json")
+        let metadata = user.appendingPathComponent("full-pinyin-spelling.json"), doubleMetadata = user.appendingPathComponent("ziranma-double-pinyin-spelling.json")
         func check(_ name: String, _ passed: Bool, _ detail: String = "") {
             checks.append(["name": name, "passed": passed, "detail": detail]); print("\(passed ? "PASS" : "FAIL") \(name) \(detail)")
         }
@@ -63,7 +63,7 @@ import Foundation
             for phrase in phrases { try learn(phrase, count: 5); check("complete spelling stored \(phrase.target)", records().contains { $0["code"] == phrase.code && $0["text"] == phrase.target }) }
             check("full learning does not create double metadata", !FileManager.default.fileExists(atPath: doubleMetadata.path))
             let fullBefore = try? Data(contentsOf: metadata)
-            session.cancel(); try session.switchConfiguration(to: double); output = ""; type("nihc"); session.type(" ")
+            session.cancel(); try session.switchConfiguration(to: double); output = ""; type("nihk"); session.type(" ")
             check("double profile still commits normal first word", output == "你好" && clear())
             check("profile switch creates only its own spelling file", FileManager.default.fileExists(atPath: doubleMetadata.path) && (try? Data(contentsOf: metadata)) == fullBefore)
         } else if mode == "probe" {
@@ -114,7 +114,7 @@ import Foundation
             check("full maximum accepted Unicode entries fit own load bound", data.count <= 131072, "bytes=\(data.count)")
             index = SKLearnedSpellingIndex(userDirectory: dir, profile: .fullPinyin)
             check("restart restores newest full capacity entry", index.suggestions(for: "b" + String(repeating: "a", count: 43) + uniqueCode(599)).contains { $0.code == entries.last?.code })
-            check("full metadata never creates double file", !FileManager.default.fileExists(atPath: dir.appendingPathComponent("double-pinyin-spelling.json").path))
+            check("full metadata never creates double file", !FileManager.default.fileExists(atPath: dir.appendingPathComponent("ziranma-double-pinyin-spelling.json").path))
             #endif
         } else { fatalError("unknown mode") }
         let failed = checks.filter { !($0["passed"] as! Bool) }

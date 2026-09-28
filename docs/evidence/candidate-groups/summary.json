@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-27",
+  "scope": "Real shipped offline lexicons; macOS engine/session tests and unsigned iOS Release build. No physical-device installation or Apple/Doubao device comparison.",
+  "prefixAndGroupAssertions": {
+    "passed": 796,
+    "total": 796
+  },
+  "sessionAssertions": 56,
+  "nativeLearningAndRuntime": "passed; updated obsolete xiaohe nihc fixture to current ziranma nihk",
+  "mixedBehaviorAssertions": {
+    "passed": 62,
+    "total": 62
+  },
+  "mixedBefore": {
+    "cases": 250,
+    "top1": 202,
+    "top3": 221,
+    "top6": 230
+  },
+  "mixedAfter": {
+    "cases": 250,
+    "top1": 202,
+    "top3": 221,
+    "top6": 230
+  },
+  "mixedIdenticalFirstSix": 250,
+  "mixedKeyLatencyMS": {
+    "p95": 20.890834,
+    "max": 168.408208
+  },
+  "mixedPeakFootprintMiB": 23.21941375732422,
+  "japaneseDeletionAssertions": 7661,
+  "correctionInteractionAssertions": 32,
+  "iOSReleaseBuild": "passed",
+  "WSM": {
+    "threeCharacterWords": 6,
+    "twoCharacterWords": 6,
+    "firstSingleCharacterPosition": 13,
+    "singleSelectionRemainder": "我sm",
+    "twoCharacterSelectionRemainder": "我是m"
+  },
+  "sourceSHA256": {
+    "ShikaKeyBoard/Engine/SKCandidateGrouping.swift": "f31b718a2cea01a6cf957ca1020d83a14b08ef8aff6a4f8b576d0abf9fb3cd92",
+    "ShikaKeyBoard/Engine/SKRimeEngine.swift": "3d04a14f04fa3cc8a780ee6b9c271abfc0df01a61ad0241c64643b29d363e8c2",
+    "ShikaKeyBoard/Engine/SKMixedEngine.swift": "c72e4095e1f540e20f26835fd0611acac8282d96dc3ad4ae127025030e38a60d",
+    "ShikaKeyBoard/Engine/SKMixedDecoder.swift": "de62ba42b5360d8b890cd76a08577a92cc6b157ea85dfc6308ee8e48dd26a2f3",
+    "ShikaKeyBoard/Engine/SKJapaneseEngine.swift": "b7ead5109b8fb5a42f75b12e50f92d6ec20a3250c562766bfe84ccb4738e8d7c",
+    "ShikaKeyBoard/Core/SKInputSession.swift": "3701a6a25a408aee6ccc1b10bd3ea860da827612c20889d69d41638d5fd6e544",
+    "Tests/PrefixCandidateChecks.swift": "614a5147916cf77209ad277c22e6700b7e9e1a89e4aa33a47f5371062410ba88",
+    "Tests/RimeSessionChecks.swift": "d2fcf10188b8d2db577ac6fd59f6ee85877241ec35e0bc183f79eedb9bdc5581",
+    "Tests/RimeRuntimeChecks.m": "5ec2e3967df1ab81d4e237272a6f769fcaefad767b6b8e5ea0a12c2bbebc30cd"
+  },
+  "japaneseCacheAssertions": 28,
+  "japaneseCrossProcessLearning": "passed"
+}

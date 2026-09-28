@@ -1,15 +1,20 @@
 import UIKit
 import CoreText
 
-/// iOS 26 main-keyboard key. The legacy key classes still serve the custom number page.
+/// Shared keycap and touch preview for alphabet, number and symbol keyboards.
 class SKMainKeyButton: UIButton {
     enum Role { case letter, function, space }
     private let letterFont = UIFont.systemFont(ofSize: 25)
     let keyRole: Role
     var keyTitle: String { didSet { setTitle(keyTitle, for: .normal) } }
     private var preview: SKMainKeyPreview?
+    private static weak var previewOwner: SKMainKeyButton?
+    private var previewStartedAt: CFTimeInterval = 0
+    private var pendingPreviewDismissal: DispatchWorkItem?
     private var deletion: SKDeleteKeyInteraction?
     var touchBounds: CGRect?
+    var usesSymbolTint = false { didSet { updateAppearance() } }
+    private var keyColor: UIColor { usesSymbolTint ? SKMainKeyboardMetrics.symbolColor : SKMainKeyboardMetrics.keyColor }
     var isPrimaryAction = false { didSet { updateAppearance() } }
     var onDelete: ((Bool) -> SKDeleteFeedback)? {
         didSet {
@@ -30,7 +35,8 @@ class SKMainKeyButton: UIButton {
         isExclusiveTouch = false
         accessibilityLabel = title
         addTarget(self, action: #selector(pressBegan), for: .touchDown)
-        addTarget(self, action: #selector(pressEnded), for: [.touchUpInside, .touchUpOutside, .touchCancel, .touchDragExit])
+        addTarget(self, action: #selector(pressReleased), for: .touchUpInside)
+        addTarget(self, action: #selector(cancelPreview), for: [.touchUpOutside, .touchCancel, .touchDragExit])
         addTarget(self, action: #selector(pressBegan), for: .touchDragEnter)
         updateAppearance()
         registerForTraitChanges([UITraitUserInterfaceStyle.self]) { (self: SKMainKeyButton, _) in self.updateAppearance() }
@@ -75,7 +81,7 @@ class SKMainKeyButton: UIButton {
         }
         setTitleColor(SKMainKeyboardMetrics.textColor, for: .normal)
         tintColor = SKMainKeyboardMetrics.textColor
-        let base = SKMainKeyboardMetrics.keyColor.resolvedColor(with: traitCollection)
+        let base = keyColor.resolvedColor(with: traitCollection)
         backgroundColor = isHighlighted && keyRole != .letter
             ? (traitCollection.userInterfaceStyle == .dark ? UIColor(white: 0.42, alpha: 1) : UIColor(white: 0.81, alpha: 1)) : base
     }
@@ -90,35 +96,54 @@ class SKMainKeyButton: UIButton {
     @objc private func pressBegan() {
         if keyRole == .letter { showPreview() }
     }
-    @objc private func pressEnded() {
+    @objc private func pressReleased() {
+        guard preview != nil else { return }
+        // Fast taps can begin and end before a rendered frame.
+        // Keep feedback visible briefly
+        // without delaying the key's input action.
+        pendingPreviewDismissal?.cancel()
+        let work = DispatchWorkItem { [weak self] in self?.cancelPreview() }
+        pendingPreviewDismissal = work
+        DispatchQueue.main.asyncAfter(deadline: .now() + max(0, 0.12 - (CACurrentMediaTime() - previewStartedAt)), execute: work)
+    }
+    @objc func cancelPreview() {
+        pendingPreviewDismissal?.cancel()
+        pendingPreviewDismissal = nil
         preview?.removeFromSuperview()
         preview = nil
+        if Self.previewOwner === self { Self.previewOwner = nil }
     }
     override func didMoveToWindow() {
         super.didMoveToWindow()
-        if window == nil { pressEnded(); deletion?.cancel() }
+        if window == nil { cancelPreview(); deletion?.cancel() }
     }
     private func showPreview() {
+        pendingPreviewDismissal?.cancel()
+        pendingPreviewDismissal = nil
+        previewStartedAt = CACurrentMediaTime()
+        if Self.previewOwner !== self { Self.previewOwner?.cancelPreview() }
+        Self.previewOwner = self
         guard preview == nil, let window else { return }
         // A keyboard extension cannot draw outside its own input view, even
         // when its local window accepts the subview. Keep previews inside it.
         var ancestor = superview
         var container: UIView = window
         while let view = ancestor {
-            if let surface = view as? SKMainKeyboardSurface {
-                container = surface.superview ?? surface
+            if view is SKMainKeyboardSurface || view is SKNumberInputView {
+                container = view.superview ?? view
                 break
             }
             ancestor = view.superview
         }
         let keyRect = convert(bounds, to: container)
         let inset = SKMainKeyboardMetrics.inset
-        let width = min(max(54, bounds.width + 24), container.bounds.width - 2 * inset)
+        let textWidth = (keyTitle as NSString).size(withAttributes: [.font: SKMainKeyPreview.font]).width + 16
+        let width = min(max(54, bounds.width + 24, textWidth), container.bounds.width - 2 * inset)
         let left = max(inset, min(keyRect.midX - width / 2, container.bounds.width - width - inset))
         let top = max(container.bounds.minY + 2, keyRect.minY - 67)
         let bubble = SKMainKeyPreview(frame: CGRect(x: left, y: top, width: width, height: keyRect.maxY - top))
         bubble.keyFrame = convert(bounds, to: container).offsetBy(dx: -left, dy: -top)
-        bubble.fillColor = SKMainKeyboardMetrics.keyColor.resolvedColor(with: traitCollection)
+        bubble.fillColor = keyColor.resolvedColor(with: traitCollection)
         bubble.textColor = SKMainKeyboardMetrics.textColor.resolvedColor(with: traitCollection)
         bubble.letter = keyTitle
         bubble.isUserInteractionEnabled = false

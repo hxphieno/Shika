@@ -146,7 +146,8 @@ final class MainInteractionApp: UIResponder, UIApplicationDelegate {
         full.currentLanguageState = .japanese
         expect(full.keyRows[1].count == 10, "Japanese main row keeps long-vowel key")
         full.currentLanguageState = .mixed
-        expect(full.keyRows[1].count == 10, "Mixed main row keeps long-vowel key")
+        expect(full.keyRows[1].count == 9 && (full.keyRows[1].last as? SKLongVowelKeyButton)?.isLongVowelEnabled == true,
+               "Mixed main row offers long vowel on L without an extra key")
 
         UserDefaults.standard.set("mixed", forKey: SKChineseJapaneseMode.preferenceKey)
         UserDefaults.standard.set("shuangpin", forKey: SKInputScheme.preferenceKey)

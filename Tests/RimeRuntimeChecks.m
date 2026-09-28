@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
         if (wrongResources || error.code != 2) return 1;
         first = nil;
         NSDictionary *state;
-        for (NSNumber *key in @[@'n', @'i', @'h', @'c']) state = [second processKey:key.intValue];
+        for (NSNumber *key in @[@'n', @'i', @'h', @'k']) state = [second processKey:key.intValue];
         if (![state[@"candidates"][0][@"text"] isEqual:@"你好"]) return 1;
         state = [second processKey:' '];
         if (![state[@"commit"] isEqual:@"你好"]) return 1;

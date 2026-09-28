@@ -3,6 +3,7 @@ import UIKit
 /// Main-keyboard controls. The custom number/symbol page uses its own controls.
 final class SKKeyboardFooterView: UIView {
     weak var eventHandler: SKKeyboardEventHandler?
+    let inputModeSwitchKey = SKMainKeyButton(title: "", role: .function)
     var keyFrames: [CGRect] = []
     private var keys: [SKMainKeyButton] = []
     private let space: SKMainKeyButton
@@ -14,21 +15,23 @@ final class SKKeyboardFooterView: UIView {
         super.init(frame: .zero)
         let number = SKMainKeyButton(title: "123", role: .function)
         number.addTarget(self, action: #selector(showNumbers), for: .touchUpInside)
-        let scheme = SKMainKeyButton(title: "🦌", role: .function)
-        scheme.titleLabel?.font = .systemFont(ofSize: 24)
-        scheme.accessibilityLabel = "切换输入方案"
-        scheme.accessibilityHint = "切换到\(nextSchemeTitle)"
-        scheme.addTarget(self, action: #selector(switchScheme), for: .touchUpInside)
+        inputModeSwitchKey.useSymbol("globe", label: "切换系统键盘")
+        inputModeSwitchKey.accessibilityIdentifier = "keyboard.inputMode"
+        inputModeSwitchKey.accessibilityHint = "轻点切换键盘，长按选择表情符号键盘"
         space.accessibilityLabel = "空格，当前方案：\(schemeTitle)"
         space.addTarget(self, action: #selector(insertSpace), for: .touchUpInside)
         enter.useSymbol("return", label: "换行")
         enter.addTarget(self, action: #selector(performReturn), for: .touchUpInside)
-        keys = [number, scheme, space, enter]
+        keys = [number, inputModeSwitchKey, space, enter]
         keys.forEach(addSubview)
     }
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
-    func showSchemeTitle() {
+    func showSchemeTitle(_ title: String? = nil) {
+        if let title {
+            space.keyTitle = title
+            space.accessibilityLabel = "空格，当前方案：\(title)"
+        }
         hideSpaceTitle?.cancel()
         space.titleLabel?.layer.removeAllAnimations()
         space.titleLabel?.alpha = 1
@@ -81,7 +84,6 @@ final class SKKeyboardFooterView: UIView {
         keys.contains { $0.point(inside: convert(point, to: $0), with: event) }
     }
     @objc private func showNumbers() { eventHandler?.didTapSwitchLayout(to: .number) }
-    @objc private func switchScheme() { eventHandler?.didTapSwitchScheme() }
     @objc private func insertSpace() { eventHandler?.didTapKey(" ") }
     @objc private func performReturn() { eventHandler?.didTapKey("\n") }
 }

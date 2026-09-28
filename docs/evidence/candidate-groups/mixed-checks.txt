@@ -1,0 +1,2 @@
+Mixed 16: 250 cases; 0/62 behavior failures
+Mixed runner: /var/folders/f5/rm8nw4td4dx60jn_z41wjrt80000gn/T//shika-mixed.lWbxb2

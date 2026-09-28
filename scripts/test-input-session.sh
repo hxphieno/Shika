@@ -11,6 +11,7 @@ xcrun swiftc -module-cache-path "$test_dir/module-cache" -parse-as-library \
     -emit-module -module-name ShikaInputCore \
     "$repo_dir/ShikaKeyBoard/Core/SKInputEngine.swift" \
     "$repo_dir/ShikaKeyBoard/Core/SKInputConfiguration.swift" \
+    "$repo_dir/ShikaKeyBoard/Core/SKSpecialCandidates.swift" \
     "$repo_dir/ShikaKeyBoard/Core/SKInputSession.swift" \
     -emit-module-path "$test_dir/ShikaInputCore.swiftmodule"
 

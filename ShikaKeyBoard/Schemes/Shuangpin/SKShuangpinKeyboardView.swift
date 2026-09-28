@@ -4,34 +4,52 @@ import UIKit
 final class SKShuangpinKeyboardView: SKMainKeyboardSurface {
     weak var eventHandler: SKKeyboardEventHandler? { didSet { footer?.eventHandler = eventHandler } }
     private var shiftState = SKShiftState()
-    private var letterButtons: [SKAnnotatedKeyButton] = []
+    private var letterButtons: [SKMainKeyButton] = []
+    private(set) var learningMode = true
     private let shift = SKMainKeyButton(title: "⇧", role: .function)
     private let delete = SKMainKeyButton(title: "⌫", role: .function)
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        footer = SKKeyboardFooterView(schemeTitle: "自然码双拼", nextSchemeTitle: "中日混合")
+        delete.useSymbol("delete.left", label: "删除")
+        delete.onDelete = { [weak self] byWord in
+            self?.eventHandler?.didDeleteBackward(byWord: byWord) ?? .stop
+        }
+        shift.addTarget(self, action: #selector(toggleShift), for: .touchUpInside)
+        let hold = UILongPressGestureRecognizer(target: self, action: #selector(holdShift(_:)))
+        shift.addGestureRecognizer(hold)
+        rebuildLetterKeys()
+    }
+    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+    func setLearningMode(_ enabled: Bool) {
+        guard learningMode != enabled else { return }
+        learningMode = enabled
+        letterButtons.forEach { $0.cancelPreview() }
+        rebuildLetterKeys()
+    }
+
+    private func rebuildLetterKeys() {
+        letterButtons.removeAll()
         let rows = SKShuangpinLayout.rows.map { row in
             row.map { letter -> SKMainKeyButton in
-                let key = SKAnnotatedKeyButton(letter: String(letter), initial: SKShuangpinLayout.initials[letter], final: SKShuangpinLayout.finals[letter] ?? "")
+                let key: SKMainKeyButton
+                if learningMode {
+                    key = SKAnnotatedKeyButton(letter: String(letter), initial: SKShuangpinLayout.initials[letter], final: SKShuangpinLayout.finals[letter] ?? "")
+                } else {
+                    key = SKMainKeyButton(title: String(letter))
+                }
                 key.accessibilityIdentifier = "shuangpin.\(letter)"
                 key.addTarget(self, action: #selector(typeLetter(_:)), for: .touchUpInside)
                 letterButtons.append(key)
                 return key
             }
         }
-        footer = SKKeyboardFooterView(schemeTitle: "双拼", nextSchemeTitle: "中日混合")
-        delete.useSymbol("delete.left", label: "删除")
-        delete.onDelete = { [weak self] byWord in
-            self?.eventHandler?.didDeleteBackward(byWord: byWord) ?? .stop
-        }
         keyRows = [rows[0], rows[1], [shift] + rows[2] + [delete]]
-        shift.addTarget(self, action: #selector(toggleShift), for: .touchUpInside)
-        let hold = UILongPressGestureRecognizer(target: self, action: #selector(holdShift(_:)))
-        shift.addGestureRecognizer(hold)
         updateShift()
     }
-    required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
-    @objc private func typeLetter(_ sender: SKAnnotatedKeyButton) {
+
+    @objc private func typeLetter(_ sender: SKMainKeyButton) {
         shiftState.willTypeLetter()
         eventHandler?.didTapKey(sender.keyTitle)
         if shiftState.didTypeLetter() { updateShift() }
